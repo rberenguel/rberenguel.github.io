@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/mac/</link>
+    <link>/tags/mac/</link>
     <description>Recent content in Mac on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Feb 2019 23:47:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache Hive and java.lang.ClassCastException on start</title>
-      <link>rberenguel.github.io/2019/02/apache-hive-and-javalangclasscastexcept.html/</link>
+      <link>/2019/02/apache-hive-and-javalangclasscastexcept.html/</link>
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
+      <guid>/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
       <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2018: Year in Review</title>
-      <link>rberenguel.github.io/2019/01/2018-year-in-review.html/</link>
+      <link>/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2018-year-in-review.html/</guid>
+      <guid>/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Modifying the agnoster theme for zsh</title>
-      <link>rberenguel.github.io/2018/04/modifying-agnoster-theme-for-zsh.html/</link>
+      <link>/2018/04/modifying-agnoster-theme-for-zsh.html/</link>
       <pubDate>Sun, 29 Apr 2018 15:38:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2018/04/modifying-agnoster-theme-for-zsh.html/</guid>
+      <guid>/2018/04/modifying-agnoster-theme-for-zsh.html/</guid>
       <description>Even though I have been a long time user of oh-my-zsh on zsh (moved from plain bash to zsh like 10 years ago), I have been very minimal on my use of its theme capabilities. I have used the default theme forever: robbyrussell. But recently I was showing my friend @craftycoder the tweaks I have on my system (fzf, autojump, etc) and he showed me this theme, agnoster. It had several pieces I liked:</description>
     </item>
     
     <item>
       <title>Using QGIS to create a custom map</title>
-      <link>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</link>
+      <link>/2015/06/using-qgis-to-create-custom-map.html/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</guid>
+      <guid>/2015/06/using-qgis-to-create-custom-map.html/</guid>
       <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     
     <item>
       <title>Find Search Engine Rankings... via the Command Line</title>
-      <link>rberenguel.github.io/2013/05/find-search-engine-rankings-via-command.html/</link>
+      <link>/2013/05/find-search-engine-rankings-via-command.html/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2013/05/find-search-engine-rankings-via-command.html/</guid>
+      <guid>/2013/05/find-search-engine-rankings-via-command.html/</guid>
       <description>Via pixelfrenzy@flickr
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&amp;rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</description>
@@ -60,10 +60,10 @@ Well, after this scary paragraph, lets get to the real meat. Which boils down to
     
     <item>
       <title>Back to gnus (emacs mail reader)</title>
-      <link>rberenguel.github.io/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
+      <link>/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
       <pubDate>Sat, 07 Jul 2012 20:50:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
+      <guid>/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
 I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
@@ -71,30 +71,30 @@ I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wa
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Using an Apple Remote with Mac OS Preview</title>
-      <link>rberenguel.github.io/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
+      <link>/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
       <pubDate>Sun, 05 Jun 2011 18:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
+      <guid>/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
       <description>Last Tuesday I presented a talk in a congress, here in Barcelona. This post is not about this talk, but about the Mac remote and Apple&amp;rsquo;s &amp;ldquo;problems&amp;rdquo;. If you are interested, you can download the talk here, anyway.
 As the congress was local, instead of using my netbook for the talk I brought my MacBook. Instead of using arrow keys, I could use these fancy Apple remotes. Good plan&amp;hellip; at the moment.</description>
     </item>
     
     <item>
       <title>The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
       <pubDate>Sat, 11 Dec 2010 20:10:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-using-gnus-to.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-using-gnus-to.html/</guid>
       <description>The gnus logo,
 from gnus homepage
 When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&amp;rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.</description>
@@ -102,29 +102,29 @@ When the time to choose a mail reader for emacs came, as part of my emacs 30 Day
     
     <item>
       <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
       <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
 Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
     </item>
     
     <item>
       <title>Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</title>
-      <link>rberenguel.github.io/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
+      <link>/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
       <pubDate>Sat, 06 Nov 2010 18:20:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
+      <guid>/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
       <description>This week I&amp;rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled Approximating bifurcation loci by zeros of functions. This is heavily based on a poster I presented last year in Copenhagen (titled Sets approximating regions of instability). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.</description>
     </item>
     
     <item>
       <title>Installed Go in Mac OS 10.5</title>
-      <link>rberenguel.github.io/2010/05/installed-go-in-mac-os-105.html/</link>
+      <link>/2010/05/installed-go-in-mac-os-105.html/</link>
       <pubDate>Sat, 08 May 2010 16:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/05/installed-go-in-mac-os-105.html/</guid>
+      <guid>/2010/05/installed-go-in-mac-os-105.html/</guid>
       <description>Yes, I know it: it is easy. But I will be doing a wipe and reinstall of my MacBook, and when I need to reinstall everything I want a place to check for the steps I did. I found almost all tips needed here.
 The first step is checking for Mercurial (wikipedia) in your system. Open a terminal and type
  hg version
@@ -133,10 +133,10 @@ The first step is checking for Mercurial (wikipedia) in your system. Open a term
     
     <item>
       <title>All hail... Steve Jobs and his iPad?</title>
-      <link>rberenguel.github.io/2010/02/all-hail-steve-jobs-and-his-ipad.html/</link>
+      <link>/2010/02/all-hail-steve-jobs-and-his-ipad.html/</link>
       <pubDate>Mon, 08 Feb 2010 18:27:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/02/all-hail-steve-jobs-and-his-ipad.html/</guid>
+      <guid>/2010/02/all-hail-steve-jobs-and-his-ipad.html/</guid>
       <description>Made with Sketchbook Mobile&amp;hellip;
 in an iPod Touch
 All hail hypnotoad&amp;hellip; in real life
@@ -146,29 +146,29 @@ I don&amp;rsquo;t think the iPad is gona be a hit.</description>
     
     <item>
       <title>Retro on iPod Touch (1): Mini vMac</title>
-      <link>rberenguel.github.io/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</link>
+      <link>/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</link>
       <pubDate>Thu, 19 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</guid>
+      <guid>/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</guid>
       <description>A few days ago I jailbroke my iPod touch. Just for the geek factor, first, as I thought I could get a C compiler on it. I can&amp;rsquo;t yet, so I just have it jailbreaken for a few applications. I&amp;rsquo;ll start my review for a long time loved application in Linux and Mac: Mini vMac.Mini vMac is a hardware emulator, which emulates a whole Mac Plus from the eighties. You just need a real Mac ROM, from a Mac you or someone you know owns.</description>
     </item>
     
     <item>
       <title>mg &amp; Zile: quick emacs in the command line</title>
-      <link>rberenguel.github.io/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
+      <link>/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
       <pubDate>Tue, 17 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
+      <guid>/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
       <description>From The Design of the Emacs Logo
 I guess you may already know I love the emacs text editor, and use it as often as I can to do almost everything I can with it. I even use it in my iPod touch, through minivMac. But there is a small niche where it was a pain: quick editing a file from the command line. Those times when you just want to open one file, change a line, save and close.</description>
     </item>
     
     <item>
       <title>External rays &amp; Lavaurs algorithm</title>
-      <link>rberenguel.github.io/2009/11/external-rays-lavaurs-algorithm.html/</link>
+      <link>/2009/11/external-rays-lavaurs-algorithm.html/</link>
       <pubDate>Tue, 03 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/external-rays-lavaurs-algorithm.html/</guid>
+      <guid>/2009/11/external-rays-lavaurs-algorithm.html/</guid>
       <description>Thanks to Mandel, LISP and my Lavaurs code
 As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able&amp;hellip; and then found Mandel.
 Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
@@ -176,20 +176,20 @@ Really nice program, with lots and lots of options (and I met the programmer, wh
     
     <item>
       <title>Why I bought an iPod touch</title>
-      <link>rberenguel.github.io/2009/10/why-i-bought-ipod-touch.html/</link>
+      <link>/2009/10/why-i-bought-ipod-touch.html/</link>
       <pubDate>Mon, 19 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/10/why-i-bought-ipod-touch.html/</guid>
+      <guid>/2009/10/why-i-bought-ipod-touch.html/</guid>
       <description>Mathematician, Linux user, already had an iPod (iPod nano), recently bought a netbook. Why did I buy an iPod touch?
 Papers for iPhone (7.99€): a organizer for research PDF&amp;rsquo;s with integrated PDF reader (allegedly optimized for research articles), with the ability to sync with the desktop app (29€, less with the 40% discount for students&amp;hellip; still waiting for it to buy it). Well, it lives up the expectations, although the desktop version is strange (used it only once, yet) and the syncing can be hard as the network settings may keep you from syncing.</description>
     </item>
     
     <item>
       <title>Scribus&#43;Latex in Mac OS</title>
-      <link>rberenguel.github.io/2009/09/scribuslatex-in-mac-os.html/</link>
+      <link>/2009/09/scribuslatex-in-mac-os.html/</link>
       <pubDate>Tue, 29 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/scribuslatex-in-mac-os.html/</guid>
+      <guid>/2009/09/scribuslatex-in-mac-os.html/</guid>
       <description>or the trouble with hard-coded paths and ineffective menus.
 
 Cross platform page-layout software:
@@ -199,10 +199,10 @@ I am supposed to present a poster in a conference, about some work I am doing. I
     
     <item>
       <title>Whistle control your computer (Linux&amp;Mac)</title>
-      <link>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</link>
+      <link>/2009/09/whistle-control-your-computer.html/</link>
       <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</guid>
+      <guid>/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
 Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
 Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
@@ -210,20 +210,20 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
     
     <item>
       <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
-      <link>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <link>/2009/09/quick-latex-ing-with-emacs.html/</link>
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <guid>/2009/09/quick-latex-ing-with-emacs.html/</guid>
       <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
     <item>
       <title>My backup script in Mac/Linux</title>
-      <link>rberenguel.github.io/2009/09/my-backup-script-in-maclinux.html/</link>
+      <link>/2009/09/my-backup-script-in-maclinux.html/</link>
       <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <guid>/2009/09/my-backup-script-in-maclinux.html/</guid>
       <description>My backup script in Mac/Linux
 #!/bin/sh
 # This script backs up a set of files and directories incrementally,
@@ -237,20 +237,20 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
     
     <item>
       <title>Calendars &amp; emacs</title>
-      <link>rberenguel.github.io/2009/09/calendars-emacs.html/</link>
+      <link>/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/calendars-emacs.html/</guid>
+      <guid>/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
 For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
       <title>Wikipedian!</title>
-      <link>rberenguel.github.io/2009/07/wikipedian.html/</link>
+      <link>/2009/07/wikipedian.html/</link>
       <pubDate>Sun, 05 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/07/wikipedian.html/</guid>
+      <guid>/2009/07/wikipedian.html/</guid>
       <description>I feel like I contributed something. I rewrote Wikipedia&amp;rsquo;s Siegel disk page, adding references and images. It is now quite dense&amp;hellip; Ill have to re-read it to simplify it several times. Or someone else&amp;hellip; Wikipedia&amp;rsquo;s wonders.
 
 Snapshot! (Via Paparazzi!)</description>
@@ -258,39 +258,39 @@ Snapshot! (Via Paparazzi!)</description>
     
     <item>
       <title>Hyperoid a.k.a. SDLRoids</title>
-      <link>rberenguel.github.io/2009/07/hyperoid-aka-sdlroids.html/</link>
+      <link>/2009/07/hyperoid-aka-sdlroids.html/</link>
       <pubDate>Thu, 02 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/07/hyperoid-aka-sdlroids.html/</guid>
+      <guid>/2009/07/hyperoid-aka-sdlroids.html/</guid>
       <description>Screenshots!
 Back when I was in school, I had a really nice game in my 80286 computer, under Windows 3.1. Yes, it was 15 years ago&amp;hellip; The game was Hyperoid, by Edward Hutchins. When I got my first Pentium with Windows 95, I longed that game&amp;hellip; and the 3.1. version didn&amp;rsquo;t work completely OK in it. Anyway I played&amp;hellip; then found Hyperoid95. I even recompiled it, to add firepower (the author of this version cut the fire speed).</description>
     </item>
     
     <item>
       <title>Lisp raytracing, again</title>
-      <link>rberenguel.github.io/2009/06/lisp-raytracing-again.html/</link>
+      <link>/2009/06/lisp-raytracing-again.html/</link>
       <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/06/lisp-raytracing-again.html/</guid>
+      <guid>/2009/06/lisp-raytracing-again.html/</guid>
       <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
     </item>
     
     <item>
       <title>How to download YouTube .flv videos</title>
-      <link>rberenguel.github.io/2009/06/how-to-download-youtube-flv-videos.html/</link>
+      <link>/2009/06/how-to-download-youtube-flv-videos.html/</link>
       <pubDate>Wed, 03 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/06/how-to-download-youtube-flv-videos.html/</guid>
+      <guid>/2009/06/how-to-download-youtube-flv-videos.html/</guid>
       <description>There is a plain and easy way to download YouTube .flv videos (which you can watch with VLC Media Player, or in a Mac with Quicktime Player and additional plug-ins).
 To do so, you need the Safari Web Browser (Mac or Windows). Go to your desired page hosting a Flash Video file, and select Activity in the Window menu. There you will find the files being downloaded in the web-page you are visiting&amp;hellip; double click the bigger one (as usually flash videos are the biggest files in YouTube pages, if you can&amp;rsquo;t find such a big file, check for the .</description>
     </item>
     
     <item>
       <title>How to get a local proxy</title>
-      <link>rberenguel.github.io/2009/05/local-proxy.html/</link>
+      <link>/2009/05/local-proxy.html/</link>
       <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/local-proxy.html/</guid>
+      <guid>/2009/05/local-proxy.html/</guid>
       <description>Setting a local proxy through a remote machine
 To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
  ssh -D 42 YourRemoteMachineName
@@ -299,10 +299,10 @@ To set up a local proxy using some computer in another network (in my case, my o
     
     <item>
       <title>Productivity enhancers (or time wasting avoiders)</title>
-      <link>rberenguel.github.io/2009/05/productivity-enhancers-or-time-wasting.html/</link>
+      <link>/2009/05/productivity-enhancers-or-time-wasting.html/</link>
       <pubDate>Sat, 23 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/productivity-enhancers-or-time-wasting.html/</guid>
+      <guid>/2009/05/productivity-enhancers-or-time-wasting.html/</guid>
       <description>I have been using several productivy enhancers (or time-wasting avoiders) as of late. Although I find them quite useful, I wonder if I could find something even better.
 Think: I have already talked about think elsewhere. Think enables the user to focus on just one application, seeing nothing more. It is like the blinders of a horse to keep you from distracting.
 LeechBlock: A FireFox addon, which allows you to block certain sites at certain times of the week, or after a predetermined amount of time has been wasted there.</description>
@@ -310,20 +310,20 @@ LeechBlock: A FireFox addon, which allows you to block certain sites at certain 
     
     <item>
       <title>Extremely useful (mostly free) Mac applications</title>
-      <link>rberenguel.github.io/2009/05/extremely-useful-mostly-free-mac.html/</link>
+      <link>/2009/05/extremely-useful-mostly-free-mac.html/</link>
       <pubDate>Wed, 13 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/extremely-useful-mostly-free-mac.html/</guid>
+      <guid>/2009/05/extremely-useful-mostly-free-mac.html/</guid>
       <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
  Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
     </item>
     
     <item>
       <title>MP3 to iPod audiobook: personal reminder</title>
-      <link>rberenguel.github.io/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</link>
+      <link>/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</link>
       <pubDate>Tue, 05 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</guid>
+      <guid>/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</guid>
       <description>New: The previous version is rubbish! Just add your MP3 encoded files to iTunes library, select the entire album, choose get info from right-clicking it, go to the last tab (options) and select: Part of a compilation, remember position, skip when shuffling and in media type, Audibook. And you are done in a moment.
 Time-wasting version by Google: This is just to remind myself how to do this simple thing. I got the information from here (via Google).</description>
     </item>

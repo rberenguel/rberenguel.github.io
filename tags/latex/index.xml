@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LaTeX on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/latex/</link>
+    <link>/tags/latex/</link>
     <description>Recent content in LaTeX on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Nov 2015 23:33:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SyncTeX and pdf-view-mode for emacs</title>
-      <link>rberenguel.github.io/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
+      <link>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
+      <guid>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
       <description>Or, destiny is cruel
  Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.</description>
     </item>
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Using an Apple Remote with Mac OS Preview</title>
-      <link>rberenguel.github.io/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
+      <link>/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
       <pubDate>Sun, 05 Jun 2011 18:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
+      <guid>/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
       <description>Last Tuesday I presented a talk in a congress, here in Barcelona. This post is not about this talk, but about the Mac remote and Apple&amp;rsquo;s &amp;ldquo;problems&amp;rdquo;. If you are interested, you can download the talk here, anyway.
 As the congress was local, instead of using my netbook for the talk I brought my MacBook. Instead of using arrow keys, I could use these fancy Apple remotes. Good plan&amp;hellip; at the moment.</description>
     </item>
     
     <item>
       <title>Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets</title>
-      <link>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</link>
+      <link>/2010/12/commented-version-of-latex-file-to.html/</link>
       <pubDate>Thu, 09 Dec 2010 14:20:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</guid>
+      <guid>/2010/12/commented-version-of-latex-file-to.html/</guid>
       <description>Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
 The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
 \\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language).</description>
@@ -54,29 +54,29 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
     
     <item>
       <title>Creating pdf ebooks with LaTeX (With Two Free Examples: Art of War &amp; How to Live on 24 Hours a Day)</title>
-      <link>rberenguel.github.io/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</link>
+      <link>/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</link>
       <pubDate>Sun, 21 Nov 2010 21:45:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
+      <guid>/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>If you are looking for the sample ebooks, scroll down a little (and don&amp;rsquo;t forget to subscribe if you have not done this already!)
 I started to look for ways to use LaTeX for doing ebooks very recently. My plan is to write an ebook on productivity and time management, with no deadline. I strive to make it the book I&amp;rsquo;d love to read when I started reading about time management&amp;hellip; And this means I&amp;rsquo;ll need quite a time.</description>
     </item>
     
     <item>
       <title>Creating A6 Booklets in 7 Easy Steps</title>
-      <link>rberenguel.github.io/2010/11/creating-a6-booklets-in-7-easy-steps.html/</link>
+      <link>/2010/11/creating-a6-booklets-in-7-easy-steps.html/</link>
       <pubDate>Wed, 17 Nov 2010 00:13:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/11/creating-a6-booklets-in-7-easy-steps.html/</guid>
+      <guid>/2010/11/creating-a6-booklets-in-7-easy-steps.html/</guid>
       <description>Disclaimer:Some link in this post are affiliate links. For each sale that is made through the purchase links in this post I get a small commission (that does not affect your final purchase price!). Of course, I&amp;rsquo;d love if you bought a book through these links, but keep in mind they are in the public domain (and I&amp;rsquo;ll post them in pdf soon). I don&amp;rsquo;t want anyone to come later at me and say they were tricked into buying the book and then realising it was available for free!</description>
     </item>
     
     <item>
       <title>Scribus&#43;Latex in Mac OS</title>
-      <link>rberenguel.github.io/2009/09/scribuslatex-in-mac-os.html/</link>
+      <link>/2009/09/scribuslatex-in-mac-os.html/</link>
       <pubDate>Tue, 29 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/scribuslatex-in-mac-os.html/</guid>
+      <guid>/2009/09/scribuslatex-in-mac-os.html/</guid>
       <description>or the trouble with hard-coded paths and ineffective menus.
 
 Cross platform page-layout software:
@@ -86,40 +86,40 @@ I am supposed to present a poster in a conference, about some work I am doing. I
     
     <item>
       <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
-      <link>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <link>/2009/09/quick-latex-ing-with-emacs.html/</link>
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <guid>/2009/09/quick-latex-ing-with-emacs.html/</guid>
       <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
     <item>
       <title>AucTeX again</title>
-      <link>rberenguel.github.io/2009/09/auctex-again.html/</link>
+      <link>/2009/09/auctex-again.html/</link>
       <pubDate>Wed, 02 Sep 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/auctex-again.html/</guid>
+      <guid>/2009/09/auctex-again.html/</guid>
       <description>For a while I have been either not LaTeXing a lot, or not using AucTeX frequently. Strange indeed! But in July, while in Göttingen I wrote part of some lecture notes of one of the courses. And again, used auctex-preview in emacs to find errors in what I was writing.
 I can&amp;rsquo;t even tell how wonderful it is, to share the source with the images with the formulas. An image is worth more than a googol words.</description>
     </item>
     
     <item>
       <title>Easy paperback book binding how-to</title>
-      <link>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</link>
+      <link>/2009/04/easy-paperback-book-binding-how-to.html/</link>
       <pubDate>Thu, 09 Apr 2009 15:29:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</guid>
+      <guid>/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
 Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
     
     <item>
       <title>Big fonts in LaTeX</title>
-      <link>rberenguel.github.io/2009/03/big-fonts-in-latex.html/</link>
+      <link>/2009/03/big-fonts-in-latex.html/</link>
       <pubDate>Mon, 02 Mar 2009 14:52:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/03/big-fonts-in-latex.html/</guid>
+      <guid>/2009/03/big-fonts-in-latex.html/</guid>
       <description>Get arbitrary size fonts in LaTeX You have probably wondered how to get really big fonts in titles, or anywhere in a LaTeX document.
 \usepackage{fix-cm} % Allows for Computer Modern fonts of arbitrary sizes
 &amp;hellip;
@@ -130,10 +130,10 @@ You are done. Easy, wasn&amp;rsquo;t it? You may also be interested in ParseList
     
     <item>
       <title>How to create LaTeX booklets</title>
-      <link>rberenguel.github.io/2008/09/latex-booklets.html/</link>
+      <link>/2008/09/latex-booklets.html/</link>
       <pubDate>Thu, 18 Sep 2008 18:31:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2008/09/latex-booklets.html/</guid>
+      <guid>/2008/09/latex-booklets.html/</guid>
       <description>The easiest way to print a booklet out of any PDF If you are printing a lot of&amp;hellip; well, anything, sure you would love to make booklets out of what you print. If you happen to be a mathematician, you sure are printing lots of papers with more than 20 pages, which turn to 10 unmanageable pages when double-sided. But making a booklet allows you to turn them to just a little folded thing that you can read easier.</description>
     </item>
     

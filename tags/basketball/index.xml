@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basketball on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/basketball/</link>
+    <link>/tags/basketball/</link>
     <description>Recent content in Basketball on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/basketball/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/basketball/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#20,21,22 Readings of the week</title>
-      <link>rberenguel.github.io/2019/07/2019202122-readings-of-week.html/</link>
+      <link>/2019/07/2019202122-readings-of-week.html/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/07/2019202122-readings-of-week.html/</guid>
+      <guid>/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
 
 &lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</link>
+      <link>/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rasterbator: online posterizer for @home printing</title>
-      <link>rberenguel.github.io/2009/05/rasterbator-online-posterizer-for-home.html/</link>
+      <link>/2009/05/rasterbator-online-posterizer-for-home.html/</link>
       <pubDate>Sun, 17 May 2009 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
+      <guid>/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
       <description>My chair, my fractals (A4) and my Drazen
 Petrovic poster (4xA4)
 Rasterbator is an online poster maker, for you to print in your own printer. Of course, the results are not as good as full quality posters like these, but they look pretty good when looked from afar. It rasterises an image you upload (or link from anywhere in Internet), does some magic stuff, and the result is a bunch (you decide graphically how many, orientation and other options) of A4 (or Legal) sheets arranged in a nice PDF, which you have to print.</description>

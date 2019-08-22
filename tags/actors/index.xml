@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Actors on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/actors/</link>
+    <link>/tags/actors/</link>
     <description>Recent content in Actors on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Feb 2018 15:28:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/actors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/actors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ClassNotFoundException for Akka logging</title>
-      <link>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</link>
+      <link>/2018/02/classnotfoundexception-for-akka-logging.html/</link>
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
+      <guid>/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
       <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
  YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
     </item>

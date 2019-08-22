@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spacemacs on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/spacemacs/</link>
+    <link>/tags/spacemacs/</link>
     <description>Recent content in spacemacs on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 May 2019 23:41:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LSP for Python and Scala</title>
-      <link>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</link>
+      <link>/2019/05/lsp-for-python-and-scala.html/</link>
       <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</guid>
+      <guid>/2019/05/lsp-for-python-and-scala.html/</guid>
       <description>If you have have known me for any length of time you&amp;rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.</description>
     </item>
     
     <item>
       <title>2019#13 Readings of the week</title>
-      <link>rberenguel.github.io/2019/05/201913-readings-of-week.html/</link>
+      <link>/2019/05/201913-readings-of-week.html/</link>
       <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/201913-readings-of-week.html/</guid>
+      <guid>/2019/05/201913-readings-of-week.html/</guid>
       <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>gtags (GNU global) in emacs for Scala</title>
-      <link>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
+      <link>/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
       <pubDate>Thu, 09 May 2019 17:27:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
+      <guid>/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
       <description>&lt;p&gt;As you may know, I’m a heavy &lt;a href=&#34;https://www.mostlymaths.net/search/label/emacs&#34;&gt;emacs&lt;/a&gt; user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-1 Readings of the week</title>
-      <link>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</link>
+      <link>/2019/01/2019-1-readings-of-week.html/</link>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</guid>
+      <guid>/2019/01/2019-1-readings-of-week.html/</guid>
       <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>More emacs configuration tweaks (multiple-cursor on click, minimap, code folding, ensime eval overlays)</title>
-      <link>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</link>
+      <link>/2016/09/more-emacs-configuration-tweaks.html/</link>
       <pubDate>Sun, 11 Sep 2016 17:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</guid>
+      <guid>/2016/09/more-emacs-configuration-tweaks.html/</guid>
       <description>At Affectv we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&amp;hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&amp;rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.
 Click for multiple-cursors I saw this on Jordi&amp;rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so.</description>
     </item>
     
     <item>
       <title>Moving from Emacs to Spacemacs</title>
-      <link>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</link>
+      <link>/2016/08/moving-from-emacs-to-spacemacs.html/</link>
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
+      <guid>/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
       <description>A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
 In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs.</description>
     </item>

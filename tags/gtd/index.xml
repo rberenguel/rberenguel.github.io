@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GTD on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/gtd/</link>
+    <link>/tags/gtd/</link>
     <description>Recent content in GTD on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Feb 2019 18:54:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-6 Readings of the week</title>
-      <link>rberenguel.github.io/2019/02/2019-6-readings-of-week.html/</link>
+      <link>/2019/02/2019-6-readings-of-week.html/</link>
       <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/02/2019-6-readings-of-week.html/</guid>
+      <guid>/2019/02/2019-6-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Things3 Weekly Review mode shortcut(s)</title>
-      <link>rberenguel.github.io/2018/12/things3-weekly-review-mode-shortcuts.html/</link>
+      <link>/2018/12/things3-weekly-review-mode-shortcuts.html/</link>
       <pubDate>Mon, 31 Dec 2018 16:07:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2018/12/things3-weekly-review-mode-shortcuts.html/</guid>
+      <guid>/2018/12/things3-weekly-review-mode-shortcuts.html/</guid>
       <description>Requirements  Be a user of Things3, and heavy on Getting Things Done Shortcuts app  The shortcuts _Weekly Review and Update weekly review hash_ Drafts or Bear app (either could be used, the shortcut linked below uses Drafts)  Initial setup (around 10-30 minutes depending on the amount of projects you have) Create a note in Drafts (you can put it in the note archive) with some text, does’t matter what you write.</description>
     </item>
     

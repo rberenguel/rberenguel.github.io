@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Formal methods on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/formal-methods/</link>
+    <link>/tags/formal-methods/</link>
     <description>Recent content in Formal methods on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Jun 2019 20:01:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/formal-methods/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/formal-methods/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#18 Readings of the week</title>
-      <link>rberenguel.github.io/2019/06/201918-readings-of-week.html/</link>
+      <link>/2019/06/201918-readings-of-week.html/</link>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/06/201918-readings-of-week.html/</guid>
+      <guid>/2019/06/201918-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

@@ -2,1164 +2,1164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Adtech</title>
-      <link>rberenguel.github.io/tags/adtech/</link>
+      <link>/tags/adtech/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/adtech/</guid>
+      <guid>/tags/adtech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Basketball</title>
-      <link>rberenguel.github.io/tags/basketball/</link>
+      <link>/tags/basketball/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/basketball/</guid>
+      <guid>/tags/basketball/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Big data</title>
-      <link>rberenguel.github.io/tags/big-data/</link>
+      <link>/tags/big-data/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/big-data/</guid>
+      <guid>/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data</title>
-      <link>rberenguel.github.io/tags/data/</link>
+      <link>/tags/data/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/data/</guid>
+      <guid>/tags/data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Drawing</title>
-      <link>rberenguel.github.io/tags/drawing/</link>
+      <link>/tags/drawing/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/drawing/</guid>
+      <guid>/tags/drawing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional Programming</title>
-      <link>rberenguel.github.io/tags/functional-programming/</link>
+      <link>/tags/functional-programming/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/functional-programming/</guid>
+      <guid>/tags/functional-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Haskell</title>
-      <link>rberenguel.github.io/tags/haskell/</link>
+      <link>/tags/haskell/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/haskell/</guid>
+      <guid>/tags/haskell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>History</title>
-      <link>rberenguel.github.io/tags/history/</link>
+      <link>/tags/history/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/history/</guid>
+      <guid>/tags/history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maths</title>
-      <link>rberenguel.github.io/tags/maths/</link>
+      <link>/tags/maths/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/maths/</guid>
+      <guid>/tags/maths/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>rberenguel.github.io/tags/productivity/</link>
+      <link>/tags/productivity/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/productivity/</guid>
+      <guid>/tags/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scala</title>
-      <link>rberenguel.github.io/tags/scala/</link>
+      <link>/tags/scala/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/scala/</guid>
+      <guid>/tags/scala/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wardley maps</title>
-      <link>rberenguel.github.io/tags/wardley-maps/</link>
+      <link>/tags/wardley-maps/</link>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/wardley-maps/</guid>
+      <guid>/tags/wardley-maps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>rberenguel.github.io/tags/golang/</link>
+      <link>/tags/golang/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/golang/</guid>
+      <guid>/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>rberenguel.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spark</title>
-      <link>rberenguel.github.io/tags/spark/</link>
+      <link>/tags/spark/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/spark/</guid>
+      <guid>/tags/spark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Systems Thinking</title>
-      <link>rberenguel.github.io/tags/systems-thinking/</link>
+      <link>/tags/systems-thinking/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/systems-thinking/</guid>
+      <guid>/tags/systems-thinking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Formal methods</title>
-      <link>rberenguel.github.io/tags/formal-methods/</link>
+      <link>/tags/formal-methods/</link>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/formal-methods/</guid>
+      <guid>/tags/formal-methods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Agile</title>
-      <link>rberenguel.github.io/tags/agile/</link>
+      <link>/tags/agile/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/agile/</guid>
+      <guid>/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bizarre</title>
-      <link>rberenguel.github.io/tags/bizarre/</link>
+      <link>/tags/bizarre/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/bizarre/</guid>
+      <guid>/tags/bizarre/</guid>
       <description></description>
     </item>
     
     <item>
       <title>math</title>
-      <link>rberenguel.github.io/tags/math/</link>
+      <link>/tags/math/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/math/</guid>
+      <guid>/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ReadingsOfTheWeek</title>
-      <link>rberenguel.github.io/tags/readingsoftheweek/</link>
+      <link>/tags/readingsoftheweek/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/readingsoftheweek/</guid>
+      <guid>/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maps</title>
-      <link>rberenguel.github.io/tags/maps/</link>
+      <link>/tags/maps/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/maps/</guid>
+      <guid>/tags/maps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWK</title>
-      <link>rberenguel.github.io/tags/awk/</link>
+      <link>/tags/awk/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/awk/</guid>
+      <guid>/tags/awk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rust</title>
-      <link>rberenguel.github.io/tags/rust/</link>
+      <link>/tags/rust/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/rust/</guid>
+      <guid>/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ZIO</title>
-      <link>rberenguel.github.io/tags/zio/</link>
+      <link>/tags/zio/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/zio/</guid>
+      <guid>/tags/zio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TLA&#43;</title>
-      <link>rberenguel.github.io/tags/tla&#43;/</link>
+      <link>/tags/tla&#43;/</link>
       <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/tla&#43;/</guid>
+      <guid>/tags/tla&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>rberenguel.github.io/tags/emacs/</link>
+      <link>/tags/emacs/</link>
       <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/emacs/</guid>
+      <guid>/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spacemacs</title>
-      <link>rberenguel.github.io/tags/spacemacs/</link>
+      <link>/tags/spacemacs/</link>
       <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/spacemacs/</guid>
+      <guid>/tags/spacemacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Games</title>
-      <link>rberenguel.github.io/tags/games/</link>
+      <link>/tags/games/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/games/</guid>
+      <guid>/tags/games/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generative</title>
-      <link>rberenguel.github.io/tags/generative/</link>
+      <link>/tags/generative/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/generative/</guid>
+      <guid>/tags/generative/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Perl</title>
-      <link>rberenguel.github.io/tags/perl/</link>
+      <link>/tags/perl/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/perl/</guid>
+      <guid>/tags/perl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>rberenguel.github.io/tags/programming/</link>
+      <link>/tags/programming/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/programming/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Akka</title>
-      <link>rberenguel.github.io/tags/akka/</link>
+      <link>/tags/akka/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/akka/</guid>
+      <guid>/tags/akka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alloy</title>
-      <link>rberenguel.github.io/tags/alloy/</link>
+      <link>/tags/alloy/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/alloy/</guid>
+      <guid>/tags/alloy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Books</title>
-      <link>rberenguel.github.io/tags/books/</link>
+      <link>/tags/books/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/books/</guid>
+      <guid>/tags/books/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fractals</title>
-      <link>rberenguel.github.io/tags/fractals/</link>
+      <link>/tags/fractals/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/fractals/</guid>
+      <guid>/tags/fractals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plan9</title>
-      <link>rberenguel.github.io/tags/plan9/</link>
+      <link>/tags/plan9/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/plan9/</guid>
+      <guid>/tags/plan9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>iPhone</title>
-      <link>rberenguel.github.io/tags/iphone/</link>
+      <link>/tags/iphone/</link>
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/iphone/</guid>
+      <guid>/tags/iphone/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hive</title>
-      <link>rberenguel.github.io/tags/hive/</link>
+      <link>/tags/hive/</link>
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/hive/</guid>
+      <guid>/tags/hive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mac</title>
-      <link>rberenguel.github.io/tags/mac/</link>
+      <link>/tags/mac/</link>
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/mac/</guid>
+      <guid>/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GTD</title>
-      <link>rberenguel.github.io/tags/gtd/</link>
+      <link>/tags/gtd/</link>
       <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/gtd/</guid>
+      <guid>/tags/gtd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>rberenguel.github.io/tags/kubernetes/</link>
+      <link>/tags/kubernetes/</link>
       <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/kubernetes/</guid>
+      <guid>/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>rberenguel.github.io/tags/go/</link>
+      <link>/tags/go/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/go/</guid>
+      <guid>/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Languages</title>
-      <link>rberenguel.github.io/tags/languages/</link>
+      <link>/tags/languages/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/languages/</guid>
+      <guid>/tags/languages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NLP</title>
-      <link>rberenguel.github.io/tags/nlp/</link>
+      <link>/tags/nlp/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/nlp/</guid>
+      <guid>/tags/nlp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Christmas</title>
-      <link>rberenguel.github.io/tags/christmas/</link>
+      <link>/tags/christmas/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/christmas/</guid>
+      <guid>/tags/christmas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>rberenguel.github.io/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>iPad</title>
-      <link>rberenguel.github.io/tags/ipad/</link>
+      <link>/tags/ipad/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/ipad/</guid>
+      <guid>/tags/ipad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Open source</title>
-      <link>rberenguel.github.io/tags/open-source/</link>
+      <link>/tags/open-source/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/open-source/</guid>
+      <guid>/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Time Management</title>
-      <link>rberenguel.github.io/tags/time-management/</link>
+      <link>/tags/time-management/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/time-management/</guid>
+      <guid>/tags/time-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trips</title>
-      <link>rberenguel.github.io/tags/trips/</link>
+      <link>/tags/trips/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/trips/</guid>
+      <guid>/tags/trips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>YearInReview</title>
-      <link>rberenguel.github.io/tags/yearinreview/</link>
+      <link>/tags/yearinreview/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/yearinreview/</guid>
+      <guid>/tags/yearinreview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>iOS</title>
-      <link>rberenguel.github.io/tags/ios/</link>
+      <link>/tags/ios/</link>
       <pubDate>Mon, 31 Dec 2018 16:07:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/ios/</guid>
+      <guid>/tags/ios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>opensource</title>
-      <link>rberenguel.github.io/tags/opensource/</link>
+      <link>/tags/opensource/</link>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/opensource/</guid>
+      <guid>/tags/opensource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sbt</title>
-      <link>rberenguel.github.io/tags/sbt/</link>
+      <link>/tags/sbt/</link>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/sbt/</guid>
+      <guid>/tags/sbt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Watch</title>
-      <link>rberenguel.github.io/tags/watch/</link>
+      <link>/tags/watch/</link>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/watch/</guid>
+      <guid>/tags/watch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C</title>
-      <link>rberenguel.github.io/tags/c/</link>
+      <link>/tags/c/</link>
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/c/</guid>
+      <guid>/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Review</title>
-      <link>rberenguel.github.io/tags/review/</link>
+      <link>/tags/review/</link>
       <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/review/</guid>
+      <guid>/tags/review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Processing</title>
-      <link>rberenguel.github.io/tags/processing/</link>
+      <link>/tags/processing/</link>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/processing/</guid>
+      <guid>/tags/processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
-      <link>rberenguel.github.io/tags/visualization/</link>
+      <link>/tags/visualization/</link>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/visualization/</guid>
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Actors</title>
-      <link>rberenguel.github.io/tags/actors/</link>
+      <link>/tags/actors/</link>
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/actors/</guid>
+      <guid>/tags/actors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>category theory</title>
-      <link>rberenguel.github.io/tags/category-theory/</link>
+      <link>/tags/category-theory/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/category-theory/</guid>
+      <guid>/tags/category-theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conferences</title>
-      <link>rberenguel.github.io/tags/conferences/</link>
+      <link>/tags/conferences/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/conferences/</guid>
+      <guid>/tags/conferences/</guid>
       <description></description>
     </item>
     
     <item>
       <title>London</title>
-      <link>rberenguel.github.io/tags/london/</link>
+      <link>/tags/london/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/london/</guid>
+      <guid>/tags/london/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>rberenguel.github.io/tags/kafka/</link>
+      <link>/tags/kafka/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/kafka/</guid>
+      <guid>/tags/kafka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>rberenguel.github.io/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>rberenguel.github.io/tags/music/</link>
+      <link>/tags/music/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/music/</guid>
+      <guid>/tags/music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SEO</title>
-      <link>rberenguel.github.io/tags/seo/</link>
+      <link>/tags/seo/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/seo/</guid>
+      <guid>/tags/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>iPod</title>
-      <link>rberenguel.github.io/tags/ipod/</link>
+      <link>/tags/ipod/</link>
       <pubDate>Sun, 19 Nov 2017 17:42:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/ipod/</guid>
+      <guid>/tags/ipod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>rberenguel.github.io/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Sun, 20 Aug 2017 19:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trick</title>
-      <link>rberenguel.github.io/tags/trick/</link>
+      <link>/tags/trick/</link>
       <pubDate>Sun, 20 Aug 2017 19:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/trick/</guid>
+      <guid>/tags/trick/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016</title>
-      <link>rberenguel.github.io/tags/2016/</link>
+      <link>/tags/2016/</link>
       <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/2016/</guid>
+      <guid>/tags/2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>meetup</title>
-      <link>rberenguel.github.io/tags/meetup/</link>
+      <link>/tags/meetup/</link>
       <pubDate>Mon, 31 Oct 2016 21:37:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/meetup/</guid>
+      <guid>/tags/meetup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How-to</title>
-      <link>rberenguel.github.io/tags/how-to/</link>
+      <link>/tags/how-to/</link>
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/how-to/</guid>
+      <guid>/tags/how-to/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>rberenguel.github.io/tags/vim/</link>
+      <link>/tags/vim/</link>
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/vim/</guid>
+      <guid>/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LaTeX</title>
-      <link>rberenguel.github.io/tags/latex/</link>
+      <link>/tags/latex/</link>
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/latex/</guid>
+      <guid>/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>rberenguel.github.io/tags/research/</link>
+      <link>/tags/research/</link>
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/research/</guid>
+      <guid>/tags/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coffee</title>
-      <link>rberenguel.github.io/tags/coffee/</link>
+      <link>/tags/coffee/</link>
       <pubDate>Fri, 19 Jun 2015 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/coffee/</guid>
+      <guid>/tags/coffee/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recipes</title>
-      <link>rberenguel.github.io/tags/recipes/</link>
+      <link>/tags/recipes/</link>
       <pubDate>Fri, 19 Jun 2015 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/recipes/</guid>
+      <guid>/tags/recipes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DIY</title>
-      <link>rberenguel.github.io/tags/diy/</link>
+      <link>/tags/diy/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/diy/</guid>
+      <guid>/tags/diy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>L&#39;Arboç</title>
-      <link>rberenguel.github.io/tags/larbo%C3%A7/</link>
+      <link>/tags/larbo%C3%A7/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/larbo%C3%A7/</guid>
+      <guid>/tags/larbo%C3%A7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>QGIS</title>
-      <link>rberenguel.github.io/tags/qgis/</link>
+      <link>/tags/qgis/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/qgis/</guid>
+      <guid>/tags/qgis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apl</title>
-      <link>rberenguel.github.io/tags/apl/</link>
+      <link>/tags/apl/</link>
       <pubDate>Mon, 13 Apr 2015 11:29:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/apl/</guid>
+      <guid>/tags/apl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Backgammon</title>
-      <link>rberenguel.github.io/tags/backgammon/</link>
+      <link>/tags/backgammon/</link>
       <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/backgammon/</guid>
+      <guid>/tags/backgammon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thoughts</title>
-      <link>rberenguel.github.io/tags/thoughts/</link>
+      <link>/tags/thoughts/</link>
       <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/thoughts/</guid>
+      <guid>/tags/thoughts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>acme</title>
-      <link>rberenguel.github.io/tags/acme/</link>
+      <link>/tags/acme/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/acme/</guid>
+      <guid>/tags/acme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>geek</title>
-      <link>rberenguel.github.io/tags/geek/</link>
+      <link>/tags/geek/</link>
       <pubDate>Sat, 02 Nov 2013 18:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/geek/</guid>
+      <guid>/tags/geek/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ag</title>
-      <link>rberenguel.github.io/tags/ag/</link>
+      <link>/tags/ag/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/ag/</guid>
+      <guid>/tags/ag/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Command Line</title>
-      <link>rberenguel.github.io/tags/command-line/</link>
+      <link>/tags/command-line/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/command-line/</guid>
+      <guid>/tags/command-line/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diff</title>
-      <link>rberenguel.github.io/tags/diff/</link>
+      <link>/tags/diff/</link>
       <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/diff/</guid>
+      <guid>/tags/diff/</guid>
       <description></description>
     </item>
     
     <item>
       <title>grep</title>
-      <link>rberenguel.github.io/tags/grep/</link>
+      <link>/tags/grep/</link>
       <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/grep/</guid>
+      <guid>/tags/grep/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gnus</title>
-      <link>rberenguel.github.io/tags/gnus/</link>
+      <link>/tags/gnus/</link>
       <pubDate>Fri, 22 Feb 2013 18:28:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/gnus/</guid>
+      <guid>/tags/gnus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analytics</title>
-      <link>rberenguel.github.io/tags/analytics/</link>
+      <link>/tags/analytics/</link>
       <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/analytics/</guid>
+      <guid>/tags/analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Tag Manager</title>
-      <link>rberenguel.github.io/tags/google-tag-manager/</link>
+      <link>/tags/google-tag-manager/</link>
       <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/google-tag-manager/</guid>
+      <guid>/tags/google-tag-manager/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GTM</title>
-      <link>rberenguel.github.io/tags/gtm/</link>
+      <link>/tags/gtm/</link>
       <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/gtm/</guid>
+      <guid>/tags/gtm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jQuery</title>
-      <link>rberenguel.github.io/tags/jquery/</link>
+      <link>/tags/jquery/</link>
       <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/jquery/</guid>
+      <guid>/tags/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>rberenguel.github.io/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rcs</title>
-      <link>rberenguel.github.io/tags/rcs/</link>
+      <link>/tags/rcs/</link>
       <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/rcs/</guid>
+      <guid>/tags/rcs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shoemaking</title>
-      <link>rberenguel.github.io/tags/shoemaking/</link>
+      <link>/tags/shoemaking/</link>
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/shoemaking/</guid>
+      <guid>/tags/shoemaking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shoes</title>
-      <link>rberenguel.github.io/tags/shoes/</link>
+      <link>/tags/shoes/</link>
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/shoes/</guid>
+      <guid>/tags/shoes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Fancy Puffin</title>
-      <link>rberenguel.github.io/tags/the-fancy-puffin/</link>
+      <link>/tags/the-fancy-puffin/</link>
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/the-fancy-puffin/</guid>
+      <guid>/tags/the-fancy-puffin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LISP</title>
-      <link>rberenguel.github.io/tags/lisp/</link>
+      <link>/tags/lisp/</link>
       <pubDate>Wed, 01 Aug 2012 23:21:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/lisp/</guid>
+      <guid>/tags/lisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Django</title>
-      <link>rberenguel.github.io/tags/django/</link>
+      <link>/tags/django/</link>
       <pubDate>Tue, 12 Jun 2012 15:10:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/django/</guid>
+      <guid>/tags/django/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iceland</title>
-      <link>rberenguel.github.io/tags/iceland/</link>
+      <link>/tags/iceland/</link>
       <pubDate>Mon, 04 Jun 2012 21:15:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/iceland/</guid>
+      <guid>/tags/iceland/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Memory</title>
-      <link>rberenguel.github.io/tags/memory/</link>
+      <link>/tags/memory/</link>
       <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/memory/</guid>
+      <guid>/tags/memory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forth</title>
-      <link>rberenguel.github.io/tags/forth/</link>
+      <link>/tags/forth/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/forth/</guid>
+      <guid>/tags/forth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improve Yourself</title>
-      <link>rberenguel.github.io/tags/improve-yourself/</link>
+      <link>/tags/improve-yourself/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/improve-yourself/</guid>
+      <guid>/tags/improve-yourself/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Running</title>
-      <link>rberenguel.github.io/tags/running/</link>
+      <link>/tags/running/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/running/</guid>
+      <guid>/tags/running/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>rberenguel.github.io/tags/teaching/</link>
+      <link>/tags/teaching/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/teaching/</guid>
+      <guid>/tags/teaching/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>rberenguel.github.io/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iceland2010</title>
-      <link>rberenguel.github.io/tags/iceland2010/</link>
+      <link>/tags/iceland2010/</link>
       <pubDate>Tue, 21 Jun 2011 09:45:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/iceland2010/</guid>
+      <guid>/tags/iceland2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Downloads</title>
-      <link>rberenguel.github.io/tags/downloads/</link>
+      <link>/tags/downloads/</link>
       <pubDate>Fri, 17 Jun 2011 00:05:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/downloads/</guid>
+      <guid>/tags/downloads/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NanoNote</title>
-      <link>rberenguel.github.io/tags/nanonote/</link>
+      <link>/tags/nanonote/</link>
       <pubDate>Sun, 13 Mar 2011 13:50:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/nanonote/</guid>
+      <guid>/tags/nanonote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Irish</title>
-      <link>rberenguel.github.io/tags/irish/</link>
+      <link>/tags/irish/</link>
       <pubDate>Fri, 11 Mar 2011 21:50:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/irish/</guid>
+      <guid>/tags/irish/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Focused Interviews</title>
-      <link>rberenguel.github.io/tags/focused-interviews/</link>
+      <link>/tags/focused-interviews/</link>
       <pubDate>Wed, 16 Feb 2011 12:15:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/focused-interviews/</guid>
+      <guid>/tags/focused-interviews/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gaelic</title>
-      <link>rberenguel.github.io/tags/gaelic/</link>
+      <link>/tags/gaelic/</link>
       <pubDate>Sat, 12 Feb 2011 16:15:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/gaelic/</guid>
+      <guid>/tags/gaelic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Islensk</title>
-      <link>rberenguel.github.io/tags/islensk/</link>
+      <link>/tags/islensk/</link>
       <pubDate>Fri, 21 Jan 2011 00:10:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/islensk/</guid>
+      <guid>/tags/islensk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Origami</title>
-      <link>rberenguel.github.io/tags/origami/</link>
+      <link>/tags/origami/</link>
       <pubDate>Sat, 08 Jan 2011 22:30:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/origami/</guid>
+      <guid>/tags/origami/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pyrography</title>
-      <link>rberenguel.github.io/tags/pyrography/</link>
+      <link>/tags/pyrography/</link>
       <pubDate>Mon, 27 Dec 2010 21:45:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/pyrography/</guid>
+      <guid>/tags/pyrography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Places</title>
-      <link>rberenguel.github.io/tags/places/</link>
+      <link>/tags/places/</link>
       <pubDate>Wed, 01 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/places/</guid>
+      <guid>/tags/places/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Soccer</title>
-      <link>rberenguel.github.io/tags/soccer/</link>
+      <link>/tags/soccer/</link>
       <pubDate>Sun, 13 Jun 2010 21:15:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/soccer/</guid>
+      <guid>/tags/soccer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cooking</title>
-      <link>rberenguel.github.io/tags/cooking/</link>
+      <link>/tags/cooking/</link>
       <pubDate>Tue, 08 Jun 2010 18:40:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/cooking/</guid>
+      <guid>/tags/cooking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gcal</title>
-      <link>rberenguel.github.io/tags/gcal/</link>
+      <link>/tags/gcal/</link>
       <pubDate>Sat, 24 Apr 2010 16:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/gcal/</guid>
+      <guid>/tags/gcal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CJuicer</title>
-      <link>rberenguel.github.io/tags/cjuicer/</link>
+      <link>/tags/cjuicer/</link>
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/cjuicer/</guid>
+      <guid>/tags/cjuicer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PostScript</title>
-      <link>rberenguel.github.io/tags/postscript/</link>
+      <link>/tags/postscript/</link>
       <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/postscript/</guid>
+      <guid>/tags/postscript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Karate</title>
-      <link>rberenguel.github.io/tags/karate/</link>
+      <link>/tags/karate/</link>
       <pubDate>Tue, 19 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/karate/</guid>
+      <guid>/tags/karate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plants</title>
-      <link>rberenguel.github.io/tags/plants/</link>
+      <link>/tags/plants/</link>
       <pubDate>Wed, 17 Sep 2008 22:28:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/tags/plants/</guid>
+      <guid>/tags/plants/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Movies</title>
-      <link>rberenguel.github.io/tags/movies/</link>
+      <link>/tags/movies/</link>
       <pubDate>Sat, 01 Dec 2007 20:53:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/tags/movies/</guid>
+      <guid>/tags/movies/</guid>
       <description></description>
     </item>
     

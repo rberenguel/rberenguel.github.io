@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TLA&#43; on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/tla&#43;/</link>
+    <link>/tags/tla&#43;/</link>
     <description>Recent content in TLA&#43; on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 May 2019 11:48:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/tla+/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/tla+/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#14 Readings of the week</title>
-      <link>rberenguel.github.io/2019/05/201914-readings-of-week.html/</link>
+      <link>/2019/05/201914-readings-of-week.html/</link>
       <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/201914-readings-of-week.html/</guid>
+      <guid>/2019/05/201914-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-11 Readings of the week</title>
-      <link>rberenguel.github.io/2019/04/2019-11-readings-of-week.html/</link>
+      <link>/2019/04/2019-11-readings-of-week.html/</link>
       <pubDate>Sun, 28 Apr 2019 17:39:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/04/2019-11-readings-of-week.html/</guid>
+      <guid>/2019/04/2019-11-readings-of-week.html/</guid>
       <description>Software engineering, Spark, history, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
 Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almost a year (on my suggestion). I&amp;rsquo;m not super-happy with it, and testing it is one of the pain points.</description>
     </item>
     
     <item>
       <title>2019-7 Readings of the week</title>
-      <link>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</link>
+      <link>/2019/02/2019-7-readings-of-week.html/</link>
       <pubDate>Tue, 26 Feb 2019 22:54:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</guid>
+      <guid>/2019/02/2019-7-readings-of-week.html/</guid>
       <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-3 Readings of the week</title>
-      <link>rberenguel.github.io/2019/01/2019-3-readings-of-week.html/</link>
+      <link>/2019/01/2019-3-readings-of-week.html/</link>
       <pubDate>Sun, 27 Jan 2019 20:01:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2019-3-readings-of-week.html/</guid>
+      <guid>/2019/01/2019-3-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</link>
+      <link>/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2018: Year in Review</title>
-      <link>rberenguel.github.io/2019/01/2018-year-in-review.html/</link>
+      <link>/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2018-year-in-review.html/</guid>
+      <guid>/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     

@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emacs on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/emacs/</link>
+    <link>/tags/emacs/</link>
     <description>Recent content in emacs on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 May 2019 23:41:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LSP for Python and Scala</title>
-      <link>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</link>
+      <link>/2019/05/lsp-for-python-and-scala.html/</link>
       <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</guid>
+      <guid>/2019/05/lsp-for-python-and-scala.html/</guid>
       <description>If you have have known me for any length of time you&amp;rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.</description>
     </item>
     
     <item>
       <title>2019#13 Readings of the week</title>
-      <link>rberenguel.github.io/2019/05/201913-readings-of-week.html/</link>
+      <link>/2019/05/201913-readings-of-week.html/</link>
       <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/201913-readings-of-week.html/</guid>
+      <guid>/2019/05/201913-readings-of-week.html/</guid>
       <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>gtags (GNU global) in emacs for Scala</title>
-      <link>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
+      <link>/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
       <pubDate>Thu, 09 May 2019 17:27:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
+      <guid>/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
       <description>&lt;p&gt;As you may know, I’m a heavy &lt;a href=&#34;https://www.mostlymaths.net/search/label/emacs&#34;&gt;emacs&lt;/a&gt; user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-7 Readings of the week</title>
-      <link>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</link>
+      <link>/2019/02/2019-7-readings-of-week.html/</link>
       <pubDate>Tue, 26 Feb 2019 22:54:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</guid>
+      <guid>/2019/02/2019-7-readings-of-week.html/</guid>
       <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-1 Readings of the week</title>
-      <link>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</link>
+      <link>/2019/01/2019-1-readings-of-week.html/</link>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</guid>
+      <guid>/2019/01/2019-1-readings-of-week.html/</guid>
       <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2017: Year in Review</title>
-      <link>rberenguel.github.io/2018/01/2017-year-in-review.html/</link>
+      <link>/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2018/01/2017-year-in-review.html/</guid>
+      <guid>/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>More emacs configuration tweaks (multiple-cursor on click, minimap, code folding, ensime eval overlays)</title>
-      <link>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</link>
+      <link>/2016/09/more-emacs-configuration-tweaks.html/</link>
       <pubDate>Sun, 11 Sep 2016 17:34:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</guid>
+      <guid>/2016/09/more-emacs-configuration-tweaks.html/</guid>
       <description>At Affectv we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&amp;hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&amp;rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.
 Click for multiple-cursors I saw this on Jordi&amp;rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so.</description>
     </item>
     
     <item>
       <title>Moving from Emacs to Spacemacs</title>
-      <link>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</link>
+      <link>/2016/08/moving-from-emacs-to-spacemacs.html/</link>
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
+      <guid>/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
       <description>A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
 In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs.</description>
     </item>
     
     <item>
       <title>SyncTeX and pdf-view-mode for emacs</title>
-      <link>rberenguel.github.io/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
+      <link>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
+      <guid>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
       <description>Or, destiny is cruel
  Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.</description>
     </item>
     
     <item>
       <title>Using QGIS to create a custom map</title>
-      <link>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</link>
+      <link>/2015/06/using-qgis-to-create-custom-map.html/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</guid>
+      <guid>/2015/06/using-qgis-to-create-custom-map.html/</guid>
       <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     
     <item>
       <title>The Mandelbrot set in one line of APL</title>
-      <link>rberenguel.github.io/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</link>
+      <link>/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
+      <guid>/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
 
 ⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
@@ -118,20 +118,20 @@ In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdq
     
     <item>
       <title>Extensibility in the Acme text editor</title>
-      <link>rberenguel.github.io/2013/03/extensibility-programming-acme-text-editor.html/</link>
+      <link>/2013/03/extensibility-programming-acme-text-editor.html/</link>
       <pubDate>Sat, 09 Mar 2013 18:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2013/03/extensibility-programming-acme-text-editor.html/</guid>
+      <guid>/2013/03/extensibility-programming-acme-text-editor.html/</guid>
       <description>Text editors. You hate them or love them. Praise them with religious zeal, and attack them with the same power. I&amp;rsquo;ve been an emacs user for the last 8 years, getting as deep as I could without checking the source. And the past few months I have started using evil-mode in emacs, to get some taste of vim in my daily editing (mostly text objects.)
 There&amp;rsquo;s still a third contestant in editor-land, for me.</description>
     </item>
     
     <item>
       <title>Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</title>
-      <link>rberenguel.github.io/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
+      <link>/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
       <pubDate>Fri, 22 Feb 2013 18:28:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2013/02/creating-new-text-objects-in-evil-mode.html/</guid>
+      <guid>/2013/02/creating-new-text-objects-in-evil-mode.html/</guid>
       <description>The links to Practical Vim are affiliate links to Amazon. Beware!
 So&amp;hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&amp;rsquo;m an emacs guy, so the main question is why?
 I love knowing many tools.</description>
@@ -139,30 +139,30 @@ I love knowing many tools.</description>
     
     <item>
       <title>Version Control: Started using git and github (and how to set-up a remote git server)</title>
-      <link>rberenguel.github.io/2012/09/using-git-and-setting-remote-git-server.html/</link>
+      <link>/2012/09/using-git-and-setting-remote-git-server.html/</link>
       <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2012/09/using-git-and-setting-remote-git-server.html/</guid>
+      <guid>/2012/09/using-git-and-setting-remote-git-server.html/</guid>
       <description>The Octocat, Github&amp;rsquo;s logo
 It&amp;rsquo;s been almost 6 years since I used some kind of revision control system. Back then I wasn&amp;rsquo;t sure about which I wanted to use&amp;hellip; I settled with RCS, the father of them all. RCS was structurally very simple, with text-based (human-readable) delta files. I liked that. I had all my code and TeX files under revision control, but then I started using more than one computer and it got out of hand very quickly (using RCS or CVS in Windows was quite tricky and had user and encoding problems.</description>
     </item>
     
     <item>
       <title>Editor Magic: emacs, vim, acme and the return key</title>
-      <link>rberenguel.github.io/2012/09/editor-magic-emacs-vim-acme-and-return.html/</link>
+      <link>/2012/09/editor-magic-emacs-vim-acme-and-return.html/</link>
       <pubDate>Sun, 23 Sep 2012 11:02:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2012/09/editor-magic-emacs-vim-acme-and-return.html/</guid>
+      <guid>/2012/09/editor-magic-emacs-vim-acme-and-return.html/</guid>
       <description>Glenda, the Plan 9 bunny. Image copyrighted by Lucent Technologies, hosted by Wikimedia Commons and posted here for information purposes
 A few months ago I wrote about how I&amp;rsquo;m using vim in my ipad. You know, I&amp;rsquo;m an emacs guy, just started writing my own (useful) stuff to improve it. Recently I finished gnusnotes.el, a package which allows you to easily add notes to emails. Of course, before this I had already written emacs code, just that it was only for me.</description>
     </item>
     
     <item>
       <title>Adding Notes to Emails in Gnus (in Summary View)</title>
-      <link>rberenguel.github.io/2012/08/adding-notes-to-emails-in-gnus-in.html/</link>
+      <link>/2012/08/adding-notes-to-emails-in-gnus-in.html/</link>
       <pubDate>Wed, 01 Aug 2012 23:21:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2012/08/adding-notes-to-emails-in-gnus-in.html/</guid>
+      <guid>/2012/08/adding-notes-to-emails-in-gnus-in.html/</guid>
       <description>Sensitive information blanked
 The gnusnotes.el package, with delete and edit capabilities is now available in the marmalade package repository. This post just explains why, how and what (code at the end, too)
 Last month I switched email clients (for the 4th time in the past year.) I&amp;rsquo;ve passed through gnus, Thunderbird, mail.app and settled with Sparrow. Just 2 days before Sparrow was bought by Google I left for gnus (lucky moment!</description>
@@ -170,10 +170,10 @@ Last month I switched email clients (for the 4th time in the past year.) I&amp;r
     
     <item>
       <title>Back to gnus (emacs mail reader)</title>
-      <link>rberenguel.github.io/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
+      <link>/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
       <pubDate>Sat, 07 Jul 2012 20:50:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
+      <guid>/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
 I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
@@ -181,29 +181,29 @@ I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wa
     
     <item>
       <title>Learning to use vim in my iPad (even if I&#39;m an emacs geek)</title>
-      <link>rberenguel.github.io/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
+      <link>/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
+      <guid>/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
       <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&amp;rsquo; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
     </item>
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Using Taskwarrior Instead Of Emacs&#43;Org Mode For To-Do And Appointment Tracking</title>
-      <link>rberenguel.github.io/2011/03/using-taskwarrior-instead-of-emacsorg.html/</link>
+      <link>/2011/03/using-taskwarrior-instead-of-emacsorg.html/</link>
       <pubDate>Sun, 13 Mar 2011 13:50:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/03/using-taskwarrior-instead-of-emacsorg.html/</guid>
+      <guid>/2011/03/using-taskwarrior-instead-of-emacsorg.html/</guid>
       <description>One of my fractal images
 
 I have a confession to make: I&amp;rsquo;m not using emacs+org mode to keep my to-do list and appointments. What? The same emacs junkie that used emacs for (almost) everything last December gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.</description>
@@ -211,10 +211,10 @@ I have a confession to make: I&amp;rsquo;m not using emacs+org mode to keep my t
     
     <item>
       <title>Emacs 30 Day Challenge: Get the latest gnus to improve speed</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-get-latest-gnus.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-get-latest-gnus.html/</link>
       <pubDate>Thu, 30 Dec 2010 13:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-get-latest-gnus.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-get-latest-gnus.html/</guid>
       <description>The gnus logo,
 from gnus homepage
 Ever since my first post of the emacs 30 Day Challenge, I was warned about gnus slowness. A lot of comments in reddit pointed to this, and suggested using wanderlust or installing a local IMAP server (like dovecot or notmuch) to speed up the IMAP back-end (search, retrieval and processing), while also allowing for offline reading.
@@ -223,10 +223,10 @@ The main drawback was keeping it nicely cross-platform.</description>
     
     <item>
       <title>The emacs 30 Day Challenge: A glimpse of BBDB, The Insidious Big Brother Database and gnus</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html/</link>
       <pubDate>Tue, 21 Dec 2010 22:20:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html/</guid>
       <description>Keep your contacts
 under control
 Bbdb stands for The Insidious Big Brother Database, and is a very powerful contact book for emacs. It holds names, emails, aliases and other information and has good integration with gnus, wanderlust and vm (view mail). In my case, I have only checked gnus integration which is indeed pretty good.
@@ -235,10 +235,10 @@ This is the third installment in the set of posts for the emacs 30 Day Challenge
     
     <item>
       <title>The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
       <pubDate>Sat, 11 Dec 2010 20:10:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-using-gnus-to.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-using-gnus-to.html/</guid>
       <description>The gnus logo,
 from gnus homepage
 When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&amp;rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.</description>
@@ -246,10 +246,10 @@ When the time to choose a mail reader for emacs came, as part of my emacs 30 Day
     
     <item>
       <title>Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets</title>
-      <link>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</link>
+      <link>/2010/12/commented-version-of-latex-file-to.html/</link>
       <pubDate>Thu, 09 Dec 2010 14:20:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</guid>
+      <guid>/2010/12/commented-version-of-latex-file-to.html/</guid>
       <description>Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
 The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
 \\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language).</description>
@@ -257,20 +257,20 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
     
     <item>
       <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <link>/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
       <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
 Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
     </item>
     
     <item>
       <title>The Emacs 30 Day Challenge</title>
-      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge.html/</link>
+      <link>/2010/12/emacs-30-day-challenge.html/</link>
       <pubDate>Wed, 01 Dec 2010 00:05:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge.html/</guid>
+      <guid>/2010/12/emacs-30-day-challenge.html/</guid>
       <description>From
 The Design of the Emacs Logo
 As you may already know, emacs is more than a (cross-platform) text editor. Some say that it is like a whole operating system (and some devil worshippers say that it lacks a good text editor&amp;hellip;). For the next 30 days (starting December 1, 2010) I&amp;rsquo;ll check it as well as I can. I will work just with emacs.
@@ -279,19 +279,19 @@ You can check the challenge updates below:</description>
     
     <item>
       <title>Debugging with emacs&#43;valgrind</title>
-      <link>rberenguel.github.io/2010/02/debugging-with-emacsvalgrind.html/</link>
+      <link>/2010/02/debugging-with-emacsvalgrind.html/</link>
       <pubDate>Sun, 28 Feb 2010 20:37:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/02/debugging-with-emacsvalgrind.html/</guid>
+      <guid>/2010/02/debugging-with-emacsvalgrind.html/</guid>
       <description>The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs+gdb to debug segmentation faults and memory leaks&amp;hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</description>
     </item>
     
     <item>
       <title>Part of iPad</title>
-      <link>rberenguel.github.io/2010/01/part-of-ipad.html/</link>
+      <link>/2010/01/part-of-ipad.html/</link>
       <pubDate>Sun, 31 Jan 2010 19:40:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/01/part-of-ipad.html/</guid>
+      <guid>/2010/01/part-of-ipad.html/</guid>
       <description>I got linked to Ipad&amp;rsquo;s &amp;ldquo;history&amp;rdquo;: Someone on MetaFilter posted a link to my emacs on iPod blog post in the thread about the launch of Apple&amp;rsquo;s iPad.
 You may also like
 ParseList(ScrambleList(Relateds(Linux,iPod,Mac,emacs)),5)</description>
@@ -299,10 +299,10 @@ ParseList(ScrambleList(Relateds(Linux,iPod,Mac,emacs)),5)</description>
     
     <item>
       <title>Syncing iPod&#39;s vMac and Linux: emacs on iPod Touch</title>
-      <link>rberenguel.github.io/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</link>
+      <link>/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</link>
       <pubDate>Sat, 02 Jan 2010 00:01:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</guid>
+      <guid>/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</guid>
       <description>Using emacs on the go in your iPod Touch / iPhone Maybe you remember a previous post on installing vMac, a Mac Plus emulator for the iPod Touch. I did it just for the geek factor&amp;hellip; and for being able to edit things with Emacs. I have emacs installed:
 
 But what&amp;rsquo;s the use of emacs, without files to edit? It didn&amp;rsquo;t bother me&amp;hellip; at first. Keep on reading for how to keep in sync files edited inside the vMac emacs and files in your Linux box, along with the &amp;ldquo;why should I use emacs in my iPod/iPhone?</description>
@@ -310,59 +310,59 @@ But what&amp;rsquo;s the use of emacs, without files to edit? It didn&amp;rsquo;
     
     <item>
       <title>RCS &amp; SVN: Version control</title>
-      <link>rberenguel.github.io/2009/12/rcs-svn-version-control.html/</link>
+      <link>/2009/12/rcs-svn-version-control.html/</link>
       <pubDate>Thu, 17 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/12/rcs-svn-version-control.html/</guid>
+      <guid>/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
 A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
       <title>Retro on iPod Touch (1): Mini vMac</title>
-      <link>rberenguel.github.io/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</link>
+      <link>/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</link>
       <pubDate>Thu, 19 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</guid>
+      <guid>/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</guid>
       <description>A few days ago I jailbroke my iPod touch. Just for the geek factor, first, as I thought I could get a C compiler on it. I can&amp;rsquo;t yet, so I just have it jailbreaken for a few applications. I&amp;rsquo;ll start my review for a long time loved application in Linux and Mac: Mini vMac.Mini vMac is a hardware emulator, which emulates a whole Mac Plus from the eighties. You just need a real Mac ROM, from a Mac you or someone you know owns.</description>
     </item>
     
     <item>
       <title>mg &amp; Zile: quick emacs in the command line</title>
-      <link>rberenguel.github.io/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
+      <link>/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
       <pubDate>Tue, 17 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
+      <guid>/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
       <description>From The Design of the Emacs Logo
 I guess you may already know I love the emacs text editor, and use it as often as I can to do almost everything I can with it. I even use it in my iPod touch, through minivMac. But there is a small niche where it was a pain: quick editing a file from the command line. Those times when you just want to open one file, change a line, save and close.</description>
     </item>
     
     <item>
       <title>Project: emacs fractal zoomer</title>
-      <link>rberenguel.github.io/2009/10/project-emacs-fractal-zoomer.html/</link>
+      <link>/2009/10/project-emacs-fractal-zoomer.html/</link>
       <pubDate>Sun, 11 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/10/project-emacs-fractal-zoomer.html/</guid>
+      <guid>/2009/10/project-emacs-fractal-zoomer.html/</guid>
       <description>I have several (really, a lot) of programs to compute different images for my article, amusement, anything. And all of them require a change-and-try approach for zooming. The first I wrote needed to be finished quickly&amp;hellip; so I just hard-coded in the source the parameters. And this program turned to be the basis for all others&amp;hellip; And now each zoom requires some calculations and recompile.
 A time ago I decided to do something about it.</description>
     </item>
     
     <item>
       <title>gdb &amp; CEDET &amp; ECB</title>
-      <link>rberenguel.github.io/2009/10/gdb-cedet-ecb.html/</link>
+      <link>/2009/10/gdb-cedet-ecb.html/</link>
       <pubDate>Mon, 05 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/10/gdb-cedet-ecb.html/</guid>
+      <guid>/2009/10/gdb-cedet-ecb.html/</guid>
       <description>Emacs fun, in other words. This weekend I&amp;rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&amp;hellip; I always miss on such matrix-here-matrix-there-solve-that.
 Today, after battling for an hour, I realized I missed the &amp;ldquo;intellisense&amp;rdquo; part of CEDET, and started to install it here in MacOs, and &amp;ldquo;there&amp;rdquo; in my netbook.</description>
     </item>
     
     <item>
       <title>Whistle control your computer (Linux&amp;Mac)</title>
-      <link>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</link>
+      <link>/2009/09/whistle-control-your-computer.html/</link>
       <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</guid>
+      <guid>/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
 Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
 Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
@@ -370,40 +370,40 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
     
     <item>
       <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
-      <link>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <link>/2009/09/quick-latex-ing-with-emacs.html/</link>
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <guid>/2009/09/quick-latex-ing-with-emacs.html/</guid>
       <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
     <item>
       <title>Calendars &amp; emacs</title>
-      <link>rberenguel.github.io/2009/09/calendars-emacs.html/</link>
+      <link>/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/calendars-emacs.html/</guid>
+      <guid>/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
 For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
       <title>AucTeX again</title>
-      <link>rberenguel.github.io/2009/09/auctex-again.html/</link>
+      <link>/2009/09/auctex-again.html/</link>
       <pubDate>Wed, 02 Sep 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/auctex-again.html/</guid>
+      <guid>/2009/09/auctex-again.html/</guid>
       <description>For a while I have been either not LaTeXing a lot, or not using AucTeX frequently. Strange indeed! But in July, while in Göttingen I wrote part of some lecture notes of one of the courses. And again, used auctex-preview in emacs to find errors in what I was writing.
 I can&amp;rsquo;t even tell how wonderful it is, to share the source with the images with the formulas. An image is worth more than a googol words.</description>
     </item>
     
     <item>
       <title>Back to work</title>
-      <link>rberenguel.github.io/2009/09/back-to-work.html/</link>
+      <link>/2009/09/back-to-work.html/</link>
       <pubDate>Tue, 01 Sep 2009 13:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/09/back-to-work.html/</guid>
+      <guid>/2009/09/back-to-work.html/</guid>
       <description>From flickr
 September is to months as Monday is to weekdays
 September is again here, like a new year in more than a sense. I have no new &amp;ldquo;New Year&amp;rsquo;s promises&amp;rdquo;, since the beginning of the year. In fact, most of the things I wanted to do are already done, on the way to be done or I gave up. Well, let&amp;rsquo;s summarize what I shall do these three months to end 2009</description>
@@ -411,20 +411,20 @@ September is again here, like a new year in more than a sense. I have no new &am
     
     <item>
       <title>Screenshot via command-line in Linux</title>
-      <link>rberenguel.github.io/2009/08/screenshot-via-command-line-in-linux.html/</link>
+      <link>/2009/08/screenshot-via-command-line-in-linux.html/</link>
       <pubDate>Mon, 17 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/08/screenshot-via-command-line-in-linux.html/</guid>
+      <guid>/2009/08/screenshot-via-command-line-in-linux.html/</guid>
       <description>Have you ever wondered how to take a screenshot remotely, via the command line in a Linux system? Here is a way to do it. At the bottom you can also find a script to move it to the root of your personal page (if you have) to open the screenshot in your browser.
 I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode for Emacs) in an emacs instance running in my office computer.</description>
     </item>
     
     <item>
       <title>Lavaurs algorithm</title>
-      <link>rberenguel.github.io/2009/08/lavaurs-algorithm.html/</link>
+      <link>/2009/08/lavaurs-algorithm.html/</link>
       <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/08/lavaurs-algorithm.html/</guid>
+      <guid>/2009/08/lavaurs-algorithm.html/</guid>
       <description>[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
 Top: Zoom a depth 13 Lavaurs chords, random colors
 Bottom: Depth 5 and depth 13 Lavaurs chords
@@ -434,10 +434,10 @@ The images doesn&amp;rsquo;t look like much, but the output of the program is ni
     
     <item>
       <title>Teleworking in August</title>
-      <link>rberenguel.github.io/2009/08/teleworking-in-august.html/</link>
+      <link>/2009/08/teleworking-in-august.html/</link>
       <pubDate>Wed, 05 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/08/teleworking-in-august.html/</guid>
+      <guid>/2009/08/teleworking-in-august.html/</guid>
       <description>Lavaurs algorithm on course
 Like almost every year, August comes with a lot of pending To Do lists&amp;hellip; This year, it is choking full, mostly of work related issues, and some unknotted threads waiting to be finished. And in two and a half weeks I&amp;rsquo;ll head for Paris, and then my &amp;ldquo;vacation&amp;rdquo; is over.
 Yesterday I wasted my morning: bought my orange belt, set up the external monitor for my netbook, configured the printer, fotocopied two pages of a book and drank an horchata with a friend.</description>
@@ -445,20 +445,20 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
     
     <item>
       <title>Two weeks, still loving Fluxbox</title>
-      <link>rberenguel.github.io/2009/08/two-weeks-still-loving-fluxbox.html/</link>
+      <link>/2009/08/two-weeks-still-loving-fluxbox.html/</link>
       <pubDate>Sat, 01 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/08/two-weeks-still-loving-fluxbox.html/</guid>
+      <guid>/2009/08/two-weeks-still-loving-fluxbox.html/</guid>
       <description>Two and a half weeks ago, I got a netbook and promptly installed Ubuntu, followed by Fluxbox (as already explained). And after two weeks of almost continued use, I like it even more than when I decided to use it. Some of the points I really enjoy (in no particular order).
  Strong keyboard shortcuts. As an emacs junkie as I am, I love keyboard shortcuts. And Fluxbox is incredibly flexible in defining or removing them: Even system-wide shortcuts are customizable.</description>
     </item>
     
     <item>
       <title>Acer Aspire One 8.9&#39; &#43; Ubuntu &#43; Fluxbox</title>
-      <link>rberenguel.github.io/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</link>
+      <link>/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</link>
       <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
+      <guid>/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
       <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
 
 
@@ -467,19 +467,19 @@ Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdqu
     
     <item>
       <title>Lisp raytracing, again</title>
-      <link>rberenguel.github.io/2009/06/lisp-raytracing-again.html/</link>
+      <link>/2009/06/lisp-raytracing-again.html/</link>
       <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/06/lisp-raytracing-again.html/</guid>
+      <guid>/2009/06/lisp-raytracing-again.html/</guid>
       <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
     </item>
     
     <item>
       <title>Productivity enhancers (or time wasting avoiders)</title>
-      <link>rberenguel.github.io/2009/05/productivity-enhancers-or-time-wasting.html/</link>
+      <link>/2009/05/productivity-enhancers-or-time-wasting.html/</link>
       <pubDate>Sat, 23 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/productivity-enhancers-or-time-wasting.html/</guid>
+      <guid>/2009/05/productivity-enhancers-or-time-wasting.html/</guid>
       <description>I have been using several productivy enhancers (or time-wasting avoiders) as of late. Although I find them quite useful, I wonder if I could find something even better.
 Think: I have already talked about think elsewhere. Think enables the user to focus on just one application, seeing nothing more. It is like the blinders of a horse to keep you from distracting.
 LeechBlock: A FireFox addon, which allows you to block certain sites at certain times of the week, or after a predetermined amount of time has been wasted there.</description>
@@ -487,20 +487,20 @@ LeechBlock: A FireFox addon, which allows you to block certain sites at certain 
     
     <item>
       <title>Extremely useful (mostly free) Mac applications</title>
-      <link>rberenguel.github.io/2009/05/extremely-useful-mostly-free-mac.html/</link>
+      <link>/2009/05/extremely-useful-mostly-free-mac.html/</link>
       <pubDate>Wed, 13 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/extremely-useful-mostly-free-mac.html/</guid>
+      <guid>/2009/05/extremely-useful-mostly-free-mac.html/</guid>
       <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
  Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
     </item>
     
     <item>
       <title>Nethack</title>
-      <link>rberenguel.github.io/2009/05/nethack.html/</link>
+      <link>/2009/05/nethack.html/</link>
       <pubDate>Sun, 03 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/05/nethack.html/</guid>
+      <guid>/2009/05/nethack.html/</guid>
       <description>I &amp;ldquo;discovered&amp;rdquo; Nethack a month or so ago, while being bored to death (after three unsuccessful attempts in proving something) in my office.
 
 Myself with my dog Hachi
@@ -510,19 +510,19 @@ I play the MacOs Tiles (or QT) version, which can be found in Nethack.org, confi
     
     <item>
       <title>How to create LaTeX booklets</title>
-      <link>rberenguel.github.io/2008/09/latex-booklets.html/</link>
+      <link>/2008/09/latex-booklets.html/</link>
       <pubDate>Thu, 18 Sep 2008 18:31:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2008/09/latex-booklets.html/</guid>
+      <guid>/2008/09/latex-booklets.html/</guid>
       <description>The easiest way to print a booklet out of any PDF If you are printing a lot of&amp;hellip; well, anything, sure you would love to make booklets out of what you print. If you happen to be a mathematician, you sure are printing lots of papers with more than 20 pages, which turn to 10 unmanageable pages when double-sided. But making a booklet allows you to turn them to just a little folded thing that you can read easier.</description>
     </item>
     
     <item>
       <title>Loving emacs&#43;org mode (&amp; auctex...)</title>
-      <link>rberenguel.github.io/2007/07/loving-emacsorg-mode-auctex.html/</link>
+      <link>/2007/07/loving-emacsorg-mode-auctex.html/</link>
       <pubDate>Wed, 11 Jul 2007 22:24:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2007/07/loving-emacsorg-mode-auctex.html/</guid>
+      <guid>/2007/07/loving-emacsorg-mode-auctex.html/</guid>
       <description>Obs: &amp;ldquo;C-Lletra lletra&amp;rdquo;vol dir Control+lletra seguit de lletra
 Fa temps ja vaig parlar sobre aquest editor. La decisió per passar-hi va sorgir cap a mitjans de la meva època com professor de càlcul, ja que volia un editor de text que funcionés tant en Linux com en Windows, així tot el que millores en el seu us es podia traduir d&amp;rsquo;un lloc a l&amp;rsquo;altre. Les opcions eren poques vi i emacs.</description>
     </item>

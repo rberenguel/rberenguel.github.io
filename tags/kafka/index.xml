@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kafka on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/kafka/</link>
+    <link>/tags/kafka/</link>
     <description>Recent content in Kafka on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2018 15:31:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2017: Year in Review</title>
-      <link>rberenguel.github.io/2018/01/2017-year-in-review.html/</link>
+      <link>/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2018/01/2017-year-in-review.html/</guid>
+      <guid>/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka</title>
-      <link>rberenguel.github.io/2016/10/apache-kafka-london-meetup-distributed.html/</link>
+      <link>/2016/10/apache-kafka-london-meetup-distributed.html/</link>
       <pubDate>Mon, 31 Oct 2016 21:37:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2016/10/apache-kafka-london-meetup-distributed.html/</guid>
+      <guid>/2016/10/apache-kafka-london-meetup-distributed.html/</guid>
       <description>This has been the first time I could attend the Apache Kafka meetup in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).
 I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Confluent (and author of I Heart Logs), so, basically, a Kafka top committer himself.</description>
     </item>

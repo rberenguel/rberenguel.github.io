@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Improve Yourself on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/improve-yourself/</link>
+    <link>/tags/improve-yourself/</link>
     <description>Recent content in Improve Yourself on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Dec 2011 21:29:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/improve-yourself/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/improve-yourself/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
-      <link>rberenguel.github.io/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <link>/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <guid>/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
       <description>Taken from Flickr
   In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
 This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
@@ -24,20 +24,20 @@ This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to shar
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Anki and Language Learning: The Spaced Repetition System</title>
-      <link>rberenguel.github.io/2011/05/anki-and-language-learning-spaced.html/</link>
+      <link>/2011/05/anki-and-language-learning-spaced.html/</link>
       <pubDate>Sat, 28 May 2011 18:50:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/05/anki-and-language-learning-spaced.html/</guid>
+      <guid>/2011/05/anki-and-language-learning-spaced.html/</guid>
       <description>From my cheap dictionary
 I first heard of spaced repetition software around 5 or 6 years ago, while browsing around the net. Read about it, found it unappealing and moved on. You know, there are times when you learn about something and dismiss it as not necessary&amp;hellip; and after a while you are lead into it again to find it is wonderful. This is one of such instances.
 I have only written two highly visited posts about languages: The Language Switch and How to Train Your Brain to Flip to a New Language (in Bitesize Irish Gaelic, it also appeared in Hacker Monthly, April 2011) and a lot of the commenters suggested me using Anki, Mnemosyne or Supermemo.</description>
@@ -45,10 +45,10 @@ I have only written two highly visited posts about languages: The Language Switc
     
     <item>
       <title>Building Your Memory Palace Collection</title>
-      <link>rberenguel.github.io/2011/05/building-your-memory-palace-collection.html/</link>
+      <link>/2011/05/building-your-memory-palace-collection.html/</link>
       <pubDate>Sun, 08 May 2011 13:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/05/building-your-memory-palace-collection.html/</guid>
+      <guid>/2011/05/building-your-memory-palace-collection.html/</guid>
       <description>Picture courtesy of Shanidar
 Do you want to have very good memory? I do, in fact I&amp;rsquo;ve been interested in it since my school days. There are some techniques that exploit your brain&amp;rsquo;s natural power, and the one I&amp;rsquo;m covering here is the memory palace technique.
 I have already written about the memory palace memorisation technique (go and read the previous post if you don&amp;rsquo;t know what I&amp;rsquo;m talking about), but I did not cover a very important point there: Where can you find memory palaces to use in your memorisation?</description>
@@ -56,10 +56,10 @@ I have already written about the memory palace memorisation technique (go and re
     
     <item>
       <title>Remembering Facts: Using Mental Associative Chains</title>
-      <link>rberenguel.github.io/2011/04/remembering-facts-using-mental.html/</link>
+      <link>/2011/04/remembering-facts-using-mental.html/</link>
       <pubDate>Tue, 05 Apr 2011 21:55:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/04/remembering-facts-using-mental.html/</guid>
+      <guid>/2011/04/remembering-facts-using-mental.html/</guid>
       <description>An image can help your memory&amp;hellip;
 For how long?
 This is a method I use to complement the memory palace technique to remember facts, either historical, about people or any other subject. It is pretty simple and follows the same principles as the memory palace: you need to make up bizarre images. To memorise facts we just need to attach keys to each fact, and link them to the subject or person we are considering.</description>
@@ -67,10 +67,10 @@ This is a method I use to complement the memory palace technique to remember fac
     
     <item>
       <title>Learn to Remember Everything: The Memory Palace Technique</title>
-      <link>rberenguel.github.io/2011/03/learn-to-remember-everything-memory.html/</link>
+      <link>/2011/03/learn-to-remember-everything-memory.html/</link>
       <pubDate>Sun, 27 Mar 2011 21:02:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2011/03/learn-to-remember-everything-memory.html/</guid>
+      <guid>/2011/03/learn-to-remember-everything-memory.html/</guid>
       <description>Picture courtesy of Shanidar
 utmx_section(&amp;ldquo;SubscribingMemoryPalace&amp;rdquo;) I&amp;rsquo;m working on an ebook about memory techniques. If you are interested in knowing when it is ready, be sure to subscribe to our newsletter! You can also browse the best books I have seen on memory techniques and related areas here.
 In this post I&amp;rsquo;ll teach you how to have perfect recall of lists of items. Length is not much of an issue, it can be your shopping list if 10 items or it can be a list with 50, 100 or even 1000.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/c/</link>
+    <link>/tags/c/</link>
     <description>Recent content in C on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Apr 2018 22:11:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How does the &#39;in&#39; keyword work in Python?</title>
-      <link>rberenguel.github.io/2018/04/how-does-in-keyword-work-in-python.html/</link>
+      <link>/2018/04/how-does-in-keyword-work-in-python.html/</link>
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2018/04/how-does-in-keyword-work-in-python.html/</guid>
+      <guid>/2018/04/how-does-in-keyword-work-in-python.html/</guid>
       <description>A subtitle to this post could be More yak shaving
 A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?</description>
     </item>

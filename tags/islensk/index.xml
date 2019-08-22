@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Islensk on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/islensk/</link>
+    <link>/tags/islensk/</link>
     <description>Recent content in Islensk on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Jan 2011 00:10:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/islensk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/islensk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Language Switch (or how my brain seems to work when learning languages)</title>
-      <link>rberenguel.github.io/2011/01/language-switch-or-how-my-brain-seems.html/</link>
+      <link>/2011/01/language-switch-or-how-my-brain-seems.html/</link>
       <pubDate>Fri, 21 Jan 2011 00:10:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2011/01/language-switch-or-how-my-brain-seems.html/</guid>
+      <guid>/2011/01/language-switch-or-how-my-brain-seems.html/</guid>
       <description>From my cheap dictionary
 I love learning languages. Since I picked my first Teach yourself English (in Spanish) from my grandparents place when I was 10 years old, I have been fascinated by languages and language learning, first human languages and then also by computer languages. Aside from English, Spanish and Catalan I can defend myself in German and French (enough to get directions and keep simple conversations up, although the last time I was in Germany all Germans I talked to said I could keep up pretty well&amp;hellip; Sure they are polite!</description>
     </item>
     
     <item>
       <title>Sleeping Where the Sun Never Sets and Other Oddities</title>
-      <link>rberenguel.github.io/2010/10/sleeping-where-sun-never-sets-and-other.html/</link>
+      <link>/2010/10/sleeping-where-sun-never-sets-and-other.html/</link>
       <pubDate>Sat, 09 Oct 2010 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/10/sleeping-where-sun-never-sets-and-other.html/</guid>
+      <guid>/2010/10/sleeping-where-sun-never-sets-and-other.html/</guid>
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the sixth (and last) post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
@@ -36,10 +36,10 @@ ____Iceland&amp;rsquo;s Water: the Best Water in the World____</description>
     
     <item>
       <title>Shopping in Iceland</title>
-      <link>rberenguel.github.io/2010/09/shopping-in-iceland.html/</link>
+      <link>/2010/09/shopping-in-iceland.html/</link>
       <pubDate>Sun, 26 Sep 2010 20:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/09/shopping-in-iceland.html/</guid>
+      <guid>/2010/09/shopping-in-iceland.html/</guid>
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the fifth post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
@@ -49,10 +49,10 @@ ____Iceland&amp;rsquo;s Water: the Best Water in the World____</description>
     
     <item>
       <title>Iceland&#39;s Water: the Best Water in the World</title>
-      <link>rberenguel.github.io/2010/09/icelands-water-best-water-in-world.html/</link>
+      <link>/2010/09/icelands-water-best-water-in-world.html/</link>
       <pubDate>Sat, 18 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/09/icelands-water-best-water-in-world.html/</guid>
+      <guid>/2010/09/icelands-water-best-water-in-world.html/</guid>
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the fourth post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
@@ -62,10 +62,10 @@ If I had to gamble before going to Iceland, I would have thought tap water would
     
     <item>
       <title>How Is Iceland&#39;s Weather?</title>
-      <link>rberenguel.github.io/2010/09/how-is-icelands-weather.html/</link>
+      <link>/2010/09/how-is-icelands-weather.html/</link>
       <pubDate>Sat, 11 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/09/how-is-icelands-weather.html/</guid>
+      <guid>/2010/09/how-is-icelands-weather.html/</guid>
       <description>The Sun street
 As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the third post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
@@ -75,10 +75,10 @@ Weather is not as bad as you may expect.</description>
     
     <item>
       <title>Road Trip Through Iceland</title>
-      <link>rberenguel.github.io/2010/09/road-trip-through-iceland.html/</link>
+      <link>/2010/09/road-trip-through-iceland.html/</link>
       <pubDate>Mon, 06 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/09/road-trip-through-iceland.html/</guid>
+      <guid>/2010/09/road-trip-through-iceland.html/</guid>
       <description>re
 Iceland is one of the few places
 where you can park inside a
@@ -88,29 +88,29 @@ As you may remember, Laia and me spent three weeks in Iceland for holidays two m
     
     <item>
       <title>Eating in Iceland (if you are not an Icelander)</title>
-      <link>rberenguel.github.io/2010/08/eating-in-iceland-if-you-are-not.html/</link>
+      <link>/2010/08/eating-in-iceland-if-you-are-not.html/</link>
       <pubDate>Tue, 31 Aug 2010 19:40:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/08/eating-in-iceland-if-you-are-not.html/</guid>
+      <guid>/2010/08/eating-in-iceland-if-you-are-not.html/</guid>
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the first post in the series Things you should read about before travelling to Iceland. Be sure to stay tuned for the following posts!
 First I would like to say you one thing about Iceland&amp;rsquo;s food: don&amp;rsquo;t be scared! They don&amp;rsquo;t eat anything odd, except for a few national foods which are not that usual: hákari (rotten shark meat) and hrutspungar (pickled ram testicles).</description>
     </item>
     
     <item>
       <title>Things You Should Read before Travelling to Iceland</title>
-      <link>rberenguel.github.io/2010/08/things-you-should-read-before.html/</link>
+      <link>/2010/08/things-you-should-read-before.html/</link>
       <pubDate>Fri, 27 Aug 2010 16:30:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/08/things-you-should-read-before.html/</guid>
+      <guid>/2010/08/things-you-should-read-before.html/</guid>
       <description>Interesting things to know before going to Iceland As you may remember, Laia and myself went to Iceland for a 2 and half weeks trip last June-July. It was a wonderful experience, managed by the wonderful (and helpful!) people at Nordic Visitor. This is the first post in a series named Things you should read before travelling to Iceland. In these posts I will cover the following (I will add links to the individual posts here as I write them, bookmark this page!</description>
     </item>
     
     <item>
       <title>The 100 most common words in Icelandic, automatically generated from Wikipedia</title>
-      <link>rberenguel.github.io/2010/05/100-most-common-words-in-icelandic-more.html/</link>
+      <link>/2010/05/100-most-common-words-in-icelandic-more.html/</link>
       <pubDate>Thu, 20 May 2010 14:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
+      <guid>/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
       <description>Scroll down to download the file if you want to skip the how I did it part!
 As you may already know, I&amp;rsquo;m travelling to Iceland this July, and started learning Icelandic a few months ago. It advances slowly but firmly, but I found a problem: when you are self-learning a new language, an invaluable tool is a list of most common words. I was able to find the 100 most common words, from a research paper (Íslenskur Orðasjóður - Building a large icelandic corpus).</description>
     </item>

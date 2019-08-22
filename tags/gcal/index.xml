@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gcal on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/gcal/</link>
+    <link>/tags/gcal/</link>
     <description>Recent content in Gcal on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Apr 2010 16:00:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/gcal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/gcal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>sed (stream editor) to colorise script output</title>
-      <link>rberenguel.github.io/2010/04/sed-stream-editor-to-colorise-script.html/</link>
+      <link>/2010/04/sed-stream-editor-to-colorise-script.html/</link>
       <pubDate>Sat, 24 Apr 2010 16:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/04/sed-stream-editor-to-colorise-script.html/</guid>
+      <guid>/2010/04/sed-stream-editor-to-colorise-script.html/</guid>
       <description>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &amp;ndash;color In this post I show you a script that does it, in a simple way. I don&amp;rsquo;t have a full range of colors implemented, but you can find all here.
 
 This is the sed-processed output given by Gcal. The original source looks like
@@ -26,10 +26,10 @@ As you can see, I used as identifiers XML-like expressions.</description>
     
     <item>
       <title>Gcal the ultra-powerful command line GNU calendar</title>
-      <link>rberenguel.github.io/2010/04/gcal-ultra-powerful-command-line-gnu.html/</link>
+      <link>/2010/04/gcal-ultra-powerful-command-line-gnu.html/</link>
       <pubDate>Thu, 15 Apr 2010 16:00:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2010/04/gcal-ultra-powerful-command-line-gnu.html/</guid>
+      <guid>/2010/04/gcal-ultra-powerful-command-line-gnu.html/</guid>
       <description>The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&amp;rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
 The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hive on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/hive/</link>
+    <link>/tags/hive/</link>
     <description>Recent content in Hive on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Feb 2019 23:47:00 +0100</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache Hive and java.lang.ClassCastException on start</title>
-      <link>rberenguel.github.io/2019/02/apache-hive-and-javalangclasscastexcept.html/</link>
+      <link>/2019/02/apache-hive-and-javalangclasscastexcept.html/</link>
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
+      <guid>/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
       <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
     </item>
     

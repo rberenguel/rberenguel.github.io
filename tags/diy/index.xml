@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DIY on mostlymaths.net</title>
-    <link>rberenguel.github.io/tags/diy/</link>
+    <link>/tags/diy/</link>
     <description>Recent content in DIY on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Jun 2015 20:12:00 +0200</lastBuildDate>
     
-	<atom:link href="rberenguel.github.io/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/diy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using QGIS to create a custom map</title>
-      <link>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</link>
+      <link>/2015/06/using-qgis-to-create-custom-map.html/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2015/06/using-qgis-to-create-custom-map.html/</guid>
+      <guid>/2015/06/using-qgis-to-create-custom-map.html/</guid>
       <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     
     <item>
       <title>Find Search Engine Rankings... via the Command Line</title>
-      <link>rberenguel.github.io/2013/05/find-search-engine-rankings-via-command.html/</link>
+      <link>/2013/05/find-search-engine-rankings-via-command.html/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2013/05/find-search-engine-rankings-via-command.html/</guid>
+      <guid>/2013/05/find-search-engine-rankings-via-command.html/</guid>
       <description>Via pixelfrenzy@flickr
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&amp;rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</description>
@@ -33,10 +33,10 @@ Well, after this scary paragraph, lets get to the real meat. Which boils down to
     
     <item>
       <title>iHold</title>
-      <link>rberenguel.github.io/2009/11/ihold.html/</link>
+      <link>/2009/11/ihold.html/</link>
       <pubDate>Sun, 29 Nov 2009 00:01:00 +0100</pubDate>
       
-      <guid>rberenguel.github.io/2009/11/ihold.html/</guid>
+      <guid>/2009/11/ihold.html/</guid>
       <description>The free iPod stand  
 Right: middle line, left top line
 In this post I will explain how to recycle an old credit card to build a stand for your iPod touch / iPhone. You can choose from 3 designs, depending on your preferred inclination.
@@ -46,10 +46,10 @@ Here is what you will need:
     
     <item>
       <title>Easy paperback book binding how-to</title>
-      <link>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</link>
+      <link>/2009/04/easy-paperback-book-binding-how-to.html/</link>
       <pubDate>Thu, 09 Apr 2009 15:29:00 +0200</pubDate>
       
-      <guid>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</guid>
+      <guid>/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
 Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
