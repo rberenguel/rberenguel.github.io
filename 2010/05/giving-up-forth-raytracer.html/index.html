@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Giving up the Forth raytracer</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Giving up the Forth raytracer" />
+<meta property="og:description" content="Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.
+If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/05/giving-up-forth-raytracer.html/" />
+<meta property="article:published_time" content="2010-05-12T16:00:00+02:00" />
+<meta property="article:modified_time" content="2010-05-12T16:00:00+02:00" />
+<meta itemprop="name" content="Giving up the Forth raytracer">
+<meta itemprop="description" content="Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.
+If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:">
+
+
+<meta itemprop="datePublished" content="2010-05-12T16:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2010-05-12T16:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="295">
+
+
+
+<meta itemprop="keywords" content="Programming,Forth,LISP," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Giving up the Forth raytracer"/>
+<meta name="twitter:description" content="Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.
+If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:"/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Giving up the Forth raytracer</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-05-12T16:00:00&#43;02:00">May 12, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 295 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.</p>
+
+<p>If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:</p>
+
+<ol>
+<li>Code commenting: I almost forgot how the main loop was rolled</li>
+<li>Performance: ditch temporary image matrices and output straight RGB data. This means no antialiasing, out of the box without some tweaking. But I can tweak that with Monte Carlo methods</li>
+<li>New objects: Where are my triangles? I only have spheres. I need triangles, and triangle meshes.</li>
+
+<li><p>Triangle mesh importer: from a nice ASCII format generated by some open source program</p></li>
+
+<li><p>Transparency: My previous version had it, this new one, does not.</p></li>
+</ol>
+
+<p>With respect to Forth, <a href="http://www.reddit.com/r/Forth/comments/c2hlb/i_want_ideas_on_a_project_i_can_code_to_learn/">I asked the question on Reddit#Forth</a>, and from the answers, I&rsquo;ll probably switch the <a href="http://www.mostlymaths.net/2010/05/my-take-on-logical-mazes-part-1.html">Logical maze generator/solver</a> into a Forth program (looking at my code, maybe it is better suited to it, even), with an incorporated player. Then, if it is nice and playable, I can write a small JavaScript Forth interpreter (or even easier, use just some kind of intermediate layer to translate Forth into JavaScript) to be able to play it on a webpage.</p>
+
+<p>If you have any other suggestion for a Forth project, leave a comment here or in Reddit. Thanks!</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a><br />
+ParseList(ScrambleList(Relateds(Programming)),4)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/forth" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Forth</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/lisp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">LISP</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/04/approximating-images-with-randomly.html/">Approximating images with randomly placed translucent triangles, Take 1</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/forths-create-does-maybe-im-amazed.html/">Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/learning-forth-by-working-on-raytracer.html/">Learning Forth by working on a raytracer</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/abstract-triangles-in-lisp.html/">Abstract triangles in LISP</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/08/lavaurs-algorithm.html/">Lavaurs algorithm</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | 8 reasons for re-inventing the wheel as a programmer</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="8 reasons for re-inventing the wheel as a programmer" />
+<meta property="og:description" content="Has someone ever told you &ldquo;Don&rsquo;t re-invent the wheel&rdquo;? Again and again I read somewhere around the net that &rsquo;re-inventing the wheel&rsquo; is one of the worse errors a programmer can fall into. In fact, I&rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+But here, I advocate my pro&rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/" />
+<meta property="article:published_time" content="2010-03-26T20:55:00+01:00" />
+<meta property="article:modified_time" content="2010-03-26T20:55:00+01:00" />
+<meta itemprop="name" content="8 reasons for re-inventing the wheel as a programmer">
+<meta itemprop="description" content="Has someone ever told you &ldquo;Don&rsquo;t re-invent the wheel&rdquo;? Again and again I read somewhere around the net that &rsquo;re-inventing the wheel&rsquo; is one of the worse errors a programmer can fall into. In fact, I&rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+But here, I advocate my pro&rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.">
+
+
+<meta itemprop="datePublished" content="2010-03-26T20:55:00&#43;01:00" />
+<meta itemprop="dateModified" content="2010-03-26T20:55:00&#43;01:00" />
+<meta itemprop="wordCount" content="508">
+
+
+
+<meta itemprop="keywords" content="Programming,Linux,Thoughts," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="8 reasons for re-inventing the wheel as a programmer"/>
+<meta name="twitter:description" content="Has someone ever told you &ldquo;Don&rsquo;t re-invent the wheel&rdquo;? Again and again I read somewhere around the net that &rsquo;re-inventing the wheel&rsquo; is one of the worse errors a programmer can fall into. In fact, I&rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+But here, I advocate my pro&rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">8 reasons for re-inventing the wheel as a programmer</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-03-26T20:55:00&#43;01:00">March 26, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 508 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<h2 id="has-someone-ever-told-you-don-t-re-invent-the-wheel">Has someone ever told you &ldquo;<em>Don&rsquo;t re-invent the wheel</em>&rdquo;?</h2>
+
+<p>Again and again I read somewhere around the net that &rsquo;re-inventing the wheel&rsquo; is one of the worse errors a programmer can fall into. In fact, I&rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.</p>
+
+<p>But here, I advocate my pro&rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it. You can also read the follow-up: <a href="http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html">8 reader reasons for re-inventing the wheel as a programmer</a>.</p>
+
+<ol>
+<li><p>I don&rsquo;t like the default wheel color: Sometimes you need a specific type of algorithm, one that the &lsquo;library standard&rsquo; just does, without the bells and whistles you need. Writing your own version allows you to tweak it to suit your problem domain. Do it!</p></li>
+
+<li><p>I want a bigger wheel: What happens when the usual algorithm doesn&rsquo;t fit at all? When you need to write really context-specific code, working with generalistic libraries is impossible. Even worse, what happens when you are writing the specific library? Go ahead!</p></li>
+
+<li><p>I am a wheel engineer: if you are deep in the know-hows of the subject, re-inventing the wheel is a way to be sure of your complete knowledge of your domain of expertise. A kind of self-knowledge test. Test it!</p></li>
+
+<li><p>I want to know how does the wheel work: related to the previous item, but focused to amateurs on the subject. I feel this way quite often, and sometimes this has paid off in the long run. This can lead to spicing up a boring afternoon. Discover it!</p></li>
+
+<li><p>My wheel is better than your wheel: Pride. You can write it better, can&rsquo;t you? Closely related to the programmer virtues: laziness, impatience and <a href="http://en.wikipedia.org/wiki/Hubris">hubris</a>.(check <a href="http://www.hhhh.org/wiml/virtues.html">this page</a> for them). Be proud of it!</p></li>
+
+<li><p>Proprietary vs free: maybe the wheel you want to use is a proprietary wheel, thus you can&rsquo;t add it to your open-source project, or have to pay some fee to use it. Free it!</p></li>
+
+<li><p>Create a new wheel: you need to know how the old stuff works to be able to create the new big thing (usually, in most areas). We are standing on the shoulders of giants, but if we don&rsquo;t know how tall they are, we can step over midgets. Learn it!</p></li>
+
+<li><p>Boredom: maybe you have a free Sunday afternoon and don&rsquo;t want to code something over-the-top, and you decide to write your own algorithm for X. Closely related to reasons 4 and 5. Enjoy!</p></li>
+</ol>
+
+<p>Do you have your reasons and they are not in this list? Post a comment and I&rsquo;ll write a new (collaborative) version! (Written! <a href="http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html">8 reader reasons for re-inventing the wheel as a programmer</a>).</p>
+
+<p>If you enjoyed this post, please share it with your friends or subscribe to this blog!</p>
+
+<p>Related posts:</p>
+
+<ul>
+<li><a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 Best Programming Books I Have Read (So Far)</a></li>
+<li><a href="http://www.mostlymaths.net/2011/03/learn-to-remember-everything-memory.html">Learn to Remember Everything: The Memory Palace Technique</a></li>
+<li><a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html">And e appears from nowhere</a></li>
+<li><a href="http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html">Timeboxing: You Will Work Like <em>Never</em> Before</a></li>
+</ul>
+
+<p>ParseList(ScrambleList(Relateds(Linux, Programming)))</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/thoughts" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Thoughts</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/03/unpacking-my-ben-nanonote.html/">Unpacking my Ben NanoNote</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/learning-forth-by-working-on-raytracer.html/">Learning Forth by working on a raytracer</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/debugging-with-emacsvalgrind.html/">Debugging with emacs&#43;valgrind</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/cjuicer-beats-humans-and-unixs-diff.html/">CJuicer beats humans (and Unix&#39;s diff)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/01/cron-diff-wget-watch-changes-in-webpage.html/">Cron, diff &amp; wget: Watch changes in a webpage</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

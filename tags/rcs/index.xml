@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rcs on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/rcs/</link>
+    <description>Recent content in rcs on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Sep 2012 10:28:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/rcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Version Control: Started using git and github (and how to set-up a remote git server)</title>
+      <link>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</link>
+      <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</guid>
+      <description>The Octocat, Github&amp;rsquo;s logo
+It&amp;rsquo;s been almost 6 years since I used some kind of revision control system. Back then I wasn&amp;rsquo;t sure about which I wanted to use&amp;hellip; I settled with RCS, the father of them all. RCS was structurally very simple, with text-based (human-readable) delta files. I liked that. I had all my code and TeX files under revision control, but then I started using more than one computer and it got out of hand very quickly (using RCS or CVS in Windows was quite tricky and had user and encoding problems.</description>
+    </item>
+    
+  </channel>
+</rss>

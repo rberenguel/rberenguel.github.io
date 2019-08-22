@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | C code &#34;Juicer&#34;</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="C code &#34;Juicer&#34;" />
+<meta property="og:description" content="As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
+
+It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2009/12/c-code-juicer.html/" />
+<meta property="article:published_time" content="2009-12-01T00:01:00+01:00" />
+<meta property="article:modified_time" content="2009-12-01T00:01:00+01:00" />
+<meta itemprop="name" content="C code &#34;Juicer&#34;">
+<meta itemprop="description" content="As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
+
+It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses.">
+
+
+<meta itemprop="datePublished" content="2009-12-01T00:01:00&#43;01:00" />
+<meta itemprop="dateModified" content="2009-12-01T00:01:00&#43;01:00" />
+<meta itemprop="wordCount" content="407">
+
+
+
+<meta itemprop="keywords" content="Programming,CJuicer,Teaching,Maths," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="C code &#34;Juicer&#34;"/>
+<meta name="twitter:description" content="As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
+
+It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">C code &#34;Juicer&#34;</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2009-12-01T00:01:00&#43;01:00">December 1, 2009</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 407 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Swl0M2KDqaI/AAAAAAAABd8/ukpbTLUD5dA/s1600/RK.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Swl0M2KDqaI/AAAAAAAABd8/ukpbTLUD5dA/s400/RK.jpg" alt="" /></a></p>
+
+<p>It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses. It is still somewhat buggy and fails to recognize a few closings. I intend to &ldquo;juice&rdquo; all the assignments, and extract the interesting functions (around 5, with about 50 lines of code each, 35 assignments, probably). Then I can print all these pages and just look at them to see matches. Yesterday I already did for 3 examples&hellip; they didn&rsquo;t cheat, they are clearly different.My idea is that the structure of calls is more significant than looking at some diff. A student can change variable names, add or change comments, and then diff is dead. But this structure tree is more like a fingerprint: it maps the structure of the algorithm. It can change from student to student (indeed does), but detects minor changes that diff misses. Let&rsquo;s see if I find cheaters!The code is a <a href="http://en.wikipedia.org/wiki/Flex_lexical_analyser">flex</a> .lex file, looking something like:</p>
+
+<blockquote>
+<p>&ldquo;void&rdquo; {def=0;}&ldquo;char*&rdquo; {def=key?1:0;}&ldquo;;&rdquo; {def=0; fprintf(auxiliar, &ldquo;%% Flags: inc %d def %d par %d for %d RecKey %d\n&rdquo;,include, def, par, InsideFor, RecentKey); if(!par&amp;&amp;(InsideFor||InsideIf)&amp;&amp;!RecentKey){GetOut(Last);}RecentKey=0;}&ldquo;(&rdquo; {par++;}&ldquo;)&rdquo; {par&ndash;;}&rdquo;&lt;&rdquo; {}&ldquo;&gt;&rdquo; {include=0;}</p>
+</blockquote>
+
+<p>A set of rules and the code to process it. It has a few auxiliar functions to process calls, (and a stack push-pop for tracking calls) and is getting harder and harder to read. as I find more bugs. I almost wrote an entire parser in the .lex source&hellip; That happens when you are not sure how to use <a href="http://en.wikipedia.org/wiki/GNU_bison">Bison</a>, or even what it does. But it is working, so I should not complain.In fact, this kind of analysis is probably done, and I can find some similar things in the Wikipedia entries for <a href="http://en.wikipedia.org/wiki/Syntax_tree">Syntax Trees</a>. But it has been a really fun coding, and when finished&hellip; well, it has already been fun, and almost finished ;) Anyway, the structure I have done suits best several functions per page in landscape mode&hellip; and that is exactly what I need, so why bother? Let&rsquo;s reinvent the wheel a few more times.</p>
+
+<p>You may be also interested in:ParseList(ScrambleList(Relateds(Linux,Programming)))</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/cjuicer" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">CJuicer</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/teaching" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Teaching</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/maths" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Maths</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/11/copied-programming-assignments-as.html/">Copied programming assignments as cryptograms</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/10/gdb-cedet-ecb.html/">gdb &amp; CEDET &amp; ECB</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/quick-latex-ing-with-emacs.html/">Quick latex-ing with emacs: dabbrev and skeletons</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/my-backup-script-in-maclinux.html/">My backup script in Mac/Linux</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/08/lavaurs-algorithm.html/">Lavaurs algorithm</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

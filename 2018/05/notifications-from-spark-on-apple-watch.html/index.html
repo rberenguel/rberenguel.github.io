@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Notifications from Spark on an Apple Watch (via IFTTT)</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Notifications from Spark on an Apple Watch (via IFTTT)" />
+<meta property="og:description" content="This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/" />
+<meta property="article:published_time" content="2018-05-05T02:40:00+02:00" />
+<meta property="article:modified_time" content="2018-05-05T02:40:00+02:00" />
+<meta itemprop="name" content="Notifications from Spark on an Apple Watch (via IFTTT)">
+<meta itemprop="description" content="This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished.">
+
+
+<meta itemprop="datePublished" content="2018-05-05T02:40:00&#43;02:00" />
+<meta itemprop="dateModified" content="2018-05-05T02:40:00&#43;02:00" />
+<meta itemprop="wordCount" content="430">
+
+
+
+<meta itemprop="keywords" content="Watch,spark,opensource,scala,sbt,iPhone," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notifications from Spark on an Apple Watch (via IFTTT)"/>
+<meta name="twitter:description" content="This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Notifications from Spark on an Apple Watch (via IFTTT)</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-05-05T02:40:00&#43;02:00">May 5, 2018</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 430 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html">GraphX</a> on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished. This way I could work on something else while the process is doing its thing, and I could come back for the next step as soon as the data is ready.</p>
+
+<p>I have most of my notifications deactivated, though. No emails, Twitter, WhatsApp. Nothing shows on my Mac screen, very few show on my <a href="https://amzn.to/2reDmZl">phone</a> or <a href="https://amzn.to/2Kq0Lid">watch</a>, and only a handful are allowed to vibrate (none to make a sound). What could I do to get a notification? Even if I overrode some of my settings, I needed something that either could work cross-device or could make my watch vibrate, since it’s the only device I have always with me.</p>
+
+<p>Well, <a href="https://ifttt.com/discover">IFTTT</a> can actually do that. IFTTT is a service to plumb external services with iOS/Android devices, to build workflows. It also has a <a href="https://ifttt.com/maker_webhooks">very handy webhook you can use as a trigger for workflows</a>. And the IFTTT app can send notifications, to the phone or watch. Ticks all the boxes.</p>
+
+<p>To use the webhook (a POST endpoint) from Scala I used a library I had never used before: <a href="https://ifttt.com/discover">scalaj-http</a> It seems very convenient for these quick-and-dirty “make a request” in a program that includes no other http library.</p>
+
+<p>When I have some action I expect to run for a while, I’ll finish the command with <code>; notif(“Process X finished”)</code> This way, when the command finishes my wrist will gently buzz and I’ll know I can go back to work more on it.</p>
+
+<p>It is worth noting that this would also work for a long running bash or sbt command (I’m looking at you, Spark test suite), or compiling <code>boost</code> or anything else that can, basically, run <code>curl</code> against an endpoint at the end of the process.</p>
+
+<p>By the way, to run a spark shell with this library, use</p>
+
+<blockquote>
+<p><code>spark-shell --packages org.scalaj:scalaj-http_2.11:2.3.0</code></p>
+</blockquote>
+
+<p>Remember that multiple packages are separated by commas in case you also happen to, you know, use GraphFrames.</p>
+
+<p>Oh, and if you happen to want notifications after an sbt task, you can use the <a href="https://github.com/rberenguel/sbt-ifttt">sbt-ifttt plugin</a>.</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/watch" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Watch</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">spark</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/opensource" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">opensource</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">scala</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/sbt" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">sbt</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/iphone" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">iPhone</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2018/03/coursier-resolution-failing-with-http.html/">Coursier resolution failing with HTTP method 416 in sbt</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/02/scala-exchange-2017.html/">Scala eXchange 2017</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/01/2017-year-in-review.html/">2017: Year in Review</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2017/05/shading-dependencies-with-sbt-assembly.html/">Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/02/classnotfoundexception-for-akka-logging.html/">ClassNotFoundException for Akka logging</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

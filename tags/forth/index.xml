@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forth on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/forth/</link>
+    <description>Recent content in Forth on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2011 21:29:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/forth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <description>Taken from Flickr
+  In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
+This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
+    </item>
+    
+    <item>
+      <title>Giving up the Forth raytracer</title>
+      <link>https://mostlymaths.net/2010/05/giving-up-forth-raytracer.html/</link>
+      <pubDate>Wed, 12 May 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/giving-up-forth-raytracer.html/</guid>
+      <description>Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&amp;rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.
+If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:</description>
+    </item>
+    
+    <item>
+      <title>Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</title>
+      <link>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</link>
+      <pubDate>Fri, 05 Mar 2010 23:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</guid>
+      <description>As I wrote in a previous post, I&amp;rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.
+I decided to allocate a few global variables (for &amp;ldquo;current point&amp;rdquo;, &amp;ldquo;current vector&amp;rdquo;, &amp;ldquo;light source&amp;rdquo;, etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.</description>
+    </item>
+    
+    <item>
+      <title>Learning Forth by working on a raytracer</title>
+      <link>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</link>
+      <pubDate>Wed, 03 Mar 2010 22:30:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</guid>
+      <description>After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based).</description>
+    </item>
+    
+  </channel>
+</rss>

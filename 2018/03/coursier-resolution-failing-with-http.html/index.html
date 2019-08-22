@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Coursier resolution failing with HTTP method 416 in sbt</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Coursier resolution failing with HTTP method 416 in sbt" />
+<meta property="og:description" content="Or, how I made my first contribution to coursier
+[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/" />
+<meta property="article:published_time" content="2018-03-25T12:21:00+02:00" />
+<meta property="article:modified_time" content="2018-03-25T12:21:00+02:00" />
+<meta itemprop="name" content="Coursier resolution failing with HTTP method 416 in sbt">
+<meta itemprop="description" content="Or, how I made my first contribution to coursier
+[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.">
+
+
+<meta itemprop="datePublished" content="2018-03-25T12:21:00&#43;02:00" />
+<meta itemprop="dateModified" content="2018-03-25T12:21:00&#43;02:00" />
+<meta itemprop="wordCount" content="597">
+
+
+
+<meta itemprop="keywords" content="opensource,scala," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Coursier resolution failing with HTTP method 416 in sbt"/>
+<meta name="twitter:description" content="Or, how I made my first contribution to coursier
+[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Coursier resolution failing with HTTP method 416 in sbt</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-03-25T12:21:00&#43;02:00">March 25, 2018</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 597 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p><em>Or, how I made my first contribution to <a href="https://github.com/coursier/coursier">coursier</a></em></p>
+
+<pre><code>[trace] Stack trace suppressed: run last service/*:update for the full output.  
+[error] (service/*:update) coursier.ResolutionException: 1 download error  
+[error]     Caught java.io.IOException:   
+    Server returned HTTP response code: 416 for URL:   
+    https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar   
+    (Server returned HTTP response code: 416 for URL:   
+https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar)   
+    while downloading   
+    https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  
+
+</code></pre>
+
+<p>I ran into this problem with <code>sbt</code> dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and <a href="https://circleci.com/">CircleCI</a> was happy.</p>
+
+<p>I was not happy though. For the next weeks (sounds like a lot, but it was more like 2 commits), every time I had to work on this project I was commenting the import to get it to compile/run/test. Until I was fed up enough to check what the problem was.</p>
+
+<h2 id="what-is-response-code-416">What is response code 416</h2>
+
+<p>This is <em>Range Not Satisfiable</em>. This means that either the file we are requesting does not have this range available: it is shorter, or the range is malformed, or who knows. The expectation should be that under a 416 error, a full request is issued, but this was not the case with Coursier (I created the <a href="https://github.com/coursier/coursier/issues/794">issue</a> and <a href="https://github.com/coursier/coursier/pull/795">submitted a PR</a> to fix it, should be fixed in the next release).</p>
+
+<p>So&hellip; Maven Central is not able to answer range queries? Some edge case is being hit? And, what are range queries used for? This one is easy, for resuming partial downloads.</p>
+
+<p>The likely culprit was me (or my network) stopping <code>sbt</code> while it was fetching the libraries, at some point in the past… maybe. There is a partial download <em>somewhere</em>. Easy fix: clean up the partial download that is lying there, then <code>update</code>. Problem is, <em>somewhere</em> can be more than one place with <code>coursier</code>. Also, I wasn’t sure where the problem was coming from.</p>
+
+<h2 id="what-to-remove">What to remove</h2>
+
+<p>In my case, I had to remove the <code>coursier</code> local cache at <code>\~/.coursier/cache</code> because this is where the partial download for <code>gelfj</code> was. But it might have been any of <code>.ivy2/cache</code> or <code>.m2/cache</code>. Maybe, even, <code>sbt</code> cache at <code>.sbt/</code> . Or the <code>ensime</code> cache.</p>
+
+<h2 id="reproducing-fixing">Reproducing, fixing</h2>
+
+<p>I managed to reproduce it relatively easily. Open any location in your <code>.coursier/cache/v1</code> folder containing a JAR file. Move said jar to <code>blah.jar.part</code>. This way, it has full size as a partial download, and the requested range in a partial download request will be invalid (actually this was what was happening in my case: Coursier died just before moving <code>.part</code> to <code>.jar</code>). If you run <code>sbt update</code> under <code>coursier</code> on any project using this JAR, resolution will fail with a 416.</p>
+
+<p>Fixing it was straightforward (the code base for <code>coursier</code> seems easy to search) by adding a check for this return code in the area that resets the connection if the returned headers are not valid.</p>
+
+<p>To test the functionality I used <code>sbt-plugins/publish-local</code> to create a SNAPSHOT build I could set in my <code>.sbt</code>. Once I got the bug manually tested I ran the tests suites. I wanted to add a test, but this seemed untestable under the current suites, so I pushed and waited. The <a href="https://github.com/alexarchambault">lead maintainer</a> gave me some pointers on how to create a test using the current systems (I got very close but didn’t work in the end), and then, a PR by <a href="https://github.com/wisechengyi">wisechengyi</a> added several helpers for testing a PR he created in a similar situation, so I could add a test to mine. And done!</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/opensource" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">opensource</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">scala</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2018/02/classnotfoundexception-for-akka-logging.html/">ClassNotFoundException for Akka logging</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/02/scala-exchange-2017.html/">Scala eXchange 2017</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/01/2017-year-in-review.html/">2017: Year in Review</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2017/05/shading-dependencies-with-sbt-assembly.html/">Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2016/12/2016-in-review.html/">2016 in Review</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

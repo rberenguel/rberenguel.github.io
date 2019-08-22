@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Euclid Initials';
+    src: url('EuclidInitialsnormal.eot');
+    src: url('EuclidInitialsnormal.eot?#iefix') format('embedded-opentype'),
+        url('EuclidInitialsnormal.woff2') format('woff2'),
+        url('EuclidInitialsnormal.woff') format('woff'),
+        url('EuclidInitialsnormal.ttf') format('truetype'),
+        url('EuclidInitialsnormal.svg#EuclidInitialsnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

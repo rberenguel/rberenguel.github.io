@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Moving from Emacs to Spacemacs</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Moving from Emacs to Spacemacs" />
+<meta property="og:description" content="A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
+In case you don&rsquo;t know, Spacemacs is a &ldquo;distribution&rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2016/08/moving-from-emacs-to-spacemacs.html/" />
+<meta property="article:published_time" content="2016-08-07T22:42:00+02:00" />
+<meta property="article:modified_time" content="2016-08-07T22:42:00+02:00" />
+<meta itemprop="name" content="Moving from Emacs to Spacemacs">
+<meta itemprop="description" content="A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
+In case you don&rsquo;t know, Spacemacs is a &ldquo;distribution&rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs.">
+
+
+<meta itemprop="datePublished" content="2016-08-07T22:42:00&#43;02:00" />
+<meta itemprop="dateModified" content="2016-08-07T22:42:00&#43;02:00" />
+<meta itemprop="wordCount" content="662">
+
+
+
+<meta itemprop="keywords" content="Programming,emacs,spacemacs,vim,How-to,Productivity," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Moving from Emacs to Spacemacs"/>
+<meta name="twitter:description" content="A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
+In case you don&rsquo;t know, Spacemacs is a &ldquo;distribution&rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Moving from Emacs to Spacemacs</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2016-08-07T22:42:00&#43;02:00">August 7, 2016</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 662 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="https://3.bp.blogspot.com/-d2-hqC6Rns4/V6eaMoBfjmI/AAAAAAAAEXs/5akluoVEhm4wKjdNdI6uPQiYd2vruHXXwCLcB/s1600/title2.png"><img src="https://3.bp.blogspot.com/-d2-hqC6Rns4/V6eaMoBfjmI/AAAAAAAAEXs/5akluoVEhm4wKjdNdI6uPQiYd2vruHXXwCLcB/s320/title2.png" alt="" /></a></p>
+
+<p>A couple of days ago I attended (first time I managed in almost 6 months) the <a href="https://www.meetup.com/London-Emacs-Hacking/">London chapter of the Emacs Church</a> (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using <a href="https://github.com/clojure-emacs/cider">Cider</a>) and I saw in real life <a href="http://spacemacs.org/">Spacemacs</a>.</p>
+
+<p>In case you don&rsquo;t know, Spacemacs is a &ldquo;distribution&rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs. For instance, on startup asks if you want to be in Emacs mode, <a href="https://www.emacswiki.org/emacs/Evil">evil mode</a> or hybrid (Emacs mode keys in vim insert mode) by default.</p>
+
+<p>As you may remember, <a href="http://www.mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html">I&rsquo;ve been using Emacs with evil for around 3 years already</a>, and have been pretty happy with it. I&rsquo;m not so happy about the state of my .emacs file: currently it is 2652 lines long (of course around 400 or 500 of those are generated automatically by custom). Too big and unwieldy. And I&rsquo;m too lazy to move all the nuts and bolts to something more lightweight and sane.</p>
+
+<p>I thought that trying out Spacemacs could be the perfect excuse to clean the mess off my .emacs file, since I could carefully move piece by piece whatever I needed as I needed it (like I usually do when upgrading computers).</p>
+
+<p>For a start, the beginning was a good experience. Since by default it includes most of the fancy stuff I use normally (<a href="https://github.com/emacs-helm/helm">helm</a> being the biggest, fanciest helper I need, I only needed to tweak helm-files and switch-buffer, and add recentf) and I no longer use <a href="https://www.emacswiki.org/emacs/mu4e">mu4e</a> on a day-to-day basis, I could easily switch to it.</p>
+
+<p>It&rsquo;s actually really <a href="https://github.com/syl20bnr/spacemacs#installation-alongside-another-configuration">easy to try Spacemacs alongside your normal emacs</a>: just download it and from the spacemacs folder run something like</p>
+
+<pre><code>HOME=~/fromsource/spacemacs /Applications/Emacs.app/Contents/MacOS/Emacs
+</code></pre>
+
+<p>or the equivalent in your environment. Caveat: multi-term/ansi-term won&rsquo;t work as expected (best solution is to actually move to using Spacemacs as default). Aside from that I have had no other big issues, and recently moved to Spacemacs to be the main Emacs and if needed I can run my old configuration with the &ldquo;HOME trick&rdquo;.</p>
+
+<p>One thing I have not figured out how to exactly do &ldquo;the Spacemacs way&rdquo; but I needed no matter what is having my set of normal Emacs keybindings in evil insert and normal modes. Hybrid mode covers insert more or less nicely, but some commands I need them as they are because not only are they part of my muscle memory, but I also happen to like them and use them everywhere (OS X input fields, terminal windows). I tried to set this up in many places in the .spacemacs file (the user-config section, using the -init or -after macros of package initialisation&hellip;) And finally this made it work, so, in case you need to modify evil insert or normal key maps in Spacemacs:</p>
+
+<pre><code>(eval-after-load 'evil   
+ '(progn  
+ (define-key evil-normal-state-map (kbd &quot;SPC&quot;) 'ace-jump-mode)  
+ (define-key evil-insert-state-map (kbd &quot;C-a&quot;) 'move-beginning-of-line)  
+ (define-key evil-insert-state-map (kbd &quot;C-e&quot;) 'move-end-of-line)  
+ (define-key evil-insert-state-map (kbd &quot;C-k&quot;) 'kill-line)  
+ (define-key evil-insert-state-map (kbd &quot;C-w&quot;) 'kill-region)  
+ (define-key evil-visual-state-map (kbd &quot;C-a&quot;) 'move-beginning-of-line)  
+ (define-key evil-visual-state-map (kbd &quot;C-e&quot;) 'move-end-of-line)  
+ (define-key evil-normal-state-map (kbd &quot;C-a&quot;) 'move-beginning-of-line)  
+ (define-key evil-normal-state-map (kbd &quot;C-e&quot;) 'move-end-of-line)  
+ (define-key evil-normal-state-map (kbd &quot;C-k&quot;) 'kill-line)  
+ (define-key evil-normal-state-map (kbd &quot;C-y&quot;) 'yank)  
+ (define-key evil-insert-state-map (kbd &quot;C-y&quot;) 'yank)  
+ (define-key evil-insert-state-map (kbd &quot;C-t&quot;) 'transpose-chars)  
+ (define-key evil-normal-state-map (kbd &quot;C-w&quot;) 'kill-region)  
+ (define-key evil-visual-state-map (kbd &quot;C-w&quot;) 'kill-region)  
+ (define-key evil-visual-state-map (kbd &quot;SPC&quot;) 'ace-jump-mode)))  
+
+</code></pre>
+
+<p>Something I found surprising though is the load time: Spacemacs does not load packages on startup and my .emacs setup did, and they roughly start up at the same speed. Somehow I expected a faster startup time.</p>
+
+<p>Worth also downloading the <a href="https://github.com/railwaycat/homebrew-emacsmacport">latest emacs port for homebrew</a>, which fixes some annoyances with powerline colours as well as being quite more up to date than Carbon Emacs.</p>
+
+<p>Now the only big thing left I have is reconfiguring <a href="https://github.com/magnars/multiple-cursors.el">multiple-cursors</a> and my definitions of more-like-this and all that to be a happy Spacemacs user.</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/spacemacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">spacemacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/vim" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">vim</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/how-to" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">How-to</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/productivity" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Productivity</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/09/whistle-control-your-computer.html/">Whistle control your computer (Linux&amp;Mac)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2013/03/extensibility-programming-acme-text-editor.html/">Extensibility in the Acme text editor</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2013/02/creating-new-text-objects-in-evil-mode.html/">Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/">Learning to use vim in my iPad (even if I&#39;m an emacs geek)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

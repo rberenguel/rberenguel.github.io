@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)" />
+<meta property="og:description" content="The links to Practical Vim are affiliate links to Amazon. Beware!
+So&hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&rsquo;m an emacs guy, so the main question is why?
+I love knowing many tools." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/" />
+<meta property="article:published_time" content="2013-02-22T18:28:00+01:00" />
+<meta property="article:modified_time" content="2013-02-22T18:28:00+01:00" />
+<meta itemprop="name" content="Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)">
+<meta itemprop="description" content="The links to Practical Vim are affiliate links to Amazon. Beware!
+So&hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&rsquo;m an emacs guy, so the main question is why?
+I love knowing many tools.">
+
+
+<meta itemprop="datePublished" content="2013-02-22T18:28:00&#43;01:00" />
+<meta itemprop="dateModified" content="2013-02-22T18:28:00&#43;01:00" />
+<meta itemprop="wordCount" content="703">
+
+
+
+<meta itemprop="keywords" content="gnus,Programming,emacs,vim," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)"/>
+<meta name="twitter:description" content="The links to Practical Vim are affiliate links to Amazon. Beware!
+So&hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&rsquo;m an emacs guy, so the main question is why?
+I love knowing many tools."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-02-22T18:28:00&#43;01:00">February 22, 2013</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 703 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/-u6OHQLfCX6c/TyFasu3pjxI/AAAAAAAADb8/pba4zEyVqNY/s1600/VimEmacs.jpg"><img src="http://4.bp.blogspot.com/-u6OHQLfCX6c/TyFasu3pjxI/AAAAAAAADb8/pba4zEyVqNY/s200/VimEmacs.jpg" alt="" /></a></p>
+
+<p>The links to Practical Vim are affiliate links to Amazon. Beware!</p>
+
+<p>So&hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at <a href="http://thefancypuffin.com/en/">The Fancy Puffin</a>.) And my flight read was <a href="http://www.amazon.com/gp/product/1934356980?ie=UTF8&amp;camp=213733&amp;creative=393185&amp;creativeASIN=1934356980&amp;linkCode=shr&amp;tag=rbersblog-20">Practical Vim</a>. Most of my readers are already aware I&rsquo;m an <a href="http://www.mostlymaths.net/search?q=emacs">emacs</a> guy, so the main question is <strong>why?</strong></p>
+
+<p>I love knowing many tools. Programming in many languages, knowing enough about any thing. I couldn&rsquo;t stand all these people saying Vim was superior (even though most had never touched emacs,) and since knowledge is power, I thought a little more (for me) could not hurt (mwahahahaha!) I picked <a href="http://www.amazon.com/gp/product/1934356980?ie=UTF8&amp;camp=213733&amp;creative=393185&amp;creativeASIN=1934356980&amp;linkCode=shr&amp;tag=rbersblog-20">Practical Vim</a> and started reading it a few days before leaving, and finished it during the few non-shoemaking moments of that course.</p>
+
+<p>When I was back to having a computer, I was torn between what I learnt about Vim and looked cool and all those things I already loved about emacs. I have MacVim a few tries, writing short pieces, writing, testing, rewriting. Clearly there was no way I could give up <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">gnus</a>, <a href="http://www.mostlymaths.net/search?q=org-mode">org-mode</a> (even though I&rsquo;m not using it that much lately) and all my <a href="http://www.mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html">complex configuration options</a>. So&hellip; how come? Even though modal editing feels weird, text objects are cool. Being able to &ldquo;say&rdquo; di( and get it to delete inside a pair of parentheses is way cool. Basically this is what sold me as a great feature.</p>
+
+<p>I decided to use <a href="http://emacswiki.org/emacs/Evil">evil-mode</a> in emacs. Best of both worlds: I still had all my emacs tools AND text objects and some modal editing. I missed having numbered lines, although I just googled for it&hellip; And there&rsquo;s linum-mode (since emacs 22!!) which gives them. But I miss ex commands: being able to move any line anywhere just by issuing :source m destination is powerful. Evil-mode supports some ex commands, just not copy or move. Sigh!</p>
+
+<p>Today was the first day I added evil-mode to my .emacs file, and the day started by working in a LaTeX file. In a LaTeX file, most things are enclosed in pairs of dollars, like <em>$x=1$</em>. These dollar delimited expressions are what TeX parses as formulas, and they appear as neat images in your target (usually PDF) file. So, most of the things I need to change, delete or move around are enclosed by dollars. So:</p>
+
+<ul>
+<li>change what&rsquo;s inside a pair with ci$</li>
+<li>delete the whole formula with da$</li>
+<li>delete just the contents of the formula with di$</li>
+<li>copy the formula with yi$</li>
+</ul>
+
+<p>Useful, isn&rsquo;t it? Problem is, evil-mode does not have $ as a text object! Luckily it offers the tools to make new text objects&hellip; Getting it to work was harder than expected, though. I was given several choices of functions I could use to create my text object. The best option seemed to be using evil-regexp-range that allows you to give a regexp for the first delimiter and another one for the second. But all tries I have done resulted in it marking the first occurrence in the buffer. No luck. After trying repeteadly with it, I gave up and used instead evil-inner-object-range, where I had to wrestle with point, mark, excursions and the like. When I managed to get it working I just decided I would not touch it again (even if I&rsquo;m pretty sure the save-excursion calls are redundant, as well as most move and mark commands&hellip;) It works, don&rsquo;t touch it.<br />
+`<br />
+(defun rb-first-dollar-exclusive (&amp;optional arg)<br />
+(interactive)<br />
+(save-excursion<br />
+(setq rb-temp-first (re-search-backward &ldquo;\$&rdquo; nil t 1))<br />
+(message &ldquo;First %s&rdquo; rb-temp-first))<br />
+(goto-char (+ 1 rb-temp-first)))</p>
+
+<p>(defun rb-second-dollar-exclusive (&amp;optional arg)<br />
+(interactive)<br />
+(save-excursion<br />
+(setq rb-temp-second (re-search-forward &ldquo;\$&rdquo; nil t 1))<br />
+(message &ldquo;Second %s&rdquo; rb-temp-second))<br />
+(goto-char (- rb-temp-second 1)))</p>
+
+<p>(evil-define-text-object evil-inner-dollar (count &amp;optional beg end type)<br />
+(evil-inner-object-range count beg end type<br />
+#&lsquo;rb-second-dollar-exclusive<br />
+#&lsquo;rb-first-dollar-exclusive))</p>
+
+<p>(define-key evil-inner-text-objects-map &ldquo;$&rdquo; &lsquo;evil-inner-dollar)</p>
+
+<p>(defun rb-first-dollar-inclusive (&amp;optional arg)<br />
+(interactive)<br />
+(save-excursion<br />
+(setq rb-temp-first (re-search-backward &ldquo;\$&rdquo; nil t 2))<br />
+(message &ldquo;First %s&rdquo; rb-temp-first))<br />
+(goto-char rb-temp-first))</p>
+
+<p>(defun rb-second-dollar-inclusive (&amp;optional arg)<br />
+(interactive)<br />
+(save-excursion<br />
+(setq rb-temp-second (re-search-forward &ldquo;\$&rdquo; nil t 1))<br />
+(message &ldquo;Second %s&rdquo; rb-temp-second))<br />
+(goto-char rb-temp-second))</p>
+
+<p>(evil-define-text-object evil-outer-dollar (count &amp;optional beg end type)<br />
+(evil-inner-object-range count beg end type<br />
+#&lsquo;rb-second-dollar-inclusive<br />
+#&lsquo;rb-first-dollar-inclusive))</p>
+
+<p>(define-key evil-outer-text-objects-map &ldquo;$&rdquo; &lsquo;evil-outer-dollar)<br />
+`</p>
+
+<p>(Blogger is killing indentation, damn) Enjoy, though!</p>
+
+<p>ParseList(ScrambleList(Relateds(emacs)),2)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/gnus" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gnus</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/vim" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">vim</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2012/08/adding-notes-to-emails-in-gnus-in.html/">Adding Notes to Emails in Gnus (in Summary View)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/09/using-git-and-setting-remote-git-server.html/">Version Control: Started using git and github (and how to set-up a remote git server)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/09/editor-magic-emacs-vim-acme-and-return.html/">Editor Magic: emacs, vim, acme and the return key</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/07/back-to-gnus-emacs-mail-reader.html/">Back to gnus (emacs mail reader)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/">Learning to use vim in my iPad (even if I&#39;m an emacs geek)</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

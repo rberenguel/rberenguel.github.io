@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Learning Forth by working on a raytracer</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Learning Forth by working on a raytracer" />
+<meta property="og:description" content="After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/" />
+<meta property="article:published_time" content="2010-03-03T22:30:00+01:00" />
+<meta property="article:modified_time" content="2010-03-03T22:30:00+01:00" />
+<meta itemprop="name" content="Learning Forth by working on a raytracer">
+<meta itemprop="description" content="After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based).">
+
+
+<meta itemprop="datePublished" content="2010-03-03T22:30:00&#43;01:00" />
+<meta itemprop="dateModified" content="2010-03-03T22:30:00&#43;01:00" />
+<meta itemprop="wordCount" content="355">
+
+
+
+<meta itemprop="keywords" content="Programming,Linux,Forth," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learning Forth by working on a raytracer"/>
+<meta name="twitter:description" content="After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based)."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Learning Forth by working on a raytracer</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-03-03T22:30:00&#43;01:00">March 3, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 355 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.amazon.com/Forth-Atari-Learning-Ekkehard-Floegel/dp/0936200383"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S47WWIaA8ZI/AAAAAAAAB6Y/bleAwvOH4LY/s400/038e793509a0637d002f7110.L.jpg" alt="" /></a>After following a <a href="http://twitter.com/programmingfeed">twitter feed</a> about programming, I got overwhelmed by <a href="http://en.wikipedia.org/wiki/Forth_%28programming_language%29">FORTH</a> related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a <a href="http://berenguel.blogspot.com/2010/03/forths-create-does-maybe-im-amazed.html">deeper look</a>.</p>
+
+<p>Looks like a nice language, having something I enjoy about <a href="http://berenguel.blogspot.com/2009/08/lavaurs-algorithm.html">Lisp</a> (interactivity) and something I like about <a href="http://berenguel.blogspot.com/2008/12/quick-postscript-programming-tutorial.html">PostScript</a> (stack based). Thus&hellip; time for real learning.</p>
+
+<p>I have been thoroughly thinking about &ldquo;What&rdquo;. You can&rsquo;t learn a programming language per-se, you need a project to work on.</p>
+
+<p>I shuffled several things (besides implementing my own Forth in my HP49G&hellip; still don&rsquo;t know how to do it, and know too little Saturn Assembly&hellip; Someday!) and finally decided to make a new instance of my (unfinished) <a href="http://berenguel.blogspot.com/2009/06/lisp-raytracing-again.html">Lisp raytracer</a>, in Forth. It will be quite a lengthy feat (will take at least 3 months, as I knew Lisp when I started that), but I hope it ends working and thus makes me happy and &ldquo;forthy&rdquo;. For now, I have just one function, to calculate the euclidean norm of a 3-vector with components in the (floating point) stack:</p>
+
+<blockquote>
+<dl>
+<dd>norm3 ( X Y Z &ndash; X Y Z R, returns norm of X, Y, Z on stack )<br />
+fover \ X Y Z Y<br />
+3 fpick \ X Y Z Y X<br />
+2 fpick \ X Y Z Y X Z<br />
+fdup f* fswap \ X Y Z Y Z^2 X<br />
+fdup f* frot \ X Y Z Z^2 X^2 Y<br />
+fdup f* f+ f+ \ X Y Z Z^2+X^2+Y^2<br />
+fsqrt ;</dd>
+</dl>
+</blockquote>
+
+<p>Probably is not the best implementation (I still have a tendency to <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a>-ify things when stack-working), if someone around here knows a better way to do this, please drop me a line. By the way, the header image was found in [](<a href="http://www.amazon.com/Forth-Atari-Learning-Ekkehard-Floegel/dp/0936200383)[Amazon](http://www.amazon.com/Forth-Atari-Learning-Ekkehard-Floegel/dp/0936200383?ie=UTF8&amp;tag=rbersblog-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=btl&amp;camp=213689&amp;creative=392969&amp;o=1&amp;a=0936200383)..">http://www.amazon.com/Forth-Atari-Learning-Ekkehard-Floegel/dp/0936200383)[Amazon](http://www.amazon.com/Forth-Atari-Learning-Ekkehard-Floegel/dp/0936200383?ie=UTF8&amp;tag=rbersblog-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=btl&amp;camp=213689&amp;creative=392969&amp;o=1&amp;a=0936200383)..</a>. Strange cover for a programming book!</p>
+
+<p>You can also check progress in this post, <a href="http://berenguel.blogspot.com/2010/03/forths-create-does-maybe-im-amazed.html">FORTH&rsquo;s &ldquo;CREATE .. DOES&gt;&rdquo; Maybe I&rsquo;m amazed?</a> where I discuss what has been labelled &ldquo;the jewel of FORTH&rdquo;, the &ldquo;CREATE .. DOES&gt;&rdquo; structure.</p>
+
+<p>You may also like<br />
+ParseList(ScrambleList(Relateds(Forth, Programming, Lisp)),15)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/forth" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Forth</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/02/debugging-with-emacsvalgrind.html/">Debugging with emacs&#43;valgrind</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/01/cron-diff-wget-watch-changes-in-webpage.html/">Cron, diff &amp; wget: Watch changes in a webpage</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/">Syncing iPod&#39;s vMac and Linux: emacs on iPod Touch</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/evolutionary-approximation-of-christmas.html/">Evolutionary approximation of a Christmas postcard</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/rcs-svn-version-control.html/">RCS &amp; SVN: Version control</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

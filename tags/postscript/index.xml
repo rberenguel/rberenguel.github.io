@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostScript on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/postscript/</link>
+    <description>Recent content in PostScript on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Aug 2009 11:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/postscript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lavaurs algorithm</title>
+      <link>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</link>
+      <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</guid>
+      <description>[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
+Top: Zoom a depth 13 Lavaurs chords, random colors
+Bottom: Depth 5 and depth 13 Lavaurs chords
+These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images doesn&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.</description>
+    </item>
+    
+    <item>
+      <title>Teleworking in August</title>
+      <link>https://mostlymaths.net/2009/08/teleworking-in-august.html/</link>
+      <pubDate>Wed, 05 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/teleworking-in-august.html/</guid>
+      <description>Lavaurs algorithm on course
+Like almost every year, August comes with a lot of pending To Do lists&amp;hellip; This year, it is choking full, mostly of work related issues, and some unknotted threads waiting to be finished. And in two and a half weeks I&amp;rsquo;ll head for Paris, and then my &amp;ldquo;vacation&amp;rdquo; is over.
+Yesterday I wasted my morning: bought my orange belt, set up the external monitor for my netbook, configured the printer, fotocopied two pages of a book and drank an horchata with a friend.</description>
+    </item>
+    
+    <item>
+      <title>Quick PostScript Programming Tutorial</title>
+      <link>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</link>
+      <pubDate>Thu, 11 Dec 2008 15:27:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</guid>
+      <description>Examples of what you could do after learning PS:
+Koch curve, Mandelbrot set (top)
+Christmas card full of auto-generated fractals (bottom)
+For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Change the parameters of a docker container without knowing the docker run command used</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Change the parameters of a docker container without knowing the docker run command used" />
+<meta property="og:description" content="I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.
+At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using ansible: writing link/port/volume mappings in ansible (using the docker, container or docker-container modules, depending how long ago we set it up)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2017/08/change-parameters-of-docker-container-docker-run.html/" />
+<meta property="article:published_time" content="2017-08-20T19:30:00+02:00" />
+<meta property="article:modified_time" content="2017-08-20T19:30:00+02:00" />
+<meta itemprop="name" content="Change the parameters of a docker container without knowing the docker run command used">
+<meta itemprop="description" content="I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.
+At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using ansible: writing link/port/volume mappings in ansible (using the docker, container or docker-container modules, depending how long ago we set it up).">
+
+
+<meta itemprop="datePublished" content="2017-08-20T19:30:00&#43;02:00" />
+<meta itemprop="dateModified" content="2017-08-20T19:30:00&#43;02:00" />
+<meta itemprop="wordCount" content="466">
+
+
+
+<meta itemprop="keywords" content="Programming,Docker,Trick," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Change the parameters of a docker container without knowing the docker run command used"/>
+<meta name="twitter:description" content="I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.
+At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using ansible: writing link/port/volume mappings in ansible (using the docker, container or docker-container modules, depending how long ago we set it up)."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Change the parameters of a docker container without knowing the docker run command used</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2017-08-20T19:30:00&#43;02:00">August 20, 2017</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 466 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.</p>
+
+<p>At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using <code>ansible</code>: writing link/port/volume mappings in ansible (using the <code>docker</code>, <code>container</code> or <code>docker-container</code> modules, depending how long ago we set it up). The syntax is similar to <code>docker-compose</code>, but scripted for ansible.</p>
+
+<p>The problem arises when you are logged in on one of the machines and you want to change (or add) one parameter to one of the currently running containers. Re-running the <code>ansible</code> script in full is not always an option (for reasons I don&rsquo;t want to get into), so up until now we had to painfully rewrite the <code>docker run</code> command from the <code>ansible</code> set up, by hand. Which is terribly error prone. And a pain. And in general very much a process you don&rsquo;t want to follow, ever. We were very close to writing a short python script to convert the <code>yaml</code> specifications from python into <code>docker run</code> commands when we found out a relatively less painful way of doing it.</p>
+
+<p><strong>We jokingly call it the Indy swap</strong></p>
+
+<p><a href="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s1600/IndySwap.gif"><img src="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s400/IndySwap.gif" alt="" /></a></p>
+
+<p>It&rsquo;s quite easy, and is best described using a checklist to avoid messing up.</p>
+
+<ol>
+<li>First, you figure out what you want to do. For instance, map a port</li>
+<li>Change to super-user</li>
+<li>Get the container id from <code>docker ps</code></li>
+<li>Use your favourite remote editor to inspect the file <code>/var/lib/docker/containers/{container_id}/config.json</code> to figure out what you need to add</li>
+<li><code>service docker stop</code></li>
+<li>Edit the file in step 4 to add/remove any extra setting</li>
+<li><code>service docker start</code></li>
+<li>Voilà
+
+<br /></li>
+</ol>
+
+<p><strong>Steps 5-7 are the actual Indy swap</strong>, if we are not fast enough the healthcheks in our elastic load balancers will mark the instance as failing and stop it. Yes, we could disable the check while we do this, <em>but where&rsquo;s the thrill, then?</em></p>
+
+<p>By the way, the file in 4 will be a JSON file with the settings of the container. Any saved edit needs to be done with the docker service closed (since the file is in use otherwise). The format of adding ports, volumes or links is pretty self-explanatory as long as you have already a port, link or volume set up in the instance. Otherwise, check the configuration of any other running container having that. I suggest opening it in 4 with the editor already so you can up-arrow just after stopping the service without needing to find it, and also having planned the changes beforehand (or having done them in a <code>config.json1</code> you then swap)</p>
+
+<p>Oh, and don&rsquo;t do this in production. Oh, of course you won&rsquo;t because you are not using Docker in production, are you?</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/docker" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Docker</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/trick" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Trick</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2016/08/moving-from-emacs-to-spacemacs.html/">Moving from Emacs to Spacemacs</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2015/04/handling-of-exponent-overflow-in-gnu.html/">Handling of exponent overflow in GNU APL and Dyalog APL (on Mac)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/">The Mandelbrot set in one line of APL</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2013/03/extensibility-programming-acme-text-editor.html/">Extensibility in the Acme text editor</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2013/02/creating-new-text-objects-in-evil-mode.html/">Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

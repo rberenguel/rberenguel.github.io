@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | sed (stream editor) to colorise script output</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="sed (stream editor) to colorise script output" />
+<meta property="og:description" content="Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all here.
+
+This is the sed-processed output given by Gcal. The original source looks like
+
+As you can see, I used as identifiers XML-like expressions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/" />
+<meta property="article:published_time" content="2010-04-24T16:00:00+02:00" />
+<meta property="article:modified_time" content="2010-04-24T16:00:00+02:00" />
+<meta itemprop="name" content="sed (stream editor) to colorise script output">
+<meta itemprop="description" content="Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all here.
+
+This is the sed-processed output given by Gcal. The original source looks like
+
+As you can see, I used as identifiers XML-like expressions.">
+
+
+<meta itemprop="datePublished" content="2010-04-24T16:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2010-04-24T16:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="391">
+
+
+
+<meta itemprop="keywords" content="Linux,Gcal,NanoNote," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="sed (stream editor) to colorise script output"/>
+<meta name="twitter:description" content="Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all here.
+
+This is the sed-processed output given by Gcal. The original source looks like
+
+As you can see, I used as identifiers XML-like expressions."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">sed (stream editor) to colorise script output</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-04-24T16:00:00&#43;02:00">April 24, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 391 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all <a href="http://www.pixelbeat.org/docs/terminal_colours/">here</a>.</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s1600/Picture+25.png"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s400/Picture+25.png" alt="" /></a></p>
+
+<p>This is the sed-processed output given by Gcal. The original source looks like</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s1600/Picture+26.png"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s400/Picture+26.png" alt="" /></a></p>
+
+<p>As you can see, I used as identifiers XML-like expressions. At first I just used odd punctuation marks (@, &amp;, %&hellip;), but I realised it was too hard to remember. The script:</p>
+
+<blockquote>
+<p>#\bin\bash</p>
+
+<p>TEMP=calendartemp<br />
+TEMP2=calendartemp2<br />
+cat &gt; $TEMP<br />
+#Change for dark blue<br />
+sed -e &rsquo;s/.*&lt;\/dblue&gt;/\33 [1;34m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/dblue&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for blue<br />
+sed -e &rsquo;s/.*&lt;\/blue&gt;/\33 [34m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/blue&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+#Change for dark green<br />
+sed -e &rsquo;s/.*&lt;\/dgreen&gt;/\33 [32m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/dgreen&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for green<br />
+sed -e &rsquo;s/.*&lt;\/green&gt;/\33 [1;32m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/green&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+#Change for red<br />
+sed -e &rsquo;s/.*&lt;\/red&gt;/ \33[1;31m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/red&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for dark red<br />
+sed -e &rsquo;s/.*&lt;\/dred&gt;/ \33[31m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/red&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+cat $TEMP &gt; $TEMP2<br />
+sed -e &rsquo;s/[0-9][0-9]:[0-9][0-9]./\33 [1m&amp; [0m/g&rsquo; $TEMP2 &gt; $TEMP #White bold for hours<br />
+sed -r -e &rsquo;s/[A-Z][a-z][a-z][0-9]{8,8}/ \33[33m&amp; [0m/&rsquo; $TEMP &gt; $TEMP2 #Dark yellow for date<br />
+#Turn today&rsquo;s date into red bold<br />
+sed -e &rsquo;s/.*&lt;.*&gt;/\33[1;31m&amp; [0m/&rsquo; -e &rsquo;s// /g&rsquo; $TEMP2 &gt; $TEMP<br />
+sed -e &rsquo;s/ [0-9][0-9][0-9][0-9].*$/\33[1m&amp; [0m/&rsquo; $TEMP #White bold for header<br />
+rm $TEMP<br />
+rm $TEMP2</p>
+</blockquote>
+
+<p>You may wonder what \33 is: it is an escape character. They are the ones that tell the terminal to output color. In emacs it appears as ^[ (but only as one character, not two!). To write them (sorry, I didn&rsquo;t find an easier method), open a terminal, write echo &ldquo; then press Control-V followed by esc, then &rdquo; &gt; escape.txt and you&rsquo;ll have the escape character in escape.txt. You can open this file and copy-paste it where needed.</p>
+
+<p>The script is used just as a pipe:</p>
+
+<blockquote>
+<p>setmana.x | Colorise.sh</p>
+</blockquote>
+
+<p>where setmana.x calls gcal as I showed in my <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">previous Gcal post</a>. Now I only use it in the Gcal output, but I will probably use it somewhere else.</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html">Three dee (3-dimensional file system browsers review)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html">Power to the command line</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a></p>
+
+<p>ParseList(ScrambleList(Relateds(Linux)),10)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/gcal" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Gcal</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/nanonote" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">NanoNote</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/04/gcal-ultra-powerful-command-line-gnu.html/">Gcal the ultra-powerful command line GNU calendar</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/another-ben-nanonote-port-pmars.html/">Another Ben NanoNote port: pMARS</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/my-first-port-to-ben-nanonote-gnugo.html/">My first port to the Ben NanoNote: gnugo</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/unpacking-my-ben-nanonote.html/">Unpacking my Ben NanoNote</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/power-to-command-line.html/">Power to the command line</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

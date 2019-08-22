@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/python/</link>
+    <description>Recent content in Python on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jul 2019 13:34:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A (section) of a map of the data engineering space</title>
+      <link>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</link>
+      <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
+      <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#15 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</link>
+      <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#14 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</link>
+      <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LSP for Python and Scala</title>
+      <link>https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/</link>
+      <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/</guid>
+      <description>If you have have known me for any length of time you&amp;rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.</description>
+    </item>
+    
+    <item>
+      <title>2019#12 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</link>
+      <pubDate>Mon, 13 May 2019 00:31:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Big data and data engineering, metallurgy, Rust (not the metallurgy-related rust). Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019-11 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</link>
+      <pubDate>Sun, 28 Apr 2019 17:39:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</guid>
+      <description>Software engineering, Spark, history, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
+Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almost a year (on my suggestion). I&amp;rsquo;m not super-happy with it, and testing it is one of the pain points.</description>
+    </item>
+    
+    <item>
+      <title>2019-9 Readings of the week (x4)</title>
+      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019-6 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</link>
+      <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019-5 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</link>
+      <pubDate>Sun, 10 Feb 2019 22:38:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019-4 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</link>
+      <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019-2 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</link>
+      <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018: Year in Review</title>
+      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
+      <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
+      <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does the &#39;in&#39; keyword work in Python?</title>
+      <link>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</link>
+      <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</guid>
+      <description>A subtitle to this post could be More yak shaving
+A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?</description>
+    </item>
+    
+    <item>
+      <title>2017: Year in Review</title>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
+      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
+      <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
+Work Everything work related has gone up. More work, better work, more interesting work.</description>
+    </item>
+    
+    <item>
+      <title>2016 in Review</title>
+      <link>https://mostlymaths.net/2016/12/2016-in-review.html/</link>
+      <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2016/12/2016-in-review.html/</guid>
+      <description>Some of the links are affiliate links to Amazon. I only recommend what I use.
+At last February. Finished my PhD dissertation, so can add Dr. in front of my name when ordering a Gatwick Express train ticket. Also makes for a cooler email signature. So far has been the only differences I’ve seen in the year
+Work February-December Started working as a consultant in London, almost the day after delivering the PhD presentation.</description>
+    </item>
+    
+    <item>
+      <title>Timeline of whatlanguageis.com: first Django project</title>
+      <link>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</link>
+      <pubDate>Tue, 12 Jun 2012 15:10:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
+      <description>Last week I wrote about whatlanguageis.com, my first simple try at creating a Django powered site. How did it came to be?
+In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web. In the back of my mind, I wanted my code to work as a web application (either for me or for others,) and thought that I should comply with everyone else, learn PHP and try to make Python and PHP be friends.</description>
+    </item>
+    
+    <item>
+      <title>Language Detection in Python with NLTK Stopwords</title>
+      <link>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</link>
+      <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
+      <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
+    </item>
+    
+  </channel>
+</rss>

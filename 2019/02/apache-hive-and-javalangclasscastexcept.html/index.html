@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Apache Hive and java.lang.ClassCastException on start</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Apache Hive and java.lang.ClassCastException on start" />
+<meta property="og:description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/" />
+<meta property="article:published_time" content="2019-02-19T23:47:00+01:00" />
+<meta property="article:modified_time" content="2019-02-19T23:47:00+01:00" />
+<meta itemprop="name" content="Apache Hive and java.lang.ClassCastException on start">
+<meta itemprop="description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error">
+
+
+<meta itemprop="datePublished" content="2019-02-19T23:47:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-02-19T23:47:00&#43;01:00" />
+<meta itemprop="wordCount" content="247">
+
+
+
+<meta itemprop="keywords" content="Data,Mac,Big data,Hive," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apache Hive and java.lang.ClassCastException on start"/>
+<meta name="twitter:description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error"/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+
+
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net/annie-spratt-137316-unsplash.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Apache Hive and java.lang.ClassCastException on start</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-02-19T23:47:00&#43;01:00">February 19, 2019</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 247 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A couple of days ago I installed <a href="https://github.com/apache/hive">Hive</a> from <a href="https://brew.sh/">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
+
+<figure class="fig-wide">
+    <img src="annie-spratt-137316-unsplash.jpg"
+         alt="Photo by Annie Spratt on Unsplash"/> <figcaption>
+            <p>Photo by <a href="https://unsplash.com/photos/8_WZU5xKFKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/search/photos/hive?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+        </figcaption>
+</figure>
+
+
+<pre><code>Exception in thread &quot;main&quot; java.lang.ClassCastException:   
+  class jdk.internal.loader.ClassLoaders$AppClassLoader   
+   cannot be cast to   
+  class java.net.URLClassLoader   
+  (jdk.internal.loader.ClassLoaders$AppClassLoader   
+    and   
+  java.net.URLClassLoader are in module java.base of loader 'bootstrap')
+</code></pre>
+
+<p>That looked like a JVM incompatibility, so I switched from GraalVM (the one I use by default) to Java 8 (I have aliases <code>jgrce</code>, <code>jgree</code>, <code>j8</code> and <code>j11</code> to switch JVMs). Still, the same error regardless. Weird. Maybe Java 11 (the other JVM I have installed)? Nope, same error.</p>
+
+<p>A quick Googling confirmed that this was related to Hive picking up Java 11, but only working with 7, 8 or 9 (not sure about 9). This in turn is due to the Hive boot scripts looking for the latest JRE which is at least 7, like the <code>hive</code> command here:</p>
+
+<pre><code>JAVA_HOME=&quot;$(/usr/libexec/java_home --version 1.7+)&quot; \   
+HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \  
+&quot;/usr/local/Cellar/hive/3.1.1/libexec/bin/hive&quot; &quot;$@&quot;
+</code></pre>
+
+<p>This will pick 11, which no longer has <code>URLClassLoader</code> (I think this was changed in Java 9). So, won&rsquo;t start.</p>
+
+<p>Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java &gt; 1.8. For me this was not an option, so I just modified the scripts by removing the <code>JAVA_HOME</code> condition (since I set my <code>JAVA_HOME</code> globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.</p><hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/mac" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Mac</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/big-data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Big data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/hive" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hive</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2013/05/find-search-engine-rankings-via-command.html/">Find Search Engine Rankings... via the Command Line</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/02/2019-6-readings-of-week.html/">2019-6 Readings of the week</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/01/2019-1-readings-of-week.html/">2019-1 Readings of the week</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/01/2018-year-in-review.html/">2018: Year in Review</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2018/04/modifying-agnoster-theme-for-zsh.html/">Modifying the agnoster theme for zsh</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

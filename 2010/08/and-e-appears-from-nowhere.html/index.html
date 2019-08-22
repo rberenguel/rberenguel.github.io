@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | And e appears from nowhere!</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="And e appears from nowhere!" />
+<meta property="og:description" content="As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
+ Here is an example of e turning up unexpectedly." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/" />
+<meta property="article:published_time" content="2010-08-05T23:52:00+02:00" />
+<meta property="article:modified_time" content="2010-08-05T23:52:00+02:00" />
+<meta itemprop="name" content="And e appears from nowhere!">
+<meta itemprop="description" content="As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
+ Here is an example of e turning up unexpectedly.">
+
+
+<meta itemprop="datePublished" content="2010-08-05T23:52:00&#43;02:00" />
+<meta itemprop="dateModified" content="2010-08-05T23:52:00&#43;02:00" />
+<meta itemprop="wordCount" content="1088">
+
+
+
+<meta itemprop="keywords" content="Programming,Maths,Bizarre," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="And e appears from nowhere!"/>
+<meta name="twitter:description" content="As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
+ Here is an example of e turning up unexpectedly."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">And e appears from nowhere!</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-08-05T23:52:00&#43;02:00">August 5, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 6 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1088 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I posted in <a href="http://www.mostlymaths.net/2010/08/best-posts-i-have-read-in-june-and-july.html">Best Posts I Have Read in June and July</a>, I liked a lot a numerical experiment in <a href="http://re-factor.blogspot.com/">Re: Factor</a>, a blog about learning the Factor programming language. The idea comes from <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">another blog</a>, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497">Prime Obsession</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=0309085497" alt="" /> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
+
+<blockquote>
+<p><em>Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1</em>? The answer is e. (See sketch of proof below)</p>
+</blockquote>
+
+<p>In the original post, a quick <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">Clojure implementation</a> is programmed, and in Re: Factor, a <a href="http://re-factor.blogspot.com/2010/07/curious-factor-to-rescue.html">Factor implementation</a> is added. When I originally read the post, I missed that the original version was in Clojure, and decided I was good to go by writing a Common Lisp version. I&rsquo;d prefer a Forth version, but as Factor is very close to Forth, it was close to cheating. Keep in mind that I wasn&rsquo;t aware that the first version was in Clojure!</p>
+
+<p>I switched to my emacs session and started slime. To my surprise, slime fired up Clojure, instead of Common Lisp! I didn&rsquo;t remember that a few months back I got interested in this language, and set up slime to start Clojure. Oh well. My first program in Clojure, I thought.</p>
+
+<p>The first function was easy to define. A function which picks random numbers from 0 to 1 and keeps on adding them until they are bigger than 1. As this was my first Clojure project, I didn&rsquo;t want to bother learning how Clojure loops work&hellip; I wrote a recursive version. I did not try to make it even tail recursive:</p>
+
+<blockquote>
+<p>(defn PlusRandom [initial steps]<br />
+; Initial and step start at 0. Will return how many times it takes<br />
+; to be greater than 1<br />
+(if (&gt; initial 1)<br />
+steps<br />
+(PlusRandom (+ initial (rand)) (+ 1 steps))))</p>
+</blockquote>
+
+<p>Ugly, I can hear you mutter. Maybe, but this was my first ever Clojure function, and it is almost the same I would write in Lisp. Moreover, after inspection, it looks like it is indeed tail recursive. It still amazes me that it worked! Of course, this can be improved, at least to make it more clear, with an auxiliary function:</p>
+
+<blockquote>
+<p>(defn PlusRandomAux [initial steps]<br />
+; Initial and step start at 0.<br />
+; Will return how many times<br />
+; it takes to be greater than<br />
+; 1<br />
+(if (&gt; initial 1)<br />
+steps<br />
+(recur (PlusRandomAux (+ initial (rand)) (+ 1 steps)))))</p>
+
+<p>(defn PlusRandom []<br />
+(PlusRandomAux))</p>
+</blockquote>
+
+<p>After this function, we have to take averages of what the last function returns, for a large number of iterates. My first version of this function was recursive, too. But it blew away the stack, which is not good. I conceded, and looked at Clojure&rsquo;s <a href="http://clojure.org/special_forms#Special%20Forms--%28loop%20[bindings*%20]%20exprs*%29">loop</a> construct, and the result was</p>
+
+<blockquote>
+<p>(defn AveragePlusRandom [iterates]<br />
+; Takes the average of &ldquo;iterates&rdquo; iterations of the previous<br />
+; function. Accumulator should start at 0<br />
+(loop [n iterates accumulator 0]<br />
+(if (= n 0)<br />
+(double (/ accumulator iterates))<br />
+(recur (dec n) (+ accumulator (PlusRandom))))))</p>
+</blockquote>
+
+<p>Now, I look at <a href="http://clojure.org/special_forms#Special%20Forms--%28recur%20exprs*%29">recur</a>, because it looks odd. Turns out, Clojure does no tail call optimization! Big fail for my PlusRandom function. Rewritten with a loop construct, with recur:</p>
+
+<blockquote>
+<p>(defn PlusRandom []<br />
+(loop [cnt 0 accumulator 0]<br />
+(if (&gt; accumulator 1) cnt<br />
+(recur (+ 1 cnt) (+ accumulator (rand))))))</p>
+</blockquote>
+
+<p>for a gain of an 11% execution time (from 3.9 to 3.5 seconds). It looks like too little for a tail call&hellip; but as most calls end either with 2 or 3 recursions, the improvement should be small? No! It turns out that the auxiliary function call adds an overhead&hellip; which accounts for a change from 3.9 seconds to 3.7 seconds! And the real improvement from tail call optimization is just a mere 6%.</p>
+
+<p>Of course, if you want a quick program, you do it in C, if you want to program quick, you do in (insert your favourite quick language). The convergence of this scheme is too slow, too. But the answer comes from the mathematical proof.</p>
+
+<blockquote>
+<p>user=&gt; (time (AveragePlusRandom 100000))<br />
+&ldquo;Elapsed time: 421.315711 msecs&rdquo;<br />
+2.71938<br />
+user=&gt; (time (AveragePlusRandom 1000000))<br />
+&ldquo;Elapsed time: 3445.167485 msecs&rdquo;<br />
+2.718408<br />
+user=&gt; (time (AveragePlusRandom 10000000))<br />
+&ldquo;Elapsed time: 34082.850845 msecs&rdquo;<br />
+2.7182318</p>
+</blockquote>
+
+<p>By the way, the proof from the convergence to e is quite straightforward, but this morning I was in no mood for this kind of problem (I am not fond of counting or probabilities) and googled it. I found it in the Google cache for Derbyshire&rsquo;s book FAQ. I have edited a little his version</p>
+
+<p>The first step is key. What&rsquo;s the probability that the sum of just two random numbers exceeds 1? The same probability as that a point (x,y) in the unit square (corners are at (0,0), (0,1), (1,0), and (1,1)), satisfied the inequality <em>x</em> + <em>y</em> &gt;= 1. This is of course <sup>1</sup>&frasl;<sub>2</sub>; draw the diagonal from (0,1) to (1,0), and it&rsquo;s the probability that (<em>x</em>,<em>y</em>) is in the upper right triangle.If you now go to three random numbers, the chance that their sum exceeds 1 is got by &ldquo;cutting a slice&rdquo; across the unit cube through the corners (1,0,0), (0,1,0), and (0,0,1). Observe that this pyramid (shown below) also cuts the unit square along the diagonal! This pyramid has volume <sup>1</sup>&frasl;<sub>6</sub>, and the probability <em>x</em> + <em>y</em> + <em>z</em> &gt;= 1 is then 1-<sup>1</sup>&frasl;<sub>6</sub>=<sup>5</sup>&frasl;<sub>6</sub>.</p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s1600/E.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s400/E.png" alt="" /></a></p>
+
+<p>A little calculus, plus the principle of induction, shows that the pyramid (standard simplex) sliced off an <em>n</em>-dimensional unit cube by a hyper-plane through its corners (1,0,0,0,&hellip;), (0,1,0,0,&hellip;), (0,0,1,0,&hellip;),&hellip; has volume 1/<em>n</em>! If you don&rsquo;t believe it, you can check Wikipedia for the volume of the standard <a href="http://en.wikipedia.org/wiki/Simplex#Geometric_properties">simplex</a>.</p>
+
+<p>The probability that a total of 1 is exceeded after adding <em>n</em> random numbers is therefore 1 - 1/<em>n</em>!The probability that a total of 1 is exceeded after adding <em>n</em> random numbers <em>but not before</em> is therefore (1 - 1/<em>n</em>!) - (1 - 1/(<em>n</em> - 1)!), which simplifies to (<em>n</em> - 1) / <em>n</em>! The expected number of selections until a total of 1 is exceeded is therefore the following sum:</p>
+
+<p><a href="http://www.wolframalpha.com/input/?i=sum+n+%2F+n%21%2C+n%3D1+to+infinity"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TFslM7e4Z2I/AAAAAAAACgI/KaL1WwtNeQ4/s400/Formula.png" alt="" /></a></p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a></p>
+
+<p>ParseList(ScrambleList(Relateds(Maths,Programming)),5)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/maths" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Maths</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/bizarre" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Bizarre</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/06/on-productivity-down.html/">On a productivity down</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/cjuicer-beats-humans-and-unixs-diff.html/">CJuicer beats humans (and Unix&#39;s diff)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/05/100-most-common-words-in-icelandic-more.html/">The 100 most common words in Icelandic, automatically generated from Wikipedia</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/03/forths-create-does-maybe-im-amazed.html/">Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/02/debugging-with-emacsvalgrind.html/">Debugging with emacs&#43;valgrind</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

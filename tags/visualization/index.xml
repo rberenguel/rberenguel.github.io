@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/visualization/</link>
+    <description>Recent content in Visualization on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Mar 2018 17:40:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Processing from Scala</title>
+      <link>https://mostlymaths.net/2018/03/processing-and-scala.html/</link>
+      <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
+      <description>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
+ From Processing.org
+I had always wanted to play with Processing (after leafing through The Processing Handbook and Visualizing Data some years ago). My general dislike for Java or the JVM made me just play a very short amount of time with processing.js something around 2011 (there was a native processing.</description>
+    </item>
+    
+    <item>
+      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <description>Taken from Flickr
+  In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
+This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
+    </item>
+    
+    <item>
+      <title>Using Gephi with Google Analytics to visualize keywords and landing pages</title>
+      <link>https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/</link>
+      <pubDate>Thu, 18 Aug 2011 18:50:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/</guid>
+      <description>As of late, I&amp;rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&amp;rsquo;ve read two interesting books (Statistical Analysis with Rand Visualize This: The FlowingData Guide to Design, Visualization, and Statistics) and I&amp;rsquo;m on my way to another two to refresh my statistics knowledge.
+But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least very big) datasets and graphs.</description>
+    </item>
+    
+  </channel>
+</rss>

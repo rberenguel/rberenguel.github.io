@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conferences on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/conferences/</link>
+    <description>Recent content in conferences on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Feb 2018 23:27:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scala eXchange 2017</title>
+      <link>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</link>
+      <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
+      <description>Almost two months ago (time sure flies) I attended for the second time the conference Scala eXchange, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London. Also happens to be an excellent conference, and I’m repeating next year (yes, I already got my tickets).
+For those who don’t know, Scala eXchange is a 2-day (plus an unconference day) conference in central London, bringing most of the library developers you love to talk about cool stuff.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Using QGIS to create a custom map</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Using QGIS to create a custom map" />
+<meta property="og:description" content="I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/" />
+<meta property="article:published_time" content="2015-06-14T20:12:00+02:00" />
+<meta property="article:modified_time" content="2015-06-14T20:12:00+02:00" />
+<meta itemprop="name" content="Using QGIS to create a custom map">
+<meta itemprop="description" content="I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.">
+
+
+<meta itemprop="datePublished" content="2015-06-14T20:12:00&#43;02:00" />
+<meta itemprop="dateModified" content="2015-06-14T20:12:00&#43;02:00" />
+<meta itemprop="wordCount" content="2308">
+
+
+
+<meta itemprop="keywords" content="emacs,QGIS,L&#39;Arboç,iPad,Mac,DIY,Maps," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using QGIS to create a custom map"/>
+<meta name="twitter:description" content="I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Using QGIS to create a custom map</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2015-06-14T20:12:00&#43;02:00">June 14, 2015</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 11 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 2308 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is <a href="http://en.wikipedia.org/wiki/Levi-Civita_connection">intended</a>) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.) Thus I did what any other nerd would do: roll my own map as I wanted it.</p>
+
+<p>The end result looks like this (downscaled to 20%)</p>
+
+<p><a href="http://4.bp.blogspot.com/-8DwquVvWLp0/VX3Djl6S5aI/AAAAAAAAEPM/SPDqCIl-KCw/s1600/MapWithSymbols_20.jpg"><img src="https://4.bp.blogspot.com/-8DwquVvWLp0/VX3Djl6S5aI/AAAAAAAAEPM/SPDqCIl-KCw/s320/MapWithSymbols_20.jpg" alt="" /></a></p>
+
+<p>The real map is 1.4 × 1.2 metres</p>
+
+<h2 id="getting-the-data">Getting the data</h2>
+
+<p>My first idea was to follow the steps of <a href="http://www.dominik-schwarz.net/potpourri/worldmap/">Dominik Schwarz</a> in his quest for printing a huge map of the world, and harvest images from Google Maps and get away with it. But one of the fundamental parts of my map was supposed to be having all walking routes visible and available. Google Maps won’t show that, or at least not everything. Specially among vines or forests. What’s the point of living close to the <a href="http://ca.wikipedia.org/wiki/Pant%C3%A0_de_Foix">Pantà de Foix</a> (the Foix Dam) and not being able to walk there?</p>
+
+<p><a href="http://2.bp.blogspot.com/-RlKW0-rFhDU/VX3A1zljfMI/AAAAAAAAEOI/eLte_GqoonM/s1600/Castellet.jpg"><img src="https://2.bp.blogspot.com/-RlKW0-rFhDU/VX3A1zljfMI/AAAAAAAAEOI/eLte_GqoonM/s320/Castellet.jpg" alt="" /></a></p>
+
+<p>Castellet, just beside Pantà de Foix</p>
+
+<p>Hence, I turned to our trusty government, and in particular to the <a href="http://www.icc.cat/eng/Home-ICC/Inici/Inici">Catalan Cartographic and Geologic Institute</a> (from now on the ICC, which is the Catalan acronym.) They have a powerful online map application, with good quality satellite imagery, elevation data, toponymy… All is available online. And for free download! You only need to register, and seem to be limited to one download at a time. No big issue, although I needed to get 16 satellite tiles.</p>
+
+<p>There is a <em>huge</em> amount of data available for download. Since my knowledge of technical map stuff ended at knowing that the technical term for what I wanted to do is <a href="https://en.wikipedia.org/wiki/Geographic_information_system">GIS</a> , I wasn’t really sure what files I needed and what I could do with them on a Mac without having to pay for a dedicated app.</p>
+
+<p>The first step was finding a free app that could “do maps.” After some Googling it was pretty clear it had to be <a href="http://www.qgis.org/en/site/">QGIS</a> (formerly known as Quantum GIS) which is free, open-source and available cross-platform. It was quite straightforward to install on Mac, just needing some extra libraries to work with the satellite image files I was using. Once I had it, the real “nightmare” started, where I had to decide what kind of files I needed and what they were good for. This is where ICC helped, since they have documentation for all their file types, not only explaining what they have but also what they are useful for.</p>
+
+<p>For a starter I downloaded all satellite imagery with a scale of 1:2500, generated on 2014. Recent enough. This was the easy one:</p>
+
+<ul>
+<li>Download each file</li>
+<li>Unzip it</li>
+<li>In QGIS, Layer→Add Layer→Add Raster Layer (or <em>Shift-Cmd-R</em>)</li>
+</ul>
+
+<p>Since the files are already geolocated data (the format is SID, which is why I needed a special plugin to handle it) in just a few minutes I had a satellite view of the area, automatically placed and multi-scale. Not bad for a few minutes of downloading and goofing around.</p>
+
+<p>Then the real work started: I wanted street names, road names and features. How? I’m pretty sure there are many ways, but the one I found most straightforward was:</p>
+
+<ul>
+<li>Download Topography-base maps, with a scale of 1:2500 in SHP (Shapefile) format</li>
+<li>In QGIS, Layer→Add Layer→Add Vector Layer (or <em>Shift-Cmd-V</em>)</li>
+<li>Select full folder, Arc/Info binary format and browse to it</li>
+<li>Select the files you really want</li>
+</ul>
+
+<p>ICC provides a lot of files for each map tile at that resolution. Lots of stuff I didn’t really want. I chose only toponymy, elevation lines, hydrography and roads. Why?</p>
+
+<ul>
+<li>I needed toponymy layers to set labels to features</li>
+<li>Elevation looks very cool (even if I disabled it for the final generated map)</li>
+<li>With hydrography I could change the colour from the satellite imagery to a more bluish tone in water areas (since the Foix dam is quite greenish)</li>
+<li>Roads was the main reason I was doing this</li>
+</ul>
+
+<h2 id="adding-some-text">Adding some text</h2>
+
+<p>Once I had everything in place I wondered: <em>Where are the labels?</em></p>
+
+<ul>
+<li>Double-click a toponymy layer</li>
+<li>Labels→Label this layer with…</li>
+</ul>
+
+<p>Here some of the huge power of QGIS started to appear. Most “variables” in the map can be controlled via either fields in the data layer OR functions applied to these fields. So, I could easily label by a data column, like <code>TEXT_TOP</code> (which had the common name of the feature, like <code>Pantà de Foix</code>.) But I also could set the size of the font to the one defined in the datafile. And I could even choose the font according to the feature type (or in my case, the font defined in the data file: the data provided by the ICC had font size and font family for the features) with a function!</p>
+
+<pre><code>CASE   
+  WHEN &quot;FONTNAME&quot; LIKE 'Times New Roman' THEN 'Georgia'  
+  WHEN &quot;FONTNAME&quot; LIKE'Arial' THEN 'Futura'  
+  WHEN &quot;FONTNAME&quot; LIKE 'Arial Narrow' THEN 'Futura'  
+  WHEN &quot;FONTNAME&quot; LIKE 'Courier New' THEN 'Inconsolata'  
+END  
+
+</code></pre>
+
+<p>The language seems to be QGIS specific, but has SQL-like <code>LIKE</code>. Single quotes denote strings, double quotes denote fields. Important to remember, since it’s very easy to mix one with the other without realising. I set all labels to show, even colliding labels. I didn&rsquo;t want to miss a castle or church because it was too close to a large street. I&rsquo;d rather have overlapping labels in this case.</p>
+
+<p>Then I decided I wanted something more: I wanted icons to show what each feature was. Icons like what you have in a normal map, where churches are indicated by a cross and castles by a tower. The layer I was working with (the toponymy layer) only had type codes for its features, so I couldn’t really tell what a 23 was. Church? Castle? Farm?</p>
+
+<h2 id="symbols-labels">Symbols…? Labels&hellip;?</h2>
+
+<p>To do this, I needed to download an auxiliary file (which the ICC already told me about when I clicked Shapefile as type of download) having the list of code together with human-readable definitions. It is loaded as a single-file Shapefile layer, but has no “visible data.” Instead you need some magic.</p>
+
+<ul>
+<li>Open a toponymy layer</li>
+<li>Select <code>Joins</code></li>
+<li>Add a join layer with <code>codis_topo</code> (the source, in this case the layer I just added) and selecting as join field the type code (in this case, <code>CODI_TOP</code>)</li>
+<li>I disabled caching and added a custom name to the newly created column, the join
+
+<br /></li>
+</ul>
+
+<p><a href="http://1.bp.blogspot.com/-rK9KJyCni0w/VX3BLkvX6XI/AAAAAAAAEOQ/545Fzyv6Sl0/s1600/Joins.jpg"><img src="https://1.bp.blogspot.com/-rK9KJyCni0w/VX3BLkvX6XI/AAAAAAAAEOQ/545Fzyv6Sl0/s320/Joins.jpg" alt="" /></a></p>
+
+<p>A join</p>
+
+<p>With this at least I’d know, since the type was now human-readable. I still didn’t know how to add icons, but I could edit the name and add a letter to denote what it is (or I could even add some text.) The labelling function is then</p>
+
+<pre><code>CASE   
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%capella%' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%monestir%' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%monestir%' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%tedral%' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Església' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Convent' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Temple' THEN CONCAT( '† ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Arc' THEN CONCAT( 'ﬂ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%ducte' THEN CONCAT( 'ﬂ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Font, bullidor, deu' THEN CONCAT( 'ƒ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%toll,%' THEN CONCAT( '≈ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%astell,%' THEN CONCAT( 'Ħ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE   'Talaia, torre de defensa, torre de guaita'  THEN CONCAT( 'Ħ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%rica (en%' THEN CONCAT( 'Ħ ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE  'Muralla'  THEN CONCAT( '= ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'GR (Sender de Gran Recorregut)' THEN CONCAT( 'GR: ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE   'PR (Sender de Petit Recorregut)'  THEN CONCAT( 'PR: ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE 'Pou%' THEN CONCAT( 'ů ', &quot;TEXT_TOP&quot; )  
+  WHEN  &quot;coditopo_03ca_CONCEPTE&quot;  LIKE '%pont%' THEN CONCAT( 'π ', &quot;TEXT_TOP&quot; )  
+  ELSE  &quot;TEXT_TOP&quot;  
+END  
+
+</code></pre>
+
+<p>This, basically adds a weird symbol to the text, so, for instance, bridges have a π symbol in front. Not great, but I actually printed it like this for a starter and it looks pretty decent. Here you can see a zoom in and the general view:</p>
+
+<p><a href="http://3.bp.blogspot.com/-a2pscTe1DoI/VX3BXg2oulI/AAAAAAAAEOY/dwki-mJGTpE/s1600/Shot-FullForPrint.jpg"><img src="https://3.bp.blogspot.com/-a2pscTe1DoI/VX3BXg2oulI/AAAAAAAAEOY/dwki-mJGTpE/s320/Shot-FullForPrint.jpg" alt="" /></a></p>
+
+<p>The general view</p>
+
+<p><a href="http://4.bp.blogspot.com/-EApOrt5V6lE/VX3BYXsgBRI/AAAAAAAAEOg/nBJamzCfsRI/s1600/Shot-WGlyphs.jpg"><img src="https://4.bp.blogspot.com/-EApOrt5V6lE/VX3BYXsgBRI/AAAAAAAAEOg/nBJamzCfsRI/s320/Shot-WGlyphs.jpg" alt="" /></a></p>
+
+<p>A zoom</p>
+
+<p>In the zoom you can see the glyphs for a fountain (<em>Font d’Horta</em> and <em>Font de Mas Carlús</em>), a church (<em>Sant Pere</em>) an aqueduct (<em>de les Aigües de Vilanova i la Geltrú</em>) and a bridge (<em>de la font d’Horta</em>.) This was nice but non-optimal. I wanted symbols! So, how do you get symbols if you have a toponymy layer with lines, not feature points?</p>
+
+<h2 id="symbols">Symbols!!</h2>
+
+<p>First, duplicate the layers holding the labels. It can be done without duplicating, but it introduces a layer of complication for the human… So, if your computer doesn’t mind the extra layers, it is easier for you as human to have a separate layer for the labels and a layer for the icons.</p>
+
+<p>Once you have duplicated the layer, change its style to rule-based, and add marks following rules with the add sign. For instance, this is the rule I use for <em>Castell</em> (castle):</p>
+
+<pre><code>CASE  
+  WHEN &quot;coditopo_03ca_CONCEPTE&quot; LIKE 'Castell,%' THEN 1  
+  ELSE 0  
+END  
+
+</code></pre>
+
+<p>with SVG marker <code>svg/fortress2.svg</code></p>
+
+<p><strong>NOTE:</strong> if you are using only one condition, for rule-based markers you can just keep it at</p>
+
+<pre><code>&quot;coditopo_03ca_CONCEPTE&quot; LIKE 'Castell,%'
+``````
+  
+
+</code></pre>
+
+<p>since it will just return 0 or 1 as needed. You&rsquo;ll only need CASE when you have several types going to the same marker. Since I just copy-pasted most of my code I didn&rsquo;t mind the extra cruft. Thanks to <a href="https://twitter.com/madmanwoo">Nathan Woodrow</a>, one of QGIS&rsquo; developers for pointing it out on twitter.</p>
+
+<p>To add this as image you need to select <code>Marker</code>, then <code>SVG marker</code>. I found very nice SVG icons <a href="http://www.flaticon.com/">here</a>, so I use this opportunity as credit (since the printed map is just for my personal use.) And indeed, you need to add as many rules as icons you have. That’s life. A GIS professional probably knows other ways, I’m just a newbie. Once you have all the rules you want, you can copy-paste them in all the layers. Actually, I think all this map business would have been easier merging all vector layers before doing anything else, but since I didn’t do it from the beginning it was hard to do it now. You can find how to merge vector layers in this <a href="http://gis.stackexchange.com/questions/25061/how-to-merge-multiple-layers-to-one-layer-using-qgis">StackOverflow question</a>.</p>
+
+<p><a href="http://4.bp.blogspot.com/-lrONN9X9Dxk/VX3BvPSdVoI/AAAAAAAAEOw/ooIcjlyOAS8/s1600/RuleBaseds.jpg"><img src="https://4.bp.blogspot.com/-lrONN9X9Dxk/VX3BvPSdVoI/AAAAAAAAEOw/ooIcjlyOAS8/s320/RuleBaseds.jpg" alt="" /></a></p>
+
+<p>This is how <em>Style</em> should look like with rule-based</p>
+
+<p><a href="http://4.bp.blogspot.com/-mSRXMmttScw/VX3BuU2lZBI/AAAAAAAAEOo/eWqxq7g7n0M/s1600/Markers.jpg"><img src="https://4.bp.blogspot.com/-mSRXMmttScw/VX3BuU2lZBI/AAAAAAAAEOo/eWqxq7g7n0M/s320/Markers.jpg" alt="" /></a></p>
+
+<p>And this is what a specific rule looks like</p>
+
+<p> After adding markers you’ll need to tweak them. I did one part in SVG (adding stroke to the shapes and changing colours directy in the file so I didn’t need to bother in QGIS) and some others relating to placement (middle point and then changing size and baseline of the icon.) I also did some changes editing the file directly in Emacs, since QGIS files are just XML and replacing is much faster without clicking anything, once you know how the fields are named. The end result? Here you can see the same area as above with icons.</p>
+
+<p><a href="http://2.bp.blogspot.com/-Y46sBPQBiik/VX3B_5ARi2I/AAAAAAAAEO4/HZEaDZkjuwI/s1600/Shot-WSymbols.jpg"><img src="https://2.bp.blogspot.com/-Y46sBPQBiik/VX3B_5ARi2I/AAAAAAAAEO4/HZEaDZkjuwI/s320/Shot-WSymbols.jpg" alt="" /></a></p>
+
+<p>A zoom in with markers in place</p>
+
+<p>Nice, don’t you think?</p>
+
+<h2 id="so-how-do-you-print-it">So, how do you print it?</h2>
+
+<p>This is actually very very easy. To print you need a <code>New print composer</code> from the <code>Project</code> menu. This is a set of rules to print some map. So, you choose the paper size and then add pieces to the layout. The basics are a map, a scale and some text, or at least this is the bare minimum I wanted. </p>
+
+<p>Once you have the map area you can change scale, drag around and change many things, it’s awesome. I decided to use 1:10000 since fitting the whole map in the map area I chose was 1:9556 and I’d rather have a round number and lose some map around the borders. Ready to export to PDF and bring to a printing place. You can also generate a JPG file, but beware of trying to open a 176 Mb with an iPad (even if it is an Air.) It won’t zoom. On the other hand, for my Mac it was much easier to open and zoom/navigate a huge JPG rather than a huge PDF file. Also keep in mind large maps take a long time to export: if you are making tests disable as many layers as you can really manage.</p>
+
+<p><a href="http://2.bp.blogspot.com/-L1CY_mItEiw/VX3CJEsqiQI/AAAAAAAAEPA/U4KOIttkbDA/s1600/MapComposer.jpg"><img src="https://2.bp.blogspot.com/-L1CY_mItEiw/VX3CJEsqiQI/AAAAAAAAEPA/U4KOIttkbDA/s320/MapComposer.jpg" alt="" /></a></p>
+
+<p>The map composer reminds me of Scribus</p>
+
+<p>Since I wanted a portable version of the map to have on my iPad Air, I decided to split it using ImageMagick in 9 tiles I could easily zoom in any app. IM has the nice “crop” feature that can generate tiles, like:</p>
+
+<pre><code>convert -crop 4x3 MEGAMAP.jpg megamap/tiles%03d.jpg  
+
+</code></pre>
+
+<p>The problem is that this takes way, way longer than expected, because the image is too big. The fastest way is instead to use the <code>stream</code> command to generate raw RGB data and convert that to JPG. So, repeating 9 times stuff like:</p>
+
+<pre><code>stream -extract 5566x3937+11132+7874 MEGAMAP.jpg t9.rgb  
+convert -depth 8 -size 5566x3937 rgb:t9.rgb t9.jpeg  
+
+</code></pre>
+
+<p>Since I only needed to do it this time I didn’t bother to code it as a bash for loop or anything. Whereas <code>convert</code> was taking more than 12 hours to do anything, stream took 3 minutes, counting the time I needed to compute the pixel shifts and the conversions. And probably even the time it took me to create a <code>index.html</code> with the pieces to zoom.</p>
+
+<p>What’s the takeaway of this post? Doing maps is fun, and using <a href="http://www.qgis.org/en/site/">QGIS</a> is not that hard as it may seem. And yes, I have an awesome big map now.</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/qgis" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">QGIS</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/larbo%C3%A7" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">L&#39;Arboç</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/ipad" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">iPad</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/mac" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Mac</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/diy" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">DIY</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/maps" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Maps</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2013/05/find-search-engine-rankings-via-command.html/">Find Search Engine Rankings... via the Command Line</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/09/editor-magic-emacs-vim-acme-and-return.html/">Editor Magic: emacs, vim, acme and the return key</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/07/back-to-gnus-emacs-mail-reader.html/">Back to gnus (emacs mail reader)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/">Learning to use vim in my iPad (even if I&#39;m an emacs geek)</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

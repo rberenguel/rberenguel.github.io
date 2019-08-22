@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | The command line PostScript swiss knife: a2ps</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="The command line PostScript swiss knife: a2ps" />
+<meta property="og:description" content="I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.
+Google answered with this page, and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/05/command-line-postscript-swiss-knife.html/" />
+<meta property="article:published_time" content="2010-05-27T14:00:00+02:00" />
+<meta property="article:modified_time" content="2010-05-27T14:00:00+02:00" />
+<meta itemprop="name" content="The command line PostScript swiss knife: a2ps">
+<meta itemprop="description" content="I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.
+Google answered with this page, and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has.">
+
+
+<meta itemprop="datePublished" content="2010-05-27T14:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2010-05-27T14:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="436">
+
+
+
+<meta itemprop="keywords" content="Linux," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The command line PostScript swiss knife: a2ps"/>
+<meta name="twitter:description" content="I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.
+Google answered with this page, and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">The command line PostScript swiss knife: a2ps</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-05-27T14:00:00&#43;02:00">May 27, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 436 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.</p>
+
+<p>Google answered with <a href="http://www.gnu.org/software/a2ps/">this page</a>, and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has.</p>
+
+<p>As default, a2ps prints in landscape format, 2 pages per sheet. Moreover, it adds a black border around the page and a header with the filename, time and who printed this. Below an example of straight a2ps:</p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S_f3xnEtnqI/AAAAAAAACV4/GdCK_-CyqSk/s1600/1.jpg"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S_f3xnEtnqI/AAAAAAAACV4/GdCK_-CyqSk/s400/1.jpg" alt="" /></a></p>
+
+<p>Back a few days ago I had to print my flight details (it was too early to print the boarding pass), and you know, they look like a nicely formatted text file. But when Gmail tries to print it, it removes all white spacing, rendering it unreadable.</p>
+
+<p>A solution? Creating a flight.txt file and pasting from the mail. Then</p>
+
+<blockquote>
+<p>a2ps flight.txt -B &ndash;portrait &ndash;columns=1 -o flight.ps</p>
+</blockquote>
+
+<p>What does all this mean?</p>
+
+<ul>
+<li>-B removes the header, which is useful only if more than one sheet is needed,</li>
+<li>--portrait turns on portrait print mode (landscape by default),</li>
+<li>--columns=1 Just one page per sheet. 2 by default,</li>
+<li>-o output file name. By default it would send to the default printer,</li>
+</ul>
+
+<p>And the same example with these settings:</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S_f3yFMsz1I/AAAAAAAACWA/hfyJhJ8RXiE/s1600/2.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S_f3yFMsz1I/AAAAAAAACWA/hfyJhJ8RXiE/s400/2.jpg" alt="" /></a></p>
+
+<p>There are also other interesting options. For example -catman (or -m) selects 66 lines per page, as if the job comes from a man page. A companion program to a2ps is card: turns man pages into pretty PostScript files. Its usage is simple:</p>
+
+<blockquote>
+<p>card a2ps -o a2ps.ps</p>
+</blockquote>
+
+<p>Generates the manual entry for a2ps for pretty printing:</p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RMz5mjI/AAAAAAAACWM/EAw15MpDuPo/s1600/3.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RMz5mjI/AAAAAAAACWM/EAw15MpDuPo/s400/3.jpg" alt="" /></a></p>
+
+<p>The card program invokes a2ps, thus you can add a2ps options after --, for instance<br />
+card a2ps -o a2ps.ps &ndash; -B to remove the headers</p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RfbI7mI/AAAAAAAACWU/aNDm3dHXjCA/s1600/4.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RfbI7mI/AAAAAAAACWU/aNDm3dHXjCA/s400/4.jpg" alt="" /></a></p>
+
+<p>a2ps&rsquo; slogan is Do the right thing, meaning that it will pass the processing to any other processor. For example, if trying to process html files, it will pass them to html2ps, if you try a gif file, it will pass it to ImageMagick.</p>
+
+<p>This is only meant as an introduction to a2ps, as it has around 50 options for processing files. For more info&hellip; man a2ps :)</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html">Power to the command line</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html">Two weeks, still loving Fluxbox</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html">Three dee (3-dimensional file system browsers review)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a></p>
+
+<p>ParseList(ScrambleList(Relateds(Linux)),4)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/05/nanonote-ports-yacas-4th-forth.html/">NanoNote ports: Yacas &amp; 4th (Forth interpreter, compiler)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/linux-screenshots-made-easy-shutter.html/">Linux screenshots made easy: Shutter &amp; Screenie</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/sed-stream-editor-to-colorise-script.html/">sed (stream editor) to colorise script output</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/gcal-ultra-powerful-command-line-gnu.html/">Gcal the ultra-powerful command line GNU calendar</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/04/another-ben-nanonote-port-pmars.html/">Another Ben NanoNote port: pMARS</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Approximating images with randomly placed translucent triangles, Take 1</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Approximating images with randomly placed translucent triangles, Take 1" />
+<meta property="og:description" content="Stochastic hill climbing: Sisyphus pushes an image Last year, Slashdot published this interesting piece of work: Genetic evolution of the Mona Lisa. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some Christmas postcard related to maths or programming I gave it a try. So I wrote a LISP version&hellip; way too slow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/" />
+<meta property="article:published_time" content="2010-04-02T18:00:00+02:00" />
+<meta property="article:modified_time" content="2010-04-02T18:00:00+02:00" />
+<meta itemprop="name" content="Approximating images with randomly placed translucent triangles, Take 1">
+<meta itemprop="description" content="Stochastic hill climbing: Sisyphus pushes an image Last year, Slashdot published this interesting piece of work: Genetic evolution of the Mona Lisa. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some Christmas postcard related to maths or programming I gave it a try. So I wrote a LISP version&hellip; way too slow.">
+
+
+<meta itemprop="datePublished" content="2010-04-02T18:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2010-04-02T18:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="881">
+
+
+
+<meta itemprop="keywords" content="Programming,LISP," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Approximating images with randomly placed translucent triangles, Take 1"/>
+<meta name="twitter:description" content="Stochastic hill climbing: Sisyphus pushes an image Last year, Slashdot published this interesting piece of work: Genetic evolution of the Mona Lisa. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some Christmas postcard related to maths or programming I gave it a try. So I wrote a LISP version&hellip; way too slow."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Approximating images with randomly placed translucent triangles, Take 1</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-04-02T18:00:00&#43;02:00">April 2, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 5 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 881 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s1600/Generation0010190.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s400/Generation0010190.jpg" alt="" /></a></p>
+
+<h2 id="stochastic-hill-climbing-sisyphus-pushes-an-image">Stochastic hill climbing: Sisyphus pushes an image</h2>
+
+<p>Last year, Slashdot published this interesting piece of work: <a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/">Genetic evolution of the Mona Lisa</a>. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some <a href="http://www.mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html">Christmas postcard</a> related to maths or programming I gave it a try. So I wrote a LISP version&hellip; way too slow. After optimizing a little my code I got a 3x boost&hellip; but it was around 3 times slower than the C version I wrote afterwards&hellip; Which is still damn slow. But works :) I&rsquo;ll show here how the algorithm works, and I&rsquo;ll (officially, it is already available) post the code in a week or so.</p>
+
+<p>I work just with triangles (it was much easier to write), but the algorithm is quite slow, moreover I need more than 50 triangles to get significative similarities. I have observed some interesting properties of the approximation algorithm. The most significative one, is the asymptotic convergence. Here you can see in red the error of the approximated image (in an arbitrary scale) vs. generation count. As you can see, it is somewhat asymptotic to a stable line. I have made some tweaks trying to at least lower this asymptote, but I didn&rsquo;t get to it. The green bumping graph is related to a tweak of the algorithm I&rsquo;ll explain below.</p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7YMtPU30nI/AAAAAAAACDY/rgSDTf-LSBw/s1600/Plot.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7YMtPU30nI/AAAAAAAACDY/rgSDTf-LSBw/s400/Plot.png" alt="" /></a></p>
+
+<p>This run took around two days, for around 100.000 generations (estimated count, as generations are not in the &ldquo;usual&rdquo; generation count system).</p>
+
+<p>The algorithm works as follows. Given an image we want to approximate, for each generation we do:</p>
+
+<ol>
+<li><p>If we can add a triangle, try to add a random triangle MaxSteps times. If the image is closer to the original, go on.</p></li>
+
+<li><p>Depending on a random factor, either</p></li>
+</ol>
+
+<ul>
+<li>Changer: Take one of the given triangles of the actual approximation by a random choice and try to change it to a better one, try to do it for a random number smaller than MaxSteps.</li>
+<li>Pruner: Try to remove one triangle of the set (try for every triangle)</li>
+
+<li><p>Mover: Try to move every triangle to every possible position in the triangle list (for every triangle on the list). It starts in random positions in the triangle list, not to bias moving the &ldquo;underneath&rdquo; triangles.</p></li>
+
+<li><p>Swapper: Try to swap every pair of triangles. As above, but swapping every two triangles.</p></li>
+</ul>
+
+<p>These last two steps are painfully slow, so they have a probability of happening several times smaller than the Changer.</p>
+
+<ol>
+<li>Repeat<br />
+<br /></li>
+</ol>
+
+<p>I have set also several thresholds. First, I set a maximum number of triangles, and divide it by 20 (for example). Then, divide the initial error by 8 (for example also, but these are quite good numbers) to have a FitStep, and every time the current fit result for the image is smaller than InitialThreshold-Function(FitStep), increase the number of triangles (if smaller than the total maximum). I added this after realizing that most of the first placed triangles were mostly crap, with this method I try to get for each number of triangles, somewhat like the best possible approximation. This part works quite well, the problem is the later addition of triangles, which is not as good. In the previous plot, the green lines show the triangle add thresholds.</p>
+
+<p>After this, I also realized that random changes for all parameters in a triangle were too random for a change, more so when the image was quite close to the original. Thus I added a Jiggler step, which is chosen randomly instead of Changer, which just moves a little the triangle parameters for every triangle (starting from a random triangle in the list, and for a certain number of tries).</p>
+
+<p>As I said, this algorithm is slow, mostly because of how I started. I needed it to create the Christmas postcard, so I just wrote it and when it worked, I had it running for as long as needed. Now I realize how much tweaking is left to make it somewhat useful (in fact, a quite simple improvement can add a 2x boost&hellip;).</p>
+
+<p>Here are two images. One is similar to my Facebook (and some other places) profile image (I recalculated for this post), the other one is what I used for the Christmas postcard you can find in <a href="http://www.mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html">this post</a>.</p>
+
+<p>I&rsquo;ll post the corrected source soon (it is already in <a href="http://code.google.com/p/rberenguel/source/browse/trunk/Triangles/TriangleEvolution.c">my googlecode repository</a>, but it lacks comments and the most obvious tweaks, and also the shell scripts used to generate the postcard), hope you can wait for it. If you have any suggestions to improve the algorithm, you are really welcome.</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7YQWcDMUDI/AAAAAAAACD8/RHDQUdHN32c/s1600/Final.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7YQWcDMUDI/AAAAAAAACD8/RHDQUdHN32c/s400/Final.jpg" alt="" /></a> <a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S7YQW1PtBzI/AAAAAAAACEU/eQu2Z8GKNZk/s1600/Fb.jpg"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S7YQW1PtBzI/AAAAAAAACEU/eQu2Z8GKNZk/s400/Fb.jpg" alt="" /></a><br />
+<a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s1600/Generation0010190.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s400/Generation0010190.jpg" alt="" /></a> <a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S7YQWstWfGI/AAAAAAAACEM/buupxhP5igA/s1600/Noel.jpg"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S7YQWstWfGI/AAAAAAAACEM/buupxhP5igA/s400/Noel.jpg" alt="" /></a><br />
+Left: approximation (you guessed!).<br />
+Above: 74 triangles Below: 156 triangles<br />
+Right: original image to aproximate</p>
+
+<p>Thanks to everyone who commented on the Reddit thread. I&rsquo;ll try to write an improved version soon, with a mix of your suggestions. If you enjoyed reading this, please share it via Reddit, StumbleUpon, Digg or whatever you enjoy using. Thanks!</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/my-take-on-logical-mazes-part-1.html">My take on logical mazes: Part 1</a><br />
+ParseList(ScrambleList(Relateds(Programming,Linux)),12)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/lisp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">LISP</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/12/abstract-triangles-in-lisp.html/">Abstract triangles in LISP</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/08/lavaurs-algorithm.html/">Lavaurs algorithm</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/08/teleworking-in-august.html/">Teleworking in August</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/06/lisp-raytracing-again.html/">Lisp raytracing, again</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/06/wolfram-alpha.html/">Wolfram Alpha</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets" />
+<meta property="og:description" content="Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
+The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
+\\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/12/commented-version-of-latex-file-to.html/" />
+<meta property="article:published_time" content="2010-12-09T14:20:00+01:00" />
+<meta property="article:modified_time" content="2010-12-09T14:20:00+01:00" />
+<meta itemprop="name" content="Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets">
+<meta itemprop="description" content="Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
+The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
+\\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language).">
+
+
+<meta itemprop="datePublished" content="2010-12-09T14:20:00&#43;01:00" />
+<meta itemprop="dateModified" content="2010-12-09T14:20:00&#43;01:00" />
+<meta itemprop="wordCount" content="527">
+
+
+
+<meta itemprop="keywords" content="emacs,LaTeX,How-to,Books," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets"/>
+<meta name="twitter:description" content="Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
+The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
+\\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language)."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-12-09T14:20:00&#43;01:00">December 9, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 527 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Below you can find a commented version of the LaTeX template I used to <a href="http://www.mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html">create two free ebooks</a> and <a href="http://www.mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html">A6 booklets</a>. Now you can tweak it as much as you like it!</p>
+
+<p>The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">emacs 30 Day Challenge</a>.</p>
+
+<pre><code>\\documentclass\[9pt,openany,final\]{memoir}  
+% Set the font size with 9pt. Openany states that a chapter may start  
+% in either page (recto or verso in publishing language). Final is the  
+% way to say memoir to remove any comment crap we may have  
+\\usepackage\[pdftex\]{graphicx}  
+\\usepackage\[english\]{babel}  
+\\usepackage{xcolor}  
+\\usepackage\[latin1\]{inputenc}  
+\\usepackage{wrapfig}  
+\\usepackage{fix-cm}  
+% fix-cm is a package to use arbitrary font sizes. I wrote about it in  
+% http://www.mostlymaths.net/2009/03/big-fonts-in-latex.html  
+\\usepackage\[pdftex, colorlinks=true, linkcolor=black,  
+urlcolor=blue\]{hyperref}  
+% hyperref makes for clickable links inside a pdf and the table of  
+% contents. You can choose different colors as showed  
+\\usepackage\[activate={true,nocompatibility}\]{microtype}  
+% Microtype allows you to make a lot of nasty things to typography:  
+% adjust kern spacing, font protrusion and font expansion. I think I  
+% don't use it here (I use the fix-cm version), but the original  
+% template I used did  
+\\usepackage\[paperwidth=9cm, paperheight=12cm, hmargin={1cm, 1cm},  
+vmargin={1.2cm, 0.8cm}\]{geometry}  
+% The geometry package allows you to set paper sizes. I tweaked it a  
+% little until the size looked good. You can leave it as is and tweak  
+% once you have everything written.  
+\\widowpenalty 3999  
+\\clubpenalty 3999  
+% Options for word and line breaking  
+\\makeoddfoot{ruled}{}{}{}  
+\\makeevenfoot{ruled}{}{}{}  
+% memoir options for footers. I leave them empty, with a ruled line  
+\\makeevenhead{ruled}{\\footnotesize  
+\\emph{\\rightmark}}{}{\\footnotesize\\scshape The Art of War, \\thepage}  
+% Headings from memoir (even)  
+\\makeoddhead{ruled}{\\footnotesize  
+\\emph{\\rightmark}}{}{\\footnotesize\\scshape The Art of War, \\thepage}  
+% Headings from memoir (odd)  
+\\copypagestyle{chapter}{plain}  
+% This copies the page style from &quot;plain&quot; to the first page of a  
+% chapter. A hack in the memoir class, redefining chapter didn't work  
+\\makeevenfoot{chapter}{}{}{}  
+\\makeoddfoot{chapter}{}{}{}  
+% Clean footers for chapters  
+\\pagestyle{ruled}  
+% I don't know why I state this, as all headings are already ruled.  
+\\emergencystretch\=\\maxdimen  
+\\hyphenpenalty\=10  
+\\hbadness\=10000  
+% More options for line and word breaking  
+\\setcounter{errorcontextlines}{999}  
+% I used this for debug purposes. Can be removed  
+\\definecolor{gray}{gray}{0.77}  
+\\definecolor{darkgray}{gray}{0.4}  
+\\definecolor{black}{gray}{0}  
+% Color definitions in grayscale  
+\\setlength\\beforechapskip{\-10pt}  
+\\setlength\\midchapskip{5pt}  
+\\setlength\\afterchapskip{10pt}  
+% These lengths are standard memoir names used for chapters. I just  
+% tweaked the values until I liked the result.  
+  
+% Now I define a new chapter style, to be used through all the  
+% document. I think the commands are self-explanatory: I use  
+% renamecommand to change how the chapter will look like  
+  
+\\makechapterstyle{plroman}{  
+\\renewcommand\\chapterheadstart{\\vspace\*{\\beforechapskip}  
+{\\color{darkgray}\\centering\\MakeUppercase  
+{\\fontsize{0.7in}{0.7in}\\selectfont\\romannumeral\\thechapter}  
+\\par\\nobreak\\vskip1\\midchapskip\\hrule\\vskip0.5\\midchapskip}\\color{black}}  
+\\renewcommand\\chapternamenum{}   
+\\renewcommand\\printchaptername{}  
+\\renewcommand\\printchapternum{\\centering\\MakeUppercase  
+{\\fontsize{1in}{2in}\\selectfont\\romannumeral\\thechapter}}  
+\\renewcommand\\chaptitlefont{\\huge\\centering\\color{black}  
+\\vskip0.5\\midchapskip\\vskip0.5\\midchapskip}  
+\\renewcommand\\afterchapternum{}  
+\\renewcommand\\afterchaptertitle{\\vskip0.5\\midchapskip\\vskip\\midchapskip  
+\\hrule\\vskip\\midchapskip\\vskip\\midchapskip\\vskip\\midchapskip}  
+}  
+% Use this chapter style  
+\\chapterstyle{plroman}  
+% Some more chapter &amp; table of content redefinitions  
+\\renewcommand{\\cftchapterfont}{\\scshape\\mdseries}  
+\\renewcommand{\\cftchapterleader}{\\dotfill}  
+\\renewcommand{\\cftchapterpagefont}{\\scshape\\mdseries}  
+\\renewcommand{\\chapternumberline}\[1\]{\\hspace\*{-5em} \\vbox{\\hfil\\hsize\=7.5em\\MakeUppercase  
+ {\\mdseries\\romannumeral#1}.\\  
+ \\hfilneg}}   
+\\renewcommand{\\cftchapterbreak}{}  
+  
+\\begin{document}  
+% Now the content!  
+\\include{taow}  
+\\end{document}
+</code></pre>
+
+<p>Be sure to check the free ebooks I posted using this template: <a href="http://www.mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html">The Art of War</a> and <a href="http://www.mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html">How to Live on 24 Hours a Day</a>.</p>
+
+<p>Related posts:</p>
+
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/09/natural-productivity-review-add.html">Natural Productivity Ebook Review: the ADD Productivity System in Depth</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/11/how-i-got-more-than-4500-visits-through.html">How I Got 4500 Visits Through Blog Commenting</a></p>
+
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html">Time boxing: you will work like never before</a></p>
+
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/winning-against-your-reading-list.html">Winning Against Your Reading List</a></p>
+
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/book-review-how-to-be-1-vince-lombardi.html">Book review: How to be #1, by Vince Lombardi</a></p>
+
+<p>ParseList(ScrambleList(Relateds(Productivity)),4)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/latex" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">LaTeX</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/how-to" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">How-to</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/books" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Books</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/04/easy-paperback-book-binding-how-to.html/">Easy paperback book binding how-to</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/12/emacs-30-day-challenge-update-1-writing.html/">Emacs 30 Day Challenge Update #1: Writing this in Conkeror</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/11/creating-pdf-ebooks-with-latex-with-two.html/">Creating pdf ebooks with LaTeX (With Two Free Examples: Art of War &amp; How to Live on 24 Hours a Day)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/11/creating-a6-booklets-in-7-easy-steps.html/">Creating A6 Booklets in 7 Easy Steps</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/rcs-svn-version-control.html/">RCS &amp; SVN: Version control</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

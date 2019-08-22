@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Lavaurs algorithm</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Lavaurs algorithm" />
+<meta property="og:description" content="[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
+Top: Zoom a depth 13 Lavaurs chords, random colors
+Bottom: Depth 5 and depth 13 Lavaurs chords
+These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images doesn&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2009/08/lavaurs-algorithm.html/" />
+<meta property="article:published_time" content="2009-08-11T11:00:00+02:00" />
+<meta property="article:modified_time" content="2009-08-11T11:00:00+02:00" />
+<meta itemprop="name" content="Lavaurs algorithm">
+<meta itemprop="description" content="[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
+Top: Zoom a depth 13 Lavaurs chords, random colors
+Bottom: Depth 5 and depth 13 Lavaurs chords
+These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images doesn&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.">
+
+
+<meta itemprop="datePublished" content="2009-08-11T11:00:00&#43;02:00" />
+<meta itemprop="dateModified" content="2009-08-11T11:00:00&#43;02:00" />
+<meta itemprop="wordCount" content="186">
+
+
+
+<meta itemprop="keywords" content="Programming,emacs,PostScript,Fractals,Maths,LISP," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lavaurs algorithm"/>
+<meta name="twitter:description" content="[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
+Top: Zoom a depth 13 Lavaurs chords, random colors
+Bottom: Depth 5 and depth 13 Lavaurs chords
+These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images doesn&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Lavaurs algorithm</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2009-08-11T11:00:00&#43;02:00">August 11, 2009</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 1 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 186 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobtcXpOmpI/AAAAAAAABRw/GmMa79fYSvU/s1600-h/Lavaurs13-1280x800.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobtcXpOmpI/AAAAAAAABRw/GmMa79fYSvU/s400/Lavaurs13-1280x800.jpg" alt="Lavaurs" title="Lavaurs algorithm" /></a></p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/SobvAb-oIZI/AAAAAAAABSA/jssOgpLS5d8/s1600-h/Lavaurs5.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/SobvAb-oIZI/AAAAAAAABSA/jssOgpLS5d8/s400/Lavaurs5.jpg" alt="Lavaurs" title="Lavaurs algorithm" /></a><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobwVfFCmLI/AAAAAAAABSI/piL0IbmRNGg/s1600-h/BWLavaurs13.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobwVfFCmLI/AAAAAAAABSI/piL0IbmRNGg/s400/BWLavaurs13.jpg" alt="Lavaurs" title="Lavaurs algorithm" /></a></p>
+
+<p>[](<a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png">http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png</a>)<br />
+Top: Zoom a depth 13 Lavaurs chords, random colors<br />
+Bottom: Depth 5 and depth 13 Lavaurs chords</p>
+
+<p>These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.</p>
+
+<p>The images doesn&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.</p>
+
+<p>You can get the black and white depth 13 <a href="http://www.maia.ub.es/%7Eruben/fractals/BWLavaurs13.eps">here</a>, and the color version <a href="http://www.maia.ub.es/%7Eruben/fractals/ColorLavaurs13.eps">here</a>.</p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobtdCIbCuI/AAAAAAAABR4/b2cxqFtTINs/s1600-h/ColorLavaurs13.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SobtdCIbCuI/AAAAAAAABR4/b2cxqFtTINs/s400/ColorLavaurs13.png" alt="Lavaurs" title="Lavaurs algorithm" /></a><br />
+Depth 13 (random) color version</p>
+
+<p><a href="http://www.lisperati.com/logo.html"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/SrJ_bNIB9rI/AAAAAAAABTQ/lbdXtxCU7CQ/s400/lisplogo_fancy_128.png" alt="" /></a>The code is a set of Lisp functions, with the main one being recursive. I also have a double-recursive version, but the first time I used it I thought I had a problem with the code, and rewrote it. But it did work, but it is slower. The output is a set of orthogonal circles to a main one, set as &ldquo;clip&rdquo; in the PostScript file.</p>
+
+<p>I am increasingly happier of my last <a href="http://berenguel.blogspot.com/2008/12/quick-postscript-programming-tutorial.html">Christmas postcard &amp; tutorial</a>, as they forced me to learn PostScript programming. Turns out to be more useful than I thought.</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/postscript" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">PostScript</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/fractals" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Fractals</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/maths" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Maths</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/lisp" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">LISP</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/08/teleworking-in-august.html/">Teleworking in August</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/06/lisp-raytracing-again.html/">Lisp raytracing, again</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/07/siegel-disk-wallpaper.html/">Siegel disk wallpaper</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/03/douady-rabbit.html/">Douady rabbit wallpaper</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/">Acer Aspire One 8.9&#39; &#43; Ubuntu &#43; Fluxbox</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Debugging with emacs&#43;valgrind</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Debugging with emacs&#43;valgrind" />
+<meta property="og:description" content="The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs&#43;gdb to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/" />
+<meta property="article:published_time" content="2010-02-28T20:37:00+01:00" />
+<meta property="article:modified_time" content="2010-02-28T20:37:00+01:00" />
+<meta itemprop="name" content="Debugging with emacs&#43;valgrind">
+<meta itemprop="description" content="The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs&#43;gdb to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.">
+
+
+<meta itemprop="datePublished" content="2010-02-28T20:37:00&#43;01:00" />
+<meta itemprop="dateModified" content="2010-02-28T20:37:00&#43;01:00" />
+<meta itemprop="wordCount" content="722">
+
+
+
+<meta itemprop="keywords" content="Programming,emacs,Linux,Maths," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Debugging with emacs&#43;valgrind"/>
+<meta name="twitter:description" content="The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs&#43;gdb to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Debugging with emacs&#43;valgrind</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-02-28T20:37:00&#43;01:00">February 28, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 722 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<h2 id="the-easiest-way-to-debug-valgrind-with-the-most-powerful-text-editor-emacs">The easiest way to debug: <em>valgrind</em> with the most powerful text editor: <em>emacs</em></h2>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s1600-h/valgrindemacs.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s400/valgrindemacs.png" alt="Emacs and valgrind" title="Emacs and valgrind" /></a>A few days ago my office mate told me about the great debugging tool known as <a href="http://valgrind.org/">valgrind</a>. Before I have been using the great pairing of <a href="http://www.gnu.org/software/emacs/">emacs</a>+<a href="http://www.gnu.org/software/gdb/">gdb</a> to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</p>
+
+<p>How to use valgrind?</p>
+
+<p>Consider the following C code (where I have omitted the include statements), I&rsquo;ll assume it is in SegFault.c In fact, this code would not yield a segmentation fault as it is, at least without some compilation tweaking.</p>
+
+<blockquote>
+<p>int main(void){<br />
+int i; double *vector1, *vector2;<br />
+vector1=(double*)malloc(3*sizeof(double));<br />
+vector2=(double*)malloc(4*sizeof(double));<br />
+for(i=0;i&lt;3;i++)vector1[i]=sin(i);<br />
+for(i=0;i&lt;4;i++)vector2[i]=cos(i);<br />
+for(i=0;i&lt;4;i++)printf(&ldquo;sin(%d): %7.7lf cos(%d): %7.7lf\n&rdquo;,i,vector1[i], i, vector2[i]);<br />
+free(vector1);<br />
+return 0;}</p>
+</blockquote>
+
+<p>You can see that this code has several errors. First, when allocating vector1 we only ask for 3 doubles, when we really need 4, and we don&rsquo;t free vector2. Although these two errors, the output of the program at least is not segmentation fault. But these kind of errors, when accumulated, lead to pervasive segmentation faults, quite difficult to locate via gdb. The output of the program is:</p>
+
+<blockquote>
+<p>sin(0): 0.0000000 cos(0): 1.0000000sin(1): 0.8414710 cos(1): 0.5403023sin(2): 0.9092974 cos(2): -0.4161468sin(3): 0.0000000 cos(3): -0.9899925</p>
+</blockquote>
+
+<p>Valgrind comes to the rescue! First, we need to compile with source flags:</p>
+
+<blockquote>
+<p>gcc SegFault.c -lm -g -o SegFault.x -Wall</p>
+</blockquote>
+
+<p>And now execute this via valgrind. Valgrind acts as a virtual processor, thus keeping trace of memory accesses and the like, at a time penalty. You should use it only to find errors, not every time.</p>
+
+<blockquote>
+<p>valgrind ./SegFault.x</p>
+</blockquote>
+
+<p>Valgrind&rsquo;s output for this example is</p>
+
+<blockquote>
+<p>\==24585== Memcheck, a memory error detector.<br />
+\==24585== Copyright &copy; 2002-2008, and GNU GPL&rsquo;d, by Julian Seward et al.<br />
+\==24585== Using LibVEX rev 1884, a library for dynamic binary translation.<br />
+\==24585== Copyright &copy; 2004-2008, and GNU GPL&rsquo;d, by OpenWorks LLP.<br />
+\==24585== Using valgrind-3.4.1-Debian, a dynamic binary instrumentation framework.<br />
+\==24585== Copyright &copy; 2000-2008, and GNU GPL&rsquo;d, by Julian Seward et al.<br />
+\==24585== For more details, rerun with: -v<br />
+\==24585==sin(0): 0.0000000 cos(0): 1.0000000sin(1): 0.8414710 cos(1): 0.5403023sin(2): 0.9092974 cos(2): -0.4161468==24585== Invalid read of size 8<br />
+\==24585== at 0x8048587: main (SegFault.c:12)<br />
+\==24585== Address 0x41c9040 is 0 bytes after a block of size 24 alloc&rsquo;d<br />
+\==24585== at 0x4026FDE: malloc (vg_replace_malloc.c:207)<br />
+\==24585== by 0x8048501: main (SegFault.c:8)sin(3): 0.0000000 cos(3): -0.9899925<br />
+\==24585==<br />
+\==24585== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 13 from 1)<br />
+\==24585== malloc/free: in use at exit: 32 bytes in 1 blocks.<br />
+\==24585== malloc/free: 2 allocs, 1 frees, 56 bytes allocated.<br />
+\==24585== For counts of detected errors, rerun with: -v<br />
+\==24585== searching for pointers to 1 not-freed blocks.<br />
+\==24585== checked 55,932 bytes.<br />
+\==24585==<br />
+\==24585== LEAK SUMMARY:<br />
+\==24585== definitely lost: 32 bytes in 1 blocks.<br />
+\==24585== possibly lost: 0 bytes in 0 blocks.<br />
+\==24585== still reachable: 0 bytes in 0 blocks.<br />
+\==24585== suppressed: 0 bytes in 0 blocks.<br />
+\==24585== Rerun with &ndash;leak-check=full to see details of leaked memory.</p>
+</blockquote>
+
+<p>Et voilà! Line number of exactly where memory access was out of bounds. What else could we ask for? Of course, emacs.</p>
+
+<p>You can call valgrind from emacs, inside an emacs shell buffer (M-x shell, then you are working in an usual shell), but you would like to visit the exact line in your code somewhat. Probably through either keyboard or mouse click. It turns out (I found it <a href="http://tromey.com/blog/?p=342">here</a> while googling for a way to use valgrind via emacs) you can use compilation-minor-mode to do that&hellip; (M-x compilation-minor-mode), the problem then is that the return key gets mapped to compile-goto-error (i.e. you go to the line in the source with return), thus the terminal buffer no longer works as there is no way to send it commands. To solve this, I wrote this small piece of code and added to my .emacs:</p>
+
+<blockquote>
+<p>(defun valgrind ()<br />
+(interactive)<br />
+(compilation-minor-mode)<br />
+(define-key compilation-minor-mode-map (kbd &ldquo;&rdquo;)&lsquo;comint-send-input)<br />
+(define-key compilation-minor-mode-map (kbd &ldquo;S-&rdquo;)&lsquo;compile-goto-error))</p>
+
+<p>(add-hook &lsquo;shell-mode-hook &lsquo;valgrind)</p>
+</blockquote>
+
+<p>Now when I start a shell window from within emacs, the function valgrind I defined is automatically loaded, starts compilation-minor-mode and redefines the return and shifted-return keys as I wanted. Now return works as usual in shell buffers, and shift-return visits error at point.I also made this function interactive (thus you can call it as M-x valgrind), in case I decide to remove the hook.</p>
+
+<p>You may be also interested in:ParseList(ScrambleList(Relateds(Linux,Programming,emacs)),15)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/maths" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Maths</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/09/quick-latex-ing-with-emacs.html/">Quick latex-ing with emacs: dabbrev and skeletons</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/">Syncing iPod&#39;s vMac and Linux: emacs on iPod Touch</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/evolutionary-approximation-of-christmas.html/">Evolutionary approximation of a Christmas postcard</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/12/rcs-svn-version-control.html/">RCS &amp; SVN: Version control</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/11/mg-zile-quick-emacs-in-command-line.html/">mg &amp; Zile: quick emacs in the command line</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

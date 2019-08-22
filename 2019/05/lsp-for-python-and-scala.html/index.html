@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | LSP for Python and Scala</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="LSP for Python and Scala" />
+<meta property="og:description" content="If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/" />
+<meta property="article:published_time" content="2019-05-21T23:41:00+02:00" />
+<meta property="article:modified_time" content="2019-05-21T23:41:00+02:00" />
+<meta itemprop="name" content="LSP for Python and Scala">
+<meta itemprop="description" content="If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.">
+
+
+<meta itemprop="datePublished" content="2019-05-21T23:41:00&#43;02:00" />
+<meta itemprop="dateModified" content="2019-05-21T23:41:00&#43;02:00" />
+<meta itemprop="wordCount" content="776">
+
+
+
+<meta itemprop="keywords" content="emacs,Python,scala,Rust,spacemacs," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="LSP for Python and Scala"/>
+<meta name="twitter:description" content="If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+
+
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net/lsp.png');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">LSP for Python and Scala</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-05-21T23:41:00&#43;02:00">May 21, 2019</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 776 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy <code>emacs</code> user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been <a href="http://spacemacs.org/">spacemacs</a>. I used to have a very long, customised and complex .emacs and with <code>spacemacs</code> I get a mostly-batteries-included package. That&rsquo;s nice after a while, and I also have gotten really proficient at using evil.</p>
+
+<p>One problem of using <code>emacs</code> is the integration with some languages. If you write Scala, with IntelliJ you get super-fancy completion, refactoring, code analysis, jump-to-definition&hellip; Many goodies. In emacs, the best-in-class system used to be <a href="http://ensime.github.io/">ensime</a>. It worked, but it was not really supported for spacemacs (since I&rsquo;m an old emacs user I could play around that), but the main issue was that my old MacBook was short on memory for running ensime and a lot more. So, I wrote most of my Scala code in hardcode mode. No completion, documentation or jump to definition.</p>
+
+<p>This is why I learnt how to <a href="https://www.mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html">set up GNU global</a>, jump to definition is just too handy. Luckily, the people at Scala Center not only are smart, but also try to improve developer experience, and had been working in a <em>language server</em> for Scala for a while, called <a href="https://scalameta.org/metals/">metals</a>. I got it working recently, and it&rsquo;s great. You get documentation on hover, error messages, jump to definition. Oh, I forgot to mention, the <em>language server protocol</em> is an invention from Microsoft to standardise how editors handle language completions and all that. They probably introduced it for <a href="https://code.visualstudio.com/">Visual Studio Code</a> (I actually use it from time to time, it has some remote pair programming capabilities I&rsquo;ll talk someday), but now it&rsquo;s extending across all editors.</p>
+
+<p>After using LSP in emacs for Scala for a while I decided to set it up for Python as well, in preparation for our next <a href="http://pybcn.org/">PyBCN</a> <a href="https://podcasts.apple.com/us/podcast/python-barcelona-podcast/id1412561460">podcast</a>, about tools we use. I was pretty happy with the completions I was getting, but semantic completions from a language server are usually better. So far, lsp with python is ok. Oh, you&rsquo;ll see screenshots at the end!</p>
+
+<p>You&rsquo;ll need to install the language server. I usually have a high level Python environment with all my tools, for things I am just starting to work on:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv <span style="color:#ae81ff">3</span>.7.1 tools
+pyenv activate <span style="color:#ae81ff">3</span>.7.1/envs/tools
+pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</span> bpython mypy flake8</code></pre></div>
+<p>After this, some configuration is needed in <code>emacs</code>. Here you can find parts of my configuration, commented. These sit in my <code>dotspacemacs/user-config</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; First come the configurations for Scala language server </span>
+<span style="color:#75715e">;; thingies. sbt is the Scala build system.</span>
+
+(use-package scala-mode
+:mode <span style="color:#e6db74">&#34;\\.s\\(cala\\|bt\\)$&#34;</span>)
+
+(use-package sbt-mode
+:commands sbt-start sbt-command
+:config
+(substitute-key-definition
+ <span style="color:#e6db74">&#39;minibuffer-complete-word</span>
+ <span style="color:#e6db74">&#39;self-insert-command</span>
+ minibuffer-local-completion-map))
+
+<span style="color:#75715e">;; This is the main mode for LSP</span>
+(use-package lsp-mode
+:init (setq lsp-prefer-flymake <span style="color:#66d9ef">nil</span>)
+:ensure <span style="color:#66d9ef">t</span>)
+
+<span style="color:#75715e">;; This makes imenu-lsp-minor-mode available. This minor mode </span>
+<span style="color:#75715e">;; will show a table of contents of methods, classes, variables. </span>
+<span style="color:#75715e">;; You can configure it to be on the left by using `configure`</span>
+
+(add-hook <span style="color:#e6db74">&#39;lsp-after-open-hook</span> <span style="color:#e6db74">&#39;lsp-enable-imenu</span>)
+
+<span style="color:#75715e">;; lsp-ui enables the fancy showing of documentation, error </span>
+<span style="color:#75715e">;; messages and type hints</span>
+(use-package lsp-ui
+:ensure <span style="color:#66d9ef">t</span>
+:config
+(setq lsp-ui-sideline-ignore-duplicate <span style="color:#66d9ef">t</span>)
+(add-hook <span style="color:#e6db74">&#39;lsp-mode-hook</span> <span style="color:#e6db74">&#39;lsp-ui-mode</span>))
+
+<span style="color:#75715e">;; company is the best autocompletion system for emacs (probably)</span>
+<span style="color:#75715e">;; and this uses the language server to provide semantic completions</span>
+
+(use-package company-lsp
+:commands company-lsp
+:config
+(push <span style="color:#e6db74">&#39;company-lsp</span> company-backends))
+
+<span style="color:#75715e">;; I use pyenv to handle my virtual environments, so when I enable</span>
+<span style="color:#75715e">;; pyenv in a Python buffer, it will trigger lsp. Otherwise, it </span>
+<span style="color:#75715e">;; will use the old systems (I think based on jedi)</span>
+
+(add-hook <span style="color:#e6db74">&#39;pyenv-mode-hook</span> <span style="color:#e6db74">&#39;lsp</span>)
+
+<span style="color:#75715e">;; Flycheck checks your code and helps show alerts from the linter</span>
+(use-package flycheck
+:init (global-flycheck-mode))
+
+<span style="color:#75715e">;; Show flake8 errors in lsp-ui</span>
+(defun lsp-set-cfg ()
+(let ((lsp-cfg <span style="color:#f92672">`</span>(:pyls (:configurationSources (<span style="color:#e6db74">&#34;flake8&#34;</span>)))))
+(lsp--set-configuration lsp-cfg)))
+
+<span style="color:#75715e">;; Activate that after lsp has started</span>
+(add-hook <span style="color:#e6db74">&#39;lsp-after-initialize-hook</span> <span style="color:#e6db74">&#39;lsp-set-cfg</span>)
+
+<span style="color:#75715e">;; I like proper fonts for documentation, in this case I use the </span>
+<span style="color:#75715e">;; Inter font. High legibility, small size</span>
+
+(add-hook <span style="color:#e6db74">&#39;lsp-ui-doc-frame-hook</span>
+(lambda (frame _w)
+(set-face-attribute <span style="color:#e6db74">&#39;default</span> frame 
+
+ :font <span style="color:#e6db74">&#34;Inter&#34;</span> 
+
+ :height <span style="color:#ae81ff">140</span>)))
+
+<span style="color:#75715e">;; Configure lsp-scala after Scala file has been opened</span>
+(use-package lsp-scala
+:after scala-mode
+:demand <span style="color:#66d9ef">t</span>
+:hook (scala-mode <span style="color:#f92672">.</span> lsp))</code></pre></div>
+<p>You can see how it looks now.</p>
+
+<figure class="fig-wide">
+    <img src="non-lsp.png"
+         alt="Traditional completion (non-LSP)"/> <figcaption>
+            <p>Traditional completion (non-LSP)</p>
+        </figcaption>
+</figure>
+
+
+<figure class="fig-wide">
+    <img src="lsp.png"
+         alt="LSP-powered completion. Way more information!"/> <figcaption>
+            <p>LSP-powered completion. Way more information!</p>
+        </figcaption>
+</figure>
+
+
+<figure class="fig-wide">
+    <img src="inline-doc.png"
+         alt="Fancy inlined documentation"/> <figcaption>
+            <p>Fancy inlined documentation</p>
+        </figcaption>
+</figure>
+
+
+<p>Sadly, inlined documentation doesn&rsquo;t look as good as it should: compare with Scala with <code>metals</code> and <code>lsp-scala</code>:</p>
+
+<figure class="fig-wide">
+    <img src="fancy-inline-doc.png"
+         alt="LSP mode in Scala with metals"/> <figcaption>
+            <p>LSP mode in Scala with metals</p>
+        </figcaption>
+</figure>
+
+
+<p>If you&rsquo;ve gotten this far, I share my most interesting weekly readings in <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek">tag here</a>. You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P">here</a>.</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/python" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Python</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">scala</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/rust" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Rust</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/spacemacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">spacemacs</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<canvas id='map'></canvas>
+<script src="/js/pagemap-1.2.0.min.js"></script>
+<script src="/js/pagemap-settings.js"></script>
+
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2019/05/201913-readings-of-week.html/">2019#13 Readings of the week</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/05/2019-12-readings-of-week.html/">2019#12 Readings of the week</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/04/2019-11-readings-of-week.html/">2019-11 Readings of the week</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/04/2019-9-readings-of-week-x4.html/">2019-9 Readings of the week (x4)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2019/02/2019-4-readings-of-week.html/">2019-4 Readings of the week</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functional Programming on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/functional-programming/</link>
+    <description>Recent content in Functional Programming on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019#20,21,22 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</link>
+      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
+      <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
+
+&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#19 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</link>
+      <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
+      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A (section) of a map of the data engineering space</title>
+      <link>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</link>
+      <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
+      <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#18 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</link>
+      <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#13 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</link>
+      <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

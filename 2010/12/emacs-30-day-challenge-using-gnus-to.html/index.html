@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail" />
+<meta property="og:description" content="The gnus logo,
+from gnus homepage
+When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html/" />
+<meta property="article:published_time" content="2010-12-11T20:10:00+01:00" />
+<meta property="article:modified_time" content="2010-12-11T20:10:00+01:00" />
+<meta itemprop="name" content="The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail">
+<meta itemprop="description" content="The gnus logo,
+from gnus homepage
+When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.">
+
+
+<meta itemprop="datePublished" content="2010-12-11T20:10:00&#43;01:00" />
+<meta itemprop="dateModified" content="2010-12-11T20:10:00&#43;01:00" />
+<meta itemprop="wordCount" content="1472">
+
+
+
+<meta itemprop="keywords" content="emacs,Linux,Mac," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail"/>
+<meta name="twitter:description" content="The gnus logo,
+from gnus homepage
+When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-12-11T20:10:00&#43;01:00">December 11, 2010</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 7 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1472 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s1600/gnus.gif"><img src="https://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s400/gnus.gif" alt="" /></a></p>
+
+<p>The gnus logo,<br />
+from <a href="http://www.gnus.org/">gnus homepage</a></p>
+
+<p>When the time to choose a mail reader for emacs came, as part of my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">emacs 30 Day Challenge</a>, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.</p>
+
+<p>I managed to configure gnus pretty quickly: in only 30 minutes I had my gmail inbox working and was able to send mails through my main account. As an addition to gnus, I use bbdb to manage my contacts. You can read my post about <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html">bbdb and gnus integration</a>.</p>
+
+<p>I decided to give wanderlust a try, after reading a good review and configuration steps from <a href="http://emacs-fu.blogspot.com/2009/06/e-mail-with-wanderlust.html">emacs-fu</a>. But had no luck (at least in my <a href="http://www.amazon.com/gp/product/B0041K3CGO?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0041K3CGO">netbook</a>), some kind of connectivity problem, probably due to some package which was not the correct version: wanderlust is very picky with what version of what package you have installed. I gave up and stood with gnus.</p>
+
+<h2 id="installing-and-configuring-gnus-with-gmail-and-multiple-smtp-accounts">Installing and configuring gnus with gmail and multiple smtp accounts</h2>
+
+<p>If you have a recent emacs version, you&rsquo;ll have already gnus installed and you can start it with M-x gnus. But it is far better to configure it first. And it is far better to start by installing gnutls or starttls, depending on your system. You can do this with your package manager in Linux, or using fink or <a href="http://gnutls.darwinports.com/">macports</a> in Mac OS. This allows you to use SSL to connect to your mail servers. This is also a required step to use twittering.el (to be covered in a few days) and I guess it is also required (or should be required!) by jabber.el</p>
+
+<p>I use gmail, together with several accounts from <a href="http://www.mostlymaths.net/">mostlymaths.net</a>, and have configured my main account in gmail to be able to send mails through all my other accounts. Let&rsquo;s configure this. The following configuration is taken from the <a href="http://www.emacswiki.org/emacs/MultipleSMTPAccounts">emacswiki</a> with a few other tweaks from here and there. First C-x C-f ~/.gnus.el, and add the following lines, filling in your details</p>
+
+<pre><code>;; You need this to be able to list all labels in gmail  
+(setq gnus-ignored-newsgroups &quot;&quot;)  
+  
+;; And this to configure gmail imap  
+(setq gnus-select-method '(nnimap &quot;gmail&quot;  
+(nnimap-address &quot;imap.gmail.com&quot;)  
+(nnimap-server-port 993)  
+(nnimap-stream ssl)))  
+  
+;; My version of gnus in my Mac does not handle html messages;; correctly (the one in the netbook does, I guess it is a different;; version). The following will chose plaintext every time this is;; possible.  
+(setq mm-discouraged-alternatives '(&quot;text/html&quot; &quot;text/richtext&quot;))  
+  
+;; Available SMTP accounts. The format is;; type of connection - account in the from field - smtp server -;; port - login name - password. You can leave the password field  
+;; as NIL and emacs will ask every time  
+(defvar smtp-accounts  
+'(  
+(ssl &quot;mainaccount@gmail.com&quot; &quot;smtp.gmail.com&quot;  
+587 &quot;mainaccount@gmail.com&quot; &quot;yourpassword&quot;)  
+(ssl &quot;mainaccount@mygoogleapps&quot; &quot;smtp.gmail.com&quot;  
+587 &quot;mainaccount@mygoogleapps&quot; &quot;otherpassword&quot;)  
+(ssl &quot;workaccount@university&quot; &quot;smtp.gmail.com&quot;  
+587 &quot;mainaccount@gmail.com&quot; &quot;yourpassword&quot;) ))  
+  
+;; Now lets configure smtpmail.el with your name and functions to send;; mail using your smtp accounts by changing the from field  
+(require 'smtpmail)  
+(setq send-mail-function 'smtpmail-send-it  
+message-send-mail-function 'smtpmail-send-it  
+mail-from-style nil user-full-name &quot;Your name&quot;  
+smtpmail-debug-info t smtpmail-debug-verb t)  
+  
+(defun set-smtp (mech server port user password)  
+&quot;Set related SMTP variables for supplied parameters.&quot;  
+(setq smtpmail-smtp-server server smtpmail-smtp-service port  
+smtpmail-auth-credentials (list (list server port user  
+password)) smtpmail-auth-supported (list mech)  
+smtpmail-starttls-credentials nil)  
+(message &quot;Setting SMTP server to \`%s:%s' for user \`%s'.&quot;  
+server port user))  
+  
+(defun set-smtp-ssl (server port user password &amp;optional key  
+            cert)  
+&quot;Set related SMTP and SSL variables for supplied parameters.&quot;  
+(setq starttls-use-gnutls t  
+starttls-gnutls-program &quot;gnutls-cli&quot;  
+starttls-extra-arguments nil smtpmail-smtp-server server  
+smtpmail-smtp-service port  
+smtpmail-auth-credentials (list (list server port user  
+password)) smtpmail-starttls-credentials (list (list  
+server port key cert)))  
+(message  
+&quot;Setting SMTP server to \`%s:%s' for user \`%s'. (SSL  
+enabled.)&quot; server port user))  
+  
+(defun change-smtp ()  
+&quot;Change the SMTP server according to the current from line.&quot;  
+(save-excursion  
+(loop with from = (save-restriction  
+        (message-narrow-to-headers)  
+        (message-fetch-field &quot;from&quot;))  
+for (auth-mech address . auth-spec) in smtp-accounts  
+when (string-match address from) do (cond  
+((memq auth-mech '(cram-md5 plain login))  
+(return (apply 'set-smtp (cons auth-mech auth-spec))))  
+((eql auth-mech 'ssl)  
+(return (apply 'set-smtp-ssl auth-spec)))  
+(t (error &quot;Unrecognized SMTP auth. mechanism:  
+\`%s'.&quot; auth-mech))) finally (error &quot;Cannot infer SMTP  
+information.&quot;))))  
+  
+;; The previous function will complain if you fill the from field with;; an account not present in smtp-accounts.  
+(defvar %smtpmail-via-smtp (symbol-function 'smtpmail-via-smtp))  
+  
+(defun smtpmail-via-smtp (recipient smtpmail-text-buffer)  
+(with-current-buffer smtpmail-text-buffer  
+(change-smtp))  
+(funcall (symbol-value '%smtpmail-via-smtp) recipient  
+smtpmail-text-buffer))  
+  
+;; This wraps send mail via smtp mail, to be able to send multiple;; messages with smtpmail.  
+
+</code></pre>
+
+<p>Now, we can configure the authentication process. Open ~/.authinfo and fill it with the following data</p>
+
+<p>machine imap.gmail.com login john_doe@gmail.com password notapassword port 993</p>
+
+<p>If you don&rsquo;t like to store your passwords in plain text, you can either leave it blank (gnus will ask every time for your password) or use an <a href="http://www.emacswiki.org/emacs/GnusEncryptedAuthInfo">encrypted authinfo</a> file. I could not use this solution, as the emacs I have in my Mac has no encryption. But you can check it if you do!</p>
+
+<p>Ready to use gnus! M-x gnus. After a few seconds of data processing, you should have a buffer named *Groups*. In gnus, you subscribe to groups, and the available groups should be your gmail labels. To subscribe to something, issue U followed by a double tab. This will show all the available labels. INBOX is the one you should not miss, of course.</p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TQPFuLb_5vI/AAAAAAAACwY/fAwBRuJE_rk/s1600/gnus-groups.jpg"><img src="https://1.bp.blogspot.com/_f3d3llNlZKQ/TQPFuLb_5vI/AAAAAAAACwY/fAwBRuJE_rk/s400/gnus-groups.jpg" alt="" /></a> [](<a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s1600/gnus-gotmail.jpg">http://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s1600/gnus-gotmail.jpg</a>) <a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/TQPFuTFz8zI/AAAAAAAACwg/0q0VK375jy8/s1600/gnus-INBOX.jpg"><img src="https://2.bp.blogspot.com/_f3d3llNlZKQ/TQPFuTFz8zI/AAAAAAAACwg/0q0VK375jy8/s400/gnus-INBOX.jpg" alt="" /></a> <a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s1600/gnus-gotmail.jpg"><img src="https://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s400/gnus-gotmail.jpg" alt="" /></a><br />
+gnus groups -&gt; INBOX -&gt; new mail</p>
+
+<p>Once you have INBOX in your *Groups* buffer, you may need to update it for new mails. Pressing g will fetch new mails (or news) from the server. Pressing enter will open that group and show you your unread mails. If they don&rsquo;t appear in the INBOX buffer, it is somehow usual. If you had already checked and read your mail, fetch again in the *Groups* buffer and press enter, it takes you to the old INBOX buffer, without the new mails. Press M-g in it to fetch new headers and summaries. Pressing enter in your mails of course opens them.</p>
+
+<h2 id="deleting-mails-composing-and-replying">Deleting mails, composing and replying</h2>
+
+<p>Now let&rsquo;s say you want to move a message to the Trash folder in your Gmail account, or your Spam folder. Scroll to your mail and press B m (Backend command + move). Now you can choose which folder, and if everything worked smoothly, you could press double tab and show all folders. If not, write [Gmail]/Trash. This is the correct gmail trash folder. Once you are done with operating with your mails in this way, press M-g to really do move them to the trash (and by the way, marking them in Gmail as read).</p>
+
+<p>To quit gnus, in the groups buffer press q (or Q if you don&rsquo;t want to save &ldquo;your progress&rdquo;). In case of being lost&hellip; Please, use the menus: gnus has a menu for almost anything and they are quite descriptive. And more important, never leave gnus without properly q or Quitting. Also, in my <a href="http://www.amazon.com/gp/product/B0041K3CGO?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0041K3CGO">netbook</a> I can&rsquo;t suspend to RAM and then be able to re-start gnus. I have to q first. But in my <a href="https://www.amazon.com/s/ref=as_li_ss_tl?fst=as:off&amp;rh=n:172282,n:!493964,n:541966,n:13896617011,n:565108,n:13896615011,p_n_operating_system_browse-bin:7529233011&amp;bbn=13896615011&amp;ie=UTF8&amp;qid=1490118101&amp;rnid=562215011&amp;linkCode=ll2&amp;tag=rbersblog-20&amp;linkId=297edf12429801fc2ee46ab244137f15">Mac</a> it works correctly.</p>
+
+<p>We are almost done covering the simplest way to use gnus. Of course, we want to be able to write emails, or reply to mails we got! In the INBOX buffer, that would be r while reading or selecting a mail. To compose an email out in the cold, you can either use m in INBOX or *Groups* buffers. If you are in any buffer, you can compose an email with C-x m.</p>
+
+<p>And if you use <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html">bbdb</a> (the big brother database, a contact manager with automatic fetching of gnus data), which I will cover in the next writing, you can compose an email after searching for someone (M-x bbdb query and then m in the resulting search results buffer). You can read about basic use of bbdb in <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html">A glimpse of bbdb and gnus</a>.</p>
+
+<h2 id="searching-your-mail-through-imap">Searching your mail through imap</h2>
+
+<p>And another interesting thing would be to be able to search within your mail. To do so you will need the nnir package and add a line in the imap configuration.</p>
+
+<pre><code>;; To be able to search within your gmail/imap mail  
+(require 'nnir)  
+  
+(setq gnus-select-method '(nnimap &quot;gmail&quot;  
+(nnimap-address &quot;imap.gmail.com&quot;)  
+(nnimap-server-port 993)  
+(nnimap-stream ssl))  
+(nnir-search-engine imap))
+</code></pre>
+
+<p>You should subscribe to [Gmail]/All mail, and then press G G to search within your mail. This is a little slow&hellip; But works.</p>
+
+<p>I&rsquo;m still fiddling with gnus, and learning to use it more effectively, but this can get you going with using it for reading your mail. If I learn something new along the way (or someone more used to gnus posts it here) I&rsquo;ll add it here or in a new gnus post.</p>
+
+<p>If you enjoyed this, please share it with your emacs friends through Reddit, Hackernews or whatever you enjoy.</p>
+
+<p>ParseList(ScrambleList(Relateds(emacs)),5)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/mac" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Mac</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/12/emacs-30-day-challenge-update-1-writing.html/">Emacs 30 Day Challenge Update #1: Writing this in Conkeror</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/11/mg-zile-quick-emacs-in-command-line.html/">mg &amp; Zile: quick emacs in the command line</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/whistle-control-your-computer.html/">Whistle control your computer (Linux&amp;Mac)</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/quick-latex-ing-with-emacs.html/">Quick latex-ing with emacs: dabbrev and skeletons</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/calendars-emacs.html/">Calendars &amp; emacs</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

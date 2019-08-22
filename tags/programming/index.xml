@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/programming/</link>
+    <description>Recent content in Programming on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2019 11:39:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019-10 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</link>
+      <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
+      <description>Could be Autumn Rhythm, Letter C
+  Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
+If you are wondering why the list is shorter this week (and is so late) is because last week I said I was going to play Stardew Valley, and I complied.</description>
+    </item>
+    
+    <item>
+      <title>2019-1 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</link>
+      <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
+      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2017: Year in Review</title>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
+      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
+      <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
+Work Everything work related has gone up. More work, better work, more interesting work.</description>
+    </item>
+    
+    <item>
+      <title>Change the parameters of a docker container without knowing the docker run command used</title>
+      <link>https://mostlymaths.net/2017/08/change-parameters-of-docker-container-docker-run.html/</link>
+      <pubDate>Sun, 20 Aug 2017 19:30:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2017/08/change-parameters-of-docker-container-docker-run.html/</guid>
+      <description>I&amp;rsquo;m not sure how useful this Docker &amp;ldquo;trick&amp;rdquo; is, since it happens in a very niche situation.
+At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using ansible: writing link/port/volume mappings in ansible (using the docker, container or docker-container modules, depending how long ago we set it up).</description>
+    </item>
+    
+    <item>
+      <title>Moving from Emacs to Spacemacs</title>
+      <link>https://mostlymaths.net/2016/08/moving-from-emacs-to-spacemacs.html/</link>
+      <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
+      <description>A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
+In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs.</description>
+    </item>
+    
+    <item>
+      <title>Handling of exponent overflow in GNU APL and Dyalog APL (on Mac)</title>
+      <link>https://mostlymaths.net/2015/04/handling-of-exponent-overflow-in-gnu.html/</link>
+      <pubDate>Mon, 13 Apr 2015 11:29:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2015/04/handling-of-exponent-overflow-in-gnu.html/</guid>
+      <description>A few weeks ago I started trying a pre-beta release of Dyalog APL (now available as &amp;ldquo;full beta&amp;rdquo;) for Mac. Fellow Mac users, looks like we are in for a treat after so much time of only having GNU APL and the pretty expensive APLX. Now Mac APL lovers, users and aficionados will have a competitive, commercial option. At last!
+I started with the usual 1+1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected.</description>
+    </item>
+    
+    <item>
+      <title>The Mandelbrot set in one line of APL</title>
+      <link>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</link>
+      <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
+      <description>Is this line noise?
+
+⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
+    </item>
+    
+    <item>
+      <title>Extensibility in the Acme text editor</title>
+      <link>https://mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html/</link>
+      <pubDate>Sat, 09 Mar 2013 18:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html/</guid>
+      <description>Text editors. You hate them or love them. Praise them with religious zeal, and attack them with the same power. I&amp;rsquo;ve been an emacs user for the last 8 years, getting as deep as I could without checking the source. And the past few months I have started using evil-mode in emacs, to get some taste of vim in my daily editing (mostly text objects.)
+There&amp;rsquo;s still a third contestant in editor-land, for me.</description>
+    </item>
+    
+    <item>
+      <title>Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</title>
+      <link>https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
+      <pubDate>Fri, 22 Feb 2013 18:28:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/</guid>
+      <description>The links to Practical Vim are affiliate links to Amazon. Beware!
+So&amp;hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&amp;rsquo;m an emacs guy, so the main question is why?
+I love knowing many tools.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to the magic of Google Tag Manager</title>
+      <link>https://mostlymaths.net/2012/10/an-introduction-to-magic-of-google-tag.html/</link>
+      <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/10/an-introduction-to-magic-of-google-tag.html/</guid>
+      <description>If you want to read a quick overview of this in Spanish, check my post about GTM at DoctorMetrics.
+Google has just unveiled a new tool: Google Tag Manager. I have spent a few hours playing with it (both before and after official release.) And it&amp;rsquo;s awesome! Or at least, it has quite a lot of awesomeness, hidden behind a seemingly simple interface.
+Its main feature is the fact that you can get away with just a piece of included code.</description>
+    </item>
+    
+    <item>
+      <title>Version Control: Started using git and github (and how to set-up a remote git server)</title>
+      <link>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</link>
+      <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</guid>
+      <description>The Octocat, Github&amp;rsquo;s logo
+It&amp;rsquo;s been almost 6 years since I used some kind of revision control system. Back then I wasn&amp;rsquo;t sure about which I wanted to use&amp;hellip; I settled with RCS, the father of them all. RCS was structurally very simple, with text-based (human-readable) delta files. I liked that. I had all my code and TeX files under revision control, but then I started using more than one computer and it got out of hand very quickly (using RCS or CVS in Windows was quite tricky and had user and encoding problems.</description>
+    </item>
+    
+    <item>
+      <title>Adding Notes to Emails in Gnus (in Summary View)</title>
+      <link>https://mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html/</link>
+      <pubDate>Wed, 01 Aug 2012 23:21:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html/</guid>
+      <description>Sensitive information blanked
+The gnusnotes.el package, with delete and edit capabilities is now available in the marmalade package repository. This post just explains why, how and what (code at the end, too)
+Last month I switched email clients (for the 4th time in the past year.) I&amp;rsquo;ve passed through gnus, Thunderbird, mail.app and settled with Sparrow. Just 2 days before Sparrow was bought by Google I left for gnus (lucky moment!</description>
+    </item>
+    
+    <item>
+      <title>(Why) Juggling for Programmers (and other computer people)</title>
+      <link>https://mostlymaths.net/2012/07/juggling-for-programmers-and-other.html/</link>
+      <pubDate>Mon, 23 Jul 2012 13:55:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/07/juggling-for-programmers-and-other.html/</guid>
+      <description>From Flickr
+No, this is not a tutorial (but I do have written the standard steps to learn below). I began learning to juggle very recently. I just want to answer a possible &amp;ldquo;why&amp;rdquo;?
+I&amp;rsquo;ve always been fascinated by juggling, and every time I wanted to eat more than 2 small oranges I&amp;rsquo;d try my hand at juggling them. Always followed by bowing and picking them from the ground, of course.</description>
+    </item>
+    
+    <item>
+      <title>Timeline of whatlanguageis.com: first Django project</title>
+      <link>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</link>
+      <pubDate>Tue, 12 Jun 2012 15:10:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
+      <description>Last week I wrote about whatlanguageis.com, my first simple try at creating a Django powered site. How did it came to be?
+In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web. In the back of my mind, I wanted my code to work as a web application (either for me or for others,) and thought that I should comply with everyone else, learn PHP and try to make Python and PHP be friends.</description>
+    </item>
+    
+    <item>
+      <title>Language Detection in Python with NLTK Stopwords</title>
+      <link>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</link>
+      <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
+      <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
+    </item>
+    
+    <item>
+      <title>Learning to use vim in my iPad (even if I&#39;m an emacs geek)</title>
+      <link>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
+      <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
+      <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&amp;rsquo; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
+    </item>
+    
+    <item>
+      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <description>Taken from Flickr
+  In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
+This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
+    </item>
+    
+    <item>
+      <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
+      <link>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
+Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
+    </item>
+    
+    <item>
+      <title>Installing Debian on my Ben Nanonote</title>
+      <link>https://mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html/</link>
+      <pubDate>Wed, 26 Jan 2011 13:45:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html/</guid>
+      <description>Yes, that&amp;rsquo;s me with a polariser.
+Wait, playing Dungeon Crawl
+in your Nanonote?
+Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound here.
+The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about reflashing your Ben Nanonote.
+The package can be downloaded in .deb format for Debian-like distributions.</description>
+    </item>
+    
+    <item>
+      <title>And e/2 Appears from Nowhere! (Follow up to &#39;And e Appears from Nowhere&#39;)</title>
+      <link>https://mostlymaths.net/2010/10/and-e2-appears-from-nowhere-follow-up.html/</link>
+      <pubDate>Wed, 06 Oct 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/10/and-e2-appears-from-nowhere-follow-up.html/</guid>
+      <description>You may remember a post I wrote a month ago titled And e Appears from Nowhere. It was based (through some blogs I read) on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
+ Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers.</description>
+    </item>
+    
+    <item>
+      <title>Power Nap Via the Command Line in Linux/Mac OS</title>
+      <link>https://mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html/</link>
+      <pubDate>Mon, 23 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html/</guid>
+      <description>A month ago, Oscar del Ben posted an interesting tip in his blog to take power naps when you are feeling tired, How to Get a Quick 5-10 Minutes Nap Without Using an Alarm Clock. His idea is simple: pick a spoon on your hand. Once you fall asleep, your grip will relax, the spoon falls and you awaken with the sound. I found it amusing and interesting, as I am one of those types who feel really well after a 10 minutes nap.</description>
+    </item>
+    
+    <item>
+      <title>Which programming language should I learn next?</title>
+      <link>https://mostlymaths.net/2010/08/which-programming-language-should-i.html/</link>
+      <pubDate>Tue, 17 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/which-programming-language-should-i.html/</guid>
+      <description>I have a problem: I know quite a lot different programming languages (you can read my list of the best 9 books I have read about programming), but I am proficient only in two. I&amp;rsquo;d love to choose a few to concentrate and build my skills up, but I don&amp;rsquo;t know which. Read on for background and possible candidates.
+Since I discovered there were different programming languages, I&amp;rsquo;ve liked learning different ones.</description>
+    </item>
+    
+    <item>
+      <title>And e appears from nowhere!</title>
+      <link>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</link>
+      <pubDate>Thu, 05 Aug 2010 23:52:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</guid>
+      <description>As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
+ Here is an example of e turning up unexpectedly.</description>
+    </item>
+    
+    <item>
+      <title>Featured in a podcast</title>
+      <link>https://mostlymaths.net/2010/07/featured-in-podcast.html/</link>
+      <pubDate>Sun, 18 Jul 2010 16:30:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/07/featured-in-podcast.html/</guid>
+      <description>While I was in Iceland, I started to see visits coming to my blog from www.hanselminutes.com&amp;hellip; A site I didn&amp;rsquo;t know about. As soon as I got a decent wifi coverage I went to see what it was about&amp;hellip; And it was a podcast!
+From his own description,
+ Hanselminutes is a weekly audio talk show with noted web developer and technologist Scott Hanselman and hosted by Carl Franklin. Scott discusses utilities and tools, gives practical how-to advice, and discusses ASP.</description>
+    </item>
+    
+    <item>
+      <title>On a productivity down</title>
+      <link>https://mostlymaths.net/2010/06/on-productivity-down.html/</link>
+      <pubDate>Sun, 06 Jun 2010 12:30:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/06/on-productivity-down.html/</guid>
+      <description>A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my life bookmarks for these two weeks.
+Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been thinking about them these days.</description>
+    </item>
+    
+    <item>
+      <title>The 100 most common words in Icelandic, automatically generated from Wikipedia</title>
+      <link>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</link>
+      <pubDate>Thu, 20 May 2010 14:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
+      <description>Scroll down to download the file if you want to skip the how I did it part!
+As you may already know, I&amp;rsquo;m travelling to Iceland this July, and started learning Icelandic a few months ago. It advances slowly but firmly, but I found a problem: when you are self-learning a new language, an invaluable tool is a list of most common words. I was able to find the 100 most common words, from a research paper (Íslenskur Orðasjóður - Building a large icelandic corpus).</description>
+    </item>
+    
+    <item>
+      <title>Giving up the Forth raytracer</title>
+      <link>https://mostlymaths.net/2010/05/giving-up-forth-raytracer.html/</link>
+      <pubDate>Wed, 12 May 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/giving-up-forth-raytracer.html/</guid>
+      <description>Today, while I was thinking of the best implementation solution for the vector operations, I realised that I am just not motivated by writing a raytracer in Forth. I&amp;rsquo;ll have to find something more interesting, or at least, more Forth minded to work on.
+If I want to raytrace, better to improve the Lisp raytracer, which is sitting idly in my Code/Lisp folder. Steps that will follow in the raytracer path:</description>
+    </item>
+    
+    <item>
+      <title>Installed Go in Mac OS 10.5</title>
+      <link>https://mostlymaths.net/2010/05/installed-go-in-mac-os-105.html/</link>
+      <pubDate>Sat, 08 May 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/installed-go-in-mac-os-105.html/</guid>
+      <description>Yes, I know it: it is easy. But I will be doing a wipe and reinstall of my MacBook, and when I need to reinstall everything I want a place to check for the steps I did. I found almost all tips needed here.
+The first step is checking for Mercurial (wikipedia) in your system. Open a terminal and type
+ hg version
+ If your terminal complains about command not found, you don&amp;rsquo;t have Mercurial installed.</description>
+    </item>
+    
+    <item>
+      <title>The 9 Best Programming Books I Have Read (so far)</title>
+      <link>https://mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html/</link>
+      <pubDate>Sat, 17 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html/</guid>
+      <description>Below you can find a non exhaustive list of the best programming books I have read so far. I have read a lot more books about programming, but most of them I read and promptly forgot about them. I am reading currently a few more (Code Complete, Thinking Forth), and maybe they can make it into a list like this that my future self writes.
+And now, the list of the best programming books I have read so far.</description>
+    </item>
+    
+    <item>
+      <title>Another Ben NanoNote port: pMARS</title>
+      <link>https://mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html/</link>
+      <pubDate>Sun, 11 Apr 2010 19:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html/</guid>
+      <description>Screenshot compositing, made with free software
+Since I bought the Nanonote, I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.
+After my first successful port (gnugo), I decided to try something else, and while idling at the train I thought that pMARS, the portable Memory Array Redcode Simulator was probably a good bet.</description>
+    </item>
+    
+    <item>
+      <title>8 reader reasons for re-inventing the wheel as a programmer</title>
+      <link>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</link>
+      <pubDate>Sat, 10 Apr 2010 14:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
+      <description>As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
+ You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
+    </item>
+    
+    <item>
+      <title>My first port to the Ben NanoNote: gnugo</title>
+      <link>https://mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html/</link>
+      <pubDate>Sun, 04 Apr 2010 00:09:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html/</guid>
+      <description>Since I bought the Ben NanoNote, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its wiki says.
+David Reyes, from Tuxbrain did a great work by porting gnuchess to the Nano and documenting it in his blog.
+Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point.</description>
+    </item>
+    
+    <item>
+      <title>Approximating images with randomly placed translucent triangles, Take 1</title>
+      <link>https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/</link>
+      <pubDate>Fri, 02 Apr 2010 18:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/</guid>
+      <description>Stochastic hill climbing: Sisyphus pushes an image Last year, Slashdot published this interesting piece of work: Genetic evolution of the Mona Lisa. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some Christmas postcard related to maths or programming I gave it a try. So I wrote a LISP version&amp;hellip; way too slow.</description>
+    </item>
+    
+    <item>
+      <title>8 reasons for re-inventing the wheel as a programmer</title>
+      <link>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</link>
+      <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
+    </item>
+    
+    <item>
+      <title>Unpacking my Ben NanoNote</title>
+      <link>https://mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html/</link>
+      <pubDate>Tue, 23 Mar 2010 20:52:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html/</guid>
+      <description>The Ben NanoNote: smaller than my wallet!
+
+The Ben NanoNote: A computer smaller than my wallet If you are new here, have a look around and if you like what you find, don&amp;rsquo;t forget to subscribe.
+Today I received by post my Ben NanoNote, from Tuxbrain. What is it? A palmtop computer, really small. It has also really small specs&amp;hellip; small screen, small keyboard, little RAM, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</title>
+      <link>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</link>
+      <pubDate>Fri, 05 Mar 2010 23:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</guid>
+      <description>As I wrote in a previous post, I&amp;rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.
+I decided to allocate a few global variables (for &amp;ldquo;current point&amp;rdquo;, &amp;ldquo;current vector&amp;rdquo;, &amp;ldquo;light source&amp;rdquo;, etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.</description>
+    </item>
+    
+    <item>
+      <title>Current programming projects</title>
+      <link>https://mostlymaths.net/2010/03/current-programming-projects.html/</link>
+      <pubDate>Fri, 05 Mar 2010 11:50:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/current-programming-projects.html/</guid>
+      <description>CML with the Duffing Map
+This is just to remind me of what I&amp;rsquo;m doing and how is it going
+Approximation of images by randomly placed translucent triangles  Finished the first version, it works (I used it for my Christmas postcard), but the speed is not really good. Should rewrite big parts to make it faster.
+ Lisp raytracer  Stalled as I was rewriting the refraction code of the rewritten inner loop.</description>
+    </item>
+    
+    <item>
+      <title>Learning Forth by working on a raytracer</title>
+      <link>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</link>
+      <pubDate>Wed, 03 Mar 2010 22:30:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</guid>
+      <description>After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based).</description>
+    </item>
+    
+    <item>
+      <title>Debugging with emacs&#43;valgrind</title>
+      <link>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</link>
+      <pubDate>Sun, 28 Feb 2010 20:37:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</guid>
+      <description>The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs+gdb to debug segmentation faults and memory leaks&amp;hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</description>
+    </item>
+    
+    <item>
+      <title>CJuicer beats humans (and Unix&#39;s diff)</title>
+      <link>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
+      <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
+      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
+    </item>
+    
+    <item>
+      <title>Cron, diff &amp; wget: Watch changes in a webpage</title>
+      <link>https://mostlymaths.net/2010/01/cron-diff-wget-watch-changes-in-webpage.html/</link>
+      <pubDate>Mon, 04 Jan 2010 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/cron-diff-wget-watch-changes-in-webpage.html/</guid>
+      <description>From flickr
+A few months ago, I realised I was checking some pages frequently for changes. They were some congress pages, and I was waiting for them to add information about registration and such.
+Then I realised I could write a script to do it, using diff and wget. You can get it below. You have to edit it to add the pages you want to follow, then run it with the &amp;ldquo;write&amp;rdquo; option to download the first version, then edit your crontab file (crontab -e) to run it every day at a specified time with the &amp;ldquo;diff&amp;rdquo; option.</description>
+    </item>
+    
+    <item>
+      <title>Syncing iPod&#39;s vMac and Linux: emacs on iPod Touch</title>
+      <link>https://mostlymaths.net/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</link>
+      <pubDate>Sat, 02 Jan 2010 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</guid>
+      <description>Using emacs on the go in your iPod Touch / iPhone Maybe you remember a previous post on installing vMac, a Mac Plus emulator for the iPod Touch. I did it just for the geek factor&amp;hellip; and for being able to edit things with Emacs. I have emacs installed:
+
+But what&amp;rsquo;s the use of emacs, without files to edit? It didn&amp;rsquo;t bother me&amp;hellip; at first. Keep on reading for how to keep in sync files edited inside the vMac emacs and files in your Linux box, along with the &amp;ldquo;why should I use emacs in my iPod/iPhone?</description>
+    </item>
+    
+    <item>
+      <title>Evolutionary approximation of a Christmas postcard</title>
+      <link>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</link>
+      <pubDate>Wed, 23 Dec 2009 19:17:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</guid>
+      <description>If you liked it, leave a comment, digg, stumble
+or whatever you feel like doing
+Stochastic hill-climbing algorithm to approximate a picture by triangles (algorithm and source code). This image contains 48 images out of 1000, from iterating for 11000 generations the evolution code. The source image is the last square in the tile set.
+Bon Nadal!
+Feliz Navidad!
+Merry Christmas!
+Joyeux Nöel!
+Buon Natale!
+Frohe Weihnachten!
+Mutlu Noeller!</description>
+    </item>
+    
+    <item>
+      <title>RCS &amp; SVN: Version control</title>
+      <link>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</link>
+      <pubDate>Thu, 17 Dec 2009 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
+      <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+    </item>
+    
+    <item>
+      <title>Image processing history: Lena</title>
+      <link>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</link>
+      <pubDate>Sat, 05 Dec 2009 22:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</guid>
+      <description>Lena Söderberg
+I am working in my free time in an image processing related program, and this made me remember when I was taking a course in Signal Processing. One of the standard test images was the one above. Where does this historical image processing snippet come from?
+Turns out (wikipedia link) it is a standard folklore image, dating back to the seventies, when a bunch of electrical engineers needed an image satisfying certain signal problems (it is, indeed, an image with a lot of significative details, when compressing, denoising or whatever: the hat, the uniform colour distribution except for a few patches of different color&amp;hellip;).</description>
+    </item>
+    
+    <item>
+      <title>Abstract triangles in LISP</title>
+      <link>https://mostlymaths.net/2009/12/abstract-triangles-in-lisp.html/</link>
+      <pubDate>Wed, 02 Dec 2009 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/abstract-triangles-in-lisp.html/</guid>
+      <description>A LISP random triangle generator. Also a C version.
+You may also like to have a look at
+ParseList(ScrambleList(Relateds(Lisp,Programming)))</description>
+    </item>
+    
+    <item>
+      <title>C code &#34;Juicer&#34;</title>
+      <link>https://mostlymaths.net/2009/12/c-code-juicer.html/</link>
+      <pubDate>Tue, 01 Dec 2009 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/c-code-juicer.html/</guid>
+      <description>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &amp;ldquo;code juicer&amp;rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
+
+It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses.</description>
+    </item>
+    
+    <item>
+      <title>More #SongsInCode</title>
+      <link>https://mostlymaths.net/2009/11/more-songsincode.html/</link>
+      <pubDate>Mon, 23 Nov 2009 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
+      <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+Duran Duran - if(!</description>
+    </item>
+    
+    <item>
+      <title>mg &amp; Zile: quick emacs in the command line</title>
+      <link>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
+      <pubDate>Tue, 17 Nov 2009 01:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
+      <description>From The Design of the Emacs Logo
+I guess you may already know I love the emacs text editor, and use it as often as I can to do almost everything I can with it. I even use it in my iPod touch, through minivMac. But there is a small niche where it was a pain: quick editing a file from the command line. Those times when you just want to open one file, change a line, save and close.</description>
+    </item>
+    
+    <item>
+      <title>Copied programming assignments as cryptograms</title>
+      <link>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</link>
+      <pubDate>Wed, 11 Nov 2009 01:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</guid>
+      <description>Pieces of an ENIGMA machine, from Flickr
+Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&amp;rsquo;s mind. As a teacher, how do you detect this?
+From my point of view, there are fundamentally two different kinds of copy:</description>
+    </item>
+    
+    <item>
+      <title>Songs In Code</title>
+      <link>https://mostlymaths.net/2009/10/songs-in-code.html/</link>
+      <pubDate>Sat, 17 Oct 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/10/songs-in-code.html/</guid>
+      <description>A few days ago I found a page via StumbleUpon, and caught my inner geek. Songs in code, a trend in twitter a few days ago. Other examples here, and here (twitter). Below my own creations.
+ (setq My &amp;lsquo;(sleeping)) - Roxette
+do{love( );}while(TRUE); - The Beatles
+while(1){puts(&amp;ldquo;Young&amp;rdquo;);} - Alphaville
+love( ); puts(&amp;ldquo;Now&amp;rdquo;); - Roxette
+do{ }while(b*tchslaprappin&amp;amp;&amp;amp;cocainetongue); - Guns N&amp;rsquo; Roses
+if(!say){say=MAXINT;} - Ronan Keating
+int love=0; if(friday){love=1;} - The Cure</description>
+    </item>
+    
+    <item>
+      <title>Project: emacs fractal zoomer</title>
+      <link>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</link>
+      <pubDate>Sun, 11 Oct 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</guid>
+      <description>I have several (really, a lot) of programs to compute different images for my article, amusement, anything. And all of them require a change-and-try approach for zooming. The first I wrote needed to be finished quickly&amp;hellip; so I just hard-coded in the source the parameters. And this program turned to be the basis for all others&amp;hellip; And now each zoom requires some calculations and recompile.
+A time ago I decided to do something about it.</description>
+    </item>
+    
+    <item>
+      <title>gdb &amp; CEDET &amp; ECB</title>
+      <link>https://mostlymaths.net/2009/10/gdb-cedet-ecb.html/</link>
+      <pubDate>Mon, 05 Oct 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/10/gdb-cedet-ecb.html/</guid>
+      <description>Emacs fun, in other words. This weekend I&amp;rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&amp;hellip; I always miss on such matrix-here-matrix-there-solve-that.
+Today, after battling for an hour, I realized I missed the &amp;ldquo;intellisense&amp;rdquo; part of CEDET, and started to install it here in MacOs, and &amp;ldquo;there&amp;rdquo; in my netbook.</description>
+    </item>
+    
+    <item>
+      <title>Fading images in Javascript</title>
+      <link>https://mostlymaths.net/2009/10/fading-images-in-javascript.html/</link>
+      <pubDate>Thu, 01 Oct 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/10/fading-images-in-javascript.html/</guid>
+      <description>CicleImatges()
+Source code:
+// Copyright 2009 Rubén Berenguel
+// ruben /at/ maia /dot/ ub /dot/ es
+// This program is free software: you can redistribute it and/or
+// modify it under the terms of the GNU General Public License as
+// published by the Free Software Foundation, either version 3 of
+// the License, or (at your option) any later version.
+// This program is distributed in the hope that it will be useful,</description>
+    </item>
+    
+    <item>
+      <title>Whistle control your computer (Linux&amp;Mac)</title>
+      <link>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</link>
+      <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
+      <description>From flickr
+Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
+Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
+    </item>
+    
+    <item>
+      <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
+      <link>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
+    </item>
+    
+    <item>
+      <title>My backup script in Mac/Linux</title>
+      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
+      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <description>My backup script in Mac/Linux
+#!/bin/sh
+# This script backs up a set of files and directories incrementally,
+# storing only the modified files in a folder-per-day basis. Each time
+# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
+# refreshed to the newest copy, and the previous version of a modified
+# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
+# for instance)
+# Root to be safeguarded</description>
+    </item>
+    
+    <item>
+      <title>Lavaurs algorithm</title>
+      <link>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</link>
+      <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</guid>
+      <description>[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
+Top: Zoom a depth 13 Lavaurs chords, random colors
+Bottom: Depth 5 and depth 13 Lavaurs chords
+These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images doesn&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.</description>
+    </item>
+    
+    <item>
+      <title>Teleworking in August</title>
+      <link>https://mostlymaths.net/2009/08/teleworking-in-august.html/</link>
+      <pubDate>Wed, 05 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/teleworking-in-august.html/</guid>
+      <description>Lavaurs algorithm on course
+Like almost every year, August comes with a lot of pending To Do lists&amp;hellip; This year, it is choking full, mostly of work related issues, and some unknotted threads waiting to be finished. And in two and a half weeks I&amp;rsquo;ll head for Paris, and then my &amp;ldquo;vacation&amp;rdquo; is over.
+Yesterday I wasted my morning: bought my orange belt, set up the external monitor for my netbook, configured the printer, fotocopied two pages of a book and drank an horchata with a friend.</description>
+    </item>
+    
+    <item>
+      <title>Acer Aspire One 8.9&#39; &#43; Ubuntu &#43; Fluxbox</title>
+      <link>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</link>
+      <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
+      <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
+
+
+Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Siegel disk wallpaper</title>
+      <link>https://mostlymaths.net/2009/07/siegel-disk-wallpaper.html/</link>
+      <pubDate>Fri, 03 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/siegel-disk-wallpaper.html/</guid>
+      <description>As I already did with Douady Rabbits, here is another dynamical plane, this time corresponding to a Siegel disk in an entire transcendental family in a parameter corresponding to a polynomial-like region.
+
+Siegel disk in an ETF, available below as wallpaper
+Siegel disk for desktop background 1280x800
+Siegel disk for desktop background 1024x768
+You can also buy a poster version here.
+If you liked it, or have whatever else to say please leave a comment, digg, stumble or whatever you feel like doing.</description>
+    </item>
+    
+    <item>
+      <title>Lisp raytracing, again</title>
+      <link>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</link>
+      <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</guid>
+      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
+    </item>
+    
+    <item>
+      <title>Wolfram Alpha</title>
+      <link>https://mostlymaths.net/2009/06/wolfram-alpha.html/</link>
+      <pubDate>Sun, 07 Jun 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/06/wolfram-alpha.html/</guid>
+      <description>Stephen Wolfram (owner of Wolfram Research) has released (after announcing it in March) Wolfram Alpha, a kind of web search aimed at natural language and intelligent answers. JME pointed me to this question:
+
+Taken from Wolfram Alpha page
+The strange thing about it is that is is fully written in Mathematica (or so they say, 5 million lines of code). Strange indeed, Mathematica isn&amp;rsquo;t a particularly fast programming language. I bet someone could write a LISP version of it in half that lines&amp;hellip; without word-wrapping ;)</description>
+    </item>
+    
+    <item>
+      <title>Extremely useful (mostly free) Mac applications</title>
+      <link>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</link>
+      <pubDate>Wed, 13 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</guid>
+      <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
+ Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
+    </item>
+    
+    <item>
+      <title>TiddlyWiki</title>
+      <link>https://mostlymaths.net/2009/03/tiddlywiki.html/</link>
+      <pubDate>Mon, 02 Mar 2009 14:49:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/03/tiddlywiki.html/</guid>
+      <description>Today I found some nice &amp;ldquo;gadget&amp;rdquo; to add to my browser. TiddlyWiki.
+It is a single html document you download, and save. And it behaves (locally, in your computer!) just as a wiki. Creating links, adding things, whatever you like. Use it like a blog, wiki, recipe book, sketchpage, whatever you like. All gets saved in the same html file you downloaded (advise: change its name).
+Wikipedia page.
+TiddlyWiki home.</description>
+    </item>
+    
+    <item>
+      <title>Douady rabbit wallpaper</title>
+      <link>https://mostlymaths.net/2009/03/douady-rabbit.html/</link>
+      <pubDate>Sun, 01 Mar 2009 13:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/03/douady-rabbit.html/</guid>
+      <description>I have been experimenting with exponential-power potentials in my fractal images as of late, and by far the best results have been these. You can download it as a desktop wallpaper, hope you enjoy it. This Douady rabbit appears as a capture zone for a critical value in an exponential family.
+
+Douady rabbit in an exponential family, available below as wallpaper
+Douady rabbit for desktop background 1280x800
+Douady rabbit for desktop background 1024x768</description>
+    </item>
+    
+    <item>
+      <title>Quick PostScript Programming Tutorial</title>
+      <link>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</link>
+      <pubDate>Thu, 11 Dec 2008 15:27:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</guid>
+      <description>Examples of what you could do after learning PS:
+Koch curve, Mandelbrot set (top)
+Christmas card full of auto-generated fractals (bottom)
+For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work.</description>
+    </item>
+    
+  </channel>
+</rss>

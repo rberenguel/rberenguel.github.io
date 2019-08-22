@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/linux/</link>
+    <description>Recent content in Linux on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2018 15:31:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017: Year in Review</title>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
+      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
+      <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
+Work Everything work related has gone up. More work, better work, more interesting work.</description>
+    </item>
+    
+    <item>
+      <title>Find Search Engine Rankings... via the Command Line</title>
+      <link>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</link>
+      <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</guid>
+      <description>Via pixelfrenzy@flickr
+Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&amp;rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
+Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</description>
+    </item>
+    
+    <item>
+      <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
+      <link>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
+Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
+    </item>
+    
+    <item>
+      <title>Using Taskwarrior Instead Of Emacs&#43;Org Mode For To-Do And Appointment Tracking</title>
+      <link>https://mostlymaths.net/2011/03/using-taskwarrior-instead-of-emacsorg.html/</link>
+      <pubDate>Sun, 13 Mar 2011 13:50:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/03/using-taskwarrior-instead-of-emacsorg.html/</guid>
+      <description>One of my fractal images
+
+I have a confession to make: I&amp;rsquo;m not using emacs+org mode to keep my to-do list and appointments. What? The same emacs junkie that used emacs for (almost) everything last December gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.</description>
+    </item>
+    
+    <item>
+      <title>Installing Debian on my Ben Nanonote</title>
+      <link>https://mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html/</link>
+      <pubDate>Wed, 26 Jan 2011 13:45:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html/</guid>
+      <description>Yes, that&amp;rsquo;s me with a polariser.
+Wait, playing Dungeon Crawl
+in your Nanonote?
+Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound here.
+The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about reflashing your Ben Nanonote.
+The package can be downloaded in .deb format for Debian-like distributions.</description>
+    </item>
+    
+    <item>
+      <title>The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</title>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
+      <pubDate>Sat, 11 Dec 2010 20:10:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html/</guid>
+      <description>The gnus logo,
+from gnus homepage
+When the time to choose a mail reader for emacs came, as part of my emacs 30 Day Challenge, there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don&amp;rsquo;t remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.</description>
+    </item>
+    
+    <item>
+      <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
+Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
+    </item>
+    
+    <item>
+      <title>The Emacs 30 Day Challenge</title>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge.html/</link>
+      <pubDate>Wed, 01 Dec 2010 00:05:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge.html/</guid>
+      <description>From
+The Design of the Emacs Logo
+As you may already know, emacs is more than a (cross-platform) text editor. Some say that it is like a whole operating system (and some devil worshippers say that it lacks a good text editor&amp;hellip;). For the next 30 days (starting December 1, 2010) I&amp;rsquo;ll check it as well as I can. I will work just with emacs.
+You can check the challenge updates below:</description>
+    </item>
+    
+    <item>
+      <title>Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</title>
+      <link>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
+      <pubDate>Sat, 06 Nov 2010 18:20:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
+      <description>This week I&amp;rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled Approximating bifurcation loci by zeros of functions. This is heavily based on a poster I presented last year in Copenhagen (titled Sets approximating regions of instability). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.</description>
+    </item>
+    
+    <item>
+      <title>Get Yacas in the Ben NanoNote</title>
+      <link>https://mostlymaths.net/2010/08/get-yacas-in-ben-nanonote.html/</link>
+      <pubDate>Thu, 26 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/get-yacas-in-ben-nanonote.html/</guid>
+      <description>Yacas is an advanced computer algebra system, with its own programming language and a lot of handful operators available.
+It comes handy when you need to do that odd symbolic computation which is too big to handle by hand (or you are plain lazy).
+By looking at the wikipedia entry, I discovered an startling truth: as of 2009, yacas is no longer maintained.
+I should have guessed, because yacas does not compile out of the box (the program needed to generate the manuals does not compile), and this led to some naïve patching (just removing all instances of said program&amp;hellip;).</description>
+    </item>
+    
+    <item>
+      <title>Power Nap Via the Command Line in Linux/Mac OS</title>
+      <link>https://mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html/</link>
+      <pubDate>Mon, 23 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html/</guid>
+      <description>A month ago, Oscar del Ben posted an interesting tip in his blog to take power naps when you are feeling tired, How to Get a Quick 5-10 Minutes Nap Without Using an Alarm Clock. His idea is simple: pick a spoon on your hand. Once you fall asleep, your grip will relax, the spoon falls and you awaken with the sound. I found it amusing and interesting, as I am one of those types who feel really well after a 10 minutes nap.</description>
+    </item>
+    
+    <item>
+      <title>Ditching Ubuntu: Arch Linux in my Acer Aspire One</title>
+      <link>https://mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html/</link>
+      <pubDate>Sat, 21 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html/</guid>
+      <description>Last Tuesday I made the move. I ditched Ubuntu and installed Arch Linux in my Acer Aspire One. After my post Linux is a time killer (which attracted a lot of attention, and didn&amp;rsquo;t really carry the message I wanted) I got a lot of comments to think about. The two most suggested Linux distributions were Debian/unstable and Arch Linux. Well, maybe Arch Linux was not that talked about, but the following comment bought me out:</description>
+    </item>
+    
+    <item>
+      <title>Linux is a time killer</title>
+      <link>https://mostlymaths.net/2010/08/linux-is-time-killer.html/</link>
+      <pubDate>Tue, 10 Aug 2010 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/08/linux-is-time-killer.html/</guid>
+      <description>Preface: I have been using Linux since around 1998, when I installed Debian from scratch in my old Pentium II. I am more end-user than power user, but the computer I use most often (my netbook) has Linux in it by default. Also, my office computer is a Linux computer. And I am writing this in my MacBook. Which is not Linux, but at least it is Unix. What comes now is a personal rant, after a fight with my netbook.</description>
+    </item>
+    
+    <item>
+      <title>On a productivity down</title>
+      <link>https://mostlymaths.net/2010/06/on-productivity-down.html/</link>
+      <pubDate>Sun, 06 Jun 2010 12:30:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/06/on-productivity-down.html/</guid>
+      <description>A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my life bookmarks for these two weeks.
+Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been thinking about them these days.</description>
+    </item>
+    
+    <item>
+      <title>The command line PostScript swiss knife: a2ps</title>
+      <link>https://mostlymaths.net/2010/05/command-line-postscript-swiss-knife.html/</link>
+      <pubDate>Thu, 27 May 2010 14:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/command-line-postscript-swiss-knife.html/</guid>
+      <description>I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.
+Google answered with this page, and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has.</description>
+    </item>
+    
+    <item>
+      <title>NanoNote ports: Yacas &amp; 4th (Forth interpreter, compiler)</title>
+      <link>https://mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html/</link>
+      <pubDate>Thu, 06 May 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html/</guid>
+      <description>Last saturday I was in a porting mood, and tackled two interesting packages to have in the Ben NanoNote: yacas and 4th.
+Yacas (Yet Another Computer Algebra System) is a very interesting application to have in such a small device. The best calculator I have used is my old faithful HP49g. But in these days, it is bulky, heavy and slow. It was superseded by m48 (a HP48+ emulator) inside my iPod Touch.</description>
+    </item>
+    
+    <item>
+      <title>Linux screenshots made easy: Shutter &amp; Screenie</title>
+      <link>https://mostlymaths.net/2010/04/linux-screenshots-made-easy-shutter.html/</link>
+      <pubDate>Thu, 29 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/linux-screenshots-made-easy-shutter.html/</guid>
+      <description>Do you own a Mac? I use both MacOS and Linux everyday, and found myself with a problem. Before I found Shutter taking screenshots in Linux felt like a PITA. In MacOS you can take region screenshots by pressing Cmd-Shift-4. And I missed this feature in Linux, until I cared enough to look for a solution.
+Shutter was the answer, an open source screenshot grabber that fills my needs, and probably yours too.</description>
+    </item>
+    
+    <item>
+      <title>sed (stream editor) to colorise script output</title>
+      <link>https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/</link>
+      <pubDate>Sat, 24 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/</guid>
+      <description>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &amp;ndash;color In this post I show you a script that does it, in a simple way. I don&amp;rsquo;t have a full range of colors implemented, but you can find all here.
+
+This is the sed-processed output given by Gcal. The original source looks like
+
+As you can see, I used as identifiers XML-like expressions.</description>
+    </item>
+    
+    <item>
+      <title>Gcal the ultra-powerful command line GNU calendar</title>
+      <link>https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/</link>
+      <pubDate>Thu, 15 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/</guid>
+      <description>The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&amp;rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
+The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.</description>
+    </item>
+    
+    <item>
+      <title>Another Ben NanoNote port: pMARS</title>
+      <link>https://mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html/</link>
+      <pubDate>Sun, 11 Apr 2010 19:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html/</guid>
+      <description>Screenshot compositing, made with free software
+Since I bought the Nanonote, I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.
+After my first successful port (gnugo), I decided to try something else, and while idling at the train I thought that pMARS, the portable Memory Array Redcode Simulator was probably a good bet.</description>
+    </item>
+    
+    <item>
+      <title>Power to the command line</title>
+      <link>https://mostlymaths.net/2010/04/power-to-command-line.html/</link>
+      <pubDate>Thu, 08 Apr 2010 00:01:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/power-to-command-line.html/</guid>
+      <description>Are you command-line savvy? The command line. That small place, where a lot can happen. And more so if you are a Linux user&amp;hellip; How to maximize it? Where to harness its power?
+I discovered commandlinefu.com a few years ago, while looking for a way to do&amp;hellip; something. I don&amp;rsquo;t even enter that often, although it is a brilliant place to discover how to do X in Linux/UNIX.
+Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up.</description>
+    </item>
+    
+    <item>
+      <title>My first port to the Ben NanoNote: gnugo</title>
+      <link>https://mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html/</link>
+      <pubDate>Sun, 04 Apr 2010 00:09:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html/</guid>
+      <description>Since I bought the Ben NanoNote, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its wiki says.
+David Reyes, from Tuxbrain did a great work by porting gnuchess to the Nano and documenting it in his blog.
+Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point.</description>
+    </item>
+    
+    <item>
+      <title>8 reasons for re-inventing the wheel as a programmer</title>
+      <link>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</link>
+      <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
+    </item>
+    
+    <item>
+      <title>Unpacking my Ben NanoNote</title>
+      <link>https://mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html/</link>
+      <pubDate>Tue, 23 Mar 2010 20:52:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html/</guid>
+      <description>The Ben NanoNote: smaller than my wallet!
+
+The Ben NanoNote: A computer smaller than my wallet If you are new here, have a look around and if you like what you find, don&amp;rsquo;t forget to subscribe.
+Today I received by post my Ben NanoNote, from Tuxbrain. What is it? A palmtop computer, really small. It has also really small specs&amp;hellip; small screen, small keyboard, little RAM, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Learning Forth by working on a raytracer</title>
+      <link>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</link>
+      <pubDate>Wed, 03 Mar 2010 22:30:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</guid>
+      <description>After following a twitter feed about programming, I got overwhelmed by FORTH related posts. I had already read something about forth before (stack-based, somewhat fast, good for embedded devices), but so many bit.ly links pointing to webs of implementations of FORTH and FORTH things made me decide to, well, take a deeper look.
+Looks like a nice language, having something I enjoy about Lisp (interactivity) and something I like about PostScript (stack based).</description>
+    </item>
+    
+    <item>
+      <title>Debugging with emacs&#43;valgrind</title>
+      <link>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</link>
+      <pubDate>Sun, 28 Feb 2010 20:37:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</guid>
+      <description>The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs+gdb to debug segmentation faults and memory leaks&amp;hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</description>
+    </item>
+    
+    <item>
+      <title>Part of iPad</title>
+      <link>https://mostlymaths.net/2010/01/part-of-ipad.html/</link>
+      <pubDate>Sun, 31 Jan 2010 19:40:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/part-of-ipad.html/</guid>
+      <description>I got linked to Ipad&amp;rsquo;s &amp;ldquo;history&amp;rdquo;: Someone on MetaFilter posted a link to my emacs on iPod blog post in the thread about the launch of Apple&amp;rsquo;s iPad.
+You may also like
+ParseList(ScrambleList(Relateds(Linux,iPod,Mac,emacs)),5)</description>
+    </item>
+    
+    <item>
+      <title>Minix on the iPod: where Linux started</title>
+      <link>https://mostlymaths.net/2010/01/minix-on-ipod-where-linux-started.html/</link>
+      <pubDate>Sun, 17 Jan 2010 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/minix-on-ipod-where-linux-started.html/</guid>
+      <description>This is where Linux started. Minix, from the bible on operating systems. You can easily install it on minivMac for your iPod, download it from this link and install the disk image in your iPod as usual. Then, unpack the files inside.
+
+Fifteen minutes later&amp;hellip;
+
+When unpacking is finished, just open the MacMinix app, and Minix will be up and running.
+
+By the way, the username for MacMinix is root, and the password is Geheim!</description>
+    </item>
+    
+    <item>
+      <title>Cron, diff &amp; wget: Watch changes in a webpage</title>
+      <link>https://mostlymaths.net/2010/01/cron-diff-wget-watch-changes-in-webpage.html/</link>
+      <pubDate>Mon, 04 Jan 2010 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/cron-diff-wget-watch-changes-in-webpage.html/</guid>
+      <description>From flickr
+A few months ago, I realised I was checking some pages frequently for changes. They were some congress pages, and I was waiting for them to add information about registration and such.
+Then I realised I could write a script to do it, using diff and wget. You can get it below. You have to edit it to add the pages you want to follow, then run it with the &amp;ldquo;write&amp;rdquo; option to download the first version, then edit your crontab file (crontab -e) to run it every day at a specified time with the &amp;ldquo;diff&amp;rdquo; option.</description>
+    </item>
+    
+    <item>
+      <title>Syncing iPod&#39;s vMac and Linux: emacs on iPod Touch</title>
+      <link>https://mostlymaths.net/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</link>
+      <pubDate>Sat, 02 Jan 2010 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/01/syncing-ipods-vmac-and-linux-emacs-on.html/</guid>
+      <description>Using emacs on the go in your iPod Touch / iPhone Maybe you remember a previous post on installing vMac, a Mac Plus emulator for the iPod Touch. I did it just for the geek factor&amp;hellip; and for being able to edit things with Emacs. I have emacs installed:
+
+But what&amp;rsquo;s the use of emacs, without files to edit? It didn&amp;rsquo;t bother me&amp;hellip; at first. Keep on reading for how to keep in sync files edited inside the vMac emacs and files in your Linux box, along with the &amp;ldquo;why should I use emacs in my iPod/iPhone?</description>
+    </item>
+    
+    <item>
+      <title>Evolutionary approximation of a Christmas postcard</title>
+      <link>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</link>
+      <pubDate>Wed, 23 Dec 2009 19:17:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</guid>
+      <description>If you liked it, leave a comment, digg, stumble
+or whatever you feel like doing
+Stochastic hill-climbing algorithm to approximate a picture by triangles (algorithm and source code). This image contains 48 images out of 1000, from iterating for 11000 generations the evolution code. The source image is the last square in the tile set.
+Bon Nadal!
+Feliz Navidad!
+Merry Christmas!
+Joyeux Nöel!
+Buon Natale!
+Frohe Weihnachten!
+Mutlu Noeller!</description>
+    </item>
+    
+    <item>
+      <title>RCS &amp; SVN: Version control</title>
+      <link>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</link>
+      <pubDate>Thu, 17 Dec 2009 00:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
+      <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+    </item>
+    
+    <item>
+      <title>mg &amp; Zile: quick emacs in the command line</title>
+      <link>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
+      <pubDate>Tue, 17 Nov 2009 01:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
+      <description>From The Design of the Emacs Logo
+I guess you may already know I love the emacs text editor, and use it as often as I can to do almost everything I can with it. I even use it in my iPod touch, through minivMac. But there is a small niche where it was a pain: quick editing a file from the command line. Those times when you just want to open one file, change a line, save and close.</description>
+    </item>
+    
+    <item>
+      <title>fluxconf: fluxbox the graphical way</title>
+      <link>https://mostlymaths.net/2009/10/fluxconf-fluxbox-graphical-way.html/</link>
+      <pubDate>Tue, 13 Oct 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/10/fluxconf-fluxbox-graphical-way.html/</guid>
+      <description>A quick one: Graphical configuration for fluxbox: fluxconf. You can just apt-get it. I found out about it in tuxmachines.org, following this link. But after using it I realized I had lost 3 entries&amp;hellip; I am not sure if it was a bug, or what (they all had parentheses in them!). Use it at your own risk!
+Other fluxbox&amp;amp;Linux related posts:
+ Whistle control your computer (Linux&amp;amp;Mac)
+ My backup script in Mac/Linux</description>
+    </item>
+    
+    <item>
+      <title>Scribus&#43;Latex in Mac OS</title>
+      <link>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</link>
+      <pubDate>Tue, 29 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</guid>
+      <description>or the trouble with hard-coded paths and ineffective menus.
+
+Cross platform page-layout software:
+Scribus. Now with more LaTeX
+I am supposed to present a poster in a conference, about some work I am doing. I asked office mates about what they used&amp;hellip; A Mac user suggested Pages, and I asked a more Linux oriented, LaTeX savvy, and he told me: forget about LaTeX and use some WYSIWYG program, you&amp;rsquo;ll save time and effort.</description>
+    </item>
+    
+    <item>
+      <title>Whistle control your computer (Linux&amp;Mac)</title>
+      <link>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</link>
+      <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
+      <description>From flickr
+Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
+Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
+    </item>
+    
+    <item>
+      <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
+      <link>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
+    </item>
+    
+    <item>
+      <title>Slicing scannings</title>
+      <link>https://mostlymaths.net/2009/09/slicing-scannings.html/</link>
+      <pubDate>Fri, 11 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/slicing-scannings.html/</guid>
+      <description>Last year our department got a nice and shiny Xerox WorkCentre, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&amp;hellip; of course, the machine scans two pages each time, and thus creates a double bound PDF.
+And this doesn&amp;rsquo;t work well with my way to print booklets, so a working solution was to use ghostscript and ImageMagick from the command line.</description>
+    </item>
+    
+    <item>
+      <title>My backup script in Mac/Linux</title>
+      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
+      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <description>My backup script in Mac/Linux
+#!/bin/sh
+# This script backs up a set of files and directories incrementally,
+# storing only the modified files in a folder-per-day basis. Each time
+# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
+# refreshed to the newest copy, and the previous version of a modified
+# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
+# for instance)
+# Root to be safeguarded</description>
+    </item>
+    
+    <item>
+      <title>Calendars &amp; emacs</title>
+      <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
+      <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
+      <description>My month, starting
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+    </item>
+    
+    <item>
+      <title>Screenshot via command-line in Linux</title>
+      <link>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</link>
+      <pubDate>Mon, 17 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</guid>
+      <description>Have you ever wondered how to take a screenshot remotely, via the command line in a Linux system? Here is a way to do it. At the bottom you can also find a script to move it to the root of your personal page (if you have) to open the screenshot in your browser.
+I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode for Emacs) in an emacs instance running in my office computer.</description>
+    </item>
+    
+    <item>
+      <title>Fluxbox backgrounds</title>
+      <link>https://mostlymaths.net/2009/08/fluxbox-backgrounds.html/</link>
+      <pubDate>Sun, 02 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/fluxbox-backgrounds.html/</guid>
+      <description>Here are some pictures and images which look pretty good together with my Fluxbox configuration, in my Netbook. Here they are for your enjoyment. They are supposed to be small, not to drain too many system resources. I will upload later the butterfly in higher resolution.
+     
+You may also be interested in
+ Two weeks, still loving Fluxbox Three dee Acer Aspire One 8.9&amp;rsquo; + Ubuntu + Fluxbox Whistle control your computer (Linux&amp;amp;Mac)  </description>
+    </item>
+    
+    <item>
+      <title>Two weeks, still loving Fluxbox</title>
+      <link>https://mostlymaths.net/2009/08/two-weeks-still-loving-fluxbox.html/</link>
+      <pubDate>Sat, 01 Aug 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/08/two-weeks-still-loving-fluxbox.html/</guid>
+      <description>Two and a half weeks ago, I got a netbook and promptly installed Ubuntu, followed by Fluxbox (as already explained). And after two weeks of almost continued use, I like it even more than when I decided to use it. Some of the points I really enjoy (in no particular order).
+ Strong keyboard shortcuts. As an emacs junkie as I am, I love keyboard shortcuts. And Fluxbox is incredibly flexible in defining or removing them: Even system-wide shortcuts are customizable.</description>
+    </item>
+    
+    <item>
+      <title>Three dee</title>
+      <link>https://mostlymaths.net/2009/07/three-dee.html/</link>
+      <pubDate>Fri, 31 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/three-dee.html/</guid>
+      <description>I don&amp;rsquo;t know exactly how (well, now I remember: I was looking for a transparent background patch for xclock), but a while ago, in Göttingen I stumbled on a 3D file system browser, called XCruiser (you can get it with &amp;lsquo;sudo apt-get install xcruise&amp;rsquo;). It has not been maintaned for a long while, and it can&amp;rsquo;t even open the files you &amp;ldquo;travel&amp;rdquo;, so it is pretty useless, albeit amazing.</description>
+    </item>
+    
+    <item>
+      <title>Acer Aspire One 8.9&#39; &#43; Ubuntu &#43; Fluxbox</title>
+      <link>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</link>
+      <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
+      <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
+
+
+Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Hyperoid a.k.a. SDLRoids</title>
+      <link>https://mostlymaths.net/2009/07/hyperoid-aka-sdlroids.html/</link>
+      <pubDate>Thu, 02 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/hyperoid-aka-sdlroids.html/</guid>
+      <description>Screenshots!
+Back when I was in school, I had a really nice game in my 80286 computer, under Windows 3.1. Yes, it was 15 years ago&amp;hellip; The game was Hyperoid, by Edward Hutchins. When I got my first Pentium with Windows 95, I longed that game&amp;hellip; and the 3.1. version didn&amp;rsquo;t work completely OK in it. Anyway I played&amp;hellip; then found Hyperoid95. I even recompiled it, to add firepower (the author of this version cut the fire speed).</description>
+    </item>
+    
+    <item>
+      <title>How to get a local proxy</title>
+      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
+      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
+      <description>Setting a local proxy through a remote machine
+To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
+ ssh -D 42 YourRemoteMachineName
+ And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
+    </item>
+    
+    <item>
+      <title>Nethack</title>
+      <link>https://mostlymaths.net/2009/05/nethack.html/</link>
+      <pubDate>Sun, 03 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/nethack.html/</guid>
+      <description>I &amp;ldquo;discovered&amp;rdquo; Nethack a month or so ago, while being bored to death (after three unsuccessful attempts in proving something) in my office.
+
+Myself with my dog Hachi
+I play the MacOs Tiles (or QT) version, which can be found in Nethack.org, configured for ASCII color play. The configuration file is a file called .nethackrc in your home directory, mine looks like:
+ OPTIONS=!autopickup,ascii_map, color, hilite_pet, lit_corridor, showexp, showscore, boulder:0;</description>
+    </item>
+    
+  </channel>
+</rss>

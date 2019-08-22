@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perl on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/perl/</link>
+    <description>Recent content in Perl on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2019 11:39:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/perl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019-10 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</link>
+      <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
+      <description>Could be Autumn Rhythm, Letter C
+  Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
+If you are wondering why the list is shorter this week (and is so late) is because last week I said I was going to play Stardew Valley, and I complied.</description>
+    </item>
+    
+  </channel>
+</rss>

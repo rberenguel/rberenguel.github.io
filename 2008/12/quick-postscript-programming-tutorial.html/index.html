@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Quick PostScript Programming Tutorial</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Quick PostScript Programming Tutorial" />
+<meta property="og:description" content="Examples of what you could do after learning PS:
+Koch curve, Mandelbrot set (top)
+Christmas card full of auto-generated fractals (bottom)
+For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" />
+<meta property="article:published_time" content="2008-12-11T15:27:00+01:00" />
+<meta property="article:modified_time" content="2008-12-11T15:27:00+01:00" />
+<meta itemprop="name" content="Quick PostScript Programming Tutorial">
+<meta itemprop="description" content="Examples of what you could do after learning PS:
+Koch curve, Mandelbrot set (top)
+Christmas card full of auto-generated fractals (bottom)
+For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work.">
+
+
+<meta itemprop="datePublished" content="2008-12-11T15:27:00&#43;01:00" />
+<meta itemprop="dateModified" content="2008-12-11T15:27:00&#43;01:00" />
+<meta itemprop="wordCount" content="1863">
+
+
+
+<meta itemprop="keywords" content="Programming,PostScript," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Quick PostScript Programming Tutorial"/>
+<meta name="twitter:description" content="Examples of what you could do after learning PS:
+Koch curve, Mandelbrot set (top)
+Christmas card full of auto-generated fractals (bottom)
+For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Quick PostScript Programming Tutorial</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-12-11T15:27:00&#43;01:00">December 11, 2008</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 9 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1863 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFF5Kl4I/AAAAAAAAAuc/eF9F1blEtpU/s1600-h/Koch.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFF5Kl4I/AAAAAAAAAuc/eF9F1blEtpU/s400/Koch.png" alt="" /></a><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFVzJ4NI/AAAAAAAAAuk/c5DLcWoSzd8/s1600-h/Mand.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFVzJ4NI/AAAAAAAAAuk/c5DLcWoSzd8/s400/Mand.png" alt="" /></a></p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/SgmBgpIXFXI/AAAAAAAAA3M/wgXGYMWgmLY/s1600-h/Postal2008.jpg"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/SgmBgpIXFXI/AAAAAAAAA3M/wgXGYMWgmLY/s400/Postal2008.jpg" alt="" /></a></p>
+
+<p>Examples of what you could do after learning PS:<br />
+Koch curve, Mandelbrot set (<em>top</em>)</p>
+
+<p>Christmas card full of auto-generated fractals (<em>bottom</em>)</p>
+
+<p>For those of you who don&rsquo;t know, <a href="http://en.wikipedia.org/wiki/PostScript"><strong>PostScript</strong></a> <strong>is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like</strong>. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it. In Windows you can download an install <a href="http://pages.cs.wisc.edu/~ghost/doc/AFPL/index.htm">AFPL GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm">this page to convert a PS to PDF</a>.</p>
+
+<p>As you may already know, PostScript is a <a href="http://en.wikipedia.org/wiki/Turing_complete">Turing complete</a> programming language. This means that any program you can write in any programming language, you can write in PostScript (albeit it will be slower). As geekish and curious as I am, a few days ago I decided to learn some of its core features, and as I tended to forget new languages almost as quick as I learnt them (<em>Oh Python, where are thou?</em>) I started writing some small reminders. If I forgot, I just read them and ready to go. In this quick tutorial/knowledge-refresher for PostScript programming, I&rsquo;ll sketch some key points and show a pair of examples: a <a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> and a <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch&rsquo;s snowflake</a>. As a side note, the code for the snowflake is quite general for <a href="http://en.wikipedia.org/wiki/L-system">L-systems</a>.&ldquo;My&rdquo; code for this system is a rewriting, rescaling and simplifying of the code from Michel Charpentier at <a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">this page</a>. When you are through this tutorial, take a look at his code, he is much more clever than I am when PostScript-ing, and his results are <em>awesome</em>.</p>
+
+<p><strong>From now on, PS will mean, of course, PostScript.</strong></p>
+
+<p><strong>PS is</strong> <a href="http://en.wikipedia.org/wiki/Category:Stack-oriented_programming_languages"><strong>stack oriented</strong></a><strong>, based on RPN (</strong><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation"><strong>reverse polish notation</strong></a><strong>)</strong>. This means that you have a stack, like a stack of plates, and if you want to multiply 3 by 4, you should write <strong>3 4 mul</strong> to push 3 and 4 to the stack (4 being the topmost element now). Mul is the command for multiplying, as you may guess. 3 and 4 get pushed to the stack and then multiplied. Now the instruction mul leaves his result in the stack, ready to be used. <strong>Keep how the stack works in mind</strong>. When writing some complex formulae or algorithms, the state of the stack is very important, if you start to lose track, write it down on the side. Also, it is more efficient and quicker to just use what you have on the stack and don&rsquo;t rely on named variables.</p>
+
+<p>To make a comment within a PS program, write %, and it is customary to start every PS file with the comment line %!PS which allows all devices to recognize it as PostScript.</p>
+
+<p><strong>There are two separate stacks</strong>: a operand stack and a dictionary stack. Well, in fact as <a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit points out, there are 3 stacks, these two and the function stack: thanks to it you don&rsquo;t need to mess with function call and return addresses in the other two stacks. In the first one, operands (as 3 and 4 in the previous example) are kept. In the second one, names of operators or variables are kept. And as it is a stack, if you define a variable named A twice, when you call it only the most recent (nearer to the top of the stack) will be used.</p>
+
+<p>In fact, defining a variable or defining an operator has the same syntax as defining a variable. /name content def for a variable, /name {operations} def for an operator. I find this very nice (very <a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a>-y). <strong>Variable and function names are made of combinations of characters (a&hellip;z) and numbers, as usual in other programming languages</strong>. Curiously enough, you can name a variable 7U if you want, but starting variables with a number is &ldquo;bad style&rdquo;, usually. Keep it in mind. You may wonder why I wrote /name when defining a variable. Well preceding a name with a / (slash) puts the name itself as operand in the stack, without the slash, PS looks for it in the dictionary stack and puts its corresponding value in the stack. (Thanks to <a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit for the slash/backslash distinction!).</p>
+
+<p>After so much talking, sure you are wondering <em>How does one draw??</em>. Well, <strong>first we have to define a path with newpath</strong>, then we <strong>issue some movement and tracing commands</strong>, then <strong>fill or stroke these commands</strong>, and <strong>finish the path</strong>. As a starting point, a square 200 points per side in the bottom left of the page:</p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/SUJgNUeDAhI/AAAAAAAAAuU/91D-2k-M_8E/s1600-h/Picture+2.png"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/SUJgNUeDAhI/AAAAAAAAAuU/91D-2k-M_8E/s400/Picture+2.png" alt="" /></a></p>
+
+<blockquote>
+<p>newpath<br />
+200 200 moveto % as the name says, move the cursor to x y<br />
+200 0 rlineto % line from actual point toward the right<br />
+% side<br />
+0 200 rlineto % the actual point is now in the right side,<br />
+% go up<br />
+-200 0 rlineto % go left<br />
+0 -200 rlineto % ta daa A Square<br />
+closepath<br />
+stroke<br />
+showpage</p>
+</blockquote>
+
+<p>newpath and closepath enclose a drawing path, and moveto moves the cursor to an starting position. rlineto creates lines in relative coordinates (from the actual point taken as (0,0)), a similar construct with lineto uses global coordinates (and there is also a rmoveto). stroke draws the previous paths, and if we were to put fill instead of stroke, it would be a black square.</p>
+
+<p>Changing colors is as easy as (before stroking or filling) issuing a num setgray for a gray level, where num is between 0 (black) and 1 (white). If you prefer RGB, Red Green Blue setrgbcolor would do the same with RGB values (also ranging from 0 to 1 for each colour component).</p>
+
+<p><strong>Writing is a little trickier in PostScript</strong>. First, you have to <strong>find a font with <em>name</em></strong> <strong>findfont</strong>, then <strong>numpt</strong> <strong>scalefont</strong> <strong>to scale it to a certain number of points</strong>, <strong>finally</strong> <strong>setfont</strong>. And how do you write? <strong>newpath,</strong> <strong>move to wherever you want and (Text)</strong> <strong>show</strong>. Show acts as both a stroke and closepath, so if you want to change colors or something, do before writing text.</p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUJgNeDpDAI/AAAAAAAAAuM/M1AmOCssvwE/s1600-h/Picture+3.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUJgNeDpDAI/AAAAAAAAAuM/M1AmOCssvwE/s400/Picture+3.png" alt="" /></a></p>
+
+<blockquote>
+<p>/Times-Roman findfont<br />
+20 scalefont<br />
+setfont<br />
+newpath<br />
+200 200 moveto % as the name says, move the cursor to x y<br />
+200 0 rlineto % line from actual point toward the right side<br />
+0 200 rlineto % the actual point is now in the right side, go up<br />
+-200 0 rlineto % go left<br />
+0 -200 rlineto<br />
+235 295 moveto<br />
+(Hi, I&rsquo;m A Square) show % ta daa A Square<br />
+closepath<br />
+stroke<br />
+showpage</p>
+</blockquote>
+
+<p><strong>You can rotate, translate or scale your constructs</strong> (and if you want to keep your previous transformation safe, issue a gsave before doing anything and a grestore after doing it, this way the initial and final position states are the same). To rotate by 60 degrees our friend A Square, put a 60 rotate command after the first moveto. Also, if you pretended to draw something in the usual orientation, you should issue a gsave before rotating, and a grestore after stroking.</p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUJgNJV-MpI/AAAAAAAAAuE/Qcddvn7vuqk/s1600-h/Picture+4.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUJgNJV-MpI/AAAAAAAAAuE/Qcddvn7vuqk/s400/Picture+4.png" alt="" /></a></p>
+
+<blockquote>
+<p>/Times-Roman findfont<br />
+20 scalefont<br />
+setfont<br />
+gsave<br />
+newpath<br />
+200 200 moveto % as the name says, move the cursor to x y<br />
+60 rotate<br />
+200 0 rlineto % line from actual point toward the right side<br />
+0 200 rlineto % the actual point is now in the right side, go up<br />
+-200 0 rlineto % go left<br />
+0 -200 rlineto<br />
+35 95 rmoveto<br />
+(Hi, I&rsquo;m A Square) show % ta daa A Square<br />
+closepath<br />
+stroke<br />
+grestore<br />
+gsave<br />
+newpath<br />
+0.6 setgray<br />
+200 200 moveto<br />
+30 rotate<br />
+200 0 rlineto<br />
+0 200 rlineto<br />
+-200 0 rlineto<br />
+0 -200 rlineto<br />
+35 95 rmoveto<br />
+(Hi, I&rsquo;m A Square) show<br />
+closepath<br />
+stroke<br />
+grestore<br />
+newpath<br />
+0.8 setgray<br />
+200 200 moveto<br />
+200 0 rlineto<br />
+0 200 rlineto<br />
+-200 0 rlineto<br />
+0 -200 rlineto<br />
+35 95 rmoveto<br />
+(Hi, I&rsquo;m A Square) show<br />
+closepath<br />
+stroke<br />
+showpage</p>
+</blockquote>
+
+<p>This starts to get annoying, so let&rsquo;s define a square function, which assumes we are already at a point where we will draw a square of a certain side (in the stack).</p>
+
+<blockquote>
+<p>/box {<br />
+dup dup dup % this places 4 instances of the side in the stack<br />
+0 rlineto % just one argument, as below we have side x 4<br />
+0 exch rlineto % exch swaps the first and second argument<br />
+neg 0 rlineto % neg changes the sign<br />
+neg 0 exch rlineto % you guess?<br />
+} def</p>
+</blockquote>
+
+<p>and this simplifies the gsave-grestore blocks as</p>
+
+<blockquote>
+<p>gsave<br />
+newpath<br />
+0.6 setgray<br />
+200 200 moveto<br />
+x rotate<br />
+200 box<br />
+35 95 rmoveto<br />
+(Hi, I&rsquo;m A Square) show<br />
+closepath<br />
+stroke<br />
+grestore</p>
+</blockquote>
+
+<p>dup is a really useful command, which duplicates the topmost item in the stack, you will be using it a lot. And the same goes for exch, which swaps the first and second items. The most useful one, when doing some &ldquo;big&rdquo; code is m n roll&hellip; but it is trickier. As an example, if you have n elements in the stack, and want to move the topmost to the bottom (shifting), you should n 1 roll. If instead you want to shift to the other side, n n-1 roll. Have a look at how it works in some references below if you need anything harder, but these two constructs are almost all there is to it. neg, together with add sub mul and div form the core arithmetic structure.</p>
+
+<p>PS of course has a number of flow control structures. The simplest, is repeat. As a simple example, 3 {dup} repeat would result in the first line in our box operator. Enclosing something in braces lets PS know it is a set of instructions, by the way.</p>
+
+<p>The for loop is by far the most interesting and the one you (well, at least me) will be using more often. Its syntax is initial increment final {what to do} for.</p>
+
+<p>for puts the counter on the topmost of the stack, so if you want to have a named variable corresponding to the counter, the first line in the for should be /n exch def. Later on in the final samples I will show some nested for constructs for more entertainment value.</p>
+
+<p>Now comes a classical pair, if and ifelse. They are quite straightforward, condition {true procedure} {false procedure} ifelse and if it were an if, dont write a false procedure.</p>
+
+<p><strong>I think that this is almost all needed to start with PostScript. Maybe in a few days I&rsquo;ll be adding something, or maybe PDF-ing this.</strong></p>
+
+<p>Now, the &ldquo;hard&rdquo; examples</p>
+
+<p><a href="http://rberenguel.googlecode.com/svn/trunk/Postscript/Mand.ps">Mandelbrot set</a><br />
+<a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFVzJ4NI/AAAAAAAAAuk/c5DLcWoSzd8/s1600-h/Mand.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFVzJ4NI/AAAAAAAAAuk/c5DLcWoSzd8/s400/Mand.png" alt="" /></a></p>
+
+<p><a href="http://rberenguel.googlecode.com/svn/trunk/Postscript/Koch.ps">Koch&rsquo;s island.</a><br />
+<a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFF5Kl4I/AAAAAAAAAuc/eF9F1blEtpU/s1600-h/Koch.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/SUKEFF5Kl4I/AAAAAAAAAuc/eF9F1blEtpU/s400/Koch.png" alt="" /></a></p>
+
+<p>And some references</p>
+
+<p><a href="http://en.wikipedia.org/wiki/PostScript">Wikipedia article</a><br />
+<a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">L-systems in PostScript</a><br />
+<a href="http://www.pugo.org/main/project_pshttpd/">A PostScript web-server</a><br />
+<a href="http://www.tailrecursive.org/postscript/postscript.html">A first guide to PostScript</a><br />
+<a href="http://partners.adobe.com/public/developer/en/ps/PLRM.pdf">PostScript Language Reference (Red book)</a></p>
+
+<p>If you enjoyed this small tutorial, please share its link with your friends! It would made a difference, PostScript is a wonderful programming language which deserves to be more widely known.</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a></p>
+
+<p>[](<a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png">http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png</a>) <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html">And e Appears From Nowhere!</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C Code Juicer: Detecting Copied Programming Assignments</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch for Changes in a Webpage</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 Reasons for Re-Inventing the Wheel as a Programmer</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating Images with Randomly Placed Translucent Triangles</a><br />
+ParseList(ScrambleList(Relateds(Maths,Programming)),5)</p>
+<hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/postscript" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">PostScript</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

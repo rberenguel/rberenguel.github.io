@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meetup on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/meetup/</link>
+    <description>Recent content in meetup on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Oct 2016 21:37:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka</title>
+      <link>https://mostlymaths.net/2016/10/apache-kafka-london-meetup-distributed.html/</link>
+      <pubDate>Mon, 31 Oct 2016 21:37:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2016/10/apache-kafka-london-meetup-distributed.html/</guid>
+      <description>This has been the first time I could attend the Apache Kafka meetup in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).
+I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Confluent (and author of I Heart Logs), so, basically, a Kafka top committer himself.</description>
+    </item>
+    
+  </channel>
+</rss>

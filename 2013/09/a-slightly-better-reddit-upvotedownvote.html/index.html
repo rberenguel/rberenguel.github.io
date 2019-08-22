@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | A Slightly Better reddit Upvote/Downvote Widget (button)</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="A Slightly Better reddit Upvote/Downvote Widget (button)" />
+<meta property="og:description" content="A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.
+Both happy, we deployed and I tested." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2013/09/a-slightly-better-reddit-upvotedownvote.html/" />
+<meta property="article:published_time" content="2013-09-19T16:43:00+02:00" />
+<meta property="article:modified_time" content="2013-09-19T16:43:00+02:00" />
+<meta itemprop="name" content="A Slightly Better reddit Upvote/Downvote Widget (button)">
+<meta itemprop="description" content="A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.
+Both happy, we deployed and I tested.">
+
+
+<meta itemprop="datePublished" content="2013-09-19T16:43:00&#43;02:00" />
+<meta itemprop="dateModified" content="2013-09-19T16:43:00&#43;02:00" />
+<meta itemprop="wordCount" content="479">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Slightly Better reddit Upvote/Downvote Widget (button)"/>
+<meta name="twitter:description" content="A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.
+Both happy, we deployed and I tested."/>
+
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">A Slightly Better reddit Upvote/Downvote Widget (button)</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-09-19T16:43:00&#43;02:00">September 19, 2013</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 479 words</span>
+      
+    </header>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.</p>
+
+<p>Both happy, we deployed and I tested. Worked well, no problem. Well, actually, yes. A problem shared by all reddit buttons, one that was very troublesome here in <a href="http://www.mostlymaths.net/">mostlymaths</a> (back when I had a share on reddit button just beside the post title.)</p>
+
+<p>When setting up the button you select the target reddit you&rsquo;d rather have your users send your content. In a page about Apple stuff, it would be r/apple. The problem is though that your users are free and can do whatever they want. So they go and submit to r/technology. Fine, r/technology is cool enough, lots of readers. Trouble is, when a user arrives from r/technology to your blog, after clicking on the link&hellip; He will see your widget with an ugly <em>submit</em> text, and no upvotes or downvotes:</p>
+
+<p><a href="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png"><img src="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png" alt="" /></a></p>
+
+<p>even though your post has quite a few votes already in r/technology. The trouble comes from setting the target subreddit beforehand: if the url is not in this subreddit, reddit looks nowhere else. Of course, you&rsquo;d rather have:</p>
+
+<p><a href="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png"><img src="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png" alt="" /></a></p>
+
+<p>with the real counter. After all, this means making the experience completely seamless:</p>
+
+<ol>
+<li>Reddit user sees a cool link to your content in r/whatever. Clicks</li>
+<li>Lands on your page</li>
+<li>Upvotes (or downvotes)</li>
+</ol>
+
+<p>instead of</p>
+
+<ol>
+<li>Reddit user sees a cool link to your content in r/whatever. Clicks</li>
+<li>Lands on the page</li>
+<li>Tries to upvote, needs to submit instead</li>
+<li>Is forced to submit to r/whatever, gives up (or not)</li>
+</ol>
+
+<p>An easy way to solve this problem is to check the referring URL. If it matches a subreddit, we can set the target of our widget to <em>that</em> subreddit instead of the default one. <strong>All reddit readers happy!</strong></p>
+
+<p>There&rsquo;s another issue, though: users not arriving from reddit.</p>
+
+<p>A random user landing in your awesome post, which has a bazillion points in r/whatever likes your content, and wants to upvote it. But, alas! He sees the dreaded submit button, because our default is r/apple. Or worse, sees 0 (or even a negative number!) because it has been downvoted in our target subreddit.</p>
+
+<p>This can also be solved. Reddit offers a clear-cut json API, allowing jsonp callbacks. This means that we can write a small piece of javascript that will check whether our post has been submitted to another reddit AND change the target to <em>that</em> one! <strong>All reddit users happy!</strong></p>
+
+<p>Below you can find the code. Fork it, use it, whatever. Be happy. If something breaks or doesn&rsquo;t work as expected it&rsquo;s not my fault: use cases may vary.</p>
+<hr/><ul class="pa0">
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
