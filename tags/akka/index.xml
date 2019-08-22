@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akka on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/akka/</link>
+    <link>rberenguel.github.io/tags/akka/</link>
     <description>Recent content in Akka on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Apr 2019 19:37:00 +0200</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/akka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/akka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-9 Readings of the week (x4)</title>
-      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <link>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <guid>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ClassNotFoundException for Akka logging</title>
-      <link>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</link>
+      <link>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</link>
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
+      <guid>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
       <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
  YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
     </item>

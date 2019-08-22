@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scala on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/scala/</link>
+    <link>rberenguel.github.io/tags/scala/</link>
     <description>Recent content in scala on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#20,21,22 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/07/2019202122-readings-of-week.html/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
 
 &lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,183 +24,183 @@
     
     <item>
       <title>2019#19 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/07/201919-readings-of-week.html/</link>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/07/201919-readings-of-week.html/</guid>
       <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A (section) of a map of the data engineering space</title>
-      <link>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</link>
+      <link>rberenguel.github.io/2019/07/a-section-of-map-of-data-engineering.html/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
+      <guid>rberenguel.github.io/2019/07/a-section-of-map-of-data-engineering.html/</guid>
       <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#16 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/06/201916-readings-of-week.html/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/06/201916-readings-of-week.html/</guid>
       <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#15 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/06/201915-readings-of-week.html/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/06/201915-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#14 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/05/201914-readings-of-week.html/</link>
       <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/05/201914-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>LSP for Python and Scala</title>
-      <link>https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/</link>
+      <link>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</link>
       <pubDate>Tue, 21 May 2019 23:41:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/</guid>
+      <guid>rberenguel.github.io/2019/05/lsp-for-python-and-scala.html/</guid>
       <description>If you have have known me for any length of time you&amp;rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.</description>
     </item>
     
     <item>
       <title>2019#13 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/05/201913-readings-of-week.html/</link>
       <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/05/201913-readings-of-week.html/</guid>
       <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#12 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/05/2019-12-readings-of-week.html/</link>
       <pubDate>Mon, 13 May 2019 00:31:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/05/2019-12-readings-of-week.html/</guid>
       <description>&lt;p&gt;Big data and data engineering, metallurgy, Rust (not the metallurgy-related rust). Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>gtags (GNU global) in emacs for Scala</title>
-      <link>https://mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
+      <link>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</link>
       <pubDate>Thu, 09 May 2019 17:27:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
+      <guid>rberenguel.github.io/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
       <description>&lt;p&gt;As you may know, I’m a heavy &lt;a href=&#34;https://www.mostlymaths.net/search/label/emacs&#34;&gt;emacs&lt;/a&gt; user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-11 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/04/2019-11-readings-of-week.html/</link>
       <pubDate>Sun, 28 Apr 2019 17:39:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/04/2019-11-readings-of-week.html/</guid>
       <description>Software engineering, Spark, history, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
 Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almost a year (on my suggestion). I&amp;rsquo;m not super-happy with it, and testing it is one of the pain points.</description>
     </item>
     
     <item>
       <title>2019-9 Readings of the week (x4)</title>
-      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <link>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <guid>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-8 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/03/2019-8-readings-of-week.html/</link>
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/03/2019-8-readings-of-week.html/</guid>
       <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-7 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</link>
       <pubDate>Tue, 26 Feb 2019 22:54:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</guid>
       <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-4 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/02/2019-4-readings-of-week.html/</link>
       <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/02/2019-4-readings-of-week.html/</guid>
       <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-1 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</link>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/01/2019-1-readings-of-week.html/</guid>
       <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2018: Year in Review</title>
-      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
+      <link>rberenguel.github.io/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
+      <guid>rberenguel.github.io/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Notifications from Spark on an Apple Watch (via IFTTT)</title>
-      <link>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</link>
+      <link>rberenguel.github.io/2018/05/notifications-from-spark-on-apple-watch.html/</link>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
+      <guid>rberenguel.github.io/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
       <description>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&amp;hellip; I wanted a way to get a subtle notification when the process finished.</description>
     </item>
     
     <item>
       <title>Coursier resolution failing with HTTP method 416 in sbt</title>
-      <link>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</link>
+      <link>rberenguel.github.io/2018/03/coursier-resolution-failing-with-http.html/</link>
       <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</guid>
+      <guid>rberenguel.github.io/2018/03/coursier-resolution-failing-with-http.html/</guid>
       <description>Or, how I made my first contribution to coursier
 [trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.</description>
     </item>
     
     <item>
       <title>Using Processing from Scala</title>
-      <link>https://mostlymaths.net/2018/03/processing-and-scala.html/</link>
+      <link>rberenguel.github.io/2018/03/processing-and-scala.html/</link>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
+      <guid>rberenguel.github.io/2018/03/processing-and-scala.html/</guid>
       <description>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
  From Processing.org
 I had always wanted to play with Processing (after leafing through The Processing Handbook and Visualizing Data some years ago). My general dislike for Java or the JVM made me just play a very short amount of time with processing.js something around 2011 (there was a native processing.</description>
@@ -208,50 +208,50 @@ I had always wanted to play with Processing (after leafing through The Processin
     
     <item>
       <title>ClassNotFoundException for Akka logging</title>
-      <link>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</link>
+      <link>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</link>
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
+      <guid>rberenguel.github.io/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
       <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
  YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
     </item>
     
     <item>
       <title>Scala eXchange 2017</title>
-      <link>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</link>
+      <link>rberenguel.github.io/2018/02/scala-exchange-2017.html/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
+      <guid>rberenguel.github.io/2018/02/scala-exchange-2017.html/</guid>
       <description>Almost two months ago (time sure flies) I attended for the second time the conference Scala eXchange, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London. Also happens to be an excellent conference, and I’m repeating next year (yes, I already got my tickets).
 For those who don’t know, Scala eXchange is a 2-day (plus an unconference day) conference in central London, bringing most of the library developers you love to talk about cool stuff.</description>
     </item>
     
     <item>
       <title>2017: Year in Review</title>
-      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
+      <link>rberenguel.github.io/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
+      <guid>rberenguel.github.io/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</title>
-      <link>https://mostlymaths.net/2017/05/shading-dependencies-with-sbt-assembly.html/</link>
+      <link>rberenguel.github.io/2017/05/shading-dependencies-with-sbt-assembly.html/</link>
       <pubDate>Sun, 07 May 2017 10:40:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2017/05/shading-dependencies-with-sbt-assembly.html/</guid>
+      <guid>rberenguel.github.io/2017/05/shading-dependencies-with-sbt-assembly.html/</guid>
       <description>A few weeks ago I needed to parse configuration files in Scala for a Spark project and decided to use PureConfig. It is incredibly lean to use, needing minimal boilerplate. I recommend you check it out (give also a look at CaseClassy, which I haven&amp;rsquo;t had time to test yet).
 Everything seemed straightforward enough, and I got it working pretty quickly (as in, it compiled properly). The surprise? spark-submit failed with a conflict with Shapeless (lacking a witness).</description>
     </item>
     
     <item>
       <title>2016 in Review</title>
-      <link>https://mostlymaths.net/2016/12/2016-in-review.html/</link>
+      <link>rberenguel.github.io/2016/12/2016-in-review.html/</link>
       <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2016/12/2016-in-review.html/</guid>
+      <guid>rberenguel.github.io/2016/12/2016-in-review.html/</guid>
       <description>Some of the links are affiliate links to Amazon. I only recommend what I use.
 At last February. Finished my PhD dissertation, so can add Dr. in front of my name when ordering a Gatwick Express train ticket. Also makes for a cooler email signature. So far has been the only differences I’ve seen in the year
 Work February-December Started working as a consultant in London, almost the day after delivering the PhD presentation.</description>
@@ -259,20 +259,20 @@ Work February-December Started working as a consultant in London, almost the day
     
     <item>
       <title>October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka</title>
-      <link>https://mostlymaths.net/2016/10/apache-kafka-london-meetup-distributed.html/</link>
+      <link>rberenguel.github.io/2016/10/apache-kafka-london-meetup-distributed.html/</link>
       <pubDate>Mon, 31 Oct 2016 21:37:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2016/10/apache-kafka-london-meetup-distributed.html/</guid>
+      <guid>rberenguel.github.io/2016/10/apache-kafka-london-meetup-distributed.html/</guid>
       <description>This has been the first time I could attend the Apache Kafka meetup in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).
 I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Confluent (and author of I Heart Logs), so, basically, a Kafka top committer himself.</description>
     </item>
     
     <item>
       <title>More emacs configuration tweaks (multiple-cursor on click, minimap, code folding, ensime eval overlays)</title>
-      <link>https://mostlymaths.net/2016/09/more-emacs-configuration-tweaks.html/</link>
+      <link>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</link>
       <pubDate>Sun, 11 Sep 2016 17:34:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2016/09/more-emacs-configuration-tweaks.html/</guid>
+      <guid>rberenguel.github.io/2016/09/more-emacs-configuration-tweaks.html/</guid>
       <description>At Affectv we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&amp;hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&amp;rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.
 Click for multiple-cursors I saw this on Jordi&amp;rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so.</description>
     </item>

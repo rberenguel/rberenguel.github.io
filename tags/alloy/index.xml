@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alloy on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/alloy/</link>
+    <link>rberenguel.github.io/tags/alloy/</link>
     <description>Recent content in Alloy on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Apr 2019 19:37:00 +0200</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/alloy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/alloy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-9 Readings of the week (x4)</title>
-      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <link>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <guid>rberenguel.github.io/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-8 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/03/2019-8-readings-of-week.html/</link>
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/03/2019-8-readings-of-week.html/</guid>
       <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-7 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</link>
       <pubDate>Tue, 26 Feb 2019 22:54:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/02/2019-7-readings-of-week.html/</guid>
       <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

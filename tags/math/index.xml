@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>math on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/math/</link>
+    <link>rberenguel.github.io/tags/math/</link>
     <description>Recent content in math on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Jun 2019 17:24:00 +0200</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#17 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/06/201917-readings-of-week.html/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/06/201917-readings-of-week.html/</guid>
       <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>2019#16 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/06/201916-readings-of-week.html/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/06/201916-readings-of-week.html/</guid>
       <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

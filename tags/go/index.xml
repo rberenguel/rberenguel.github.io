@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/go/</link>
+    <link>rberenguel.github.io/tags/go/</link>
     <description>Recent content in Go on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jan 2019 16:32:00 +0100</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</link>
+      <link>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>rberenguel.github.io/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2016 in Review</title>
-      <link>https://mostlymaths.net/2016/12/2016-in-review.html/</link>
+      <link>rberenguel.github.io/2016/12/2016-in-review.html/</link>
       <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2016/12/2016-in-review.html/</guid>
+      <guid>rberenguel.github.io/2016/12/2016-in-review.html/</guid>
       <description>Some of the links are affiliate links to Amazon. I only recommend what I use.
 At last February. Finished my PhD dissertation, so can add Dr. in front of my name when ordering a Gatwick Express train ticket. Also makes for a cooler email signature. So far has been the only differences I’ve seen in the year
 Work February-December Started working as a consultant in London, almost the day after delivering the PhD presentation.</description>
@@ -33,10 +33,10 @@ Work February-December Started working as a consultant in London, almost the day
     
     <item>
       <title>Picking up Backgammon</title>
-      <link>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</link>
+      <link>rberenguel.github.io/2015/03/picking-up-backgammon.html/</link>
       <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</guid>
+      <guid>rberenguel.github.io/2015/03/picking-up-backgammon.html/</guid>
       <description>The links to Amazon and The Book Depository are affiliate links. If you purchase like 50 copies I may afford a coffee :D
 
 From Flickr
@@ -45,10 +45,10 @@ It all started after reading If you can’t choose, pick at random at Aeon.co. I
     
     <item>
       <title>Again and Again: Playing Go</title>
-      <link>https://mostlymaths.net/2011/11/again-and-again-playing-go.html/</link>
+      <link>rberenguel.github.io/2011/11/again-and-again-playing-go.html/</link>
       <pubDate>Wed, 23 Nov 2011 22:28:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2011/11/again-and-again-playing-go.html/</guid>
+      <guid>rberenguel.github.io/2011/11/again-and-again-playing-go.html/</guid>
       <description>I’ve been playing the game of Go (also known as weiqi or baduk) on and off for almost 10 years. In case you don’t know, Go is a board game with very old roots, that can be traced back to at least 2500 years ago, probably a lot more. Very popular in Japan (known as Go or Igo), Korea (baduk) and China (weiqi), it has been slowly spreading among the west during the last century.</description>
     </item>
     

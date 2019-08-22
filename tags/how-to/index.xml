@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-to on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/how-to/</link>
+    <link>rberenguel.github.io/tags/how-to/</link>
     <description>Recent content in How-to on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Aug 2016 22:42:00 +0200</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Moving from Emacs to Spacemacs</title>
-      <link>https://mostlymaths.net/2016/08/moving-from-emacs-to-spacemacs.html/</link>
+      <link>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</link>
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
+      <guid>rberenguel.github.io/2016/08/moving-from-emacs-to-spacemacs.html/</guid>
       <description>A couple of days ago I attended (first time I managed in almost 6 months) the London chapter of the Emacs Church (also known as the local meetup for emacs lovers). In this event we were shown how to use emacs effectively for Clojure development (using Cider) and I saw in real life Spacemacs.
 In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdquo; of Emacs prepared (is open source, of course) to be easy to setup, and somehow specially prepared for former Vim users to move to Emacs.</description>
     </item>
     
     <item>
       <title>Language Detection in Python with NLTK Stopwords</title>
-      <link>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</link>
+      <link>rberenguel.github.io/2012/06/language-detection-in-python-with-nltk.html/</link>
       <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
+      <guid>rberenguel.github.io/2012/06/language-detection-in-python-with-nltk.html/</guid>
       <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
     </item>
     
     <item>
       <title>Aprende a recordarlo todo: el método del palacio de la memoria</title>
-      <link>https://mostlymaths.net/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</link>
+      <link>rberenguel.github.io/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</link>
       <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</guid>
+      <guid>rberenguel.github.io/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</guid>
       <description>Cortesía de Shanidar
 Puedes leer la versión inglesa de este post aquí: Learn to remember everything: the memory palace method
 En este post os voy a enseñar cómo recordar a la perfección una lista. No importa la longitud de la lista: puede ser tu lista de la compra de 10 artículos, o una lista con 50, 100 o incluso 1000 cosas. Y en un próximo post, cómo aplicar este método para aprender idiomas.</description>
@@ -43,20 +43,20 @@ En este post os voy a enseñar cómo recordar a la perfección una lista. No imp
     
     <item>
       <title>The Mind Palace Memory Technique (or: what I&#39;m watching on TV lately)</title>
-      <link>https://mostlymaths.net/2012/03/mind-palace-memory-technique-or-what-im.html/</link>
+      <link>rberenguel.github.io/2012/03/mind-palace-memory-technique-or-what-im.html/</link>
       <pubDate>Wed, 21 Mar 2012 20:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2012/03/mind-palace-memory-technique-or-what-im.html/</guid>
+      <guid>rberenguel.github.io/2012/03/mind-palace-memory-technique-or-what-im.html/</guid>
       <description>Caveat: some of the links appearing in this post are affiliate links to Amazon.com If you buy anything from them, I get a small commission. As always, I only link to stuff I like. If you want to support (ever so slightly) this blog, buy something. If you don&amp;rsquo;t want, don&amp;rsquo;t do it ;)
 Lately I&amp;rsquo;ve been watching an interesting TV series. Sherlock, the modern version of Conan Doyle&amp;rsquo;s stories and novels.</description>
     </item>
     
     <item>
       <title>Building Your Memory Palace Collection</title>
-      <link>https://mostlymaths.net/2011/05/building-your-memory-palace-collection.html/</link>
+      <link>rberenguel.github.io/2011/05/building-your-memory-palace-collection.html/</link>
       <pubDate>Sun, 08 May 2011 13:30:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2011/05/building-your-memory-palace-collection.html/</guid>
+      <guid>rberenguel.github.io/2011/05/building-your-memory-palace-collection.html/</guid>
       <description>Picture courtesy of Shanidar
 Do you want to have very good memory? I do, in fact I&amp;rsquo;ve been interested in it since my school days. There are some techniques that exploit your brain&amp;rsquo;s natural power, and the one I&amp;rsquo;m covering here is the memory palace technique.
 I have already written about the memory palace memorisation technique (go and read the previous post if you don&amp;rsquo;t know what I&amp;rsquo;m talking about), but I did not cover a very important point there: Where can you find memory palaces to use in your memorisation?</description>
@@ -64,10 +64,10 @@ I have already written about the memory palace memorisation technique (go and re
     
     <item>
       <title>Remembering Facts: Using Mental Associative Chains</title>
-      <link>https://mostlymaths.net/2011/04/remembering-facts-using-mental.html/</link>
+      <link>rberenguel.github.io/2011/04/remembering-facts-using-mental.html/</link>
       <pubDate>Tue, 05 Apr 2011 21:55:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2011/04/remembering-facts-using-mental.html/</guid>
+      <guid>rberenguel.github.io/2011/04/remembering-facts-using-mental.html/</guid>
       <description>An image can help your memory&amp;hellip;
 For how long?
 This is a method I use to complement the memory palace technique to remember facts, either historical, about people or any other subject. It is pretty simple and follows the same principles as the memory palace: you need to make up bizarre images. To memorise facts we just need to attach keys to each fact, and link them to the subject or person we are considering.</description>
@@ -75,10 +75,10 @@ This is a method I use to complement the memory palace technique to remember fac
     
     <item>
       <title>Learn to Remember Everything: The Memory Palace Technique</title>
-      <link>https://mostlymaths.net/2011/03/learn-to-remember-everything-memory.html/</link>
+      <link>rberenguel.github.io/2011/03/learn-to-remember-everything-memory.html/</link>
       <pubDate>Sun, 27 Mar 2011 21:02:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2011/03/learn-to-remember-everything-memory.html/</guid>
+      <guid>rberenguel.github.io/2011/03/learn-to-remember-everything-memory.html/</guid>
       <description>Picture courtesy of Shanidar
 utmx_section(&amp;ldquo;SubscribingMemoryPalace&amp;rdquo;) I&amp;rsquo;m working on an ebook about memory techniques. If you are interested in knowing when it is ready, be sure to subscribe to our newsletter! You can also browse the best books I have seen on memory techniques and related areas here.
 In this post I&amp;rsquo;ll teach you how to have perfect recall of lists of items. Length is not much of an issue, it can be your shopping list if 10 items or it can be a list with 50, 100 or even 1000.</description>
@@ -86,10 +86,10 @@ In this post I&amp;rsquo;ll teach you how to have perfect recall of lists of ite
     
     <item>
       <title>Commented Version of the LaTeX File to Create PDF ebooks and A6 Booklets</title>
-      <link>https://mostlymaths.net/2010/12/commented-version-of-latex-file-to.html/</link>
+      <link>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</link>
       <pubDate>Thu, 09 Dec 2010 14:20:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2010/12/commented-version-of-latex-file-to.html/</guid>
+      <guid>rberenguel.github.io/2010/12/commented-version-of-latex-file-to.html/</guid>
       <description>Below you can find a commented version of the LaTeX template I used to create two free ebooks and A6 booklets. Now you can tweak it as much as you like it!
 The syntax highlighted TeX code comes from the htmlize package in emacs, to keep with my emacs 30 Day Challenge.
 \\documentclass\[9pt,openany,final\]{memoir} % Set the font size with 9pt. Openany states that a chapter may start % in either page (recto or verso in publishing language).</description>
@@ -97,38 +97,38 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
     
     <item>
       <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
-      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <link>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <guid>rberenguel.github.io/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
       <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
 Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
     </item>
     
     <item>
       <title>Ditching Ubuntu: Arch Linux in my Acer Aspire One</title>
-      <link>https://mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html/</link>
+      <link>rberenguel.github.io/2010/08/arch-linux-in-my-acer-aspire-one.html/</link>
       <pubDate>Sat, 21 Aug 2010 17:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html/</guid>
+      <guid>rberenguel.github.io/2010/08/arch-linux-in-my-acer-aspire-one.html/</guid>
       <description>Last Tuesday I made the move. I ditched Ubuntu and installed Arch Linux in my Acer Aspire One. After my post Linux is a time killer (which attracted a lot of attention, and didn&amp;rsquo;t really carry the message I wanted) I got a lot of comments to think about. The two most suggested Linux distributions were Debian/unstable and Arch Linux. Well, maybe Arch Linux was not that talked about, but the following comment bought me out:</description>
     </item>
     
     <item>
       <title>iPhone origami case diagrams</title>
-      <link>https://mostlymaths.net/2010/07/iphone-origami-case-diagrams.html/</link>
+      <link>rberenguel.github.io/2010/07/iphone-origami-case-diagrams.html/</link>
       <pubDate>Wed, 07 Jul 2010 16:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2010/07/iphone-origami-case-diagrams.html/</guid>
+      <guid>rberenguel.github.io/2010/07/iphone-origami-case-diagrams.html/</guid>
       <description>A few weeks ago I saw in my Google Analytics that someone came to this blog looking for &amp;ldquo;Origami iPhone case&amp;rdquo;. As I have a Origami CD case, and several posts on iPhone/iPod Touch games&amp;hellip; it was a page hit. But I thought: if I can have a neat CD case, I can also design a neat origami case for an iPhone! Said and&amp;hellip; done. It took a few tries (and a few days), as you can see below.</description>
     </item>
     
     <item>
       <title>Installed Go in Mac OS 10.5</title>
-      <link>https://mostlymaths.net/2010/05/installed-go-in-mac-os-105.html/</link>
+      <link>rberenguel.github.io/2010/05/installed-go-in-mac-os-105.html/</link>
       <pubDate>Sat, 08 May 2010 16:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2010/05/installed-go-in-mac-os-105.html/</guid>
+      <guid>rberenguel.github.io/2010/05/installed-go-in-mac-os-105.html/</guid>
       <description>Yes, I know it: it is easy. But I will be doing a wipe and reinstall of my MacBook, and when I need to reinstall everything I want a place to check for the steps I did. I found almost all tips needed here.
 The first step is checking for Mercurial (wikipedia) in your system. Open a terminal and type
  hg version
@@ -137,39 +137,39 @@ The first step is checking for Mercurial (wikipedia) in your system. Open a term
     
     <item>
       <title>Gluten,dairy,egg-free dark brown cane sugar biscuit</title>
-      <link>https://mostlymaths.net/2009/12/gluten-free-dark-brown-cane-sugar.html/</link>
+      <link>rberenguel.github.io/2009/12/gluten-free-dark-brown-cane-sugar.html/</link>
       <pubDate>Tue, 29 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/12/gluten-free-dark-brown-cane-sugar.html/</guid>
+      <guid>rberenguel.github.io/2009/12/gluten-free-dark-brown-cane-sugar.html/</guid>
       <description>Although this looks like a all-free / no taste cake, it is wonderful. And of course, at it is gluten, dairy and egg free, almost everyone can eat it. What you will need:
  1 measure soy yogurt 1 measure dark brown sugar (we used Tate&amp;amp;Lyle Dark Brown Sugar) 1 measure gluten-free flour 1&amp;frasl;4 measure oil 1 teaspoon baking powder  Here measure depends on how much iogurt do you have.</description>
     </item>
     
     <item>
       <title>RCS &amp; SVN: Version control</title>
-      <link>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</link>
+      <link>rberenguel.github.io/2009/12/rcs-svn-version-control.html/</link>
       <pubDate>Thu, 17 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
+      <guid>rberenguel.github.io/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
 A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
       <title>SBSettings for jailbroken iPhone/iPod Touch</title>
-      <link>https://mostlymaths.net/2009/12/sbsettings-for-jailbroken-iphoneipod.html/</link>
+      <link>rberenguel.github.io/2009/12/sbsettings-for-jailbroken-iphoneipod.html/</link>
       <pubDate>Fri, 11 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/12/sbsettings-for-jailbroken-iphoneipod.html/</guid>
+      <guid>rberenguel.github.io/2009/12/sbsettings-for-jailbroken-iphoneipod.html/</guid>
       <description>After buying my iPod Touch and playing a little with it, I realised that battery life was a problem, with the WiFi always on. Thus, I was always bringing up Settins-WiFi and turning on and off. There was no easy and quick way to do it&amp;hellip; Until I jailbroke it. I installed SBSettings, and its first use was that. Swipe the upper status bar, and the menu shown above appears.</description>
     </item>
     
     <item>
       <title>iHold</title>
-      <link>https://mostlymaths.net/2009/11/ihold.html/</link>
+      <link>rberenguel.github.io/2009/11/ihold.html/</link>
       <pubDate>Sun, 29 Nov 2009 00:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/11/ihold.html/</guid>
+      <guid>rberenguel.github.io/2009/11/ihold.html/</guid>
       <description>The free iPod stand  
 Right: middle line, left top line
 In this post I will explain how to recycle an old credit card to build a stand for your iPod touch / iPhone. You can choose from 3 designs, depending on your preferred inclination.
@@ -179,10 +179,10 @@ Here is what you will need:
     
     <item>
       <title>External rays &amp; Lavaurs algorithm</title>
-      <link>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</link>
+      <link>rberenguel.github.io/2009/11/external-rays-lavaurs-algorithm.html/</link>
       <pubDate>Tue, 03 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</guid>
+      <guid>rberenguel.github.io/2009/11/external-rays-lavaurs-algorithm.html/</guid>
       <description>Thanks to Mandel, LISP and my Lavaurs code
 As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able&amp;hellip; and then found Mandel.
 Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
@@ -190,10 +190,10 @@ Really nice program, with lots and lots of options (and I met the programmer, wh
     
     <item>
       <title>Scribus for mathematical posters</title>
-      <link>https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/</link>
+      <link>rberenguel.github.io/2009/11/scribus-for-mathematical-posters.html/</link>
       <pubDate>Mon, 02 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/</guid>
+      <guid>rberenguel.github.io/2009/11/scribus-for-mathematical-posters.html/</guid>
       <description>As you may already know, I presented a poster at a conference recently, and did the set up with Scribus, the texts with LaTeX with the Beamer and Beamerposter packages.
 
 Setting up
@@ -202,10 +202,10 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
     
     <item>
       <title>Fading images in Javascript</title>
-      <link>https://mostlymaths.net/2009/10/fading-images-in-javascript.html/</link>
+      <link>rberenguel.github.io/2009/10/fading-images-in-javascript.html/</link>
       <pubDate>Thu, 01 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/10/fading-images-in-javascript.html/</guid>
+      <guid>rberenguel.github.io/2009/10/fading-images-in-javascript.html/</guid>
       <description>CicleImatges()
 Source code:
 // Copyright 2009 Rubén Berenguel
@@ -219,10 +219,10 @@ Source code:
     
     <item>
       <title>Whistle control your computer (Linux&amp;Mac)</title>
-      <link>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</link>
+      <link>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</link>
       <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
+      <guid>rberenguel.github.io/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
 Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
 Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
@@ -230,20 +230,20 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
     
     <item>
       <title>Slicing scannings</title>
-      <link>https://mostlymaths.net/2009/09/slicing-scannings.html/</link>
+      <link>rberenguel.github.io/2009/09/slicing-scannings.html/</link>
       <pubDate>Fri, 11 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/09/slicing-scannings.html/</guid>
+      <guid>rberenguel.github.io/2009/09/slicing-scannings.html/</guid>
       <description>Last year our department got a nice and shiny Xerox WorkCentre, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&amp;hellip; of course, the machine scans two pages each time, and thus creates a double bound PDF.
 And this doesn&amp;rsquo;t work well with my way to print booklets, so a working solution was to use ghostscript and ImageMagick from the command line.</description>
     </item>
     
     <item>
       <title>My backup script in Mac/Linux</title>
-      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
+      <link>rberenguel.github.io/2009/09/my-backup-script-in-maclinux.html/</link>
       <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <guid>rberenguel.github.io/2009/09/my-backup-script-in-maclinux.html/</guid>
       <description>My backup script in Mac/Linux
 #!/bin/sh
 # This script backs up a set of files and directories incrementally,
@@ -257,40 +257,40 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
     
     <item>
       <title>Calendars &amp; emacs</title>
-      <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
+      <link>rberenguel.github.io/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
+      <guid>rberenguel.github.io/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
 For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
       <title>Screenshot via command-line in Linux</title>
-      <link>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</link>
+      <link>rberenguel.github.io/2009/08/screenshot-via-command-line-in-linux.html/</link>
       <pubDate>Mon, 17 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</guid>
+      <guid>rberenguel.github.io/2009/08/screenshot-via-command-line-in-linux.html/</guid>
       <description>Have you ever wondered how to take a screenshot remotely, via the command line in a Linux system? Here is a way to do it. At the bottom you can also find a script to move it to the root of your personal page (if you have) to open the screenshot in your browser.
 I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode for Emacs) in an emacs instance running in my office computer.</description>
     </item>
     
     <item>
       <title>How to download YouTube .flv videos</title>
-      <link>https://mostlymaths.net/2009/06/how-to-download-youtube-flv-videos.html/</link>
+      <link>rberenguel.github.io/2009/06/how-to-download-youtube-flv-videos.html/</link>
       <pubDate>Wed, 03 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/06/how-to-download-youtube-flv-videos.html/</guid>
+      <guid>rberenguel.github.io/2009/06/how-to-download-youtube-flv-videos.html/</guid>
       <description>There is a plain and easy way to download YouTube .flv videos (which you can watch with VLC Media Player, or in a Mac with Quicktime Player and additional plug-ins).
 To do so, you need the Safari Web Browser (Mac or Windows). Go to your desired page hosting a Flash Video file, and select Activity in the Window menu. There you will find the files being downloaded in the web-page you are visiting&amp;hellip; double click the bigger one (as usually flash videos are the biggest files in YouTube pages, if you can&amp;rsquo;t find such a big file, check for the .</description>
     </item>
     
     <item>
       <title>How to get a local proxy</title>
-      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
+      <link>rberenguel.github.io/2009/05/local-proxy.html/</link>
       <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
+      <guid>rberenguel.github.io/2009/05/local-proxy.html/</guid>
       <description>Setting a local proxy through a remote machine
 To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
  ssh -D 42 YourRemoteMachineName
@@ -299,10 +299,10 @@ To set up a local proxy using some computer in another network (in my case, my o
     
     <item>
       <title>How to fold and iron your karategi</title>
-      <link>https://mostlymaths.net/2009/05/how-to-fold-and-iron-your-karategi.html/</link>
+      <link>rberenguel.github.io/2009/05/how-to-fold-and-iron-your-karategi.html/</link>
       <pubDate>Tue, 19 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/05/how-to-fold-and-iron-your-karategi.html/</guid>
+      <guid>rberenguel.github.io/2009/05/how-to-fold-and-iron-your-karategi.html/</guid>
       <description>Folded &amp;amp; Ironed
 You can view all steps together here.
  
@@ -311,10 +311,10 @@ All steps in one image (click to enlarge):</description>
     
     <item>
       <title>Rasterbator: online posterizer for @home printing</title>
-      <link>https://mostlymaths.net/2009/05/rasterbator-online-posterizer-for-home.html/</link>
+      <link>rberenguel.github.io/2009/05/rasterbator-online-posterizer-for-home.html/</link>
       <pubDate>Sun, 17 May 2009 17:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
+      <guid>rberenguel.github.io/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
       <description>My chair, my fractals (A4) and my Drazen
 Petrovic poster (4xA4)
 Rasterbator is an online poster maker, for you to print in your own printer. Of course, the results are not as good as full quality posters like these, but they look pretty good when looked from afar. It rasterises an image you upload (or link from anywhere in Internet), does some magic stuff, and the result is a bunch (you decide graphically how many, orientation and other options) of A4 (or Legal) sheets arranged in a nice PDF, which you have to print.</description>
@@ -322,10 +322,10 @@ Rasterbator is an online poster maker, for you to print in your own printer. Of 
     
     <item>
       <title>Origami Flower-Box diagrams</title>
-      <link>https://mostlymaths.net/2009/05/origami-flower-box-diagrams.html/</link>
+      <link>rberenguel.github.io/2009/05/origami-flower-box-diagrams.html/</link>
       <pubDate>Sun, 17 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/05/origami-flower-box-diagrams.html/</guid>
+      <guid>rberenguel.github.io/2009/05/origami-flower-box-diagrams.html/</guid>
       <description>An English version of my diagrams for the origami flower-box Origami flower-box (Caja-Flor) diagrams, in English. Loosely based upon Kawasaki&amp;rsquo;s rose and a traditional japanese box. Click on the diagrams to get a bigger view of them. It appeared (Spanish version) on the Spanish Origami Association Bulletin, Second Volume, 2008. You can also take a look at my easy origami CD case.
  
 It will look like this when finished, closed and opened.</description>
@@ -333,19 +333,19 @@ It will look like this when finished, closed and opened.</description>
     
     <item>
       <title>How to do an (easy) origami CD case</title>
-      <link>https://mostlymaths.net/2009/05/how-to-do-easy-origami-cd-case.html/</link>
+      <link>rberenguel.github.io/2009/05/how-to-do-easy-origami-cd-case.html/</link>
       <pubDate>Thu, 07 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/05/how-to-do-easy-origami-cd-case.html/</guid>
+      <guid>rberenguel.github.io/2009/05/how-to-do-easy-origami-cd-case.html/</guid>
       <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;rsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
     </item>
     
     <item>
       <title>Easy paperback book binding how-to</title>
-      <link>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</link>
+      <link>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</link>
       <pubDate>Thu, 09 Apr 2009 15:29:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</guid>
+      <guid>rberenguel.github.io/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
 Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CJuicer on mostlymaths.net</title>
-    <link>https://mostlymaths.net/tags/cjuicer/</link>
+    <link>rberenguel.github.io/tags/cjuicer/</link>
     <description>Recent content in CJuicer on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Feb 2010 19:05:00 +0100</lastBuildDate>
     
-	<atom:link href="https://mostlymaths.net/tags/cjuicer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="rberenguel.github.io/tags/cjuicer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CJuicer beats humans (and Unix&#39;s diff)</title>
-      <link>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
+      <link>rberenguel.github.io/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
+      <guid>rberenguel.github.io/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
       <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
     </item>
     
     <item>
       <title>C code &#34;Juicer&#34;</title>
-      <link>https://mostlymaths.net/2009/12/c-code-juicer.html/</link>
+      <link>rberenguel.github.io/2009/12/c-code-juicer.html/</link>
       <pubDate>Tue, 01 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2009/12/c-code-juicer.html/</guid>
+      <guid>rberenguel.github.io/2009/12/c-code-juicer.html/</guid>
       <description>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &amp;ldquo;code juicer&amp;rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
 
 It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses.</description>
