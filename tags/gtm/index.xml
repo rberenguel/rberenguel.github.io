@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GTM on mostlymaths.net</title>
-    <link>/tags/gtm/</link>
+    <link>https://mostlymaths.net/tags/gtm/</link>
     <description>Recent content in GTM on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2012 18:41:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/gtm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/gtm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An introduction to the magic of Google Tag Manager</title>
-      <link>/2012/10/an-introduction-to-magic-of-google-tag.html/</link>
+      <link>https://mostlymaths.net/2012/10/an-introduction-to-magic-of-google-tag.html/</link>
       <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
       
-      <guid>/2012/10/an-introduction-to-magic-of-google-tag.html/</guid>
+      <guid>https://mostlymaths.net/2012/10/an-introduction-to-magic-of-google-tag.html/</guid>
       <description>If you want to read a quick overview of this in Spanish, check my post about GTM at DoctorMetrics.
 Google has just unveiled a new tool: Google Tag Manager. I have spent a few hours playing with it (both before and after official release.) And it&amp;rsquo;s awesome! Or at least, it has quite a lot of awesomeness, hidden behind a seemingly simple interface.
 Its main feature is the fact that you can get away with just a piece of included code.</description>

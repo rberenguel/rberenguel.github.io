@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Watch on mostlymaths.net</title>
-    <link>/tags/watch/</link>
+    <link>https://mostlymaths.net/tags/watch/</link>
     <description>Recent content in Watch on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 May 2018 02:40:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/watch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/watch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Notifications from Spark on an Apple Watch (via IFTTT)</title>
-      <link>/2018/05/notifications-from-spark-on-apple-watch.html/</link>
+      <link>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</link>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
-      <guid>/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
+      <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
       <description>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&amp;hellip; I wanted a way to get a subtle notification when the process finished.</description>
     </item>
     

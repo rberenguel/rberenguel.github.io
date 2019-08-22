@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Languages on mostlymaths.net</title>
-    <link>/tags/languages/</link>
+    <link>https://mostlymaths.net/tags/languages/</link>
     <description>Recent content in Languages on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jan 2019 16:32:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/languages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/languages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>/2019/01/2019-2-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Timeline of whatlanguageis.com: first Django project</title>
-      <link>/2012/06/timeline-of-whatlanguageiscom-first.html/</link>
+      <link>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</link>
       <pubDate>Tue, 12 Jun 2012 15:10:00 +0200</pubDate>
       
-      <guid>/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
+      <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
       <description>Last week I wrote about whatlanguageis.com, my first simple try at creating a Django powered site. How did it came to be?
 In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web. In the back of my mind, I wanted my code to work as a web application (either for me or for others,) and thought that I should comply with everyone else, learn PHP and try to make Python and PHP be friends.</description>
     </item>
     
     <item>
       <title>Anki and Language Learning: The Spaced Repetition System</title>
-      <link>/2011/05/anki-and-language-learning-spaced.html/</link>
+      <link>https://mostlymaths.net/2011/05/anki-and-language-learning-spaced.html/</link>
       <pubDate>Sat, 28 May 2011 18:50:00 +0200</pubDate>
       
-      <guid>/2011/05/anki-and-language-learning-spaced.html/</guid>
+      <guid>https://mostlymaths.net/2011/05/anki-and-language-learning-spaced.html/</guid>
       <description>From my cheap dictionary
 I first heard of spaced repetition software around 5 or 6 years ago, while browsing around the net. Read about it, found it unappealing and moved on. You know, there are times when you learn about something and dismiss it as not necessary&amp;hellip; and after a while you are lead into it again to find it is wonderful. This is one of such instances.
 I have only written two highly visited posts about languages: The Language Switch and How to Train Your Brain to Flip to a New Language (in Bitesize Irish Gaelic, it also appeared in Hacker Monthly, April 2011) and a lot of the commenters suggested me using Anki, Mnemosyne or Supermemo.</description>
@@ -43,20 +43,20 @@ I have only written two highly visited posts about languages: The Language Switc
     
     <item>
       <title>Focus in Language Learning: Doing Two Languages at Once Is a Bad Idea</title>
-      <link>/2011/05/focus-in-language-learning-doing-two.html/</link>
+      <link>https://mostlymaths.net/2011/05/focus-in-language-learning-doing-two.html/</link>
       <pubDate>Sun, 01 May 2011 17:30:00 +0200</pubDate>
       
-      <guid>/2011/05/focus-in-language-learning-doing-two.html/</guid>
+      <guid>https://mostlymaths.net/2011/05/focus-in-language-learning-doing-two.html/</guid>
       <description>From my cheap dictionary
 Last February I set myself a goal for these next three months (February, March and April): to learn Gaelic. The time is up and I must confess I have not made a lot of advances. The reasons are plenty, and most are shared with whoever wants to learn a new language. They are even harder for people learning a few languages at once, the kind of language nerds that have way too many Teach Yourself books on languages.</description>
     </item>
     
     <item>
       <title>Irish Gaelic Language Learning: Month 1 Overview</title>
-      <link>/2011/03/irish-gaelic-language-learning-month-1.html/</link>
+      <link>https://mostlymaths.net/2011/03/irish-gaelic-language-learning-month-1.html/</link>
       <pubDate>Fri, 11 Mar 2011 21:50:00 +0100</pubDate>
       
-      <guid>/2011/03/irish-gaelic-language-learning-month-1.html/</guid>
+      <guid>https://mostlymaths.net/2011/03/irish-gaelic-language-learning-month-1.html/</guid>
       <description>Have you thought about playing
 dice letter gamesin a
 foreign language?
@@ -66,10 +66,10 @@ First, I have too many commitments. A few are with myself, others are with my gi
     
     <item>
       <title>February, March and April Challenge: Language Learning Applied to Gaelic</title>
-      <link>/2011/02/february-march-and-april-challenge.html/</link>
+      <link>https://mostlymaths.net/2011/02/february-march-and-april-challenge.html/</link>
       <pubDate>Sat, 12 Feb 2011 16:15:00 +0100</pubDate>
       
-      <guid>/2011/02/february-march-and-april-challenge.html/</guid>
+      <guid>https://mostlymaths.net/2011/02/february-march-and-april-challenge.html/</guid>
       <description>From my cheap dictionary
 As a byproduct of The Language Switch, I was invited to send a guest post to Bitesize Irish Gaelic, a wonderful site where you can learn Irish gaelic online.
 Last year I decided to learn Icelandic because we were going to Iceland, this year I was learning Gaelic&amp;hellip; Thus we decided that Ireland might be a good place to visit this summer on holidays, encouraging me to learn better this new language.</description>

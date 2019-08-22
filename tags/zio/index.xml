@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ZIO on mostlymaths.net</title>
-    <link>/tags/zio/</link>
+    <link>https://mostlymaths.net/tags/zio/</link>
     <description>Recent content in ZIO on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Jun 2019 20:34:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/zio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/zio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#15 Readings of the week</title>
-      <link>/2019/06/201915-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>/2019/06/201915-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#14 Readings of the week</title>
-      <link>/2019/05/201914-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</link>
       <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
       
-      <guid>/2019/05/201914-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#13 Readings of the week</title>
-      <link>/2019/05/201913-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</link>
       <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
       
-      <guid>/2019/05/201913-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</guid>
       <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#12 Readings of the week</title>
-      <link>/2019/05/2019-12-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</link>
       <pubDate>Mon, 13 May 2019 00:31:00 +0200</pubDate>
       
-      <guid>/2019/05/2019-12-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</guid>
       <description>&lt;p&gt;Big data and data engineering, metallurgy, Rust (not the metallurgy-related rust). Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

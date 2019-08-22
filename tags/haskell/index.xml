@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haskell on mostlymaths.net</title>
-    <link>/tags/haskell/</link>
+    <link>https://mostlymaths.net/tags/haskell/</link>
     <description>Recent content in Haskell on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#20,21,22 Readings of the week</title>
-      <link>/2019/07/2019202122-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>/2019/07/2019202122-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
 
 &lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>2019#19 Readings of the week</title>
-      <link>/2019/07/201919-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</link>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
-      <guid>/2019/07/201919-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
       <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

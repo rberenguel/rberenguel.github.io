@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bizarre on mostlymaths.net</title>
-    <link>/tags/bizarre/</link>
+    <link>https://mostlymaths.net/tags/bizarre/</link>
     <description>Recent content in Bizarre on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Jun 2019 17:24:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/bizarre/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/bizarre/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#17 Readings of the week</title>
-      <link>/2019/06/201917-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</link>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
-      <guid>/2019/06/201917-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
       <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,28 +24,28 @@
     
     <item>
       <title>2019#16 Readings of the week</title>
-      <link>/2019/06/201916-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
-      <guid>/2019/06/201916-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
       <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Polishing a Shoe</title>
-      <link>/2012/09/polishing-a-shoe-to-get-a-good-shine.html/</link>
+      <link>https://mostlymaths.net/2012/09/polishing-a-shoe-to-get-a-good-shine.html/</link>
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
-      <guid>/2012/09/polishing-a-shoe-to-get-a-good-shine.html/</guid>
+      <guid>https://mostlymaths.net/2012/09/polishing-a-shoe-to-get-a-good-shine.html/</guid>
       <description>_&amp;lsquo;Of course I don&amp;rsquo;t have to do this,&amp;rsquo; one middle-aged man said, carefully cleaning the table with a damp cloth. He put the cloth in a little pouch, sat down beside him. &amp;lsquo;But look; this table&amp;rsquo;s clean.&amp;lsquo; _ _&amp;lsquo;Usually,&amp;rsquo; the man said. &amp;lsquo;I work on alien - no offence - alien religions; Directional Emphasis In Religious Observance; that&amp;rsquo;s my speciality&amp;hellip; like when temples or graves or _prayers always have to face in a certain direction; that sort of thing?</description>
     </item>
     
     <item>
       <title>(Why) Juggling for Programmers (and other computer people)</title>
-      <link>/2012/07/juggling-for-programmers-and-other.html/</link>
+      <link>https://mostlymaths.net/2012/07/juggling-for-programmers-and-other.html/</link>
       <pubDate>Mon, 23 Jul 2012 13:55:00 +0200</pubDate>
       
-      <guid>/2012/07/juggling-for-programmers-and-other.html/</guid>
+      <guid>https://mostlymaths.net/2012/07/juggling-for-programmers-and-other.html/</guid>
       <description>From Flickr
 No, this is not a tutorial (but I do have written the standard steps to learn below). I began learning to juggle very recently. I just want to answer a possible &amp;ldquo;why&amp;rdquo;?
 I&amp;rsquo;ve always been fascinated by juggling, and every time I wanted to eat more than 2 small oranges I&amp;rsquo;d try my hand at juggling them. Always followed by bowing and picking them from the ground, of course.</description>
@@ -53,20 +53,20 @@ I&amp;rsquo;ve always been fascinated by juggling, and every time I wanted to ea
     
     <item>
       <title>Counter-examples, Converging Sequences and Giving Immediate Answers</title>
-      <link>/2011/01/counter-examples-converging-sequences.html/</link>
+      <link>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</link>
       <pubDate>Tue, 11 Jan 2011 21:50:00 +0100</pubDate>
       
-      <guid>/2011/01/counter-examples-converging-sequences.html/</guid>
+      <guid>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</guid>
       <description>Next week is the final exam of the course I&amp;rsquo;m giving, Numerical Analysis. Classes finished before Christmas, and this week is for students questions. I had one of these sessions this morning, when a pair of students came with a few questions related to the problems I solved on the blackboard.
 All were quick to solve, until one simple question arose, concerning a trivial problem in Calculus 1 (or Analysis 1, as we name it here).</description>
     </item>
     
     <item>
       <title>Do you Feel the Smell of Burning Wood? Pyrography Box Beta</title>
-      <link>/2010/12/do-you-fell-smell-of-burning-wood.html/</link>
+      <link>https://mostlymaths.net/2010/12/do-you-fell-smell-of-burning-wood.html/</link>
       <pubDate>Mon, 27 Dec 2010 21:45:00 +0100</pubDate>
       
-      <guid>/2010/12/do-you-fell-smell-of-burning-wood.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/do-you-fell-smell-of-burning-wood.html/</guid>
       <description>Santa brought me the gift I wanted for Christmas: a pyrograph. In case you don&amp;rsquo;t know, a pyrograph is a tool to draw over wood, by burning it.
 As you may already know, I love drawing (in particular, ink drawing). This is similar: you don&amp;rsquo;t have a lot of control over tone and a mistake can ruin the drawing.
 This was the first time I used one, and to test how it worked I decided to draw a Celtic knot over a wooden box.</description>
@@ -74,79 +74,79 @@ This was the first time I used one, and to test how it worked I decided to draw 
     
     <item>
       <title>Mirror Rubik Cube: It Just Looks Gorgeous</title>
-      <link>/2010/11/mirror-rubik-cube-it-just-looks.html/</link>
+      <link>https://mostlymaths.net/2010/11/mirror-rubik-cube-it-just-looks.html/</link>
       <pubDate>Mon, 01 Nov 2010 18:30:00 +0100</pubDate>
       
-      <guid>/2010/11/mirror-rubik-cube-it-just-looks.html/</guid>
+      <guid>https://mostlymaths.net/2010/11/mirror-rubik-cube-it-just-looks.html/</guid>
       <description>Doesn&amp;rsquo;t it look nice?
 Last week Laia and me went to a toy/book/stuff shop to buy a music stand. Practising guitar without a music stand was starting to feel rather odd. While we were there, we bought several more items, among them an old time favourite from myself: a mirror rubik cube. An addition to my keychain cube, SuperCube, 5x5 cube and Rubik dodecahedron. I had only seen it online, from Amazon.</description>
     </item>
     
     <item>
       <title>Gym ball as office chair: review</title>
-      <link>/2010/08/gym-ball-as-office-chair-review.html/</link>
+      <link>https://mostlymaths.net/2010/08/gym-ball-as-office-chair-review.html/</link>
       <pubDate>Sun, 08 Aug 2010 21:18:00 +0200</pubDate>
       
-      <guid>/2010/08/gym-ball-as-office-chair-review.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/gym-ball-as-office-chair-review.html/</guid>
       <description>Three months ago Oscar Del Ben posted an interesting post in his blog, FreestyleMind. In it he said that he saved (quite) a lot of money and a lot of back pain with a special office chair: he uses a gym ball.
 The gym ball in question is the one used in yoga or Pilates training. They come in two sizes, 65 cm 75cm (diameter). I had recurring back pain, and decided to give it a try at home.</description>
     </item>
     
     <item>
       <title>And e appears from nowhere!</title>
-      <link>/2010/08/and-e-appears-from-nowhere.html/</link>
+      <link>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</link>
       <pubDate>Thu, 05 Aug 2010 23:52:00 +0200</pubDate>
       
-      <guid>/2010/08/and-e-appears-from-nowhere.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</guid>
       <description>As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
  Here is an example of e turning up unexpectedly.</description>
     </item>
     
     <item>
       <title>On a productivity down</title>
-      <link>/2010/06/on-productivity-down.html/</link>
+      <link>https://mostlymaths.net/2010/06/on-productivity-down.html/</link>
       <pubDate>Sun, 06 Jun 2010 12:30:00 +0200</pubDate>
       
-      <guid>/2010/06/on-productivity-down.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/on-productivity-down.html/</guid>
       <description>A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my life bookmarks for these two weeks.
 Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been thinking about them these days.</description>
     </item>
     
     <item>
       <title>The 100 most common words in Icelandic, automatically generated from Wikipedia</title>
-      <link>/2010/05/100-most-common-words-in-icelandic-more.html/</link>
+      <link>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</link>
       <pubDate>Thu, 20 May 2010 14:00:00 +0200</pubDate>
       
-      <guid>/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
+      <guid>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
       <description>Scroll down to download the file if you want to skip the how I did it part!
 As you may already know, I&amp;rsquo;m travelling to Iceland this July, and started learning Icelandic a few months ago. It advances slowly but firmly, but I found a problem: when you are self-learning a new language, an invaluable tool is a list of most common words. I was able to find the 100 most common words, from a research paper (Íslenskur Orðasjóður - Building a large icelandic corpus).</description>
     </item>
     
     <item>
       <title>CJuicer beats humans (and Unix&#39;s diff)</title>
-      <link>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
+      <link>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
-      <guid>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
+      <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
       <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
     </item>
     
     <item>
       <title>Birthday</title>
-      <link>/2010/02/birthday.html/</link>
+      <link>https://mostlymaths.net/2010/02/birthday.html/</link>
       <pubDate>Wed, 03 Feb 2010 00:01:00 +0100</pubDate>
       
-      <guid>/2010/02/birthday.html/</guid>
+      <guid>https://mostlymaths.net/2010/02/birthday.html/</guid>
       <description>From Flickr
 Today I turn 1000 years old in base 3, and R years old in any base higher or equal to 28.</description>
     </item>
     
     <item>
       <title>Image processing history: Lena</title>
-      <link>/2009/12/image-processing-history-lena.html/</link>
+      <link>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</link>
       <pubDate>Sat, 05 Dec 2009 22:00:00 +0100</pubDate>
       
-      <guid>/2009/12/image-processing-history-lena.html/</guid>
+      <guid>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</guid>
       <description>Lena Söderberg
 I am working in my free time in an image processing related program, and this made me remember when I was taking a course in Signal Processing. One of the standard test images was the one above. Where does this historical image processing snippet come from?
 Turns out (wikipedia link) it is a standard folklore image, dating back to the seventies, when a bunch of electrical engineers needed an image satisfying certain signal problems (it is, indeed, an image with a lot of significative details, when compressing, denoising or whatever: the hat, the uniform colour distribution except for a few patches of different color&amp;hellip;).</description>
@@ -154,10 +154,10 @@ Turns out (wikipedia link) it is a standard folklore image, dating back to the s
     
     <item>
       <title>More #SongsInCode</title>
-      <link>/2009/11/more-songsincode.html/</link>
+      <link>https://mostlymaths.net/2009/11/more-songsincode.html/</link>
       <pubDate>Mon, 23 Nov 2009 00:01:00 +0100</pubDate>
       
-      <guid>/2009/11/more-songsincode.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
  KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
@@ -165,20 +165,20 @@ Duran Duran - if(!</description>
     
     <item>
       <title>Back from Denmark</title>
-      <link>/2009/10/back-from-denmark.html/</link>
+      <link>https://mostlymaths.net/2009/10/back-from-denmark.html/</link>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/10/back-from-denmark.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
       <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
     <item>
       <title>Songs In Code</title>
-      <link>/2009/10/songs-in-code.html/</link>
+      <link>https://mostlymaths.net/2009/10/songs-in-code.html/</link>
       <pubDate>Sat, 17 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/songs-in-code.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/songs-in-code.html/</guid>
       <description>A few days ago I found a page via StumbleUpon, and caught my inner geek. Songs in code, a trend in twitter a few days ago. Other examples here, and here (twitter). Below my own creations.
  (setq My &amp;lsquo;(sleeping)) - Roxette
 do{love( );}while(TRUE); - The Beatles
@@ -191,10 +191,10 @@ int love=0; if(friday){love=1;} - The Cure</description>
     
     <item>
       <title>Whistle control your computer (Linux&amp;Mac)</title>
-      <link>/2009/09/whistle-control-your-computer.html/</link>
+      <link>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</link>
       <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
       
-      <guid>/2009/09/whistle-control-your-computer.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
 Hi reader, you may be also interested in 9 programming books I have read and somewhat liked&amp;hellip;
 Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it.</description>
@@ -202,10 +202,10 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
     
     <item>
       <title>ArXiV fun</title>
-      <link>/2009/09/arxiv-fun.html/</link>
+      <link>https://mostlymaths.net/2009/09/arxiv-fun.html/</link>
       <pubDate>Sun, 13 Sep 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/09/arxiv-fun.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/arxiv-fun.html/</guid>
       <description>When you are about to send a file to ArXiV, it greets you with the following confirmation message, just before the &amp;ldquo;Click here&amp;rdquo;:
  Now Processing Submission
 Read carefully the information below, recite aloud the English alphabet backwards starting from Z, breathe deeply, read carefully the information below once again, and then with a suitable pause (at least 10 seconds) you should
@@ -215,47 +215,47 @@ CLICK HERE TO CHECK STATUS
     
     <item>
       <title>Paris Space Invaders</title>
-      <link>/2009/08/paris-space-invaders.html/</link>
+      <link>https://mostlymaths.net/2009/08/paris-space-invaders.html/</link>
       <pubDate>Sat, 29 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/paris-space-invaders.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/paris-space-invaders.html/</guid>
       <description>While on Paris, I spotted several Space Invaders. Sadly, I wasn&amp;rsquo;t aware enough, as there are plenty.</description>
     </item>
     
     <item>
       <title>Old books&#39; scent</title>
-      <link>/2009/08/old-books-scent.html/</link>
+      <link>https://mostlymaths.net/2009/08/old-books-scent.html/</link>
       <pubDate>Mon, 03 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/old-books-scent.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/old-books-scent.html/</guid>
       <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;rsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
     </item>
     
     <item>
       <title>Three dee</title>
-      <link>/2009/07/three-dee.html/</link>
+      <link>https://mostlymaths.net/2009/07/three-dee.html/</link>
       <pubDate>Fri, 31 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/three-dee.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/three-dee.html/</guid>
       <description>I don&amp;rsquo;t know exactly how (well, now I remember: I was looking for a transparent background patch for xclock), but a while ago, in Göttingen I stumbled on a 3D file system browser, called XCruiser (you can get it with &amp;lsquo;sudo apt-get install xcruise&amp;rsquo;). It has not been maintaned for a long while, and it can&amp;rsquo;t even open the files you &amp;ldquo;travel&amp;rdquo;, so it is pretty useless, albeit amazing.</description>
     </item>
     
     <item>
       <title>Cut &amp; Paste</title>
-      <link>/2009/07/cut-paste.html/</link>
+      <link>https://mostlymaths.net/2009/07/cut-paste.html/</link>
       <pubDate>Tue, 07 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/cut-paste.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/cut-paste.html/</guid>
       <description>As you already know, I&amp;rsquo;m just in the middle of getting a thesis done. This means quite a lot of hand-written papers, full of definitions and on top of it all a lot of notational problems. I have quite a few similarly named spaces, with its corresponding norms&amp;hellip; It is a mess.
 When I had already proved my &amp;ldquo;first&amp;rdquo; theorem (in the thesis context, I mean&amp;hellip; I have a paper soon to be published :), I started LaTeXing it.</description>
     </item>
     
     <item>
       <title>Mathematical elections</title>
-      <link>/2009/07/mathematical-elections.html/</link>
+      <link>https://mostlymaths.net/2009/07/mathematical-elections.html/</link>
       <pubDate>Wed, 01 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/mathematical-elections.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/mathematical-elections.html/</guid>
       <description>Image from Flickr
 Arrow&amp;rsquo;s impossibility theorem and related results
 Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe political parties), with more than 3 items. Let&amp;rsquo;s call transitive preference a way to sort all these elements, with draws possible. It&amp;rsquo;s just a funny name for a vote, in the more general sense as we can split our vote (Let A have 0.5, B 0.25 and C 0.25 of our vote).</description>
@@ -263,29 +263,29 @@ Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe pol
     
     <item>
       <title>Light &amp; Reft</title>
-      <link>/2009/06/light-reft.html/</link>
+      <link>https://mostlymaths.net/2009/06/light-reft.html/</link>
       <pubDate>Fri, 05 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/06/light-reft.html/</guid>
+      <guid>https://mostlymaths.net/2009/06/light-reft.html/</guid>
       <description>Around 1/2lf of the moments in which I look at my headphones to put them in, I pick them &amp;ldquo;switched&amp;rdquo;, i.e. I have (L)eft, I see an L and my head says (L)ight, then I see the other one, and it is &amp;reg;eft. Today I found out &amp;reg;eft is the past participle of reave, which means more or less &amp;ldquo;to rob&amp;rdquo;. But usually, in the presence of &amp;reg;ight there is nothing (L)eft.</description>
     </item>
     
     <item>
       <title>Oil shaving</title>
-      <link>/2009/06/oil-shaving.html/</link>
+      <link>https://mostlymaths.net/2009/06/oil-shaving.html/</link>
       <pubDate>Tue, 02 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/06/oil-shaving.html/</guid>
+      <guid>https://mostlymaths.net/2009/06/oil-shaving.html/</guid>
       <description>Just a quick tip. If you have a strong beard as I do, and always struggle to get that nice, smooth shave you see in advertising, here comes the solution. Olive oil.
 I found this idea in a Slashdot history, and tried at home. Every time I had tried to shave smoother (by doing several passes, as just one was too spiky), I ended with either red itchy skin (and not really smooth), or the same with little scars, bleeding.</description>
     </item>
     
     <item>
       <title>Rasterbator: online posterizer for @home printing</title>
-      <link>/2009/05/rasterbator-online-posterizer-for-home.html/</link>
+      <link>https://mostlymaths.net/2009/05/rasterbator-online-posterizer-for-home.html/</link>
       <pubDate>Sun, 17 May 2009 17:00:00 +0200</pubDate>
       
-      <guid>/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
+      <guid>https://mostlymaths.net/2009/05/rasterbator-online-posterizer-for-home.html/</guid>
       <description>My chair, my fractals (A4) and my Drazen
 Petrovic poster (4xA4)
 Rasterbator is an online poster maker, for you to print in your own printer. Of course, the results are not as good as full quality posters like these, but they look pretty good when looked from afar. It rasterises an image you upload (or link from anywhere in Internet), does some magic stuff, and the result is a bunch (you decide graphically how many, orientation and other options) of A4 (or Legal) sheets arranged in a nice PDF, which you have to print.</description>
@@ -293,19 +293,19 @@ Rasterbator is an online poster maker, for you to print in your own printer. Of 
     
     <item>
       <title>Shorthand</title>
-      <link>/2009/05/shorthand.html/</link>
+      <link>https://mostlymaths.net/2009/05/shorthand.html/</link>
       <pubDate>Mon, 11 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/05/shorthand.html/</guid>
+      <guid>https://mostlymaths.net/2009/05/shorthand.html/</guid>
       <description>I have finally finished (duh!) reading a book on shorthand (stenography) focused on the catalan language. It is a book by Josep Cormand, &amp;ldquo;Estudi de fonologia bàsica : Mètode d&amp;rsquo;escriptura ràpida&amp;rdquo;, ISBN 84-218-0320-4. It is based in a method developed by professor Dalmau, based on catalan fonology. Once you are able to write in this way, you enjoy it more and more, is quite an interesting feeling. Although I find re-reading what I wrote a pain&amp;hellip; I have written a lot more than read, thus I am still far from being proficient at it.</description>
     </item>
     
     <item>
       <title>NYTimes</title>
-      <link>/2008/03/nytimes.html/</link>
+      <link>https://mostlymaths.net/2008/03/nytimes.html/</link>
       <pubDate>Wed, 19 Mar 2008 22:26:00 +0100</pubDate>
       
-      <guid>/2008/03/nytimes.html/</guid>
+      <guid>https://mostlymaths.net/2008/03/nytimes.html/</guid>
       <description>Today I read through Slashdot an article from the NY Times, where they show a correlation between number of good-level research articles and consumption of beer in the Czech Republic. More beer, less articles. It is still unclear if just bad (czech) scientists drown their sorrows in beer (not all of them, of course), and there are also a lot of counterexamples. Just a bizarre article.
 This made me think of a former article I read there, talking about student-advisor (as a side note, adviser and advisor are both accepted in English, amazing) problems.</description>
     </item>

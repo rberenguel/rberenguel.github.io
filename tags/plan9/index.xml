@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>plan9 on mostlymaths.net</title>
-    <link>/tags/plan9/</link>
+    <link>https://mostlymaths.net/tags/plan9/</link>
     <description>Recent content in plan9 on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Apr 2019 19:37:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/plan9/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/plan9/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019-9 Readings of the week (x4)</title>
-      <link>/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Just as Mario: Using the Plan9 plumber utility</title>
-      <link>/2013/04/just-as-mario-using-plan9-plumber.html/</link>
+      <link>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</link>
       <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
       
-      <guid>/2013/04/just-as-mario-using-plan9-plumber.html/</guid>
+      <guid>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</guid>
       <description>Note: It&amp;rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&amp;rsquo;s not hard to find where they are, if you run into any problems let me know.
 If you&amp;rsquo;ve been following this blog, you&amp;rsquo;ll know I&amp;rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2016 on mostlymaths.net</title>
-    <link>/tags/2016/</link>
+    <link>https://mostlymaths.net/tags/2016/</link>
     <description>Recent content in 2016 on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 31 Dec 2016 14:34:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/2016/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/2016/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2016 in Review</title>
-      <link>/2016/12/2016-in-review.html/</link>
+      <link>https://mostlymaths.net/2016/12/2016-in-review.html/</link>
       <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
       
-      <guid>/2016/12/2016-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2016/12/2016-in-review.html/</guid>
       <description>Some of the links are affiliate links to Amazon. I only recommend what I use.
 At last February. Finished my PhD dissertation, so can add Dr. in front of my name when ordering a Gatwick Express train ticket. Also makes for a cooler email signature. So far has been the only differences I’ve seen in the year
 Work February-December Started working as a consultant in London, almost the day after delivering the PhD presentation.</description>

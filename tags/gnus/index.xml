@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gnus on mostlymaths.net</title>
-    <link>/tags/gnus/</link>
+    <link>https://mostlymaths.net/tags/gnus/</link>
     <description>Recent content in gnus on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Feb 2013 18:28:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/gnus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/gnus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</title>
-      <link>/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
+      <link>https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
       <pubDate>Fri, 22 Feb 2013 18:28:00 +0100</pubDate>
       
-      <guid>/2013/02/creating-new-text-objects-in-evil-mode.html/</guid>
+      <guid>https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/</guid>
       <description>The links to Practical Vim are affiliate links to Amazon. Beware!
 So&amp;hellip; last January I was in a flight to London, preparing for an intense, 12 days course on traditional shoemaking (English hand-welted shoes, improving our knowledge at The Fancy Puffin.) And my flight read was Practical Vim. Most of my readers are already aware I&amp;rsquo;m an emacs guy, so the main question is why?
 I love knowing many tools.</description>
@@ -24,10 +24,10 @@ I love knowing many tools.</description>
     
     <item>
       <title>Adding Notes to Emails in Gnus (in Summary View)</title>
-      <link>/2012/08/adding-notes-to-emails-in-gnus-in.html/</link>
+      <link>https://mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html/</link>
       <pubDate>Wed, 01 Aug 2012 23:21:00 +0200</pubDate>
       
-      <guid>/2012/08/adding-notes-to-emails-in-gnus-in.html/</guid>
+      <guid>https://mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html/</guid>
       <description>Sensitive information blanked
 The gnusnotes.el package, with delete and edit capabilities is now available in the marmalade package repository. This post just explains why, how and what (code at the end, too)
 Last month I switched email clients (for the 4th time in the past year.) I&amp;rsquo;ve passed through gnus, Thunderbird, mail.app and settled with Sparrow. Just 2 days before Sparrow was bought by Google I left for gnus (lucky moment!</description>
@@ -35,10 +35,10 @@ Last month I switched email clients (for the 4th time in the past year.) I&amp;r
     
     <item>
       <title>Back to gnus (emacs mail reader)</title>
-      <link>/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
+      <link>https://mostlymaths.net/2012/07/back-to-gnus-emacs-mail-reader.html/</link>
       <pubDate>Sat, 07 Jul 2012 20:50:00 +0200</pubDate>
       
-      <guid>/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
+      <guid>https://mostlymaths.net/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
 I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>

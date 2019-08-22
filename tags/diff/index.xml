@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>diff on mostlymaths.net</title>
-    <link>/tags/diff/</link>
+    <link>https://mostlymaths.net/tags/diff/</link>
     <description>Recent content in diff on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Apr 2013 21:30:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/diff/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/diff/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Just as Mario: Using the Plan9 plumber utility</title>
-      <link>/2013/04/just-as-mario-using-plan9-plumber.html/</link>
+      <link>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</link>
       <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
       
-      <guid>/2013/04/just-as-mario-using-plan9-plumber.html/</guid>
+      <guid>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</guid>
       <description>Note: It&amp;rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&amp;rsquo;s not hard to find where they are, if you run into any problems let me know.
 If you&amp;rsquo;ve been following this blog, you&amp;rsquo;ll know I&amp;rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber.</description>
     </item>

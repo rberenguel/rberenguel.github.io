@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command Line on mostlymaths.net</title>
-    <link>/tags/command-line/</link>
+    <link>https://mostlymaths.net/tags/command-line/</link>
     <description>Recent content in Command Line on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 May 2013 18:33:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Find Search Engine Rankings... via the Command Line</title>
-      <link>/2013/05/find-search-engine-rankings-via-command.html/</link>
+      <link>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
-      <guid>/2013/05/find-search-engine-rankings-via-command.html/</guid>
+      <guid>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</guid>
       <description>Via pixelfrenzy@flickr
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&amp;rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</description>

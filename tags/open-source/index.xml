@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open source on mostlymaths.net</title>
-    <link>/tags/open-source/</link>
+    <link>https://mostlymaths.net/tags/open-source/</link>
     <description>Recent content in Open source on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 15:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2018: Year in Review</title>
-      <link>/2019/01/2018-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>/2019/01/2018-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maths on mostlymaths.net</title>
-    <link>/tags/maths/</link>
+    <link>https://mostlymaths.net/tags/maths/</link>
     <description>Recent content in Maths on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#20,21,22 Readings of the week</title>
-      <link>/2019/07/2019202122-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
-      <guid>/2019/07/2019202122-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
 
 &lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
@@ -24,28 +24,28 @@
     
     <item>
       <title>2019#19 Readings of the week</title>
-      <link>/2019/07/201919-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</link>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
-      <guid>/2019/07/201919-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
       <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019#18 Readings of the week</title>
-      <link>/2019/06/201918-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</link>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
-      <guid>/2019/06/201918-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-10 Readings of the week</title>
-      <link>/2019/04/2019-10-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
-      <guid>/2019/04/2019-10-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
       <description>Could be Autumn Rhythm, Letter C
   Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
 If you are wondering why the list is shorter this week (and is so late) is because last week I said I was going to play Stardew Valley, and I complied.</description>
@@ -53,73 +53,73 @@ If you are wondering why the list is shorter this week (and is so late) is becau
     
     <item>
       <title>2019-9 Readings of the week (x4)</title>
-      <link>/2019/04/2019-9-readings-of-week-x4.html/</link>
+      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
-      <guid>/2019/04/2019-9-readings-of-week-x4.html/</guid>
+      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-6 Readings of the week</title>
-      <link>/2019/02/2019-6-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</link>
       <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
       
-      <guid>/2019/02/2019-6-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-5 Readings of the week</title>
-      <link>/2019/02/2019-5-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</link>
       <pubDate>Sun, 10 Feb 2019 22:38:00 +0100</pubDate>
       
-      <guid>/2019/02/2019-5-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-4 Readings of the week</title>
-      <link>/2019/02/2019-4-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</link>
       <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
       
-      <guid>/2019/02/2019-4-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
       <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-2 Readings of the week</title>
-      <link>/2019/01/2019-2-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
-      <guid>/2019/01/2019-2-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
       <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2019-1 Readings of the week</title>
-      <link>/2019/01/2019-1-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</link>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
-      <guid>/2019/01/2019-1-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
       <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2018: Year in Review</title>
-      <link>/2019/01/2018-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>/2019/01/2018-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using Processing from Scala</title>
-      <link>/2018/03/processing-and-scala.html/</link>
+      <link>https://mostlymaths.net/2018/03/processing-and-scala.html/</link>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
-      <guid>/2018/03/processing-and-scala.html/</guid>
+      <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
       <description>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
  From Processing.org
 I had always wanted to play with Processing (after leafing through The Processing Handbook and Visualizing Data some years ago). My general dislike for Java or the JVM made me just play a very short amount of time with processing.js something around 2011 (there was a native processing.</description>
@@ -127,30 +127,30 @@ I had always wanted to play with Processing (after leafing through The Processin
     
     <item>
       <title>Scala eXchange 2017</title>
-      <link>/2018/02/scala-exchange-2017.html/</link>
+      <link>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
-      <guid>/2018/02/scala-exchange-2017.html/</guid>
+      <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
       <description>Almost two months ago (time sure flies) I attended for the second time the conference Scala eXchange, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London. Also happens to be an excellent conference, and I’m repeating next year (yes, I already got my tickets).
 For those who don’t know, Scala eXchange is a 2-day (plus an unconference day) conference in central London, bringing most of the library developers you love to talk about cool stuff.</description>
     </item>
     
     <item>
       <title>2017: Year in Review</title>
-      <link>/2018/01/2017-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>/2018/01/2017-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>2016 in Review</title>
-      <link>/2016/12/2016-in-review.html/</link>
+      <link>https://mostlymaths.net/2016/12/2016-in-review.html/</link>
       <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
       
-      <guid>/2016/12/2016-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2016/12/2016-in-review.html/</guid>
       <description>Some of the links are affiliate links to Amazon. I only recommend what I use.
 At last February. Finished my PhD dissertation, so can add Dr. in front of my name when ordering a Gatwick Express train ticket. Also makes for a cooler email signature. So far has been the only differences I’ve seen in the year
 Work February-December Started working as a consultant in London, almost the day after delivering the PhD presentation.</description>
@@ -158,29 +158,29 @@ Work February-December Started working as a consultant in London, almost the day
     
     <item>
       <title>Ruben Berenguel, PhD</title>
-      <link>/2016/04/ruben-berenguel-phd-in-mathematics.html/</link>
+      <link>https://mostlymaths.net/2016/04/ruben-berenguel-phd-in-mathematics.html/</link>
       <pubDate>Sat, 30 Apr 2016 20:24:00 +0200</pubDate>
       
-      <guid>/2016/04/ruben-berenguel-phd-in-mathematics.html/</guid>
+      <guid>https://mostlymaths.net/2016/04/ruben-berenguel-phd-in-mathematics.html/</guid>
       <description>Started a long time ago. It was supposed to be about a phenomenon leading to chaos: separatrix splitting. I got a research grant. I worked on holomorphic dynamics. Travelled. Presented. Too many roadblocks with the separatrix problem. Switched topics. Welcome to a different new world, infinite dimensional dynamical systems. I read the literature. Researched, proved some things. My grant ran out. I worked. A lot. Too many times I considered giving up.</description>
     </item>
     
     <item>
       <title>SyncTeX and pdf-view-mode for emacs</title>
-      <link>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
+      <link>https://mostlymaths.net/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
-      <guid>/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
+      <guid>https://mostlymaths.net/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
       <description>Or, destiny is cruel
  Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.</description>
     </item>
     
     <item>
       <title>The Mandelbrot set in one line of APL</title>
-      <link>/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</link>
+      <link>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
-      <guid>/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
+      <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
 
 ⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
@@ -188,20 +188,20 @@ Work February-December Started working as a consultant in London, almost the day
     
     <item>
       <title>My Russian KL-1 Circular Slide Rule (and a small intro to slide rules)</title>
-      <link>/2013/11/my-russian-kl-1-circular-slide-rule-and.html/</link>
+      <link>https://mostlymaths.net/2013/11/my-russian-kl-1-circular-slide-rule-and.html/</link>
       <pubDate>Sat, 02 Nov 2013 18:29:00 +0100</pubDate>
       
-      <guid>/2013/11/my-russian-kl-1-circular-slide-rule-and.html/</guid>
+      <guid>https://mostlymaths.net/2013/11/my-russian-kl-1-circular-slide-rule-and.html/</guid>
       <description>A few months ago (woah, so long already!) I had an impulse buy: I purchased a circular slide rule from Etsy. It was cheap, and I had always wanted one, so&amp;hellip; I just bought it (a neat addition to my Addiator.)
 I guess if you are geeky enough to read mostlymaths.net, you know how a slide rule works. Although I knew how to use it, getting to grips with it took a little while.</description>
     </item>
     
     <item>
       <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
-      <link>/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
       <description>Taken from Flickr
   In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
 This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
@@ -209,10 +209,10 @@ This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to shar
     
     <item>
       <title>Gift: A Quadratic Julia Set for Iceland&#39;s National Day</title>
-      <link>/2011/06/gift-quadratic-julia-set-for-icelands.html/</link>
+      <link>https://mostlymaths.net/2011/06/gift-quadratic-julia-set-for-icelands.html/</link>
       <pubDate>Fri, 17 Jun 2011 00:05:00 +0200</pubDate>
       
-      <guid>/2011/06/gift-quadratic-julia-set-for-icelands.html/</guid>
+      <guid>https://mostlymaths.net/2011/06/gift-quadratic-julia-set-for-icelands.html/</guid>
       <description>Click to open in a new window/tab and then right click to Save as
 Today is Iceland&amp;rsquo;s National Day (commemorating their independence day and the date of birth of Jón Sigurðsson), and to commemorate it I share this image with everyone.
 I computed this image a long, long time ago (using the Distance Estimator Method, paralellised with PVM using 16 computers, it took just 2 minutes). The full file is a 30MB pdf, which I printed large-size, and sits in my office.</description>
@@ -220,30 +220,30 @@ I computed this image a long, long time ago (using the Distance Estimator Method
     
     <item>
       <title>Using an Apple Remote with Mac OS Preview</title>
-      <link>/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
+      <link>https://mostlymaths.net/2011/06/using-apple-remote-with-mac-os-preview.html/</link>
       <pubDate>Sun, 05 Jun 2011 18:00:00 +0200</pubDate>
       
-      <guid>/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
+      <guid>https://mostlymaths.net/2011/06/using-apple-remote-with-mac-os-preview.html/</guid>
       <description>Last Tuesday I presented a talk in a congress, here in Barcelona. This post is not about this talk, but about the Mac remote and Apple&amp;rsquo;s &amp;ldquo;problems&amp;rdquo;. If you are interested, you can download the talk here, anyway.
 As the congress was local, instead of using my netbook for the talk I brought my MacBook. Instead of using arrow keys, I could use these fancy Apple remotes. Good plan&amp;hellip; at the moment.</description>
     </item>
     
     <item>
       <title>Counter-examples, Converging Sequences and Giving Immediate Answers</title>
-      <link>/2011/01/counter-examples-converging-sequences.html/</link>
+      <link>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</link>
       <pubDate>Tue, 11 Jan 2011 21:50:00 +0100</pubDate>
       
-      <guid>/2011/01/counter-examples-converging-sequences.html/</guid>
+      <guid>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</guid>
       <description>Next week is the final exam of the course I&amp;rsquo;m giving, Numerical Analysis. Classes finished before Christmas, and this week is for students questions. I had one of these sessions this morning, when a pair of students came with a few questions related to the problems I solved on the blackboard.
 All were quick to solve, until one simple question arose, concerning a trivial problem in Calculus 1 (or Analysis 1, as we name it here).</description>
     </item>
     
     <item>
       <title>The Emacs 30 Day Challenge</title>
-      <link>/2010/12/emacs-30-day-challenge.html/</link>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge.html/</link>
       <pubDate>Wed, 01 Dec 2010 00:05:00 +0100</pubDate>
       
-      <guid>/2010/12/emacs-30-day-challenge.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge.html/</guid>
       <description>From
 The Design of the Emacs Logo
 As you may already know, emacs is more than a (cross-platform) text editor. Some say that it is like a whole operating system (and some devil worshippers say that it lacks a good text editor&amp;hellip;). For the next 30 days (starting December 1, 2010) I&amp;rsquo;ll check it as well as I can. I will work just with emacs.
@@ -252,10 +252,10 @@ You can check the challenge updates below:</description>
     
     <item>
       <title>Worst Connectivity Ever</title>
-      <link>/2010/11/worst-connectivity-ever.html/</link>
+      <link>https://mostlymaths.net/2010/11/worst-connectivity-ever.html/</link>
       <pubDate>Mon, 08 Nov 2010 23:26:00 +0100</pubDate>
       
-      <guid>/2010/11/worst-connectivity-ever.html/</guid>
+      <guid>https://mostlymaths.net/2010/11/worst-connectivity-ever.html/</guid>
       <description>Hi readers! (woah&amp;hellip; 235 already! I&amp;rsquo;m so glad you&amp;rsquo;re here with me!)
 This week I&amp;rsquo;m in Warsaw for a workshop (as I already commented in last post when I talked about the poster I am presenting).
 I was expecting to use idle hours between talks and afternoons to write posts and post a little&amp;hellip; But my internet connection is inexistent. This post is coming from an open wifi connection, which gets connected and disconnected at random, and when at its peak, just makes 3Kb/s.</description>
@@ -263,48 +263,48 @@ I was expecting to use idle hours between talks and afternoons to write posts an
     
     <item>
       <title>Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</title>
-      <link>/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
+      <link>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
       <pubDate>Sat, 06 Nov 2010 18:20:00 +0100</pubDate>
       
-      <guid>/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
+      <guid>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
       <description>This week I&amp;rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled Approximating bifurcation loci by zeros of functions. This is heavily based on a poster I presented last year in Copenhagen (titled Sets approximating regions of instability). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.</description>
     </item>
     
     <item>
       <title>Keeping Up With Reading Research Papers</title>
-      <link>/2010/10/keeping-up-with-reading-research-papers.html/</link>
+      <link>https://mostlymaths.net/2010/10/keeping-up-with-reading-research-papers.html/</link>
       <pubDate>Fri, 29 Oct 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/10/keeping-up-with-reading-research-papers.html/</guid>
+      <guid>https://mostlymaths.net/2010/10/keeping-up-with-reading-research-papers.html/</guid>
       <description>Lately my pile of papers to read has been growing steadily, and I&amp;rsquo;ve done very little to read all that stuff marked with &amp;ldquo;will read someday&amp;rdquo;. It had to come to an end, and it did with my previous Task Bankruptcy.
 Reading research papers can be a huge waste of time&amp;hellip; Or end up in forming big piles of To be read someday. The problem is, usually someday never means today.</description>
     </item>
     
     <item>
       <title>And e/2 Appears from Nowhere! (Follow up to &#39;And e Appears from Nowhere&#39;)</title>
-      <link>/2010/10/and-e2-appears-from-nowhere-follow-up.html/</link>
+      <link>https://mostlymaths.net/2010/10/and-e2-appears-from-nowhere-follow-up.html/</link>
       <pubDate>Wed, 06 Oct 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/10/and-e2-appears-from-nowhere-follow-up.html/</guid>
+      <guid>https://mostlymaths.net/2010/10/and-e2-appears-from-nowhere-follow-up.html/</guid>
       <description>You may remember a post I wrote a month ago titled And e Appears from Nowhere. It was based (through some blogs I read) on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
  Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers.</description>
     </item>
     
     <item>
       <title>Frame Switching and What Not</title>
-      <link>/2010/09/frame-switching-and-what-not.html/</link>
+      <link>https://mostlymaths.net/2010/09/frame-switching-and-what-not.html/</link>
       <pubDate>Thu, 30 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/09/frame-switching-and-what-not.html/</guid>
+      <guid>https://mostlymaths.net/2010/09/frame-switching-and-what-not.html/</guid>
       <description>Two weeks ago it was the beginning of this years lectures. Currently I&amp;rsquo;m solving problems in the blackboard, 2 hours per week and take care of one computer lab (programming in C, but they have already done a C programming course and another course of numerical computations with C), all for our Numerical Analysis course (7th semester). This is the same schedule I had 3 years ago, also last year I had one computer lab each semester.</description>
     </item>
     
     <item>
       <title>Get Yacas in the Ben NanoNote</title>
-      <link>/2010/08/get-yacas-in-ben-nanonote.html/</link>
+      <link>https://mostlymaths.net/2010/08/get-yacas-in-ben-nanonote.html/</link>
       <pubDate>Thu, 26 Aug 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/08/get-yacas-in-ben-nanonote.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/get-yacas-in-ben-nanonote.html/</guid>
       <description>Yacas is an advanced computer algebra system, with its own programming language and a lot of handful operators available.
 It comes handy when you need to do that odd symbolic computation which is too big to handle by hand (or you are plain lazy).
 By looking at the wikipedia entry, I discovered an startling truth: as of 2009, yacas is no longer maintained.
@@ -313,67 +313,67 @@ I should have guessed, because yacas does not compile out of the box (the progra
     
     <item>
       <title>And e appears from nowhere!</title>
-      <link>/2010/08/and-e-appears-from-nowhere.html/</link>
+      <link>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</link>
       <pubDate>Thu, 05 Aug 2010 23:52:00 +0200</pubDate>
       
-      <guid>/2010/08/and-e-appears-from-nowhere.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/and-e-appears-from-nowhere.html/</guid>
       <description>As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
  Here is an example of e turning up unexpectedly.</description>
     </item>
     
     <item>
       <title>Vladimir Arnol&#39;d one of the greatest mathematicians of 20th century</title>
-      <link>/2010/06/vladimir-arnold-one-of-greatest.html/</link>
+      <link>https://mostlymaths.net/2010/06/vladimir-arnold-one-of-greatest.html/</link>
       <pubDate>Mon, 14 Jun 2010 18:00:00 +0200</pubDate>
       
-      <guid>/2010/06/vladimir-arnold-one-of-greatest.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/vladimir-arnold-one-of-greatest.html/</guid>
       <description>Most of you may not know who Vladimir Arnold (Владимир Арнольд, also written as Vladimir Arnol&amp;rsquo;d) was, but for me his death on 3rd June 2010,was some kind of landmark. I own two books by him (Mathematical aspects of classical and celestial mechanics [1] and Mathematical methods of classical mechanics [2]), and are quite high in my list of most checked books, at least when I was starting my journey into the realm of dynamical systems.</description>
     </item>
     
     <item>
       <title>On a productivity down</title>
-      <link>/2010/06/on-productivity-down.html/</link>
+      <link>https://mostlymaths.net/2010/06/on-productivity-down.html/</link>
       <pubDate>Sun, 06 Jun 2010 12:30:00 +0200</pubDate>
       
-      <guid>/2010/06/on-productivity-down.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/on-productivity-down.html/</guid>
       <description>A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my life bookmarks for these two weeks.
 Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been thinking about them these days.</description>
     </item>
     
     <item>
       <title>Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</title>
-      <link>/2010/03/forths-create-does-maybe-im-amazed.html/</link>
+      <link>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</link>
       <pubDate>Fri, 05 Mar 2010 23:01:00 +0100</pubDate>
       
-      <guid>/2010/03/forths-create-does-maybe-im-amazed.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/forths-create-does-maybe-im-amazed.html/</guid>
       <description>As I wrote in a previous post, I&amp;rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.
 I decided to allocate a few global variables (for &amp;ldquo;current point&amp;rdquo;, &amp;ldquo;current vector&amp;rdquo;, &amp;ldquo;light source&amp;rdquo;, etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.</description>
     </item>
     
     <item>
       <title>Debugging with emacs&#43;valgrind</title>
-      <link>/2010/02/debugging-with-emacsvalgrind.html/</link>
+      <link>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</link>
       <pubDate>Sun, 28 Feb 2010 20:37:00 +0100</pubDate>
       
-      <guid>/2010/02/debugging-with-emacsvalgrind.html/</guid>
+      <guid>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</guid>
       <description>The easiest way to debug: valgrind with the most powerful text editor: emacs A few days ago my office mate told me about the great debugging tool known as valgrind. Before I have been using the great pairing of emacs+gdb to debug segmentation faults and memory leaks&amp;hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</description>
     </item>
     
     <item>
       <title>CJuicer beats humans (and Unix&#39;s diff)</title>
-      <link>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
+      <link>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
-      <guid>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
+      <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
       <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
     </item>
     
     <item>
       <title>Evolutionary approximation of a Christmas postcard</title>
-      <link>/2009/12/evolutionary-approximation-of-christmas.html/</link>
+      <link>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</link>
       <pubDate>Wed, 23 Dec 2009 19:17:00 +0100</pubDate>
       
-      <guid>/2009/12/evolutionary-approximation-of-christmas.html/</guid>
+      <guid>https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/</guid>
       <description>If you liked it, leave a comment, digg, stumble
 or whatever you feel like doing
 Stochastic hill-climbing algorithm to approximate a picture by triangles (algorithm and source code). This image contains 48 images out of 1000, from iterating for 11000 generations the evolution code. The source image is the last square in the tile set.
@@ -388,10 +388,10 @@ Mutlu Noeller!</description>
     
     <item>
       <title>C code &#34;Juicer&#34;</title>
-      <link>/2009/12/c-code-juicer.html/</link>
+      <link>https://mostlymaths.net/2009/12/c-code-juicer.html/</link>
       <pubDate>Tue, 01 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>/2009/12/c-code-juicer.html/</guid>
+      <guid>https://mostlymaths.net/2009/12/c-code-juicer.html/</guid>
       <description>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &amp;ldquo;code juicer&amp;rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
 
 It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses.</description>
@@ -399,10 +399,10 @@ It is something like an execution tree, with function calls squared, and differe
     
     <item>
       <title>Copied programming assignments as cryptograms</title>
-      <link>/2009/11/copied-programming-assignments-as.html/</link>
+      <link>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</link>
       <pubDate>Wed, 11 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/copied-programming-assignments-as.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</guid>
       <description>Pieces of an ENIGMA machine, from Flickr
 Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&amp;rsquo;s mind. As a teacher, how do you detect this?
 From my point of view, there are fundamentally two different kinds of copy:</description>
@@ -410,10 +410,10 @@ From my point of view, there are fundamentally two different kinds of copy:</des
     
     <item>
       <title>External rays &amp; Lavaurs algorithm</title>
-      <link>/2009/11/external-rays-lavaurs-algorithm.html/</link>
+      <link>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</link>
       <pubDate>Tue, 03 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/external-rays-lavaurs-algorithm.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</guid>
       <description>Thanks to Mandel, LISP and my Lavaurs code
 As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able&amp;hellip; and then found Mandel.
 Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
@@ -421,10 +421,10 @@ Really nice program, with lots and lots of options (and I met the programmer, wh
     
     <item>
       <title>Scribus for mathematical posters</title>
-      <link>/2009/11/scribus-for-mathematical-posters.html/</link>
+      <link>https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/</link>
       <pubDate>Mon, 02 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/scribus-for-mathematical-posters.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/</guid>
       <description>As you may already know, I presented a poster at a conference recently, and did the set up with Scribus, the texts with LaTeX with the Beamer and Beamerposter packages.
 
 Setting up
@@ -433,10 +433,10 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
     
     <item>
       <title>Future in Mathematics</title>
-      <link>/2009/11/future-in-mathematics.html/</link>
+      <link>https://mostlymaths.net/2009/11/future-in-mathematics.html/</link>
       <pubDate>Sun, 01 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/future-in-mathematics.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/future-in-mathematics.html/</guid>
       <description>With Sketchbook Mobile
 The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo; or even &amp;ldquo;location&amp;rdquo; are quite fuzzy when in Mathematics. I think I don&amp;rsquo;t know any PhD student who knows what he will be doing in 3 years, what he will be working on (not what he will be researching, but working&amp;hellip;) or even where he will be.
  1-2 years of Master+Master thesis 2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
@@ -444,10 +444,10 @@ The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo
     
     <item>
       <title>Den lille havfrue</title>
-      <link>/2009/10/den-lille-havfrue.html/</link>
+      <link>https://mostlymaths.net/2009/10/den-lille-havfrue.html/</link>
       <pubDate>Sat, 31 Oct 2009 15:00:00 +0100</pubDate>
       
-      <guid>/2009/10/den-lille-havfrue.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/den-lille-havfrue.html/</guid>
       <description>København, Denmark
 Related posts:
 ParseList(ScrambleList(Relateds(Maths)),5)</description>
@@ -455,30 +455,30 @@ ParseList(ScrambleList(Relateds(Maths)),5)</description>
     
     <item>
       <title>Back from Denmark</title>
-      <link>/2009/10/back-from-denmark.html/</link>
+      <link>https://mostlymaths.net/2009/10/back-from-denmark.html/</link>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/10/back-from-denmark.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
       <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
     <item>
       <title>Why I bought an iPod touch</title>
-      <link>/2009/10/why-i-bought-ipod-touch.html/</link>
+      <link>https://mostlymaths.net/2009/10/why-i-bought-ipod-touch.html/</link>
       <pubDate>Mon, 19 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/why-i-bought-ipod-touch.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/why-i-bought-ipod-touch.html/</guid>
       <description>Mathematician, Linux user, already had an iPod (iPod nano), recently bought a netbook. Why did I buy an iPod touch?
 Papers for iPhone (7.99€): a organizer for research PDF&amp;rsquo;s with integrated PDF reader (allegedly optimized for research articles), with the ability to sync with the desktop app (29€, less with the 40% discount for students&amp;hellip; still waiting for it to buy it). Well, it lives up the expectations, although the desktop version is strange (used it only once, yet) and the syncing can be hard as the network settings may keep you from syncing.</description>
     </item>
     
     <item>
       <title>Infinite complexity</title>
-      <link>/2009/10/infinite-complexity.html/</link>
+      <link>https://mostlymaths.net/2009/10/infinite-complexity.html/</link>
       <pubDate>Wed, 07 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/infinite-complexity.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/infinite-complexity.html/</guid>
       <description>Just 5 excerpts of it
 Related posts:
 And &amp;ldquo;e&amp;rdquo; appears from nowhere!9 programming books I have read and somewhat liked&amp;hellip;
@@ -491,20 +491,20 @@ ParseList(ScrambleList(Relateds(Linux, Programming)),10)</description>
     
     <item>
       <title>gdb &amp; CEDET &amp; ECB</title>
-      <link>/2009/10/gdb-cedet-ecb.html/</link>
+      <link>https://mostlymaths.net/2009/10/gdb-cedet-ecb.html/</link>
       <pubDate>Mon, 05 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/gdb-cedet-ecb.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/gdb-cedet-ecb.html/</guid>
       <description>Emacs fun, in other words. This weekend I&amp;rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&amp;hellip; I always miss on such matrix-here-matrix-there-solve-that.
 Today, after battling for an hour, I realized I missed the &amp;ldquo;intellisense&amp;rdquo; part of CEDET, and started to install it here in MacOs, and &amp;ldquo;there&amp;rdquo; in my netbook.</description>
     </item>
     
     <item>
       <title>Scribus&#43;Latex in Mac OS</title>
-      <link>/2009/09/scribuslatex-in-mac-os.html/</link>
+      <link>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</link>
       <pubDate>Tue, 29 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/09/scribuslatex-in-mac-os.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</guid>
       <description>or the trouble with hard-coded paths and ineffective menus.
 
 Cross platform page-layout software:
@@ -514,20 +514,20 @@ I am supposed to present a poster in a conference, about some work I am doing. I
     
     <item>
       <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
-      <link>/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <link>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</link>
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
       <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
     <item>
       <title>ArXiV fun</title>
-      <link>/2009/09/arxiv-fun.html/</link>
+      <link>https://mostlymaths.net/2009/09/arxiv-fun.html/</link>
       <pubDate>Sun, 13 Sep 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/09/arxiv-fun.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/arxiv-fun.html/</guid>
       <description>When you are about to send a file to ArXiV, it greets you with the following confirmation message, just before the &amp;ldquo;Click here&amp;rdquo;:
  Now Processing Submission
 Read carefully the information below, recite aloud the English alphabet backwards starting from Z, breathe deeply, read carefully the information below once again, and then with a suitable pause (at least 10 seconds) you should
@@ -537,20 +537,20 @@ CLICK HERE TO CHECK STATUS
     
     <item>
       <title>Slicing scannings</title>
-      <link>/2009/09/slicing-scannings.html/</link>
+      <link>https://mostlymaths.net/2009/09/slicing-scannings.html/</link>
       <pubDate>Fri, 11 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/09/slicing-scannings.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/slicing-scannings.html/</guid>
       <description>Last year our department got a nice and shiny Xerox WorkCentre, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&amp;hellip; of course, the machine scans two pages each time, and thus creates a double bound PDF.
 And this doesn&amp;rsquo;t work well with my way to print booklets, so a working solution was to use ghostscript and ImageMagick from the command line.</description>
     </item>
     
     <item>
       <title>My backup script in Mac/Linux</title>
-      <link>/2009/09/my-backup-script-in-maclinux.html/</link>
+      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
       <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
       <description>My backup script in Mac/Linux
 #!/bin/sh
 # This script backs up a set of files and directories incrementally,
@@ -564,20 +564,20 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
     
     <item>
       <title>Calendars &amp; emacs</title>
-      <link>/2009/09/calendars-emacs.html/</link>
+      <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
       
-      <guid>/2009/09/calendars-emacs.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
 For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
       <title>Back to work</title>
-      <link>/2009/09/back-to-work.html/</link>
+      <link>https://mostlymaths.net/2009/09/back-to-work.html/</link>
       <pubDate>Tue, 01 Sep 2009 13:00:00 +0200</pubDate>
       
-      <guid>/2009/09/back-to-work.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/back-to-work.html/</guid>
       <description>From flickr
 September is to months as Monday is to weekdays
 September is again here, like a new year in more than a sense. I have no new &amp;ldquo;New Year&amp;rsquo;s promises&amp;rdquo;, since the beginning of the year. In fact, most of the things I wanted to do are already done, on the way to be done or I gave up. Well, let&amp;rsquo;s summarize what I shall do these three months to end 2009</description>
@@ -585,20 +585,20 @@ September is again here, like a new year in more than a sense. I have no new &am
     
     <item>
       <title>Screenshot via command-line in Linux</title>
-      <link>/2009/08/screenshot-via-command-line-in-linux.html/</link>
+      <link>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</link>
       <pubDate>Mon, 17 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/screenshot-via-command-line-in-linux.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/screenshot-via-command-line-in-linux.html/</guid>
       <description>Have you ever wondered how to take a screenshot remotely, via the command line in a Linux system? Here is a way to do it. At the bottom you can also find a script to move it to the root of your personal page (if you have) to open the screenshot in your browser.
 I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode for Emacs) in an emacs instance running in my office computer.</description>
     </item>
     
     <item>
       <title>Lavaurs algorithm</title>
-      <link>/2009/08/lavaurs-algorithm.html/</link>
+      <link>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</link>
       <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/lavaurs-algorithm.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</guid>
       <description>[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
 Top: Zoom a depth 13 Lavaurs chords, random colors
 Bottom: Depth 5 and depth 13 Lavaurs chords
@@ -608,20 +608,20 @@ The images doesn&amp;rsquo;t look like much, but the output of the program is ni
     
     <item>
       <title>Grain of sand</title>
-      <link>/2009/08/grain-of-sand.html/</link>
+      <link>https://mostlymaths.net/2009/08/grain-of-sand.html/</link>
       <pubDate>Fri, 07 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/grain-of-sand.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/grain-of-sand.html/</guid>
       <description>Taken from Flickr
 Sometimes I view mathematical knowledge as a desert. Full of sand, some pebbles, some rocks. You can get easily lost in this dry sea, but you can also find a place to stay and add. And now, I can say I have added my small grain of sand: An entire transcendental family with a persistent Siegel disc (link to the preprint version in ArXiV). My first article, now officially &amp;ldquo;Awaiting Editorial Assistant Processing&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Teleworking in August</title>
-      <link>/2009/08/teleworking-in-august.html/</link>
+      <link>https://mostlymaths.net/2009/08/teleworking-in-august.html/</link>
       <pubDate>Wed, 05 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/teleworking-in-august.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/teleworking-in-august.html/</guid>
       <description>Lavaurs algorithm on course
 Like almost every year, August comes with a lot of pending To Do lists&amp;hellip; This year, it is choking full, mostly of work related issues, and some unknotted threads waiting to be finished. And in two and a half weeks I&amp;rsquo;ll head for Paris, and then my &amp;ldquo;vacation&amp;rdquo; is over.
 Yesterday I wasted my morning: bought my orange belt, set up the external monitor for my netbook, configured the printer, fotocopied two pages of a book and drank an horchata with a friend.</description>
@@ -629,10 +629,10 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
     
     <item>
       <title>Gauss&#39; grave</title>
-      <link>/2009/07/gauss-grave.html/</link>
+      <link>https://mostlymaths.net/2009/07/gauss-grave.html/</link>
       <pubDate>Thu, 23 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/gauss-grave.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/gauss-grave.html/</guid>
       <description>Princeps Mathematicorum
 
 Old 10 Deutsche Mark banknote. Gauss depicted along with a normal distribution and 5 historical buildings in Göttingen. The most visible, St. Jacobi&amp;rsquo;s Church (Jacobikirsche).</description>
@@ -640,20 +640,20 @@ Old 10 Deutsche Mark banknote. Gauss depicted along with a normal distribution a
     
     <item>
       <title>Cut &amp; Paste</title>
-      <link>/2009/07/cut-paste.html/</link>
+      <link>https://mostlymaths.net/2009/07/cut-paste.html/</link>
       <pubDate>Tue, 07 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/cut-paste.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/cut-paste.html/</guid>
       <description>As you already know, I&amp;rsquo;m just in the middle of getting a thesis done. This means quite a lot of hand-written papers, full of definitions and on top of it all a lot of notational problems. I have quite a few similarly named spaces, with its corresponding norms&amp;hellip; It is a mess.
 When I had already proved my &amp;ldquo;first&amp;rdquo; theorem (in the thesis context, I mean&amp;hellip; I have a paper soon to be published :), I started LaTeXing it.</description>
     </item>
     
     <item>
       <title>Wikipedian!</title>
-      <link>/2009/07/wikipedian.html/</link>
+      <link>https://mostlymaths.net/2009/07/wikipedian.html/</link>
       <pubDate>Sun, 05 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/wikipedian.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/wikipedian.html/</guid>
       <description>I feel like I contributed something. I rewrote Wikipedia&amp;rsquo;s Siegel disk page, adding references and images. It is now quite dense&amp;hellip; Ill have to re-read it to simplify it several times. Or someone else&amp;hellip; Wikipedia&amp;rsquo;s wonders.
 
 Snapshot! (Via Paparazzi!)</description>
@@ -661,10 +661,10 @@ Snapshot! (Via Paparazzi!)</description>
     
     <item>
       <title>Siegel disk wallpaper</title>
-      <link>/2009/07/siegel-disk-wallpaper.html/</link>
+      <link>https://mostlymaths.net/2009/07/siegel-disk-wallpaper.html/</link>
       <pubDate>Fri, 03 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/siegel-disk-wallpaper.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/siegel-disk-wallpaper.html/</guid>
       <description>As I already did with Douady Rabbits, here is another dynamical plane, this time corresponding to a Siegel disk in an entire transcendental family in a parameter corresponding to a polynomial-like region.
 
 Siegel disk in an ETF, available below as wallpaper
@@ -676,10 +676,10 @@ If you liked it, or have whatever else to say please leave a comment, digg, stum
     
     <item>
       <title>Mathematical elections</title>
-      <link>/2009/07/mathematical-elections.html/</link>
+      <link>https://mostlymaths.net/2009/07/mathematical-elections.html/</link>
       <pubDate>Wed, 01 Jul 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/07/mathematical-elections.html/</guid>
+      <guid>https://mostlymaths.net/2009/07/mathematical-elections.html/</guid>
       <description>Image from Flickr
 Arrow&amp;rsquo;s impossibility theorem and related results
 Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe political parties), with more than 3 items. Let&amp;rsquo;s call transitive preference a way to sort all these elements, with draws possible. It&amp;rsquo;s just a funny name for a vote, in the more general sense as we can split our vote (Let A have 0.5, B 0.25 and C 0.25 of our vote).</description>
@@ -687,29 +687,29 @@ Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe pol
     
     <item>
       <title>Lisp raytracing, again</title>
-      <link>/2009/06/lisp-raytracing-again.html/</link>
+      <link>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</link>
       <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/06/lisp-raytracing-again.html/</guid>
+      <guid>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</guid>
       <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
     </item>
     
     <item>
       <title>Levelling up</title>
-      <link>/2009/06/levelling-up.html/</link>
+      <link>https://mostlymaths.net/2009/06/levelling-up.html/</link>
       <pubDate>Sat, 13 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/06/levelling-up.html/</guid>
+      <guid>https://mostlymaths.net/2009/06/levelling-up.html/</guid>
       <description>Sometimes I feel like a character from a RPG (or NetHack), where you have a certain level and experience, and as you advance killing monsters, your experience points go up, your level eventually rises and your enemies turn harder.
 I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesis) is more or less like this&amp;hellip; Enemies appear, you overcome them, and as you advance, they get stronger, bigger and thicker.</description>
     </item>
     
     <item>
       <title>How to get a local proxy</title>
-      <link>/2009/05/local-proxy.html/</link>
+      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
       <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/05/local-proxy.html/</guid>
+      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
       <description>Setting a local proxy through a remote machine
 To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
  ssh -D 42 YourRemoteMachineName
@@ -718,20 +718,20 @@ To set up a local proxy using some computer in another network (in my case, my o
     
     <item>
       <title>Easy paperback book binding how-to</title>
-      <link>/2009/04/easy-paperback-book-binding-how-to.html/</link>
+      <link>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</link>
       <pubDate>Thu, 09 Apr 2009 15:29:00 +0200</pubDate>
       
-      <guid>/2009/04/easy-paperback-book-binding-how-to.html/</guid>
+      <guid>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
 Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
     
     <item>
       <title>Big fonts in LaTeX</title>
-      <link>/2009/03/big-fonts-in-latex.html/</link>
+      <link>https://mostlymaths.net/2009/03/big-fonts-in-latex.html/</link>
       <pubDate>Mon, 02 Mar 2009 14:52:00 +0100</pubDate>
       
-      <guid>/2009/03/big-fonts-in-latex.html/</guid>
+      <guid>https://mostlymaths.net/2009/03/big-fonts-in-latex.html/</guid>
       <description>Get arbitrary size fonts in LaTeX You have probably wondered how to get really big fonts in titles, or anywhere in a LaTeX document.
 \usepackage{fix-cm} % Allows for Computer Modern fonts of arbitrary sizes
 &amp;hellip;
@@ -742,10 +742,10 @@ You are done. Easy, wasn&amp;rsquo;t it? You may also be interested in ParseList
     
     <item>
       <title>Douady rabbit wallpaper</title>
-      <link>/2009/03/douady-rabbit.html/</link>
+      <link>https://mostlymaths.net/2009/03/douady-rabbit.html/</link>
       <pubDate>Sun, 01 Mar 2009 13:00:00 +0100</pubDate>
       
-      <guid>/2009/03/douady-rabbit.html/</guid>
+      <guid>https://mostlymaths.net/2009/03/douady-rabbit.html/</guid>
       <description>I have been experimenting with exponential-power potentials in my fractal images as of late, and by far the best results have been these. You can download it as a desktop wallpaper, hope you enjoy it. This Douady rabbit appears as a capture zone for a critical value in an exponential family.
 
 Douady rabbit in an exponential family, available below as wallpaper
@@ -755,56 +755,56 @@ Douady rabbit for desktop background 1024x768</description>
     
     <item>
       <title>Sightseeing at Carmona (Sevilla)</title>
-      <link>/2009/02/sightseeing-at-carmona-sevilla.html/</link>
+      <link>https://mostlymaths.net/2009/02/sightseeing-at-carmona-sevilla.html/</link>
       <pubDate>Mon, 09 Feb 2009 15:39:00 +0100</pubDate>
       
-      <guid>/2009/02/sightseeing-at-carmona-sevilla.html/</guid>
+      <guid>https://mostlymaths.net/2009/02/sightseeing-at-carmona-sevilla.html/</guid>
       <description>The first day, on our way to the Parador at Carmona (Sevilla, Spain) this is what we saw.</description>
     </item>
     
     <item>
       <title>How to create LaTeX booklets</title>
-      <link>/2008/09/latex-booklets.html/</link>
+      <link>https://mostlymaths.net/2008/09/latex-booklets.html/</link>
       <pubDate>Thu, 18 Sep 2008 18:31:00 +0200</pubDate>
       
-      <guid>/2008/09/latex-booklets.html/</guid>
+      <guid>https://mostlymaths.net/2008/09/latex-booklets.html/</guid>
       <description>The easiest way to print a booklet out of any PDF If you are printing a lot of&amp;hellip; well, anything, sure you would love to make booklets out of what you print. If you happen to be a mathematician, you sure are printing lots of papers with more than 20 pages, which turn to 10 unmanageable pages when double-sided. But making a booklet allows you to turn them to just a little folded thing that you can read easier.</description>
     </item>
     
     <item>
       <title>My office</title>
-      <link>/2008/01/my-office.html/</link>
+      <link>https://mostlymaths.net/2008/01/my-office.html/</link>
       <pubDate>Fri, 04 Jan 2008 13:32:00 +0100</pubDate>
       
-      <guid>/2008/01/my-office.html/</guid>
+      <guid>https://mostlymaths.net/2008/01/my-office.html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Merry Christmas</title>
-      <link>/2007/12/merry-christmas.html/</link>
+      <link>https://mostlymaths.net/2007/12/merry-christmas.html/</link>
       <pubDate>Tue, 25 Dec 2007 10:21:00 +0100</pubDate>
       
-      <guid>/2007/12/merry-christmas.html/</guid>
+      <guid>https://mostlymaths.net/2007/12/merry-christmas.html/</guid>
       <description>Two context-free grammars for a Merry Christmas. Rendered with Context Free</description>
     </item>
     
     <item>
       <title>Fall School</title>
-      <link>/2007/11/fall-school.html/</link>
+      <link>https://mostlymaths.net/2007/11/fall-school.html/</link>
       <pubDate>Tue, 27 Nov 2007 15:55:00 +0100</pubDate>
       
-      <guid>/2007/11/fall-school.html/</guid>
+      <guid>https://mostlymaths.net/2007/11/fall-school.html/</guid>
       <description>From 5 November to 9 November took place the (second) Fall School in Holomorphic Dynamics. Three fine speakers came (Walter Bergweiler, Agnieszka Badenska and Kari Astala), each one giving a course about a different topic in 3 sessions of one hour and a half. The only course I completed was the one Walter was giving, as it was the most interesting for me.
 I talked on monday afternoon, but my talk was a mess.</description>
     </item>
     
     <item>
       <title>Life goes on...</title>
-      <link>/2005/12/life-goes-on.html/</link>
+      <link>https://mostlymaths.net/2005/12/life-goes-on.html/</link>
       <pubDate>Wed, 21 Dec 2005 22:36:00 +0100</pubDate>
       
-      <guid>/2005/12/life-goes-on.html/</guid>
+      <guid>https://mostlymaths.net/2005/12/life-goes-on.html/</guid>
       <description>La beguda de Matemàtica Aplicada
 No preguntis perquè (no, a mi no m&amp;rsquo;agrada) XD. No m&amp;rsquo;han donat la beca de la Generalitat, a veure quan surti la del Ministeri si hi ha moltes renúncies per passar d&amp;rsquo;una a l&amp;rsquo;altra i colo. A part d&amp;rsquo;això&amp;hellip; D&amp;rsquo;aqui res acabo Mecànica Analítica, no trobaré a faltar el llibre no. Dissabte començo a fer treballs com un ase, de moment em prendré no tenir beca com que cal demostrar que puc fer coses (que en teoria ja ho saben, encara que no es noti gaire) així que penso fer tres treballs ben bons (almenys ara).</description>
     </item>

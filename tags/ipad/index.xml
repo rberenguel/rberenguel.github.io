@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iPad on mostlymaths.net</title>
-    <link>/tags/ipad/</link>
+    <link>https://mostlymaths.net/tags/ipad/</link>
     <description>Recent content in iPad on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 15:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2018: Year in Review</title>
-      <link>/2019/01/2018-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
-      <guid>/2019/01/2018-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2017: Year in Review</title>
-      <link>/2018/01/2017-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>/2018/01/2017-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>Want to play? Get a MFi controller for Christmas</title>
-      <link>/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</link>
+      <link>https://mostlymaths.net/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</link>
       <pubDate>Sun, 19 Nov 2017 17:42:00 +0100</pubDate>
       
-      <guid>/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</guid>
+      <guid>https://mostlymaths.net/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</guid>
       <description>It would probably be an understatement to say I&amp;rsquo;m not a gamer. Last console I got was a Game Boy, 22 years ago (IIRC). Never got a gaming PC. I have 4 games on my Mac, and one is ASCII based. But my main source of mindless leisure for the past 7 years, aside from reading, has been playing with some iDevice. From an iPod Touch back then to my current iPhone and iPad Pro, playing, for me, has been Apple.</description>
     </item>
     
     <item>
       <title>Using QGIS to create a custom map</title>
-      <link>/2015/06/using-qgis-to-create-custom-map.html/</link>
+      <link>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>/2015/06/using-qgis-to-create-custom-map.html/</guid>
+      <guid>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</guid>
       <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     
     <item>
       <title>Editor Magic: emacs, vim, acme and the return key</title>
-      <link>/2012/09/editor-magic-emacs-vim-acme-and-return.html/</link>
+      <link>https://mostlymaths.net/2012/09/editor-magic-emacs-vim-acme-and-return.html/</link>
       <pubDate>Sun, 23 Sep 2012 11:02:00 +0200</pubDate>
       
-      <guid>/2012/09/editor-magic-emacs-vim-acme-and-return.html/</guid>
+      <guid>https://mostlymaths.net/2012/09/editor-magic-emacs-vim-acme-and-return.html/</guid>
       <description>Glenda, the Plan 9 bunny. Image copyrighted by Lucent Technologies, hosted by Wikimedia Commons and posted here for information purposes
 A few months ago I wrote about how I&amp;rsquo;m using vim in my ipad. You know, I&amp;rsquo;m an emacs guy, just started writing my own (useful) stuff to improve it. Recently I finished gnusnotes.el, a package which allows you to easily add notes to emails. Of course, before this I had already written emacs code, just that it was only for me.</description>
     </item>
     
     <item>
       <title>Learning to use vim in my iPad (even if I&#39;m an emacs geek)</title>
-      <link>/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
+      <link>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
-      <guid>/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
+      <guid>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
       <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&amp;rsquo; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
     </item>
     
     <item>
       <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
-      <link>/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
       <description>Taken from Flickr
   In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
 This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
@@ -80,20 +80,20 @@ This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to shar
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Anki and Language Learning: The Spaced Repetition System</title>
-      <link>/2011/05/anki-and-language-learning-spaced.html/</link>
+      <link>https://mostlymaths.net/2011/05/anki-and-language-learning-spaced.html/</link>
       <pubDate>Sat, 28 May 2011 18:50:00 +0200</pubDate>
       
-      <guid>/2011/05/anki-and-language-learning-spaced.html/</guid>
+      <guid>https://mostlymaths.net/2011/05/anki-and-language-learning-spaced.html/</guid>
       <description>From my cheap dictionary
 I first heard of spaced repetition software around 5 or 6 years ago, while browsing around the net. Read about it, found it unappealing and moved on. You know, there are times when you learn about something and dismiss it as not necessary&amp;hellip; and after a while you are lead into it again to find it is wonderful. This is one of such instances.
 I have only written two highly visited posts about languages: The Language Switch and How to Train Your Brain to Flip to a New Language (in Bitesize Irish Gaelic, it also appeared in Hacker Monthly, April 2011) and a lot of the commenters suggested me using Anki, Mnemosyne or Supermemo.</description>

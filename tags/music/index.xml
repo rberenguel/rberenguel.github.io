@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on mostlymaths.net</title>
-    <link>/tags/music/</link>
+    <link>https://mostlymaths.net/tags/music/</link>
     <description>Recent content in Music on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2018 15:31:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2017: Year in Review</title>
-      <link>/2018/01/2017-year-in-review.html/</link>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
-      <guid>/2018/01/2017-year-in-review.html/</guid>
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
       <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
 Work Everything work related has gone up. More work, better work, more interesting work.</description>
     </item>
     
     <item>
       <title>Get into the Flow: Music Meditation</title>
-      <link>/2010/12/give-yourself-to-music.html/</link>
+      <link>https://mostlymaths.net/2010/12/give-yourself-to-music.html/</link>
       <pubDate>Thu, 23 Dec 2010 13:15:00 +0100</pubDate>
       
-      <guid>/2010/12/give-yourself-to-music.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/give-yourself-to-music.html/</guid>
       <description>From morguefile
 It&amp;rsquo;s Friday afternoon after a long day and a long week. You board your train and are lucky to find a seat, soon it is crowded with people standing and chatting. You feel tired after the day, and think just about taking a late afternoon nap upon coming home.
 But you plug your earphones, turn up the volume just until you can&amp;rsquo;t hear the train sounds and you are in another place.</description>
@@ -34,20 +34,20 @@ But you plug your earphones, turn up the volume just until you can&amp;rsquo;t h
     
     <item>
       <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
-      <link>/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
-      <guid>/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
       <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
 Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
     </item>
     
     <item>
       <title>More #SongsInCode</title>
-      <link>/2009/11/more-songsincode.html/</link>
+      <link>https://mostlymaths.net/2009/11/more-songsincode.html/</link>
       <pubDate>Mon, 23 Nov 2009 00:01:00 +0100</pubDate>
       
-      <guid>/2009/11/more-songsincode.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
  KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
@@ -55,10 +55,10 @@ Duran Duran - if(!</description>
     
     <item>
       <title>Songs In Code</title>
-      <link>/2009/10/songs-in-code.html/</link>
+      <link>https://mostlymaths.net/2009/10/songs-in-code.html/</link>
       <pubDate>Sat, 17 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/songs-in-code.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/songs-in-code.html/</guid>
       <description>A few days ago I found a page via StumbleUpon, and caught my inner geek. Songs in code, a trend in twitter a few days ago. Other examples here, and here (twitter). Below my own creations.
  (setq My &amp;lsquo;(sleeping)) - Roxette
 do{love( );}while(TRUE); - The Beatles
@@ -71,20 +71,20 @@ int love=0; if(friday){love=1;} - The Cure</description>
     
     <item>
       <title>MP3 to iPod audiobook: personal reminder</title>
-      <link>/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</link>
+      <link>https://mostlymaths.net/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</link>
       <pubDate>Tue, 05 May 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</guid>
+      <guid>https://mostlymaths.net/2009/05/mp3-to-ipod-audiobook-personal-reminder.html/</guid>
       <description>New: The previous version is rubbish! Just add your MP3 encoded files to iTunes library, select the entire album, choose get info from right-clicking it, go to the last tab (options) and select: Part of a compilation, remember position, skip when shuffling and in media type, Audibook. And you are done in a moment.
 Time-wasting version by Google: This is just to remind myself how to do this simple thing. I got the information from here (via Google).</description>
     </item>
     
     <item>
       <title>Weekend, buy</title>
-      <link>/2008/03/weekend-buy.html/</link>
+      <link>https://mostlymaths.net/2008/03/weekend-buy.html/</link>
       <pubDate>Sun, 02 Mar 2008 19:51:00 +0100</pubDate>
       
-      <guid>/2008/03/weekend-buy.html/</guid>
+      <guid>https://mostlymaths.net/2008/03/weekend-buy.html/</guid>
       <description>This weekend I bought three books:
 Bill Evans: How My Heart Sings (Bill Evans: Vida y Obra), Martian Chronicles, by Ray Bradbury (Crónicas Marcianas) and The Lebanese Cookbook (a spanish edition). I have already finished Bradbury&amp;rsquo;s, I enjoyed it a lot. A masterpiece in science-fiction. In one of its short stories there is a poem by Lord Byron:
  So we&amp;rsquo;ll go no more a roving
@@ -93,10 +93,10 @@ so late into the night</description>
     
     <item>
       <title>Meat Loaf (and Jim Steinman)</title>
-      <link>/2008/02/meat-loaf-and-jim-steinman.html/</link>
+      <link>https://mostlymaths.net/2008/02/meat-loaf-and-jim-steinman.html/</link>
       <pubDate>Thu, 28 Feb 2008 19:32:00 +0100</pubDate>
       
-      <guid>/2008/02/meat-loaf-and-jim-steinman.html/</guid>
+      <guid>https://mostlymaths.net/2008/02/meat-loaf-and-jim-steinman.html/</guid>
       <description>A few years ago, I was looking after some song lyrics (don&amp;rsquo;t remember exactly which song they belong to), and went into some of these web&amp;rsquo;s that give you &amp;ldquo;you may also like this&amp;rdquo; links. Well, I looked into the lyrics of &amp;ldquo;For Crying Out Loud&amp;rdquo;, by Meat Loaf (who I hadn&amp;rsquo;t heard about, ever). This are the lyrics, and as almost all Steinman&amp;rsquo;s-Meat Loaf songs, they are quite long. Just read the first few verses if you don&amp;rsquo;t feel like reading:</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QGIS on mostlymaths.net</title>
-    <link>/tags/qgis/</link>
+    <link>https://mostlymaths.net/tags/qgis/</link>
     <description>Recent content in QGIS on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Jun 2015 20:12:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using QGIS to create a custom map</title>
-      <link>/2015/06/using-qgis-to-create-custom-map.html/</link>
+      <link>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</link>
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
-      <guid>/2015/06/using-qgis-to-create-custom-map.html/</guid>
+      <guid>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</guid>
       <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     

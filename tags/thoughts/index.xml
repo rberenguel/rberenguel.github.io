@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on mostlymaths.net</title>
-    <link>/tags/thoughts/</link>
+    <link>https://mostlymaths.net/tags/thoughts/</link>
     <description>Recent content in Thoughts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Mar 2015 12:30:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Picking up Backgammon</title>
-      <link>/2015/03/picking-up-backgammon.html/</link>
+      <link>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</link>
       <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
       
-      <guid>/2015/03/picking-up-backgammon.html/</guid>
+      <guid>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</guid>
       <description>The links to Amazon and The Book Depository are affiliate links. If you purchase like 50 copies I may afford a coffee :D
 
 From Flickr
@@ -25,68 +25,68 @@ It all started after reading If you can’t choose, pick at random at Aeon.co. I
     
     <item>
       <title>Language Detection in Python with NLTK Stopwords</title>
-      <link>/2012/06/language-detection-in-python-with-nltk.html/</link>
+      <link>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</link>
       <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
       
-      <guid>/2012/06/language-detection-in-python-with-nltk.html/</guid>
+      <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
       <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
     </item>
     
     <item>
       <title>It&#39;s Not Only the Politicians: This country is completely fucked up</title>
-      <link>/2012/06/its-not-only-politicians-this-country.html/</link>
+      <link>https://mostlymaths.net/2012/06/its-not-only-politicians-this-country.html/</link>
       <pubDate>Mon, 04 Jun 2012 21:15:00 +0200</pubDate>
       
-      <guid>/2012/06/its-not-only-politicians-this-country.html/</guid>
+      <guid>https://mostlymaths.net/2012/06/its-not-only-politicians-this-country.html/</guid>
       <description>Beware, in what follows I rant. All figures come from Wikipedia or similar and are expressed with many zeroes and also in written form to make clear what a billion may be.
 If you are a regular reader of mostlymaths.net, you&amp;rsquo;ll be aware that I don&amp;rsquo;t write a lot about current subjects. In fact, I actively try not to write about what&amp;rsquo;s going on at the moment, one notable exception may be a post I wrote about Mesut Özil&amp;rsquo;s stellar debut in the 2010 World Cup.</description>
     </item>
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
-      <link>/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <link>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
       <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
       
-      <guid>/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>Some of the links in this post are affiliate links. As usual, I only recommend what I&amp;rsquo;ve used and like
 Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode.</description>
     </item>
     
     <item>
       <title>Again and Again: Playing Go</title>
-      <link>/2011/11/again-and-again-playing-go.html/</link>
+      <link>https://mostlymaths.net/2011/11/again-and-again-playing-go.html/</link>
       <pubDate>Wed, 23 Nov 2011 22:28:00 +0100</pubDate>
       
-      <guid>/2011/11/again-and-again-playing-go.html/</guid>
+      <guid>https://mostlymaths.net/2011/11/again-and-again-playing-go.html/</guid>
       <description>I’ve been playing the game of Go (also known as weiqi or baduk) on and off for almost 10 years. In case you don’t know, Go is a board game with very old roots, that can be traced back to at least 2500 years ago, probably a lot more. Very popular in Japan (known as Go or Igo), Korea (baduk) and China (weiqi), it has been slowly spreading among the west during the last century.</description>
     </item>
     
     <item>
       <title>The Mental Drawer: Never miss an idea again</title>
-      <link>/2011/09/mental-drawer-never-miss-idea-again.html/</link>
+      <link>https://mostlymaths.net/2011/09/mental-drawer-never-miss-idea-again.html/</link>
       <pubDate>Wed, 21 Sep 2011 13:45:00 +0200</pubDate>
       
-      <guid>/2011/09/mental-drawer-never-miss-idea-again.html/</guid>
+      <guid>https://mostlymaths.net/2011/09/mental-drawer-never-miss-idea-again.html/</guid>
       <description>This was posted to my mail newsletter a few months ago. Subscribe now if you want to receive this kind of content to your inbox. I won&amp;rsquo;t spam you, promise.
 When do you have your best ideas? If you are anything like me, I have my best ideas when I can&amp;rsquo;t act upon them. While I&amp;rsquo;m falling asleep or while I&amp;rsquo;m taking a shower. And a lot of them get lost forever, I always think I&amp;rsquo;ll remember it next morning, something that never happens.</description>
     </item>
     
     <item>
       <title>Doing (Really) Nothing</title>
-      <link>/2011/04/doing-really-nothing.html/</link>
+      <link>https://mostlymaths.net/2011/04/doing-really-nothing.html/</link>
       <pubDate>Mon, 11 Apr 2011 09:45:00 +0200</pubDate>
       
-      <guid>/2011/04/doing-really-nothing.html/</guid>
+      <guid>https://mostlymaths.net/2011/04/doing-really-nothing.html/</guid>
       <description>Yesterday I did nothing. Absolutely, really nothing.
 And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
     </item>
     
     <item>
       <title>February, March and April Challenge: Language Learning Applied to Gaelic</title>
-      <link>/2011/02/february-march-and-april-challenge.html/</link>
+      <link>https://mostlymaths.net/2011/02/february-march-and-april-challenge.html/</link>
       <pubDate>Sat, 12 Feb 2011 16:15:00 +0100</pubDate>
       
-      <guid>/2011/02/february-march-and-april-challenge.html/</guid>
+      <guid>https://mostlymaths.net/2011/02/february-march-and-april-challenge.html/</guid>
       <description>From my cheap dictionary
 As a byproduct of The Language Switch, I was invited to send a guest post to Bitesize Irish Gaelic, a wonderful site where you can learn Irish gaelic online.
 Last year I decided to learn Icelandic because we were going to Iceland, this year I was learning Gaelic&amp;hellip; Thus we decided that Ireland might be a good place to visit this summer on holidays, encouraging me to learn better this new language.</description>
@@ -94,30 +94,30 @@ Last year I decided to learn Icelandic because we were going to Iceland, this ye
     
     <item>
       <title>Counter-examples, Converging Sequences and Giving Immediate Answers</title>
-      <link>/2011/01/counter-examples-converging-sequences.html/</link>
+      <link>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</link>
       <pubDate>Tue, 11 Jan 2011 21:50:00 +0100</pubDate>
       
-      <guid>/2011/01/counter-examples-converging-sequences.html/</guid>
+      <guid>https://mostlymaths.net/2011/01/counter-examples-converging-sequences.html/</guid>
       <description>Next week is the final exam of the course I&amp;rsquo;m giving, Numerical Analysis. Classes finished before Christmas, and this week is for students questions. I had one of these sessions this morning, when a pair of students came with a few questions related to the problems I solved on the blackboard.
 All were quick to solve, until one simple question arose, concerning a trivial problem in Calculus 1 (or Analysis 1, as we name it here).</description>
     </item>
     
     <item>
       <title>Don&#39;t Wait for New Year to Act on Your Resolutions</title>
-      <link>/2010/12/dont-wait-for-new-year-to-act-on-your.html/</link>
+      <link>https://mostlymaths.net/2010/12/dont-wait-for-new-year-to-act-on-your.html/</link>
       <pubDate>Tue, 28 Dec 2010 23:25:00 +0100</pubDate>
       
-      <guid>/2010/12/dont-wait-for-new-year-to-act-on-your.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/dont-wait-for-new-year-to-act-on-your.html/</guid>
       <description>During this week you will hear and read a lot about New Year&amp;rsquo;s resolutions. Questions like what do you want to change in your life for the next year and what good habits do you want to build next year are assumed to be always in your mind now. And they should, but not just now.
 New Year is only a psychological landmark, and a very bad one. Something like 70% of those good intentions you had while the previous year was ending fade into oblivion before February 1st.</description>
     </item>
     
     <item>
       <title>Get into the Flow: Music Meditation</title>
-      <link>/2010/12/give-yourself-to-music.html/</link>
+      <link>https://mostlymaths.net/2010/12/give-yourself-to-music.html/</link>
       <pubDate>Thu, 23 Dec 2010 13:15:00 +0100</pubDate>
       
-      <guid>/2010/12/give-yourself-to-music.html/</guid>
+      <guid>https://mostlymaths.net/2010/12/give-yourself-to-music.html/</guid>
       <description>From morguefile
 It&amp;rsquo;s Friday afternoon after a long day and a long week. You board your train and are lucky to find a seat, soon it is crowded with people standing and chatting. You feel tired after the day, and think just about taking a late afternoon nap upon coming home.
 But you plug your earphones, turn up the volume just until you can&amp;rsquo;t hear the train sounds and you are in another place.</description>
@@ -125,10 +125,10 @@ But you plug your earphones, turn up the volume just until you can&amp;rsquo;t h
     
     <item>
       <title>What it Takes to Be a Winner? Embracing Failure</title>
-      <link>/2010/10/what-it-takes-to-be-winner-embracing.html/</link>
+      <link>https://mostlymaths.net/2010/10/what-it-takes-to-be-winner-embracing.html/</link>
       <pubDate>Sun, 24 Oct 2010 11:00:00 +0200</pubDate>
       
-      <guid>/2010/10/what-it-takes-to-be-winner-embracing.html/</guid>
+      <guid>https://mostlymaths.net/2010/10/what-it-takes-to-be-winner-embracing.html/</guid>
       <description>From Yassin Hassan@Flickr
 Don&amp;rsquo;t forget to subscribe to my oddly newsletter!
  Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
@@ -139,10 +139,10 @@ The topic for this post has been jumping on and off from my mind for a few weeks
     
     <item>
       <title>Cutting on Distractions</title>
-      <link>/2010/10/cutting-on-distractions.html/</link>
+      <link>https://mostlymaths.net/2010/10/cutting-on-distractions.html/</link>
       <pubDate>Fri, 08 Oct 2010 05:00:00 +0200</pubDate>
       
-      <guid>/2010/10/cutting-on-distractions.html/</guid>
+      <guid>https://mostlymaths.net/2010/10/cutting-on-distractions.html/</guid>
       <description>Hey! Look! A squirrel!
 GillesGonthier@Flickr
 A few weeks ago I realised I was procrastinating too much. I tend to work in cycles, and it looked like my productive cycle was over and my procrastinator half had just kicked in the worse possible moment: lectures had just begun.
@@ -151,10 +151,10 @@ It looked like there was no solution. My timeboxing strategies went nowhere, wil
     
     <item>
       <title>Procrastinating? Find the Next Step Up</title>
-      <link>/2010/10/procrastinating-find-next-step-up.html/</link>
+      <link>https://mostlymaths.net/2010/10/procrastinating-find-next-step-up.html/</link>
       <pubDate>Tue, 05 Oct 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/10/procrastinating-find-next-step-up.html/</guid>
+      <guid>https://mostlymaths.net/2010/10/procrastinating-find-next-step-up.html/</guid>
       <description>Stairs to Macchu Pichu,
 courtesy of Shanidar
 I just realised why I procrastinate in some tasks. And it may also be why you do, read on! It is not because they are boring, hard or repetitive. They may be. Hard tasks are a measure of your strength, boring and repetitive tasks, of your stamina. No, the problem is another.
@@ -163,56 +163,56 @@ Some projects are just tombstones. There are certain huge projects, with hardnes
     
     <item>
       <title>Frame Switching and What Not</title>
-      <link>/2010/09/frame-switching-and-what-not.html/</link>
+      <link>https://mostlymaths.net/2010/09/frame-switching-and-what-not.html/</link>
       <pubDate>Thu, 30 Sep 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/09/frame-switching-and-what-not.html/</guid>
+      <guid>https://mostlymaths.net/2010/09/frame-switching-and-what-not.html/</guid>
       <description>Two weeks ago it was the beginning of this years lectures. Currently I&amp;rsquo;m solving problems in the blackboard, 2 hours per week and take care of one computer lab (programming in C, but they have already done a C programming course and another course of numerical computations with C), all for our Numerical Analysis course (7th semester). This is the same schedule I had 3 years ago, also last year I had one computer lab each semester.</description>
     </item>
     
     <item>
       <title>Winning Against Your Reading List</title>
-      <link>/2010/08/winning-against-your-reading-list.html/</link>
+      <link>https://mostlymaths.net/2010/08/winning-against-your-reading-list.html/</link>
       <pubDate>Sun, 29 Aug 2010 19:00:00 +0200</pubDate>
       
-      <guid>/2010/08/winning-against-your-reading-list.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/winning-against-your-reading-list.html/</guid>
       <description>A nice warm Sunday afternoon, I wanted something cold to drink and a good book to read in my garden. I glanced at my pile of books beside the door, the books I grab to read in the train to my office, a pile of 8 books. Then I remembered I had a few books in the library I wanted to read, another pile, 10 books. As I went down and put them all over the table, I realised I had a few books more in the computer room, 3 books.</description>
     </item>
     
     <item>
       <title>Which programming language should I learn next?</title>
-      <link>/2010/08/which-programming-language-should-i.html/</link>
+      <link>https://mostlymaths.net/2010/08/which-programming-language-should-i.html/</link>
       <pubDate>Tue, 17 Aug 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/08/which-programming-language-should-i.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/which-programming-language-should-i.html/</guid>
       <description>I have a problem: I know quite a lot different programming languages (you can read my list of the best 9 books I have read about programming), but I am proficient only in two. I&amp;rsquo;d love to choose a few to concentrate and build my skills up, but I don&amp;rsquo;t know which. Read on for background and possible candidates.
 Since I discovered there were different programming languages, I&amp;rsquo;ve liked learning different ones.</description>
     </item>
     
     <item>
       <title>Linux is a time killer</title>
-      <link>/2010/08/linux-is-time-killer.html/</link>
+      <link>https://mostlymaths.net/2010/08/linux-is-time-killer.html/</link>
       <pubDate>Tue, 10 Aug 2010 17:00:00 +0200</pubDate>
       
-      <guid>/2010/08/linux-is-time-killer.html/</guid>
+      <guid>https://mostlymaths.net/2010/08/linux-is-time-killer.html/</guid>
       <description>Preface: I have been using Linux since around 1998, when I installed Debian from scratch in my old Pentium II. I am more end-user than power user, but the computer I use most often (my netbook) has Linux in it by default. Also, my office computer is a Linux computer. And I am writing this in my MacBook. Which is not Linux, but at least it is Unix. What comes now is a personal rant, after a fight with my netbook.</description>
     </item>
     
     <item>
       <title>Vladimir Arnol&#39;d one of the greatest mathematicians of 20th century</title>
-      <link>/2010/06/vladimir-arnold-one-of-greatest.html/</link>
+      <link>https://mostlymaths.net/2010/06/vladimir-arnold-one-of-greatest.html/</link>
       <pubDate>Mon, 14 Jun 2010 18:00:00 +0200</pubDate>
       
-      <guid>/2010/06/vladimir-arnold-one-of-greatest.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/vladimir-arnold-one-of-greatest.html/</guid>
       <description>Most of you may not know who Vladimir Arnold (Владимир Арнольд, also written as Vladimir Arnol&amp;rsquo;d) was, but for me his death on 3rd June 2010,was some kind of landmark. I own two books by him (Mathematical aspects of classical and celestial mechanics [1] and Mathematical methods of classical mechanics [2]), and are quite high in my list of most checked books, at least when I was starting my journey into the realm of dynamical systems.</description>
     </item>
     
     <item>
       <title>World Cup 2010: promising young player Mesut Özil</title>
-      <link>/2010/06/world-cup-2010-promising-young-player.html/</link>
+      <link>https://mostlymaths.net/2010/06/world-cup-2010-promising-young-player.html/</link>
       <pubDate>Sun, 13 Jun 2010 21:15:00 +0200</pubDate>
       
-      <guid>/2010/06/world-cup-2010-promising-young-player.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/world-cup-2010-promising-young-player.html/</guid>
       <description>Mesut Özil
 From Wikipedia
 UPDATE: Added video of hi great goal against Ghana.
@@ -222,40 +222,40 @@ And now I&amp;rsquo;m watching what I expected to be a somewhat dull game: Germa
     
     <item>
       <title>On a productivity down</title>
-      <link>/2010/06/on-productivity-down.html/</link>
+      <link>https://mostlymaths.net/2010/06/on-productivity-down.html/</link>
       <pubDate>Sun, 06 Jun 2010 12:30:00 +0200</pubDate>
       
-      <guid>/2010/06/on-productivity-down.html/</guid>
+      <guid>https://mostlymaths.net/2010/06/on-productivity-down.html/</guid>
       <description>A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my life bookmarks for these two weeks.
 Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been thinking about them these days.</description>
     </item>
     
     <item>
       <title>Life bookmarking and why it could change how you learn</title>
-      <link>/2010/05/life-bookmarking.html/</link>
+      <link>https://mostlymaths.net/2010/05/life-bookmarking.html/</link>
       <pubDate>Tue, 25 May 2010 14:00:00 +0200</pubDate>
       
-      <guid>/2010/05/life-bookmarking.html/</guid>
+      <guid>https://mostlymaths.net/2010/05/life-bookmarking.html/</guid>
       <description>Life logging, journaling&amp;hellip; what now? The idea behind this post grew from an insight I had, two months ago. I realised that I was bookmarking a lot of web pages because I liked what they explained and wanted to remember what I read. More precisely, I wanted to remember that I had read that. At that time, this seemed the more natural way to approach this problem.
 A month later, more or less, I landed in this New York times article: The Data-Driven Life.</description>
     </item>
     
     <item>
       <title>8 reader reasons for re-inventing the wheel as a programmer</title>
-      <link>/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</link>
+      <link>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</link>
       <pubDate>Sat, 10 Apr 2010 14:00:00 +0200</pubDate>
       
-      <guid>/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
+      <guid>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
       <description>As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
     </item>
     
     <item>
       <title>What the &#39;Broken Windows Theory&#39; has to say about productivity</title>
-      <link>/2010/04/what-broken-windows-theory-has-to-say.html/</link>
+      <link>https://mostlymaths.net/2010/04/what-broken-windows-theory-has-to-say.html/</link>
       <pubDate>Tue, 06 Apr 2010 00:01:00 +0200</pubDate>
       
-      <guid>/2010/04/what-broken-windows-theory-has-to-say.html/</guid>
+      <guid>https://mostlymaths.net/2010/04/what-broken-windows-theory-has-to-say.html/</guid>
       <description>The &amp;lsquo;broken windows theory&amp;rsquo; is a widely known theory, based on folks knowledge (which have been also tested in real life).
  Consider a building with a broken window. If this window does not get repaired, other windows can break (over time, or by vandalism). In the long run, someone may break into the building, becoming a squatter.
 Or a more usual situation. If some litter gets accumulated in a sidewalk or a lot, soon more litter will accumulate, until people start leaving whole bags of trash.</description>
@@ -263,40 +263,40 @@ Or a more usual situation. If some litter gets accumulated in a sidewalk or a lo
     
     <item>
       <title>8 reasons for re-inventing the wheel as a programmer</title>
-      <link>/2010/03/8-reasons-for-re-inventing-wheel-as.html/</link>
+      <link>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</link>
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
-      <guid>/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
       <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
     <item>
       <title>Backlog filling</title>
-      <link>/2010/03/backlog-filling.html/</link>
+      <link>https://mostlymaths.net/2010/03/backlog-filling.html/</link>
       <pubDate>Fri, 19 Mar 2010 13:30:00 +0100</pubDate>
       
-      <guid>/2010/03/backlog-filling.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/backlog-filling.html/</guid>
       <description>My backlog of things happening is quickly filling, faster than I can even keep track of it. Just a quick overview
 Summer trip to Iceland This summer we are going to Iceland for 17 days. It is some kind of tour-trip, where we have arranged accomodation and car rental and we just have to keep en route around the island to sleep where arranged each day. As an addition to this&amp;hellip;</description>
     </item>
     
     <item>
       <title>Sooner or later...</title>
-      <link>/2010/03/sooner-or-later.html/</link>
+      <link>https://mostlymaths.net/2010/03/sooner-or-later.html/</link>
       <pubDate>Wed, 17 Mar 2010 20:10:00 +0100</pubDate>
       
-      <guid>/2010/03/sooner-or-later.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/sooner-or-later.html/</guid>
       <description>It had to happen sooner or later. This blog has been open, with a somewhat regular publication in English since March 2008, more or less a year ago. Before that, it was more sporadic, and used to be in Catalan, just to output some ideas or share a picture with a friend.
 And the day had to come. To celebrate this approximate anniversary, I&amp;rsquo;m moving to my own domain and preparing a new look that will appear in about two weeks.</description>
     </item>
     
     <item>
       <title>Love thy tools to maximise your productivity</title>
-      <link>/2010/03/love-thy-tools.html/</link>
+      <link>https://mostlymaths.net/2010/03/love-thy-tools.html/</link>
       <pubDate>Fri, 12 Mar 2010 19:25:00 +0100</pubDate>
       
-      <guid>/2010/03/love-thy-tools.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/love-thy-tools.html/</guid>
       <description>It is a widely accepted theory that the use of tools determined the development of the human brain. Nowadays, using tools is thus a quite common endeavor everybody does.
 But ask a carpenter if he would use a jagged saw, or a draftsman a broken pencil. It is not only using the tools, but using the best tools.
 But what is for the best tools? Using the best possible tools is not enough: you need to love your tools.</description>
@@ -304,29 +304,29 @@ But what is for the best tools? Using the best possible tools is not enough: you
     
     <item>
       <title>Time management systems</title>
-      <link>/2010/03/time-management-systems.html/</link>
+      <link>https://mostlymaths.net/2010/03/time-management-systems.html/</link>
       <pubDate>Mon, 08 Mar 2010 13:10:00 +0100</pubDate>
       
-      <guid>/2010/03/time-management-systems.html/</guid>
+      <guid>https://mostlymaths.net/2010/03/time-management-systems.html/</guid>
       <description>The pleasure and pain of time management In this post I&amp;rsquo;ll review some time management systems to get the most out of your workday. Of course, keep in mind that you also should have rest time.
 Start strong Start your day doing some work for at least half an hour straight. You can do this at home, before leaving yo your office (if you usually spend at least 1h between getting up and leaving) or just on arriving to your office.</description>
     </item>
     
     <item>
       <title>CJuicer beats humans (and Unix&#39;s diff)</title>
-      <link>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
+      <link>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</link>
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
-      <guid>/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
+      <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
       <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
     </item>
     
     <item>
       <title>Image processing history: Lena</title>
-      <link>/2009/12/image-processing-history-lena.html/</link>
+      <link>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</link>
       <pubDate>Sat, 05 Dec 2009 22:00:00 +0100</pubDate>
       
-      <guid>/2009/12/image-processing-history-lena.html/</guid>
+      <guid>https://mostlymaths.net/2009/12/image-processing-history-lena.html/</guid>
       <description>Lena Söderberg
 I am working in my free time in an image processing related program, and this made me remember when I was taking a course in Signal Processing. One of the standard test images was the one above. Where does this historical image processing snippet come from?
 Turns out (wikipedia link) it is a standard folklore image, dating back to the seventies, when a bunch of electrical engineers needed an image satisfying certain signal problems (it is, indeed, an image with a lot of significative details, when compressing, denoising or whatever: the hat, the uniform colour distribution except for a few patches of different color&amp;hellip;).</description>
@@ -334,10 +334,10 @@ Turns out (wikipedia link) it is a standard folklore image, dating back to the s
     
     <item>
       <title>Copied programming assignments as cryptograms</title>
-      <link>/2009/11/copied-programming-assignments-as.html/</link>
+      <link>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</link>
       <pubDate>Wed, 11 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/copied-programming-assignments-as.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</guid>
       <description>Pieces of an ENIGMA machine, from Flickr
 Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&amp;rsquo;s mind. As a teacher, how do you detect this?
 From my point of view, there are fundamentally two different kinds of copy:</description>
@@ -345,10 +345,10 @@ From my point of view, there are fundamentally two different kinds of copy:</des
     
     <item>
       <title>Future in Mathematics</title>
-      <link>/2009/11/future-in-mathematics.html/</link>
+      <link>https://mostlymaths.net/2009/11/future-in-mathematics.html/</link>
       <pubDate>Sun, 01 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/future-in-mathematics.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/future-in-mathematics.html/</guid>
       <description>With Sketchbook Mobile
 The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo; or even &amp;ldquo;location&amp;rdquo; are quite fuzzy when in Mathematics. I think I don&amp;rsquo;t know any PhD student who knows what he will be doing in 3 years, what he will be working on (not what he will be researching, but working&amp;hellip;) or even where he will be.
  1-2 years of Master+Master thesis 2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
@@ -356,39 +356,39 @@ The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo
     
     <item>
       <title>Back from Denmark</title>
-      <link>/2009/10/back-from-denmark.html/</link>
+      <link>https://mostlymaths.net/2009/10/back-from-denmark.html/</link>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/10/back-from-denmark.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
       <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
     <item>
       <title>Stranded at Denmark...</title>
-      <link>/2009/10/stranded-at-denmark.html/</link>
+      <link>https://mostlymaths.net/2009/10/stranded-at-denmark.html/</link>
       <pubDate>Fri, 23 Oct 2009 01:00:00 +0200</pubDate>
       
-      <guid>/2009/10/stranded-at-denmark.html/</guid>
+      <guid>https://mostlymaths.net/2009/10/stranded-at-denmark.html/</guid>
       <description>Conference for 4 days in an old army place. Really nice, well kept and bought by the university. But away from everything, and everyone. And today my head hurts a lot&amp;hellip; Maybe I should go to sleep now (2332). Tomorrow I have a really tight schedule&amp;hellip; lot of work to do&amp;hellip; And I&amp;rsquo;m feeling tired.</description>
     </item>
     
     <item>
       <title>Calendars &amp; emacs</title>
-      <link>/2009/09/calendars-emacs.html/</link>
+      <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
       
-      <guid>/2009/09/calendars-emacs.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
 For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
       <title>Back to work</title>
-      <link>/2009/09/back-to-work.html/</link>
+      <link>https://mostlymaths.net/2009/09/back-to-work.html/</link>
       <pubDate>Tue, 01 Sep 2009 13:00:00 +0200</pubDate>
       
-      <guid>/2009/09/back-to-work.html/</guid>
+      <guid>https://mostlymaths.net/2009/09/back-to-work.html/</guid>
       <description>From flickr
 September is to months as Monday is to weekdays
 September is again here, like a new year in more than a sense. I have no new &amp;ldquo;New Year&amp;rsquo;s promises&amp;rdquo;, since the beginning of the year. In fact, most of the things I wanted to do are already done, on the way to be done or I gave up. Well, let&amp;rsquo;s summarize what I shall do these three months to end 2009</description>
@@ -396,20 +396,20 @@ September is again here, like a new year in more than a sense. I have no new &am
     
     <item>
       <title>Grain of sand</title>
-      <link>/2009/08/grain-of-sand.html/</link>
+      <link>https://mostlymaths.net/2009/08/grain-of-sand.html/</link>
       <pubDate>Fri, 07 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/grain-of-sand.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/grain-of-sand.html/</guid>
       <description>Taken from Flickr
 Sometimes I view mathematical knowledge as a desert. Full of sand, some pebbles, some rocks. You can get easily lost in this dry sea, but you can also find a place to stay and add. And now, I can say I have added my small grain of sand: An entire transcendental family with a persistent Siegel disc (link to the preprint version in ArXiV). My first article, now officially &amp;ldquo;Awaiting Editorial Assistant Processing&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Teleworking in August</title>
-      <link>/2009/08/teleworking-in-august.html/</link>
+      <link>https://mostlymaths.net/2009/08/teleworking-in-august.html/</link>
       <pubDate>Wed, 05 Aug 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/08/teleworking-in-august.html/</guid>
+      <guid>https://mostlymaths.net/2009/08/teleworking-in-august.html/</guid>
       <description>Lavaurs algorithm on course
 Like almost every year, August comes with a lot of pending To Do lists&amp;hellip; This year, it is choking full, mostly of work related issues, and some unknotted threads waiting to be finished. And in two and a half weeks I&amp;rsquo;ll head for Paris, and then my &amp;ldquo;vacation&amp;rdquo; is over.
 Yesterday I wasted my morning: bought my orange belt, set up the external monitor for my netbook, configured the printer, fotocopied two pages of a book and drank an horchata with a friend.</description>
@@ -417,10 +417,10 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
     
     <item>
       <title>Levelling up</title>
-      <link>/2009/06/levelling-up.html/</link>
+      <link>https://mostlymaths.net/2009/06/levelling-up.html/</link>
       <pubDate>Sat, 13 Jun 2009 11:00:00 +0200</pubDate>
       
-      <guid>/2009/06/levelling-up.html/</guid>
+      <guid>https://mostlymaths.net/2009/06/levelling-up.html/</guid>
       <description>Sometimes I feel like a character from a RPG (or NetHack), where you have a certain level and experience, and as you advance killing monsters, your experience points go up, your level eventually rises and your enemies turn harder.
 I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesis) is more or less like this&amp;hellip; Enemies appear, you overcome them, and as you advance, they get stronger, bigger and thicker.</description>
     </item>

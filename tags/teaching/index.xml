@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teaching on mostlymaths.net</title>
-    <link>/tags/teaching/</link>
+    <link>https://mostlymaths.net/tags/teaching/</link>
     <description>Recent content in Teaching on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Dec 2011 21:29:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
-      <link>/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
+      <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
-      <guid>/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
+      <guid>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</guid>
       <description>Taken from Flickr
   In case you have not realised it yet, I&amp;rsquo;m a pretty prolific reader. Online reading (and having an iPad) have slowed down the number of books I read in a given year, and I don&amp;rsquo;t go to the lengths of my girlfriend (who is about to reach her goal of reading 102 books in this year,) I&amp;rsquo;m nevertheless a frequent reader.
 This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to share with you, after all, if you are reading this probably our tastes overlap.</description>
@@ -24,10 +24,10 @@ This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to shar
     
     <item>
       <title>C code &#34;Juicer&#34;</title>
-      <link>/2009/12/c-code-juicer.html/</link>
+      <link>https://mostlymaths.net/2009/12/c-code-juicer.html/</link>
       <pubDate>Tue, 01 Dec 2009 00:01:00 +0100</pubDate>
       
-      <guid>/2009/12/c-code-juicer.html/</guid>
+      <guid>https://mostlymaths.net/2009/12/c-code-juicer.html/</guid>
       <description>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &amp;ldquo;code juicer&amp;rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.
 
 It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses.</description>
@@ -35,10 +35,10 @@ It is something like an execution tree, with function calls squared, and differe
     
     <item>
       <title>Copied programming assignments as cryptograms</title>
-      <link>/2009/11/copied-programming-assignments-as.html/</link>
+      <link>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</link>
       <pubDate>Wed, 11 Nov 2009 01:00:00 +0100</pubDate>
       
-      <guid>/2009/11/copied-programming-assignments-as.html/</guid>
+      <guid>https://mostlymaths.net/2009/11/copied-programming-assignments-as.html/</guid>
       <description>Pieces of an ENIGMA machine, from Flickr
 Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&amp;rsquo;s mind. As a teacher, how do you detect this?
 From my point of view, there are fundamentally two different kinds of copy:</description>

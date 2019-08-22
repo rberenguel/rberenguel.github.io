@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWK on mostlymaths.net</title>
-    <link>/tags/awk/</link>
+    <link>https://mostlymaths.net/tags/awk/</link>
     <description>Recent content in AWK on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Jun 2019 20:34:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/awk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mostlymaths.net/tags/awk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019#15 Readings of the week</title>
-      <link>/2019/06/201915-readings-of-week.html/</link>
+      <link>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>/2019/06/201915-readings-of-week.html/</guid>
+      <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
       <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
