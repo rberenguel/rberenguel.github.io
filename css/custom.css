@@ -82,6 +82,12 @@ article p {
     transition: all ease-in-out 0.1s
 }
 
+.nested-copy-line-height .ba {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444405;
+}
+
 .nested-copy-line-height a:hover {
     border-color: #333311;
     transition: all ease-in-out 0.1s
