@@ -30,28 +30,43 @@
     
 
     <meta property="og:title" content="How does the &#39;in&#39; keyword work in Python?" />
-<meta property="og:description" content="A subtitle to this post could be More yak shaving
-A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?" />
+<meta property="og:description" content="A few days go I played a bit with a naive implementation of Bloom
+filters in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the in worked too fast for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does in find stuff in sequences?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/" />
 <meta property="article:published_time" content="2018-04-15T22:11:00+02:00" />
 <meta property="article:modified_time" content="2018-04-15T22:11:00+02:00" />
 <meta itemprop="name" content="How does the &#39;in&#39; keyword work in Python?">
-<meta itemprop="description" content="A subtitle to this post could be More yak shaving
-A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?">
+<meta itemprop="description" content="A few days go I played a bit with a naive implementation of Bloom
+filters in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the in worked too fast for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does in find stuff in sequences?">
 
 
 <meta itemprop="datePublished" content="2018-04-15T22:11:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-04-15T22:11:00&#43;02:00" />
-<meta itemprop="wordCount" content="938">
+<meta itemprop="wordCount" content="934">
 
 
 
 <meta itemprop="keywords" content="Python,C,github," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How does the &#39;in&#39; keyword work in Python?"/>
-<meta name="twitter:description" content="A subtitle to this post could be More yak shaving
-A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?"/>
+<meta name="twitter:description" content="A few days go I played a bit with a naive implementation of Bloom
+filters in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the in worked too fast for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does in find stuff in sequences?"/>
 
   </head>
 
@@ -105,25 +120,76 @@ A few days go I played a bit with a naive implementation of Bloom filters in Pyt
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 5 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 938 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 934 words</span>
       
     </header>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A subtitle to this post could be <em>More yak shaving</em></p>
+    
+    <section class="w-60 mb1">
+        <span class="fw2 ">A subtitle to this post could be <em>More yak shaving</em></span>
+    </section>
+    
 
-<p>A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like <code>in</code> worked <em>too fast</em> for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups? Maybe they have some internal index? This raised the question: how does <code>in</code> find stuff <em>in</em> sequences?</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A few days go I played a bit with a naive implementation of <a href="https://en.wikipedia.org/wiki/Bloom_filter">Bloom
+filters</a> in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the <code>in</code> worked <em>too fast</em> for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does <code>in</code> find stuff <em>in</em> sequences?</p>
 
-<p>Instead of reading the documentation I delved into the <a href="https://github.com/python/cpython">cpython</a> source. Skipping the documentation was a bad idea, since it is not only pretty comprehensive but explains everything&hellip; if you know what you are looking for. But a dive into this big pile of C was more fun. I was also stupid enough to not Google the answer until I was editing this post&hellip; <a href="https://stackoverflow.com/a/12244378">This excellent Stack Overflow answer</a> covers more or less what I explain here.</p>
+<p>Instead of reading the documentation I delved into the
+<a href="https://github.com/python/cpython">cpython</a> source. Skipping the documentation
+was a bad idea, since it is not only pretty comprehensive but explains
+everything… if you know what you are looking for. But a dive into this big
+pile of C was more fun. I was also stupid enough to not Google the answer until
+I was editing this post… When writing this, I found out <a href="https://stackoverflow.com/a/12244378">this excellent Stack Overflow
+answer</a> covers more or less what I explain
+here.</p>
 
-<p>The <code>in</code> keyword (defined <a href="https://github.com/python/cpython/blob/master/Python/graminit.c#L2195">here</a>) is actually a shorthand for running <code>__contains__</code> from the target object, you probably know this already. Your class will be able to provide <code>in</code> if you add this magic method, you can read about this in the first chapter of <a href="https://amzn.to/2GEEZct">Fluent Python</a>. But tracing this inside <code>cpython</code> is a bit cumbersome and got me diving into interesting pieces of the code. By the way, how the Python compiler works is documented <a href="https://devguide.python.org/compiler/">here</a>.</p>
+<p>The <code>in</code> keyword (defined
+<a href="https://github.com/python/cpython/blob/master/Python/graminit.c#L2195">here</a>)
+is actually a shorthand for running <code>__contains__</code> from the target object, you
+probably know this already. Your class will be able to provide <code>in</code> if you add
+this magic method, you can read about this in the first chapter of <a href="https://amzn.to/2GEEZct">Fluent
+Python</a>. But tracing this inside <code>cpython</code> is a bit
+cumbersome and got me diving into interesting pieces of the code. By the way,
+how the Python compiler works is documented
+<a href="https://devguide.python.org/compiler/">here</a>.</p>
 
-<p>First, after we have parsed the code and generated a parse tree from our text, we go to the abstract syntax tree. Converting the string <code>in</code> as part of some node of Python source in this tree into <em>an</em> <code>In</code> <a href="https://github.com/python/cpython/blob/master/Python/ast.c#L1163">here</a>:</p>
+<p>First, after we have parsed the code and generated a parse tree from our text,
+we go to the abstract syntax tree. Converting the string <code>in</code> as part of some
+node of Python source in this tree into <em>an</em> <code>In</code>
+<a href="https://github.com/python/cpython/blob/master/Python/ast.c#L1163">here</a>:</p>
 
-<p>And now, what does actually <code>In</code> do? Well, we need to move forward in the compilation chain, and check <a href="https://github.com/python/cpython/blob/a95d98607efe0c43475b354543e49bf8e240bc6f/Python/compile.c#L2185">compile.c</a>:</p>
+<script type="application/javascript" src="https://gist.github.com/rberenguel/2fa518c6150c951228cdbb13f94fb3fe.js"></script>
 
-<p>This is inside a function called <code>cmpop</code>, which is called when we find the <code>COMPARE_OP</code> opcode. This is the opcode we’d see by disassembling anything running <code>in</code> or <code>==</code> or any other comparison operator (all comparison operators are in the same basket, see <a href="https://github.com/python/cpython/blob/702f8f3611bc49b73772cce2b9b041bd11ff9b35/Include/opcode.h#L139">here</a>). We can follow the route through <a href="https://github.com/python/cpython/blob/d8b291a74284307610946f1b5801aa95d7f1e052/Python/ceval.c#L4685">ceval.c</a> now:</p>
 
-<p>So, we are calling this <code>PySequence_Contains</code> thingy. A bit more grep and we can find it defined in <a href="https://github.com/python/cpython/blob/f320be77ffb73e3b9e7fc98c37b8df3975d84b40/Objects/abstract.c#L2037">abstract.c</a>:</p>
+<p>And now, what does actually <code>in</code> do? Well, we need to move forward in the
+compilation chain, and check
+<a href="https://github.com/python/cpython/blob/a95d98607efe0c43475b354543e49bf8e240bc6f/Python/compile.c#L2185">compile.c</a>:</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/2b1b844d8a2432771bde136f3857f67d.js"></script>
+
+
+<p>This is inside a function called <code>cmpop</code>, which is called when we find the
+<code>COMPARE_OP</code> opcode. This is the opcode we’d see by disassembling anything
+running <code>in</code> or <code>==</code> or any other comparison operator (all comparison operators
+are in the same basket, see
+<a href="https://github.com/python/cpython/blob/702f8f3611bc49b73772cce2b9b041bd11ff9b35/Include/opcode.h#L139">here</a>).
+We can follow the route through
+<a href="https://github.com/python/cpython/blob/d8b291a74284307610946f1b5801aa95d7f1e052/Python/ceval.c#L4685">ceval.c</a>
+now:</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/c0ad8b35a80f57ee0d38b5858e5c5ea6.js"></script>
+
+
+<p>So, we are calling this <code>PySequence_Contains</code> thingy. A bit more grep and we can
+find it defined in
+<a href="https://github.com/python/cpython/blob/f320be77ffb73e3b9e7fc98c37b8df3975d84b40/Objects/abstract.c#L2037">abstract.c</a>:</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/dc95cf3a932dcf978d057bde2a831c9d.js"></script>
+
 
 <p>And now we can see what it does:</p>
 
@@ -133,11 +199,34 @@ A few days go I played a bit with a naive implementation of Bloom filters in Pyt
 <li>Otherwise, use iterative search</li>
 </ol>
 
-<p>But hey, where is my <code>__contains__</code>? The magic happens on new object/class/type definition: <a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L4711">typeobject.c</a> The base object all classes extend from looks like the following struct (from <a href="https://github.com/python/cpython/blob/a5552f023e1d8cbafee1e51d316cc581deb2295f/Include/object.h#L346">object.h</a>):</p>
+<p>Hey, where is my <code>__contains__</code>? The magic happens on new object/class/type
+definition:
+<a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L4711">typeobject.c</a>
+The base object all classes extend from looks like the following struct (from
+<a href="https://github.com/python/cpython/blob/a5552f023e1d8cbafee1e51d316cc581deb2295f/Include/object.h#L346">object.h</a>):</p>
 
-<p>This means that, technically, all objects have a field in their defining struct for sequences: <code>tp_as_sequence</code>. This is populated when we define a new class (which internally is known as <em>type</em>) in <a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2602">typeobject.c</a>. Slots <a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2515">are populated from what is essentially a dictionary of methods</a> by invoking <a href="https://www.blogger.com/blogger.g?blogID=13497321">fixup_slot_dispatchers</a>. This maps the python name <code>__contains__</code> to the corresponding slot in the struct, <code>sq_contains</code> and defines which function sets it up, <a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L6098">slot_sq_contains</a>:</p>
+<script type="application/javascript" src="https://gist.github.com/rberenguel/e80a7d4ff1c8260029942346865870c0.js"></script>
+
+
+<p>This means that, technically, all objects have a field in their defining struct
+for sequences: <code>tp_as_sequence</code>. This is populated when we define a new class
+(which internally is known as <em>type</em>) in
+<a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2602">typeobject.c</a>.
+Slots <a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2515">are populated from what is essentially a dictionary of
+methods</a>
+by invoking
+<a href="https://www.blogger.com/blogger.g?blogID=13497321">fixup_slot_dispatchers</a>.
+This maps the python name <code>__contains__</code> to the corresponding slot in the
+struct, <code>sq_contains</code> and defines which function sets it up,
+<a href="https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L6098">slot_sq_contains</a>:</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/acef7aec405d402b99266635a293c8b1.js"></script>
+
 
 <p>Built-in objects (and likely libraries with C extensions) implement these directly in C, and point its slot to the C method:</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/b5299798f3222c9be0951b769fc61c41.js"></script>
+
 
 <p>Finally, this method looks for a method defined in the class and called <code>__contains__</code>. If it is <code>None</code> (that is, it is defined and is <code>None</code>), object is not a container, that’s it. If it is <em>not defined</em> (hence the null, and this one is actually puzzling&hellip; reduces to it not being provided when defining the class&hellip; I think), Python falls back to iterating for search using <code>__iter__</code> (which is what eventually gets called under <code>PySequence_IterSearch</code>). If this is also not valid or available, an error returns, following a chain of -1 in the method lookups.</p>
 
@@ -145,12 +234,20 @@ A few days go I played a bit with a naive implementation of Bloom filters in Pyt
 
 <p>As expected, dictionary lookup is fancier. It is a common and known performance improvement in Python to change lists or other sequence-like datatypes for dictionaries, since they show the best performance for most operations. Since internally in Python everything from methods/functions to classes is implemented in one way or another as dictionaries (or reusing the machinery that is built for dictionaries), anything that speeds dictionaries up, speeds the whole of Python code. Of <em>course</em>, dictionary lookup is <em>usually</em> fast no matter the language: hash table lookup in general (leaving aside how collision resolution might be implemented in lookup) is O(1) fast. Note that below we have the macro: <code>#define PyUnicode_CheckExact(op) (Py_TYPE(op) == &amp;PyUnicode_Type)</code></p>
 
+<script type="application/javascript" src="https://gist.github.com/rberenguel/c35eec71f0dc25134d571c2be8ecb44a.js"></script>
+
+
 <p>There even is a specialised method for cases when the hash key is known (not sure of the use case, since magic methods are hardcoded in the object structs, maybe it’s used to optimise tighter loops?).</p>
+
+<script type="application/javascript" src="https://gist.github.com/rberenguel/0c419252c5e707384656a3a35e6af84d.js"></script>
+
 
 <p>And if you wonder how <code>key in dict</code> works, it is of course by introducing the method in the struct for sequences. The snippet below is from <code>dictobject.c</code>, as the methods above.</p>
 
-<p>And here finishes my exploration of <code>cpython</code> to figure out how <code>in</code> contains. Not sure about you, but I had a lot of fun.</p>
-<hr/><ul class="pa0">
+<script type="application/javascript" src="https://gist.github.com/rberenguel/13d47f995b443511abb2abd4b454b2e7.js"></script>
+
+
+<p>And here finishes my exploration of <code>cpython</code> to figure out how <code>in</code> contains. Not sure about you, but I had a lot of fun.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/python" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Python</a>

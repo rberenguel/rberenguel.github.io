@@ -109,6 +109,8 @@ At work, we have several instances running a suite of Docker containers, with so
       
     </header>
     
+    
+
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.</p>
 
 <p>At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using <code>ansible</code>: writing link/port/volume mappings in ansible (using the <code>docker</code>, <code>container</code> or <code>docker-container</code> modules, depending how long ago we set it up). The syntax is similar to <code>docker-compose</code>, but scripted for ansible.</p>

@@ -109,6 +109,8 @@ Everything seemed straightforward enough, and I got it working pretty quickly (a
       
     </header>
     
+    
+
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A few weeks ago I needed to parse configuration files in Scala for a Spark project and decided to use <a href="https://github.com/pureconfig/pureconfig">PureConfig</a>. It is incredibly lean to use, needing minimal boilerplate. I recommend you check it out (give also a look at <a href="https://47deg.github.io/case-classy/">CaseClassy</a>, which I haven&rsquo;t had time to test yet).</p>
 
 <p>Everything seemed straightforward enough, and I got it working pretty quickly (as in, it compiled properly). The surprise? <code>spark-submit</code> failed with a conflict with <a href="https://github.com/milessabin/shapeless">Shapeless</a> (lacking a <code>witness</code>). This is due to Spark 2.1.0 needing Breeze, which in turn needs Shapeless 2.0.0 (which is pretty old). Problem is, Spark&rsquo;s required library prevented PureConfig from pulling the correct version. D&rsquo;oh!</p>

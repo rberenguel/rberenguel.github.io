@@ -37,7 +37,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mostlymaths.net/tags/opensource/" />
 
-<meta property="og:updated_time" content="2018-05-05T02:40:00+02:00" />
+<meta property="og:updated_time" content="2018-03-25T12:21:00+02:00" />
 <meta itemprop="name" content="opensource">
 <meta itemprop="description" content="foo">
 
@@ -105,59 +105,6 @@
     <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
         <div class="w-100">
     <h1 class="fw1 f3 mb1">
-        <a href="/2018/05/notifications-from-spark-on-apple-watch.html/" class="link black dim">
-            Notifications from Spark on an Apple Watch (via IFTTT)
-        </a>
-    </h1>
-    <time class="f8 mv2 mb1 dib tracked" datetime="2018-05-05T02:40:00&#43;02:00">May 5, 2018</time>
-    
-    &nbsp;&nbsp;&nbsp;
-    <span class="f9 fw1 mv2 dib tracked i"> 3 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 430 words</span>
-    
-        </div>
-        
-    <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished.
-    </div>
-    <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/watch" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Watch</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/spark" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">spark</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/opensource" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">opensource</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/scala" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">scala</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/sbt" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">sbt</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/iphone" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">iPhone</a>
-   </li>
-  
-</ul>
-</div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-    <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
-        <div class="w-100">
-    <h1 class="fw1 f3 mb1">
         <a href="/2018/03/coursier-resolution-failing-with-http.html/" class="link black dim">
             Coursier resolution failing with HTTP method 416 in sbt
         </a>
@@ -166,13 +113,15 @@
     
     &nbsp;&nbsp;&nbsp;
     <span class="f9 fw1 mv2 dib tracked i"> 3 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 597 words</span>
+    <span class="f9 fw1 mv2 dib tracked i" > | 587 words</span>
     
         </div>
         
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      Or, how I made my first contribution to coursier
-[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.
+      <p>I ran into this problem with <code>sbt</code> dependency resolution around 7 weeks ago. I
+was in a hurry, so I commented out the offending import (since it was not in the
+subproject I was working on, so was not needed for the run I was in) sent my
+commit to the heavens and <a href="https://circleci.com/">CircleCI</a> was happy.</p>
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   

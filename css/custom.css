@@ -43,6 +43,10 @@ p {
     margin-bottom: 0.5em;
 }
 
+article p {
+    margin-bottom: 1em;
+}
+
 .nested-links a:hover {
     color: #333311;
 }
@@ -68,8 +72,19 @@ p {
     line-height: 1.3;
 }
 
-.nested-copy-line-height a {
+.nested-copy-line-height h2 a {
     font-weight: 250;
+}
+
+.nested-copy-line-height a {
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.1s
+}
+
+.nested-copy-line-height a:hover {
+    border-color: #333311;
+    transition: all ease-in-out 0.1s
 }
 
 .fig-left {
@@ -77,6 +92,22 @@ p {
     float: left;
 }
 
+.fig-40 {
+    width: 40%;
+    display: inline-block;
+    margin: auto;
+}
+
+
+.fig-right {
+    width: 30%;
+    float: right;
+}
+
+.fig-left-small {
+    width: 15%;
+    float: left;
+}
 
 
 figcaption {
@@ -92,11 +123,15 @@ figure {
     text-align: center;
 }
 
-.fig-wide {
-}
 
 .fig-wide img {
     width: 100%;
+    object-fit: contain;
+}
+
+.fig-not-so-wide img {
+    margin: auto;
+    width: 50%;
     object-fit: contain;
 }
 

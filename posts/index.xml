@@ -139,9 +139,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
-      <description>Could be Autumn Rhythm, Letter C
-  Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
-If you are wondering why the list is shorter this week (and is so late) is because last week I said I was going to play Stardew Valley, and I complied.</description>
+      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -249,7 +247,7 @@ If you are wondering why the list is shorter this week (and is so late) is becau
       <pubDate>Mon, 31 Dec 2018 16:07:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/12/things3-weekly-review-mode-shortcuts.html/</guid>
-      <description>Requirements  Be a user of Things3, and heavy on Getting Things Done Shortcuts app  The shortcuts _Weekly Review and Update weekly review hash_ Drafts or Bear app (either could be used, the shortcut linked below uses Drafts)  Initial setup (around 10-30 minutes depending on the amount of projects you have) Create a note in Drafts (you can put it in the note archive) with some text, does’t matter what you write.</description>
+      <description>&lt;p&gt;This is how I handle the dreaded GTD (Getting Things Done) weekly review when using Things 3.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,7 +256,7 @@ If you are wondering why the list is shorter this week (and is so late) is becau
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&amp;hellip; I wanted a way to get a subtle notification when the process finished.</description>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -267,7 +265,7 @@ If you are wondering why the list is shorter this week (and is so late) is becau
       <pubDate>Sun, 29 Apr 2018 15:38:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/modifying-agnoster-theme-for-zsh.html/</guid>
-      <description>Even though I have been a long time user of oh-my-zsh on zsh (moved from plain bash to zsh like 10 years ago), I have been very minimal on my use of its theme capabilities. I have used the default theme forever: robbyrussell. But recently I was showing my friend @craftycoder the tweaks I have on my system (fzf, autojump, etc) and he showed me this theme, agnoster. It had several pieces I liked:</description>
+      <description>&lt;p&gt;Even though I have been a long time user of &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;oh-my-zsh&lt;/a&gt; on zsh (moved from &lt;a href=&#34;https://amzn.to/2KqeJR4&#34;&gt;plain bash to zsh&lt;/a&gt; like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: &lt;code&gt;robbyrussell&lt;/code&gt;. But recently I was showing my friend @&lt;a href=&#34;http://crafty-coder.com/&#34;&gt;craftycoder&lt;/a&gt; the tweaks I have on my system (&lt;a href=&#34;https://github.com/junegunn/fzf&#34;&gt;fzf&lt;/a&gt;, &lt;a href=&#34;https://github.com/wting/autojump&#34;&gt;autojump&lt;/a&gt;, etc) and he showed me this theme, &lt;a href=&#34;https://github.com/agnoster/agnoster-zsh-theme&#34;&gt;agnoster&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -276,8 +274,13 @@ If you are wondering why the list is shorter this week (and is so late) is becau
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</guid>
-      <description>A subtitle to this post could be More yak shaving
-A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?</description>
+      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34;&gt;Bloom
+filters&lt;/a&gt; in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the &lt;code&gt;in&lt;/code&gt; worked &lt;em&gt;too fast&lt;/em&gt; for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does &lt;code&gt;in&lt;/code&gt; find stuff &lt;em&gt;in&lt;/em&gt; sequences?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -286,8 +289,10 @@ A few days go I played a bit with a naive implementation of Bloom filters in Pyt
       <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</guid>
-      <description>Or, how I made my first contribution to coursier
-[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.</description>
+      <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
+was in a hurry, so I commented out the offending import (since it was not in the
+subproject I was working on, so was not needed for the run I was in) sent my
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -296,8 +301,7 @@ A few days go I played a bit with a naive implementation of Bloom filters in Pyt
       <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/book-review-work-clean.html/</guid>
-      <description>Down into some net rabbit hole, I stumbled upon a review of Work Clean. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (mise en place) would fix all our problems? Bring it on, I have a long commute.
-Actually, I found the book surprisingly good if you stick to the practical side and discard the hyperbole. As an occasional home cook with a big dose of planning and OCD built into me, I got the point.</description>
+      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -306,9 +310,15 @@ Actually, I found the book surprisingly good if you stick to the practical side 
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
-      <description>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
- From Processing.org
-I had always wanted to play with Processing (after leafing through The Processing Handbook and Visualizing Data some years ago). My general dislike for Java or the JVM made me just play a very short amount of time with processing.js something around 2011 (there was a native processing.</description>
+      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34;&gt;The
+Processing
+Handbook&lt;/a&gt; and
+&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34;&gt;Visualizing
+Data&lt;/a&gt;
+some years ago). My general dislike for Java or the JVM made me just play a
+short amount of time with &lt;code&gt;processing.js&lt;/code&gt; something around 2011 (there was a
+&lt;em&gt;native&lt;/em&gt; processing.js application for iOS, I used it for a while on my iPad and
+iPod Touch).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -317,8 +327,10 @@ I had always wanted to play with Processing (after leafing through The Processin
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
-      <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
- YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
+      <description>&lt;p&gt;A few months ago I stumbled into the problem of Akka logging, specifically
+ClassNotFoundException when using &lt;code&gt;akka.event.slf4j.Slf4jLoggingFilter&lt;/code&gt;, just by
+following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34;&gt;Logging - SL4J section of Akka
+documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -327,8 +339,7 @@ I had always wanted to play with Processing (after leafing through The Processin
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
-      <description>Almost two months ago (time sure flies) I attended for the second time the conference Scala eXchange, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London. Also happens to be an excellent conference, and I’m repeating next year (yes, I already got my tickets).
-For those who don’t know, Scala eXchange is a 2-day (plus an unconference day) conference in central London, bringing most of the library developers you love to talk about cool stuff.</description>
+      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -337,8 +348,7 @@ For those who don’t know, Scala eXchange is a 2-day (plus an unconference day)
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
-      <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
-Work Everything work related has gone up. More work, better work, more interesting work.</description>
+      <description>&lt;p&gt;I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say &lt;em&gt;we&lt;/em&gt;, it means Laia and me unless explicitly changed.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -347,7 +357,8 @@ Work Everything work related has gone up. More work, better work, more interesti
       <pubDate>Sun, 19 Nov 2017 17:42:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</guid>
-      <description>It would probably be an understatement to say I&amp;rsquo;m not a gamer. Last console I got was a Game Boy, 22 years ago (IIRC). Never got a gaming PC. I have 4 games on my Mac, and one is ASCII based. But my main source of mindless leisure for the past 7 years, aside from reading, has been playing with some iDevice. From an iPod Touch back then to my current iPhone and iPad Pro, playing, for me, has been Apple.</description>
+      <description>&lt;p&gt;It would probably be an understatement to say I&amp;rsquo;m not a gamer. Last console I
+got was a Game Boy, 22 years ago (IIRC). Never got a gaming PC.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2988,17 +2999,6 @@ To add this code to your blogger blog:
     </item>
     
     <item>
-      <title>Strawberry seedlings: Showing leaves</title>
-      <link>https://mostlymaths.net/2008/09/strawberry-seedlings-showing-leaves.html/</link>
-      <pubDate>Wed, 17 Sep 2008 22:28:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2008/09/strawberry-seedlings-showing-leaves.html/</guid>
-      <description>Just a quick update about my tiny strawberries. A lot more have germinated, and now the first one to do so are showing their first true, small and beautiful leaves. I also added some more soil and add a few drops of water with a little fertilizer (from what I gave my other plants).
- 
-If you enjoyed this post, or was lucky and got a nice and happy strawberry plant, leave a comment or picture.</description>
-    </item>
-    
-    <item>
       <title>My grandpa&#39;s doughnuts</title>
       <link>https://mostlymaths.net/2008/09/my-grandpas-doughnuts.html/</link>
       <pubDate>Mon, 15 Sep 2008 21:09:00 +0200</pubDate>
@@ -3018,19 +3018,6 @@ What you will need
       
       <guid>https://mostlymaths.net/2008/09/oven-dried-tomatoes.html/</guid>
       <description>Name one great asset to your cupboard. One you can put in a pizza, in almost every salad, you can make omelets out of it, can put over a toast and could be a side dish to almost every meal you can think of. Well, sun dried tomatoes come close to it. Tasty, nice and they smell as good you get hungry just opening the jar. Well, they are really easy to do at home, with just your oven!</description>
-    </item>
-    
-    <item>
-      <title>Strawberry seed germination</title>
-      <link>https://mostlymaths.net/2008/08/strawberry-seed-germination.html/</link>
-      <pubDate>Tue, 26 Aug 2008 17:41:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2008/08/strawberry-seed-germination.html/</guid>
-      <description>Strawberry leaves forever..
-If you want to grow your own lemon tree, come join the Lemon tree give-away!
-In this post I&amp;rsquo;ll teach you the procedure I followed to easily germinate apple seeds at home. You can also try apple seed germination, pineapple seed germination, [](http://plants.mostlymaths.net/2010/07/tomato-seed-germination.html)[tomato seed germination](http://plants.mostlymaths.net/2010/07/tomato-seed-germination.html), cotton seed germination, finally lemon seed germination and now ginger germination. More to come next spring!
-Four steps to go.
- Get the seeds.</description>
     </item>
     
     <item>
@@ -3160,23 +3147,12 @@ I talked on monday afternoon, but my talk was a mess.</description>
     </item>
     
     <item>
-      <title>Loving emacs&#43;org mode (&amp; auctex...)</title>
-      <link>https://mostlymaths.net/2007/07/loving-emacsorg-mode-auctex.html/</link>
-      <pubDate>Wed, 11 Jul 2007 22:24:00 +0200</pubDate>
+      <title>Times a changin&#39;</title>
+      <link>https://mostlymaths.net/2005/06/times-a-changing.html/</link>
+      <pubDate>Fri, 10 Jun 2005 07:00:00 +0100</pubDate>
       
-      <guid>https://mostlymaths.net/2007/07/loving-emacsorg-mode-auctex.html/</guid>
-      <description>Obs: &amp;ldquo;C-Lletra lletra&amp;rdquo;vol dir Control+lletra seguit de lletra
-Fa temps ja vaig parlar sobre aquest editor. La decisió per passar-hi va sorgir cap a mitjans de la meva època com professor de càlcul, ja que volia un editor de text que funcionés tant en Linux com en Windows, així tot el que millores en el seu us es podia traduir d&amp;rsquo;un lloc a l&amp;rsquo;altre. Les opcions eren poques vi i emacs.</description>
-    </item>
-    
-    <item>
-      <title>Life goes on...</title>
-      <link>https://mostlymaths.net/2005/12/life-goes-on.html/</link>
-      <pubDate>Wed, 21 Dec 2005 22:36:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/2005/12/life-goes-on.html/</guid>
-      <description>La beguda de Matemàtica Aplicada
-No preguntis perquè (no, a mi no m&amp;rsquo;agrada) XD. No m&amp;rsquo;han donat la beca de la Generalitat, a veure quan surti la del Ministeri si hi ha moltes renúncies per passar d&amp;rsquo;una a l&amp;rsquo;altra i colo. A part d&amp;rsquo;això&amp;hellip; D&amp;rsquo;aqui res acabo Mecànica Analítica, no trobaré a faltar el llibre no. Dissabte començo a fer treballs com un ase, de moment em prendré no tenir beca com que cal demostrar que puc fer coses (que en teoria ja ho saben, encara que no es noti gaire) així que penso fer tres treballs ben bons (almenys ara).</description>
+      <guid>https://mostlymaths.net/2005/06/times-a-changing.html/</guid>
+      <description>This blog was started on this day, and was written in Catalan until mid-2007. On August 22nd, 2019 I moved from Blogger, my original blogging platform to GitHub pages. Since the readership has shifted to English speakers and the interest of the early posts is low (also, I had to port the posts to another format..) I deleted a great deal (around 350, out of the 670 I had at migration time) of the earliest posts.</description>
     </item>
     
   </channel>

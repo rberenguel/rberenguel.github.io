@@ -17,8 +17,10 @@
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
-      <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
- YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
+      <description>&lt;p&gt;A few months ago I stumbled into the problem of Akka logging, specifically
+ClassNotFoundException when using &lt;code&gt;akka.event.slf4j.Slf4jLoggingFilter&lt;/code&gt;, just by
+following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34;&gt;Logging - SL4J section of Akka
+documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

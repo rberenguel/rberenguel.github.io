@@ -17,8 +17,13 @@
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</guid>
-      <description>A subtitle to this post could be More yak shaving
-A few days go I played a bit with a naive implementation of Bloom filters in Python. I wanted to time them against just checking whether a field is in a set/collection. I found something slightly puzzling: it looked like in worked too fast for smaller lists. And I wondered: maybe small lists are special internally, and allow for really fast lookups?</description>
+      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34;&gt;Bloom
+filters&lt;/a&gt; in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the &lt;code&gt;in&lt;/code&gt; worked &lt;em&gt;too fast&lt;/em&gt; for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does &lt;code&gt;in&lt;/code&gt; find stuff &lt;em&gt;in&lt;/em&gt; sequences?&lt;/p&gt;</description>
     </item>
     
   </channel>

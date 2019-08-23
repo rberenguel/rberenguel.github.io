@@ -6,19 +6,10 @@
     <description>Recent content in opensource on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 May 2018 02:40:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 25 Mar 2018 12:21:00 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Notifications from Spark on an Apple Watch (via IFTTT)</title>
-      <link>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</link>
-      <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&amp;hellip; I wanted a way to get a subtle notification when the process finished.</description>
-    </item>
     
     <item>
       <title>Coursier resolution failing with HTTP method 416 in sbt</title>
@@ -26,8 +17,10 @@
       <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</guid>
-      <description>Or, how I made my first contribution to coursier
-[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.</description>
+      <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
+was in a hurry, so I commented out the offending import (since it was not in the
+subproject I was working on, so was not needed for the run I was in) sent my
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
     </item>
     
   </channel>

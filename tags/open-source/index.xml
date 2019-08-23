@@ -20,5 +20,14 @@
       <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Notifications from Spark on an Apple Watch (via IFTTT)</title>
+      <link>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</link>
+      <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

@@ -182,7 +182,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark). This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&amp;hellip; I wanted a way to get a subtle notification when the process finished.</description>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -191,8 +191,10 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</guid>
-      <description>Or, how I made my first contribution to coursier
-[trace] Stack trace suppressed: run last service/*:update for the full output. [error] (service/*:update) coursier.ResolutionException: 1 download error [error] Caught java.io.IOException: Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar (Server returned HTTP response code: 416 for URL: https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) while downloading https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar  I ran into this problem with sbt dependency resolution around 7 weeks ago. I was in a hurry, so I commented out the offending import (since it was not in the subproject I was working on, so was not needed for the run I was in) sent my commit to the heavens and CircleCI was happy.</description>
+      <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
+was in a hurry, so I commented out the offending import (since it was not in the
+subproject I was working on, so was not needed for the run I was in) sent my
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -201,9 +203,15 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
-      <description>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
- From Processing.org
-I had always wanted to play with Processing (after leafing through The Processing Handbook and Visualizing Data some years ago). My general dislike for Java or the JVM made me just play a very short amount of time with processing.js something around 2011 (there was a native processing.</description>
+      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34;&gt;The
+Processing
+Handbook&lt;/a&gt; and
+&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34;&gt;Visualizing
+Data&lt;/a&gt;
+some years ago). My general dislike for Java or the JVM made me just play a
+short amount of time with &lt;code&gt;processing.js&lt;/code&gt; something around 2011 (there was a
+&lt;em&gt;native&lt;/em&gt; processing.js application for iOS, I used it for a while on my iPad and
+iPod Touch).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -212,8 +220,10 @@ I had always wanted to play with Processing (after leafing through The Processin
       <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
-      <description>A few months ago I stumbled into the problem of Akka logging, specifically ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by following the details of the Logging - SL4J section of Akka documentation. Of course, the error source is obvious in hindsight, but in the moment the fact that this was a multiproject build with several dependency paths made me miss a crucial reason for longer than I want to admit:
- YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</description>
+      <description>&lt;p&gt;A few months ago I stumbled into the problem of Akka logging, specifically
+ClassNotFoundException when using &lt;code&gt;akka.event.slf4j.Slf4jLoggingFilter&lt;/code&gt;, just by
+following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34;&gt;Logging - SL4J section of Akka
+documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -222,8 +232,7 @@ I had always wanted to play with Processing (after leafing through The Processin
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
-      <description>Almost two months ago (time sure flies) I attended for the second time the conference Scala eXchange, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London. Also happens to be an excellent conference, and I’m repeating next year (yes, I already got my tickets).
-For those who don’t know, Scala eXchange is a 2-day (plus an unconference day) conference in central London, bringing most of the library developers you love to talk about cool stuff.</description>
+      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -232,8 +241,7 @@ For those who don’t know, Scala eXchange is a 2-day (plus an unconference day)
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
-      <description>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say we, it means Laia and me unless explicitly changed.
-Work Everything work related has gone up. More work, better work, more interesting work.</description>
+      <description>&lt;p&gt;I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say &lt;em&gt;we&lt;/em&gt;, it means Laia and me unless explicitly changed.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -403,22 +403,17 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/ios/</loc>
-    <lastmod>2018-12-31T16:07:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2018/12/things3-weekly-review-mode-shortcuts.html/</loc>
     <lastmod>2018-12-31T16:07:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</loc>
-    <lastmod>2018-05-05T02:40:00+02:00</lastmod>
+    <loc>https://mostlymaths.net/tags/ios/</loc>
+    <lastmod>2018-12-31T16:07:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/opensource/</loc>
+    <loc>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</loc>
     <lastmod>2018-05-05T02:40:00+02:00</lastmod>
   </url>
   
@@ -449,6 +444,11 @@
   
   <url>
     <loc>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</loc>
+    <lastmod>2018-03-25T12:21:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/opensource/</loc>
     <lastmod>2018-03-25T12:21:00+02:00</lastmod>
   </url>
   
@@ -2053,16 +2053,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/plants/</loc>
-    <lastmod>2008-09-17T22:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2008/09/strawberry-seedlings-showing-leaves.html/</loc>
-    <lastmod>2008-09-17T22:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2008/09/my-grandpas-doughnuts.html/</loc>
     <lastmod>2008-09-15T21:09:00+02:00</lastmod>
   </url>
@@ -2070,11 +2060,6 @@
   <url>
     <loc>https://mostlymaths.net/2008/09/oven-dried-tomatoes.html/</loc>
     <lastmod>2008-09-09T11:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2008/08/strawberry-seed-germination.html/</loc>
-    <lastmod>2008-08-26T17:41:00+02:00</lastmod>
   </url>
   
   <url>
@@ -2143,13 +2128,8 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2007/07/loving-emacsorg-mode-auctex.html/</loc>
-    <lastmod>2007-07-11T22:24:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2005/12/life-goes-on.html/</loc>
-    <lastmod>2005-12-21T22:36:00+01:00</lastmod>
+    <loc>https://mostlymaths.net/2005/06/times-a-changing.html/</loc>
+    <lastmod>2005-06-10T07:00:00+01:00</lastmod>
   </url>
   
   <url>
