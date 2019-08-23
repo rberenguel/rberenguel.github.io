@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Search Results</title>
+    <title>mostlymaths.net  | Search</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.57.2" />
     
@@ -18,6 +18,8 @@
     
 
     
+      <link rel="stylesheet" href="/css/all.css">
+    
       <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
     
       <link rel="stylesheet" href="/css/custom.css">
@@ -29,7 +31,7 @@
 
     
 
-    <meta property="og:title" content="Search Results" />
+    <meta property="og:title" content="Search" />
 <meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
@@ -38,7 +40,7 @@ Initial setup Search depends on additional output content type of JSON in config
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/search/" />
 
-<meta itemprop="name" content="Search Results">
+<meta itemprop="name" content="Search">
 <meta itemprop="description" content="This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
@@ -53,7 +55,7 @@ Initial setup Search depends on additional output content type of JSON in config
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Search Results"/>
+<meta name="twitter:title" content="Search"/>
 <meta name="twitter:description" content="This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
@@ -79,6 +81,16 @@ Initial setup Search depends on additional output content type of JSON in config
       
 
       
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="/search/" title="   page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+        </ul>
+      
       
 
 
@@ -97,7 +109,7 @@ Initial setup Search depends on additional output content type of JSON in config
 
       <div class="tc-l pv1 pv1-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title" style="margin-top: 0;">
-         Search Results
+         Search
         </h1>
         
       </div>
@@ -111,24 +123,36 @@ Initial setup Search depends on additional output content type of JSON in config
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
 <script src="https://mostlymaths.net/js/search.js"></script>
-<section class="resume-section p-3 p-lg-5 d-flex flex-column">
-  <div class="my-auto" >
-    <form action="https://mostlymaths.net/search">
-      <input id="search-query" name="s"/>
-    </form>
+<section class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+  <div class="center f4 mv4 w-100" >
+      <form class="center w-100" action="https://mostlymaths.net/search">
+          <input class="w-100" id="search-query" name="s" type="text" autofocus />
+      </form>
+      <div style="min-height: 3em;">
+      </div>
     <div id="search-results">
-     <h3>Matching pages</h3>
     </div>
   </div>
 </section>
 
+
+
 <script id="search-result-template" type="text/x-js-template">
-    <div id="summary-${key}">
-      <h4><a href="${link}">${title}</a></h4>
-      <p>${snippet}</p>
-      ${ isset tags }<p>Tags: ${tags}</p>${ end }
-      ${ isset categories }<p>Categories: ${categories}</p>${ end }
-    </div>
+ <div id="summary-${key}" class="relative w-100 mb4 bg-white nested-copy-line-height">
+ <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
+ <div class="w-100">
+ <h1 class="fw1 f3 mb1">
+ <a href="${link}" class="link black dim">${title}</a>
+ </h1>
+ <div class="nested-links f5 lh-copy nested-copy-line-height justify">
+ ${snippet}
+ </div>
+ <div class="nested-links f5 lh-copy nested-copy-line-height">
+ ${ isset tags }<p>Tags: ${tags} </p>${ end }
+ ${ isset categories }<p>Categories: ${categories}</p>${ end }
+ </div>
+ </div>
+ </div>
 </script>
 
     </main>
