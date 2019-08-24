@@ -601,11 +601,11 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/08/lavaurs-algorithm.html/</guid>
-      <description>[](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sn7W6AQP-bI/AAAAAAAABPk/x5Zddy5yf24/s1600-h/Lavaurs11.png)
-Top: Zoom a depth 13 Lavaurs chords, random colors
-Bottom: Depth 5 and depth 13 Lavaurs chords
-These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
-The images doesn&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.</description>
+      <description>These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
+The images don&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
+ Lavaurs chords, depth 13 cutoff
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13</description>
     </item>
     
     <item>
