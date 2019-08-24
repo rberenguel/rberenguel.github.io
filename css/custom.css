@@ -98,6 +98,10 @@ article p {
     float: left;
 }
 
+code {
+    font-family: "monoidregular", Consolas, monaco, monospace;                                                        font-size: 0.9em;
+}
+
 .fig-40 {
     width: 40%;
     display: inline-block;

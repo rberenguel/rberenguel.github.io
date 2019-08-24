@@ -159,7 +159,7 @@ In the last few months have been writing and thinking about several ideas to pro
       <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
-      <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
+      <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it… But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
     </item>
     
     <item>
@@ -740,10 +740,7 @@ Douady rabbit for desktop background 1024x768</description>
       <pubDate>Thu, 11 Dec 2008 15:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</guid>
-      <description>Examples of what you could do after learning PS:
-Koch curve, Mandelbrot set (top)
-Christmas card full of auto-generated fractals (bottom)
-For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work.</description>
+      <description>For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it.</description>
     </item>
     
   </channel>

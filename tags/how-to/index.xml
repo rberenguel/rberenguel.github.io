@@ -22,15 +22,6 @@ In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdq
     </item>
     
     <item>
-      <title>Language Detection in Python with NLTK Stopwords</title>
-      <link>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</link>
-      <pubDate>Thu, 07 Jun 2012 14:55:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/</guid>
-      <description>Lately I&amp;rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&amp;rsquo;m sure there is a library out there that does it&amp;hellip; But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.</description>
-    </item>
-    
-    <item>
       <title>Aprende a recordarlo todo: el método del palacio de la memoria</title>
       <link>https://mostlymaths.net/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</link>
       <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>

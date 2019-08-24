@@ -41,10 +41,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <pubDate>Thu, 11 Dec 2008 15:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/</guid>
-      <description>Examples of what you could do after learning PS:
-Koch curve, Mandelbrot set (top)
-Christmas card full of auto-generated fractals (bottom)
-For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work.</description>
+      <description>For those of you who don&amp;rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it.</description>
     </item>
     
   </channel>
