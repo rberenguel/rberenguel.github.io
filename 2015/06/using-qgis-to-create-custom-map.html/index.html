@@ -249,16 +249,12 @@ could set the size of the font to the one defined in the datafile. And I could
 even choose the font according to the feature type (or in my case, the font
 defined in the data file: the data provided by the ICC had font size and font
 family for the features) with a function.</p>
-
-<pre><code>CASE   
-  WHEN &quot;FONTNAME&quot; LIKE 'Times New Roman' THEN 'Georgia'  
-  WHEN &quot;FONTNAME&quot; LIKE'Arial' THEN 'Futura'  
-  WHEN &quot;FONTNAME&quot; LIKE 'Arial Narrow' THEN 'Futura'  
-  WHEN &quot;FONTNAME&quot; LIKE 'Courier New' THEN 'Inconsolata'  
-END  
-
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>   
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Times New Roman&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Georgia&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span><span style="color:#e6db74">&#39;Arial&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Futura&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Arial Narrow&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Futura&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Courier New&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Inconsolata&#39;</span>  
+<span style="color:#66d9ef">END</span>  </code></pre></div>
 <p>The language seems to be QGIS specific, but has SQL-like <code>LIKE</code>. Single quotes
 denote strings, double quotes denote fields, just like in SQL. Important to
 remember, since it’s very easy to mix one with the other without realising. I
