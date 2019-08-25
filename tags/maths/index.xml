@@ -416,9 +416,9 @@ From my point of view, there are fundamentally two different kinds of copy:</des
       <pubDate>Tue, 03 Nov 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</guid>
-      <description>Thanks to Mandel, LISP and my Lavaurs code
-As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able&amp;hellip; and then found Mandel.
-Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
+      <description>As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able… and then found Mandel.
+ Thanks to Mandel, LISP and my Lavaurs code
+  Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
     </item>
     
     <item>
@@ -428,8 +428,8 @@ Really nice program, with lots and lots of options (and I met the programmer, wh
       
       <guid>https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/</guid>
       <description>As you may already know, I presented a poster at a conference recently, and did the set up with Scribus, the texts with LaTeX with the Beamer and Beamerposter packages.
-
-Setting up
+ Setting up
+  Note from 2019: I can&amp;rsquo;t find the final version of that poster. It&amp;rsquo;s probably sitting in some backup, but it&amp;rsquo;s a bit too deep to find.
 The first piece of advise, is to set page guides where needed (in the Page menu, you can put them at a certain numerical place, and then move them along) and then Snap to guides in the same menu.</description>
     </item>
     
@@ -693,7 +693,7 @@ Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe pol
       <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</guid>
-      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
+      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer… a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
     </item>
     
     <item>

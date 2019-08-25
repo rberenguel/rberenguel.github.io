@@ -57,9 +57,8 @@ If I want to raytrace, better to improve the Lisp raytracer, which is sitting id
       <pubDate>Wed, 02 Dec 2009 00:01:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/12/abstract-triangles-in-lisp.html/</guid>
-      <description>A LISP random triangle generator. Also a C version.
-You may also like to have a look at
-ParseList(ScrambleList(Relateds(Lisp,Programming)))</description>
+      <description> A LISP random triangle generator. Also wrote a C version.
+  </description>
     </item>
     
     <item>
@@ -68,9 +67,9 @@ ParseList(ScrambleList(Relateds(Lisp,Programming)))</description>
       <pubDate>Tue, 03 Nov 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/</guid>
-      <description>Thanks to Mandel, LISP and my Lavaurs code
-As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able&amp;hellip; and then found Mandel.
-Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
+      <description>As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able… and then found Mandel.
+ Thanks to Mandel, LISP and my Lavaurs code
+  Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).</description>
     </item>
     
     <item>
@@ -124,7 +123,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</guid>
-      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer&amp;hellip; a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
+      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer… a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
     </item>
     
     <item>
@@ -134,9 +133,8 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       
       <guid>https://mostlymaths.net/2009/06/wolfram-alpha.html/</guid>
       <description>Stephen Wolfram (owner of Wolfram Research) has released (after announcing it in March) Wolfram Alpha, a kind of web search aimed at natural language and intelligent answers. JME pointed me to this question:
-
-Taken from Wolfram Alpha page
-The strange thing about it is that is is fully written in Mathematica (or so they say, 5 million lines of code). Strange indeed, Mathematica isn&amp;rsquo;t a particularly fast programming language. I bet someone could write a LISP version of it in half that lines&amp;hellip; without word-wrapping ;)</description>
+ Taken from Wolfram Alpha
+  The strange thing about it is that is is fully written in Mathematica (or so they say, 5 million lines of code). Strange indeed, Mathematica isn&amp;rsquo;t a particularly fast or &amp;ldquo;comfy&amp;rdquo; programming language.</description>
     </item>
     
   </channel>
