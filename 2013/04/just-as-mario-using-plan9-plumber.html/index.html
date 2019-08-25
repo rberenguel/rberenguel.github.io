@@ -129,13 +129,13 @@ If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been usin
 
 <p><strong>Note:</strong> It&rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&rsquo;s not hard to find where they are, if you run into any problems let me know.</p>
 
-<p>If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been using Acme and related <a href="http://swtch.com/plan9port/">Plan 9 from User Space</a> utilities lately. One of its pieces is the plumber. And knowing what it does may be tricky:</p>
+<p>If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been using Acme and related <a href="http://swtch.com/plan9port/" target="_blank">Plan 9 from User Space</a> utilities lately. One of its pieces is the plumber. And knowing what it does may be tricky:</p>
 
 <blockquote>
 <p>Plumbing is a new mechanism for inter-process communication in Plan 9, specifically the passing of messages between interactive programs as part of the user interface. Although plumbing shares some properties with familiar notions such as cut and paste, it offers a more general data exchange mechanism without imposing a particular user interface.</p>
 </blockquote>
 
-<p>From <a href="http://plan9.bell-labs.com/sys/doc/plumb.html">Plumbing and other utilities</a> by Rob Pike</p>
+<p>From <a href="http://plan9.bell-labs.com/sys/doc/plumb.html" target="_blank">Plumbing and other utilities</a> by Rob Pike</p>
 
 <h3 id="what-is-the-plumber">What is the plumber?</h3>
 
@@ -150,7 +150,7 @@ If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been usin
 <ul>
 <li>open something.jpeg will open this image in Preview (or its default opener)</li>
 <li>open afile.txt will open this text file with its default opener, too.</li>
-<li>open <a href="http://web.something">http://web.something</a> will open the webpage in the default browser.</li>
+<li>open <a href="http://web.something" target="_blank">http://web.something</a> will open the webpage in the default browser.</li>
 </ul>
 
 <p>I think you get the idea. Open just opens something. If you use the command line in Mac OS, you have probably used it on and off to quickly open images or pdfs. I know I have.</p>
@@ -221,7 +221,7 @@ plumb start open 'http://www.amazon.com/s/?field-keywords='$1
 
 <h3 id="system-wideness-of-the-plumber">System wideness of the plumber</h3>
 
-<p>When I say the plumber works system wide, I mean that in the Plan9 ecosystem (or in plan9ports) anything the plumber recognises as &ldquo;special&rdquo; can be easily plumbed. For example, I&rsquo;m typing this in acme, thus I can right-click this ISBN (0836213122) to switch to Chrome and find what this book is. And if I&rsquo;m in a <a href="http://swtch.com/plan9port/man/man1/9term.html">9term</a> window, I can middle click-and-release to get the same. It&rsquo;s neat, but of course it gets neater: right clicking in an expression filename:lineno gets you to this match, making grep a whole lot more useful.</p>
+<p>When I say the plumber works system wide, I mean that in the Plan9 ecosystem (or in plan9ports) anything the plumber recognises as &ldquo;special&rdquo; can be easily plumbed. For example, I&rsquo;m typing this in acme, thus I can right-click this ISBN (0836213122) to switch to Chrome and find what this book is. And if I&rsquo;m in a <a href="http://swtch.com/plan9port/man/man1/9term.html" target="_blank">9term</a> window, I can middle click-and-release to get the same. It&rsquo;s neat, but of course it gets neater: right clicking in an expression filename:lineno gets you to this match, making grep a whole lot more useful.</p>
 
 <p>For me, its main strength is inside acme, since it is almost the only piece of Plan9 I use with regularity (I use zsh which is pretty good as it is.) As such, using the plumber we can add even more awesomeness to this editor:</p>
 
@@ -234,13 +234,13 @@ plumb start zsh -c 'ag --nogroup --nocolor --search-files &quot;'$1'&quot; '$dir
 
 </code></pre>
 
-<p>This lets me write ag:word or ag:&ldquo;something longer&rdquo; to search for word or &ldquo;something longer&rdquo; recursively in the current working directory using <a href="https://github.com/ggreer/the_silver_searcher">The Silver Searcher</a>.</p>
+<p>This lets me write ag:word or ag:&ldquo;something longer&rdquo; to search for word or &ldquo;something longer&rdquo; recursively in the current working directory using <a href="https://github.com/ggreer/the_silver_searcher" target="_blank">The Silver Searcher</a>.</p>
 
 <p><em>The Silver Searcher</em> is a source code file searcher, similar to ack. Ack and tss are both faster than grep because they omit .ignore, backup and non-source files. Of course this can be overriden, but since I usually work only with source when using grep, it is a great tradeoff.</p>
 
-<p>The --search-files is a hidden option, without it line numbers are not rendered when ag is ran from another program (see <a href="https://github.com/leonid-shevtsov/SearchInProject_SublimeText2/issues/1">this github issue</a>).</p>
+<p>The --search-files is a hidden option, without it line numbers are not rendered when ag is ran from another program (see <a href="https://github.com/leonid-shevtsov/SearchInProject_SublimeText2/issues/1" target="_blank">this github issue</a>).</p>
 
-<p>Or I can add the following to use my wikipedia quick searcher script (based on this <a href="http://commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns">neat commandlinefu hack</a>):</p>
+<p>Or I can add the following to use my wikipedia quick searcher script (based on this <a href="http://commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns" target="_blank">neat commandlinefu hack</a>):</p>
 
 <pre><code>type is text  
 data matches 'def:&quot;?(\[a-zA-Z¡-�0-9\_\\-./\]+)&quot;?'  

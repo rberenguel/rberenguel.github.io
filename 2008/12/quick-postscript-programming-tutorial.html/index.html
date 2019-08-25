@@ -129,14 +129,14 @@
     
 
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>For those of you who don&rsquo;t know,
-<a href="http://en.wikipedia.org/wiki/PostScript"><em>PostScript</em></a> <em>is a programming
+<a href="http://en.wikipedia.org/wiki/PostScript" target="_blank"><em>PostScript</em></a> <em>is a programming
 language (and also the name of the type of files you write in this language)
 used as a way to define what a page looks like</em>. A PostScript file contains
 instructions which create text, or draw images, and these instructions can do
 quite a lot of work. PostScript is directly processed by almost all laser
 printers, and if you are a Linux or MacOs user you already have some mean to
-process and open it. In Windows you can download an install <a href="http://pages.cs.wisc.edu/~ghost/doc/AFPL/index.htm">AFPL
-GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm">this
+process and open it. In Windows you can download an install <a href="http://pages.cs.wisc.edu/~ghost/doc/AFPL/index.htm" target="_blank">AFPL
+GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm" target="_blank">this
 page to convert a PS to PDF</a>.</p>
 
 <div style="text-align: center;">
@@ -164,7 +164,7 @@ page to convert a PS to PDF</a>.</p>
 </figure>
 
 
-<p>As you may already know, PostScript is a <a href="http://en.wikipedia.org/wiki/Turing_complete">Turing
+<p>As you may already know, PostScript is a <a href="http://en.wikipedia.org/wiki/Turing_complete" target="_blank">Turing
 complete</a> programming language.
 This means that any program you can write in any programming language, you can
 write in PostScript (albeit it will be slower). As geekish and curious as I am,
@@ -173,20 +173,20 @@ forget new languages almost as quick as I learnt them (<em>Oh Python, where are
 thou?</em>) I started writing some small reminders. If I forgot, I just read them
 and ready to go. In this quick tutorial/knowledge-refresher for PostScript
 programming, I&rsquo;ll sketch some key points and show a pair of examples: a
-<a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> and a <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch&rsquo;s
+<a href="http://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot set</a> and a <a href="http://en.wikipedia.org/wiki/Koch_snowflake" target="_blank">Koch&rsquo;s
 snowflake</a>. As a side note, the
 code for the snowflake is quite general for
-<a href="http://en.wikipedia.org/wiki/L-system">L-systems</a>.&ldquo;My&rdquo; code for this system is
+<a href="http://en.wikipedia.org/wiki/L-system" target="_blank">L-systems</a>.&ldquo;My&rdquo; code for this system is
 a rewriting, rescaling and simplifying of the code from Michel Charpentier at
-<a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">this page</a>. When you are
+<a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/" target="_blank">this page</a>. When you are
 through this tutorial, take a look at his code, he is much more clever than I am
 when PostScript-ing, and his results are <em>awesome</em>.</p>
 
 <p><em>From now on, PS will mean, of course, PostScript.</em></p>
 
-<p><em>PS is</em> <a href="http://en.wikipedia.org/wiki/Category:Stack-oriented_programming_languages"><em>stack
+<p><em>PS is</em> <a href="http://en.wikipedia.org/wiki/Category:Stack-oriented_programming_languages" target="_blank"><em>stack
 oriented</em></a><em>,
-based on RPN (</em><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation"><em>reverse polish
+based on RPN (</em><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank"><em>reverse polish
 notation</em></a><em>)</em>. This
 means that you have a stack, like a stack of plates, and if you want to multiply
 3 by 4, you should write <code>3 4 mu</code> to push 3 and 4 to the stack (4 being the
@@ -203,7 +203,7 @@ every PS file with the comment line <code>%!PS</code> which allows all devices t
 it as PostScript.</p>
 
 <p><em>There are two separate stacks</em>: a operand stack and a dictionary stack. Well,
-in fact as <a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit points out,
+in fact as <a href="http://www.reddit.com/user/xardox" target="_blank">xardox</a> from Reddit points out,
 there are 3 stacks, these two and the function stack: thanks to it you don&rsquo;t
 need to mess with function call and return addresses in the other two stacks. In
 the first one, operands (as 3 and 4 in the previous example) are kept. In the
@@ -214,7 +214,7 @@ you define a variable named A twice, when you call it only the most recent
 <p>In fact, defining a variable or defining an operator has the same syntax as
 defining a variable. <code>/name content def</code> for a variable, <code>/name {operations} def</code>
 for an operator. I find this nice (very
-<a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a>-y).
+<a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29" target="_blank">Lisp</a>-y).
 <em>Variable and function names are made of combinations of characters (a…z) and
 numbers, as usual in other programming languages</em>. Curiously enough, you can
 name a variable <code>7U</code> if you want, but starting variables with a number is &ldquo;bad
@@ -222,7 +222,7 @@ style&rdquo;, usually. Keep it in mind. You may wonder why I wrote <code>/name</
 a variable. Well preceding a name with a <code>/</code> (slash) puts the name itself as
 operand in the stack, without the slash, PS looks for it in the dictionary stack
 and puts its corresponding value in the stack. (Thanks to
-<a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit for the slash/backslash
+<a href="http://www.reddit.com/user/xardox" target="_blank">xardox</a> from Reddit for the slash/backslash
 distinction).</p>
 
 <p>After so much talking, sure you are wondering <em>How does one draw?</em> Well,</p>
@@ -399,7 +399,7 @@ write a <em>false</em> procedure.</p>
 <figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">
     <img src="Mand.png"
          alt="Mandelbrot set"/> </a><figcaption>
-            <p><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">Mandelbrot set</a></p>
+            <p><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254" target="_blank">Mandelbrot set</a></p>
         </figcaption>
 </figure>
 
@@ -407,7 +407,7 @@ write a <em>false</em> procedure.</p>
 <figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">
     <img src="Koch.png"
          alt="Koch&amp;rsquo;s island."/> </a><figcaption>
-            <p><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">Koch&rsquo;s island.</a></p>
+            <p><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033" target="_blank">Koch&rsquo;s island.</a></p>
         </figcaption>
 </figure>
 
@@ -415,11 +415,11 @@ write a <em>false</em> procedure.</p>
 <p>And some references</p>
 
 <ul>
-<li><a href="http://en.wikipedia.org/wiki/PostScript">Wikipedia article</a></li>
-<li><a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">L-systems in PostScript</a></li>
-<li><a href="http://www.pugo.org/main/project_pshttpd/">A PostScript web-server</a></li>
-<li><a href="http://www.tailrecursive.org/postscript/postscript.html">A first guide to PostScript</a></li>
-<li><a href="https://www.adobe.com/content/dam/acom/en/devnet/actionscript/articles/PLRM.pdf">PostScript Language Reference (Red book)</a> (if this link stops working, just Google for it, it&rsquo;s freely available from Adobe but the location changes)</li>
+<li><a href="http://en.wikipedia.org/wiki/PostScript" target="_blank">Wikipedia article</a></li>
+<li><a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/" target="_blank">L-systems in PostScript</a></li>
+<li><a href="http://www.pugo.org/main/project_pshttpd/" target="_blank">A PostScript web-server</a></li>
+<li><a href="http://www.tailrecursive.org/postscript/postscript.html" target="_blank">A first guide to PostScript</a></li>
+<li><a href="https://www.adobe.com/content/dam/acom/en/devnet/actionscript/articles/PLRM.pdf" target="_blank">PostScript Language Reference (Red book)</a> (if this link stops working, just Google for it, it&rsquo;s freely available from Adobe but the location changes)</li>
 </ul>
 
 <p>If you enjoyed this small tutorial, please share its link with your friends! It

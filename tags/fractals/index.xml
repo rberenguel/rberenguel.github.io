@@ -26,10 +26,10 @@
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
-      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34;&gt;The
+      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34; target=&#34;_blank&#34;&gt;The
 Processing
 Handbook&lt;/a&gt; and
-&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34;&gt;Visualizing
+&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34; target=&#34;_blank&#34;&gt;Visualizing
 Data&lt;/a&gt;
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with &lt;code&gt;processing.js&lt;/code&gt; something around 2011 (there was a

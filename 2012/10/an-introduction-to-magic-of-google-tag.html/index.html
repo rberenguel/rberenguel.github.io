@@ -130,15 +130,15 @@ Its main feature is the fact that you can get away with just a piece of included
 
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
 
-<p><em>If you want to read a quick overview of this in Spanish, check my <a href="http://www.doctormetrics.com/2012/10/01/google-tag-manager/">post about GTM at DoctorMetrics</a>.</em></p>
+<p><em>If you want to read a quick overview of this in Spanish, check my <a href="http://www.doctormetrics.com/2012/10/01/google-tag-manager/" target="_blank">post about GTM at DoctorMetrics</a>.</em></p>
 
-<p>Google has just unveiled a new tool: <em><a href="http://googletagmanager.com/">Google Tag Manager</a></em>. I have spent a few hours playing with it (both before and after official release.) And it&rsquo;s awesome! Or at least, it has quite a lot of awesomeness, hidden behind a seemingly simple interface.</p>
+<p>Google has just unveiled a new tool: <em><a href="http://googletagmanager.com/" target="_blank">Google Tag Manager</a></em>. I have spent a few hours playing with it (both before and after official release.) And it&rsquo;s awesome! Or at least, it has quite a lot of awesomeness, hidden behind a seemingly simple interface.</p>
 
 <p><em>Its main feature is the fact that you can get away with just a piece of included code</em>. You don&rsquo;t need to include your Analytics code on top and your DoubleClick counters in all the pages you need. There&rsquo;s just one thing you can&rsquo;t do: change the content of your page (via document.write)</p>
 
 <h2 id="so-what-s-google-tag-manager-good-for-exactly">So, what&rsquo;s Google Tag Manager good for (exactly)?</h2>
 
-<p>It centralizes the management of page tagging and tag execution based on rules. <strong>A simple example</strong>: you want to track how many people click on the Atom subscribe link in your <a href="http://www.mostlymaths.net/p/subscribe.html">Subscribe</a> page with event tracking via Google Analytics. This  is straightforward with Google Analytics, in fact: you only need to set the correct event for onclick in the page source like this:<br />
+<p>It centralizes the management of page tagging and tag execution based on rules. <strong>A simple example</strong>: you want to track how many people click on the Atom subscribe link in your <a href="http://www.mostlymaths.net/p/subscribe.html" target="_blank">Subscribe</a> page with event tracking via Google Analytics. This  is straightforward with Google Analytics, in fact: you only need to set the correct event for onclick in the page source like this:<br />
 <code>
 _gaq.push([&quot;_trackEvent&quot;, &quot;SubscribeRSS&quot;, &quot;Sidebar&quot;]);</code></p>
 
@@ -149,7 +149,7 @@ _gaq.push([&quot;_trackEvent&quot;, &quot;SubscribeRSS&quot;, &quot;Sidebar&quot
 <p><code>
 url&gt; contains&gt; &quot;subscribe&quot;</code></p>
 
-<p><a href="http://1.bp.blogspot.com/-kr9niPgN4Ms/UGliAouu4XI/AAAAAAAADhY/Pz7uJeujziU/s1600/GoogleTagManager-Rules.png"><img src="http://1.bp.blogspot.com/-kr9niPgN4Ms/UGliAouu4XI/AAAAAAAADhY/Pz7uJeujziU/s400/GoogleTagManager-Rules.png" alt="" /></a></p>
+<p><a href="http://1.bp.blogspot.com/-kr9niPgN4Ms/UGliAouu4XI/AAAAAAAADhY/Pz7uJeujziU/s1600/GoogleTagManager-Rules.png" target="_blank"><img src="http://1.bp.blogspot.com/-kr9niPgN4Ms/UGliAouu4XI/AAAAAAAADhY/Pz7uJeujziU/s400/GoogleTagManager-Rules.png" alt="" /></a></p>
 
 <p>As easy as that&hellip; But you also need to add the event tracker to that link. How? The simplest way I&rsquo;ve come up is with some basic jQuery magic. Include jQuery (which you can do for all pages, not just subscribe!) and then set the gaq push event, by selecting the correct link via the href attribute of the link. You can select based on text, or anything you fancy, of course.</p>
 
@@ -162,14 +162,14 @@ url&gt; contains&gt; &quot;subscribe&quot;</code></p>
 <code>  function(event){     _gaq.push([&quot;_trackEvent&quot;, &quot;SubscribeRSS&quot;, &quot;Atom&quot;]);   });</code><br />
 <code>&lt;/script&gt;</code></p>
 
-<p><a href="http://2.bp.blogspot.com/-rLhRtMywHeY/UGljVZ7dfdI/AAAAAAAADhg/UC_AlCiVsNQ/s1600/GoogleTagManager-Tags.png"><img src="http://2.bp.blogspot.com/-rLhRtMywHeY/UGljVZ7dfdI/AAAAAAAADhg/UC_AlCiVsNQ/s400/GoogleTagManager-Tags.png" alt="" /></a></p>
+<p><a href="http://2.bp.blogspot.com/-rLhRtMywHeY/UGljVZ7dfdI/AAAAAAAADhg/UC_AlCiVsNQ/s1600/GoogleTagManager-Tags.png" target="_blank"><img src="http://2.bp.blogspot.com/-rLhRtMywHeY/UGljVZ7dfdI/AAAAAAAADhg/UC_AlCiVsNQ/s400/GoogleTagManager-Tags.png" alt="" /></a></p>
 
 <p>With jQuery you can go as far as to dynamically change the link to add campaign tracking, to any link in the page:<br />
 <code>
 $('a[href$=&quot;http://www.mostlymaths.net/feeds/posts/default&quot;]').attr(&quot;href&quot;,</code><br />
 <code>   &quot;http://www.mostlymaths.net/p/subscribe.html?utm_source=GTM&amp;utm_medium=Redirect&amp;utm_campaign=Testing&quot;)</code></p>
 
-<p>The options available are almost limitless: enjoy your new GTM goodness! And feel free to <a href="http://www.mostlymaths.net/p/about-me.html#hire">contact me</a> for more implementation details or ideas.</p>
+<p>The options available are almost limitless: enjoy your new GTM goodness! And feel free to <a href="http://www.mostlymaths.net/p/about-me.html#hire" target="_blank">contact me</a> for more implementation details or ideas.</p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

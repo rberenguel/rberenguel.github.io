@@ -133,7 +133,7 @@ There&rsquo;s still a third contestant in editor-land, for me."/>
 
 <p>I can start with a screenshot of it:</p>
 
-<p><a href="http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s1600/Screen+shot+2013-03-09+at+12.01.54+AM.png"><img src="http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s400/Screen+shot+2013-03-09+at+12.01.54+AM.png" alt="" /></a></p>
+<p><a href="http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s1600/Screen+shot+2013-03-09+at+12.01.54+AM.png" target="_blank"><img src="http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s400/Screen+shot+2013-03-09+at+12.01.54+AM.png" alt="" /></a></p>
 
 <p>This is how this post looks like. You can see an adict window by the side</p>
 
@@ -169,12 +169,12 @@ acme/10/xdata  is a file with the data (addr bound) of the editing window
 
 <p>Back into Acme. In Acme there&rsquo;s no GUI: text is the user interface. TUI. Every window is composed of two pieces: the text in the window (its &ldquo;body&rdquo;) and a tag above it (in blue.) If you want to copy something, select it and middle-click on Snarf. Then put your cursor where you want to paste and middle-click on Paste. Done. Of course, Snarf and Paste can be anywhere. In the tag menu, in the text you are editing or even in another document. They are just words. Words that do the work. </p>
 
-<p>But the same works with shell commands. I can type date and middle-click it, to get the current date in a new buffer. Same goes with ls. Or even |md5sum to calculate the checksum of some text. Or append something to a window. For example, there&rsquo;s an easy way to make small queries to Wikipedia via the command line (see <a href="http://www.commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns">http://www.commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns</a>) I wrote a script to do it, sitting in my path, so I can now type here &lt;wikiCLI.sh Acme with the cursor a few lines below this&hellip; and middle click.</p>
+<p>But the same works with shell commands. I can type date and middle-click it, to get the current date in a new buffer. Same goes with ls. Or even |md5sum to calculate the checksum of some text. Or append something to a window. For example, there&rsquo;s an easy way to make small queries to Wikipedia via the command line (see <a href="http://www.commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns" target="_blank">http://www.commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns</a>) I wrote a script to do it, sitting in my path, so I can now type here &lt;wikiCLI.sh Acme with the cursor a few lines below this&hellip; and middle click.</p>
 
 <p>Result:</p>
 
 <blockquote>
-<p>&ldquo;Acme (\; , the peak, zenith, prime) denotes the best of something. Acme or ACME may also refer to: Acme Corporation, a fictional company in the cartoon world of Looney Tunes, ACME Detective Agency, a fictional detective agency from the Carmen Sandiego seri&rdquo; &ldquo;es of computer games and television shows, Acme (album), the sixth album by the Jon Spencer Blues Explosion, Acme Novelty&hellip; <a href="http://en.wikipedia.org/wiki/Acme&quot;">http://en.wikipedia.org/wiki/Acme&quot;</a></p>
+<p>&ldquo;Acme (\; , the peak, zenith, prime) denotes the best of something. Acme or ACME may also refer to: Acme Corporation, a fictional company in the cartoon world of Looney Tunes, ACME Detective Agency, a fictional detective agency from the Carmen Sandiego seri&rdquo; &ldquo;es of computer games and television shows, Acme (album), the sixth album by the Jon Spencer Blues Explosion, Acme Novelty&hellip; <a href="http://en.wikipedia.org/wiki/Acme&quot;" target="_blank">http://en.wikipedia.org/wiki/Acme&quot;</a></p>
 </blockquote>
 
 <h2 id="on-button-clicking">On button clicking</h2>
@@ -185,7 +185,7 @@ acme/10/xdata  is a file with the data (addr bound) of the editing window
 
 <blockquote>
 <p>;; Truncated, retrying in TCP mode.<br />
-&ldquo;Acme is a text editor and graphical shell from the Plan 9 from Bell Labs operating system, designed and implemented by Rob Pike. It can use the sam command language. The design of the interface was influenced by Oberon. It is different from other editing &rdquo; &ldquo;environments in that it acts as a 9P server. A distinctive element of the user interface is mouse chording&hellip; <a href="http://en.wikipedia.org/wiki/Acme_(text_editor)&quot;">http://en.wikipedia.org/wiki/Acme_(text_editor)&quot;</a></p>
+&ldquo;Acme is a text editor and graphical shell from the Plan 9 from Bell Labs operating system, designed and implemented by Rob Pike. It can use the sam command language. The design of the interface was influenced by Oberon. It is different from other editing &rdquo; &ldquo;environments in that it acts as a 9P server. A distinctive element of the user interface is mouse chording&hellip; <a href="http://en.wikipedia.org/wiki/Acme_(text_editor)&quot;" target="_blank">http://en.wikipedia.org/wiki/Acme_(text_editor)&quot;</a></p>
 </blockquote>
 
 <p>Doing so is a little more troublesome: select &ldquo;Acme (text editor)&rdquo; and select the command with the second button (to execute) finally click: clicking sends the last selection as argument 1 to the program. Doing so with a Mac trackpad is impossible: there&rsquo;s no way to simulate a left-click while middle-clicking. I also find there&rsquo;s a glitch here: there&rsquo;s no way to redirect the output of the command. It&rsquo;s either overwriting the selection of the argument, or goes to the +Errors window.</p>
@@ -279,7 +279,7 @@ echo &quot;Moved to beginning&quot;
 
 <p>In some sense, the plumber is like a system-wide, app-deep &ldquo;open&rdquo; mechanism. In Mac OS, you can &ldquo;open&rdquo; almost anything from the command line. If you open an URL, your default browser opens it, if you open an image, Preview handles it. Plumbing is like &ldquo;open 3.0&rdquo; but it is hard to manage :/</p>
 
-<p>Below you can see another video with a simpler scripting: browsing reddit from the command line, inside acme. The Python code snippet that gets Reddit data is available in this gist: <a href="https://gist.github.com/rberenguel/5130837">reddi.py</a></p>
+<p>Below you can see another video with a simpler scripting: browsing reddit from the command line, inside acme. The Python code snippet that gets Reddit data is available in this gist: <a href="https://gist.github.com/rberenguel/5130837" target="_blank">reddi.py</a></p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

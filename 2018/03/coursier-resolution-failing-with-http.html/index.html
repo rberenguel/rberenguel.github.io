@@ -131,14 +131,14 @@ commit to the heavens and CircleCI was happy."/>
     
     
     <section class="w-60 mb1">
-        <span class="fw2 "><em>Or, how I made my first contribution to <a href="https://github.com/coursier/coursier">coursier</a></em></span>
+        <span class="fw2 "><em>Or, how I made my first contribution to <a href="https://github.com/coursier/coursier" target="_blank">coursier</a></em></span>
     </section>
     
 
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>I ran into this problem with <code>sbt</code> dependency resolution around 7 weeks ago. I
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
-commit to the heavens and <a href="https://circleci.com/">CircleCI</a> was happy.</p>
+commit to the heavens and <a href="https://circleci.com/" target="_blank">CircleCI</a> was happy.</p>
 
 <pre><code>[trace] Stack trace suppressed: run last service/*:update for the full output. 
 [error] (service/*:update) coursier.ResolutionException: 1 download error 
@@ -163,7 +163,7 @@ the problem was.</p>
 requesting does not have this range available: it is shorter, or the range is
 malformed, or who knows. The expectation should be that under a 416 error, a
 full request is issued, but this was not the case with Coursier (I created the
-<a href="https://github.com/coursier/coursier/issues/794">issue</a> and <a href="https://github.com/coursier/coursier/pull/795">submitted a
+<a href="https://github.com/coursier/coursier/issues/794" target="_blank">issue</a> and <a href="https://github.com/coursier/coursier/pull/795" target="_blank">submitted a
 PR</a> to fix it, should be fixed in
 the next release).</p>
 
@@ -201,10 +201,10 @@ connection if the returned headers are not valid.</p>
 <p>To test the functionality I used <code>sbt-plugins/publish-local</code> to create a
 SNAPSHOT build I could set in my <code>.sbt</code>. Once I got the bug manually tested I
 ran the tests suites. I wanted to add a test, but this seemed untestable under
-the current suites, so I pushed and waited. The <a href="https://github.com/alexarchambault">lead
+the current suites, so I pushed and waited. The <a href="https://github.com/alexarchambault" target="_blank">lead
 maintainer</a> gave me some pointers on how to
 create a test using the current systems (I got close but didn’t work in the
-end), and then, a PR by <a href="https://github.com/wisechengyi">wisechengyi</a> added
+end), and then, a PR by <a href="https://github.com/wisechengyi" target="_blank">wisechengyi</a> added
 several helpers for testing a PR he created in a similar situation, so I could
 add a test to mine. And done!</p><hr/><ul class="pa0">
   

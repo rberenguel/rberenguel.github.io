@@ -126,7 +126,7 @@
 
 <h2 id="the-easiest-way-to-debug-valgrind-with-the-most-powerful-text-editor-emacs">The easiest way to debug: <em>valgrind</em> with the most powerful text editor: <em>emacs</em></h2>
 
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s1600-h/valgrindemacs.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s400/valgrindemacs.png" alt="Emacs and valgrind" title="Emacs and valgrind" /></a>A few days ago my office mate told me about the great debugging tool known as <a href="http://valgrind.org/">valgrind</a>. Before I have been using the great pairing of <a href="http://www.gnu.org/software/emacs/">emacs</a>+<a href="http://www.gnu.org/software/gdb/">gdb</a> to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</p>
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s1600-h/valgrindemacs.png" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s400/valgrindemacs.png" alt="Emacs and valgrind" title="Emacs and valgrind" /></a>A few days ago my office mate told me about the great debugging tool known as <a href="http://valgrind.org/" target="_blank">valgrind</a>. Before I have been using the great pairing of <a href="http://www.gnu.org/software/emacs/" target="_blank">emacs</a>+<a href="http://www.gnu.org/software/gdb/" target="_blank">gdb</a> to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</p>
 
 <p>How to use valgrind?</p>
 
@@ -195,7 +195,7 @@ return 0;}</p>
 
 <p>Et voilà! Line number of exactly where memory access was out of bounds. What else could we ask for? Of course, emacs.</p>
 
-<p>You can call valgrind from emacs, inside an emacs shell buffer (M-x shell, then you are working in an usual shell), but you would like to visit the exact line in your code somewhat. Probably through either keyboard or mouse click. It turns out (I found it <a href="http://tromey.com/blog/?p=342">here</a> while googling for a way to use valgrind via emacs) you can use compilation-minor-mode to do that&hellip; (M-x compilation-minor-mode), the problem then is that the return key gets mapped to compile-goto-error (i.e. you go to the line in the source with return), thus the terminal buffer no longer works as there is no way to send it commands. To solve this, I wrote this small piece of code and added to my .emacs:</p>
+<p>You can call valgrind from emacs, inside an emacs shell buffer (M-x shell, then you are working in an usual shell), but you would like to visit the exact line in your code somewhat. Probably through either keyboard or mouse click. It turns out (I found it <a href="http://tromey.com/blog/?p=342" target="_blank">here</a> while googling for a way to use valgrind via emacs) you can use compilation-minor-mode to do that&hellip; (M-x compilation-minor-mode), the problem then is that the return key gets mapped to compile-goto-error (i.e. you go to the line in the source with return), thus the terminal buffer no longer works as there is no way to send it commands. To solve this, I wrote this small piece of code and added to my .emacs:</p>
 
 <blockquote>
 <p>(defun valgrind ()<br />

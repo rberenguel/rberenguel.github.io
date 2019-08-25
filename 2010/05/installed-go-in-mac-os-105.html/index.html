@@ -131,21 +131,21 @@ The first step is checking for Mercurial (wikipedia) in your system. Open a term
     
     
 
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Yes, I know it: it is easy. But I will be doing a wipe and reinstall of my MacBook, and when I need to reinstall everything I want a place to check for the steps I did. I found almost all tips needed <a href="http://www.kelvinwong.ca/2009/11/12/installing-google-go-on-mac-os-x-leopard/">here</a>.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Yes, I know it: it is easy. But I will be doing a wipe and reinstall of my MacBook, and when I need to reinstall everything I want a place to check for the steps I did. I found almost all tips needed <a href="http://www.kelvinwong.ca/2009/11/12/installing-google-go-on-mac-os-x-leopard/" target="_blank">here</a>.</p>
 
-<p>The first step is checking for <a href="http://en.wikipedia.org/wiki/Mercurial">Mercurial</a> (wikipedia) in your system. Open a terminal and type</p>
+<p>The first step is checking for <a href="http://en.wikipedia.org/wiki/Mercurial" target="_blank">Mercurial</a> (wikipedia) in your system. Open a terminal and type</p>
 
 <blockquote>
 <p>hg version</p>
 </blockquote>
 
-<p>If your terminal complains about command not found, you don&rsquo;t have Mercurial installed. You have to install it, but prior to it you need to check your <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> version. In your terminal,</p>
+<p>If your terminal complains about command not found, you don&rsquo;t have Mercurial installed. You have to install it, but prior to it you need to check your <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29" target="_blank">Python</a> version. In your terminal,</p>
 
 <blockquote>
 <p>python -V</p>
 </blockquote>
 
-<p>will tell you which version you have. You&rsquo;ll have it installed, as Mac OS has it by default. In the improbable case you don&rsquo;t, you can install from <a href="http://www.python.org/download/releases/">here</a> as a standard dmg-pkg Mac OS install. Anyway, it is a good idea to update it. After you have Python installed, you can install Mercurial from <a href="http://mercurial.berkwood.com/">here</a>. Beware, you need to install a version suited to your Mac OS version and Python version. If in doubt, upgrade Python and install the latest available Mercurial.</p>
+<p>will tell you which version you have. You&rsquo;ll have it installed, as Mac OS has it by default. In the improbable case you don&rsquo;t, you can install from <a href="http://www.python.org/download/releases/" target="_blank">here</a> as a standard dmg-pkg Mac OS install. Anyway, it is a good idea to update it. After you have Python installed, you can install Mercurial from <a href="http://mercurial.berkwood.com/" target="_blank">here</a>. Beware, you need to install a version suited to your Mac OS version and Python version. If in doubt, upgrade Python and install the latest available Mercurial.</p>
 
 <p>I forgot to mention that you need XCode, and all the usual development tools for Mac OS (gcc and the like). But I guess you already have all this installed if you are interested in installing go. If not, they are in your companion CD for Mac OS.</p>
 
@@ -168,7 +168,7 @@ export PATH=$GOBIN:$PATH</p>
 <p>All these variables should now be working correctly. The time to fetch go has arrived! Be sure that you don&rsquo;t have a ~/go directory prior to this step, as this could wipe or corrupt data in that directory.</p>
 
 <blockquote>
-<p>hg clone -r release <a href="https://go.googlecode.com/hg/">https://go.googlecode.com/hg/</a> $GOROOT</p>
+<p>hg clone -r release <a href="https://go.googlecode.com/hg/" target="_blank">https://go.googlecode.com/hg/</a> $GOROOT</p>
 </blockquote>
 
 <p>This step can take around one or two minutes. Once you are done, you need to create a ~/bin directory and make it executable, if it doesn&rsquo;t exist. If this is the case,</p>
@@ -204,16 +204,16 @@ which 8l<br />
 /Users/ruben/bin/8l</p>
 </blockquote>
 
-<p>If you want to test if it works, you can find a sample hello world program <a href="http://golang.org/doc/install.html#tmp_76">here</a> (Go homepage).</p>
+<p>If you want to test if it works, you can find a sample hello world program <a href="http://golang.org/doc/install.html#tmp_76" target="_blank">here</a> (Go homepage).</p>
 
 <p>I hope this helped your process of installing (and learning) this language.</p>
 
 <p>Related posts:<br />
-<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html">8 reader reasons for re-inventing the wheel as a programmer</a><br />
-<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a><br />
-<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br />
-<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br />
-<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br />
+<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html" target="_blank">8 reader reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html" target="_blank">Approximating images with randomly placed translucent triangles</a><br />
+<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html" target="_blank">8 reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S6eo3rAunRI/AAAAAAAACBM/kgAIODuhu_I/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html" target="_blank">C code juicer: detecting copied programming assignments</a><br />
 ParseHighlights(ScrambleList(Programming),5)</p>
 <hr/><ul class="pa0">
   

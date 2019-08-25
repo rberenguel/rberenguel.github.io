@@ -133,14 +133,14 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
 <figure class="fig-left">
     <img src="whistle.jpg"
          alt="From flickr"/> <figcaption>
-            <p>From <a href="http://www.flickr.com/photos/stevendepolo/3830812620/">flickr</a></p>
+            <p>From <a href="http://www.flickr.com/photos/stevendepolo/3830812620/" target="_blank">flickr</a></p>
         </figcaption>
 </figure>
 
 
-<p>Hi reader, you may be also interested in <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a></p>
+<p>Hi reader, you may be also interested in <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a></p>
 
-<p>Around a year ago, I stumbled into this <a href="http://lifehacker.com/271755/whistle-to-control-your-computer">lifehacker page</a>, suggesting an <a href="http://www.ibm.com/developerworks/">IBM-developerWorks</a> tutorial on how to install a just 3 things to your system to be able to&hellip; <a href="http://www.ibm.com/developerworks/library/os-whistle/index.html?ca=dgr-lnxw97whistlework_">whistle control your computer</a>. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details. And the script had a small problem that had to be solved.</p>
+<p>Around a year ago, I stumbled into this <a href="http://lifehacker.com/271755/whistle-to-control-your-computer" target="_blank">lifehacker page</a>, suggesting an <a href="http://www.ibm.com/developerworks/" target="_blank">IBM-developerWorks</a> tutorial on how to install a just 3 things to your system to be able to&hellip; <a href="http://www.ibm.com/developerworks/library/os-whistle/index.html?ca=dgr-lnxw97whistlework_" target="_blank">whistle control your computer</a>. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details. And the script had a small problem that had to be solved.</p>
 
 <h2 id="in-this-post-you-will-find">In this post you will find</h2>
 
@@ -161,9 +161,9 @@ Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-devel
 <p>The first and most important ingredient is having th set of compilers&hellip; if you don&rsquo;t have gcc and the developer-related software, you can&rsquo;t do anything. Assuming you do (your &ldquo;Extra&rdquo; CD of Mac OS installation contains everything needed), you&rsquo;ll need to download:</p>
 
 <ul>
-<li><p>cmdWhistle.pl <a href="http://draft.blogger.com/post-edit.g?blogID=13497321&amp;postID=1592322515886158373">from</a> <a href="http://www.ibm.com/developerworks/library/os-whistle/">here</a>. Browse to the bottom of this page, it is where I got the instructions. You should take a look at it.</p></li>
+<li><p>cmdWhistle.pl <a href="http://draft.blogger.com/post-edit.g?blogID=13497321&amp;postID=1592322515886158373" target="_blank">from</a> <a href="http://www.ibm.com/developerworks/library/os-whistle/" target="_blank">here</a>. Browse to the bottom of this page, it is where I got the instructions. You should take a look at it.</p></li>
 
-<li><p>sndpeek source from <a href="http://soundlab.cs.princeton.edu/software/sndpeek/">here</a></p></li>
+<li><p>sndpeek source from <a href="http://soundlab.cs.princeton.edu/software/sndpeek/" target="_blank">here</a></p></li>
 </ul>
 
 <p>After you have the source code, go to your editor of choice, open src/sndpeek/sndkpeek.cpp and add the following line</p>
@@ -202,7 +202,7 @@ sudo h2ph *.h */*.h</p>
 
 <p>```from a terminal window.</p>
 
-<p><a href="http://draft.blogger.com/post-edit.g?blogID=13497321&amp;postID=1592322515886158373">After this step&hellip;</a> you can try to get some whistles in, but in my case, the script didn&rsquo;t work: it wasn&rsquo;t able to get correctly the time of day (via gettimeofday() in the C headers). To test it, go to the folder where you have cmdWhistle, and write</p>
+<p><a href="http://draft.blogger.com/post-edit.g?blogID=13497321&amp;postID=1592322515886158373" target="_blank">After this step&hellip;</a> you can try to get some whistles in, but in my case, the script didn&rsquo;t work: it wasn&rsquo;t able to get correctly the time of day (via gettimeofday() in the C headers). To test it, go to the folder where you have cmdWhistle, and write</p>
 
 <blockquote>
 <p>sndpeek &ndash;nodisplay &ndash;print | perl cmdWhistle.pl -c</p>
@@ -243,7 +243,7 @@ return($seconds);<br />
 
 <h2 id="instructions-for-linux-more-or-less-distro-agnostic">Instructions for Linux (more or less distro-agnostic)</h2>
 
-<p>It should be easier in Linux. You also need to download, ./configure, make and sudo make install the library libsndfile from <a href="http://www.mega-nerd.com/libsndfile/">here</a>. Then follow the steps from Mac OSX, editing sndpeek.cpp. Now try to make linux-alsa, or make linux-oss depending on which sound system do you have installed. I couldn&rsquo;t get any one working&hellip; so I just went to synaptics package manager, installed ALSA&rsquo;s developer libraries, and tried again make linux-alsa. All went fine&hellip; until compiling src/maryas/LPC.cpp. The compiler complained about the use of abs, the integer version of fabs, claiming it was undeclared. Just edit src/maryas/LPC.h, and add stdlib.h to the set of includes. It should work&hellip; follow the directions for the Mac OS if it compiled now.</p>
+<p>It should be easier in Linux. You also need to download, ./configure, make and sudo make install the library libsndfile from <a href="http://www.mega-nerd.com/libsndfile/" target="_blank">here</a>. Then follow the steps from Mac OSX, editing sndpeek.cpp. Now try to make linux-alsa, or make linux-oss depending on which sound system do you have installed. I couldn&rsquo;t get any one working&hellip; so I just went to synaptics package manager, installed ALSA&rsquo;s developer libraries, and tried again make linux-alsa. All went fine&hellip; until compiling src/maryas/LPC.cpp. The compiler complained about the use of abs, the integer version of fabs, claiming it was undeclared. Just edit src/maryas/LPC.h, and add stdlib.h to the set of includes. It should work&hellip; follow the directions for the Mac OS if it compiled now.</p>
 
 <p>In a follow up story son I will give a patch I wrote to use it in my Aspire one&hellip; The microphone is not very accurate, and sndpeek+cmdWhistle always give 511 as a signal received (in a sndpeek image you can always see a peak).</p>
 

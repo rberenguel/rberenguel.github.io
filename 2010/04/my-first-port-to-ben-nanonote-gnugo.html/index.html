@@ -130,13 +130,13 @@ Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just 
 
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
 
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s1600/DSC_0284.JPG"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s400/DSC_0284.JPG" alt="" /></a></p>
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s1600/DSC_0284.JPG" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s400/DSC_0284.JPG" alt="" /></a></p>
 
-<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">bought the Ben NanoNote</a>, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its <a href="http://en.qi-hardware.com/wiki/NanoNote_Personalities_Program">wiki says</a>.</p>
+<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">bought the Ben NanoNote</a>, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its <a href="http://en.qi-hardware.com/wiki/NanoNote_Personalities_Program" target="_blank">wiki says</a>.</p>
 
-<p>David Reyes, from <a href="http://www.tuxbrain.com/">Tuxbrain</a> did a great work by porting gnuchess to the Nano and <a href="http://www.tuxbrain.com/en/content/my-first-port-ben-nanonote-gnuchess-howto">documenting</a> it in his blog.</p>
+<p>David Reyes, from <a href="http://www.tuxbrain.com/" target="_blank">Tuxbrain</a> did a great work by porting gnuchess to the Nano and <a href="http://www.tuxbrain.com/en/content/my-first-port-ben-nanonote-gnuchess-howto" target="_blank">documenting</a> it in his blog.</p>
 
-<p>Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point. I first tried to port gforth&hellip; But cross-compiling a compiler like gforth is really painful. I&rsquo;ll give it more tries, but it will take a really long time. For now, I&rsquo;ll show you how I ported <a href="http://www.gnu.org/software/gnugo/">gnugo</a> to the NanoNote.</p>
+<p>Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point. I first tried to port gforth&hellip; But cross-compiling a compiler like gforth is really painful. I&rsquo;ll give it more tries, but it will take a really long time. For now, I&rsquo;ll show you how I ported <a href="http://www.gnu.org/software/gnugo/" target="_blank">gnugo</a> to the NanoNote.</p>
 
 <p>With respect to usability, the small screen in the Nano does not allow us to play a full 19x19 game (not in a way I&rsquo;m aware of), but it can play 9x9 as you can see in the picture I posted.</p>
 
@@ -196,7 +196,7 @@ PKG_RELEASE:=3<br />
 ## Name of the file we will download, with the previous package name definitions<br />
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz<br />
 ## Url with the PKG_SOURCE file<br />
-PKG_SOURCE_URL:=<a href="http://ftp.gnu.org/gnu/gnugo/">http://ftp.gnu.org/gnu/gnugo/</a><br />
+PKG_SOURCE_URL:=<a href="http://ftp.gnu.org/gnu/gnugo/" target="_blank">http://ftp.gnu.org/gnu/gnugo/</a><br />
 ## Program to uncompress the sources<br />
 PKG_CAT:=zcat</p>
 
@@ -206,7 +206,7 @@ define Package/gnugo<br />
 TITLE:=Go GNU from FSF<br />
 SECTION:=games<br />
 CATEGORY:=Games<br />
-URL:=<a href="http://www.gnu.org/software/gnugo">http://www.gnu.org/software/gnugo</a><br />
+URL:=<a href="http://www.gnu.org/software/gnugo" target="_blank">http://www.gnu.org/software/gnugo</a><br />
 endef<br />
 # Directory where the sources will be uncompiled and built BUILD_DIR<br />
 # is an env variable from the OpenWrt toolchain, you don&rsquo;t need to set<br />
@@ -281,7 +281,7 @@ $(eval $(call BuildPackage,gnugo))</p>
 
 <p>If there was some error, it was probably due some missing replace in the Makefile. Check what change is missing and correct it.</p>
 
-<p>Now you can transfer (with the <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB">Ethernet via USB</a> connection) the file in trunk/bin/xburst/packages, named gnugo-3.8-3-xburst.ipk to the NanoNote, where you can install by going to the directory where you have copied the ipk file and</p>
+<p>Now you can transfer (with the <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB" target="_blank">Ethernet via USB</a> connection) the file in trunk/bin/xburst/packages, named gnugo-3.8-3-xburst.ipk to the NanoNote, where you can install by going to the directory where you have copied the ipk file and</p>
 
 <blockquote>
 <p>opkg install gnugo-3.8-3-xburst.ipk</p>
@@ -290,10 +290,10 @@ $(eval $(call BuildPackage,gnugo))</p>
 <p>It may complain about some missing packages, but it is a Qi&rsquo;s distribution problem, not a fault from the freshly made package.</p>
 
 <p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html" target="_blank">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

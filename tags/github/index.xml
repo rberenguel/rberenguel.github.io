@@ -26,7 +26,7 @@
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</guid>
-      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34;&gt;Bloom
+      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34; target=&#34;_blank&#34;&gt;Bloom
 filters&lt;/a&gt; in Python. I wanted to time
 them against just checking whether a field is in a set/collection. I found
 something slightly puzzling: it looked like the &lt;code&gt;in&lt;/code&gt; worked &lt;em&gt;too fast&lt;/em&gt; for

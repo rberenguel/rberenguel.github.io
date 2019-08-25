@@ -139,34 +139,34 @@ The package can be downloaded in .deb format for Debian-like distributions."/>
 
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
 
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s1600/DebianNanonote.JPG"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s400/DebianNanonote.JPG" alt="" /></a></p>
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s1600/DebianNanonote.JPG" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s400/DebianNanonote.JPG" alt="" /></a></p>
 
 <p>Yes, that&rsquo;s me with a polariser.<br />
 Wait, playing Dungeon Crawl<br />
 in your Nanonote?</p>
 
-<p>Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound <a href="http://pyneo.org/howto/debian/nano.html">here</a>.</p>
+<p>Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound <a href="http://pyneo.org/howto/debian/nano.html" target="_blank">here</a>.</p>
 
-<p>The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about <a href="http://en.qi-hardware.com/wiki/Xburst-tools">reflashing your Ben Nanonote</a>.</p>
+<p>The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about <a href="http://en.qi-hardware.com/wiki/Xburst-tools" target="_blank">reflashing your Ben Nanonote</a>.</p>
 
 <p>The package can be downloaded in .deb format for Debian-like distributions. As I am usually in Arch Linux, I installed the confuse library with pacman -S confuse , downloaded the package tarball and uncompressed it, following the instructions therein. The only drawback is that uncompressing the tarball puts the executable files in binary directories which are not in my path, and to use usbboot (the main program talking to the Ben waiting to be reflashed) I had to use global paths. No big deal, though.</p>
 
-<p>After getting this program, you&rsquo;ll need the boot image and the kernel, which can be found in the Qi Hardware&rsquo;s site as <a href="http://downloads.qi-hardware.com/software/images/Ben_NanoNote_2GB_NAND/latest/">Nanonote software repositories (latest)</a> Be sure to pick one file named (something like) openwrt-xburst-qi_lb60-u-boot.bin (the boot part), and openwrt-xburst-qi_lb60-uImage (kernel image). If you want to have sound enabled in your resulting Debian system, be sure to pick also the file openwrt-xburst-qi_lb60-rootfs.tar.gz (this may be deprecated after changes in the OpenWRT build process)</p>
+<p>After getting this program, you&rsquo;ll need the boot image and the kernel, which can be found in the Qi Hardware&rsquo;s site as <a href="http://downloads.qi-hardware.com/software/images/Ben_NanoNote_2GB_NAND/latest/" target="_blank">Nanonote software repositories (latest)</a> Be sure to pick one file named (something like) openwrt-xburst-qi_lb60-u-boot.bin (the boot part), and openwrt-xburst-qi_lb60-uImage (kernel image). If you want to have sound enabled in your resulting Debian system, be sure to pick also the file openwrt-xburst-qi_lb60-rootfs.tar.gz (this may be deprecated after changes in the OpenWRT build process)</p>
 
 <p>Now you have the boot and kernel, you&rsquo;ll need to download a Debian rootfs prepared for the Ben. You can find one for Debian-Lenny in the Pyneo.org page, get it with either</p>
 
 <blockquote>
-<p>wget <a href="http://pyneo.org/downloads/nano/debian-lenny-mini.ubi">http://pyneo.org/downloads/nano/debian-lenny-mini.ubi</a><br />
-wget <a href="http://pyneo.org/downloads/nano/debian-lenny.ubi">http://pyneo.org/downloads/nano/debian-lenny.ubi</a></p>
+<p>wget <a href="http://pyneo.org/downloads/nano/debian-lenny-mini.ubi" target="_blank">http://pyneo.org/downloads/nano/debian-lenny-mini.ubi</a><br />
+wget <a href="http://pyneo.org/downloads/nano/debian-lenny.ubi" target="_blank">http://pyneo.org/downloads/nano/debian-lenny.ubi</a></p>
 </blockquote>
 
 <p>The image I use is a debian-sid which you can get with</p>
 
 <blockquote>
-<p>wget <a href="http://mister-muffin.de/nanonote/debian-sid.ubi">http://mister-muffin.de/nanonote/debian-sid.ubi</a></p>
+<p>wget <a href="http://mister-muffin.de/nanonote/debian-sid.ubi" target="_blank">http://mister-muffin.de/nanonote/debian-sid.ubi</a></p>
 </blockquote>
 
-<p>You could also follow the instructions in Qi Hardware wiki about <a href="http://en.qi-hardware.com/wiki/Debootstrap">debootstrapping any distribution for the Ben NanoNote</a>, but it will be harder and messier.</p>
+<p>You could also follow the instructions in Qi Hardware wiki about <a href="http://en.qi-hardware.com/wiki/Debootstrap" target="_blank">debootstrapping any distribution for the Ben NanoNote</a>, but it will be harder and messier.</p>
 
 <p>Now you have all the ingredients to install Debian on your Nanonote.</p>
 
@@ -224,15 +224,15 @@ asoc: jz-codec &lt;-&gt; jz4740 mapping ok</p>
 <p>ifconfig usb0 192.168.100.1 up</p>
 </blockquote>
 
-<p>This is it for Linux hosts, at least this was enough for me in Arch Linux. The wiki page on <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB">Networking in your Ben NanoNote</a> has a little more information in case this does not work.</p>
+<p>This is it for Linux hosts, at least this was enough for me in Arch Linux. The wiki page on <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB" target="_blank">Networking in your Ben NanoNote</a> has a little more information in case this does not work.</p>
 
 <h4 id="for-macos">For MacOS</h4>
 
 <p>When you plug your Nanonote, a network preferences alert will pop up, asking you to go to Network preferences, like this one:</p>
 
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s1600/NetworkInterfaceNanonote.png"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s400/NetworkInterfaceNanonote.png" alt="" /></a></p>
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s1600/NetworkInterfaceNanonote.png" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s400/NetworkInterfaceNanonote.png" alt="" /></a></p>
 
-<p>There is a catch, though: it may fail to appear. To get it to appear then you have to start playing with power up power down your Nano and switching USB ports. I&rsquo;m not the only one with this problem, <a href="http://agrajag.posterous.com/ben-nanonote-stuff">agrajag</a> also pointed it out.</p>
+<p>There is a catch, though: it may fail to appear. To get it to appear then you have to start playing with power up power down your Nano and switching USB ports. I&rsquo;m not the only one with this problem, <a href="http://agrajag.posterous.com/ben-nanonote-stuff" target="_blank">agrajag</a> also pointed it out.</p>
 
 <p>I got my Mac to forget about previous connections by using a USB hub to plug the Nano, then unplug it and plug again in the usual spot. Rebooting the Mac also solves it.</p>
 
@@ -240,11 +240,11 @@ asoc: jz-codec &lt;-&gt; jz4740 mapping ok</p>
 
 <p>Go there and set up the newly discovered ethernet adaptor and assign an IP manually: fill in with 192.168.100.1</p>
 
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s1600/ConfigureNetworkNanonote.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s400/ConfigureNetworkNanonote.png" alt="" /></a></p>
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s1600/ConfigureNetworkNanonote.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s400/ConfigureNetworkNanonote.png" alt="" /></a></p>
 
 <p>Now go to the System Settings pane and open Sharing. Enable sharing your internet connection with the newly discovered ethernet device and apply, like the following</p>
 
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s1600/InternetSharingNanonote.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s400/InternetSharingNanonote.png" alt="" /></a></p>
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s1600/InternetSharingNanonote.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s400/InternetSharingNanonote.png" alt="" /></a></p>
 
 <h4 id="common-steps-in-the-ben-nanonote">Common steps in the Ben Nanonote</h4>
 
@@ -270,7 +270,7 @@ asoc: jz-codec &lt;-&gt; jz4740 mapping ok</p>
 
 <h2 id="installing-shiny-new-software">Installing shiny new software</h2>
 
-<p>With the packages listed here (maybe you can add octave and some other programming lanaguages), the Ben Nanonote turns into one of the most complete (non-graphing) pocket calculators out there. In theory, you could use fim or fbi to display images generated by gnuplot to a framebuffer console&hellip; but I couldn&rsquo;t manage to get it to work without either seg-faulting or crashing. You can also find a list of interesting packages and hacks in <a href="http://www.mzlinux.org/node/386">Marc Zonzon&rsquo;s webpage</a>.</p>
+<p>With the packages listed here (maybe you can add octave and some other programming lanaguages), the Ben Nanonote turns into one of the most complete (non-graphing) pocket calculators out there. In theory, you could use fim or fbi to display images generated by gnuplot to a framebuffer console&hellip; but I couldn&rsquo;t manage to get it to work without either seg-faulting or crashing. You can also find a list of interesting packages and hacks in <a href="http://www.mzlinux.org/node/386" target="_blank">Marc Zonzon&rsquo;s webpage</a>.</p>
 
 <p>Start by updating the system:</p>
 
@@ -296,7 +296,7 @@ asoc: jz-codec &lt;-&gt; jz4740 mapping ok</p>
 
 <p><strong>alsa-</strong> You will need all the family of alsa-utils, dev and so on. apt-cache search alsa and pick almost all.</p>
 
-<p><strong>madplay</strong> a command line music player I used in my <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html">powernap script</a></p>
+<p><strong>madplay</strong> a command line music player I used in my <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html" target="_blank">powernap script</a></p>
 
 <p><strong>cron</strong> If you want to run something periodically you need cron</p>
 
@@ -325,10 +325,10 @@ swapon /mnt/swap/swapfile</p>
 <p>Happy pocket hacking!</p>
 
 <p>Related posts:<br />
- <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> Gcal: the ultra-powerful command line GNU calendar</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br />
+ <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

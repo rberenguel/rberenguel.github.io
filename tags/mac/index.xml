@@ -17,7 +17,7 @@
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
-      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
+      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34; target=&#34;_blank&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 29 Apr 2018 15:38:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/modifying-agnoster-theme-for-zsh.html/</guid>
-      <description>&lt;p&gt;Even though I have been a long time user of &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;oh-my-zsh&lt;/a&gt; on zsh (moved from &lt;a href=&#34;https://amzn.to/2KqeJR4&#34;&gt;plain bash to zsh&lt;/a&gt; like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: &lt;code&gt;robbyrussell&lt;/code&gt;. But recently I was showing my friend @&lt;a href=&#34;http://crafty-coder.com/&#34;&gt;craftycoder&lt;/a&gt; the tweaks I have on my system (&lt;a href=&#34;https://github.com/junegunn/fzf&#34;&gt;fzf&lt;/a&gt;, &lt;a href=&#34;https://github.com/wting/autojump&#34;&gt;autojump&lt;/a&gt;, etc) and he showed me this theme, &lt;a href=&#34;https://github.com/agnoster/agnoster-zsh-theme&#34;&gt;agnoster&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Even though I have been a long time user of &lt;a href=&#34;http://ohmyz.sh/&#34; target=&#34;_blank&#34;&gt;oh-my-zsh&lt;/a&gt; on zsh (moved from &lt;a href=&#34;https://amzn.to/2KqeJR4&#34; target=&#34;_blank&#34;&gt;plain bash to zsh&lt;/a&gt; like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: &lt;code&gt;robbyrussell&lt;/code&gt;. But recently I was showing my friend @&lt;a href=&#34;http://crafty-coder.com/&#34; target=&#34;_blank&#34;&gt;craftycoder&lt;/a&gt; the tweaks I have on my system (&lt;a href=&#34;https://github.com/junegunn/fzf&#34; target=&#34;_blank&#34;&gt;fzf&lt;/a&gt;, &lt;a href=&#34;https://github.com/wting/autojump&#34; target=&#34;_blank&#34;&gt;autojump&lt;/a&gt;, etc) and he showed me this theme, &lt;a href=&#34;https://github.com/agnoster/agnoster-zsh-theme&#34; target=&#34;_blank&#34;&gt;agnoster&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Sun, 14 Jun 2015 20:12:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</guid>
-      <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a very deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
+      <description>I’ve always loved maps. I guess it goes well with liking drawing and maths, there’s a deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.</description>
     </item>
     
     <item>

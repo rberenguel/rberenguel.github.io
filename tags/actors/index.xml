@@ -19,7 +19,7 @@
       <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
       <description>&lt;p&gt;A few months ago I stumbled into the problem of Akka logging, specifically
 ClassNotFoundException when using &lt;code&gt;akka.event.slf4j.Slf4jLoggingFilter&lt;/code&gt;, just by
-following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34;&gt;Logging - SL4J section of Akka
+following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34; target=&#34;_blank&#34;&gt;Logging - SL4J section of Akka
 documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     

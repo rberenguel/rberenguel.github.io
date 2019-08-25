@@ -125,13 +125,13 @@
     
     
 
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I posted in <a href="http://www.mostlymaths.net/2010/08/best-posts-i-have-read-in-june-and-july.html">Best Posts I Have Read in June and July</a>, I liked a lot a numerical experiment in <a href="http://re-factor.blogspot.com/">Re: Factor</a>, a blog about learning the Factor programming language. The idea comes from <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">another blog</a>, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497">Prime Obsession</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=0309085497" alt="" /> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I posted in <a href="http://www.mostlymaths.net/2010/08/best-posts-i-have-read-in-june-and-july.html" target="_blank">Best Posts I Have Read in June and July</a>, I liked a lot a numerical experiment in <a href="http://re-factor.blogspot.com/" target="_blank">Re: Factor</a>, a blog about learning the Factor programming language. The idea comes from <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html" target="_blank">another blog</a>, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497" target="_blank">Prime Obsession</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=0309085497" alt="" /> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
 
 <blockquote>
 <p><em>Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1</em>? The answer is e. (See sketch of proof below)</p>
 </blockquote>
 
-<p>In the original post, a quick <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">Clojure implementation</a> is programmed, and in Re: Factor, a <a href="http://re-factor.blogspot.com/2010/07/curious-factor-to-rescue.html">Factor implementation</a> is added. When I originally read the post, I missed that the original version was in Clojure, and decided I was good to go by writing a Common Lisp version. I&rsquo;d prefer a Forth version, but as Factor is very close to Forth, it was close to cheating. Keep in mind that I wasn&rsquo;t aware that the first version was in Clojure!</p>
+<p>In the original post, a quick <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html" target="_blank">Clojure implementation</a> is programmed, and in Re: Factor, a <a href="http://re-factor.blogspot.com/2010/07/curious-factor-to-rescue.html" target="_blank">Factor implementation</a> is added. When I originally read the post, I missed that the original version was in Clojure, and decided I was good to go by writing a Common Lisp version. I&rsquo;d prefer a Forth version, but as Factor is very close to Forth, it was close to cheating. Keep in mind that I wasn&rsquo;t aware that the first version was in Clojure!</p>
 
 <p>I switched to my emacs session and started slime. To my surprise, slime fired up Clojure, instead of Common Lisp! I didn&rsquo;t remember that a few months back I got interested in this language, and set up slime to start Clojure. Oh well. My first program in Clojure, I thought.</p>
 
@@ -162,7 +162,7 @@ steps<br />
 (PlusRandomAux))</p>
 </blockquote>
 
-<p>After this function, we have to take averages of what the last function returns, for a large number of iterates. My first version of this function was recursive, too. But it blew away the stack, which is not good. I conceded, and looked at Clojure&rsquo;s <a href="http://clojure.org/special_forms#Special%20Forms--%28loop%20[bindings*%20]%20exprs*%29">loop</a> construct, and the result was</p>
+<p>After this function, we have to take averages of what the last function returns, for a large number of iterates. My first version of this function was recursive, too. But it blew away the stack, which is not good. I conceded, and looked at Clojure&rsquo;s <a href="http://clojure.org/special_forms#Special%20Forms--%28loop%20[bindings*%20]%20exprs*%29" target="_blank">loop</a> construct, and the result was</p>
 
 <blockquote>
 <p>(defn AveragePlusRandom [iterates]<br />
@@ -174,7 +174,7 @@ steps<br />
 (recur (dec n) (+ accumulator (PlusRandom))))))</p>
 </blockquote>
 
-<p>Now, I look at <a href="http://clojure.org/special_forms#Special%20Forms--%28recur%20exprs*%29">recur</a>, because it looks odd. Turns out, Clojure does no tail call optimization! Big fail for my PlusRandom function. Rewritten with a loop construct, with recur:</p>
+<p>Now, I look at <a href="http://clojure.org/special_forms#Special%20Forms--%28recur%20exprs*%29" target="_blank">recur</a>, because it looks odd. Turns out, Clojure does no tail call optimization! Big fail for my PlusRandom function. Rewritten with a loop construct, with recur:</p>
 
 <blockquote>
 <p>(defn PlusRandom []<br />
@@ -203,20 +203,20 @@ user=&gt; (time (AveragePlusRandom 10000000))<br />
 
 <p>The first step is key. What&rsquo;s the probability that the sum of just two random numbers exceeds 1? The same probability as that a point (x,y) in the unit square (corners are at (0,0), (0,1), (1,0), and (1,1)), satisfied the inequality <em>x</em> + <em>y</em> &gt;= 1. This is of course <sup>1</sup>&frasl;<sub>2</sub>; draw the diagonal from (0,1) to (1,0), and it&rsquo;s the probability that (<em>x</em>,<em>y</em>) is in the upper right triangle.If you now go to three random numbers, the chance that their sum exceeds 1 is got by &ldquo;cutting a slice&rdquo; across the unit cube through the corners (1,0,0), (0,1,0), and (0,0,1). Observe that this pyramid (shown below) also cuts the unit square along the diagonal! This pyramid has volume <sup>1</sup>&frasl;<sub>6</sub>, and the probability <em>x</em> + <em>y</em> + <em>z</em> &gt;= 1 is then 1-<sup>1</sup>&frasl;<sub>6</sub>=<sup>5</sup>&frasl;<sub>6</sub>.</p>
 
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s1600/E.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s400/E.png" alt="" /></a></p>
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s1600/E.png" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TFspNGqS8VI/AAAAAAAACgU/HJltdORX814/s400/E.png" alt="" /></a></p>
 
-<p>A little calculus, plus the principle of induction, shows that the pyramid (standard simplex) sliced off an <em>n</em>-dimensional unit cube by a hyper-plane through its corners (1,0,0,0,&hellip;), (0,1,0,0,&hellip;), (0,0,1,0,&hellip;),&hellip; has volume 1/<em>n</em>! If you don&rsquo;t believe it, you can check Wikipedia for the volume of the standard <a href="http://en.wikipedia.org/wiki/Simplex#Geometric_properties">simplex</a>.</p>
+<p>A little calculus, plus the principle of induction, shows that the pyramid (standard simplex) sliced off an <em>n</em>-dimensional unit cube by a hyper-plane through its corners (1,0,0,0,&hellip;), (0,1,0,0,&hellip;), (0,0,1,0,&hellip;),&hellip; has volume 1/<em>n</em>! If you don&rsquo;t believe it, you can check Wikipedia for the volume of the standard <a href="http://en.wikipedia.org/wiki/Simplex#Geometric_properties" target="_blank">simplex</a>.</p>
 
 <p>The probability that a total of 1 is exceeded after adding <em>n</em> random numbers is therefore 1 - 1/<em>n</em>!The probability that a total of 1 is exceeded after adding <em>n</em> random numbers <em>but not before</em> is therefore (1 - 1/<em>n</em>!) - (1 - 1/(<em>n</em> - 1)!), which simplifies to (<em>n</em> - 1) / <em>n</em>! The expected number of selections until a total of 1 is exceeded is therefore the following sum:</p>
 
-<p><a href="http://www.wolframalpha.com/input/?i=sum+n+%2F+n%21%2C+n%3D1+to+infinity"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TFslM7e4Z2I/AAAAAAAACgI/KaL1WwtNeQ4/s400/Formula.png" alt="" /></a></p>
+<p><a href="http://www.wolframalpha.com/input/?i=sum+n+%2F+n%21%2C+n%3D1+to+infinity" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TFslM7e4Z2I/AAAAAAAACgI/KaL1WwtNeQ4/s400/Formula.png" alt="" /></a></p>
 
 <p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a></p>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html" target="_blank">C code juicer: detecting copied programming assignments</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html" target="_blank">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html" target="_blank">8 reasons for re-inventing the wheel as a programmer</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html" target="_blank">Approximating images with randomly placed translucent triangles</a></p>
 
 <p>ParseList(ScrambleList(Relateds(Maths,Programming)),5)</p>
 <hr/><ul class="pa0">
