@@ -173,8 +173,7 @@ Work February-December Started working as a consultant in London, almost the day
       <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</guid>
-      <description>Or, destiny is cruel
- Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.</description>
+      <description>Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.</description>
     </item>
     
     <item>

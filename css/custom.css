@@ -164,3 +164,7 @@ figure {
     max-height: 12em;
     overflow: hidden;
 }
+
+.highlight pre {
+    overflow: auto;
+}
