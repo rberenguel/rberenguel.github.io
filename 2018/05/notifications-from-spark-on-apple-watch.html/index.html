@@ -118,8 +118,8 @@
       
     </header>
     
-    
 
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes" target="_blank">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html" target="_blank">GraphX</a> on Spark).</p>
 
 <p>This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished. This way I could work on something else while the process is doing its thing, and I could come back for the next step as soon as the data is ready.</p>
