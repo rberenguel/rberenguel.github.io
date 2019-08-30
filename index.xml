@@ -522,16 +522,6 @@ Both happy, we deployed and I tested.</description>
     </item>
     
     <item>
-      <title>New Design: I hope you like it</title>
-      <link>https://mostlymaths.net/2013/08/new-design-i-hope-you-like-it.html/</link>
-      <pubDate>Mon, 19 Aug 2013 22:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2013/08/new-design-i-hope-you-like-it.html/</guid>
-      <description>It was about time. Something like 3 years ago I redesigned mostlymaths.net, just after purchasing the domain. Cleaned the design&amp;hellip; But left lots of cruft on the side.
-Back when I started writing HTML for myself, one of the best reading experiences I saw was Paul Graham&amp;rsquo;s one-column text. Also, the reasoning makes sense. When I needed to redesign mostlymaths I tried to go one-column, but I fell for the sidebar trap.</description>
-    </item>
-    
-    <item>
       <title>Find Search Engine Rankings... via the Command Line</title>
       <link>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
@@ -1832,7 +1822,7 @@ After my first successful port (gnugo), I decided to try something else, and whi
       <pubDate>Thu, 08 Apr 2010 00:01:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2010/04/power-to-command-line.html/</guid>
-      <description>Are you command-line savvy? The command line. That small place, where a lot can happen. And more so if you are a Linux user&amp;hellip; How to maximize it? Where to harness its power?
+      <description>The command line. That small place, where a lot can happen. And more so if you are a Linux user… How to maximize it? Where to harness its power?
 I discovered commandlinefu.com a few years ago, while looking for a way to do&amp;hellip; something. I don&amp;rsquo;t even enter that often, although it is a brilliant place to discover how to do X in Linux/UNIX.
 Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up.</description>
     </item>
@@ -2717,16 +2707,6 @@ I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesi
       <guid>https://mostlymaths.net/2009/06/how-to-download-youtube-flv-videos.html/</guid>
       <description>There is a plain and easy way to download YouTube .flv videos (which you can watch with VLC Media Player, or in a Mac with Quicktime Player and additional plug-ins).
 To do so, you need the Safari Web Browser (Mac or Windows). Go to your desired page hosting a Flash Video file, and select Activity in the Window menu. There you will find the files being downloaded in the web-page you are visiting&amp;hellip; double click the bigger one (as usually flash videos are the biggest files in YouTube pages, if you can&amp;rsquo;t find such a big file, check for the .</description>
-    </item>
-    
-    <item>
-      <title>Oil shaving</title>
-      <link>https://mostlymaths.net/2009/06/oil-shaving.html/</link>
-      <pubDate>Tue, 02 Jun 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/06/oil-shaving.html/</guid>
-      <description>Just a quick tip. If you have a strong beard as I do, and always struggle to get that nice, smooth shave you see in advertising, here comes the solution. Olive oil.
-I found this idea in a Slashdot history, and tried at home. Every time I had tried to shave smoother (by doing several passes, as just one was too spiky), I ended with either red itchy skin (and not really smooth), or the same with little scars, bleeding.</description>
     </item>
     
     <item>
