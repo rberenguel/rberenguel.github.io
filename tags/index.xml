@@ -6,10 +6,73 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 18:39:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 13:03:45 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Programming</title>
+      <link>https://mostlymaths.net/tags/functional-programming/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://mostlymaths.net/tags/history/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://mostlymaths.net/tags/music/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Adtech</title>
@@ -39,15 +102,6 @@
     </item>
     
     <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Drawing</title>
       <link>https://mostlymaths.net/tags/drawing/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
@@ -57,47 +111,11 @@
     </item>
     
     <item>
-      <title>Functional Programming</title>
-      <link>https://mostlymaths.net/tags/functional-programming/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Haskell</title>
       <link>https://mostlymaths.net/tags/haskell/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>https://mostlymaths.net/tags/history/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -138,7 +156,7 @@
     </item>
     
     <item>
-      <title>spark</title>
+      <title>Spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
@@ -188,15 +206,6 @@
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -602,15 +611,6 @@
       <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://mostlymaths.net/tags/music/</link>
-      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/music/</guid>
       <description></description>
     </item>
     

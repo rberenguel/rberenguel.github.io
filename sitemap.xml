@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2019/09/201923-readings-of-the-week.html/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/functional-programming/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/history/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/music/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
@@ -23,17 +78,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/drawing/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/functional-programming/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
   
@@ -43,37 +88,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/history/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
   
@@ -139,11 +154,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/math/</loc>
-    <lastmod>2019-06-17T17:24:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2019-06-17T17:24:00+02:00</lastmod>
   </url>
   
@@ -519,11 +529,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/linux/</loc>
-    <lastmod>2018-01-06T15:31:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/music/</loc>
     <lastmod>2018-01-06T15:31:00+01:00</lastmod>
   </url>
   
