@@ -168,3 +168,7 @@ figure {
 .highlight pre {
     overflow: auto;
 }
+
+div#amzn-native-ad-1 div.amzn-native-products-list div.amzn-native-product {
+    background-color: transparent !important;
+}
