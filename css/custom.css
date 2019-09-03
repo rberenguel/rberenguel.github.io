@@ -169,6 +169,14 @@ figure {
     overflow: auto;
 }
 
+div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
+    background-color: transparent !important;
+}
+
 div#amzn-native-ad-1 div.amzn-native-products-list div.amzn-native-product {
+    background-color: transparent !important;
+}
+
+div#amzn-native-ad-2 div.amzn-native-products-list div.amzn-native-product {
     background-color: transparent !important;
 }
