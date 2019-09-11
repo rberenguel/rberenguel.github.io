@@ -1,0 +1,62 @@
+\documentclass[9pt,openany,final]{memoir}
+\usepackage[pdftex]{graphicx}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage[latin1]{inputenc}
+\usepackage{wrapfig}
+\usepackage{fix-cm}
+\usepackage[pdftex, colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+
+\usepackage[activate={true,nocompatibility}]{microtype}
+\usepackage[paperwidth=9cm, paperheight=12cm, hmargin={1cm, 1cm}, vmargin={1.2cm, 0.8cm}]{geometry}
+
+\widowpenalty 3999
+\clubpenalty 3999
+\makeoddfoot{ruled}{}{}{}
+\makeevenfoot{ruled}{}{}{}
+\makeevenhead{ruled}{\footnotesize \emph{\rightmark}}{}{\footnotesize\scshape The Art of War, \thepage}
+\makeatletter
+\makeoddhead{ruled}{\footnotesize \emph{\rightmark}}{}{\footnotesize\scshape The Art of War, \thepage}
+\copypagestyle{chapter}{plain}
+\makeevenfoot{chapter}{}{}{}
+\makeoddfoot{chapter}{}{}{}
+\pagestyle{ruled}
+\emergencystretch=\maxdimen
+\hyphenpenalty=10
+\hbadness=10000
+
+\setcounter{errorcontextlines}{999}
+
+\definecolor{gray}{gray}{0.77}
+\definecolor{darkgray}{gray}{0.4}
+\definecolor{black}{gray}{0}
+\setlength\beforechapskip{-10pt}
+\setlength\midchapskip{5pt}
+\setlength\afterchapskip{10pt}
+\makechapterstyle{plroman}{
+\renewcommand\chapterheadstart{\vspace*{\beforechapskip}{\color{darkgray}\centering\MakeUppercase{\fontsize{0.7in}{0.7in}\selectfont\romannumeral\thechapter} \par\nobreak\vskip1\midchapskip\hrule\vskip0.5\midchapskip}\color{black}}
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{\centering\MakeUppercase{\fontsize{1in}{2in}\selectfont\romannumeral\thechapter}}
+\renewcommand\chaptitlefont{\huge\centering\color{black}\vskip0.5\midchapskip\vskip0.5\midchapskip}
+\renewcommand\afterchapternum{}
+\renewcommand\afterchaptertitle{\vskip0.5\midchapskip\vskip\midchapskip\hrule\vskip\midchapskip\vskip\midchapskip\vskip\midchapskip}
+}
+\chapterstyle{plroman}
+
+\renewcommand{\cftchapterfont}{\scshape\mdseries}
+
+\renewcommand{\cftchapterleader}{\dotfill}
+
+\renewcommand{\cftchapterpagefont}{\scshape\mdseries}
+
+\renewcommand{\chapternumberline}[1]{\hspace*{-5em}\vbox{\hfil\hsize=7.5em\MakeUppercase{\mdseries\romannumeral#1}.\ \hfilneg}}
+
+\renewcommand{\cftchapterbreak}{}
+
+\pagestyle{ruled}
+\begin{document}
+
+\include{taow}
+
+\end{document}

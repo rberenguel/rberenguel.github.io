@@ -52,13 +52,17 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
     </item>
     
     <item>
-      <title>Creating pdf ebooks with LaTeX (With Two Free Examples: Art of War &amp; How to Live on 24 Hours a Day)</title>
+      <title>Creating pdf ebooks with LaTeX</title>
       <link>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</link>
       <pubDate>Sun, 21 Nov 2010 21:45:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
-      <description>If you are looking for the sample ebooks, scroll down a little (and don&amp;rsquo;t forget to subscribe if you have not done this already!)
-I started to look for ways to use LaTeX for doing ebooks very recently. My plan is to write an ebook on productivity and time management, with no deadline. I strive to make it the book I&amp;rsquo;d love to read when I started reading about time management&amp;hellip; And this means I&amp;rsquo;ll need quite a time.</description>
+      <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
+little.&lt;/p&gt;
+
+&lt;figure class=&#34;fig-left&#34;&gt;
+    &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
+&lt;/figure&gt;</description>
     </item>
     
     <item>
@@ -67,7 +71,14 @@ I started to look for ways to use LaTeX for doing ebooks very recently. My plan 
       <pubDate>Wed, 17 Nov 2010 00:13:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html/</guid>
-      <description>A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of Sun Tzu&amp;rsquo;s Art of War, and this thought collided head on with another old thought I had: could I use pdfpages to create A6 booklets? I use it frequently to turn my papers into handy A4 booklets (a few A4 folded in half), butI did not know if I could do it another time to generate A5 booklets, or even another time to get a small and nice A6 booklet</description>
+      <description>&lt;p&gt;A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of &lt;a href=&#34;https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;amp;qid=1566751724&amp;amp;s=gateway&amp;amp;sr=8-3&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=7ba78e7bea92ff3a5828022f23de2d47&#34; target=&#34;_blank&#34;&gt;Sun Tzu&amp;rsquo;s Art
+of
+War&lt;/a&gt;,
+and this thought collided head on with another old thought I had: &lt;em&gt;could I use
+&lt;code&gt;pdfpages&lt;/code&gt; to create A6 booklets?&lt;/em&gt; I use it frequently to turn my papers into
+handy A4 booklets (a few A4 folded in half), butI did not know if I could do it
+another time to generate A5 booklets, or even another time to get a small and
+nice A6 booklet&lt;/p&gt;</description>
     </item>
     
     <item>
