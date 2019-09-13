@@ -117,8 +117,13 @@ Its main feature is the fact that you can get away with just a piece of included
       <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</guid>
-      <description>The Octocat, Github&amp;rsquo;s logo
-It&amp;rsquo;s been almost 6 years since I used some kind of revision control system. Back then I wasn&amp;rsquo;t sure about which I wanted to use&amp;hellip; I settled with RCS, the father of them all. RCS was structurally very simple, with text-based (human-readable) delta files. I liked that. I had all my code and TeX files under revision control, but then I started using more than one computer and it got out of hand very quickly (using RCS or CVS in Windows was quite tricky and had user and encoding problems.</description>
+      <description>&lt;p&gt;It&amp;rsquo;s been almost 6 years since I used some kind of version control system. Back
+then I wasn&amp;rsquo;t sure about which I wanted to use… I settled with RCS, the father
+of them all. RCS was structurally simple, with text-based (human-readable) delta
+files. I liked that. I had all my code and TeX files under revision control, but
+then I started using more than one computer and it got out of hand quickly
+(using RCS or CVS in Windows was quite tricky and had user and encoding
+problems.)&lt;/p&gt;</description>
     </item>
     
     <item>
