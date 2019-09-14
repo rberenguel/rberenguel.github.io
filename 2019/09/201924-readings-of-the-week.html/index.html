@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Apache Hive and java.lang.ClassCastException on start</title>
+    <title>mostlymaths.net  | 2019#24 Readings of the Week</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.57.2" />
     
@@ -33,27 +33,31 @@
 
     
 
-    <meta property="og:title" content="Apache Hive and java.lang.ClassCastException on start" />
-<meta property="og:description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error" />
+    <meta property="og:title" content="2019#24 Readings of the Week" />
+<meta property="og:description" content="Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/" />
-<meta property="article:published_time" content="2019-02-19T23:47:00+01:00" />
-<meta property="article:modified_time" content="2019-02-19T23:47:00+01:00" />
-<meta itemprop="name" content="Apache Hive and java.lang.ClassCastException on start">
-<meta itemprop="description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error">
+<meta property="og:url" content="https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/" />
+<meta property="article:published_time" content="2019-09-14T17:54:45+02:00" />
+<meta property="article:modified_time" content="2019-09-14T17:54:45+02:00" />
+<meta itemprop="name" content="2019#24 Readings of the Week">
+<meta itemprop="description" content="Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article.">
 
 
-<meta itemprop="datePublished" content="2019-02-19T23:47:00&#43;01:00" />
-<meta itemprop="dateModified" content="2019-02-19T23:47:00&#43;01:00" />
-<meta itemprop="wordCount" content="247">
+<meta itemprop="datePublished" content="2019-09-14T17:54:45&#43;02:00" />
+<meta itemprop="dateModified" content="2019-09-14T17:54:45&#43;02:00" />
+<meta itemprop="wordCount" content="463">
 
 
 
-<meta itemprop="keywords" content="Data,Mac,Big data,Hive," />
+<meta itemprop="keywords" content="Big data,Data,Python,Scala,WritingReadingsOfTheWeek," />
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/annie-spratt-137316-unsplash.jpg"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/3DIceland.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -62,8 +66,10 @@
 
 
 
-<meta name="twitter:title" content="Apache Hive and java.lang.ClassCastException on start"/>
-<meta name="twitter:description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error"/>
+<meta name="twitter:title" content="2019#24 Readings of the Week"/>
+<meta name="twitter:description" content="Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article."/>
 
 
       
@@ -87,7 +93,7 @@ if (!doNotTrack) {
 
 
 
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2019/02/apache-hive-and-javalangclasscastexcept.html//annie-spratt-137316-unsplash.jpg');">
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2019/09/201924-readings-of-the-week.html//3DIceland.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -128,65 +134,131 @@ if (!doNotTrack) {
 
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">
-      <h1 class="fw1 mb1 f1">Apache Hive and java.lang.ClassCastException on start</h1>
+      <h1 class="fw1 mb1 f1">2019#24 Readings of the Week</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-02-19T23:47:00&#43;01:00">February 19, 2019</time>
+      <time class="f6 mv4 dib tracked" datetime="2019-09-14T17:54:45&#43;02:00">September 14, 2019</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 247 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 463 words</span>
       
     </header>
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A couple of days ago I installed <a href="https://github.com/apache/hive" target="_blank">Hive</a> from <a href="https://brew.sh/" target="_blank">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
+    <div id="amzn-assoc-ad-e4bbbdef-c478-4f46-a609-dbb04c453c0d">
+    </div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=e4bbbdef-c478-4f46-a609-dbb04c453c0d"></script>
+    <section class="w-100">
+                    <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
+    </section>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article.</p>
+
+<p><strong>NOTE</strong>: The themes are varied, and some links below are affiliate links. City
+planning, writing, Python’s typing, Cassandra. Expect a similar wide range in
+the future as well. You can check all my weekly readings by checking the <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek" target="_blank">tag
+here</a>. You can also
+get these as a weekly newsletter by subscribing
+<a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
 
 <figure class="fig-wide">
-    <img src="annie-spratt-137316-unsplash.jpg"
-         alt="Photo by Annie Spratt on Unsplash"/> <figcaption>
-            <p>Photo by <a href="https://unsplash.com/photos/8_WZU5xKFKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Annie Spratt</a> on <a href="https://unsplash.com/search/photos/hive?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+    <img src="3DIceland.jpg"
+         alt="Image credits: Gústi Productions"/> <figcaption>
+            <p>Image credits: <a href="https://www.facebook.com/gustiphotography/" target="_blank">Gústi Productions</a></p>
         </figcaption>
 </figure>
 
 
-<pre><code>Exception in thread &quot;main&quot; java.lang.ClassCastException:   
-  class jdk.internal.loader.ClassLoaders$AppClassLoader   
-   cannot be cast to   
-  class java.net.URLClassLoader   
-  (jdk.internal.loader.ClassLoaders$AppClassLoader   
-    and   
-  java.net.URLClassLoader are in module java.base of loader 'bootstrap')
-</code></pre>
+<h2 id="bluf-the-military-standard-that-can-make-your-writing-more-powerful-https-www-animalz-co-blog-bottom-line-up-front"><a href="https://www.animalz.co/blog/bottom-line-up-front/" target="_blank">BLUF: The Military Standard That Can Make Your Writing More Powerful</a></h2>
 
-<p>That looked like a JVM incompatibility, so I switched from GraalVM (the one I use by default) to Java 8 (I have aliases <code>jgrce</code>, <code>jgree</code>, <code>j8</code> and <code>j11</code> to switch JVMs). Still, the same error regardless. Weird. Maybe Java 11 (the other JVM I have installed)? Nope, same error.</p>
+<p>A technique to be succinct and clear in communication. Pair it with
+five.sentenc.es for maximum punch.</p>
 
-<p>A quick Googling confirmed that this was related to Hive picking up Java 11, but only working with 7, 8 or 9 (not sure about 9). This in turn is due to the Hive boot scripts looking for the latest JRE which is at least 7, like the <code>hive</code> command here:</p>
+<h2 id="design-challenges-of-bloop-by-jorge-vican-https-jvican-github-io-slides-scalaworld-2019-design-challenges-of-bloop-pdf"><a href="https://jvican.github.io/slides/scalaworld-2019/Design-challenges-of-Bloop.pdf" target="_blank">📺 Design Challenges of Bloop by Jorge Vican</a></h2>
 
-<pre><code>JAVA_HOME=&quot;$(/usr/libexec/java_home --version 1.7+)&quot; \   
-HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \  
-&quot;/usr/local/Cellar/hive/3.1.1/libexec/bin/hive&quot; &quot;$@&quot;
-</code></pre>
+<p>One of the presentations I enjoyed the most in Scala World 2019 (aside from <a href="https://twitter.com/samaaron" target="_blank">Sam
+Aaron’s</a> presentation on <a href="https://sonic-pi.net" target="_blank">Sonic
+Pi</a>)</p>
 
-<p>This will pick 11, which no longer has <code>URLClassLoader</code> (I think this was changed in Java 9). So, won&rsquo;t start.</p>
+<h2 id="types-for-python-http-apis-an-instagram-story-https-instagram-engineering-com-types-for-python-http-apis-an-instagram-story-d3c3a207fdb7"><a href="https://instagram-engineering.com/types-for-python-http-apis-an-instagram-story-d3c3a207fdb7" target="_blank">Types for Python HTTP APIs: An Instagram Story</a></h2>
 
-<p>Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java &gt; 1.8. For me this was not an option, so I just modified the scripts by removing the <code>JAVA_HOME</code> condition (since I set my <code>JAVA_HOME</code> globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.</p><hr/><ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/mac" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Mac</a>
-   </li>
+<p>Instagram is a clear success story on Django. But Python’s lack of stronger
+static typing is always a thread. This is how they approach the problem</p>
+
+<h2 id="town-in-iceland-paints-3d-zebra-crosswalk-to-slow-down-speeding-cars-https-www-boredpanda-com-3d-pedestrian-crossing-island"><a href="https://www.boredpanda.com/3d-pedestrian-crossing-island/" target="_blank">Town in Iceland Paints 3D Zebra Crosswalk To Slow Down Speeding Cars</a></h2>
+
+<p>I visited Stykkyshólmur (and I had used this city name as secret question
+once&hellip; Bad idea) many years ago. I recognised the city just from the pictures
+in this article. I think this is an excellent idea, and all pedestrian crossings
+should be painted this way. Subconsciously, everyone would brake, even knowing
+it’s flat.</p>
+
+<h2 id="how-does-a-relational-database-work-http-coding-geek-com-how-databases-work"><a href="http://coding-geek.com/how-databases-work/" target="_blank">How does a relational database work</a></h2>
+
+<p>An extremely long and informative article on internals. Only thing missing would
+be discussing the Volcano iterator model. Or I didn’t see it there.</p>
+
+<h2 id="7-mistakes-when-using-apache-cassandra-https-blog-softwaremill-com-7-mistakes-when-using-apache-cassandra-51d2cf6df519"><a href="https://blog.softwaremill.com/7-mistakes-when-using-apache-cassandra-51d2cf6df519" target="_blank">7 mistakes when using Apache Cassandra</a></h2>
+
+<p>I’ve read a lot of material about Cassandra this past week, and this is a
+standout.</p>
+
+<h2 id="the-wheel-https-aws-amazon-com-blogs-opensource-the-wheel"><a href="https://aws.amazon.com/blogs/opensource/the-wheel/" target="_blank">The Wheel</a></h2>
+
+<p>How large teams can handle reporting</p>
+
+<h2 id="learning-to-build-distributed-systems-http-brooker-co-za-blog-2019-04-03-learning-html"><a href="http://brooker.co.za/blog/2019/04/03/learning.html" target="_blank">Learning to build distributed systems</a></h2>
+
+<p>Tips and tricks on how to work on big, distributed systems.</p>
+
+<h2 id="programming-interviews-exposed-https-www-amazon-com-programming-interviews-exposed-through-interview-dp-111941847x-ref-as-li-ss-tl-crid-mmju1vg9aae-keywords-programming-interview-exposed-qid-1568471595-sprefix-programming-intervie-aps-221-sr-8-1-linkcode-ll1-tag-rbersblog-20-linkid-43bf939e0feac3f893340369bc29a723-language-en-us"><a href="https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/ref=as_li_ss_tl?crid=MMJU1VG9AAE&amp;keywords=programming+interview+exposed&amp;qid=1568471595&amp;sprefix=programming+intervie,aps,221&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=43bf939e0feac3f893340369bc29a723&amp;language=en_US" target="_blank">📚 Programming Interviews Exposed</a></h2>
+
+<p>I skimmed most of it. Interesting… but boring as well. Not sure I’d recommend
+unless you plan on interviewing extensively.</p>
+
+<h2 id="super-thinking-the-big-book-of-mental-models-https-www-amazon-com-super-thinking-book-mental-models-dp-0525533583-ref-as-li-ss-tl-keywords-super-thinking-qid-1568471658-sr-8-1-linkcode-ll1-tag-rbersblog-20-linkid-bee484ed0b171ffa2cb40ce7552ac23f-language-en-us"><a href="https://www.amazon.com/Super-Thinking-Book-Mental-Models/dp/0525533583/ref=as_li_ss_tl?keywords=super+thinking&amp;qid=1568471658&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=bee484ed0b171ffa2cb40ce7552ac23f&amp;language=en_US" target="_blank">📚🔈 Super Thinking: The Big Book of Mental Models</a></h2>
+
+<p>I went for the audiobook. This is the extended version of G. Weinberg’s (of
+<a href="https://en.wikipedia.org/wiki/DuckDuckGo#History" target="_blank">DuckDuckGo fame</a>) <a href="https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d" target="_blank">post on
+mental
+models</a>.
+It is an excellent book: compares extremely well with Shane Parrish’s one.</p>
+
+<h2 id="black-box-thinking-https-www-amazon-com-black-box-thinking-people-mistakes-but-dp-1591848229-ref-as-li-ss-tl-keywords-black-box-thinking-qid-1568471704-sr-8-1-linkcode-ll1-tag-rbersblog-20-linkid-5c340833a41aa77675bcf5aeaf56c032-language-en-us"><a href="https://www.amazon.com/Black-Box-Thinking-People-Mistakes-But/dp/1591848229/ref=as_li_ss_tl?keywords=black+box+thinking&amp;qid=1568471704&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=5c340833a41aa77675bcf5aeaf56c032&amp;language=en_US" target="_blank">📚🔈 Black Box Thinking</a></h2>
+
+<p>Wavy. Some parts were extremely interesting (especially the beliefs/mind
+changing part), others were pretty much average of worse. But, I’m not sure if
+it is because I’m already familiar with the material.</p>
+
+<h2 id="newsletter-http-eepurl-com-gefw7p"><a href="http://eepurl.com/geFw7P" target="_blank">Newsletter</a>?</h2>
+
+<p>These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/big-data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Big data</a>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="/tags/hive" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hive</a>
+     <a href="/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/python" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Python</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Scala</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/writingreadingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">WritingReadingsOfTheWeek</a>
    </li>
   
 </ul>
@@ -205,7 +277,7 @@ HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="/2019/09/201924-readings-of-the-week.html/">2019#24 Readings of the Week</a>
+           <a href="/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
        </li>
 	     
 	     <li  class="mb2">
@@ -213,15 +285,15 @@ HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \
        </li>
 	     
 	     <li  class="mb2">
+           <a href="/2019/06/201915-readings-of-week.html/">2019#15 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/05/201914-readings-of-week.html/">2019#14 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="/2019/07/201919-readings-of-week.html/">2019#19 Readings of the week</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="/2019/06/201918-readings-of-week.html/">2019#18 Readings of the week</a>
        </li>
 	     
     </ul>

@@ -6,10 +6,21 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2019 19:42:11 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2019 17:54:45 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#24 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/</link>
+      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Blog Moved</title>

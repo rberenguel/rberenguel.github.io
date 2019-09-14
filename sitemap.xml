@@ -3,27 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/big-data/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/writingreadingsoftheweek/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2019/09/blog-moved-to-hugo.html/</loc>
     <lastmod>2019-09-10T19:42:11+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2019-09-10T19:42:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2019-09-10T19:42:11+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/09/201923-readings-of-the-week.html/</loc>
-    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
     <lastmod>2019-09-01T13:03:45+02:00</lastmod>
   </url>
   
@@ -58,11 +88,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
@@ -78,22 +103,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/big-data/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/drawing/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2019-07-28T18:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
     <lastmod>2019-07-28T18:39:00+02:00</lastmod>
   </url>
   
@@ -114,11 +129,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/golang/</loc>
-    <lastmod>2019-07-07T13:34:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2019-07-07T13:34:00+02:00</lastmod>
   </url>
   
