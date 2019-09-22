@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Sep 2019 17:54:45 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2019 21:06:45 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cooking</title>
+      <link>https://mostlymaths.net/tags/cooking/</link>
+      <pubDate>Sun, 22 Sep 2019 21:06:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/cooking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://mostlymaths.net/tags/history/</link>
+      <pubDate>Sun, 22 Sep 2019 21:06:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 22 Sep 2019 21:06:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WritingReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/writingreadingsoftheweek/</link>
+      <pubDate>Sun, 22 Sep 2019 21:06:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/writingreadingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Big data</title>
@@ -30,15 +66,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>scala</title>
       <link>https://mostlymaths.net/tags/scala/</link>
       <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
@@ -48,29 +75,11 @@
     </item>
     
     <item>
-      <title>WritingReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/writingreadingsoftheweek/</link>
-      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/writingreadingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Functional Programming</title>
       <link>https://mostlymaths.net/tags/functional-programming/</link>
       <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>https://mostlymaths.net/tags/history/</link>
-      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/history/</guid>
       <description></description>
     </item>
     
@@ -1097,15 +1106,6 @@
       <pubDate>Wed, 01 Sep 2010 17:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/places/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cooking</title>
-      <link>https://mostlymaths.net/tags/cooking/</link>
-      <pubDate>Tue, 08 Jun 2010 18:40:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/cooking/</guid>
       <description></description>
     </item>
     
