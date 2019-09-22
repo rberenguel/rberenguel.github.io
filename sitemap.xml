@@ -33,12 +33,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2019-09-22T21:06:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/writingreadingsoftheweek/</loc>
+    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2019-09-22T21:06:45+02:00</lastmod>
   </url>
   
@@ -59,6 +59,11 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/writing/</loc>
     <lastmod>2019-09-14T17:54:45+02:00</lastmod>
   </url>
   
@@ -89,11 +94,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/productivity/</loc>
-    <lastmod>2019-09-01T13:03:45+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2019-09-01T13:03:45+02:00</lastmod>
   </url>
   
