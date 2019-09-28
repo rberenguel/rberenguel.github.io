@@ -6,10 +6,20 @@
     <description>Recent content in ReadingsOfTheWeek on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Sep 2019 21:06:45 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 21:06:45 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/readingsoftheweek/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#26 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/09/201926-readings-of-the-week.html/</link>
+      <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/09/201926-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;A bit of Python, some more Rust and the usual randomness. The first one looks
+tasty.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#25 Readings of the Week</title>

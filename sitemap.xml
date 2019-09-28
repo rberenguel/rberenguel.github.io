@@ -3,42 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2019/09/201925-readings-of-the-week.html/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <loc>https://mostlymaths.net/2019/09/201926-readings-of-the-week.html/</loc>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/cooking/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/history/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2019-09-22T21:06:45+02:00</lastmod>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/rust/</loc>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2019-09-28T21:06:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2019/09/201925-readings-of-the-week.html/</loc>
     <lastmod>2019-09-22T21:06:45+02:00</lastmod>
   </url>
   
@@ -199,11 +209,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/awk/</loc>
-    <lastmod>2019-06-04T20:34:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/rust/</loc>
     <lastmod>2019-06-04T20:34:00+02:00</lastmod>
   </url>
   
