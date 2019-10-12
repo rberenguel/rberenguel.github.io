@@ -6,10 +6,21 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Sep 2019 21:06:45 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2019 13:06:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#27 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/10/201927-readings-of-the-week.html/</link>
+      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/10/201927-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Some data engineering, a bit of Haskell, programming music, Python and random
+bits and bobs. I recommend you play with the third. Several good books this
+week, as I have ramped up my reading: current goal would be 52 this year.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#26 Readings of the Week</title>

@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Sep 2019 21:06:45 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2019 13:06:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cooking</title>
@@ -26,24 +62,6 @@
       <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -156,15 +174,6 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Wardley maps</title>
       <link>https://mostlymaths.net/tags/wardley-maps/</link>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
@@ -183,7 +192,7 @@
     </item>
     
     <item>
-      <title>spark</title>
+      <title>Spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
