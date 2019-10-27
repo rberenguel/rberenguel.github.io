@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | 2019#28 Readings of the Week</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/css/all.css">
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+      <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="2019#28 Readings of the Week" />
+<meta property="og:description" content="This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appear hardcore
+developers more than usual." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2019/10/201929-readings-of-the-week.html/" />
+<meta property="article:published_time" content="2019-10-27T13:06:33+02:00" />
+<meta property="article:modified_time" content="2019-10-27T13:06:33+02:00" />
+<meta itemprop="name" content="2019#28 Readings of the Week">
+<meta itemprop="description" content="This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appear hardcore
+developers more than usual.">
+
+
+<meta itemprop="datePublished" content="2019-10-27T13:06:33&#43;02:00" />
+<meta itemprop="dateModified" content="2019-10-27T13:06:33&#43;02:00" />
+<meta itemprop="wordCount" content="1159">
+
+
+
+<meta itemprop="keywords" content="Haskell,Scala,Python,Data engineering,Rust,Formal methods,Alloy,ReadingsOfTheWeek," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/2019/10/201929-readings-of-the-week.html/curry.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="2019#28 Readings of the Week"/>
+<meta name="twitter:description" content="This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appear hardcore
+developers more than usual."/>
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2019/10/201929-readings-of-the-week.html//curry.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">2019#28 Readings of the Week</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-27T13:06:33&#43;02:00">October 27, 2019</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 6 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1159 words</span>
+      
+    </header>
+    
+
+    
+    <div id="amzn-assoc-ad-e4bbbdef-c478-4f46-a609-dbb04c453c0d">
+    </div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=e4bbbdef-c478-4f46-a609-dbb04c453c0d"></script>
+    <section class="w-100">
+                    <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
+    </section>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appear hardcore
+developers more than usual.</p>
+
+<figure class="fig-wide">
+    <img src="curry.jpg"
+         alt="Photo by Taylor Kiser on Unsplash"/> <figcaption>
+            <p>Photo by  <a href="https://unsplash.com/@foodfaithfit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Taylor Kiser</a>  on  <a href="https://unsplash.com/s/photos/curry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+        </figcaption>
+</figure>
+
+
+<p><strong>NOTE</strong>: The themes are varied, and some links below are affiliate links.
+Haskell, Rust (and Spark), Python, formal methods, maps. Expect a similar wide
+range in the future as well. You can check all my weekly readings by checking
+the <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek" target="_blank">tag here</a>. You
+can also get these as a kind-of-weekly newsletter by subscribing
+<a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
+
+<h2 id="ceo-shadow-program-https-about-gitlab-com-handbook-ceo-shadow"><a href="https://about.gitlab.com/handbook/ceo/shadow/" target="_blank">CEO Shadow Program</a></h2>
+
+<p>An interesting idea from GitLab on training executives.</p>
+
+<h2 id="how-to-write-to-a-parquet-file-in-scala-without-using-apache-spark-https-www-mikulskibartosz-name-how-to-write-to-a-parquet-file-in-scala-without-using-apache-spark"><a href="https://www.mikulskibartosz.name/how-to-write-to-a-parquet-file-in-scala-without-using-apache-spark/" target="_blank">How to write to a Parquet file in Scala without using Apache Spark</a></h2>
+
+<p>You may have wondered how to do this. Obviously the answer is
+<a href="https://github.com/mjakubowski84/parquet4s" target="_blank">Parquet4s</a> and here’s an example</p>
+
+<h2 id="interested-in-improving-your-relationships-try-nonviolent-communication-https-www-clearerthinking-org-single-post-2019-03-06-want-to-improve-your-relationships-try-nonviolent-communication-1"><a href="https://www.clearerthinking.org/single-post/2019/03/06/Want-to-improve-your-relationships-Try-Nonviolent-Communication-1" target="_blank">Interested in improving your relationships? Try Nonviolent Communication</a></h2>
+
+<p>I should practice this.</p>
+
+<h2 id="solving-planning-problems-with-fast-downward-and-haskell-https-ocharles-org-uk-blog-posts-2018-12-25-fast-downward-html"><a href="https://ocharles.org.uk/blog/posts/2018-12-25-fast-downward.html" target="_blank">Solving Planning Problems with Fast Downward and Haskell</a></h2>
+
+<p>I had a “I need a planner” project in my personal project list and was
+considering a lame solution with Prolog (very 70s), but this is so much better,
+and a great excuse to finally write something in Haskell.</p>
+
+<h2 id="fastspark-a-new-fast-native-implementation-of-spark-from-scratch-https-medium-com-rajasekar3eg-fastspark-a-new-fast-native-implementation-of-spark-from-scratch-368373a29a5c"><a href="https://medium.com/@rajasekar3eg/fastspark-a-new-fast-native-implementation-of-spark-from-scratch-368373a29a5c" target="_blank">FastSpark: A New Fast Native Implementation of Spark from Scratch</a></h2>
+
+<p>An implementation of the RDD interface from Spark in Rust. The speed up is
+promising, the code looks clean and clear enough. Has lots of potential, if I
+have some time someday I’d like to help with some Arrow stuff here.</p>
+
+<h2 id="open-sourcing-polynote-an-ide-inspired-polyglot-notebook-https-medium-com-netflix-techblog-open-sourcing-polynote-an-ide-inspired-polyglot-notebook-7f929d3f447"><a href="https://medium.com/netflix-techblog/open-sourcing-polynote-an-ide-inspired-polyglot-notebook-7f929d3f447" target="_blank">Open-sourcing Polynote: an IDE-inspired polyglot notebook</a></h2>
+
+<p><em>Caveat</em>: won’t respect the python environment you start it on. Aside from what,
+it offers <code>jep</code> for data interchange between cells written in Scala and cells
+written in Python. How cool is that? It also offers auto-graphing (like
+Zeppelin) and a very convenient autocomplete/symbol expansion system. All in all
+seems to have huge potential, and is usable from moment 0.</p>
+
+<h2 id="beating-c-with-80-lines-of-haskell-wc-https-chrispenner-ca-posts-wc"><a href="https://chrispenner.ca/posts/wc" target="_blank">Beating C with 80 lines of Haskell: wc</a></h2>
+
+<p>It’s of course beating the unoptimized version present by default in Mac OS. But
+it’s a good exercise in how to optimize Haskell code, which is notoriously
+tricky to do.</p>
+
+<h2 id="python-at-scale-strict-modules-https-instagram-engineering-com-python-at-scale-strict-modules-c0bb9245c834"><a href="https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834" target="_blank">Python at Scale: Strict Modules</a></h2>
+
+<p>Instagram has a very large Python monolith, and of course this means some
+problems that are minor for others are huge for them. Here they share how they
+handle the unconstrained “power” Python module loading “offers”. I’m looking
+forward this being added to some Python version.</p>
+
+<h2 id="introducing-apache-arrow-flight-a-framework-for-fast-data-transport-http-arrow-apache-org-blog-2019-10-13-introducing-arrow-flight"><a href="http://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/" target="_blank">Introducing Apache Arrow Flight: A Framework for Fast Data Transport</a></h2>
+
+<p>Anybody up for rewriting Spark’s inter-machine communication? (Not me, if I go
+to that codebase soon will be for a suggestion by <a href="https://twitter.com/hkarau" target="_blank">Holden
+Karau</a> to improve/implement a pandas thingy)</p>
+
+<h2 id="a-tiny-static-full-text-search-engine-using-rust-and-webassembly-https-endler-dev-2019-tinysearch"><a href="https://endler.dev/2019/tinysearch/" target="_blank">A Tiny, Static, Full-Text Search Engine using Rust and WebAssembly</a></h2>
+
+<p>Super-neat. Writing a search engine leveraging Bloom filters, serialized into
+WASM, together with the full engine. And written in Rust. Buzzword bingo time!</p>
+
+<h2 id="turtle-tutorial-https-hackage-haskell-org-package-turtle-1-5-15-docs-turtle-tutorial-html"><a href="https://hackage.haskell.org/package/turtle-1.5.15/docs/Turtle-Tutorial.html" target="_blank">Turtle.Tutorial</a></h2>
+
+<p>Turtle is a Haskell library to write shell scripts (type safe, effect-neat,
+etc). I don’t remember seeing this tutorial last time I checked it: this
+tutorial is superb.</p>
+
+<h2 id="formally-modeling-database-migrations-https-www-hillelwayne-com-post-formally-modeling-migrations"><a href="https://www.hillelwayne.com/post/formally-modeling-migrations" target="_blank">Formally Modeling Database Migrations</a></h2>
+
+<p>I’m not 100% convinced of the approach, since it feels overkill-ish (and Alloy
+is pretty terse, so that feels like an additional downer), but I like seeing formal methods
+approaching the data engineering space.</p>
+
+<h2 id="my-favourite-git-commit-https-fatbusinessman-com-2019-my-favourite-git-commit"><a href="https://fatbusinessman.com/2019/my-favourite-git-commit" target="_blank">My favourite Git commit</a></h2>
+
+<p>Writing git commits is hard. I’m trying to work on it, but sometimes I still
+write <code>TICKET-### fix bug</code>. At least I have stopped naming my branches using
+<code>in_soviet_russia</code> jokes. Although I kind of miss that.</p>
+
+<h2 id="the-perfect-combination-of-art-and-science-mourning-the-end-of-paper-maps-https-www-theguardian-com-travel-2019-oct-20-the-perfect-combination-of-art-and-science-mourning-the-end-of-paper-maps"><a href="https://www.theguardian.com/travel/2019/oct/20/the-perfect-combination-of-art-and-science-mourning-the-end-of-paper-maps" target="_blank">&lsquo;The perfect combination of art and science&rsquo;: mourning the end of paper maps</a></h2>
+
+<p>I’m a kind of map junkie (and I don’t mean only <a href="https://mostlymaths.net/tags/wardley-maps/" target="_blank">Wardley
+maps</a>). Have several books on maps,
+many maps (more than I can hang), I <a href="https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/" target="_blank">GIS-ed a custom map of my
+hometown</a>,
+would love to take some workshop on hand-drawn mapmaking at some point (does
+this exist?). So this is just excellent.</p>
+
+<h2 id="marshall-island-stick-charts-https-www-historytoday-com-archive-marshall-island-stick-charts"><a href="https://www.historytoday.com/archive/marshall-island-stick-charts" target="_blank">Marshall Island Stick Charts</a></h2>
+
+<p>I saw these in the link above and just loved them. I’ve been collecting <em>tools
+for thought</em> since I wrote my presentation for SoCraTesUK 2019 on Wardley
+Mapping, and this could definitely go there.</p>
+
+<h2 id="the-10m-engineering-problem-https-segment-com-blog-the-10m-engineering-problem"><a href="https://segment.com/blog/the-10m-engineering-problem/" target="_blank">The $10m engineering problem</a></h2>
+
+<p>Cost optimization in AWS is hard, and here the Segment team share how they
+improved their margins.</p>
+
+<h2 id="with-category-theory-mathematics-escapes-from-equality-https-www-quantamagazine-org-with-category-theory-mathematics-escapes-from-equality-20191010"><a href="https://www.quantamagazine.org/with-category-theory-mathematics-escapes-from-equality-20191010/" target="_blank">With Category Theory, Mathematics Escapes From Equality</a></h2>
+
+<p>Turtles, turtles all the way down! (this one talks about the development of
+infinite stacks of equivalence relationships, a form of infinite categories).</p>
+
+<h2 id="lesser-known-coding-fonts-https-vfoley-xyz-lesser-known-coding-fonts"><a href="https://vfoley.xyz/lesser-known-coding-fonts/" target="_blank">Lesser Known Coding Fonts</a></h2>
+
+<p>Not sure if <em>lesser</em> in my case, I’ve been using
+<a href="https://larsenwork.com/monoid/" target="_blank">Monoid</a> myself for a year or so. It’s a very
+beautiful font to write code in.</p>
+
+<h2 id="invisibility-cloak-https-futurism-com-the-byte-watch-invisibility-cloak-military-use"><a href="https://futurism.com/the-byte/watch-invisibility-cloak-military-use" target="_blank">Invisibility cloak</a></h2>
+
+<p>Well, I’d rather have a <a href="https://en.wikipedia.org/wiki/Bag_of_holding" target="_blank">bag of
+holding</a> or a <a href="https://nethackwiki.com/wiki/Wand_of_wishing" target="_blank">wand of
+wishing</a> but
+<a href="https://nethackwiki.com/wiki/Cloak_of_invisibility" target="_blank">this</a> is interesting
+engineering.</p>
+
+<h2 id="micromastery-https-www-amazon-com-micromastery-unlock-potential-achieve-anything-dp-0143132326-ref-as-li-ss-tl-crid-1sxzifiy96l48-keywords-micromastery-qid-1572104446-sprefix-micromastery-aps-279-sr-8-1-linkcode-ll1-tag-rbersblog-20-linkid-c8793985b26b67e1c8eb9711306727f8-language-en-us"><a href="https://www.amazon.com/Micromastery-Unlock-Potential-Achieve-Anything/dp/0143132326/ref=as_li_ss_tl?crid=1SXZIFIY96L48&amp;keywords=micromastery&amp;qid=1572104446&amp;sprefix=micromastery,aps,279&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=c8793985b26b67e1c8eb9711306727f8&amp;language=en_US" target="_blank">📚 Micromastery</a></h2>
+
+<p>I read this one last weekend. Had too much overlap with other books I have read,
+so the new content was minimal. The only useful thing I got from it was learning
+there is a form of prose known as <em>flash fiction</em>, ranging from 10-1000 words.
+I’m kind of attracted to the idea of writing 100 word prose, so I have
+investigated a bit more that one.</p>
+
+<h2 id="category-theory-for-programmers-scala-edition-https-github-com-hmemcpy-milewski-ctfp-pdf"><a href="https://github.com/hmemcpy/milewski-ctfp-pdf" target="_blank">📚 Category Theory for Programmers (Scala edition)</a></h2>
+
+<blockquote>
+<p>So, all told, a category is just a monad in the bi-category of spans.</p>
+</blockquote>
+
+<p>This has taken me <em>very</em> long, and has sprouted several side readings of
+category theory papers, a renewed interest in Haskell, and a list of exercises
+from the book I want to try. Also a renewed interest in re-reading stuff about
+schemes and sheaves (Hartshorne where are thou?). I’m not sure I recommend you
+read it, it’s <em>long</em>.</p>
+
+<h2 id="alloy-for-tla-users-by-jay-parlar-https-m-youtube-com-watch-list-plwlcqzlzy8u-osnz-ypovrptg1ys73okr-v-tzywzc04ljg"><a href="https://m.youtube.com/watch?list=PLWLcqZLzY8u_Osnz-YPOVrptG1ys73OkR&amp;v=tZywZc04lJg" target="_blank">🍿 Alloy for TLA+ users by Jay Parlar</a></h2>
+
+<p>An excellent introduction to Alloy by <a href="https://mobile.twitter.com/parlar" target="_blank">Jay
+Parlar</a>. You don’t need to know TLA+ to watch
+it (but would help).</p>
+
+<h2 id="fast-downward-solving-declarative-planning-problems-in-haskell-https-m-youtube-com-watch-v-riugqmhx0k0"><a href="https://m.youtube.com/watch?v=riugQmHx0K0" target="_blank">🍿 Fast Downward: Solving Declarative Planning problems in Haskell</a></h2>
+
+<p>If you think you’ve seen this before, yes. The blog past by
+<a href="https://twitter.com/acid2" target="_blank">Ollie</a> above is related to this talk. And he’s
+giving this talk in <a href="https://www.meetup.com/London-Haskell/events/265822997/" target="_blank">London Haskell next
+week</a>.</p>
+
+<h2 id="a-talk-near-the-future-of-python-https-m-youtube-com-watch-feature-youtu-be-v-r-a78rgmhzu"><a href="https://m.youtube.com/watch?feature=youtu.be&amp;v=r-A78RgMhZU" target="_blank">🍿 A Talk Near the Future of Python</a></h2>
+
+<p>Holly molly. I’m afraid of giving spoilers, but&hellip; So, here <a href="https://mobile.twitter.com/dabeaz" target="_blank">David
+Beazley</a> starts by writing a simple stack
+machine in Python. Extends it a bit, not much. And then uses it to interpret
+<em>and play</em> (through pygame) a game written in Rust and compiled into WASM. There
+are like 4 instances where the public applauds in the middle of the talk, and I
+felt like doing the same at home.</p>
+
+<h2 id="upgrade-your-future-https-m-youtube-com-watch-v-usgfku1h7hw"><a href="https://m.youtube.com/watch?v=USgfku1h7Hw" target="_blank">🍿 Upgrade Your Future</a></h2>
+
+<p><a href="https://mobile.twitter.com/jdegoes" target="_blank">John de Goes</a> evangelizing on ZIO. And
+indeed, using ZIO has many advantages, watch it.</p>
+
+<h2 id="no-garden-of-eden-adventures-in-teaching-haskell-to-kids-https-m-youtube-com-watch-index-8-list-pl6paitpnkken-llgodlghdlcmiosize1o-v-bl6dl1futxy"><a href="https://m.youtube.com/watch?index=8&amp;list=PL6pAiTPnKkEN_LlgodlGhDLCmIOsizE1o&amp;v=bL6dL1fUTxY" target="_blank">🍿 No Garden of Eden - Adventures in Teaching Haskell to Kids</a></h2>
+
+<p>The comments from kids about Haskell can be hilarious.</p>
+
+<h2 id="newsletter-http-eepurl-com-gefw7p"><a href="http://eepurl.com/geFw7P" target="_blank">Newsletter</a>?</h2>
+
+<p>These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p><hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/haskell" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Haskell</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Scala</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/python" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Python</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/data-engineering" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data engineering</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/rust" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Rust</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/formal-methods" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Formal methods</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/alloy" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Alloy</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/readingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ReadingsOfTheWeek</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="/2019/10/201927-readings-of-the-week.html/">2019#27 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/04/2019-9-readings-of-week-x4.html/">2019-9 Readings of the week (x4)</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/10/201928-readings-of-the-week.html/">2019#28 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/09/201926-readings-of-the-week.html/">2019#26 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/09/201924-readings-of-the-week.html/">2019#24 Readings of the Week</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div>
+  <div class="bg-light-gray pa3 rounded-6">
+      <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
+  </div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
+
+  </article>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
