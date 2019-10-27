@@ -6,10 +6,82 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 13:06:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2019 13:06:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alloy</title>
+      <link>https://mostlymaths.net/tags/alloy/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/alloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal methods</title>
+      <link>https://mostlymaths.net/tags/formal-methods/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://mostlymaths.net/tags/rust/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Agile</title>
@@ -26,51 +98,6 @@
       <pubDate>Sat, 19 Oct 2019 13:06:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/bread/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data engineering</title>
-      <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Sat, 19 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 19 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://mostlymaths.net/tags/rust/</link>
-      <pubDate>Sat, 19 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 12 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
     </item>
     
@@ -107,15 +134,6 @@
       <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -224,15 +242,6 @@
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/systems-thinking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Formal methods</title>
-      <link>https://mostlymaths.net/tags/formal-methods/</link>
-      <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
       <description></description>
     </item>
     
@@ -350,15 +359,6 @@
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/akka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alloy</title>
-      <link>https://mostlymaths.net/tags/alloy/</link>
-      <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/alloy/</guid>
       <description></description>
     </item>
     

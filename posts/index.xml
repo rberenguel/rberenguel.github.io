@@ -6,10 +6,21 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 13:06:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2019 13:06:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#28 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/10/201929-readings-of-the-week.html/</link>
+      <pubDate>Sun, 27 Oct 2019 13:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/10/201929-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appear hardcore
+developers more than usual.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#28 Readings of the Week</title>

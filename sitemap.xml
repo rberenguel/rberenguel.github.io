@@ -3,6 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2019/10/201929-readings-of-the-week.html/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/alloy/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data-engineering/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/haskell/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/rust/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2019-10-27T13:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2019/10/201928-readings-of-the-week.html/</loc>
     <lastmod>2019-10-19T13:06:33+02:00</lastmod>
   </url>
@@ -18,47 +78,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/data-engineering/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/rust/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/10/201927-readings-of-the-week.html/</loc>
-    <lastmod>2019-10-12T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2019-10-12T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2019-10-12T13:06:33+02:00</lastmod>
   </url>
   
@@ -94,11 +114,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2019-09-14T17:54:45+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
     <lastmod>2019-09-14T17:54:45+02:00</lastmod>
   </url>
   
@@ -189,11 +204,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</loc>
-    <lastmod>2019-06-25T20:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
     <lastmod>2019-06-25T20:01:00+02:00</lastmod>
   </url>
   
@@ -314,11 +324,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/akka/</loc>
-    <lastmod>2019-04-07T19:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/alloy/</loc>
     <lastmod>2019-04-07T19:37:00+02:00</lastmod>
   </url>
   
