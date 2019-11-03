@@ -6,10 +6,20 @@
     <description>Recent content in Data engineering on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Oct 2019 13:06:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 15:06:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/data-engineering/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#30 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/11/201930-readings-of-the-week.html/</link>
+      <pubDate>Sun, 03 Nov 2019 15:06:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/11/201930-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;A mixed bag of interesting history tidbits sprinkled with Haskell code, Scala
+stuff, data engineering systems and practices, and how to code with your voice.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#29 Readings of the Week</title>
