@@ -6,10 +6,73 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 11:00:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 14:00:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://mostlymaths.net/tags/history/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychology</title>
+      <link>https://mostlymaths.net/tags/psychology/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Alloy</title>
@@ -21,47 +84,11 @@
     </item>
     
     <item>
-      <title>Data engineering</title>
-      <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Formal methods</title>
       <link>https://mostlymaths.net/tags/formal-methods/</link>
       <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -107,15 +134,6 @@
       <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/cooking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>https://mostlymaths.net/tags/history/</link>
-      <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/history/</guid>
       <description></description>
     </item>
     
@@ -174,15 +192,6 @@
     </item>
     
     <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Adtech</title>
       <link>https://mostlymaths.net/tags/adtech/</link>
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
@@ -228,7 +237,7 @@
     </item>
     
     <item>
-      <title>spark</title>
+      <title>Spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       

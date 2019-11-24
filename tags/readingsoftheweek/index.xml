@@ -6,10 +6,23 @@
     <description>Recent content in ReadingsOfTheWeek on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 11:00:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 14:00:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/readingsoftheweek/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019#32-33 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/11/20193233-readings-of-the-week.html/</link>
+      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/11/20193233-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34; target=&#34;_blank&#34;&gt;Python Barcelona&lt;/a&gt;
+organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34; target=&#34;_blank&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
+organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34; target=&#34;_blank&#34;&gt;a workshop on
+PySpark&lt;/a&gt;, so I felt pretty tired
+on Sunday. Of course this means this is a double issue.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#31 Readings of the Week</title>
