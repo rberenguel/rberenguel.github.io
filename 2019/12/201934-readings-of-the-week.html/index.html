@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | 2019#34 Readings of the Week</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/css/all.css">
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+      <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="2019#34 Readings of the Week" />
+<meta property="og:description" content="This week is somewhat more eclectic than usual. There is nothing about any
+particular programming language. There is a bit on Kubernetes, functional
+programming and containers, project management, aviation history,
+interviews/bios… I have started reading a few more papers, and I’ll share the
+interesting ones as well. This week they are centered in data engineering." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2019/12/201934-readings-of-the-week.html/" />
+<meta property="article:published_time" content="2019-12-01T23:30:33+02:00" />
+<meta property="article:modified_time" content="2019-12-01T23:30:33+02:00" />
+<meta itemprop="name" content="2019#34 Readings of the Week">
+<meta itemprop="description" content="This week is somewhat more eclectic than usual. There is nothing about any
+particular programming language. There is a bit on Kubernetes, functional
+programming and containers, project management, aviation history,
+interviews/bios… I have started reading a few more papers, and I’ll share the
+interesting ones as well. This week they are centered in data engineering.">
+
+
+<meta itemprop="datePublished" content="2019-12-01T23:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2019-12-01T23:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="1042">
+
+
+
+<meta itemprop="keywords" content="Management,Productivity,Data engineering,History,ReadingsOfTheWeek," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/2019/12/201934-readings-of-the-week.html/flight.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="2019#34 Readings of the Week"/>
+<meta name="twitter:description" content="This week is somewhat more eclectic than usual. There is nothing about any
+particular programming language. There is a bit on Kubernetes, functional
+programming and containers, project management, aviation history,
+interviews/bios… I have started reading a few more papers, and I’ll share the
+interesting ones as well. This week they are centered in data engineering."/>
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2019/12/201934-readings-of-the-week.html//flight.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">2019#34 Readings of the Week</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-01T23:30:33&#43;02:00">December 1, 2019</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 5 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1042 words</span>
+      
+    </header>
+    
+
+    
+    <div id="amzn-assoc-ad-e4bbbdef-c478-4f46-a609-dbb04c453c0d">
+    </div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=e4bbbdef-c478-4f46-a609-dbb04c453c0d"></script>
+    <section class="w-100">
+                    <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
+    </section>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This week is somewhat more eclectic than usual. There is nothing about any
+particular programming language. There is a bit on Kubernetes, functional
+programming and containers, project management, aviation history,
+interviews/bios… I have started reading a few more papers, and I’ll share the
+interesting ones as well. This week they are centered in data engineering.</p>
+
+<p><strong>NOTE</strong>: The themes are varied, and some links below are affiliate links.
+Kubernetes, functional programming and containers, project management, aviation
+history, interviews/bios… Expect a similar wide range in the future as well.
+You can check all my weekly readings by checking the <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek" target="_blank">tag
+here</a>. You can also
+get these as a weekly newsletter by subscribing
+<a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
+
+<figure class="fig-wide">
+    <img src="flight.jpg"
+         alt="I&amp;rsquo;ve been in London this week"/> <figcaption>
+            <p>I&rsquo;ve been in London this week</p>
+        </figcaption>
+</figure>
+
+
+<h2 id="planet-satellite-british-super-plane-or-magnesium-flop-https-hushkit-net-2015-10-16-whisky-business-the-strange-story-of-the-planet-satellite"><a href="https://hushkit.net/2015/10/16/whisky-business-the-strange-story-of-the-planet-satellite/" target="_blank">Planet Satellite: British super-plane or magnesium flop?</a></h2>
+
+<p>I have a strange attraction to stories about weird engineering projects. This one is about a plane that was supposed to democratise flight, bringing an airplane to every home.</p>
+
+<h2 id="death-star-ii-a-project-management-case-study-https-medium-com-hybridanalyst-death-star-ii-a-project-management-case-study-7e9ce087cc08"><a href="https://medium.com/@HybridAnalyst/death-star-ii-a-project-management-case-study-7e9ce087cc08" target="_blank">Death Star II: A Project Management Case Study</a></h2>
+
+<p>This feels almost like the story of the <a href="https://www.smithsonianmag.com/smart-news/bizarre-story-vasa-ship-keeps-giving-180964328/" target="_blank">Vasa</a>, but in a fictional, planet-destroyer level.</p>
+
+<h2 id="after-wework-softbank-s-startup-bookkeeping-draws-scrutiny-https-www-bloomberg-com-news-features-2019-11-26-after-wework-softbank-s-startup-bookkeeping-draws-scrutiny"><a href="https://www.bloomberg.com/news/features/2019-11-26/after-wework-softbank-s-startup-bookkeeping-draws-scrutiny" target="_blank">After WeWork, SoftBank’s Startup Bookkeeping Draws Scrutiny</a></h2>
+
+<p>This feels like financial engineering at its finest. Reminds me of this <a href="https://signalvnoise.com/posts/1941-press-release-37signals-valuation-tops-100-billion-after-bold-vc-investment" target="_blank">37Signals joke post</a> from some years ago.</p>
+
+<h2 id="tla-model-checking-made-symbolic-https-blog-acolyer-org-2019-11-29-tla-model-checking-made-symbolic"><a href="https://blog.acolyer.org/2019/11/29/tla-model-checking-made-symbolic/" target="_blank">TLA+ model checking made symbolic</a></h2>
+
+<p>A quick overview of this paper, which essentially introduces a type checker for a subset of TLA+ and then converts it into SMT-acceptable rules. This enables checking certain properties in reasonable time (i.e. finite).</p>
+
+<h2 id="the-sociologist-and-space-engineers-behind-orba-artiphon-s-new-instrument-for-everyone-https-www-core77-com-posts-91471-the-sociologist-and-space-engineers-behind-orba-artiphons-new-instrument-for-everyone"><a href="https://www.core77.com/posts/91471/The-Sociologist-and-Space-Engineers-Behind-Orba-Artiphons-New-Instrument-for-Everyone" target="_blank">The Sociologist and Space Engineers Behind Orba, Artiphon&rsquo;s New Instrument for Everyone</a></h2>
+
+<p>I’m a sucker for musical instruments, and this looked so fun I couldn’t help but back it in Kickstarter.</p>
+
+<h2 id="my-life-as-a-child-chef-https-www-newyorker-com-magazine-2019-11-25-my-life-as-a-child-chef"><a href="https://www.newyorker.com/magazine/2019/11/25/my-life-as-a-child-chef" target="_blank">My Life as a Child Chef</a></h2>
+
+<p>Following your passion sometimes leads somewhere else.</p>
+
+<h2 id="kleisli-category-from-theory-to-cats-https-blog-softwaremill-com-kleisli-category-from-theory-to-cats-fbd140bf396e"><a href="https://blog.softwaremill.com/kleisli-category-from-theory-to-cats-fbd140bf396e" target="_blank">Kleisli Category — From theory to Cats</a></h2>
+
+<p>It won’t be super enlightening, but can help clarify what <a href="https://en.m.wikipedia.org/wiki/Kleisli_category" target="_blank">Kleisli</a> stands for.</p>
+
+<h2 id="barbara-liskov-is-the-architect-of-modern-algorithms-https-www-quantamagazine-org-barbara-liskov-is-the-architect-of-modern-algorithms-20191120"><a href="https://www.quantamagazine.org/barbara-liskov-is-the-architect-of-modern-algorithms-20191120/" target="_blank">Barbara Liskov Is the Architect of Modern Algorithms</a></h2>
+
+<p>An excellent interview with Dr. Liskov (the L from <a href="https://en.m.wikipedia.org/wiki/SOLID" target="_blank">SOLID</a>). It’s hard reading how bad women/underrepresented groups have had it (and have) it in the field. We need to do our best together to fix this.</p>
+
+<p><a href="https://engineeringblog.yelp.com/2019/11/open-source-clusterman.html" target="_blank">Remember Clusterman? Now It&rsquo;s Open-Source, and Supports Kubernetes Too!</a>
+Back when I was investigating moving all our systems to Kubernetes, autoscaling (especially if I wanted to run Spark on the same cluster) was what looked thornier. From the looks of it, <a href="https://github.com/Yelp/clusterman" target="_blank">Clusterman</a> by Yelp might be the answer.</p>
+
+<h2 id="why-is-there-no-docker-in-openshift-4-and-rhel-8-https-www-linkedin-com-pulse-part-ii-why-docker-openshift-4-rhel-8-scott-mccarty"><a href="https://www.linkedin.com/pulse/part-ii-why-docker-openshift-4-rhel-8-scott-mccarty/" target="_blank">Why Is There No Docker in OpenShift 4 and RHEL 8?</a></h2>
+
+<p>I’m not superhappy with the names chosen for the smaller tools, but breaking up the monster is a good reason.</p>
+
+<h2 id="mind-of-a-mathematician-https-paw-princeton-edu-article-mind-mathematician"><a href="https://paw.princeton.edu/article/mind-mathematician" target="_blank">Mind of a Mathematician</a></h2>
+
+<p>A short bio of Terence Tao, one of the best mathematicians alive.</p>
+
+<h2 id="you-don-t-bring-bad-news-to-the-cult-leader-inside-the-fall-of-wework-https-www-vanityfair-com-news-2019-11-inside-the-fall-of-wework"><a href="https://www.vanityfair.com/news/2019/11/inside-the-fall-of-wework" target="_blank">“You Don’t Bring Bad News to the Cult Leader”: Inside the Fall of WeWork</a></h2>
+
+<p>Another WeWork themed article, and an interesting one. Seen from the outside you can’t help wonder <em>how nobody realized?</em></p>
+
+<h2 id="a-list-of-haskell-articles-on-good-design-good-testing-https-williamyaoh-com-posts-2019-11-24-design-and-testing-articles-html"><a href="https://williamyaoh.com/posts/2019-11-24-design-and-testing-articles.html" target="_blank">A list of Haskell articles on good design, good testing</a></h2>
+
+<p>Not the first time a post by <a href="https://twitter.com/williamyaoh" target="_blank">William Yao</a> makes it t this list. It&rsquo;s likely some of the articles recommended here will appear in future issues of my weekly readings.</p>
+
+<h2 id="how-to-architect-a-query-compiler-revisited-https-www-cs-purdue-edu-homes-rompf-papers-tahboub-sigmod18-pdf"><a href="https://www.cs.purdue.edu/homes/rompf/papers/tahboub-sigmod18.pdf" target="_blank">📝 How to Architect a Query Compiler, Revisited</a></h2>
+
+<p>A paper involving Tiark Rompf, whom you may know as involved in <a href="https://flaredata.github.io" target="_blank">Flare</a>, an optimizer for Spark that can reach 10x speed ups. The details in this article should feel as part of the reason (<a href="https://arxiv.org/pdf/1703.08219.pdf" target="_blank">technically I’m horribly wrong</a> since Flare uses only <a href="http://scala-lms.github.io" target="_blank">LMS</a>, but… I have a hunch there is a lot of overlap). In short, explains how you can specialize (query) interpreters to form the basis for efficient compiled code (similar, but nope, different, than what <a href="https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-Optimizer.html" target="_blank">Catalyst</a> does). This is achieved via a <em>Futamura projection</em> which I may explain later (since I’d like to read the Futamura paper as well)</p>
+
+<h2 id="performance-and-scalability-of-broadcast-in-spark-https-pdfs-semanticscholar-org-7b0e-6a3dc18babb19daddb63890e763795943485-pdf"><a href="https://pdfs.semanticscholar.org/7b0e/6a3dc18babb19daddb63890e763795943485.pdf" target="_blank">📝 Performance and Scalability of Broadcast in Spark</a></h2>
+
+<p>A quite old article about improving the efficiency of Spark’s broadcast. Since <a href="https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-TorrentBroadcast.html" target="_blank">currently the implementation of Spark’s broadcast</a> does not follow the results here, the value is limited (except as historical piece).</p>
+
+<h2 id="notes-i-took-on-the-effect-of-work-environments-on-productivity-and-satisfaction-of-software-engineers">Notes I took on <em>The effect of Work Environments on Productivity and Satisfaction of Software Engineers</em></h2>
+
+<p>I took some notes on this article, you can read them <a href="https://www.linkedin.com/pulse/first-looking-effect-work-environments-productivity-rub%25C3%25A9n-berenguel" target="_blank">here</a>. Follow/add me to <a href="https://www.linkedin.com/in/rberenguel/" target="_blank">LinkedIn</a> in case you want to see these (rarely) posts I write there.</p>
+
+<h2 id="thinking-functionally-by-john-de-goes-https-www-youtube-com-watch-v-ka3bsdqyug-t-1s"><a href="https://www.youtube.com/watch?v=-KA3BSdqYug&amp;t=1s" target="_blank">🍿 Thinking Functionally (by John de Goes)</a></h2>
+
+<p>An excellent talk on <a href="https://zio.dev" target="_blank">ZIO</a>, and I think the “debug by understanding your code” piece around 30 minutes in is brilliant. <em>This is how I debug hard problems</em>.</p>
+
+<h2 id="the-effective-executive-https-www-amazon-com-effective-executive-definitive-getting-things-dp-b01n51tct1-ref-as-li-ss-tl-keywords-the-effective-executive-qid-1575227332-s-audible-sr-1-1-linkcode-ll1-tag-rbersblog-20-linkid-00e2d4a324ab0ac6edf1bf51c8d07408-language-en-us"><a href="https://www.amazon.com/Effective-Executive-Definitive-Getting-Things/dp/B01N51TCT1/ref=as_li_ss_tl?keywords=the+effective+executive&amp;qid=1575227332&amp;s=audible&amp;sr=1-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=00e2d4a324ab0ac6edf1bf51c8d07408&amp;language=en_US" target="_blank">🔊 The Effective Executive</a></h2>
+
+<p>I’ve had what feels like a business-like week, right? TEE is a classic by Peter Drucker, and everything said in it is as valid now as it was some years ago. It applies not only to “managers”, but any knowledge worker, and yes that includes <em>you</em>. I’m also pretty confident I’ll re-read (well, re-listen) to it next year, as I do regularly with _<a href="https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/B01B6WSK5C/ref=as_li_ss_tl?keywords=getting+things+done&amp;qid=1575227425&amp;s=audible&amp;sr=1-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=4ad213d3dd2cb98473e1ca3deb497000&amp;language=en_US" target="_blank">Getting Things Done</a>_.</p>
+
+<h2 id="the-phoenix-project-https-www-amazon-com-phoenix-project-helping-business-anniversary-dp-b00vatfami-ref-as-li-ss-tl-keywords-the-phoenix-project-qid-1575227241-sr-8-1-linkcode-ll1-tag-rbersblog-20-linkid-2abdc0eb25d73cbedb2d5754ed725f93-language-en-us"><a href="https://www.amazon.com/Phoenix-Project-Helping-Business-Anniversary/dp/B00VATFAMI/ref=as_li_ss_tl?keywords=the+phoenix+project&amp;qid=1575227241&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=2abdc0eb25d73cbedb2d5754ed725f93&amp;language=en_US" target="_blank">🔊 The Phoenix Project</a></h2>
+
+<p>So fun, it’s an IT version of _<a href="https://www.amazon.com/Goal-Process-Ongoing-Improvement-Anniversary/dp/B00IFGGDA2/ref=as_li_ss_tl?keywords=The+Goal&amp;qid=1575227477&amp;s=audible&amp;sr=1-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=ee1de8fa314aba1a6d20f1393d407ba4&amp;language=en_US" target="_blank">The Goal</a>_, but even better as a book. It explains theory of constraints, agile methodologies and DevOps in an applied fictional setting, as a novel. By the way, the Audible edition (of the 5 year anniversary edition) is excellently narrated, I listened to it (<em>14 hours</em>) in day and a half.</p>
+
+<h2 id="newsletter-http-eepurl-com-gefw7p"><a href="http://eepurl.com/geFw7P" target="_blank">Newsletter</a>?</h2>
+
+<p>These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
+
+<hr />
+
+<p><style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:&lsquo;Cookie&rsquo;, cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a></p><hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/management" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Management</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/productivity" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Productivity</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/data-engineering" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data engineering</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/history" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">History</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/readingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ReadingsOfTheWeek</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="/2019/11/20193233-readings-of-the-week.html/">2019#32-33 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/09/201923-readings-of-the-week.html/">2019#23 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/07/2019202122-readings-of-week.html/">2019#20,21,22 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/07/201919-readings-of-week.html/">2019#19 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/06/201918-readings-of-week.html/">2019#18 Readings of the week</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div>
+  <div class="bg-light-gray pa3 rounded-6">
+      <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
+  </div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
+
+  </article>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2019 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
