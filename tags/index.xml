@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 23:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 12:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,25 @@
     <item>
       <title>Data engineering</title>
       <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Sun, 01 Dec 2019 23:30:33 +0200</pubDate>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-engineering/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Distributed work</title>
+      <link>https://mostlymaths.net/tags/distributed-work/</link>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/distributed-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>History</title>
       <link>https://mostlymaths.net/tags/history/</link>
-      <pubDate>Sun, 01 Dec 2019 23:30:33 +0200</pubDate>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/history/</guid>
       <description></description>
@@ -32,7 +41,7 @@
     <item>
       <title>Management</title>
       <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 01 Dec 2019 23:30:33 +0200</pubDate>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/management/</guid>
       <description></description>
@@ -41,7 +50,7 @@
     <item>
       <title>Productivity</title>
       <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 01 Dec 2019 23:30:33 +0200</pubDate>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
@@ -50,9 +59,18 @@
     <item>
       <title>ReadingsOfTheWeek</title>
       <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 01 Dec 2019 23:30:33 +0200</pubDate>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -71,15 +89,6 @@
       <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/psychology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
