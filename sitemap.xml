@@ -3,22 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/hardware/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/keyboard/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/mac/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/01/new-keyboard-gergo.html/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2019/12/201936-readings-of-the-week.html/</loc>
     <lastmod>2019-12-22T19:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data-engineering/</loc>
-    <lastmod>2019-12-22T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2019-12-22T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
     <lastmod>2019-12-22T19:30:33+02:00</lastmod>
   </url>
   
@@ -43,11 +73,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2019-12-22T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/12/201935-readings-of-the-week.html/</loc>
     <lastmod>2019-12-15T12:30:33+02:00</lastmod>
   </url>
@@ -64,11 +89,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2019-12-15T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
     <lastmod>2019-12-15T12:30:33+02:00</lastmod>
   </url>
   
@@ -409,11 +429,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/hive/</loc>
-    <lastmod>2019-02-19T23:47:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/mac/</loc>
     <lastmod>2019-02-19T23:47:00+01:00</lastmod>
   </url>
   

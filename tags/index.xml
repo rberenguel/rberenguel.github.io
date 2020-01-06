@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2019 19:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jan 2020 18:15:52 +0100</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://mostlymaths.net/tags/hardware/</link>
+      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keyboard</title>
+      <link>https://mostlymaths.net/tags/keyboard/</link>
+      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://mostlymaths.net/tags/mac/</link>
+      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data engineering</title>
@@ -48,7 +84,7 @@
     </item>
     
     <item>
-      <title>Spark</title>
+      <title>spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sun, 22 Dec 2019 19:30:33 +0200</pubDate>
       
@@ -80,15 +116,6 @@
       <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -431,15 +458,6 @@
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/hive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mac</title>
-      <link>https://mostlymaths.net/tags/mac/</link>
-      <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/mac/</guid>
       <description></description>
     </item>
     
