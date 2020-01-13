@@ -6,10 +6,19 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jan 2020 18:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 18:15:52 +0100</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A context manager to measure elapsed time?</title>
+      <link>https://mostlymaths.net/2020/01/context-managing-time.html/</link>
+      <pubDate>Mon, 13 Jan 2020 18:15:52 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/01/context-managing-time.html/</guid>
+      <description>&lt;p&gt;Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project &lt;em&gt;Timing Context Manager&lt;/em&gt;, which I actively ignored for many months. New year, new me, and a conversation with &lt;a href=&#34;https://twitter.com/marcraminv&#34; target=&#34;_blank&#34;&gt;Marc Ramírez&lt;/a&gt; moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019#37 Readings of the Week</title>
