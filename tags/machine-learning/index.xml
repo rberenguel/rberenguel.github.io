@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/machine-learning/</link>
+    <description>Recent content in Machine learning on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jan 2020 03:30:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019#38 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/01/201938-readings-of-the-week.html/</link>
+      <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/01/201938-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Skipped last week &lt;code&gt;¯\_(ツ)_/¯&lt;/code&gt; This week has more machine learning than usual for no special reason. Posting this at 4 AM because for some reason I could not sleep and decide I may as well finish this.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
