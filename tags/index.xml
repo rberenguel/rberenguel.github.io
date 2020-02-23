@@ -6,10 +6,55 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2020 03:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 20:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal methods</title>
+      <link>https://mostlymaths.net/tags/formal-methods/</link>
+      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Agile</title>
@@ -17,15 +62,6 @@
       <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/agile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data engineering</title>
-      <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
       <description></description>
     </item>
     
@@ -48,25 +84,7 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spark</title>
+      <title>spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sat, 11 Jan 2020 18:30:33 +0200</pubDate>
       
@@ -165,15 +183,6 @@
     </item>
     
     <item>
-      <title>Formal methods</title>
-      <link>https://mostlymaths.net/tags/formal-methods/</link>
-      <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rust</title>
       <link>https://mostlymaths.net/tags/rust/</link>
       <pubDate>Sun, 03 Nov 2019 15:06:33 +0200</pubDate>
@@ -233,15 +242,6 @@
       <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
       <description></description>
     </item>
     
