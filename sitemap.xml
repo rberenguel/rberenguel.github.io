@@ -3,12 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/02/201939-readings-of-the-week.html/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2020/02/202040-readings-of-the-week.html/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data-engineering/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/forth/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-02-29T20:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/02/202039-readings-of-the-week.html/</loc>
     <lastmod>2020-02-23T20:30:33+02:00</lastmod>
   </url>
   
@@ -18,37 +63,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2020-02-23T20:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2020/01/201938-readings-of-the-week.html/</loc>
+    <loc>https://mostlymaths.net/2020/01/202038-readings-of-the-week.html/</loc>
     <lastmod>2020-01-28T03:30:33+02:00</lastmod>
   </url>
   
@@ -73,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2020/01/201937-readings-of-the-week.html/</loc>
+    <loc>https://mostlymaths.net/2020/01/202037-readings-of-the-week.html/</loc>
     <lastmod>2020-01-11T18:30:33+02:00</lastmod>
   </url>
   
@@ -1030,11 +1045,6 @@
   <url>
     <loc>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</loc>
     <lastmod>2012-01-26T15:11:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/forth/</loc>
-    <lastmod>2011-12-11T21:29:00+01:00</lastmod>
   </url>
   
   <url>

@@ -6,17 +6,62 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Feb 2020 20:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 20:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data engineering</title>
       <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forth</title>
+      <link>https://mostlymaths.net/tags/forth/</link>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/forth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 29 Feb 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -26,33 +71,6 @@
       <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -1043,15 +1061,6 @@
       <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/memory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Forth</title>
-      <link>https://mostlymaths.net/tags/forth/</link>
-      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/forth/</guid>
       <description></description>
     </item>
     
