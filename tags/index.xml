@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2020 22:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 13:20:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,54 @@
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Engineering</title>
+      <link>https://mostlymaths.net/tags/engineering/</link>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remote Working</title>
+      <link>https://mostlymaths.net/tags/remote-working/</link>
+      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/remote-working/</guid>
       <description></description>
     </item>
     
@@ -35,33 +80,6 @@
       <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/forth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -102,7 +120,7 @@
     </item>
     
     <item>
-      <title>Spark</title>
+      <title>spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sat, 11 Jan 2020 18:30:33 +0200</pubDate>
       

@@ -3,12 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/03/202042-readings-of-the-week.html/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2020/03/202043-readings-of-the-week.html/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/engineering/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/remote-working/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/03/202042-readings-of-the-week.html/</loc>
     <lastmod>2020-03-14T22:30:33+02:00</lastmod>
   </url>
   
@@ -19,36 +64,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/forth/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-03-14T22:30:33+02:00</lastmod>
   </url>
   
