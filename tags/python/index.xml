@@ -305,8 +305,9 @@ Work February-December Started working as a consultant in London, almost the day
       <pubDate>Tue, 12 Jun 2012 15:10:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
-      <description>Last week I wrote about whatlanguageis.com, my first simple try at creating a Django powered site. How did it came to be?
-In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web. In the back of my mind, I wanted my code to work as a web application (either for me or for others,) and thought that I should comply with everyone else, learn PHP and try to make Python and PHP be friends.</description>
+      <description>Note from 2020: The domain mentioned in the post is no longer active (or mine at least), I cancelled this project some time ago
+Last week I wrote about [~whatlanguageis.com~](), my first simple try at creating a Django powered site. How did it came to be?
+In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web.</description>
     </item>
     
     <item>
