@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/data-engineering/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/open-source/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/05/scratching-my-own-itch-templating-motllo.html/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-05-03T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2020/03/202043-readings-of-the-week.html/</loc>
     <lastmod>2020-03-28T13:20:33+02:00</lastmod>
   </url>
@@ -23,21 +58,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2020-03-28T13:20:33+02:00</lastmod>
   </url>
@@ -48,17 +68,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2020-03-28T13:20:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/03/202042-readings-of-the-week.html/</loc>
-    <lastmod>2020-03-14T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data-engineering/</loc>
     <lastmod>2020-03-14T22:30:33+02:00</lastmod>
   </url>
   
@@ -569,11 +579,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/ipad/</loc>
-    <lastmod>2019-01-01T15:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/open-source/</loc>
     <lastmod>2019-01-01T15:00:00+01:00</lastmod>
   </url>
   

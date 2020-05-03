@@ -6,10 +6,37 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2020 13:20:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 21:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sun, 03 May 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open source</title>
+      <link>https://mostlymaths.net/tags/open-source/</link>
+      <pubDate>Sun, 03 May 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 03 May 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -39,15 +66,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ReadingsOfTheWeek</title>
       <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
       <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
@@ -62,15 +80,6 @@
       <pubDate>Sat, 28 Mar 2020 13:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/remote-working/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data engineering</title>
-      <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
       <description></description>
     </item>
     
@@ -575,15 +584,6 @@
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/ipad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Open source</title>
-      <link>https://mostlymaths.net/tags/open-source/</link>
-      <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/open-source/</guid>
       <description></description>
     </item>
     
