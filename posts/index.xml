@@ -6,10 +6,19 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 21:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 18:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sorting myself out</title>
+      <link>https://mostlymaths.net/2020/05/sorting-myself-out.html/</link>
+      <pubDate>Wed, 06 May 2020 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/05/sorting-myself-out.html/</guid>
+      <description>&lt;p&gt;Generative art using &lt;code&gt;p5.js&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Scratching my own itches: templating with motllo</title>
