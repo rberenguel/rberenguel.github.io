@@ -105,6 +105,11 @@ article p {
     float: left;
 }
 
+.fig-side {
+    display: inline-block;
+    width: 40%;
+}
+
 code {
     font-family: "monoidregular", Consolas, monaco, monospace;                                                        font-size: 0.9em;
 }

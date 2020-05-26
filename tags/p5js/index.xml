@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>p5js on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/p5js/</link>
+    <description>Recent content in p5js on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 May 2020 19:00:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/p5js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blot/Painting p5js sketch</title>
+      <link>https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/</link>
+      <pubDate>Tue, 26 May 2020 19:00:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/</guid>
+      <description>&lt;p&gt;Some details of my &lt;code&gt;p5js&lt;/code&gt; sketch &lt;a href=&#34;https://mostlymaths.net/sketches/blot-painting/blot.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Blot/Painting&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting myself out</title>
+      <link>https://mostlymaths.net/2020/05/sorting-myself-out.html/</link>
+      <pubDate>Wed, 06 May 2020 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/05/sorting-myself-out.html/</guid>
+      <description>&lt;p&gt;Generative art using &lt;code&gt;p5.js&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
