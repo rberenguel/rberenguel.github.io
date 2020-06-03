@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/linux/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/macos/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2020/06/202045-readings-of-the-week.html/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
@@ -28,32 +63,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/p5js/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
   
@@ -739,11 +754,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/kafka/</loc>
-    <lastmod>2018-01-06T15:31:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/linux/</loc>
     <lastmod>2018-01-06T15:31:00+01:00</lastmod>
   </url>
   
