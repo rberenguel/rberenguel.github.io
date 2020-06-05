@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/generative/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/ipad/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/p5js/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/linux/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
@@ -13,27 +48,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
   
@@ -48,22 +68,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/generative/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/javascript/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/p5js/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
   
@@ -624,11 +634,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/github/</loc>
-    <lastmod>2019-01-01T15:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/ipad/</loc>
     <lastmod>2019-01-01T15:00:00+01:00</lastmod>
   </url>
   

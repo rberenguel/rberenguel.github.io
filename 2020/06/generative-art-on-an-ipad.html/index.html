@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Writing generative art on an iPad: Why and how</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="/css/all.css">
+    
+      <link rel="stylesheet" href="/byrne-caps/stylesheet.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+      <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Writing generative art on an iPad: Why and how" />
+<meta property="og:description" content="If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/" />
+<meta property="article:published_time" content="2020-06-05T21:30:33+02:00" />
+<meta property="article:modified_time" content="2020-06-05T21:30:33+02:00" />
+<meta itemprop="name" content="Writing generative art on an iPad: Why and how">
+<meta itemprop="description" content="If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.">
+
+
+<meta itemprop="datePublished" content="2020-06-05T21:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-06-05T21:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="1280">
+
+
+
+<meta itemprop="keywords" content="Generative,p5js,iPad," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/pearlQuantized.png"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="Writing generative art on an iPad: Why and how"/>
+<meta name="twitter:description" content="If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how."/>
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 helvetica bg-near-white">
+
+    
+
+
+
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2020/06/generative-art-on-an-ipad.html//pearlQuantized.png');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="fw1 mb1 f1">Writing generative art on an iPad: Why and how</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-06-05T21:30:33&#43;02:00">June 5, 2020</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 7 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1280 words</span>
+      
+    </header>
+    
+
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.</p>
+
+<h2 id="why">Why?</h2>
+
+<p><em>I like creating things</em>. This is the fundamental driving force: I have run the
+full gamut of &ldquo;stuff you can do&rdquo;. And I enjoy all of them (sadly?) I have
+knitted, crocheted, bobbin laced, embroidered and tatted. I have done (and
+published) origami, cut kirigami, quilled paper strips, created foldable
+pop-ups, scissor-cut silhouettes, knife cut paper art. I have drawn watercolor,
+pencil, ballpoint pen, gouache. Broad and fine calligraphy. I have carved
+spoons, made shoes. I will play almost any instrument I lay my hands on (I don&rsquo;t
+care how badly). Generative art is just another medium I can use to enjoy life.</p>
+
+<figure class="fig-wide">
+    <img src="night.jpg"
+         alt="Crazy, crazy nights"/> <figcaption>
+            <p><a href="https://github.com/rberenguel/sketches#crazy-nights-p5js" target="_blank">Crazy, crazy nights</a></p>
+        </figcaption>
+</figure>
+
+
+<p>I have a past with generative art, going back to when I was starting
+programming. I never got <em>very</em> into it, but even before becoming a
+mathematician I was fascinated by
+<a href="https://en.m.wikipedia.org/wiki/Iterated_function_system" target="_blank">IFS</a> (Iterated
+Function Systems) and fractals like the Mandelbrot set. Probably my first two
+&ldquo;proper&rdquo; generative pieces were done as part of a long-lost tradition, of
+Christmas postcards I would email friends and colleagues: <a href="https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/" target="_blank">approximating images
+with translucent triangles
+(2010)</a>
+and <a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" target="_blank">Postscript Christmas Card
+(2008)</a>
+(the code for the latter is
+<a href="https://gist.github.com/rberenguel/38f5106fee2a795be45d6a33532fd0e4" target="_blank">here</a>).
+But since those two, the only generative items I created were based on my
+<a href="https://arxiv.org/abs/0907.0116" target="_blank">research on complex dynamics</a>.</p>
+
+<p>What has changed? When COVID lockdown started, I got a vague surge of <em>energy</em>
+to finish some personal projects. I wrote a significant amount of free-time-code
+(mostly Python). This required being in front of the computer many hours, after
+work, meaning I was sitting in front of my computer for 14 or 15 hours a day.
+That&rsquo;s not particularly good. I decided to stop being too much in front of it
+(limiting it to around 1 non-work hour), and that left me wondering what I could
+do with the <em>I want to code but don&rsquo;t know how</em> time I had remaining.</p>
+
+<p>This gets us to the <em>how</em> section.</p>
+
+<h2 id="how">How?</h2>
+
+<p>It started on Saint George&rsquo;s day, when I created a generative rose for Laia
+using <a href="http://p5js.org" target="_blank">p5js</a>. I based it on some examples for other types of
+flowers, with a lot of patience tweaking values. This was on my computer, with
+emacs, all as usual development goes for me. I saw how easy p5js is, and how
+impressive the results can be. That was the seed. Those days I was giving some
+final touches to <a href="https://github.com/rberenguel/motllo" target="_blank">some project</a> or
+<a href="https://github.com/rberenguel/bear-note-graph" target="_blank">another</a>, so I left the seed to
+sprout.</p>
+
+<figure class="fig-wide">
+    <img src="pearlQuantized.png"
+         alt="Palette sketch, with recently added quantization"/> <figcaption>
+            <p><a href="https://github.com/rberenguel/sketches#palette-p5js" target="_blank">Palette sketch, with recently added quantization</a></p>
+        </figcaption>
+</figure>
+
+
+<p>Then, after 5 or 6 days (either late April or just beginning of May), I was
+sitting on the sofa with just my iPad Mini, watching something on TV and I
+cracked open a text editor, trying to use p5js on it. And… it worked.</p>
+
+<p>I was lucky in that the first editor I tried is the excellent
+<a href="https://www.textasticapp.com" target="_blank">Textastic</a>: it not only offers a native webview
+with console logging, but also can serve against Safari. From that point on, I
+was hooked: I could do something <em>fun and creative</em> while watching TV, on the
+off-hours, away from my computer.</p>
+
+<h2 id="the-setup">The setup</h2>
+
+<p>The setup is mostly Textastic and Safari for p5js documentation. I have just
+found out about <a href="https://apps.pdyn.net/inspect/home" target="_blank">Inspect Browser</a>, but
+haven&rsquo;t tried it yet. There are some quirks, tips and tricks that may be
+interesting though.</p>
+
+<h3 id="syntax-errors-in-textastic">Syntax errors in Textastic</h3>
+
+<p>Sadly, the console/webkit view provided by Textastic doesn&rsquo;t report on badly
+written Javascript. If you forget a brace, paren or similar you will just get a
+blank screen. It was puzzling at the beginning, now I just have gotten
+terribly good at spotting missing delimiters. And a recent update added marking
+of unbalanced delimiters (in some cases only as far as I have seen) which should
+help tremendously.</p>
+
+<h3 id="too-much-logging-in-textastic">Too much logging in Textastic</h3>
+
+<p>You can&rsquo;t go crazy by logging in every line of a tight <code>for</code> loop. This
+will make Textastic slow to a crawl, and possibly OOM. I recommend you add a
+<code>div</code> where you can write logs regularly if you need to write a lot of them. I
+haven&rsquo;t tried this myself yet, but it&rsquo;s on my plans for some projects where I
+need significant logging output.</p>
+
+<h3 id="p5js-instance-mode">p5js instance mode</h3>
+
+<p>If you are moderately serious, you want to start using <a href="https://p5js.org/examples/instance-mode-instantiation.html" target="_blank">instance
+mode</a>. All the
+examples (except the first) in my <a href="https://github.com/rberenguel/sketches" target="_blank">sketches
+repository</a> use instance mode. Why?
+Because of ES6 modules. This way I can have some libraries/common code I can
+import straight from the code with <code>import</code> statements.</p>
+
+<h3 id="parameterise-add-some-gui-controls">Parameterise/add some GUI/controls</h3>
+
+<p>This is something I read
+<a href="https://tylerxhobbs.com/essays/2018/tips-to-improve-your-generative-artwork" target="_blank">here</a>,
+at least in having a way to tweak all parameters. I started using
+<a href="https://github.com/dataarts/dat.gui" target="_blank">datgui</a>, but promptly decided I didn&rsquo;t
+like it and whipped a small div with a few basic controls. This has grown into
+my own personal library of GUI/sketch.</p>
+
+<p>You don&rsquo;t need to go that deep. Use datgui, or
+<a href="https://github.com/bitcraftlab/p5.gui" target="_blank">p5gui</a> or any other option you find. Or
+at least add a handler for <code>s</code> to save the current image, and build from that.
+Being able to tweak values quickly, and save the current canvas pay off
+extremely quick.</p>
+
+<figure class="fig-left">
+    <img src="embroidery.jpg"
+         alt="Work in progress"/> <figcaption>
+            <p>Work in progress</p>
+        </figcaption>
+</figure>
+
+
+<h3 id="testing-linting-etc">Testing, linting, etc</h3>
+
+<p>If you are on an iPad, the amount of tools you have at your disposal is significantly
+reduced. These are some options I have found, you may find others, or just
+ignore them. After all, not everybody is a fan of linters and testing. Note that
+on my code I avoid semicolons as much as I can. This is on purpose.</p>
+
+<h4 id="beautifying-javascript">Beautifying Javascript</h4>
+
+<p>I use the online <a href="http://beautifier.io" target="_blank">beautifier.io</a> with all settings at
+default. I just want something consistent across all my files. I try not to care
+<em>too</em> much about formatting. For Python, I use
+<a href="https://github.com/psf/black" target="_blank">black</a>. For scala,
+<a href="https://scalameta.org/scalafmt/" target="_blank">scalafmt</a>. I want consistency, even if I
+dislike some of the choices of any of these tools under defaults, consistency
+eventually pays off.</p>
+
+<h4 id="linting">Linting</h4>
+
+<p>I have rarely used it in my sketches, but when I&rsquo;ve done, I used
+<a href="https://jshint.com" target="_blank">JSHint</a>. It kind of works, although you need to set it up
+to ignore missing semis (<code>/*jshint asi*/</code> header comment, see
+<a href="https://github.com/rberenguel/sketches/blob/master/divide/divide.js" target="_blank">divide</a>).</p>
+
+<h4 id="testing">Testing</h4>
+
+<p>I was ecstatic to find out you can run
+<a href="https://mochajs.org" target="_blank">mocha</a>/<a href="https://www.chaijs.com" target="_blank">chai</a> tests directly in
+the browser. I have used them to <a href="https://mostlymaths.net/sketches/libraries/gui/tests/tests.html" target="_blank">test parts of the GUI library to avoid
+regressions</a>.
+For now I haven&rsquo;t tested much more, but I plan to keep using it. They are easy
+to write and having tests is useful.</p>
+
+<h4 id="tdd">TDD</h4>
+
+<p>I haven&rsquo;t followed my usual TDD approaches. Since I&rsquo;m exploring areas where I
+don&rsquo;t know either the result or how to get there, TDDing would be too
+painful/wasteful. Also, I do this for fun. If it doesn&rsquo;t work, it&rsquo;s kind of
+fine. When I&rsquo;m done with a sketch and I consider it finished, I want it to
+always work, of course. But the amount of things that are untestable in p5js is
+large (will it look good? will it actually work…?) so I restrict testing to
+where it really shines: small helper methods, mathematical routines, etc.</p>
+
+<h4 id="documentation-publishing-sharing">Documentation, publishing, sharing</h4>
+
+<p>I have shared most of my sketches (and the ones I haven&rsquo;t is because they are
+unfinished). Not only I think these can be useful to somebody else, but the act
+of polishing them knowing they may be seen makes them better. At least
+I get a small jolt of pride at having posted some relatively easy to read code
+that anybody can use in the future. Consider doing the same, you never know what
+may come from your code.</p>
+
+<p>As for sharing, I share my creations in
+<a href="https://www.reddit.com/r/generative/" target="_blank">r/generative</a> and while I&rsquo;m creating
+them, on my <a href="https://www.instagram.com/mostlymaths/" target="_blank">Instagram account</a>.</p><hr/><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/generative" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Generative</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/p5js" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">p5js</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/ipad" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">iPad</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="/2020/06/202045-readings-of-the-week.html/">2020#45 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2020/05/blot-painting-p5js-sketch.html/">Blot/Painting p5js sketch</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2020/05/sorting-myself-out.html/">Sorting myself out</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/04/2019-10-readings-of-week.html/">2019#10 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="/2019/01/2018-year-in-review.html/">2018: Year in Review</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div>
+  <div class="bg-light-gray pa3 rounded-6">
+      <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
+  </div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
+
+  </article>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2020 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

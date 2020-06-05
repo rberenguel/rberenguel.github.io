@@ -6,10 +6,19 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 21:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing generative art on an iPad: Why and how</title>
+      <link>https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/</link>
+      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/</guid>
+      <description>&lt;p&gt;If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Multiline shebang with zsh and running pyenv under cron</title>

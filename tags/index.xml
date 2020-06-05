@@ -6,10 +6,37 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 21:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPad</title>
+      <link>https://mostlymaths.net/tags/ipad/</link>
+      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/ipad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p5js</title>
+      <link>https://mostlymaths.net/tags/p5js/</link>
+      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/p5js/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Linux</title>
@@ -48,15 +75,6 @@
     </item>
     
     <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>https://mostlymaths.net/tags/javascript/</link>
       <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
@@ -71,15 +89,6 @@
       <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>p5js</title>
-      <link>https://mostlymaths.net/tags/p5js/</link>
-      <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/p5js/</guid>
       <description></description>
     </item>
     
@@ -620,15 +629,6 @@
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iPad</title>
-      <link>https://mostlymaths.net/tags/ipad/</link>
-      <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/ipad/</guid>
       <description></description>
     </item>
     
