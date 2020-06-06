@@ -1,0 +1,35 @@
+---
+title: 'Anki and Language Learning: The Spaced Repetition System'
+date: 2011-05-28T18:50:00.002+02:00
+draft: false
+tags : [Improve Yourself iPod, Languages iPad, Iceland]
+---
+
+[![](http://1.bp.blogspot.com/_f3d3llNlZKQ/TTi9C7djl6I/AAAAAAAAC2w/FSfU6h30G_U/s400/LanguageSwitch.jpg)](http://1.bp.blogspot.com/_f3d3llNlZKQ/TTi9C7djl6I/AAAAAAAAC2w/FSfU6h30G_U/s1600/LanguageSwitch.jpg)  
+
+[From my cheap dictionary](http://www.bookdepository.co.uk/book/9780870528019/Icelandic-English-English-Icelandic-Dictionary/?a_aid=mostlymathsdotnet)
+
+I first heard of spaced repetition software around 5 or 6 years ago, while browsing around the net. Read about it, found it unappealing and moved on. You know, there are times when you learn about something and dismiss it as not necessary... and after a while you are lead into it again to find it is wonderful. This is one of such instances.  
+  
+I have only written two highly visited posts about languages: [The Language Switch](http://www.mostlymaths.net/2011/01/language-switch-or-how-my-brain-seems.html) and [How to Train Your Brain to Flip to a New Language](http://www.bitesizeirishgaelic.com/blog/self-learning-non-widespread-languages/) (in [Bitesize Irish Gaelic](http://www.bitesizeirishgaelic.com/blog/), it also appeared in [Hacker Monthly, April 2011](http://hackermonthly.com/issue-11.html)) and _a lot_ of the commenters suggested me using _Anki_, _Mnemosyne_ or _Supermemo_. Three instances of the same theory, _spaced repetition_ paired with flashcard based language learning. So far, so good. Let's check it someday.  
+  
+The underlying principle behind [spaced repetition](http://en.wikipedia.org/wiki/Spaced_repetition) is easy. Once you learn something, you don't need to refresh this knowledge for a fixed time span. If the knowledge was easy (like the fact that _bók_ is _book_ in Icelandic) you only need to review it every once in a while, at most. On the other hand, if you have very hard to fix knowledge (like knowing that _hústökumaður_ is _squatter_), you need to be reminded of it more often. This is where spaced repetition software comes into the playfield.  
+  
+You pick a deck of virtual flashcards you want to learn and gauge the quality of your answers (from "Don't know" to "Too easy"). The algorithm now plays with this quality. Based on it, you won't be shown again these cards until enough time has passed. This has a twofold effect. On one hand, you don't need to review everything every day, you only need to review what you are more likely to have forgotten. On the other hand, even well-known knowledge gets tested at some point. A lot of people say it works wonders to learn languages, and I decided to give it a try.  
+  
+I decided to use [Anki](http://en.wikipedia.org/wiki/Anki), basically because it is free and has cross-platform solutions in addition to an online syncing feature. So far I'm more than happy with my learning of a corpus of 1500 Icelandic words, and even more when I discovered I could get it to work (somehow) in my iPod Touch.  
+  
+There is a [native Anki iPhone/iPad application](http://click.linksynergy.com/fs-bin/click?id=p451BQYMNr0&subid=&offerid=146261.1&type=10&tmpid=3909&RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fankimobile-flashcards%2Fid373493387%3Fmt%3D8%2526uo%3D4) (affiliate link), costing 20€, which I found a little on the high side, but in addition to being able to use (for free) the online version if you have an available connection **you have another free option**. If your iDevice is jailbroken, you can install AnkiMini, which runs a local webserver running Anki on your device. Just point your Mobile Safari to _localhost:8080_ and you can keep on learning, being able to sync to your desktop too. Just wonderful.  
+  
+I will probably end up paying the paid version (reviews I've read say it is even better than the desktop version, which is very good), but so far I'm happy with this solution. Only 1300 words left to "see".  
+  
+I'm also implementing my own version of the [SuperMemo algorithm](http://www.supermemo.com/articles/theory.htm) for fun, to use in my [Ben Nanonote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html). In a few weeks I'll try to post an update on how it is going.  
+
+  
+If you want to keep reading:  
+
+*   [Learn to Remember Everything: The Memory Palace Technique](http://www.mostlymaths.net/2011/03/learn-to-remember-everything-memory.html)
+*   [The Language Switch](http://www.mostlymaths.net/2011/01/language-switch-or-how-my-brain-seems.html)
+*   [How to Train Your Brain to Flip to a New Language](http://www.bitesizeirishgaelic.com/blog/self-learning-non-widespread-languages/)
+
+ParseList(ScrambleList(Relateds(Productivity)),2)

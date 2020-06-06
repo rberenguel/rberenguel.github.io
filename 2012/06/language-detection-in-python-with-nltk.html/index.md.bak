@@ -1,0 +1,106 @@
+---
+title: 'Language Detection in Python with NLTK Stopwords'
+date: 2012-06-07T14:55:00.000+02:00
+draft: false
+tags : [Programming, Thoughts, Python, NLP, Django]
+subtitle: "Please note that this project was deactivated around 2015"
+dropcap: true
+affiliate: true
+featured_image: "whatlanguageis.png"
+---
+
+Lately I've been coding a little more Python than usual, some twitter API stuff,
+some data crunching code. The other day I was thinking how I could detect the
+language a twitter user was writing in. Of course, I'm sure there is a library
+out there that does it… But the NLTK library (the Natural Language Toolkit for
+Python) does not have any function for this, or at least I was not able to find
+it after 5 minutes of Google search. So…
+
+{{< figure src="whatlanguageis.png" class="fig-not-so-wide" caption="2019: Note that this link no longer works">}}
+
+I had a simple enough idea to determine it, though. NLTK comes equipped with
+several stopword lists. A stopword is a frequent word in a language, adding
+no significative information ("the" in English is the prime example. My idea:
+pick the text, find most common words and compare with stopwords. The language
+with the most stopwords "wins".
+
+
+
+Implementing it was just a matter of a few minutes and around 45 lines.
+
+<span class="scaps">Note from the future:</span> 2019 Ruben is ashamed of this code, as expected 😄
+
+```python
+from nltk.corpus import stopwords
+
+# These are the available languages with stopwords from NLTK
+NLTKlanguages=["dutch","finnish","german","italian",
+               "portuguese","spanish","turkish","danish","english",
+               "french","hungarian","norwegian","russian","swedish"]
+# Just in case I add optional stopword lists
+
+FREElanguages=[""]
+languages=NLTKlanguages+FREElanguages
+# Fill the dictionary of languages, to avoid unnecessary function calls
+for lang in NLTKlanguages:
+  dictiolist[lang]=stopwords.words(lang)
+
+
+def scoreFunction(wholetext):
+  """Get text, find most common words and compare with known
+  stopwords. Return dictionary of values"""
+  # C makes me program like this: create always empty stuff just in case
+  dictiolist={}
+  scorelist={}
+  # Split all the text in tokens and convert to lowercase. In a
+  # decent version of this, I'd also clean the unicode
+  tokens=nltk.tokenize.word_tokenize(wholetext)
+  tokens=[t.lower() for t in tokens]
+  # Determine the frequency distribution of words, looking for the
+  # most common words
+  freq_dist=nltk.FreqDist(tokens)
+  # This is the only interesting piece, and not by much. Pick a
+  # language, and check if each of the 20 most common words is in
+  # the language stopwords. If it's there, add 1 to this language
+  # for each word matched. So the maximal score is 20. Why 20? No
+  # specific reason, looks like a good number of words.
+  for lang in languages:
+    scorelist[lang]=0
+    for word in freq_dist.keys()[0:20]:
+      if word in dictiolist[lang]:
+        scorelist[lang]+=1
+  return scorelist
+
+def whichLanguage(scorelist):
+  """This function just returns the language name, from a given
+  "scorelist" dictionary as defined above."""
+  maximum=0
+  for item in scorelist:
+    value=scorelist[item]
+    if maximum<value:
+      maximum=value
+      lang=item
+  return lang
+```
+
+Well, does it work? Quite! I tested it with some Wikipedia text: 
+
+```python
+scoreFunction("e Operationen in der Karibik, ohne dass es dabei zu größeren See­schlachten gekommen wäre. In Europa war die erfolglose Belagerung des britischen Stütz­punktes Gibraltar die einzige nennens­werte Auseinander­setzung. Der englisch-­spanische Konflikt endete formell am 9. November 1729 mit dem Abschluss des Vertrages von Sevilla und der Wieder­herstellung des Status quo ante. Die grundsätzlichen Differenzen beider Staaten wurden jedoch nicht beseitigt, was kaum zehn Jahre später zum Ausbruch eines weiteren Krieges führte") 
+> {'swedish': 0, 'portuguese': 0, 'english': 2, 'hungarian': 0, 'finnish': 0, 'turkish': 0, **'german': 5**, 'dutch': 3, 'french': 1, 'norwegian': 1, 'catalan': 0, 'spanish': 0, 'russian': 0, 'danish': 1, 'italian': 1} 
+scoreFunction("Man vet forholdsvis lite om Merkur; bakkebaserte teleskop viser kun en opplyst halvmåne med begrensede detaljer. Mye av informasjonen om planeten ble samlet av Mariner 10 (1974–76) som kartla rundt 45 % av overflaten.") 
+> {'swedish': 3, 'portuguese': 0, 'english': 0, 'hungarian': 0, 'finnish': 1, 'turkish': 1, 'german': 0, 'dutch': 2, 'french': 1, **'norwegian': 4**, 'catalan': 1, 'spanish': 1, 'russian': 0, 'danish': 2, 'italian': 0} 
+scoreFunction("A transit of Venus across the Sun takes place when the planet Venus passes directly between the Sun and Earth, becoming visible against the solar disk. During a transit, Venus can be seen from Earth as a small black disk moving slowly across the face of the Sun") 
+> {'swedish': 0, 'portuguese': 2, **'english': 9**, 'hungarian': 2, 'finnish': 0, 'turkish': 0, 'german': 0, 'dutch': 1, 'french': 1, 'norwegian': 0, 'catalan': 1, 'spanish': 1, 'russian': 0, 'danish': 0, 'italian': 1}
+```
+ 
+But it breaks with non-ascii text (like accents, umlauts and other funny
+letters,) so it is quite un-useful in these cases. But oh well, for 10 minutes
+of coding it's not that bad, a quick hack.
+ 
+Since last week I had started to read the [django book](http://djangobook.com/),
+I thought this would make for an interesting first project to post online, and
+you can find it at [~whatlanguageis.com~]() (Note: you could find it there, I
+eventually cancelled the domain), with some unicode improvements. It's still in
+early beta, working with just a handful of languages and without any kind of
+text-length checker. Just a proof of concept about my django "skills."

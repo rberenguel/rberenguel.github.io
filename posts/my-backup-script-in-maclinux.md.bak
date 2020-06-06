@@ -1,0 +1,77 @@
+---
+title: 'My backup script in Mac/Linux'
+date: 2009-09-07T01:00:00.002+02:00
+draft: false
+tags : [Programming, Linux, Mac, How-to, Maths]
+---
+
+My backup script in Mac/Linux  
+  
+#!/bin/sh  
+  
+
+\# This script backs up a set of files and directories incrementally,  
+\# storing only the modified files in a folder-per-day basis. Each time  
+\# you run it, the "current" directory in the backup server gets  
+\# refreshed to the newest copy, and the previous version of a modified  
+\# file is stored in a directory corresponding to "today" (20090905,  
+\# for instance)  
+
+  
+\# Root to be safeguarded  
+BDIR=/home/...?  
+  
+\# File and directory patterns, to avoid saving all those useless .dat  
+\# files every day. More on this later.  
+INCLUDES=Backup.incl  
+  
+\# Backup server  
+BSERVER=your.backup.server  
+  
+########################################################################  
+  
+BACKUPDIR=\`date +%Y%m%d\`  
+OPTS="--force --ignore-errors --delete-excluded --include-from=$INCLUDES  
+\--delete --backup --backup-dir=~/DESTINATIONCOPYDIR/$BACKUPDIR/ -az"  
+  
+export PATH=$PATH:/bin:/usr/bin:/usr/local/bin  
+  
+\# Generate the "backup dir"  
+\[ -d /home/YOURHOMEDIR/emptydir \] || mkdir /home/YOURHOMEDIR/emptydir  
+rsync --delete -a /home/YOURHOMEDIR/emptydir/ $BSERVER:DESTINATIONCOPYDIR/$BACKUPDIR/  
+rmdir /home/YOURHOMEDIR/emptydir  
+  
+\# Copy  
+rsync $OPTS $BDIR $BSERVER:DESTINATIONCOPYDIR/current  
+  
+\# Uncomment the following line if you have Growl in a Mac  
+\# growlnotify -n 'Backup' -m 'Backup finished correctly' -s  
+  
+
+The pattern file should look like this. An exclamation mark as a first line. A minus sign avoids certain directory/files, a plus adds a directory (start by adding the directory), then add the pattern of files. If you want to include all subdirectories, you have to explicitly state so.  
+
+  
+!  
+\- DontWantPDFsFromThisDirectory/\*.pdf  
+\+ Directory  
+\+ DirectoryWithSubfolders  
+\+ DirectoryWithSubfolders/\*\*/  
+\+ Directory/\*.tex  
+  
+You may also like some Mac/Linux related posts:  
+
+*   [Whistle control your computer (Linux&Mac)](http://berenguel.blogspot.com/2009/09/whistle-control-your-computer.html)  
+    
+*   [Calendars & emacs](http://berenguel.blogspot.com/2009/09/calendars-emacs.html)
+*   [Screenshot via command-line in Linux](http://berenguel.blogspot.com/2009/08/screenshot-via-command-line-in-linux.html)  
+    
+*   [How to download YouTube .flv videos](http://berenguel.blogspot.com/2009/06/how-to-download-youtube-flv-videos.html)  
+    
+*   [Extremely useful (mostly free) Mac applications](http://berenguel.blogspot.com/2009/05/extremely-useful-mostly-free-mac.html)
+*   [MP3 to iPod audiobook: personal reminder](http://berenguel.blogspot.com/2009/05/mp3-to-ipod-audiobook-personal-reminder.html)  
+    
+*   [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)
+*   [Three dee (3-dimensional file system browsers review)  
+    ](http://berenguel.blogspot.com/2009/07/three-dee.html)
+*   [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)
+*   [How to get a local proxy](http://berenguel.blogspot.com/2009/05/local-proxy.html)

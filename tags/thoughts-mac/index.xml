@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts Mac on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/thoughts-mac/</link>
+    <description>Recent content in Thoughts Mac on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Sep 2009 17:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/thoughts-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calendars &amp; emacs</title>
+      <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
+      <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
+      <description>My month, starting
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+    </item>
+    
+  </channel>
+</rss>

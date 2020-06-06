@@ -1,0 +1,109 @@
+---
+title: '2019#19 Readings of the week'
+date: 2019-07-08T21:52:00.001+02:00
+draft: false
+tags : [Data, History, Wardley maps, Scala, Big data, Functional Programming, Maths, Productivity, Haskell, ReadingsOfTheWeek]
+affiliate: true
+dropcap: true
+featured_image: "chris-marquardt-unsplash.jpg"
+minimap: true
+---
+
+History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+<!--more-->
+
+ {{< figure src="chris-marquardt-unsplash.jpg" class="fig-wide" caption="Photo by [Chris Marquardt](https://unsplash.com/@chrismarquardt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/svalbard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)">}}
+
+
+[When Pepsi Had a Navy](https://lflank.wordpress.com/2019/06/25/when-pepsi-had-a-navy/)
+---------------------------------------------------------------------------------------
+
+From the title, I thought it was related to the “Sugar Wars”, but the reality is weirder.
+
+[Your Work Peak Is Earlier Than You Think](https://www.theatlantic.com/magazine/archive/2019/07/work-peak-professional-decline/590650/)
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Mildly depressing. A quote I found interesting:
+
+> Careers that rely primarily on fluid intelligence tend to peak early, while those that use more crystallized intelligence peak later. For example, Dean Keith Simonton has found that poets—highly fluid in their creativity—tend to have produced half their lifetime creative output by age 40 or so. Historians—who rely on a crystallized stock of knowledge—don’t reach this milestone until about 60.
+
+[Why I (as of June 22 2019) think Haskell is the best general purpose language (as of June 22 2019)](http://www.philipzucker.com/why-i-as-of-june-22-2019-think-haskell-is-the-best-general-purpose-language-as-of-june-22-2019/)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Although I can somewhat read Haskell code, I still can’t write much. So, can’t really agree... Yet.
+
+[Easy Parsing with Parser Combinators](http://www.lihaoyi.com/post/EasyParsingwithParserCombinators.html)
+---------------------------------------------------------------------------------------------------------
+
+I have a small project I wrote with AWK that I want to rewrite “properly” in Scala, and I’d need to do some real parsing (not the ad-hoc parsing you always end up writing in AWK), so learning to use FastParse is worth it. Also Li is a very clear writer.
+
+[Sam and Max Hit the Road Development History](https://www.filfre.net/2019/06/sam-and-max-hit-the-road/)
+--------------------------------------------------------------------------------------------------------
+
+So many fond memories from this game, I’m getting it again from GOG any day soon. Also this post made me look up where my copy of the ??? was.
+
+[Comonads for Life](http://justinhj.github.io/2019/06/20/comonads-for-life.html)
+--------------------------------------------------------------------------------
+
+Implementing the Game of Life using comonads (the dual of monads)
+
+[Real-world dynamic programming: seam carving](https://avikdas.com/2019/05/14/real-world-dynamic-programming-seam-carving.html)
+-------------------------------------------------------------------------------------------------------------------------------
+
+I have always been fascinated by seam carving. It’s so amazing
+
+[The surprising story of the Basque language](http://www.bbc.com/travel/story/20190603-the-surprising-story-of-the-basque-language)
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Uhm, Armenia is not even close.
+
+[History Will Not Be Kind to Jony Ive](https://www.vice.com/en_us/article/ywyjmw/history-will-not-be-kind-to-jony-ive)
+----------------------------------------------------------------------------------------------------------------------
+
+Flexgate, antennagate, keyboardgate. There have been many f-ups that can be traced back to looking for a specific design. I hope Apple gets back to top-design and top-usability now.
+
+['It's getting warmer, wetter, wilder': the Arctic town heating faster than anywhere](https://www.theguardian.com/environment/ng-interactive/2019/jul/01/its-getting-warmer-wetter-wilder-the-arctic-town-heating-faster-than-anywhere)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Longyearbyen (Svalbard’s capital) is in danger.
+
+[Reasons of State: Why Didn't Denmark Sell Greenland?](https://www.gwern.net/Greenland)
+---------------------------------------------------------------------------------------
+
+An analysis by Gwern Branwen about why Denmark didn’t sell Greenland to the US after WWII (they wanted it as a base).
+
+['Like a military operation': restoration of Rembrandt's Night Watch begins](https://www.theguardian.com/artanddesign/2019/jul/05/restoration-rembrandt-night-watch-begins-rijksmuseum-amsterdam)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The weight of the painting will surprise you.
+
+📚 [Sprint](https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/B019R2DQIY/ref=as_li_ss_tl?keywords=sprint&qid=1562614783&s=audible&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=fb18e74156fff4db8a1ff8a2be2ffd9a)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The nitty gritty details of how to run design sprints (a Google practice). Interesting.
+
+📚 [Diaspora](https://www.amazon.com/Diaspora/dp/B00GMOI58M/ref=as_li_ss_tl?_encoding=UTF8&qid=1562614527&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=c9fab66ed1bf8507d7970fe8282c09cc)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the second Egan book I read (after [Clockwork Rocket](https://www.amazon.com/The-Clockwork-Rocket/dp/B00GMOI3SO/ref=as_li_ss_tl?keywords=clockwork+rocket&qid=1562614697&s=audible&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=6d7c8ec8f282ef75034266c00a320ded)) and I found Diaspora much better, although with a weak ending and a somewhat erratic plot. The book has some strong [Star maker](https://www.amazon.com/Star-Maker/dp/B0098OIMWC/ref=as_li_ss_tl?_encoding=UTF8&qid=1562614660&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=cc5daf485e65c72573c57260ecab14e6) vibes. By the way, when adding the link above I thought the narrator for Audible was [this Adam Epstein](https://warwick.ac.uk/fac/sci/maths/people/staff/adam_epstein/) (a pretty darn good mathematician I know)
+
+📚 [Thinking in bets](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions-ebook/dp/B074DG9LQF/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=ac12d803e70aa3b70df18c1794b0be13)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The general idea is sound, but it’s one of those books that could be written as a long blog post or short essay.
+
+📚 [Set your voice free](https://www.amazon.com/Set-Your-Voice-Free-Speaking/dp/B01MRSDFSG/ref=as_li_ss_tl?keywords=set+your+voice+free&qid=1562614842&s=audible&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=79e9518d0ce239c93bef6f65564e9967)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercises to improve your voice. I have recently started to do the daily warm-ups, but so far have felt no difference. Of course, other people should be the ones to tell me.
+
+🎥 [Wardley mapping interview](https://www.youtube.com/watch?v=Bz5SHJ4Fyag)
+---------------------------------------------------------------------------
+
+I was recently interviewed by [John Grant](https://twitter.com/jhngrant) and [Ben Mosior](https://twitter.com/BenMosior) as part of a set of interviews leading up to [MapCamp London 2019](https://www.map-camp.com/_pages/2019-10-15_London/). If you are interested in my thoughts about mapping the tech landscape, I [wrote my train of thought in this blog post as well](https://www.mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html).
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

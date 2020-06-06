@@ -1,0 +1,91 @@
+---
+title: 'Using Processing from Scala'
+date: 2018-03-02T17:40:00.002+01:00
+draft: false
+tags : [Scala, Visualization, Fractals, Maths, Processing, Generative]
+minimap: true
+subtitle: "> Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.\n\nFrom [Processing.org](https://processing.org/)"
+dropcap: true
+affiliate: true
+featured_image: "mandelbrot-gray-zoom.png"
+---
+
+I had always wanted to play with Processing (after leafing through [The
+Processing
+Handbook](https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&qid=1520004355&sr=8-1&keywords=processing+handbook&linkCode=ll1&tag=rbersblog-20&linkId=08457cedf1bdf882589a65f2a56c181b) and
+[Visualizing
+Data](https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=3aa08467e0b53ce75e261bf7a9d7cf3c)
+some years ago). My general dislike for Java or the JVM made me just play a
+short amount of time with `processing.js` something around 2011 (there was a
+_native_ processing.js application for iOS, I used it for a while on my iPad and
+iPod Touch).
+
+<!--more-->
+
+{{< figure src="mandelbrot-gray-zoom.png" class="fig-wide" caption="Zoomin'">}}
+
+But, times have change and I’ve been working with Scala for 2 years already.
+Since Processing is built on top of Java, using it from Scala should be easy (or
+doable), but finding details (specially not involving using IntelliJ or other
+IDEs) is tricky. I could not find anything useful so I had to patch it up from
+several sources.
+
+These are the steps I had to follow to get it running on Mac OS, with Java 8 and Scala 2.12 (the version of Scala is not that important though, and after all is set in the SBT build).
+
+Clone my sample project
+-----------------------
+
+You can find a minimal sample project [here](https://github.com/rberenguel/processing-scala-sample). I’m using [Spire](https://github.com/non/spire) for its implementation of complex operations (also, I have wanted to try this library for a while), so this comes as an extra dependency in addition to the OpenGL bindings for Java.
+
+You can run `sbt update` while you do all other steps, since fetching the dependencies can always take a while.
+
+This will draw the Mandelbrot set using the Distance Estimation Method. I first found this algorithm in [The Beauty of Fractals](https://www.amazon.com/Beauty-Fractals-Complex-Dynamical-Systems/dp/3642617190/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=6a6ab8987258d6b44726651ed3875a4d) and have liked ever since. It is the algorithm used for the header on this blog and on my [LinkedIn profile](https://www.linkedin.com/in/rberenguel/). A pity it’s not as easy (or even possible) to derive for entire transcendental functions, otherwise I would have used it for my paper.
+
+It's a straight implementation to show a bit of Processing and have a nice image, but it has no antialiasing, no controls for iterations or parameter tweaking. Zoom and adjustments are automatically picked by a really dumb scaling (it shows as you start zooming) and there is no colour palette (nothing prevents adding it except that it would add complications).
+
+It's not the nicest Scala ever. Processing is based on Java, and to get some things working mutability seems to be the best approach. For now.
+
+Install the native libraries for jogamp
+---------------------------------------
+
+`Jogamp` is the set of multimedia API bindings for Java (binds to OpenGL, for instance, with the `jogl` sub-package). For Processing we need to install the native libraries (`jnilibs` in the case of Mac OS, `dll`s for Windows, `so` for other Linux systems) into our Java classpath.
+
+To do so, first download the full jogamp `7zipped` package from [here](http://jogamp.org/wiki/index.php/Downloading_and_installing_JOGL#Using_the_7z_jogamp-all-platforms_archive). On uncompress, move all `jnilib`s in the `lib/macosx-universal` folder to somewhere in your Java library path so Java can find them (or, alternatively, change your path). You can easily look which paths form it by firing a Scala REPL and running
+
+```scala
+System.getProperty("java.library.path")
+
+```
+
+
+In my system this points to
+```bash
+~/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+```
+and I put them in the first (since it seems user specific)
+
+Download Processing
+-------------------
+
+You need the core library from [Processing](http://processing.org/) in `jar` format to use in your builds. Just download the processing app, and get `core.jar` from the `Contents/Java` folder in the application bundle. Place it into your `lib` folder.
+
+Although I _could_ add it to the Github project (this core is LGPL), I prefer leaving this as a manual step to make sure anyone trying always has the latest version of Processing.
+
+Ready to go
+
+```bash
+sbt run
+```
+
+If everything went fine you should now see the following (after some time computing):
+
+{{< figure src="mandelbrot-gray.png" class="fig-wide" caption="The beetle">}}
+
+And, if you click randomly a few times
+
+
+{{< figure src="mandelbrot-gray-zoom-2.png" class="fig-wide" caption="More zoomin'">}}
+
+You can also try to find the magical command that gets you a coloured gradient
+
+{{< figure src="mandelbrot-colour-zoom.png" class="fig-wide" caption="Shiny!">}}

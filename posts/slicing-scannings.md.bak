@@ -1,0 +1,55 @@
+---
+title: 'Slicing scannings'
+date: 2009-09-11T01:00:00.007+02:00
+draft: false
+tags : [Linux, How-to, Maths, Books]
+---
+
+Last year our department got a nice and shiny [Xerox WorkCentre](http://www.office.xerox.com/multifunction-printer/multifunction-over-30ppm/workcentre-5665-5675-5687/enus.html), with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But... of course, the machine scans two pages each time, and thus creates a double bound [PDF](http://en.wikipedia.org/wiki/Pdf).  
+
+  
+
+And this doesn't work well with [my way to print booklets](http://berenguel.blogspot.com/2008/09/latex-booklets.html), so a working solution was to use [ghostscript](http://en.wikipedia.org/wiki/Ghostscript) and [ImageMagick](http://en.wikipedia.org/wiki/Imagemagick) from the command line. Automation at its finest.  
+
+  
+
+First, scan whatever you have to scan. In my case, I had it reversed, and had a "black scan line" on the left side. Then:  
+
+> gs -sDEVICE=jpeg -q -dBATCH -dNOPAUSE -r300x300 -sOutputFile=Page%03d.jpg -dFirstPage=1 PdfFile.pdf
+
+This will split your PDF file into individual pages, and save them as jpg. The following step may be skipped, as I had them rotated... you may not.  
+
+> mogrify -rotate 180 Page\*.jpg
+
+Now we want to get rid of that black rectangle on the right of every page. As this command cuts right sides, and I don't bother reading again ImageMagick's manual, if your black scan zone is on the other side, rotate as in the previous step, cut, and rotate back ;) Observe that mogrify needs its parameters before the file to process.  
+
+> mogrify -gravity East -chop 150x0 Page%d.jpg
+
+I suggest you try first on an individual page (with convert , not mogrify), and change the 150 pixels to be chopped as you see fit:  
+
+> convert Page%d.jpg -gravity East -chop 150x0 Test.jpg
+
+Now, look at the image dimensions, either by right-clicking and viewing image properties, or opening in some image editor (as GIMP) divide by two the width and round up. This is the cropping size.  
+
+> mogrify -crop CroppingSize Page\*.jpg
+
+This will generate pair of files named PageN-0.jpg and PageN-1.jpg (if everything worked correctly). Now, delete your PageN.jpg, from the previous step, as you are ready to convert all PageN-M.jpg into PDF files.  
+
+> mogrify -format pdf -page A4 Page\*.jpg
+
+To end this procedure mix them all in a (big!) pdf file  
+
+> gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf Page\*.pdf
+
+Now you are ready to follow the steps [here](http://berenguel.blogspot.com/2008/09/latex-booklets.html) to turn it into a booklet. Hope you found this useful!  
+  
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [9 programming books I have read and somewhat liked...](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Linux is a time killer](http://www.mostlymaths.net/2010/08/linux-is-time-killer.html) (follow-up – [Ditching Ubuntu: Arch Linux in my Acer Aspire One](http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html))  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [My first port to the Ben NanoNote: gnugo](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Power to the command line](http://www.mostlymaths.net/2010/04/power-to-command-line.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Three dee (3-dimensional file system browsers review)](http://berenguel.blogspot.com/2009/07/three-dee.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Gcal: the ultra-powerful command line GNU calendar](http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)  
+ParseList(ScrambleList(Relateds(Maths,Programming,Linux)),5)

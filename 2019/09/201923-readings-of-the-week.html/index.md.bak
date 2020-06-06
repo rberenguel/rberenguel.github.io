@@ -1,0 +1,100 @@
+---
+title: "2019#23 Readings of the Week"
+date: 2019-09-01T13:03:45+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "blackout.jpg"
+tags : [Data, History, Functional Programming, Maths, Productivity, Music, ReadingsOfTheWeek]
+---
+
+I have been on quite the hiatus, making this more of a _readings of the month_
+edition. Sorry! <!--more--> Last one was published/sent a bit more than a month
+ago (and my reading list is now at 347 pending), but there is a reason. The
+reason has been a mix of other side stuff taking over and a big project related
+to my blog: I have moved (after something like 14 years) from Blogger.com to
+hosting it in GitHub pages as a static site (generated with
+[hugo](https://gohugo.io)). I’ll write about the process in due time, but the
+move required quite a lot of work (tweaking templates, fixing the most visited
+and most recent posts..) and I’m not even done (only 60 out of the 300 or so
+posts I have kept out of 700 are optimized for the new layout).
+
+{{< figure src="blackout.jpg" class="fig-wide" caption="Photo by  [🇨🇭 Claudio Schwarz | @purzlbaum](https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  on  [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) ">}}
+
+
+**NOTE**: Data, history, productivity. Expect a similar
+wide range in the future as well. You can check all my weekly readings by
+checking the [tag
+here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also
+get these as a weekly newsletter by subscribing
+[here](http://eepurl.com/geFw7P).
+
+## [Minimalist Journaling: A Fun and Effective Tool for Tremendous Habit Change](https://medium.com/better-humans/draft-how-to-hack-your-brain-to-achieve-consistency-that-lasts-7f5fdc520d28)
+A graphical way of representing _anything_? Sign me up.
+## [What Really Happened in the UK Blackouts?](https://mitchoneill.com/blog/uk-blackouts-interim-report/)
+I was _very_ lucky: I was at the other side of my LGW-BCN when this happened.
+## [Global heating: ancient plants set to reproduce in UK after 60m years](https://www.theguardian.com/environment/2019/aug/22/global-heating-ancient-plants-set-to-reproduce-in-uk-after-60m-years)
+We are doomed.
+## [Loops in Python - comparison and performance](https://www.blog.duomly.com/loops-in-python-comparison-and-performance/)
+It may not tell anything new to seasoned Pythonistas, but it’s a good reference
+to hand down to people asking.
+## [Get your work recognized: write a brag document](https://jvns.ca/blog/brag-documents/)
+It’s not bragging if it’s true.
+## [Every productivity thought I’ve ever had, as concisely as possible](https://guzey.com/productivity/)
+I specially like the idea of “clock-face pomodori”
+## [Alone in the Dark](https://www.filfre.net/2019/08/alone-in-the-dark/)
+I love these historical analysis of classical games from my youth.
+## [Welcome to the world of Statecharts](https://statecharts.github.io)
+As above, graphical ways of representing _stuff_ can be empowering (you’ve heard
+me say [Wardley mapping](https://mostlymaths.net/tags/wardley-maps/) before,
+right?
+## [Scientists Are Discovering Long-Lost Rules for Ancient Board Games](https://www.vice.com/en_us/article/kz483y/scientists-are-discovering-long-lost-rules-for-ancient-board-games)
+This may fix the many rules for _Ludum Latrunculorum_ or decide which is the
+best version of the _tablut/tafl_ family.
+## [Behind Nate Silver’s war with The New York Times](https://www.politico.com/story/2019/08/15/nate-silver-new-york-times-1461666?utm_source=pocket&utm_medium=email&utm_campaign=pockethits)
+I don’t read The NY Times (paywall), but this was interesting.
+## [Why speaking to yourself in the third person makes you wiser](https://aeon.co/ideas/why-speaking-to-yourself-in-the-third-person-makes-you-wiser)
+Ruben agrees
+## [Finally, China manufactures a ballpoint pen all by itself](https://www.washingtonpost.com/news/worldviews/wp/2017/01/18/finally-china-manufactures-a-ballpoint-pen-all-by-itself/?noredirect=on)
+Can’t deny this was surprising. Won’t spoil _why_.
+## [How to assess the quality of garments: A Beginner's Guide](https://anuschkarees.com/blog/2014/05/01/how-to-assess-the-quality-of-garments-a-beginners-guide-part-i/)
+My past life as a bespoke shoemaker finds this interesting.
+## [When and why to use GraphQL](https://medium.com/@JeffLombardJr/when-and-why-to-use-graphql-24f6bce4839d)
+I have never dared close to GraphQL, and the when and whys here explain my
+fears. So, done rightly is not to fear.
+## [Experience: I’m a world-class whistler](https://www.theguardian.com/lifeandstyle/2019/aug/09/experience-im-a-world-class-whistler)
+And not the referee kind.
+## [How to make fresh soba noodles at home](https://www.saveur.com/how-to-make-fresh-soba-noodles-at-home/?utm_source=internal&utm_medium=email)
+I won’t ever do this, but as a read, fascinating.
+## [Functional Programming? Don’t Even Bother, It’s a Silly Toy](https://medium.com/@ilyasz/fp-toy-7f52ea0a947e)
+Don’t miss the tone.
+## [TDD on Punch Cards](https://medium.com/@DaveSchinkel/tdd-on-punch-cards-f17c25282fa4?postPublishedType=initial)
+Well, it wasn’t “our” TDD, but it had T and D.
+## [The Codeless Code: a bridge to nowhere](http://thecodelesscode.com/case/154)
+🤣
+## [BlazingSQL is Now Open Source](https://blog.blazingdb.com/blazingsql-is-now-open-source-b859d342ec20)
+Duh, another interesting tool...
+## [Talking to the Scientists Who Made Bread with Ancient Egyptian Yeast](https://www.eater.com/2019/8/8/20792134/interview-seamus-blackley-serena-love-richard-bowman-baked-bread-ancient-egyptian-yeast)
+I want to taste it, yes.
+## [So, Um, How Do You, Like, Stop Using Filler Words?](https://web.archive.org/web/20170228062436/https://www.nytimes.com/2017/02/24/us/verbal-ticks-like-um.html)
+I need help with this.
+## [All the best engineering advice I stole from non-technical people](https://medium.com/@bellmar/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f)
+It’s not like non-technical people are less knowledgeable.
+## [Speed matters: Why working quickly is more important than it seems](http://jsomers.net/blog/speed-matters)
+It’s just a tradeoff.
+## [Optimized Docker builds for Haskell Stack](https://medium.com/permutive/optimized-docker-builds-for-haskell-76a9808eb10b)
+Worth keeping in mind if I ever get any Haskell written.
+## [How to Keep a Zibaldone](https://www.atlasobscura.com/articles/how-to-keep-a-zibaldone-a-13thcentury-answer-to-tumblr)
+Just a commonplace book.
+## [The Lost Art of Lacing Cable](https://www.thebroadcastbridge.com/content/entry/12400/the-lost-art-of-lacing-cable)
+Neat!
+## 📚 [Ultralearning](https://www.amazon.com/Ultralearning-Master-Outsmart-Competition-Accelerate-ebook/dp/B07K6MF8MD/ref=as_li_ss_tl?keywords=ultralearning&qid=1567334582&s=gateway&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=9687789e76a98c2b9f99f85cba878d54&language=en_US)
+Techniques for self-learning at a faster pace. Don’t think I picked any ideas I
+was not familiar with, but it’s a good book.
+
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking [here](http://eepurl.com/geFw7P).

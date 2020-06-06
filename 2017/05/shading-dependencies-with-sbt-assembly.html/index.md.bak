@@ -1,0 +1,30 @@
+---
+title: 'Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)'
+date: 2017-05-07T10:40:00.000+02:00
+draft: false
+tags : [Apache Spark, scala]
+dropcap: true
+---
+
+A few weeks ago I needed to parse configuration files in Scala for a Spark
+project and decided to use
+[PureConfig](https://github.com/pureconfig/pureconfig). It is incredibly lean to
+use, needing minimal boilerplate. I recommend you check it out (give also a look
+at [CaseClassy](https://47deg.github.io/case-classy/), which I haven't had time
+to test yet).
+
+Everything seemed straightforward enough, and I got it working pretty quickly
+(as in, it compiled properly). The surprise? `spark-submit` failed with a
+conflict with [Shapeless](https://github.com/milessabin/shapeless) (lacking a
+`witness`). This is due to Spark 2.1.0 needing `Breeze`, which in turn needs
+`Shapeless 2.0.0` (which is pretty old). Problem is, Spark's required library
+prevented `PureConfig` from pulling the correct version. D'oh!
+
+There is an easy fix, though, if you are using
+[sbt-assembly](https://github.com/sbt/sbt-assembly) you can [shade
+dependencies](https://github.com/sbt/sbt-assembly#shading), by adding something
+like the following to your `assembly.sbt` file:
+
+```sbt
+assemblyShadeRules in assembly := Seq(ShadeRule.rename("shapeless.**" -> "new_shapeless.@1").inAll)
+```

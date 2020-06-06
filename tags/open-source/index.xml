@@ -40,5 +40,17 @@ up from them: templating without base repositories.&lt;/p&gt;</description>
       <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34; target=&#34;_blank&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34; target=&#34;_blank&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Coursier resolution failing with HTTP method 416 in sbt</title>
+      <link>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</link>
+      <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/03/coursier-resolution-failing-with-http.html/</guid>
+      <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
+was in a hurry, so I commented out the offending import (since it was not in the
+subproject I was working on, so was not needed for the run I was in) sent my
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34; target=&#34;_blank&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

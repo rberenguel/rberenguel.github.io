@@ -1,0 +1,150 @@
+---
+title: "A context manager to measure elapsed time?"
+date: 2020-01-13T18:15:52+01:00
+draft: false
+dropcap: true
+featured_image: "hourglass.jpg"
+tags : [Python]
+---
+Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project _Timing Context Manager_, which I actively ignored for many months. New year, new me, and a conversation with [Marc Ramírez](https://twitter.com/marcraminv) moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.
+
+<!--more-->
+
+{{< figure src="hourglass.jpg" class="fig-wide" caption="Photo by  [Nathan Dumlao](https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  on  [Unsplash](https://unsplash.com/s/photos/hourglass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) ">}}
+
+Coincidence or alignment of some stars, at the same time I was writing a simple version of this for my fun (and no profit), [PyCoders Weekly](https://pycoders.com) was landing on my inbox (and [Python Bytes](https://pythonbytes.fm) was idling on my podcast player…), where, later, I would find about [codetiming](https://pypi.org/project/codetiming/), which is exactly this. But, since I had written the code already and a blog post was the natural destination of it, here it is anyway. I hope you don’t mind. I wrote all the code on my iPad, in [Pythonista](http://omz-software.com/pythonista/). Since it was only exploratory code I barely intend to even run, there are no tests or types. But out in the wild, stay safe, use `mypy` and `pytest`.
+
+## Intro to context managers
+This will be short and in bullets, since the material can be found anywhere else.
+
+- Context managers are objects that can be used in `with` statements
+- Any object offering `__enter__` and `__exit__` is a context manager (note the similarity with `__aenter__` and `__aexit__` from async coroutines)
+- Context managers are the preferred way of handling resources in Python (creating them on enter and destroying them on exit)
+- There is a handy module in the standard library for working with simple context managers, `contextlib`. For easy cases, you can just decorate a block of code using `yield` (coincidence?) and it creates a context manager from it.
+
+The most famous manager is probably the file manager:
+
+```python
+with open('filename', 'w') as f:
+    f.write('Hello file')
+```
+
+## A bare-bones implementation
+Once we know how a context manager works, we can implement a very simple version pretty quickly. Just use time difference to compute timing spans between entering and exiting. No need to go fancy.
+
+```python
+import time
+from datetime import datetime
+
+class FirstManager:
+    _durations = {}
+    def __init__(self, name='unknown'):
+        self._name = name
+
+    def __enter__(self):
+        self.start = datetime.now()
+
+    def __exit__(self, *args):
+        """
+        Exceptions are captured in *args, we’ll handle none, since failing can be timed anyway
+        """
+        self._durations[self._name] = datetime.now() - self.start
+
+with FirstManager('foo') as _:
+    time.sleep(1)
+
+print(FirstManager._durations['foo'])
+# > 0:00:01.005079
+```
+
+Yay, works.
+
+## Decorator goodness
+You can go a step ahead in usability and Pythonity by creating a decorator to wrap functions and methods. This is offered in `contextlib`, and is a very minor modification away from the code above.
+
+```python
+import time
+from contextlib import ContextDecorator
+from datetime import datetime
+
+class SecondManager(ContextDecorator):
+    _durations = {}
+    def __init__(self, name='unknown'):
+        self._name = name
+
+    def __enter__(self):
+        self.start = datetime.now()
+
+    def __exit__(self, *args):
+        """
+        Exceptions are captured in *args, we’ll handle none
+        """
+        self._durations[self._name] = datetime.now() - self.start
+
+@SecondManager("nap")
+def nap(length: int):
+    time.sleep(length)
+
+nap(2)
+
+print(SecondManager._durations['nap'])
+# > 0:00:02.005103
+```
+
+{{< figure src="GIL.gif" class="fig-left" caption="Dancing GIL">}}   
+
+It doesn’t look so bad in the end. Using a class variable is always a bit _meh_, but in this case is the only viable way of offering a "global" state you can pass around. And technically this state does not affect the timer itself (is only modified afterwards), so it's _almost_ fine. Since in Python we have our friend [GIL](https://wiki.python.org/moin/GlobalInterpreterLock),  if we were to time two decorated methods which we also happened to mark async… in the end only one would record its own timing (it would follow an "optimistic concurrence" approach where we check nothing, so basically, yeah, nope).
+
+There is still something about the API that bugs me. To get the timing we access the internal dictionary of timings. Of course we could add a class method that accesses it to avoid going internal, but anyway… wouldn’t this look _so_ much better if we could just write `TimingManager['nap']`?
+
+## Unholy metaclass tweaking
+Python is a fully object oriented language. So, everything is an instance of a class… even _a_ `class`. What class is a `class`? It's of class `type` (you can find out yourself by asking for the type of any class)[^1]. Since Python is a pretty powerful language, you can modify what is the class of any… class. Enough beating around the bushes, the class of a class is known as a metaclass, hence the heading above. And this is what I'll do here, and this is what I really, really encourage you _not_ to do, ever. Metaclass hacking is not recommended. This is for fun. Please, don't @ me.
+
+What does this mean exactly? Well, when you define a class:
+
+```python
+class Foo:
+    def __init__(self):
+        pass
+    def method(self):
+        pass
+```
+
+`method` is defined in the objects created with this class, not in the class itself. To do what we want, we need to modify how the class itself works, and you can't do that from the objects. <span class="scaps">Note:</span>: You can decorate methods with `@classmethod` to define methods that work on the class… but, that doesn't work either, for reasons that are too long to give here. There is an appendix with some notes [if you are curious](#for-the-curious).
+
+
+The plan, is to modify the metaclass of the context manager to allow pseudo-dictionary access to the class. You get this free by offering the `__getitem__` method on an object… and in this case, the object will be the class.
+
+ {{< gist rberenguel c0dda6be269679a99f3e301971cdba8c >}}
+
+## Conclusion
+Nothing in particular.
+- It could be done and as usual with most things Python, it was easy
+- You can do pretty crazy stuff with Python as well if you try. That is fun, but not in production
+
+## For the curious
+```python
+class Foo:
+	def __init__(self):
+		pass
+
+	@classmethod
+	def __getitem__(cls, key):
+		return 42
+
+class MetaHelper(type):
+	def __getitem__(cls, x):
+		return cls._getitem(cls, x)
+		
+class Bar(metaclass=MetaHelper):
+	def __init__(self):
+		pass
+
+	def _getitem(self, key):
+		print("Trying to get {}".format(key))
+		return 42
+```
+
+You can try for yourself, `Foo` won't offer dictionary access but `Bar` will. This is because class method lookup will hook itself into `type` (the class of `Foo`), won't find `__getitem__` on `type` and will look no further because it's a magic method. If I remember correctly I may have written the details about why _somewhere_ when I wrote about how the `in` keyword works internally in Python [here](/2018/04/how-does-in-keyword-work-in-python.html/).
+
+[^1]: Try to read the previous sentence really fast if you dare

@@ -1,0 +1,91 @@
+---
+title: '2019#16 Readings of the week'
+date: 2019-06-10T21:18:00.001+02:00
+draft: false
+tags : [ReadingsOfTheWeek, Apache Spark, Data, Wardley maps, Scala, Big data, Bizarre, Maps, math]
+minimap: true
+dropcap: true
+affiliat: true
+featured_image: "roman-mager-59976-unsplash.jpg"
+---
+
+Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+<!--more-->
+
+{{< figure src="roman-mager-59976-unsplash.jpg" class="fig-wide" caption="Photo by [Roman Mager](https://unsplash.com/@roman_lazygeek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/blackboard-formula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)">}}
+
+[Meet the Money Whisperer to the Super-Rich N.B.A. Elite](https://www.nytimes.com/2019/06/06/business/nba-wealth-manager-klay-thompson-joe-mclean.html)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+It surely has to be an interesting job
+
+[Thought as a Technology](http://cognitivemedium.com/tat/index.html)
+--------------------------------------------------------------------
+
+An essay by Michael Nielsen. Very recommended.
+
+[A tale of lost WW2 uranium cubes shows why Germany’s nuclear program failed](https://arstechnica.com/science/2019/06/physicists-hunt-uranium-cubes-to-shed-light-on-germanys-failed-nuclear-reactor/)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Curio
+
+[Counting to infinity at compile time – The Startup – Medium](https://medium.com/swlh/counting-to-infinity-at-compile-time-2bbdd6446329)
+----------------------------------------------------------------------------------------------------------------------------------------
+
+You can do really weird things with Scala at compile time, and [base 3 is pretty cool](http://bit-player.org/wp-content/extras/bph-publications/AmSci-2001-11-Hayes-ternary.pdf).
+
+[A visual introduction to Morse theory](http://bastian.rieck.me/blog/posts/2019/morse_theory/)
+----------------------------------------------------------------------------------------------
+
+I was surprised to see this posted on Hacker News, so decided to read it for the "good old times". Learnt something (since I never had a class on Morse theory, it was just one of those intriguing sections in the library)
+
+[The cutting-edge of cutting: How Japanese scissors have evolved](https://asia.nikkei.com/Life-Arts/Life/The-cutting-edge-of-cutting-How-Japanese-scissors-have-evolved2)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I have some weird scissors, but these go beyond weird.
+
+[A different kind of string theory: Antoni Gaudi](https://memetician.livejournal.com/201202.html)
+-------------------------------------------------------------------------------------------------
+
+That idea was clearly genius.
+
+[Formally Specifying a Package Manager](https://www.hillelwayne.com/post/nix/)
+------------------------------------------------------------------------------
+
+By using [Alloy](http://alloytools.org/). I really like Alloy.
+
+[Maker's Schedule, Manager's Schedule](http://www.paulgraham.com/makersschedule.html)
+-------------------------------------------------------------------------------------
+
+I was talking with a friend earlier about a previous post in my Weekly Readings series ([Do I truly want to become a manager?](https://knowyourteam.com/blog/2019/03/20/do-i-truly-want-to-become-a-manager/)) and he hadn't read this one, so I'll share it here too.
+
+[Schema evolution in Avro, Protocol Buffers and Thrift](http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+I kind of like the sound of how Avro handles schemas. Seems an efficient way, although seems... prone to possible disasters.
+
+[Improve Apache Spark write performance on Apache Parquet formats with the EMRFS S3-optimized committer](https://aws.amazon.com/blogs/big-data/improve-apache-spark-write-performance-on-apache-parquet-formats-with-the-emrfs-s3-optimized-committer/)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is optional in EMR 5.19 and will be the default in 5.20 so we won't see much difference, except in performance.
+
+[Why Enthusiasm is a Bad Thing in a CTO](https://cutebouncingbunnies.wordpress.com/2017/06/26/why-enthusiasm-is-a-bad-thing-in-a-cto/)
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Hey, look a squirrel is 10x more dangerous when it's the CTO spotting squirrels.
+
+[🖥 Mapping as a Tool for Thought](https://github.com/rberenguel/mapping)
+-------------------------------------------------------------------------
+
+A presentation I gave on Wardley mapping and "mapping" in general at [SoCraTesUK 2019](http://socratesuk.org/). I really enjoy this conference.
+
+[🎥 Skip the first three months of development for your next app](https://m.youtube.com/watch?v=deHM34b21v4)
+------------------------------------------------------------------------------------------------------------
+
+This ties very well with some of the Wardley mapping concepts.
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

@@ -1,0 +1,97 @@
+---
+title: 'Cron, diff & wget: Watch changes in a webpage'
+date: 2010-01-04T00:01:00.003+01:00
+draft: false
+tags : [Programming, Linux]
+---
+
+[![](http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s400/3387189144_955030cc27.jpg)](http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s1600-h/3387189144_955030cc27.jpg)  
+
+From [flickr](http://www.flickr.com/photos/robbie73/3387189144/)  
+
+  
+A few months ago, I realised I was checking some pages frequently for changes. They were some congress pages, and I was waiting for them to add information about registration and such.  
+
+  
+
+Then **I realised I could write a script to do it, using** **diff** **and** **wget**. You can get it below. You have to edit it to add the pages you want to follow, then run it with the "write" option to download the first version, then edit your crontab file (crontab -e) to run it every day at a specified time with the "diff" option. For example:  
+
+> 00 13 1,7,14,21,28 \* \* /home/user/PageDiff.sh diff
+
+will run it every 1st, 7th, 14th, 21st and 28th of the month, at 13:00. Be sure to first run it as write.  
+  
+
+```
+
+
+> #!/bin/sh  
+>   
+> \# Copyright 2009 Ruben Berenguel  
+>   
+> \# ruben /at/ maia /dot/ ub /dot/ es  
+>   
+> \# PageDiffs: Fill in an array of webpages, with the option "write"  
+> \# will download them, with the "diff" option will re-download them and  
+> \# check the new against the old for differences. With the "diff mail"  
+> \# option, will send an email to $MAILRECIPIENT, assuming mail works.  
+> \# You can find the most up to date version of this file (and the GPL)  
+> \# [http://rberenguel.googlecode.com/svn/trunk/Bash/PageDiffs.sh](http://rberenguel.googlecode.com/svn/trunk/Bash/PageDiffs.sh)  
+>   
+> \# 20091226@00:24  
+>   
+> MAILRECIPIENT="mail@mail.com"  
+>   
+> j=0  
+> Pages\[j++\]="http://www.maia.ub.es/~ruben/"  
+> Pages\[j++\]="http://www.google.es"  
+> #Add more pages as above  
+>   
+> if \[ "$1" = "write" \]; then  
+> echo Generate files  
+> count=0  
+> for i in "${Pages\[@\]}"  
+> do  
+> echo Getting "$i" into File$count  
+> wget "$i" -v -O "File$count"  
+> let count=$count+1  
+> done  
+> fi  
+> if \[ "$1" = "diff" \]; then  
+> count=0  
+> for i in "${Pages\[@\]}"  
+> do  
+> \# echo Getting "$i" into Test$count  
+> wget "$i" -q -O "Test$count"  
+> Output=$(diff -q "Test$count" "File$count" | grep differ)  
+> Result=$?  
+> if \[ "$Result" = "0" \]; then  
+> if \[ "$2" = "mail" \]; then  
+> echo Page at "$i" has changed since last check! >> MailCont  
+> mail=1  
+> fi  
+> echo Page at "$i" has changed since last check!  
+> else  
+> echo Page at "$i" has not changed since last check!  
+> fi  
+> #rm Test$count  
+> let count=$count+1  
+> done  
+> if \[ "$mail" = "1" \]; then  
+> mail -s "Page changed alert!" $MAILRECIPIENT 
+
+
+```  
+  
+Related posts:
+
+ ![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [9 programming books I have read and somewhat liked...](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [And e Appears From Nowhere!](http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Power Naps With a Command Line Utility in Linux](http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [C code juicer: detecting copied programming assignments](http://berenguel.blogspot.com/2009/12/c-code-juicer.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [8 reasons for re-inventing the wheel as a programmer](http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Approximating images with randomly placed translucent triangles](http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [The 100 Most Common Icelandic Words with a Bash Script](http://www.mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html)ParseList(ScrambleList(Relateds(Programming)),4)

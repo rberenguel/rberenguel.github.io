@@ -1,0 +1,25 @@
+---
+title: "Sorting myself out"
+date: 2020-05-06T18:30:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "sorting.gif"
+js: ["/js/p5/p5.js"]
+tags : [processing, javascript, generative, p5js]
+---
+Generative art using `p5.js`
+
+<!--more-->
+
+</br>
+Sketch done with [p5js](https://p5js.org). This is my "serious picture", used in
+[LinkedIn](https://www.linkedin.com/in/rberenguel)
+
+Pixelise an image (based in one of the examples in [Generative Design](https://www.amazon.com/Generative-Design-Visualize-Program-JavaScript/dp/1616897589/ref=as_li_ss_tl?dchild=1&keywords=generative+design&qid=1588787174&sr=8-2&linkCode=ll1&tag=rbersblog-20&linkId=606254cfa1ca8c6e4a285352b005de7d&language=en_US)) and
+sort each row by brighness. You can find the code on [Github](https://github.com/rberenguel/sketches/blob/master/sorting/sorting.js).
+
+<div id="canvas"/>
+
+<script src="s.js"/>
+

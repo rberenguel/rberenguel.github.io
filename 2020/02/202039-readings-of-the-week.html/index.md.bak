@@ -1,0 +1,136 @@
+---
+title: "2020#39 Readings of the Week"
+date: 2020-02-23T20:30:33+02:00
+draft: false
+dropcap: true
+affiliate: false
+featured_image: "lavaurs.png"
+tags : [Data engineering, Python, Maths, Formal Methods, ReadingsOfTheWeek]
+---
+
+Skipped ehem a few weeks (I can blame one on my birthday).
+
+<!--more-->
+
+**NOTE**: The themes are varied, and some links below are affiliate links. Data engineering, software engineering, Python, work stuff, formal methods. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+{{< figure src="lavaurs.png" class="fig-wide" caption="Lavaurs foliation from [Wikipedia](https://en.wikipedia.org/wiki/Lamination_(topology))">}}
+
+## [Randolph diagram](https://en.wikipedia.org/wiki/Randolph_diagram#Application_to_logic_theory)
+
+I wanted to mention this in the [intro to my Wardley mapping talk](https://github.com/rberenguel/mapping), but couldn't find a way. It's interesting though.
+
+## [How to do High-Bar Code Review Without Being a Jerk](https://andrewking.ca/2020/01/how-to-do-high-bar-code-review-without-being-a-jerk/)
+
+Good, good.
+
+## [Age of Invention: Where Be Dragons?](https://antonhowes.substack.com/p/age-of-invention-where-be-dragons)
+
+Why role playing games were not invented earlier? Dice and stories have existed since the beginning.
+
+## [Five Interesting Data Engineering Projects](https://medium.com/@squarecog/five-interesting-data-engineering-projects-48ffb9c9c501)
+
+I've been mentioning some of these (and tried some others already) for a while. Obviously an article that agrees with me is good.
+
+## [The Most Annoying Corporate Buzzwords](https://www.theatlantic.com/health/archive/2020/02/most-annoying-corporate-buzzwords/606748/)
+
+Let the Agile synergy be disrupted.
+
+## [We Are All Ancient Mapmakers](http://nautil.us/issue/81/maps/we-are-all-ancient-mapmakers)
+
+Not sure what it was about, but was entertaining, as any Nautilus article.
+
+## [The Horrifically Dystopian World of Software Engineering Interviews](https://www.jarednelsen.dev/posts/The-horrifically-dystopian-world-of-software-engineering-interviews)
+
+I've always hated "smart" problems with a passion… I don't think I'd make it (or even want to) through the interview hoops at _those_ companies
+
+## [How This One Font Took Over the World](https://getpocket.com/explore/item/how-this-one-font-took-over-the-world)
+
+No, it's not Comic Sans (or Helvetica).
+
+## [State of Remote Work 2020](https://lp.buffer.com/state-of-remote-work-2020)
+
+A set of interviews yield some data. Here's the data (from Buffer).
+
+## [Hallucinogenic fish - Wikipedia](https://en.m.wikipedia.org/wiki/Hallucinogenic_fish)
+
+Not much more to say. Puts fish stew in another, more colourful light.
+
+## [Python '!=' Is Not 'is not': Comparing Objects in Python](https://realpython.com/python-is-identity-vs-equality/)
+
+Nothing I was not aware of, but I always enjoy RealPython's writing on technical points.
+
+## [Sharing an SQLite database across containers is surprisingly brilliant](https://medium.com/@rbranson/sharing-sqlite-databases-across-containers-is-surprisingly-brilliant-bacb8d753054)
+
+How _Segment_ sped up its serving systems by using shared SQLite. Also opens up the idea of using SQLite files as _data interchange files_. Mentioned elsewhere (SQLite's docs?), using it to store machine learning models, for instance. Interesting, isn't it?
+
+## [In Case You Ever Want to Unicycle 21,000 Miles…](https://www.outsideonline.com/2407533/unicycle-travel-gear)
+
+I have a unicycle. Never used. Yet.
+
+## [It's Official: Open-Plan Offices Are Now the Dumbest Management Fad of All Time](https://www.inc.com/geoffrey-james/its-official-open-plan-offices-are-now-dumbest-management-fad-of-all-time.html)
+
+I wrote about office stuff on a post on my [LinkedIn account](https://www.linkedin.com/pulse/first-looking-effect-work-environments-productivity-rubén-berenguel/). This could be added to it.
+
+## [The Best Board Games of the Ancient World](https://www.smithsonianmag.com/science-nature/best-board-games-ancient-world-180974094/)
+
+The expected classics. If you have never played Nine Men Morris (it's quite unknown in many places), give it a go, is quite fun. Also, Tablut/Hnefatafl varieties are super-fun (and good-looking). And Backgammon, a more "modern classic".
+
+## [A Year’s Worth](https://medium.com/@kentbeck_7670/a-years-worth-c1cbc3085e9d)
+
+How do you visualise a year of work? Kent Beck recommends circles: they automatically create gaps you can't infinitely fill ([well… dependson what you work on](https://www.semanticscholar.org/paper/Circle-Packing-%3A-A-Mathematical-Tale-Stephenson/729fef221b87bec213b7d36f415879a1056f9b55))
+
+## [Master of Orion](https://www.filfre.net/2020/01/master-of-orion/)
+
+A dig through Master of Orion by *The Digital Antiquarian*. I played a lot of MoO2, so fun.
+
+## [The man who discovered umami](https://www.bbc.com/future/article/20190503-the-mystery-taste-that-always-eluded-us)
+
+I've been meaning to buy some MSG for some time now.
+
+## [How an Optimizing Compiler Works](http://www.lihaoyi.com/post/HowanOptimizingCompilerWorks.html)
+
+Classic Li Haoyi quality here. He gave a talk on the subject in Scala Days 2019.
+
+## [How knitters got knotted in a purity spiral](https://unherd.com/2020/01/cast-out-how-knitting-fell-into-a-purity-spiral/)
+
+My partner is a pro knitter, and explained me these situations in real time (they were somehow close in time with some stuff happening in the Scala community I was explaining her). As I have said before, groups of humans always end up creating turmoil.
+
+## [How To Take Smart Notes: 10 Principles to Revolutionize Your Note-Taking and Writing](https://praxis.fortelabs.co/how-to-take-smart-notes/)
+
+Having a go at a Zettelkasten. I have been a pretty consistent note taker for many years, but getting knowledge/new ideas from them is hard. Let's see.
+
+## [Pablo Escobar's hippos have become an invasive species in Colombia](https://www.cnet.com/news/pablo-escobars-hippos-have-become-an-invasive-species-in-colombia/)
+
+This title has everything to deserve being here, even if the article was empty.
+
+## [The Woman Shaking Up the Diamond Industry](https://www.newyorker.com/magazine/2020/02/03/the-woman-shaking-up-the-diamond-industry)
+
+It's a suprisingly interesting and profoundly dull read. I can't wrap my head around these conflicting emotions. Caveat emptor.
+
+## [How Pi Connects Colliding Blocks to a Quantum Search Algorithm](https://www.quantamagazine.org/how-pi-connects-colliding-blocks-to-a-quantum-search-algorithm-20200121/)
+
+[Pi is everywhere](/2010/08/and-e-appears-from-nowhere.html/), but the quantum connection is interesting
+
+## [Today I Learned That Not Everyone Has An Internal Monologue And It Has Ruined My Day](https://ryanandrewlangdon.wordpress.com/2020/01/28/today-i-learned-that-not-everyone-has-an-internal-monologue-and-it-has-ruined-my-day/)
+
+_Wait what?_
+
+## [RIP Pipenv: Tried Too Hard. Do what you need with pip-tools](https://medium.com/telnyx-engineering/rip-pipenv-tried-too-hard-do-what-you-need-with-pip-tools-d500edc161d4)
+
+I tried `pipenv`. Liked parts, hated many. Eyeing [poetry](https://python-poetry.org) for the next stuff.
+
+## [The Business Case for Formal Methods](https://www.hillelwayne.com/post/business-case-formal-methods)
+
+How about finding bugs before you even write the code? Isn't that appealing?
+
+## [Lean Coffee Facilitator’s Guide](https://medium.com/agile-outside-the-box/lean-coffee-facilitator-s-guide-d79d9f13d0a9)
+
+The lean coffee framework seems super interesting, and I need to gather a few friends and do one soon.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

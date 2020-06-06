@@ -1,0 +1,72 @@
+---
+title: 'The command line PostScript swiss knife: a2ps'
+date: 2010-05-27T14:00:00.000+02:00
+draft: false
+tags : [Linux]
+---
+
+I discovered this tool by accident, when a colleague asked me why I printed a .txt file straight without using a2ps first. My first reaction of course was thinking What? and promptly asking google.  
+  
+Google answered with [this page](http://www.gnu.org/software/a2ps/), and it was interesting enough to deserve an apt-get install. And indeed, it is great! Usually, when I have some straight text file I need to print, I use emacs old postscript-print-buffer, which is nice, but not as nice as all options a2ps has.  
+  
+As default, a2ps prints in landscape format, 2 pages per sheet. Moreover, it adds a black border around the page and a header with the filename, time and who printed this. Below an example of straight a2ps:  
+
+  
+
+[![](http://1.bp.blogspot.com/_f3d3llNlZKQ/S_f3xnEtnqI/AAAAAAAACV4/GdCK_-CyqSk/s400/1.jpg)](http://1.bp.blogspot.com/_f3d3llNlZKQ/S_f3xnEtnqI/AAAAAAAACV4/GdCK_-CyqSk/s1600/1.jpg)  
+
+  
+
+Back a few days ago I had to print my flight details (it was too early to print the boarding pass), and you know, they look like a nicely formatted text file. But when Gmail tries to print it, it removes all white spacing, rendering it unreadable.  
+  
+A solution? Creating a flight.txt file and pasting from the mail. Then  
+
+> a2ps flight.txt -B --portrait --columns=1 -o flight.ps
+
+What does all this mean?  
+
+*   \-B removes the header, which is useful only if more than one sheet is needed,
+*   \--portrait turns on portrait print mode (landscape by default),
+*   \--columns=1 Just one page per sheet. 2 by default,
+*   \-o output file name. By default it would send to the default printer,
+
+And the same example with these settings:  
+
+  
+
+[![](http://2.bp.blogspot.com/_f3d3llNlZKQ/S_f3yFMsz1I/AAAAAAAACWA/hfyJhJ8RXiE/s400/2.jpg)](http://2.bp.blogspot.com/_f3d3llNlZKQ/S_f3yFMsz1I/AAAAAAAACWA/hfyJhJ8RXiE/s1600/2.jpg)  
+  
+
+There are also other interesting options. For example \-catman (or \-m) selects 66 lines per page, as if the job comes from a man page. A companion program to a2ps is card: turns man pages into pretty PostScript files. Its usage is simple:  
+
+> card a2ps -o a2ps.ps
+
+Generates the manual entry for a2ps for pretty printing:  
+
+  
+
+[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RMz5mjI/AAAAAAAACWM/EAw15MpDuPo/s400/3.jpg)](http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RMz5mjI/AAAAAAAACWM/EAw15MpDuPo/s1600/3.jpg)  
+
+  
+The card program invokes a2ps, thus you can add a2ps options after \--, for instance  
+card a2ps -o a2ps.ps -- -B to remove the headers  
+  
+
+[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RfbI7mI/AAAAAAAACWU/aNDm3dHXjCA/s400/4.jpg)](http://3.bp.blogspot.com/_f3d3llNlZKQ/S_f7RfbI7mI/AAAAAAAACWU/aNDm3dHXjCA/s1600/4.jpg)  
+  
+
+a2ps' slogan is Do the right thing, meaning that it will pass the processing to any other processor. For example, if trying to process html files, it will pass them to html2ps, if you try a gif file, it will pass it to ImageMagick.  
+  
+This is only meant as an introduction to a2ps, as it has around 50 options for processing files. For more info... man a2ps :)  
+
+  
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [My first port to the Ben NanoNote: gnugo](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Power to the command line](http://www.mostlymaths.net/2010/04/power-to-command-line.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Three dee (3-dimensional file system browsers review)](http://berenguel.blogspot.com/2009/07/three-dee.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Gcal: the ultra-powerful command line GNU calendar](http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)  
+
+  
+ParseList(ScrambleList(Relateds(Linux)),4)

@@ -1,0 +1,30 @@
+---
+title: 'Songs In Code'
+date: 2009-10-17T01:00:00.006+02:00
+draft: false
+tags : [Programming, Music, Bizarre]
+---
+
+A few days ago I found a [page](http://retrocode.blogspot.com/2009/09/songsincode-lyrics-for-programmers.html) via StumbleUpon, and caught my inner geek. Songs in code, a trend in twitter a few days ago. Other examples [here](http://juixe.com/techknow/index.php/2009/08/22/songs-in-code/), and [here](http://twitter.com/#search?q=%23songsincode) (twitter). Below my own creations.  
+
+> (setq My '(sleeping)) - _Roxette_  
+>   
+> do{love( );}while(TRUE); - _The Beatles_  
+>   
+> while(1){puts("Young");} - _Alphaville_  
+>   
+> love( ); puts("Now"); - _Roxette_  
+>   
+> do{ }while(b\*tchslaprappin&&cocainetongue); - _Guns N' Roses_  
+>   
+> if(!say){say=MAXINT;} - _Ronan Keating_  
+>   
+> int love=0; if(friday){love=1;} - _The Cure_  
+>   
+> diff Something ADay - Jamie Cullum  
+>   
+> while(me.corner\*me.spot\_light){religion--;} - REM  
+
+I rushed to publish this post, as I had forgotten to hit publish... thus forgot the REM one. Thanks John@[retroprogramming](http://retrocode.blogspot.com/)!  
+  
+You may also be interested in:ParseList(ScrambleList(Relateds(Programming)),15)

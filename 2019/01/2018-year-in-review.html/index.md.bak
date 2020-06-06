@@ -1,0 +1,123 @@
+---
+title: '2018: Year in Review'
+date: 2019-01-01T15:00:00.000+01:00
+draft: false
+tags : [Trips, Python, Christmas, Time Management iPad, Maths, Books, Spark, Open source, Scala, Mac, TLA+, Github, iPhone, YearInReview]
+affiliate: true
+featured_image: "Presenting.jpg"
+dropcap: true
+minimap: true
+---
+
+The year has ended, what has been going on?
+
+<!--more-->
+
+Work
+----
+
+During the first half of this year I have been leading a migration to Spark of several systems, one relatively straightforward and the other based on [GraphFrames](https://github.com/graphframes/graphframes) and a graph with ~1 billion nodes. The results so far seem excellent. The second half of the year has been mostly GDPR compliance improvements (I've read the whole law... twice!), looking for additional large-scale data providers and preparing our systems for global scale (around 6x event data capabilities). Has been fun and challenging.
+
+Life
+----
+
+* In February I moved from East Finchley to Chiswick. This meant I became a [Friend of Kew Gardens](https://www.kew.org/), and have been there almost every weekend I've been in London. And you could catch me a bit earlier at [The Coffee Traveller](https://www.thecoffeetraveller.com/), enjoying a latte with a carrot cake muffin.
+
+[![](Kew.JPG)](Kew.JPG)
+
+
+
+* In February, we spent a few days in Puigcerdà for my birthday. Not as nice as we expected. The food was good, though (as expected).
+* In March we visited Edimburgh again, Laia was attending EdiYarn Festival. I spent the days at Waterstones, eating cupcakes and getting my reading list under control.
+* In May I attended AWS Summit in London. Was ok-ish. Lack of coffee made us grumpy.
+* In June I attended [SoCraTesUK 2018](http://socratesuk.org/) in Dorking, together with [Carlos](https://twitter.com/crafty_coder). I had an excellent time there, and will repeat next year if possible. We presented together [Welcome to Apache Spark](https://github.com/rberenguel/WelcomeToApacheSpark). I also learnt some Cobol.
+
+[![](Cobol.jpg) ](Cobol.jpg)[![](WelcomeToApacheSpark.jpg)](WelcomeToApacheSpark.jpg)
+
+* In June as well, I presented [How does that PySpark thing work? And why Arrow makes it faster?](https://github.com/rberenguel/pyspark-arrow-pandas) at the Python Barcelona meetup. I think people enjoyed it.
+
+[![](Presenting.jpg)](Presenting.jpg)
+
+
+
+* At the end of June we visited Bath for Laia's birthday. Nice town, but a bit packed with tourists. We were lucky England was playing some soccer match and could visit the Roman baths without people.
+* In July we published [the first podcast of PyBCN](https://pybcn.org/blog/2018-07-15-podcast-0/) (in Spanish). It's not monthly, next one was in... December 😆
+* In August we roasted a bit under the heat wave hitting the UK by visiting [Mayfield Lavender field](https://www.mayfieldlavender.com/).
+* In September I attended [Scala Italy](http://2018.scala-italy.it/) in Florence, where I got the opportunity to visit [Osteria del Cinghiale Bianco](https://www.tripadvisor.com/Restaurant_Review-g187895-d1058852-Reviews-Osteria_del_Cinghiale_Bianco-Florence_Tuscany.html) again. Excellent.
+
+[![](Florence.jpg)](Florence.jpg)
+
+
+
+* In September I presented [How does that PySpark thing work? And why Arrow makes it faster?](https://github.com/rberenguel/pyspark-arrow-pandas) at the Spark London meetup, feedback was positive as well.
+* In October, I attended Spark Summit Europe in London. Met a lot of people and had a terrific time.
+
+[![](WithHoldenAndJacek.JPG)](WithHoldenAndJacek.JPG)
+
+
+
+* In October we took a few days off so we could disconnect, and spent them on Hay-on-Wye, as some tradition we follow says. We bought a bunch of books (I think there are no books by Roger Zelazny left there) and I did nothing. Bliss. Also, best scones ever.
+* In November I helped a bit from afar with the organisation of [PyDay 2018](https://pybcn.org/pyday-bcn-2018/). I couldn't attend, but looked excellent. We also told the world PyBCN is now an organisation you can become a member of.
+* In December, I attended Scala Exchange for the third time, and gave a lightning talk about TLA+ ([Formally Verifying Complex Systems Using TLA+](https://github.com/rberenguel/tla_lightning)). Looks like people enjoyed my talk, and I had an excellent time as usual.
+
+[![](ScalaExchange.jpg)](ScalaExchange.jpg)
+
+
+
+I made minor contributions (typos, small fixes) to several open source projects (Spark, typeshed, Monix, bloop,...), and also created a couple for my enjoyment: experimenting with [Processing in Scala](https://github.com/rberenguel/processing-scala-sample), [sbt-ifttt](https://github.com/rberenguel/sbt-ifttt) and [rb-zsh-theme](https://github.com/rberenguel/rb-zsh-theme).
+
+Learning
+--------
+
+This year I got a bit deeper into functional Scala, using GraphFrames and (in general) graph operations on big data. Got acquainted and got to hate Apache Airflow. I improved my knowledge of Akka (adding clustering and sharding to the "could do"). I also learned TLA+ and I plan to dive deeper into this rabbit hole the coming year. Started learning [Rust](https://www.rust-lang.org/). Made some minor stuff using [HyperApp](https://github.com/jorgebucaran/hyperapp), and have been considering learning [PureScript](http://www.purescript.org/) so I can write something close to "enjoyable" Javascript. I have also started playing the ukulele.
+
+Reading
+-------
+
+My top pick for the year is without any doubt [Thinking in Systems: A Primer](https://amzn.to/2BQxYjq) among books I read this year (19 books). Didn't read much non-fiction, and can't recommend any this year. According to Pocket (which I started using around June, after the [GDPR fiasco of Instapaper](https://www.theverge.com/2018/5/23/17387146/instapaper-gdpr-europe-access-shut-down-privacy-changes)) I read the equivalent to 18 books in blog posts since then.
+
+Music/events
+------------
+
+This year I attended a couple concerts, both in London: [Hayseed Dixie](https://www.youtube.com/watch?v=L0zH6G10qLw) and [Steve'n'Seagulls](https://www.youtube.com/watch?v=e4Ao-iNPPUc). I ended the year listening to a lot of covers by [Leo Moracchioli](https://www.youtube.com/watch?v=x0RV0kgdqJU) and progressive metal/instrumental metal like [Polyphia](https://www.youtube.com/watch?v=z0Z6gljz9_Y) (which eventually become boring) and [Intervals](https://www.youtube.com/watch?v=SgXZozc7nuA) (which are better). All the links in this section are good renditions by each on Youtube
+
+Gadgets
+-------
+
+Main one is that Apple _finally_ upgraded the MacBook Air so I can have one with 16GB of RAM, so I got that one as soon as I could. It also implied getting a [USB C hub](https://amzn.to/2BRKgYO) and I also got a [power brick](https://amzn.to/2ViVBKo), both from Anker, so I could simplify my desktop cable tangles (also several USB A to C and USB C-C cables). In no particular order, I also got
+
+* An acoustic ukulele (soprano) and soon after, I got [this](https://m.thomann.de/gb/risa_uke_solid_concert.htm?o=0&search=1546096635) electric travel ukulele (concert). To go with it I got an [AmPlug](https://amzn.to/2LHKDdd) (clean)
+
+[![](IMG_8610.jpg)](IMG_8610.jpg)
+
+* A [mountie](https://www.tenonedesign.com/mountie.php) very early in the year. Sadly it doesn't work with my new Air, but with the old one it was a blast.
+* A [Brydge keyboard](https://www.brydge.eu/) for my iPad (heavy, but excellent)
+* A [SoundCore Motion Q](https://amzn.to/2LIwKeu) speaker from Anker. We're getting another one soon to get stereo. Excellent.
+* A [Microsoft Wedge Mouse](https://amzn.to/2SuInbF). I saw a picture and when I saw the price (just 17€) I got one. It works very well, and is very small. And works with a rechargeable AA battery, which I like as form factor.
+* A [eInk display](https://shop.pimoroni.com/products/inky-phat) for my Raspberry Pi Zero W.
+* An [hourglass](https://hubsch-interior.com/en/products/hourglass-1-hour-large). I love hourglasses. You can hear the sand from this one.
+* A [cardholder](https://bellroy.com/products/card-holder/default/blue_steel). I already had a wallet by  Bellrow, and they deliver quality.
+* A [Luna Display](http://lunadisplay.com/) (so far a bit disappointed with the inability to map correctly my keyboard layout between Mac and iPad, so can't type at all, but the stream quality is very good)
+* A bunch of twisty puzzles. I didn't have any 2x2 and I really like it now. Also, magnetic 3x3 are excellent.
+
+[![](Rubik.JPG)](Rubik.JPG)
+
+
+
+* [The Little Lisper](https://amzn.to/2CERaCg) for my birthday
+
+[![](LittleLisper.JPG)](LittleLisper.JPG)
+
+
+
+* An excellent compact fountain pen from Kaweco (the [liliput](https://www.kaweco-pen.com/en/pens/fountain-pens/216/kaweco-liliput-fountain-pen-copper?c=19))
+* To go with it, I got a 0.7mm pencil from them as well (the [classic brass](https://www.kaweco-pen.com/en/pens/pencils/494/kaweco-classic-front-part-black?c=32))
+* I got also a 2mm [titanium pencil](https://hribarcain.com/products/copy-of-magno-ti-titanium-2mm-lead-pencil-satin-finish) from Kickstarter
+* A [knucklebone](https://jpgamesltd.co.uk/BEGLERI-beads/KnuckleBone-Skilltoy-Wood) from AroundSquare. Excellent for manipulating while thinking
+* A new spinning top, the [Rain Drop](https://nwtops.com/products/the-rain-drop-in-flamed-stainless) from NWTops (to join last years' [Yakima](https://nwtops.com/products/the-yakima-hop-flamed-stainless-steel))
+* Several ([1](https://jpgamesltd.co.uk/LUXX-Mandala-Playing-Cards), [2](https://jpgamesltd.co.uk/papercuts-artofplay-playingcards), [3](https://shop.52kards.com/products/sumi-artist-playing-cards-by-epcc), [4](https://www.kickstarter.com/projects/1764129559/edge-jelly-cardistry-trainer-20-by-tcc-presents)) cardistry decks. The Mandala is incredibly gorgeous, the Edge is a design I love (I have the deck as well) and when I saw the trainers I knew I wanted a couple, just because.
+
+And we got mugged!
+
+
+[![](PHOTO-2018-12-21-12-13-14.jpg)](PHOTO-2018-12-21-12-13-14.jpg)

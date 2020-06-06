@@ -1,0 +1,67 @@
+---
+title: 'Learning to use vim in my iPad'
+date: 2012-01-26T15:11:00.000+01:00
+draft: false
+tags : [Programming, emacs iPad, Productivity]
+---
+
+[![](http://4.bp.blogspot.com/-u6OHQLfCX6c/TyFasu3pjxI/AAAAAAAADb8/pba4zEyVqNY/s200/VimEmacs.jpg)](http://4.bp.blogspot.com/-u6OHQLfCX6c/TyFasu3pjxI/AAAAAAAADb8/pba4zEyVqNY/s1600/VimEmacs.jpg)  
+
+Just in case you don't know, [vi](http://en.wikipedia.org/wiki/Vi) is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to [emacs](http://www.mostlymaths.net/search/label/emacs)' Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the [editor wars](http://en.wikipedia.org/wiki/Editor_wars) are all about: "Eight Megabytes And Constantly Swapping" versus "vi has two modes: writing and beeping". If you have been long enough in this blog, you know I'm in the emacs side, but you also know I'm curious enough to delve into the other side.
+
+  
+
+  
+
+My first contact with vi was in our first programming class at the University, _Informatica_ (Computer Science). Vi was the editor of choice for the course, so much that you did not have any other option given. Along with a Linux cheatsheet and a short C manual came a vi cheatsheet. A lot of people came to hate vi, a lot of people came to love it. I was more in the hating side, but it wasn't that bad. After a while I just started using a "normal" Linux editor (it was Kate, maybe?) and kept using it (or UltraEdit when I was in Windows) until the end of my degree.
+
+  
+
+When I finished my degree I had to be a teacher of _Calcul Numeric_ (Numerical Analysis), the third (and last) programming class in the degree. At home I was still using Windows, because the wifi card in my notebook had no Linux drivers and in my office we were using Ubuntu. I needed a cross-platform editor that was quick, versatile and could last for a lifetime. I tried vi (again) and emacs, emacs won the war for two reasons. First was the fact that it was extensible programming in Lisp, and I had already a decent knowledge of Lisp. The second was [AucTeX](http://www.mostlymaths.net/2009/09/auctex-again.html) and its "preview" option for LaTeX editing. Nothing can beat pressing C-p C-p C-d and seeing your formulae come to life in your editor. I became an emacs advocate for this reason, then after 5 or 6 years I've found many more reasons why this is **the** editor. Or, the operating system, if you prefer.
+
+  
+
+But advocacy is nice, but knowing all the players in the field is better. My department pals used vi (at least most of them), and it was impossible to convince them to switch. I decided learning vi (or vim, vi iMproved) was something I had to do some day, to learn what was there. After all, if I liked it so much I could set viper-mode in emacs and use vi keys in emacs. The best of two worlds, if that world is so nice.
+
+  
+
+Then the guys at Applidium released a [Vim port for iOS devices](http://itunes.apple.com/us/app/vim/id492668168?mt=8). Whoah! Even if I'm an emacs guy to the bone, a modal editor is way better than anything else available in the app store, at least for raw editing power. And I say with knowledge, because I've tried most writing apps for iOS devices (see [this post](http://www.whatsoniphone.com/blog/roundup-of-the-best-writing-apps-for-ipad-nanowrimo-edition/)).
+
+  
+
+As an additional reason, Matt Might posted a New Year's post detailing several [resolutions for programmers](http://matt.might.net/articles/programmers-resolutions/). Among them was breaking your comfort zone to keep your mind sharp. The first example? Switching to vi from emacs or vice-versa. He used to be an emacs user before getting to use Vi. I don't think I could go that far, but these were enough reasons: advocacy (from me, not against me), iPad+bluetooth keyboard and breaking my comfort zone.
+
+How is the experience so far?
+-----------------------------
+
+Well, I'm writing this post in my sofa, with my [iPad](http://www.amazon.com/gp/product/B002C7481G/ref=as_li_ss_tl?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B002C7481G)![](http://www.assoc-amazon.com/e/ir?t=&l=as2&o=1&a=B002C7481G&camp=217145&creative=399349) and my bluetooth keyboard sitting in my lap. I'm still getting used to having to exit editing mode to move around: I'm very used to pressing C-a or C-e to go to the beginning of end of line. An additional problem is that even with the bluetooth keyboard, Esc can't be mapped to the Esc event, and I needed something to do it. I have jk (pressed together) for it. It was a suggestiond I saw in Hacker News' comment thread for the release of the app, and it's quite handy. Not so much with the on-screen keyboard, but for now it's okay. To remap this, press backslash (the current mapping for Esc) and then :imap jk . Of course if your usual writting language involves writing the jk combination frequently (I think I could come up with one or two examples in Icelandic), this is not the best combination. The other suggested option is :imap al . Easy to tap in a virtual keyboard, not so straightforward in a normal keyboard.
+
+  
+
+I found out also how to change the font size, at least for now this works (maybe there will be more fonts available in the future), type :set guifont=Courier:h24 (for 24 pixels)
+
+  
+
+To round everything, I just installed the famous [solarized color theme](http://ethanschoonover.com/solarized), dark in vim for iPad. Until now I had just thought it was an overhyped color scheme: I had tried in my emacs and didn't enjoy it that much. But in my [iPad](http://www.amazon.com/gp/product/B002C7481G/ref=as_li_ss_tl?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=217145&creative=399349&creativeASIN=B002C7481G)![](http://www.assoc-amazon.com/e/ir?t=&l=as2&o=1&a=B002C7481G&camp=217145&creative=399349) it shines with a distinct colour, it's so much easier on my eyes that it hurts to get out and write an email! To install it in your vim for iOS, first download solarized.vim from the git repository, then plug your iDevice and use iTunes File Sharing to copy this file to the vim app. Then open vim, :e solarized.vim and :call mkdir(.vim/colors/) (to create the directory needed for it) :w .vim/colors/solarized.vim This is just because I didn't seem to get iTunes File Sharing to work with hidden files (a file starting with a dot is hidden). Then you have to add the following to your .vimrc:
+
+> syntax enable  
+> set background=dark  
+> colorscheme solarized
+
+I recommend using this app for any emacs lover out there with an iPad. Of course, it is not emacs, but vim is a pretty awesome text editor, and it's always handy to learn to use it.
+
+  
+
+To have a useful list of vim commands at hand I installed the [Vimmy](http://itunes.apple.com/us/app/vimmy/id361221825?mt=8) app, a universal app with the most common vi commands. I can switch to it via the multitasking gestures in my iPad, or use it in my iPod Touch while I'm using it in the iPad.
+
+Conclusion
+----------
+
+I don't think I'll ever switch from emacs to vim any time in the future, as I said AucTeX is definitely too good. Of course since then I've found many more things I love: having a REPL for Python, Clojure or Lisp inside my editor. There's even a REPL for PostScript! Also local remote editing with tramp... There are too many things I use on a daily basis and I can't barely remember, they are so entrenched in my .emacs file I can't even realise what they are. But for my iPad it is an awesome addition to write text on the go.
+
+  
+
+Again, if you have never used vim before and are interested, give it a try. Of course the first time you open it it will be... a jump into the unknown. Tap the screen, press :e filename and start editing happily. Esc (well, jk or backslash, as the initial mapping) :w to save. And you can even :q to exit to springboard!
+
+  
+ParseList(ScrambleList(Relateds(emacs)),5)

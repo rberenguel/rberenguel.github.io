@@ -1,0 +1,72 @@
+---
+title: 'The Emacs 30 Day Challenge'
+date: 2010-12-01T00:05:00.005+01:00
+draft: false
+tags : [emacs, Linux, Maths, Productivity]
+---
+
+[![](http://2.bp.blogspot.com/_f3d3llNlZKQ/SwHBZziLTzI/AAAAAAAABbk/r9Z1OZMR4ow/s400/mango-emacs.jpg)](http://2.bp.blogspot.com/_f3d3llNlZKQ/SwHBZziLTzI/AAAAAAAABbk/r9Z1OZMR4ow/s1600/mango-emacs.jpg)  
+
+From
+
+[The Design of the Emacs Logo](http://www.ee.ryerson.ca/%7Eelf/emacs/logo/)
+
+As you may already know, emacs is more than a (cross-platform) text editor. Some say that it is like a whole operating system (and some [devil worshippers](http://en.wikipedia.org/wiki/Editor_war#Humour) say that it lacks a good text editor...). For the next 30 days (starting December 1, 2010) I'll check it as well as I can. I will work just with emacs.  
+  
+You can check the challenge updates below:  
+[](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html)
+
+*   Update #1: [Using conkeror as a web browser, twittering-mode, jabber.el and gnus](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html)
+*   Update #2: [Using gnus to read mail (in particular gmail)](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html)  
+    
+*   Update #3: [A glimpse of bbdb: the insidious Big Brother Database and gnus](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html)
+*   Update #4: [Get the latest version of gnus to improve speed](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-get-latest-gnus.html)  
+    
+
+What it means
+-------------
+
+**At work, unless completely necessary, I'll have just one open window: _emacs_.**
+
+What I will do within emacs:
+----------------------------
+
+*   Read my email (_gnus_ and gmail)
+*   Use twitter (via _twittering-mode_)
+*   Search in Google and basic browsing (within _w3m_)
+*   Search in MathSciNet (with a modified version of _bibfind.el_)
+*   View PDF's (through the emacs23 native _doc-view_)
+*   Open images (emacs 22.3 and up, I think)
+*   Chat through Jabber (in Google chat, with _jabber.el_)
+
+I may even consider reinstalling Emacs Multimedia System ([EMMS](http://www.gnu.org/software/emms/)).
+
+  
+
+I'll use my [Ben Nanonote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html) (running Debian sid) as emacs-enabled note-taking and portable agenda device, leaving my [iPod Touch](http://www.mostlymaths.net/2009/10/why-i-bought-ipod-touch.html) just for wifi browsing when needed. I'll also use the [Ben](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html) for writing post sketches on the train and programming on the go.
+
+What I may need to do outside
+-----------------------------
+
+*   **Checking some websites** (mostly javascript based), buying online and similar. I'll use Chrome as usual for this.
+*   So far, **answering mails through multiple accounts**: it can be done through gnus but I have not configured it yet (in 30 days I guess I can do it).
+*   **Writing in this blog**: can be done, but I don't want the hassle.
+*   **Checking facebook**, but could be done through w3m (elisp native web browser) and the mobile site. I'll just do Facebook at night, occasionally.
+*   At least for now, **reading RSS**. I'm very happy with my iPod Touch for this task, buy may consider doing it with the Ben Nanonote and gnus (for example) when I'm more comfortable with it.
+
+I've decided to move all these tasks to late afternoon, meaning I'll **work within emacs** and after work be slighly more flexible.
+
+What I'll write about these 30 days
+-----------------------------------
+
+I'll write short (or not so short) tutorials on configuring some of the packages I've been using, and other interesting additions I have in my .emacs that I feel worth spreading. Expect from 5 to 10 posts, covering **gnus configuration & simple use**, **org-mode as agenda and todo list**, **jabber for chat**, **doc-view for viewing pdf's**, **AucTeX for LaTeX**, **shell mode hacks** and some **additional modes and tweaks from my .emacs** along the way.
+
+  
+
+Beware! I may end up posting some of these by January 2011, after I get fluent enough with these tools.
+
+  
+
+I hope you enjoy it and share with your emacs friends.
+
+ParseList(ScrambleList(Relateds(emacs)),5)

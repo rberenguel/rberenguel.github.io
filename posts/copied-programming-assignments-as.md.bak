@@ -1,0 +1,29 @@
+---
+title: 'Copied programming assignments as cryptograms'
+date: 2009-11-11T01:00:00.005+01:00
+draft: false
+tags : [Programming, Thoughts, Teaching, Maths]
+---
+
+[![](http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s400/3317243295_39c3fa4175.jpg)](http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s1600-h/3317243295_39c3fa4175.jpg)  
+
+Pieces of an ENIGMA machine, from [Flickr](http://www.flickr.com/photos/brewbooks/3317243295/)  
+
+  
+Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone's mind. As a teacher, how do you detect this?  
+  
+
+From my point of view, there are fundamentally two different kinds of copy:  
+
+*   Information sharing: One teaches another as how to do it. Fine with me, everyone learns
+*   Code sharing: One gives another a piece of code. Bad.
+
+The code sharing scenario can have or not a postprocessing: the code is modified to fit the others code, and variables names are changed to look more inocuos. Usually, there are cases of full code copy.  
+  
+How to detect this? I am still writing code to test it with our last assignment, but my idea is that this is like (like, as looks like, not as equal to) a cryptogram, with a simple enough substitution cipher. Not exactly, but probably quite similar. And singular value decomposition could help detect these kind of ciphers.  
+  
+I am writing a set of awk scripts that rip off C comments, printf, scanf, fopen and such, just to leave the skeleton of the real algorithm, and another script that separates each C file into individual functions. Why? Because a whole program is unlikely to be copied, but individual functions are most probably shared. I'll start with a word frequency analysis of individual functions. If this works... ok, if it doesn't, maybe I'll try higher rank approximations. Word frequency (rank 1 approximation, roughly) can be done straight in awk, and then compared.  
+  
+I'll keep writing about this as it goes on.  
+  
+You may also be interested inParseList(ScrambleList(Relateds(Linux,Programming)),10)

@@ -1,0 +1,79 @@
+---
+title: 'And e/2 Appears from Nowhere! (Follow up to ''And e Appears from Nowhere'')'
+date: 2010-10-06T17:00:00.001+02:00
+draft: false
+tags : [Programming, Maths, LISP]
+---
+
+You may remember a post I wrote a month ago titled [And e Appears from Nowhere](http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html). It was based (through some blogs I read) on a footnote from [Prime Obsession](http://www.amazon.com/gp/product/0309085497?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0309085497)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=0309085497) (Amazon affiliate link) by John Derbyshire. The footnote reads:
+
+> _Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1_? The answer is e. (See sketch of proof in [the previous post](http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html))
+
+I wrote some clojure code to test it, and even found the proof lying around. It was very interesting.., and the post was quite visited. A few weeks ago I got [a comment in that post](http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html#comment-77581713), hinting at another bizarre happening.
+
+  
+
+If you follow the previous procedure, in each step you will get a number greater than 1, say _x(i)_ (for the step _i_). What is the average of _x(i)_? This is the average number you get greater than one in each step. Well, James (he made the comment) had a bug in his first try and computed that. He found out that this average looks suspiciously close to _e/2_.
+
+  
+
+I also checked, and found the same. The modifications from my previous code were minimal:
+
+> (defn PlusRandom2 \[initial steps\]
+> 
+> ; Initial and step start at 0. Will return how many times it takes
+> 
+> ; to be greater than 1
+> 
+> (if (> initial 1)
+> 
+> initial
+> 
+> (PlusRandom2 (+ initial (rand)) (+ 1 steps))))
+> 
+>   
+> 
+> (defn AveragePlusRandom2 \[iterates accumulator\]
+> 
+> ; Takes the average of "iterates" iterations of the previous
+> 
+> ; function. Accumulator should start at 0
+> 
+> (loop \[n iterates accumulator 0\]
+> 
+> (if (= n 0)
+> 
+> (/ (float accumulator) iterates)
+> 
+> (recur (dec n) (+ accumulator (PlusRandom2 0 0))))))
+> 
+>   
+> 
+> (def ehalf 1.359140914229522617680143736)
+
+And one run yields
+
+> (AveragePlusRandom2 10000 0)
+> 
+> 1.3563358
+
+And indeed, a few runs comparing to e/2 return
+
+> (- (AveragePlusRandom2 10000000 0) ehalf)
+> 
+> \-1.0387256539901024E-4
+> 
+> (- (AveragePlusRandom2 100000000 0) ehalf)
+> 
+> \-4.57122720320946E-6
+
+The problem now is, **how to prove it?** I have been thinking it over for a while, and I guess it has something to do with the [central limit theorem](http://en.wikipedia.org/wiki/Central_limit_theorem) (maybe indirectly via [sums of uniform distributions](http://mathworld.wolfram.com/UniformSumDistribution.html)). But my knowledge of probability is far below the requirements, or maybe isn't, but the time I can allot to keep trying is scarce. If any reader takes the plunge and finds a proof, I'll be very happy to share it here as a guest post. Prepare your pens!
+
+  
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [9 programming books I have read and somewhat liked...](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [C code juicer: detecting copied programming assignments](http://berenguel.blogspot.com/2009/12/c-code-juicer.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Cron, diff & wget: Watch changes in a webpage](http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [8 reasons for re-inventing the wheel as a programmer](http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Approximating images with randomly placed translucent triangles](http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html)  
+ParseList(ScrambleList(Relateds(Maths,Programming)),5)

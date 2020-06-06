@@ -1,0 +1,12 @@
+---
+title: 'How to download YouTube .flv videos'
+date: 2009-06-03T11:00:00.001+02:00
+draft: false
+tags : [Mac, How-to]
+---
+
+There is a plain and easy way to download YouTube .flv videos (which you can watch with [VLC Media Player](http://en.wikipedia.org/wiki/Vlc), or in a Mac with [Quicktime Player](http://en.wikipedia.org/wiki/Quicktime) and additional [plug-ins](http://en.wikipedia.org/wiki/Perian)).  
+
+  
+
+To do so, you need the [Safari Web Browser](http://en.wikipedia.org/wiki/Safari_%28web_browser%29) (Mac or Windows). Go to your desired page hosting a Flash Video file, and select Activity in the Window menu. There you will find the files being downloaded in the web-page you are visiting... double click the bigger one (as usually flash videos are the biggest files in YouTube pages, if you can't find such a big file, check for the .flv file extension) and it will open in a new window. Just save this file and you are done :)

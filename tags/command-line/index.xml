@@ -22,5 +22,38 @@ Beware! The software described here is just for personal and very light use. Its
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</description>
     </item>
     
+    <item>
+      <title>Just as Mario: Using the Plan9 plumber utility</title>
+      <link>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</link>
+      <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/</guid>
+      <description>Note: It&amp;rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&amp;rsquo;s not hard to find where they are, if you run into any problems let me know.
+If you&amp;rsquo;ve been following this blog, you&amp;rsquo;ll know I&amp;rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber.</description>
+    </item>
+    
+    <item>
+      <title>sed (stream editor) to colorise script output</title>
+      <link>https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/</link>
+      <pubDate>Sat, 24 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/</guid>
+      <description>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &amp;ndash;color In this post I show you a script that does it, in a simple way. I don&amp;rsquo;t have a full range of colors implemented, but you can find all here.
+
+This is the sed-processed output given by Gcal. The original source looks like
+
+As you can see, I used as identifiers XML-like expressions.</description>
+    </item>
+    
+    <item>
+      <title>Gcal the ultra-powerful command line GNU calendar</title>
+      <link>https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/</link>
+      <pubDate>Thu, 15 Apr 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/</guid>
+      <description>The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&amp;rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
+The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spark on mostlymaths.net</title>
+    <title>Spark on mostlymaths.net</title>
     <link>https://mostlymaths.net/tags/spark/</link>
-    <description>Recent content in spark on mostlymaths.net</description>
+    <description>Recent content in Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jan 2020 18:30:33 +0200</lastBuildDate>
@@ -36,61 +36,6 @@
       
       <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
       <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34; target=&#34;_blank&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34; target=&#34;_blank&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34; target=&#34;_blank&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34; target=&#34;_blank&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34; target=&#34;_blank&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2019#16 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
-      <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2019#15 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</link>
-      <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2019#14 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</link>
-      <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2019#13 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</link>
-      <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2019#11 Readings of the week</title>
-      <link>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</link>
-      <pubDate>Sun, 28 Apr 2019 17:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/04/2019-11-readings-of-week.html/</guid>
-      <description>Software engineering, Spark, history, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.
-Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almost a year (on my suggestion). I&amp;rsquo;m not super-happy with it, and testing it is one of the pain points.</description>
-    </item>
-    
-    <item>
-      <title>2019#9 Readings of the week (x4)</title>
-      <link>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</link>
-      <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
-      <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -145,16 +90,6 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       
       <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
       <description>&lt;p&gt;I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say &lt;em&gt;we&lt;/em&gt;, it means Laia and me unless explicitly changed.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</title>
-      <link>https://mostlymaths.net/2017/05/shading-dependencies-with-sbt-assembly.html/</link>
-      <pubDate>Sun, 07 May 2017 10:40:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2017/05/shading-dependencies-with-sbt-assembly.html/</guid>
-      <description>A few weeks ago I needed to parse configuration files in Scala for a Spark project and decided to use PureConfig. It is incredibly lean to use, needing minimal boilerplate. I recommend you check it out (give also a look at CaseClassy, which I haven&amp;rsquo;t had time to test yet).
-Everything seemed straightforward enough, and I got it working pretty quickly (as in, it compiled properly). The surprise? spark-submit failed with a conflict with Shapeless (lacking a witness).</description>
     </item>
     
   </channel>

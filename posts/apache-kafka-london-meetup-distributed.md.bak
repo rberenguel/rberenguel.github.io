@@ -1,0 +1,19 @@
+---
+title: 'October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka'
+date: 2016-10-31T21:37:00.001+01:00
+draft: false
+tags : [London, meetup, Scala, Kafka]
+---
+
+This has been the first time I could attend the [Apache Kafka meetup](http://www.meetup.com/Apache-Kafka-London/) in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).  
+  
+I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of [Confluent](http://www.confluent.io/) (and author of [I Heart Logs](http://amzn.to/2fxKcVE)), so, basically, a Kafka top committer himself. He delivered the same presentation he gave in [Reactive Summit 2016](http://sched.co/8B6K), but since I wasn't in the former I could enjoy it this time. It was a hand-drawn presentation (I suspect using [Paper](https://itunes.apple.com/gb/app/paper-by-fiftythree-sketch/id506003812) for iOS), hitting all the supposedly good points of technical presentations (short slides, don't read them, etc). It was also quite deep, explaining what/how and why we should use [Kafka Streams](https://kafka.apache.org/0100/javadoc/org/apache/kafka/streams/KafkaStreams.html) for our real-time data pipelines.  
+  
+
+[![](https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s320/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg)](https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s1600/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg)
+
+Jay, presenting. This architecture needs some Kafka
+
+The key takeaway is that if you are already using Kafka as your real-time data hose-and-bucket, you can reuse this cluster (and all its goodies: partitions, groups, offsets) for processing the data as it comes, withouth needing an additional framework (Flink, Spark, Storm... you know the tune). Also, if you'drather write Perl than Java and this is preventing you from using the KStreams API, behold! Even if they don't have an official Scala API, wrapping it is extremely easy.  
+  
+You can view (and download) the slides from [here](http://www.slideshare.net/Reactivesummit/distributed-stream-processing-with-apache-kafka), and watch Jay in video from Reactive Summit [here](https://www.youtube.com/watch?v=rXzuZb3fHHM).

@@ -1,0 +1,78 @@
+---
+title: 'Mathematics Poster: Dropbox, Scribus and LaTeX for the Win'
+date: 2010-11-06T18:20:00.001+01:00
+draft: false
+tags : [Linux, Mac, Maths, Productivity]
+---
+
+[![Scribus and LaTeX for Mathematical Posters](http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s400/PosterWarsaw.png)](http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s1600/PosterWarsaw.png)
+
+This week I'll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled _Approximating bifurcation loci by zeros of functions_. This is heavily based on a poster I presented last year in Copenhagen (titled _Sets approximating regions of instability_). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.
+
+  
+
+The poster I did last year was typeset using Scribus and LaTeX, in my MacBook. I explained the procedure in [Scribus for Mathematical Posters](http://www.mostlymaths.net/2009/11/scribus-for-mathematical-posters.html). Scribus does a wonderful work... once you get used to how it works. And LaTeX of course is _the tool_.
+
+The trouble starts in the Mac part
+----------------------------------
+
+The interesting part is that when time came to make the editions, some odd change in my LaTeX system on the Mac made the TeX sources unable to compile. It seems to boil down to the keyval package not working correctly, but I just could not find why as it was installed correctly.
+
+  
+
+Last time I messed with my LaTeX system in the Mac I realised I didn't remember exactly how I installed: was it fink, was it TeXLive or is it through MacPorts? Thus, solving this particular problem could result in spending far more time than I really wanted... And I was already knee-deep in things to do before Monday.
+
+The trouble continues in the Linux part
+---------------------------------------
+
+I checked my netbook, and the LaTeX files compiled just fine. Thus, no problem: install Scribus on the netbook and go. But turns out I don't have Latin Modern (the LaTeX fonts are Computer Modern, and Latin Modern are its most recent replacement) fonts for Scribus there. And I remember that the last time I installed fonts, back when I was an [Ubuntu](http://www.mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html) user was not really enjoyable.
+
+  
+
+My experiences with [Arch Linux](http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html) have been so far wonderful, but wasting half an hour or more solving this particular problem didn't really appeal my Saturday-afternoon-doing-a-maths-poster self. I had to find a simpler solution. Compiling the TeX in the netbook and moving everything to the MacBook to generate the poster? Yes, but...
+
+Dropbox to the rescue!
+----------------------
+
+My solution was somewhat inspired. I registered for a [Dropbox](http://www.dropbox.com/referrals/NTc3MDIyNTM5) account two weeks ago, to simplify transferring files from my Mac at home and my Linux machine at work. Installing it in a Mac is as simple as any other Mac app, surprisingly, installing it in Arch Linux took me less than 15 minutes, together with thunar (file browser) extension and adding it to the start up scripts.
+
+  
+
+I started to use it more frequently when I began to use [PlainText](http://www.mostlymaths.net/2010/10/plaintext-text-editor-with-dropbox-sync.html) in my iPod Touch to write blog posts and draft ideas. A few days ago I read this post on Reddit: [Share your more creative uses of Dropbox, Hazel, Growl, Automator...](http://www.reddit.com/r/apple/comments/dwbwr/share_your_most_creative_and_best_uses_of_dropbox/) I just remembered it as I was thinking how much work it would be to use a USB drive to do this.
+
+  
+
+I moved the poster folder to m Dropbox folder, worked the TeX files in my netbook and the Scribus file on the Mac. The best of both worlds (and the only solution not involving wasting my time) by using Dropbox.
+
+  
+
+And my poster is finished on time!
+
+  
+
+* * *
+
+If you want to get the most out of Scribus, you can get the book [Scribus: Open Source Desktop Publishing](http://www.bookdepository.co.uk/book/9780956078001/Scribus-Open-source-Desktop-Publishing/?a_aid=mostlymathsdotnet) from [The Book Depository](http://www.bookdepository.co.uk/?a_aid=mostlymathsdotnet) (_free international shipping_, affiliate link).
+
+  
+
+And if you want to improve your geeky presentation skills, get [Even a Geek Can Speak: Low-Tech Presentation Skills for High-Tech People](http://www.amazon.com/gp/product/156352628X?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=156352628X)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=156352628X) from [Amazon.com](http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2F&tag=rbersblog-20&linkCode=ur2&camp=1789&creative=390957)![](https://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=ur2&o=1) (affiliate link).
+
+* * *
+
+  
+Related posts:
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Keeping Up With Reading Research Papers](http://www.mostlymaths.net/2010/10/keeping-up-with-reading-research-papers.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Overwhelmed With Projects? Declare Task Bankruptcy](http://www.mostlymaths.net/2010/10/overwhelmed-with-projects-declare-task.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Book Review: The War of Art, by Steven Pressfield](http://www.mostlymaths.net/2010/09/book-review-war-of-art-by-steven.html) (**highly recommended book**)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Procrastinating? Find the Next Step Up](http://www.mostlymaths.net/2010/10/procrastinating-find-next-step-up.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Time boxing: you will work like never before](http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Winning Against Your Reading List](http://www.mostlymaths.net/2010/08/winning-against-your-reading-list.html)
+
+ParseList(ScrambleList(Relateds(Maths)),2)

@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/ipad/</loc>
-    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/</loc>
     <lastmod>2020-06-05T21:30:33+02:00</lastmod>
   </url>
@@ -38,12 +33,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/linux/</loc>
-    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/tags/ipad/</loc>
+    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/macos/</loc>
+    <loc>https://mostlymaths.net/tags/linux/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
   
@@ -54,6 +49,11 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/mac/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
   
@@ -98,12 +98,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/engineering/</loc>
+    <loc>https://mostlymaths.net/tags/distributed-work/</loc>
     <lastmod>2020-05-10T13:20:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/remote-working/</loc>
+    <loc>https://mostlymaths.net/tags/engineering/</loc>
     <lastmod>2020-05-10T13:20:33+02:00</lastmod>
   </url>
   
@@ -198,17 +198,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/hardware/</loc>
-    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/keyboard/</loc>
-    <lastmod>2020-01-06T18:15:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/mac/</loc>
     <lastmod>2020-01-06T18:15:52+01:00</lastmod>
   </url>
   
@@ -229,11 +219,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/12/201935-readings-of-the-week.html/</loc>
-    <lastmod>2019-12-15T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/distributed-work/</loc>
     <lastmod>2019-12-15T12:30:33+02:00</lastmod>
   </url>
   
@@ -298,11 +283,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/bread/</loc>
-    <lastmod>2019-10-19T13:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/10/201927-readings-of-the-week.html/</loc>
     <lastmod>2019-10-12T13:06:33+02:00</lastmod>
   </url>
@@ -340,6 +320,11 @@
   <url>
     <loc>https://mostlymaths.net/tags/writing/</loc>
     <lastmod>2019-09-14T17:54:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/blog/</loc>
+    <lastmod>2019-09-10T19:42:11+02:00</lastmod>
   </url>
   
   <url>
@@ -423,11 +408,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/math/</loc>
-    <lastmod>2019-06-17T17:24:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</loc>
     <lastmod>2019-06-10T21:18:00+02:00</lastmod>
   </url>
@@ -504,11 +484,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/games/</loc>
-    <lastmod>2019-04-18T11:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/perl/</loc>
     <lastmod>2019-04-18T11:39:00+02:00</lastmod>
   </url>
   
@@ -698,17 +673,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/opensource/</loc>
-    <lastmod>2018-03-25T12:21:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2018/03/book-review-work-clean.html/</loc>
-    <lastmod>2018-03-09T23:47:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/review/</loc>
     <lastmod>2018-03-09T23:47:00+01:00</lastmod>
   </url>
   
@@ -720,11 +685,6 @@
   <url>
     <loc>https://mostlymaths.net/tags/visualization/</loc>
     <lastmod>2018-03-02T17:40:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/actors/</loc>
-    <lastmod>2018-02-14T15:28:00+01:00</lastmod>
   </url>
   
   <url>
@@ -798,11 +758,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/2016/</loc>
-    <lastmod>2016-12-31T14:34:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2016/12/2016-in-review.html/</loc>
     <lastmod>2016-12-31T14:34:00+01:00</lastmod>
   </url>
@@ -810,11 +765,6 @@
   <url>
     <loc>https://mostlymaths.net/2016/11/my-portable-bluetooth-keyboard.html/</loc>
     <lastmod>2016-11-22T17:12:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/meetup/</loc>
-    <lastmod>2016-10-31T21:37:00+01:00</lastmod>
   </url>
   
   <url>
@@ -903,11 +853,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/backgammon/</loc>
-    <lastmod>2015-03-08T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</loc>
     <lastmod>2015-03-08T12:30:00+01:00</lastmod>
   </url>
@@ -943,11 +888,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/ag/</loc>
-    <lastmod>2013-05-22T18:33:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/command-line/</loc>
     <lastmod>2013-05-22T18:33:00+02:00</lastmod>
   </url>
@@ -955,16 +895,6 @@
   <url>
     <loc>https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/</loc>
     <lastmod>2013-05-22T18:33:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/diff/</loc>
-    <lastmod>2013-04-21T21:30:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/grep/</loc>
-    <lastmod>2013-04-21T21:30:00+02:00</lastmod>
   </url>
   
   <url>
@@ -993,36 +923,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/analytics/</loc>
-    <lastmod>2012-10-01T18:41:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/google-tag-manager/</loc>
-    <lastmod>2012-10-01T18:41:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/gtm/</loc>
-    <lastmod>2012-10-01T18:41:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/jquery/</loc>
-    <lastmod>2012-10-01T18:41:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/git/</loc>
-    <lastmod>2012-09-30T10:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/rcs/</loc>
-    <lastmod>2012-09-30T10:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2012/09/using-git-and-setting-remote-git-server.html/</loc>
     <lastmod>2012-09-30T10:28:00+02:00</lastmod>
   </url>
@@ -1039,16 +939,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/shoemaking/</loc>
-    <lastmod>2012-09-09T21:26:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/shoes/</loc>
-    <lastmod>2012-09-09T21:26:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/the-fancy-puffin/</loc>
     <lastmod>2012-09-09T21:26:00+02:00</lastmod>
   </url>
   
@@ -1133,18 +1023,8 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/running/</loc>
-    <lastmod>2011-12-11T21:29:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/teaching/</loc>
     <lastmod>2011-12-11T21:29:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/blog/</loc>
-    <lastmod>2011-12-03T20:31:00+01:00</lastmod>
   </url>
   
   <url>
@@ -1170,11 +1050,6 @@
   <url>
     <loc>https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/</loc>
     <lastmod>2011-08-18T18:50:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/iceland2010/</loc>
-    <lastmod>2011-06-21T09:45:00+02:00</lastmod>
   </url>
   
   <url>
@@ -1283,11 +1158,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/irish/</loc>
-    <lastmod>2011-03-11T21:50:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2011/03/irish-gaelic-language-learning-month-1.html/</loc>
     <lastmod>2011-03-11T21:50:00+01:00</lastmod>
   </url>
@@ -1318,17 +1188,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/focused-interviews/</loc>
-    <lastmod>2011-02-16T12:15:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2011/02/february-march-and-april-challenge.html/</loc>
-    <lastmod>2011-02-12T16:15:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/gaelic/</loc>
     <lastmod>2011-02-12T16:15:00+01:00</lastmod>
   </url>
   
@@ -1374,11 +1234,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2010/12/do-you-fell-smell-of-burning-wood.html/</loc>
-    <lastmod>2010-12-27T21:45:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/pyrography/</loc>
     <lastmod>2010-12-27T21:45:00+01:00</lastmod>
   </url>
   
@@ -1693,11 +1548,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/gcal/</loc>
-    <lastmod>2010-04-24T16:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html/</loc>
     <lastmod>2010-04-24T16:00:00+02:00</lastmod>
   </url>
@@ -1783,11 +1633,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2010/03/current-programming-projects.html/</loc>
-    <lastmod>2010-03-05T11:50:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</loc>
     <lastmod>2010-03-03T22:30:00+01:00</lastmod>
   </url>
@@ -1795,11 +1640,6 @@
   <url>
     <loc>https://mostlymaths.net/2010/02/debugging-with-emacsvalgrind.html/</loc>
     <lastmod>2010-02-28T20:37:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/cjuicer/</loc>
-    <lastmod>2010-02-21T19:05:00+01:00</lastmod>
   </url>
   
   <url>
@@ -1963,11 +1803,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</loc>
-    <lastmod>2009-10-11T01:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2009/10/infinite-complexity.html/</loc>
     <lastmod>2009-10-07T01:00:00+02:00</lastmod>
   </url>
@@ -2005,11 +1840,6 @@
   <url>
     <loc>https://mostlymaths.net/2009/09/slicing-scannings.html/</loc>
     <lastmod>2009-09-11T01:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</loc>
-    <lastmod>2009-09-07T01:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -2143,23 +1973,8 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2009/05/local-proxy.html/</loc>
-    <lastmod>2009-05-29T11:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2009/05/productivity-enhancers-or-time-wasting.html/</loc>
     <lastmod>2009-05-23T11:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/2009/05/how-to-fold-and-iron-your-karategi.html/</loc>
-    <lastmod>2009-05-19T11:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/karate/</loc>
-    <lastmod>2009-05-19T11:00:00+02:00</lastmod>
   </url>
   
   <url>

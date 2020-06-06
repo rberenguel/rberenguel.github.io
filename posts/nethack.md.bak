@@ -1,0 +1,87 @@
+---
+title: 'Nethack'
+date: 2009-05-03T11:00:00.005+02:00
+draft: false
+tags : [emacs, Linux, Games]
+---
+
+I "discovered" Nethack a month or so ago, while being bored to death (after three unsuccessful attempts in proving something) in my office.  
+
+  
+
+[![](http://2.bp.blogspot.com/_f3d3llNlZKQ/SfgY5pTdaGI/AAAAAAAAA0s/djN9xlTIbd0/s400/Picture+12.png)](http://2.bp.blogspot.com/_f3d3llNlZKQ/SfgY5pTdaGI/AAAAAAAAA0s/djN9xlTIbd0/s1600-h/Picture+12.png)  
+Myself with my dog Hachi  
+  
+
+I play the MacOs Tiles (or QT) version, which can be found in [Nethack.org](http://www.nethack.org/v343/ports/download-mac.html), configured for ASCII color play. The configuration file is a file called .nethackrc in your home directory, mine looks like:  
+
+> OPTIONS=!autopickup,ascii\_map, color, hilite\_pet, lit\_corridor, showexp, showscore, boulder:0;  
+> OPTIONS=role:monk, align:lawful, gender:male, name:RB, pettype:dog, dogname:Hachi, catname:Fu!;  
+>   
+> qt\_tilewidth=13  
+> qt\_tileheight=17  
+> qt\_fontsize=medium  
+> qt\_compact=0  
+
+This sets Nethack options as ASCII color map, my pet(s) have a heart near to them, lit corridor, change the boulder sign to 0 and my default name, role and such things.  
+
+  
+
+What it is? Well, it is a dungeon exploration game: the objective is to find the Amulet of Yendor and sacrifice it to your god. You travel through the Dungeons of Doom, the Gnomish mines, Minetown and a lot more places (which I have not been to yet), killing foes, zapping wands and unearthing treasures.  
+
+  
+
+[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/SfgZ7g5-5CI/AAAAAAAAA08/bjWCTgxBT8c/s400/Picture+13.png)](http://3.bp.blogspot.com/_f3d3llNlZKQ/SfgZ7g5-5CI/AAAAAAAAA08/bjWCTgxBT8c/s1600-h/Picture+13.png)  
+Your god and name may change according to your role.  
+
+  
+
+The key point in the game? Identification. When you travel the dungeons, you may find something in the ground, or as a leftover from a corpse of something you killed. And usually, it is not identified (i.e. "a long sword"). This long sword could be cursed (it usually deals -2 damage if cursed, for instance, and being cursed means you can't unwield it!), neutral or blessed... and it could be a magical sword (for instance, the [Vorpal blade: spoiler from nethack wiki](http://nethack.wikia.com/wiki/Vorpal_Blade)). And it goes like this for almost everything, making this game into some sort of joy of discovery mixed with killing strange monsters (like a... [Quantum mechanic](http://nethack.wikia.com/wiki/Quantum_mechanic) (spoiler again)!).  
+
+  
+
+It is an enjoyable game, hard to leave aside once you start getting the mechanics and controls. You can play while you are on a coffee break ;)  
+
+  
+
+Explore, and try. You may enjoy starting as a samurai, or valkyrie, I turned later to being a monk. But... you'll die, a lot of times.  
+
+[![](http://2.bp.blogspot.com/_f3d3llNlZKQ/SfgY5uq1BbI/AAAAAAAAA00/k4IoPYvgEoY/s400/Picture+10.png)](http://2.bp.blogspot.com/_f3d3llNlZKQ/SfgY5uq1BbI/AAAAAAAAA00/k4IoPYvgEoY/s1600-h/Picture+10.png)  
+Perhaps today is a good day to die!  
+  
+
+Try not to die from a kitten, or a giant ant... you'll feel dumb. If you don't mind spoilers, there is a [nethack wiki](http://nethack.wikia.com/) which has quite a lot of information. Also, for an added twist, there is [Tower](http://tower.sourceforge.net/) (OpenGL Java based), where you start from the bottom of a tower, and travel up... in 3D!  
+
+  
+
+[![](http://1.bp.blogspot.com/_f3d3llNlZKQ/SfgcypZwhCI/AAAAAAAAA1E/3L-FyeWZgYQ/s400/kick.jpg)](http://1.bp.blogspot.com/_f3d3llNlZKQ/SfgcypZwhCI/AAAAAAAAA1E/3L-FyeWZgYQ/s1600-h/kick.jpg)  
+Tower, a 3D Nethack clone  
+  
+
+By the way, there is also an [emacs mode](http://www.nongnu.org/nethack-el/) for console-based Nethack.  
+
+  
+Another ("strange") game related posts:  
+
+*   [Hyperoid a.k.a. SDLRoids](http://berenguel.blogspot.com/2009/07/hyperoid-aka-sdlroids.html)
+*   [Torus trooper](http://berenguel.blogspot.com/2009/09/torus-trooper.html)  
+    
+
+Some Mac/Linux-related posts you may like:  
+
+*   [Whistle control your computer (Linux&Mac)](http://berenguel.blogspot.com/2009/09/whistle-control-your-computer.html)  
+    
+*   [My backup script in Mac/Linux](http://berenguel.blogspot.com/2009/09/my-backup-script-in-maclinux.html)  
+    
+*   [Screenshot via command-line in Linux](http://berenguel.blogspot.com/2009/08/screenshot-via-command-line-in-linux.html)  
+    
+*   [How to download YouTube .flv videos](http://berenguel.blogspot.com/2009/06/how-to-download-youtube-flv-videos.html)  
+    
+*   [Extremely useful (mostly free) Mac applications](http://berenguel.blogspot.com/2009/05/extremely-useful-mostly-free-mac.html)
+*   [MP3 to iPod audiobook: personal reminder](http://berenguel.blogspot.com/2009/05/mp3-to-ipod-audiobook-personal-reminder.html)  
+    
+*   [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)
+*   [Three dee (3-dimensional file system browsers review)  
+    ](http://berenguel.blogspot.com/2009/07/three-dee.html)
+*   [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)
+*   [How to get a local proxy](http://berenguel.blogspot.com/2009/05/local-proxy.html)

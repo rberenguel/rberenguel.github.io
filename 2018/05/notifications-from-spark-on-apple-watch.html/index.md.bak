@@ -1,0 +1,29 @@
+---
+title: 'Notifications from Spark on an Apple Watch (via IFTTT)'
+date: 2018-05-05T02:40:00.000+02:00
+draft: false
+tags : [ Watch, Spark, Open Source, Scala, sbt,  iPhone]
+dropcap: true
+---
+
+This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with [GraphFrames](https://github.com/graphframes/graphframes) (the successor of [GraphX](https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html) on Spark). <!--more--> This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee... I wanted a way to get a subtle notification when the process finished. This way I could work on something else while the process is doing its thing, and I could come back for the next step as soon as the data is ready.
+
+I have most of my notifications deactivated, though. No emails, Twitter, WhatsApp. Nothing shows on my Mac screen, few show on my [phone](https://amzn.to/2reDmZl) or [watch](https://amzn.to/2Kq0Lid), and only a handful are allowed to vibrate (none to make a sound). What could I do to get a notification? Even if I overrode some of my settings, I needed something that either could work cross-device or could make my watch vibrate, since it’s the only device I have always with me.
+
+Well, [IFTTT](https://ifttt.com/discover) can actually do that. IFTTT is a service to plumb external services with iOS/Android devices, to build workflows. It also has a [handy webhook you can use as a trigger for workflows](https://ifttt.com/maker_webhooks). And the IFTTT app can send notifications, to the phone or watch. Ticks all the boxes.
+
+To use the webhook (a POST endpoint) from Scala I used a library I had never used before: [scalaj-http](https://ifttt.com/discover) It seems highly convenient for these quick-and-dirty “make a request” in a program that includes no other http library.
+
+When I have some action I expect to run for a while, I’ll finish the command with `; notif(“Process X finished”)` This way, when the command finishes my wrist will gently buzz and I’ll know I can go back to work more on it.
+
+It is worth noting that this would also work for a long running `bash` or `sbt` command (I’m looking at you, Spark test suite), or compiling `boost` or anything else that can, basically, run `curl` against an endpoint at the end of the process.
+
+By the way, to run a spark shell with this library, use
+
+```bash
+spark-shell --packages org.scalaj:scalaj-http_2.11:2.3.0`
+```
+
+Remember that multiple packages are separated by commas in case you also happen to, you know, use GraphFrames.
+
+Oh, and if you happen to want notifications after an sbt task, you can use my [sbt-ifttt plugin](https://github.com/rberenguel/sbt-ifttt).

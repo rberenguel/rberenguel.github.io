@@ -1,0 +1,20 @@
+---
+title: 'Using an Apple Remote with Mac OS Preview'
+date: 2011-06-05T18:00:00.001+02:00
+draft: false
+tags : [Mac, LaTeX, Maths]
+---
+
+[![](http://4.bp.blogspot.com/-rgrxsGqwB00/TerCeMxXchI/AAAAAAAADSE/nquD67Hy_eg/s400/ZoomMandelbrot.jpg)](http://4.bp.blogspot.com/-rgrxsGqwB00/TerCeMxXchI/AAAAAAAADSE/nquD67Hy_eg/s1600/ZoomMandelbrot.jpg)
+
+Last Tuesday I presented a talk in a congress, here in Barcelona. This post is not about this talk, but about the Mac remote and Apple's "problems". If you are interested, you can download the talk [here](http://www.maia.ub.es/%7Eruben/docs/20110531Centres.pdf), anyway.  
+  
+As the congress was local, instead of using my netbook for the talk I brought my MacBook. Instead of using arrow keys, I could use these fancy Apple remotes. Good plan... at the moment. I asked a colleague for his Apple remote (my girlfriend had hers in her office, and I could not get it soon enough)... And after lunch, before my talk I checked if it worked.  
+  
+Well, as you already know, I use [LaTeX](http://www.mostlymaths.net/search/label/LaTeX) and [Beamer](http://www.mostlymaths.net/2009/11/scribus-for-mathematical-posters.html) to create my presentations... And generate as output a PDF file. Which I then open with Preview, a native Mac OS app. And when I tried to use Apple Remote, it didn't pass the pages. Why? Well, Apple only supports a handful of applications, the most relevant being Keynote and Front Row. And not Preview. I was shocked.  
+  
+As I expected, there was a free solution to this problem, but at first it looked troublesome. I found a program named [iRedLite](http://www.filewell.com/iRedLite/). _The "Lite" part scared me: would I be only able to pass 30 pages and then need to enter my registration?_  
+  
+Turns out it is "Lite" because there is a Pro version which can interact with a USB infra-red emitter to control your TV and other gadgets. It works wonderful, no problems. If you ever need to give a PDF presentation with a Mac, give it a try.  
+  
+I had another solution which hopefully I didn't have to use: a free application for iPhone, RemotePad and RemotePad server in my Mac (there is also a Linux version). But passing pages is a little cumbersome, needing to flip+scroll in a very small screen. Far better to use the remote with iRedLite!

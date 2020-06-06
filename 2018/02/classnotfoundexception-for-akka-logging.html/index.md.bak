@@ -1,0 +1,30 @@
+---
+title: 'ClassNotFoundException for Akka logging'
+date: 2018-02-14T15:28:00.001+01:00
+draft: false
+tags : [Scala, Actors, Akka]
+dropcap: true
+featured_image: "RubenBerenguelFacepalm.jpg"
+---
+A few months ago I stumbled into the problem of Akka logging, specifically
+ClassNotFoundException when using `akka.event.slf4j.Slf4jLoggingFilter`, just by
+following the details of the [Logging - SL4J section of Akka
+documentation](https://doc.akka.io/docs/akka/2.5/logging.html). 
+
+<!--more-->
+
+{{< figure src="RubenBerenguelFacepalm.jpg" class="fig-left-small" caption="Make it so">}}
+
+Of course, the
+error source is obvious in hindsight, but in the moment the fact that this was a
+multiproject build with several dependency paths made me miss a crucial reason
+for longer than I want to admit:
+
+**YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!**
+
+
+Add this to your dependencies (I'm assuming you have a val for akkaVersion to DRY):  
+
+```sbt
+"com.typesafe.akka" %% "akka-slf4j"  % akkaVersion
+```

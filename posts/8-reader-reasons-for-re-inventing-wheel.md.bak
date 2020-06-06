@@ -1,0 +1,37 @@
+---
+title: '8 reader reasons for re-inventing the wheel as a programmer'
+date: 2010-04-10T14:00:00.002+02:00
+draft: false
+tags : [Programming, Thoughts]
+---
+
+As I promised in my previous post [reasons for re-inventing the wheel as a programmer](http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html), here I collect 8 reader reasons for re-inventing the wheel from comments on the [reddit thread](http://www.reddit.com/r/programming/comments/bizqa/eight_reasons_for_reinventing_the_wheel_as_a/) and on page comments. They are in no particular order AFAIK.  
+
+  
+
+1. You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most. By [AdShea](http://www.reddit.com/user/adshea/), Reddit, also by [Steven Benner](http://stevenbenner.com/), on page comment.  
+  
+2. Ability to support future wheel-enhancement requests at a moment's notice: Richard Feynman wrote "What I cannot build, I do not understand." Thus, if you need to maintain a large piece of code for a long time, it is better to have it written to suit your style and your understanding of the system. By [glibc](http://www.reddit.com/user/glibc/), Reddit.  
+  
+3. Harder to understand currently existing wheel: Some systems are designed with such poor documentation or interfaces that using them can be a pain, and a lot of time can be saved just by writing your own implementation. By [tmoertel](http://www.reddit.com/user/tmoertel/), Reddit.  
+  
+4. The existing wheel is ineffective: You are 3 weeks into the project, and the existing wheel you used breaks if it goes over 50 mph in a 3 lane eastbound highway in a state on the western coast. Or discovering that it doesn't have support for dirt roads. Or that the wheels fall off on hybrid cars. By [TheKludge](http://www.reddit.com/user/thekludge/), Reddit.  
+  
+5. Current wheels are not suitable: All our wheels are square, because we support driving up and down steps. If you don't want to drive up and down steps, and want to drive on roads, just ignore the 900mb of additional classes that you don't want, and include these 57 lines of XML config. By [jstddvwls](http://www.reddit.com/user/jstddvwls/), Reddit.  
+  
+6. Wheel quality: All software contains bugs. If you need to rely on a piece of code, it is better to write and understand it yourself than to trust a random library you've found somewhere for download. By [Luzius Meisser](http://www.blogger.com/profile/06987859804935271173), on page comment.  
+  
+7. Funny axles: It's quicker to re-invent my own wheel because then I can be sure it just fits where I want it to go, whereas otherwise I'd have to spend hours inventing an axle adapter. Using off-the-shelf implementations sometimes demands coping with a lot of baggage in the way of interfaces and setup, that may not be a good fit with code you've already produced. By [Jerboa](http://www.blogger.com/profile/12389605901783666517), on page comment.  
+  
+8. Ignorance: You didn't know that it was a wheel, at that it already was invented. By [Jens Schauder](http://blog.schauderhaft.de/), on page comment. This one is probably the best I've read.  
+  
+If you find any spelling error in your name, or want to add your real name and web-page to your reason, send me a message using the same channel you used for commenting. Thanks!  
+  
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [9 programming books I have read and somewhat liked...](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [The two best mind mapping apps for iPhone](http://berenguel.blogspot.com/2010/03/two-best-mind-mapping-apps-for-iphone.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Love thy tools to maximize your productivity](http://berenguel.blogspot.com/2010/03/love-thy-tools.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Slow, natural, deadly: The importance of fundamentals](http://www.mostlymaths.net/2010/04/slow-natural-deadly-importance-of.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [What the 'broken windows theory' has to say about productivity](http://www.mostlymaths.net/2010/04/what-broken-windows-theory-has-to-say.html)  
+
+ParseList(ScrambleList(Relateds(Programming)),10)

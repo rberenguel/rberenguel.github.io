@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux iPod on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/linux-ipod/</link>
+    <description>Recent content in Linux iPod on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Nov 2009 01:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/linux-ipod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mg &amp; Zile: quick emacs in the command line</title>
+      <link>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</link>
+      <pubDate>Tue, 17 Nov 2009 01:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/mg-zile-quick-emacs-in-command-line.html/</guid>
+      <description>From The Design of the Emacs Logo
+I guess you may already know I love the emacs text editor, and use it as often as I can to do almost everything I can with it. I even use it in my iPod touch, through minivMac. But there is a small niche where it was a pain: quick editing a file from the command line. Those times when you just want to open one file, change a line, save and close.</description>
+    </item>
+    
+  </channel>
+</rss>

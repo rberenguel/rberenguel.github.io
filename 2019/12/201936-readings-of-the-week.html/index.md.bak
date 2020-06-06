@@ -1,0 +1,92 @@
+---
+title: "2019#36 Readings of the Week"
+date: 2019-12-22T19:30:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "books.jpg"
+tags : [Spark, Python, Data engineering, Psychology, ReadingsOfTheWeek]
+---
+
+On time this week. Nothing remarkable: I'm winding down a bit my reading (both articles and books) in preparation for the yearly review and having some cooldown period.
+
+<!--more-->
+
+**NOTE**: General software engineering, possible tools, property based testing, Airflow, chemistry. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+{{< figure src="books.jpg" class="fig-wide" caption="Photo by Arif Riyanto on Unsplash">}}
+
+## [Writing with Ink](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md)
+
+Prompted by a tweet by [Hillel Wayne](https://twitter.com/hillelogram/) about [Twine](https://twinery.org), I’ve been wondering about potential documentation/tech related stuff uses for either Twine or Ink. I’ve used Ink for a while, and has interesting potential. 
+
+## [Your Makefiles are wrong](https://tech.davis-hansson.com/p/make/)
+
+I have used makefiles for building Docker related images ([here](https://github.com/rberenguel/spark_hadoop_kudu/blob/master/makefile)) for fun. The approach detailed here (and the makefile tips) look good. 
+
+## [Logitech MX Master 3 vs 2S Teardown: Our favorite mouse got even better](https://blog.bolt.io/logitech-mx-master-3-vs-2s/)
+
+I have the [Anywhere 2S](https://www.amazon.com/Logitech-Anywhere-Wireless-Cross-Computer-Control/dp/B071VK5KXN/ref=as_li_ss_tl?keywords=anywhere+2s&qid=1577040620&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=d9216b4eb1fafc099ffa9982ebcac2fa&language=en_US) and is an excellent mouse. It has the significant ability of connecting and switching among 3 devices (I use it on my iPads as well). 
+
+## [Google Brass Set 2023 as Deadline to Beat Amazon, Microsoft in Cloud](https://www.theinformation.com/articles/google-brass-set-2023-as-deadline-to-beat-amazon-microsoft-in-cloud)
+
+Given the track record of Google killing products... I would not touch GCP in the future, just in case. 
+
+## [Joining Petabytes of Data Per Day: How LiveRamp Powers its Matching Product](https://medium.com/liveramp-engineering/joining-petabytes-of-data-per-day-how-liveramp-powers-its-matching-product-fe7c0f440824)
+
+Surprisingly, they mention MapReduce on YARN. That feels old, but if it works for them, I won't judge: keep what works unless there is a reason.
+
+## [Property-based testing with Spark](http://data42.blogspot.com/2015/07/property-based-testing-with-spark.html)
+
+[QuickCheck](https://hackage.haskell.org/package/QuickCheck) inspired approaches you can use with Scala Spark. PBT is powerful, have a look and it can change how you test. 
+
+## [Airtunnel: A blueprint for workflow orchestration using Airflow](https://medium.com/bcggamma/airtunnel-a-blueprint-for-workflow-orchestration-using-airflow-173054b458c3)
+
+We use an approach quite similar, although we lack lineage tracking (we are exploring it right now). 
+
+## [Parsing 18 billion JSON lines with Go](https://itnext.io/parsing-18-billion-lines-json-with-go-738be6ee5ed2)
+
+I can’t help wonder if the amount of time that went into writing this code (a one off piece of code for a migration) was worth it.
+
+## [A short story of a boy who wants to become an accountant](http://www.preservearticles.com/stories/story-on-a-boy-who-wants-to-become-an-accountant/362)
+
+Behold! The power of accountancy. 
+
+## [The Higher States of Bromine](https://blogs.sciencemag.org/pipeline/archives/2019/11/21/the-higher-states-of-bromine)
+
+I thought _Things I won’t work with_ was finished, but, surprise! New posts. All so fun. It's about certain "fun" chemistry materials you'd rather not be close with. The writing is in general hilarious.
+
+## [Can’t Stop the Nitro Groups](https://blogs.sciencemag.org/pipeline/archives/2019/08/15/cant-stop-the-nitro-groups)
+
+And another one, I basically got back to the ones I missed.
+
+## [Odd Peroxides Indeed](https://blogs.sciencemag.org/pipeline/archives/2019/02/14/odd-peroxides-indeed)
+
+And yet another. I recommend you check all the previous ones to keep having a laugh.
+
+## [Property based testing for scientific code in Python](https://datascience.blog.wzb.eu/2019/11/08/property-based-testing-for-scientific-code-in-python/)
+
+More PBT goodness. It’s better in Scala or Haskell, since they have stronger typing. But well, you can do some fun with Python. Ignore the “scientific code” part in the title, you can do this for any code base. 
+
+## [Proprioception is our silent “sixth” sense. Neuroscience is just beginning to understand it](https://www.vox.com/the-highlight/2019/11/22/20920762/proprioception-sixth-sense)
+
+Surprising, obviously interesting.
+
+## [🔊 Talking to Strangers](https://www.amazon.com/Talking-Strangers-Should-About-People/dp/B07NJCG1XS/ref=as_li_ss_tl?keywords=talking+with+strangers&qid=1577041425&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=a9f51400ed3177fd5aca2a57109d8648&language=en_US)
+
+I procrastinated on finishing it, since I didn't like the beginning. It was worth keeping at it, in the usual Gladwell-esque (pop-sci) way.
+
+## [🔊 Loserthink](https://www.amazon.com/Loserthink-Untrained-Brains-Ruining-America/dp/B07VQL5TC5/ref=as_li_ss_tl?keywords=loserthink&qid=1577041529&s=audible&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=bd492600cfbe087b7752791aee6bff0e&language=en_US)
+
+I've been duly unimpressed by it.
+
+## [🔊 The Unicorn Project](https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving/dp/B0812C82T9/ref=as_li_ss_tl?_encoding=UTF8&qid=1577041764&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=ad42c45b1e6e77d9dbdac10047b6a952&language=en_US)
+
+I thoroughly enjoyed [The Phoenix Project](https://www.amazon.com/Phoenix-Project-Helping-Business-Anniversary/dp/B00VATFAMI/ref=as_li_ss_tl?_encoding=UTF8&qid=1577041764&sr=8-2&linkCode=ll1&tag=rbersblog-20&linkId=d8fa54783a307be5e69b3413f529fb58&language=en_US). I expected more in this one, and it _almost_ delivers. I would have liked it somewhat better without needing the Rich Hickey/Clojure kool aid. I like functional programming (Scala for ages, learning Haskell) and Lisp in general (it was my second programming language, and I have written Common Lisp and Scheme in the past), but nothing is the end-all-be-all, and if something is, I don't think it's Clojure.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

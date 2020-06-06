@@ -1,0 +1,52 @@
+---
+title: 'Lavaurs algorithm'
+date: 2009-08-11T11:00:00.009+02:00
+draft: false
+tags : [Programming, emacs, PostScript, Fractals, Maths, LISP]
+dropcap: true
+featured_image: "Lavaurs13-1280x800.jpg"
+---
+
+These days I've been busy programming a version of Lavaurs algorithm for the
+idenfication of circle chords: the abstract Mandelbrot set.
+
+The images don't look like much, but the output of the program is nicer: it
+outputs an Encapsulated PostScript file which looks sharper. But when converting
+to `png` with ImageMagick some distortion appeared.
+
+{{< figure src="Lavaurs13-1280x800.jpg" class="fig-wide" caption="Lavaurs chords, depth 13 cutoff">}}
+<div style="text-align: center;">
+{{< figure src="Lavaurs5.jpg" class="fig-40" caption="Lavaurs chords, depth 5">}} 
+{{< figure src="BWLavaurs13.jpg" class="fig-40" caption="Lavaurs chords, depth 13">}}
+</div>
+ 
+You can get the black and white depth 13 PostScript file here
+[here](BWLavaurs13.eps), and the color
+version [here](ColorLavaurs13.eps).
+
+<span class="scaps">Note from 2019: I had to dig quite a bit to locate these two files!</span>
+ 
+{{< figure src="ColorLavaurs13.png" class="fig-wide" caption="Lavaurs chords, depth 13">}} 
+
+{{< figure src="lisplogo_fancy_256.png" class="fig-left-small"
+link="www.lisperati.com/logo.html">}} 
+
+The code is a set of Lisp functions, with
+the main one being recursive. I also have a double-recursive version, but the
+first time I used it I thought I had a problem with the code, and rewrote it.
+It did work, but it is slower. The output is a set of orthogonal circles to
+a main one, set as "clip" in the PostScript file.
+
+<span class="scaps">Note from 2019:</span>A few months after I wrote this post
+and code, [Adam Majewski](https://commons.wikimedia.org/wiki/User:Adam_majewski)
+rewrote big chunks of my Lisp code (with my blessing), making it faster and
+cleaner. You can read about it, and about the Lavaurs algorithm in [this
+wikibook](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/lavaurs).
+Nowadays you can find many implementations of Lavaurs chords, back when I wrote
+mine I think it was the only one freely/easily available. I have recovered my
+original code (unmodified, for my modern shame), you can find it in this
+[gist](https://gist.github.com/rberenguel/384292c739172df8e2f530297e7b50f4).
+
+I am increasingly happier of my last [Christmas postcard &
+tutorial](/2008/12/quick-postscript-programming-tutorial.html), as they forced
+me to learn PostScript programming. Turns out to be more useful than I thought.

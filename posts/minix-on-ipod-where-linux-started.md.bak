@@ -1,0 +1,50 @@
+---
+title: 'Minix on the iPod: where Linux started'
+date: 2010-01-17T00:01:00.002+01:00
+draft: false
+tags : [Linux, iPod]
+---
+
+[![Minix on iPod Touch](http://lh4.ggpht.com/_f3d3llNlZKQ/SzvNldHfyiI/AAAAAAAABrA/r9q9OZuD818/s288/iphone_photo.jpg "Minix on iPod Touch")](http://picasaweb.google.com/RBerenguel/Do#5421152619825449506)
+
+  
+
+This is where Linux started. Minix, from the [bible on operating systems](http://en.wikipedia.org/wiki/Operating_Systems:_Design_and_Implementation). You can easily install it on [minivMac for your iPod](http://berenguel.blogspot.com/2009/11/retro-on-ipod-touch-1-mini-vmac.html), download it from [this link](http://www.minix3.org/previous-versions/Macintosh/) and install the disk image in your iPod as usual. Then, unpack the files inside.  
+
+  
+
+[![Minix on iPod Touch](http://lh4.ggpht.com/_f3d3llNlZKQ/SzvNmZHbOkI/AAAAAAAABrE/-rCr5X5pzIU/s288/iphone_photo.jpg "Minix on iPod Touch")](http://picasaweb.google.com/RBerenguel/Do#5421152635931277890)
+
+  
+Fifteen minutes later...  
+
+[![Minix on iPod Touch](http://lh4.ggpht.com/_f3d3llNlZKQ/SzvNnRc3_dI/AAAAAAAABrI/I5gp7oU9h98/s288/iphone_photo.jpg "Minix on iPod Touch")](http://picasaweb.google.com/RBerenguel/Do#5421152651053628882)
+
+  
+When unpacking is finished, just open the MacMinix app, and Minix will be up and running.  
+  
+
+[![Minix on iPod Touch](http://lh3.ggpht.com/_f3d3llNlZKQ/SzvNn-6QXKI/AAAAAAAABrM/B4SB0wt6ASs/s288/iphone_photo.jpg "Minix on iPod Touch")](http://picasaweb.google.com/RBerenguel/Do#5421152663256456354)
+
+  
+By the way, the username for MacMinix is root, and the password is Geheim! From the information pages:  
+
+**MINIX 1.5 FEATURES**
+
+*   System call compatible with V7 of the UNIX operating system
+*   Full multiprogramming (multiple programs can run at once)
+*   Kernighan and Ritchie compatible C compiler
+*   Shell that is functionally identical to the Bourne shell
+*   Five editors (emacs subset, vi clone, ex, ed, and simple screen editor)
+*   Over 175 utilities (cat, cp, ed, grep, kermit, ls, make, sort, etc.)
+*   Over 200 library procedures (atoi, fork, malloc, read, stdio, etc.)
+*   Spelling checker with 40,000 word English dictionary
+*   Full source code (in C) supplied on diskettes (OS, utilities, libraries)
+*   Easy-to-read manual telling all about MINIX and how to install and use it
+*   Up to 3 simultaneous users on one machine
+*   RS-232 serial line support with terminal emulation, kermit, zmodem, etc.
+*   Runs under Multifinder
+*   Includes support for multiple user windows
+
+You may also be interested in:  
+ParseList(ScrambleList(Relateds(Linux,iPod,Mac)))

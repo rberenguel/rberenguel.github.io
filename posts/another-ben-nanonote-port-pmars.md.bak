@@ -1,0 +1,105 @@
+---
+title: 'Another Ben NanoNote port: pMARS'
+date: 2010-04-11T19:00:00.007+02:00
+draft: false
+tags : [Programming, Linux, NanoNote]
+---
+
+[![Ben Nanonote](http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s400/Composition.png "Ben Nanonote")](http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s1600/Composition.png)  
+
+Screenshot compositing, [made with free software](http://www.mostlymaths.net/2010/04/linux-screenshots-made-easy-shutter.html)  
+  
+
+Since I [bought the Nanonote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html), I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.  
+  
+After [my first successful port](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html) (gnugo), I decided to try something else, and while idling at the train I thought that [pMARS](http://www.koth.org/pmars/), the portable Memory Array [Redcode](http://en.wikipedia.org/wiki/Redcode) Simulator was probably a good bet. If you don't know what I am talking about, you can check [here](http://www.koth.org/). I had just started writing some test warriors, to see if I understood the code, but had too little time to test it working.  
+  
+
+[![](http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s400/DSC_0300.JPG)](http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s1600/DSC_0300.JPG)
+
+And as I thought, pMARS was not as hard as other programs have turned to., but without graphical output, just text based. Enough. What changes are needed?  
+  
+Follow the steps in my [previous tutorial](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html), the changes needed fit in there.  
+  
+The corresponding openwrt Makefile for pMARS should be
+
+> \# Copyright (C) 2008 OpenWrt.org  
+> #  
+> \# This is free software, licensed under the GNU General Public License v2.  
+> #  
+>   
+> include $(TOPDIR)/rules.mk  
+> \## Package name  
+> PKG\_NAME:=pmars  
+> \## Package version we need (to match our download source)  
+> PKG\_VERSION:=0.9.2  
+> \## Release version (don't really needed, just for completeness)  
+> PKG\_RELEASE:=3  
+> \## Name of the file we will download, with the previous package name definitions  
+> PKG\_SOURCE:=$(PKG\_NAME)-$(PKG\_VERSION).tar.gz  
+> \## Url with the PKG\_SOURCE file  
+> PKG\_SOURCE\_URL:=http://downloads.sourceforge.net/project/corewar/pMARS/0.9.2/pmars-0.9.2.tar.gz?use\_mirror=mesh  
+> \## Program to uncompress the sources  
+> PKG\_CAT:=zcat  
+>   
+> include $(INCLUDE\_DIR)/package.mk  
+> \# Definition of the package, for adding to menuconfig and creating the ipkg.  
+> define Package/pmars  
+> TITLE:=Pmars  
+> SECTION:=games  
+> CATEGORY:=Games  
+> URL:=  
+> endef  
+> \# Directory where the sources will be uncompiled and built BUILD\_DIR  
+> \# is an env variable from the OpenWrt toolchain, you don't need to set  
+> \# it.  
+> PKG\_BUILD\_DIR:=$(BUILD\_DIR)/pmars-$(PKG\_VERSION)  
+> \# Long description of the package  
+> define Package/pmars/description  
+> PMARS  
+> endef  
+> \# If ./configure does not need any options, leave it as follows  
+>   
+> define Build/Prepare  
+> $(call Build/Prepare/Default)  
+> $(CP) $(PKG\_BUILD\_DIR)/src/\* $(PKG\_BUILD\_DIR)/  
+> endef  
+>   
+> define Package/pmars/Build/Configure  
+> $(call Build/Configure/Default)  
+> endef  
+>   
+> define Package/pmars/Build/Compile  
+> $(call Build/Compile/Default)  
+> endef  
+>   
+> \# Where will be copied the binaries and libraries after installation.  
+> define Package/pmars/install  
+> $(INSTALL\_DIR) $(1)/usr/sbin  
+> $(INSTALL\_BIN) $(PKG\_BUILD\_DIR)/pmars $(1)/usr/sbin/  
+> endef  
+> \# Final step for bulding the package  
+> $(eval $(call BuildPackage,pmars))
+
+And for it to work, you need to make some static patches to the Makefile in the src directory of the pmars package. Change the compiler for  
+
+> CC = mipsel-openwrt-linux-uclibc-gcc
+
+and the compiler and linker flags for  
+
+> CFLAGS = -O -DEXT94 -DPERMUTATE  
+> LFLAGS = -x
+
+And remove (or comment) this line:  
+
+> @strip $(MAINFILE)
+
+I hope you enjoy your Linux portable freedom, and write nice warriors to compete in [The Hill](http://www.koth.org/). I will look into making a graphical version, although it looks quite hard in such a small window. If you have any question, don't hesitate to post a comment or send me an e-mail.  
+
+  
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Nanonote ports: Yacas, 4th (forth compiler and interpreter)](http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [My first port to the Ben NanoNote: gnugo](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Unpacking my Ben NanoNote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Gcal: the ultra-powerful command line GNU calendar](http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html)  
+ParseList(ScrambleList(Relateds(Linux, Programming)),10)

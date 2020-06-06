@@ -1,0 +1,87 @@
+---
+title: 'The 100 most common words in Icelandic, automatically generated from Wikipedia'
+date: 2010-05-20T14:00:00.004+02:00
+draft: false
+tags : [Programming, Trips, Islensk, Iceland, Bizarre]
+dropacp: true
+affiliate: true
+---
+_The file can be downloaded at the end of the post_
+
+As you may already know, [I'm travelling to Iceland this
+July](http://www.mostlymaths.net/2010/08/things-you-should-read-before.html),
+and started learning Icelandic a few months ago. It advances slowly but firmly,
+but I found a problem:when you are self-learning a new language, an invaluable
+tool is a list of most common words. <!--more--> I was able to find the 100 most
+common words, from a research paper ([Íslenskur Orðasjóður - Building a large
+icelandic
+corpus](http://wortschatz.uni-leipzig.de/%7Ecbiemann/pub/2007/IcelandicNODALIDA07.pdf)).
+I don't want to dismiss their results, but for a published paper you can't count
+twice `Hann` and `hann`, or count `f.` as a word, I think. However, they explain
+the procedure in the paper, and it looks pretty good. Just that the list they
+give leaves a little to be desired, and I could not find a way to use the corpus
+they generated to get the frequency list.
+  
+I decided to do something different. First I thought of sampling a lot of
+Icelandic data (online news and such), but I didn't want to waste that much
+time, so I downloaded
+[**is.wikipedia.org**](http://is.wikipedia.org/wiki/Fors%C3%AD%C3%B0a). A meagre
+42Mb of compressed data. Well, it could be even smaller, if I was the one
+sampling it.The article sampled 142Gb, in comparison. Truly an amazing corpus!
+
+
+After I had the data, I wrote a small script that moved all html files to the same directory:  
+
+```bash
+#/bin/bash  
+# Navigate through directory tree and copy all html files here
+for FILE in $(find ./ -name \*.html -type f); do
+    mv $FILE ./
+done
+```
+
+My idea was then to [cat](http://en.wikipedia.org/wiki/Cat_%28Unix%29) all these
+files into one big html file, and then do word frequency analysis there.
+Problem: cat \*.html > file does not work: \*.html yielded too many results
+(around 60 thousand, I think). Instead of writing a script (the solution I
+should have used) I just cat-ed every letter as in `cat A\*.html > is-a.dat`. I
+should have used a script similar to the one I created for the [Christmas
+postcard](http://www.mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html):
+
+```bash
+for i in \`seq 1 $FILES\`;
+do  
+    let NUM=$i\*$COLUMNS
+    ls \*.jpg | head -n $NUM | tail -n $COLUMNS F$i
+done
+```
+
+This is the original code. In the file `F$i` I would have a list of all files I
+need to `cat` together. Anyway, I did it by hand. On my way to the end file, I
+found several letter combinations (`Fokkur` which means Categories, for instance)
+with a lot of pages, which `cat` also could not manage. (I think the problem was
+the shell, more than `cat`) I removed them, because the `Categories` page could have a
+strong bias towards certain words.
+
+  
+Once I had this really big `WPislenska.dat` file, it was just standard command
+line tricks (which I got from the [Linux
+Cookbook](http://dsl.org/cookbook/cookbook_16.html)) (where `/lt` and `/gt` stand
+for `<>`)
+
+```bash
+tr ' ' \[return\]
+  '' /lt WPislenska.dat | sort | uniq -c | sort -g -r /gt IslenskaWF-FromWP.dat
+```  
+
+This turns spaces into returns, sorts alphabetically, counts unique words and
+orders in decreasing frequency order.
+
+Now `IslenskaWF-FromWP.dat` contains word-frequency counts for data from this
+Wikipedia dump. The next step was the maddening one: removing all html entities,
+wikipedia words (like page, visitors, users...) and find the English
+translation, via [Wiktionary](http://www.wiktionary.org/), my [Icelandic
+dictionary](http://www.amazon.com/gp/product/0870528017?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0870528017), my [Icelandic learning course](http://www.amazon.com/gp/product/0071420258?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0071420258) and [Ubiquity](https://mozillalabs.com/ubiquity/).
+
+The final result is this file, with the [100 most common words in Icelandic's
+Wikipedia](Islenska100.txt).

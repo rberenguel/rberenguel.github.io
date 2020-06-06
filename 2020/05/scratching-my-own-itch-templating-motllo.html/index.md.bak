@@ -1,0 +1,140 @@
+---
+title: "Scratching my own itches: templating with motllo"
+date: 2020-05-03T21:30:33+02:00
+draft: false
+dropcap: true
+affiliate: false
+featured_image: "motllo.gif"
+tags : [Open source, Python, Data engineering]
+---
+
+I have been working on several personal projects lately. Basically scratching
+projects itching on my to do lists for several months. This is the first write
+up from them: templating without base repositories.
+
+<!--more-->
+
+These days I have been ignoring my to do list, my reading, most other things I
+usually do, but have finally managed to finish several projects I've had in the
+back burner for many months. This is the first I document:
+[motllo](https://github.com/rberenguel/motllo).
+
+This is kind of a particular project: there are already many ways of solving
+this problem: templates for full projects.
+
+Some other options would include [Github template
+repositories](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository),
+[cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) in Python, or
+[giter8](http://www.foundweekends.org/giter8/) in Scala,
+[yeoman](https://yeoman.io) in node.js. There are probably many others. For me,
+though, they all share a flaw: _they require a full repository for the template_
+(or in the case of yeoman, an `npm` package). 
+
+Think about that last phrase, it's like needing a house to build a house,
+needing a car to build a car. That's not how things works: you need a document
+that tells you how to build something. Blueprint was taken, so I called the
+project _motllo_, which is mould in Catalan. Pretty close to the idea: you don't
+use a cookie to shape a cookie either.
+
+What does it do?
+
+- It converts a folder into a Markdown document with a special layout
+- Parses such a Markdown document and creates a tree folder structure.
+
+It also respects `.gitignore` files and can accept replacement arguments. It is
+under active development, but the main idea and the file format are going to be
+stable for the foreseeable future.
+
+Here is an example, embedded as an image (you can open it inside GitHub as text
+[here](https://github.com/rberenguel/motllo/blob/master/examples/python_cli.md)).
+This is because I can't embed the template, my blog engine would render the
+Markdown and it would look weird.
+
+{{< figure src="python_cli_motllo.png" class="fig-wide" caption="[Template for a basic Python CLI tool](https://github.com/rberenguel/motllo/blob/master/examples/python_cli.md)">}}
+
+This is a basic, fully functional template that will create the structure needed
+for a basic Python project with Poetry and Click set up and ready. It also shows
+how you can use replacements to modify the final tree, and one interesting pot;
+that you can annotate the code: anything which is not code in a block is
+ignored.
+
+You would convert this into the corresponding folder by running
+
+```bash
+motllo build PATH_TO/python_cli.md -o SOME_COOL_PATH -r "project_name:awesome-new-project" --commit
+```
+
+Without `--commit` you would only get a dry-run version, explaining what and
+where would be created.
+
+The reverse process, generates such a file from a folder and can be done with
+
+```bash
+motllo markdown . -o some_markdown.md
+```
+
+Here you can see an animated gif (from the repository)
+
+{{< figure src="motllo.gif" link="motllo.gif" class="fig-wide" caption="Animated gif with a simple template (click to open)">}}
+
+
+## How does it work?
+
+On one side we have:
+
+- A replica of UNIX's tree (based on a [Stack Overflow
+  answer](https://stackoverflow.com/a/59109706) by [Aaron
+  Hall](https://twitter.com/aaronchall))
+- An in-memory tree based on classes mimicking the API from
+  [pathlib](https://docs.python.org/3.7/library/pathlib.html)
+- A map from file extensions (like `.py`, `.scala`) to full name (`python`,
+  `scala`)
+- Glue code to simplify testing and smooth some bumps. And a CLI using
+  [Click](#)(https://click.palletsprojects.com/en/7.x/)
+
+On the other side
+
+- A partial markdown parser based on [parser
+combinators](https://en.wikipedia.org/wiki/Parser_combinator) (stolen from
+[bear-note graph](https://github.com/rberenguel/bear-note-graph/), where the
+parsing is more thorough)
+- A parser for the output. _This was a pain in the ass_
+- Some more glue
+
+Note that the Markdown parsing for this project is relatively small, I didn't
+need a complex parser and could have done with a plain old descent parser. But I
+already had written the combinators for that other project, so I could as well
+just use it. Aside from the parser combinators (which I will cover in some other
+post) most of the complexity lies in parsing the tree and being able to test it.
+
+For the first, well, a lot of print statements, patience, and having the second
+solved. For the second, I wrote a set of classes that mimic `Path` objects from
+pathlib, in such a way that we can test `folder` → `tree` → `folder` is
+idempotent.
+
+There are also generative tests `folder` → `markdown` → `folder`, that confirm
+the system is idempotent and generating a markdown file from a project can
+regenerate the full project (well, that's as long as there is no markdown in
+your files).
+
+The parser blocks were quite thoroughly tested in [bear-note
+graph](https://github.com/rberenguel/bear-note-graph/) so here I just
+copy-pasted parts of the tests, with the idea of eventually moving the parser to
+its own library.
+
+## Do you use it?
+
+Hell yeah. The day after publishing I used the example to bootstrap another CLI
+tool. Works well, and having a starting base of a project has already been
+better than my usual "start with empty editor and visit bpython in the terminal
+frequently".
+
+Since it tries to be safe to use, by expecting you to actually commit to create
+the output, I think it's a pretty good way to add common "code patterns" to a
+project (like, frequently used, similar DAGs for
+[Airflow](https://airflow.apache.org)). It also ties to log as much as possible
+to make sure it will do what you want, so it should never surprise you.
+
+If you find any issues, please file them on
+[GitHub](https://github.com/rberenguel/motllo). Feature requests (and pull
+requests) welcome.

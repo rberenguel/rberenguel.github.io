@@ -1,0 +1,95 @@
+---
+title: '2019#15 Readings of the week'
+date: 2019-06-04T20:34:00.001+02:00
+draft: false
+tags : [ReadingsOfTheWeek, Apache Spark, Data, AWK, Python, Scala, Rust, ZIO, Big data]
+dropcap: true
+affiliate: true
+featured_image: "TGNS153genome.jpg"
+---
+
+Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+<!--more-->
+
+{{< figure src="TGNS153genome.jpg" class="fig-wide" caption="[Tom Gauld (for New Scientist, from his blog, sorry!)](https://www.tomgauld.com/)">}}
+
+[Hacking the Casio F-91W to Handle 1000+ PSI](https://dvt.name/2019/06/03/hacking-the-casio-f-91w-to-handle-1000-psi/)
+----------------------------------------------------------------------------------------------------------------------
+
+This was an amusing find. I wonder where my F-91 is.
+
+[The Day You Became a Better Writer (2nd Look)](https://blog.dilbert.com/2015/08/22/the-day-you-became-a-better-writer-2nd-look/)
+---------------------------------------------------------------------------------------------------------------------------------
+
+Top notch, short and sweet writing tips by Scott Adams (of Dilbert fame)
+
+[Rebuffing the Attack of the Clones](https://thenewwazoo.github.io/clone.html)
+------------------------------------------------------------------------------
+
+I’m guilty of unnecessary cloning. Shame, shame.
+
+[Generating geometric image placeholders client-side](https://decentium.org/x/almstdigital/generating-ge)
+---------------------------------------------------------------------------------------------------------
+
+Neat! I had written something similar in C [a long time ago](https://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html). It was slow! This is blazingly fast.
+
+[Behavioral Ad Targeting Not Paying Off for Publishers, Study Suggests](https://www.wsj.com/articles/behavioral-ad-targeting-not-paying-off-for-publishers-study-suggests-11559167195)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is surprising. I’d expect CPM to be higher for high value programmatically bid users.
+
+[The Embroiderer's Story: Hand Skills](http://thistle-threads.blogspot.com/2019/05/hand-skills-doctors-of-sewing-needed.html)
+-----------------------------------------------------------------------------------------------------------------------------
+
+An unexpected consequence of the digitalisation of our leisure
+
+[No frills data warehousing with dbt](http://tamaszilagyi.com/blog/2019/2019-03-05-dbt/)
+----------------------------------------------------------------------------------------
+
+I’ve been considering this tool (the open source one, not the cloud offering, I have Airflow for that) for a while.
+
+[Why I'm Stepping Back from Scalaz (John De Goes)](http://degoes.net/articles/zio-solo)
+---------------------------------------------------------------------------------------
+
+A very well reasoned writing. I’m all for ZIO.
+
+[Apache Flink: Flux capacitor, huh? Temporal Tables and Joins in Streaming SQL](https://flink.apache.org/2019/05/14/temporal-tables.html)
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+I don’t use Flink, but it’s there, staring at me.
+
+[Using Poetry in production](https://bmwlog.pp.ua/post/using-poetry-in-production)
+----------------------------------------------------------------------------------
+
+It sounds powerful in combination with my dear [pyenv](https://www.github.com/pyenv/pyenv).
+
+[How I run a company with ADHD](https://www.andrewaskins.com/how-i-run-a-company-with-adhd/)
+--------------------------------------------------------------------------------------------
+
+I somehow can relate, I wonder why OH HEY A SQUIRREL
+
+[CQL: A categorical query language](https://www.categoricaldata.net/)
+---------------------------------------------------------------------
+
+The categorical hype rises. I’d like to see scheme-based data analysis at some point (that could be a thing at some point, schemes as in generalized algebraic manifolds)
+
+[📚 Baking with Kafka](https://www.amazon.com/Baking-Kafka-Tom-Gauld/dp/1770462961/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=291411f7971e475e08fbf060b1ddb007)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+An amusing book by cartoonist Tom Gauld.
+
+[🎥 Crossing the River by Feeing the Stones](https://skillsmatter.com/skillscasts/13456-keynote-simon-wardley)
+--------------------------------------------------------------------------------------------------------------
+
+I've been doing Wardley maps for close to a month, and they have been really influential in how I approach a lot of things. I will be giving a short introduction to them this weekend at [SoCraTesUK 2019](http://socratesuk.org/), if you are there say hello (and I'll post the slides soon)
+
+[AWKrdeck: Deckset to Reveal.js](https://github.com/rberenguel/awkrdeck)
+------------------------------------------------------------------------
+
+I wrote a simple converter from [Deckset](http://deckset.com/) style presentations to similarly-themed [Reveal.js](http://revealjs.com/) presentations using some AWK and Pandoc.
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

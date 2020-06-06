@@ -1,0 +1,18 @@
+---
+title: 'Wolfram Alpha'
+date: 2009-06-07T11:00:00.003+02:00
+draft: false
+tags : [Programming, LISP]
+dropcap: true
+featured_image: "Picture.png"
+---
+
+[Stephen Wolfram](http://en.wikipedia.org/wiki/Stephen_Wolfram) (owner of [Wolfram Research](http://en.wikipedia.org/wiki/Wolfram_Research)) has released (after announcing it in March) [Wolfram Alpha](http://en.wikipedia.org/wiki/Wolfram_Alpha), a kind of web search aimed at natural language and intelligent answers. [JME](http://ripero.wordpress.com/) pointed me to this question:
+
+{{< figure src="Picture.png" class="fig-wide" caption="Taken from [Wolfram Alpha](http://en.wikipedia.org/wiki/Wolfram_Alpha)">}}
+
+
+The strange thing about it is that is is fully written in Mathematica (or so
+they say, 5 million lines of code). Strange indeed, Mathematica isn't a
+particularly fast or "comfy" programming language. I bet someone could write a
+LISP version of it in half that lines... without word-wrapping ;)

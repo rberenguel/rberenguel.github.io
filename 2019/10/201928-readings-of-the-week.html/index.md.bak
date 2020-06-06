@@ -1,0 +1,106 @@
+---
+title: "2019#28 Readings of the Week"
+date: 2019-10-19T13:06:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "bread.jpg"
+tags : [Data engineering, Rust, Bread, Agile, ReadingsOfTheWeek]
+---
+
+This is a slightly longer edition because my reading list was overflowing with
+400+ articles. I “trimmed” it down to “only” 380 during this week, I had a lot
+of airport time due to going to [Spark Summit
+Europe](https://databricks.com/sparkaisummit/europe) to give a talk.
+
+<!--more-->
+
+{{< figure src="bread.jpg" class="fig-wide" caption="Photo by  [Wesual Click](https://unsplash.com/@wesual?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  on  [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) ">}}
+
+
+**NOTE**: The themes are varied, and some links below are affiliate links. Bread
+making, a lot of data engineering, Rust, Agile. Expect a similar wide range in
+the future as well. You can check all my weekly readings by checking the [tag
+here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also
+get these as a weekly newsletter by subscribing
+[here](http://eepurl.com/geFw7P).
+
+## [Blues jamming and Agile](https://hackernoon.com/blues-jamming-and-agile-d78ca4aa9267)
+I found it an interesting coincidence: I started attending a Blues Harmonica
+course recently, and the example used in this post is exactly about that.
+
+## [A linguistic introduction to d3.js](https://medium.com/free-code-camp/a-linguistic-introduction-to-d3-js-7a40a980bf97)
+D3 is super powerful. You wouldn’t go wrong by learning to use it (and I would
+be right in getting my knowledge back, haven’t written any in 4 years)
+
+## [Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
+It’s always convenient to remember that SQLite is more powerful than you think
+
+## [Copernicium Is A Strange Element Indeed](https://blogs.sciencemag.org/pipeline/archives/2019/10/11/copernicium-is-a-strange-element-indeed)
+This was way more interesting than expected.
+
+## [Do-nothing scripting: the key to gradual automation](https://blog.danslimmon.com/2019/07/15/do-nothing-scripting-the-key-to-gradual-automation/)
+I like the idea, it feels philosophically similar to how I automate stuff.
+
+## [How Query Optimizer Works in RDBMS](https://www.pixelstech.net/article/1555763094-How-Query-Optimizer-Works-in-RDBMS)
+I love this stuff.
+
+## [Modeling adversaries with TLA+](https://hillelwayne.com/post/adversaries/)
+I may have shared this one before. It’s still great.
+
+## [Why Not Airflow?](https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4)
+From the [Prefect](https://www.prefect.io) creators, a list of problems with
+Airflow. They may be slanted for their own tool, but can’t disagree with their
+issues with Airflow, as an Airflow user. I want to try Prefect next, just in
+case. Airflow is... not it.
+## [Rust in Avast](https://vorner.github.io/2019/05/19/rust-in-avast.html)
+I have some proof-of-concept Rust code that is miles faster than equivalent (but
+unoptimized) Python code. I want to move it forward soon-ish.
+
+## [Privacy Preserving Ad Click Attribution For the Web](https://webkit.org/blog/8943/privacy-preserving-ad-click-attribution-for-the-web/)
+I work in adtech, and as such I need to keep up with everything. This looks
+convoluted, but privacy preserving. Good enough?
+
+## [Scrum is fragile, not Agile](http://www.dennisweyland.net/blog/?p=43)
+I agree with the fragile statement, but not the arguments. Disagree with
+agility. I’ll explain my reasoning “soon”.
+
+## [An Elite Athlete’s Real-Life Training Plan](https://www.nytimes.com/2019/07/09/well/move/leadville-katie-arnold-ultramarathon-training-parenthood.html)
+This can be applied to anything: if you can make your “unproductive” or
+“unrelated” moments part of your goal, you are almost there.
+## [Oliver Byrne: The Matisse of Mathematics](https://www.maa.org/press/periodicals/convergence/oliver-byrne-the-matisse-of-mathematics-byrnes-euclid-geometry-understood-via-color-coded-diagrams)
+I haven’t read Byrne’s Euclid, but it sits happily in my shelf. It’s a beautiful
+book to peruse. And the drop capitals you see here are from it.
+
+## [Why I Recommend My Clients NOT Use KSQL and Kafka Streams](https://www.jesse-anderson.com/2019/10/why-i-recommend-my-clients-not-use-ksql-and-kafka-streams/)
+I have always had an attraction-repulsion with KSQL/streams. I think either
+Flink or Spark are better suited for this.
+
+## [Flour power: meet the bread heads baking a better loaf](https://www.theguardian.com/food/2019/oct/10/flour-power-meet-the-bread-heads-baking-a-better-loaf)
+My partner used to prepare sourdough bread twice a week (our sourdough died 3
+times so we have stopped for a while).
+
+## [Learning Parser Combinators With Rust](https://bodil.lol/parser-combinators/)
+Beware this is somewhat long, but you’ll learn a lot about Ps and Cs, and the F
+and M word will appear as well. Highly recommended (if you prefer an Scala
+approach, you could get an idea with this one)
+## [“Oh, you’re a data… something?”: The Misunderstood Role Of A Data Engineer](https://medium.com/ssense-tech/oh-youre-a-data-something-the-misunderstood-role-of-a-data-engineer-5856a216f240)
+It’s hard to explain...
+
+## [The Rise of the Data Engineer](https://medium.com/free-code-camp/the-rise-of-the-data-engineer-91be18f1e603)
+... and long to explain.
+
+## 🔊 [Dreaming in Code](https://www.amazon.com/Dreaming-Code-Programmers-Transcendent-Software-dp-B00AQ5DOCA/dp/B00AQ5DOCA/ref=as_li_ss_tl?_encoding=UTF8&me=&qid=1571479667&linkCode=ll1&tag=rbersblog-20&linkId=6af2de79e57a5c83760e31f870b780f7&language=en_US)
+An entertaining audiobook about a failed project. The name dropping of people
+involved and related is astounding.
+
+## 📽 [Internals of Speeding PySpark with Arrow](https://github.com/rberenguel/pyspark-arrow-pandas)
+Talk I gave this Wednesday at [Spark Summit
+Europe](https://databricks.com/sparkaisummit/europe). It looks like people liked
+it, but of course only people that liked it say so, survivorship bias?
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking [here](http://eepurl.com/geFw7P).

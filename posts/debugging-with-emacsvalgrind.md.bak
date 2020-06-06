@@ -1,0 +1,86 @@
+---
+title: 'Debugging with emacs+valgrind'
+date: 2010-02-28T20:37:00.003+01:00
+draft: false
+tags : [Programming, emacs, Linux, Maths]
+---
+
+The easiest way to debug: _valgrind_ with the most powerful text editor: _emacs_
+--------------------------------------------------------------------------------
+
+[![Emacs and valgrind](http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s400/valgrindemacs.png "Emacs and valgrind")](http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s1600-h/valgrindemacs.png)A few days ago my office mate told me about the great debugging tool known as [valgrind](http://valgrind.org/). Before I have been using the great pairing of [emacs](http://www.gnu.org/software/emacs/)+[gdb](http://www.gnu.org/software/gdb/) to debug segmentation faults and memory leaks... Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.
+
+How to use valgrind?  
+
+Consider the following C code (where I have omitted the include statements), I'll assume it is in SegFault.c In fact, this code would not yield a segmentation fault as it is, at least without some compilation tweaking.  
+
+> int main(void){  
+> int i; double \*vector1, \*vector2;  
+> vector1=(double\*)malloc(3\*sizeof(double));  
+> vector2=(double\*)malloc(4\*sizeof(double));  
+> for(i=0;i<3;i++)vector1\[i\]=sin(i);  
+> for(i=0;i<4;i++)vector2\[i\]=cos(i);  
+> for(i=0;i<4;i++)printf("sin(%d): %7.7lf cos(%d): %7.7lf\\n",i,vector1\[i\], i, vector2\[i\]);  
+> free(vector1);  
+> return 0;}
+
+You can see that this code has several errors. First, when allocating vector1 we only ask for 3 doubles, when we really need 4, and we don't free vector2. Although these two errors, the output of the program at least is not segmentation fault. But these kind of errors, when accumulated, lead to pervasive segmentation faults, quite difficult to locate via gdb. The output of the program is:
+
+> sin(0): 0.0000000 cos(0): 1.0000000sin(1): 0.8414710 cos(1): 0.5403023sin(2): 0.9092974 cos(2): -0.4161468sin(3): 0.0000000 cos(3): -0.9899925
+
+Valgrind comes to the rescue! First, we need to compile with source flags:  
+
+> gcc SegFault.c -lm -g -o SegFault.x -Wall
+
+And now execute this via valgrind. Valgrind acts as a virtual processor, thus keeping trace of memory accesses and the like, at a time penalty. You should use it only to find errors, not every time.
+
+> valgrind ./SegFault.x
+
+Valgrind's output for this example is  
+
+> \==24585== Memcheck, a memory error detector.  
+> \==24585== Copyright (C) 2002-2008, and GNU GPL'd, by Julian Seward et al.  
+> \==24585== Using LibVEX rev 1884, a library for dynamic binary translation.  
+> \==24585== Copyright (C) 2004-2008, and GNU GPL'd, by OpenWorks LLP.  
+> \==24585== Using valgrind-3.4.1-Debian, a dynamic binary instrumentation framework.  
+> \==24585== Copyright (C) 2000-2008, and GNU GPL'd, by Julian Seward et al.  
+> \==24585== For more details, rerun with: -v  
+> \==24585==sin(0): 0.0000000 cos(0): 1.0000000sin(1): 0.8414710 cos(1): 0.5403023sin(2): 0.9092974 cos(2): -0.4161468==24585== Invalid read of size 8  
+> \==24585== at 0x8048587: main (SegFault.c:12)  
+> \==24585== Address 0x41c9040 is 0 bytes after a block of size 24 alloc'd  
+> \==24585== at 0x4026FDE: malloc (vg\_replace\_malloc.c:207)  
+> \==24585== by 0x8048501: main (SegFault.c:8)sin(3): 0.0000000 cos(3): -0.9899925  
+> \==24585==  
+> \==24585== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 13 from 1)  
+> \==24585== malloc/free: in use at exit: 32 bytes in 1 blocks.  
+> \==24585== malloc/free: 2 allocs, 1 frees, 56 bytes allocated.  
+> \==24585== For counts of detected errors, rerun with: -v  
+> \==24585== searching for pointers to 1 not-freed blocks.  
+> \==24585== checked 55,932 bytes.  
+> \==24585==  
+> \==24585== LEAK SUMMARY:  
+> \==24585== definitely lost: 32 bytes in 1 blocks.  
+> \==24585== possibly lost: 0 bytes in 0 blocks.  
+> \==24585== still reachable: 0 bytes in 0 blocks.  
+> \==24585== suppressed: 0 bytes in 0 blocks.  
+> \==24585== Rerun with --leak-check=full to see details of leaked memory.
+
+Et voilà! Line number of exactly where memory access was out of bounds. What else could we ask for? Of course, emacs.
+
+You can call valgrind from emacs, inside an emacs shell buffer (M-x shell, then you are working in an usual shell), but you would like to visit the exact line in your code somewhat. Probably through either keyboard or mouse click. It turns out (I found it [here](http://tromey.com/blog/?p=342) while googling for a way to use valgrind via emacs) you can use compilation-minor-mode to do that... (M-x compilation-minor-mode), the problem then is that the return key gets mapped to compile-goto-error (i.e. you go to the line in the source with return), thus the terminal buffer no longer works as there is no way to send it commands. To solve this, I wrote this small piece of code and added to my .emacs:
+
+  
+
+> (defun valgrind ()  
+> (interactive)  
+> (compilation-minor-mode)  
+> (define-key compilation-minor-mode-map (kbd "")'comint-send-input)  
+> (define-key compilation-minor-mode-map (kbd "S-")'compile-goto-error))  
+>   
+> (add-hook 'shell-mode-hook 'valgrind)
+
+  
+
+Now when I start a shell window from within emacs, the function valgrind I defined is automatically loaded, starts compilation-minor-mode and redefines the return and shifted-return keys as I wanted. Now return works as usual in shell buffers, and shift-return visits error at point.I also made this function interactive (thus you can call it as M-x valgrind), in case I decide to remove the hook.
+
+You may be also interested in:ParseList(ScrambleList(Relateds(Linux,Programming,emacs)),15)

@@ -1,0 +1,48 @@
+---
+title: 'Vladimir Arnol''d one of the greatest mathematicians of 20th century'
+date: 2010-06-14T18:00:00.001+02:00
+draft: false
+tags : [Thoughts, Maths, Books]
+---
+
+Most of you may not know who [Vladimir Arnold](http://en.wikipedia.org/wiki/Vladimir_Arnold) (Владимир Арнольд, also written as Vladimir Arnol'd) was, but for me his death on 3rd June 2010,was some kind of landmark. I own two books by him (Mathematical aspects of classical and celestial mechanics [\[1\]](http://www.blogger.com/post-edit.g?blogID=13497321&postID=6408547528348283485#References) and Mathematical methods of classical mechanics [\[2\]](http://www.blogger.com/post-edit.g?blogID=13497321&postID=6408547528348283485#References)), and are quite high in my list of most checked books, at least when I was starting my journey into the realm of dynamical systems.  
+  
+Arnol'd is one of the few mathematicians to give his name to a theory: Andrey Kolmogorov (Андрей Колмогоров) and Jürgen Moser share with him being part of KAM theory. And this theory traces back to the [KAM Theorem](http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold%E2%80%93Moser_theorem).  
+  
+An integrable system is a dynamical system such that there is a way to see all trajectories as nested tori in the phase space. Think for example of the system generated when you take two bodies and apply Newton's laws of motion: trajectories of the particles follow ellipses (skip some details here) which can be thought as tori in the plane.  
+  
+KAM theory studies what happens to these tori when you perturb the system: for example, you add a third planet to this. The answer was not clear... Maybe all were broken? How many were left? Kolmogorov had the original idea, and Arnol'd proved all analytical details it in one case, and Jürgen Moser proved another case, using John Nash's implicit function theorem.  
+  
+This may sound uninteresting... but it has deep implications. A classical question: is the solar system stable? I.e. if you are given a fast-forward controller and start advancing the time, will the planets keep on rolling around... or at some moment will all fall into the Sun (or escape from the solar system)? This is just one of the settings where this applies. Deep physics problems.  
+  
+Arnol'd had a very geometrical view of mathematics. If you take any of his books you will see his geometrical vision. Just as an example, his Lectures In Partial Differential Equations [\[3\]](http://www.blogger.com/post-edit.g?blogID=13497321&postID=6408547528348283485#References) show more geometrical ideas than in any other book I have read on PDE's (and I have at least leafed through a few of these). He also disliked the formalisation and alienation from physics that [started in France in the 50's](http://en.wikipedia.org/wiki/S%C3%A9minaire_Nicolas_Bourbaki), he said  
+
+> Mathematics is a part of physics. Physics is an experimental science, a part of natural science. Mathematics is the part of physics where experiments are cheap.  
+> 
+> [On teaching mathematics, V.I. Arnol'd, 1997 (talk)](http://pauli.uni-muenster.de/%7Emunsteg/arnold.html)  
+
+Following this, in the preface to Arnold's problems, he says  
+
+> I would wish the reader not to be held back by the fact that such applications are not evident at the beginning: if a result is truly beautiful then it will certainly be of use in due course!  
+> 
+> Arnold's problems, V.I. Arnol'd [\[4\]](http://www.blogger.com/post-edit.g?blogID=13497321&postID=6408547528348283485#References)  
+
+He also chose examples in quite a funny way. See [the Arnol'd cat map](http://en.wikipedia.org/wiki/Arnold%27s_cat_map), for instance. He even drew a cat's sketch to show how an area preserving dynamical system works (it can be found in [\[1\]](#References) or [\[2\]](#References)).  
+  
+He was also a fighter for his beliefs. He thought people should be judged on their merits, and not on other things, and as such wrote several letters criticising the persecution of dissidents and discrimination. And as a reward, he could not leave the URSS until the perestroika years.  
+  
+A funny thing I didn't know about him, is that when he was stuck with a problem he didn't know how to solve, he would ski for 20 or 25 miles wearing nothing but swimming shorts. Or at least that is what one of his former students, Yuli Ilyashenko (Юли Иляшенко) said, as it appears in [this Times obituary](http://www.nytimes.com/2010/06/11/science/11arnold.html). And this January I've had the pleasure of attending a course given by him, and he doesn't look like making this up.  
+  
+I feel ashamed he didn't get an [Abel prize](http://en.wikipedia.org/wiki/Abel_prize) prior to his death.  
+
+References (these are Amazon Affiliate links, I get a small fee if someone buys in Amazon using these links):
+
+*   \[1\] [Mathematical Aspects of Classical and Celestial Mechanics](http://www.amazon.com/gp/product/3540282467?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540282467)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=3540282467)
+*   \[2\] [Mathematical Methods of Classical Mechanics](http://www.amazon.com/gp/product/0387968903?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0387968903)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=0387968903)
+*   \[3\] [Lectures on Partial Differential Equations (Universitext)](http://www.amazon.com/gp/product/3540404481?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540404481)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=3540404481)
+*   \[4\] [Arnold's Problems](http://www.amazon.com/gp/product/3540207481?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540207481)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=3540207481)
+
+  
+
+  
+ParseList(ScrambleList(Relateds(Programming)),0)

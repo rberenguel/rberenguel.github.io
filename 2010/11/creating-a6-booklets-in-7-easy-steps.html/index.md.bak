@@ -1,0 +1,124 @@
+---
+title: 'Creating A6 Booklets in 7 Easy Steps'
+date: 2010-11-17T00:13:00.001+01:00
+draft: false
+tags : [LaTeX, Books]
+affiliate: true
+dropcap: true
+featured_image: "A6Booklet5.JPG"
+---
+
+A few weeks ago I realised that I didn't have a printed copy of [Sun Tzu's Art
+of
+War](https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&qid=1566751724&s=gateway&sr=8-3&linkCode=ll1&tag=rbersblog-20&linkId=7ba78e7bea92ff3a5828022f23de2d47),
+and this thought collided head on with another old thought I had: _could I use
+`pdfpages` to create A6 booklets?_ I use it frequently to turn my papers into
+handy A4 booklets (a few A4 folded in half), butI did not know if I could do it
+another time to generate A5 booklets, or even another time to get a small and
+nice A6 booklet
+<!--more-->
+
+{{< figure src="A6Booklet5.JPG" class="fig-not-so-wide">}}
+
+As these two thoughts collided, I decided that the best way to check was to use
+as base PDF [The Art of
+War](https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&qid=1566751724&s=gateway&sr=8-3&linkCode=ll1&tag=rbersblog-20&linkId=7ba78e7bea92ff3a5828022f23de2d47),
+a book available through [The Project
+Gutenberg](http://www.gutenberg.org/ebooks/132). I formatted it as a LaTeX ebook
+with custom sizes (to get readable fonts) and compiled using the fantastic and
+powerful `memoir` class. I'll give the details of how to create ebooks with
+LaTeX later this year or in the beginning of the next. I also did the same to
+Arnold Bennett's [How to Live on 24 Hours a
+Day](https://www.amazon.com/How-Live-Twenty-Four-Hours-Day/dp/1545469881/ref=as_li_ss_tl?crid=3O729KMSUATL0&keywords=how+to+live+on+24+hours+a+day&qid=1566751800&s=gateway&sprefix=how+to+live+on+,aps,217&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=f6e41a390369ff97d2c1f7c879817a12).
+
+
+You'll need three TeX files, based on the one I already used in [How to Create
+LaTeX Booklets](/2008/09/latex-booklets.html). You can refer to that page if
+there is something missing in here. These files will turn the PDF successively
+into 2-pages per sheet to 4-pages per sheet to the final 8-pages per sheet
+printable booklet.
+
+
+
+I named the files `Booklet2x1.tex`, `Booklet4x1.tex` and `Booklet8x1.tex` for
+pretty obvious reasons. Their contents are:
+
+
+### Booklet2x1.tex
+
+```latex
+\\documentclass\[a5paper\]{article}
+\\usepackage\[pdftex\]{color,graphicx,epsfig}
+\\usepackage\[left=2cm,top=2.cm,bottom=2.cm,right=2cm\]{geometry}
+\\usepackage\[final\]{pdfpages}
+\\begin{document}
+\\includepdf\[pages=-, signature=80,landscape, frame=true\]{Wrapper.pdf}
+\\end{document}
+```
+
+### Booklet4x1.
+
+```latex
+\\documentclass\[a5paper\]{article}
+\\usepackage\[pdftex\]{color,graphicx,epsfig}
+\\usepackage\[left=2cm,top=2.cm,bottom=2.cm,right=2cm\]{geometry}
+\\usepackage\[final\]{pdfpages}
+\\begin{document}
+\\includepdf\[pages=-, signature=40,landscape, frame=true\]{Booklet2x1.pdf}
+\\end{document}
+```
+
+### Booklet8x1.te
+
+```latex
+\\documentclass\[a5paper\]{article}
+\\usepackage\[pdftex\]{color,graphicx,epsfig}
+\\usepackage\[left=2cm,top=2.cm,bottom=2.cm,right=2cm\]{geometry}
+\\usepackage\[final\]{pdfpages}
+\\begin{document}
+\\includepdf\[pages=-, signature=20,landscape, frame=true\]{Booklet4x1.pdf}
+\\end{document}
+```
+
+Later I realised that I did not need `a5paper` in the class part. As I explained
+in [How to Create LaTeX
+Booklets](http://www.mostlymaths.net/2008/09/latex-booklets.html), the signature
+is the number of pages per fold: in the case of a booklet, you have to aim for
+the closest multiple of 4 from above to the number of pages of the PDF file. In
+this case, I was lucky: the original file had 80 pages, that turned into 40 and
+then into 20 (resulting in just 10 pages to print).
+
+The building can get a little tricky, because you need to cut correctly the
+booklet. That is why I used the` frame=true` option of pdfpages, this draws a
+thin line around the pages for a easy cutting process.
+
+
+Start by compiling the first `tex` file with `pdflatex`, and follow with the
+other files until you have `Booklet8x1.pdf` and print it two sided.
+
+{{< figure src="A6Booklet1.JPG" class="fig-wide" caption="You start with a bunch of pages resulting from the TeX files above">}}
+
+{{< figure src="A6Booklet2.JPG" class="fig-wide" caption="Cut in half to get a few A5 pieces.">}}
+
+
+{{< figure src="A6Booklet3.JPG" class="fig-wide" caption="And repeat to get A6 slices. Beware! You have to cut to have an A6 booklet consisting of A7 pages, not separate A7 pages!">}}  
+
+{{< figure src="A6Booklet4.JPG" class="fig-wide">}}
+
+You'll end with a bunch of small groups of 2 pages (4 pages per sheet). Pile
+them in a way that the numbers are consecutive. Keep in mind that you will be
+folding in half, thus on the left you will have page 2 and the right side you
+will have page 79. On top of this you need to have page 3 and page 78 (covering
+pages 2 and 79), and so on. If you don't get it know, you'll understand it once
+you have the pages in front of you, don't worry.
+
+{{< figure src="A6Booklet6.JPG" class="fig-wide">}}
+
+Once you have them neatly folded in half and piled, place them over a soft cloth
+and staple them along the spine. I usually get by with 2 staples, but feel free
+to go with one or add a third or fourth.
+
+{{< figure src="A6Booklet5.JPG" class="fig-wide">}}
+
+You are done! Enjoy your pocket reading. If you wish, you can cover in plastic
+the booklet, it will last longer.

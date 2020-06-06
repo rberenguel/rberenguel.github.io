@@ -1,0 +1,122 @@
+---
+title: "2020#42 Readings of the Week"
+date: 2020-03-14T22:30:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "hands.jpg"
+tags : [Data engineering, Python, Maths, Forth, Apache Spark, ReadingsOfTheWeek]
+---
+
+The stay at home edition. Stay safe these days, and remember to wash your hands and keep your distance.
+
+<!--more-->
+
+**NOTE**: The themes are varied, and some links below are affiliate links. Apache Spark, Python, data engineering, engineering management. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+{{< figure src="hands.jpg" class="fig-wide" caption="Photo by Curology on Unsplash">}}
+
+## [I Work from Home](https://www.newyorker.com/humor/daily-shouts/i-work-from-home)
+
+A note of hilarity is needed these days. From the New Yorker.
+
+## [The hellish side of handwashing: how coronavirus is affecting people with OCD](https://www.theguardian.com/society/2020/mar/13/why-regular-handwashing-can-be-bad-advice-for-patients)
+
+Uh, oh.
+
+## [Donald Trump is the very worst person to handle the coronavirus crisis](https://www.theguardian.com/world/2020/mar/12/donald-trump-coronavirus-crisis)
+
+Not like Boris is any better.
+
+## [A primer on functional architecture](https://increment.com/software-architecture/primer-on-functional-architecture/)
+
+Hexagons and Ds.
+
+## [How did software get so reliable without proof?](https://surfingcomplexity.blog/2020/03/02/how-did-software-get-so-reliable-without-proof/)
+
+Humans!
+
+## [How to break the "senior engineer" career ceiling](https://theburningmonk.com/2019/11/how-to-break-the-senior-engineer-career-ceiling/)
+
+Career tips.
+
+## [Introduction to D3 / MIT Visualization Group](https://observablehq.com/@mitvis/introduction-to-d3)
+
+An interactive notebook from MIT to learn D3.
+
+## [Making Python Programs Blazingly Fast](https://martinheinz.dev/blog/13)
+
+How to profile Python programs, and a few timing tips.
+
+## [How aspirin works](http://chronicle.uchicago.edu/950817/aspirin.shtml)
+
+The mechanism of aspiring was unknown until _1995_.
+
+## [Human-AI Collaborated Pizza](https://howtogeneratealmostanything.com/food/2018/08/30/episode2.html)
+
+I'd eat some of these.
+
+## [The Hidden Costs of Automated Thinking](https://www.newyorker.com/tech/annals-of-technology/the-hidden-costs-of-automated-thinking)
+
+Technical debt, outside of technology. Technology debt?
+
+## [Dear Agile, I’m Tired of Pretending](https://medium.com/columbus-egg/dear-agile-im-tired-of-pretending-d39ab6a12003)
+
+007s Scrumfall, soon in your office.
+
+## [Zip Files: History, Explanation and Implementation](https://www.hanshq.net/zip.html)
+
+This was more information than I needed.
+
+## [Why I often implement things from scratch](http://armstrongonsoftware.blogspot.com/2006/09/why-i-often-implement-things-from.html)
+
+Worth keeping it in mind: _if_ you need to implement it from scratch, do it.
+
+## [Use the Git History to Identify Pain Points in Any Project](https://preslav.me/2020/03/01/use-the-git-history/)
+
+Added to my [`.gitconfig`](https://github.com/rberenguel/dotfiles/blob/master/git/.gitconfig). [Codacy](https://www.codacy.com) has a similar thing in their analyses.
+
+## [Burning calories: pig starts farm fire by excreting pedometer](https://amp.theguardian.com/world/2020/mar/08/burning-calories-pig-starts-farm-fire-by-excreting-pedometer)
+
+This title… priceless.
+
+## [Python Memory Usage](https://friendly.engineering/python-memory-usage/)
+
+Standard numbers any Python developer should know.
+
+## [How A Pro Soccer Player Turned VC Stays Organized](https://superorganizers.substack.com/p/how-a-pro-soccer-player-turned-vc)
+
+This if from one of the newsletters I enjoy most, Superorganizers.
+
+## [Never Accept a Job That Uses Brain Teasers in Your Job Interview](https://www.inverse.com/article/48853-brain-teasers-in-job-interviews-must-end)
+
+I'd never do. I hate math riddles.
+
+## [Technical Lead Management 101 or How to Try Out Management](https://www.adamconrad.dev/blog/technical-lead-management/)
+
+Excellent (long and comprehensive) post. If you are close to a lead position,
+have a look.
+
+## [📝 Google File System paper](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+
+I was [inspired by Thorsten Ball to read more technical
+papers](https://twitter.com/thorstenball/status/1234559984672870401), and this
+was the first one (in preparation for the next). It was very much worth it.
+
+## [📝 The Hadoop File System (HDFS)](https://storageconference.us/2010/Papers/MSST/Shvachko.pdf)
+
+The next one. Getting into the fundamental building blocks in the data
+engineering technologies I use every day.
+
+## [📚 The Silmarillion](https://www.amazon.com/The-Silmarillion/dp/B016N9U37Q/ref=as_li_ss_tl?keywords=silmarillion&qid=1584222241&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=9f7073c6ec3baac706646b956063bfb5&language=en_US)
+
+It has been a tough one. The stories are entertaining, but the amount of names
+(which come in several flavours for the same people or concept), places and lore
+makes it hard to swallow. By the way, I was kind of motivated to read it because
+of [Blind Guardian's Mirror,
+Mirror](https://www.amazon.com/Mirror-Remastered-2007/dp/B07RRXZ7XM/ref=as_li_ss_tl?keywords=mirror+mirror+blind&qid=1584222357&sr=8-4&linkCode=ll1&tag=rbersblog-20&linkId=089ce9f745339ba77e7a2372d0e11476&language=en_US)
+
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

@@ -21,20 +21,20 @@
     </item>
     
     <item>
-      <title>iPad</title>
-      <link>https://mostlymaths.net/tags/ipad/</link>
-      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/ipad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>p5js</title>
       <link>https://mostlymaths.net/tags/p5js/</link>
       <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/p5js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> iPad</title>
+      <link>https://mostlymaths.net/tags/ipad/</link>
+      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/ipad/</guid>
       <description></description>
     </item>
     
@@ -48,20 +48,20 @@
     </item>
     
     <item>
-      <title>MacOS</title>
-      <link>https://mostlymaths.net/tags/macos/</link>
-      <pubDate>Wed, 03 Jun 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://mostlymaths.net/tags/python/</link>
       <pubDate>Wed, 03 Jun 2020 22:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Mac</title>
+      <link>https://mostlymaths.net/tags/mac/</link>
+      <pubDate>Wed, 03 Jun 2020 22:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -111,20 +111,20 @@
     </item>
     
     <item>
+      <title>Distributed work</title>
+      <link>https://mostlymaths.net/tags/distributed-work/</link>
+      <pubDate>Sun, 10 May 2020 13:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/distributed-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Engineering</title>
       <link>https://mostlymaths.net/tags/engineering/</link>
       <pubDate>Sun, 10 May 2020 13:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Remote Working</title>
-      <link>https://mostlymaths.net/tags/remote-working/</link>
-      <pubDate>Sun, 10 May 2020 13:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/remote-working/</guid>
       <description></description>
     </item>
     
@@ -192,20 +192,11 @@
     </item>
     
     <item>
-      <title>spark</title>
+      <title>Spark</title>
       <link>https://mostlymaths.net/tags/spark/</link>
       <pubDate>Sat, 11 Jan 2020 18:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://mostlymaths.net/tags/hardware/</link>
-      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/hardware/</guid>
       <description></description>
     </item>
     
@@ -219,29 +210,11 @@
     </item>
     
     <item>
-      <title>Mac</title>
-      <link>https://mostlymaths.net/tags/mac/</link>
-      <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Productivity</title>
       <link>https://mostlymaths.net/tags/productivity/</link>
       <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Distributed work</title>
-      <link>https://mostlymaths.net/tags/distributed-work/</link>
-      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/distributed-work/</guid>
       <description></description>
     </item>
     
@@ -264,7 +237,7 @@
     </item>
     
     <item>
-      <title>scala</title>
+      <title>Scala</title>
       <link>https://mostlymaths.net/tags/scala/</link>
       <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
@@ -296,15 +269,6 @@
       <pubDate>Sun, 03 Nov 2019 15:06:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bread</title>
-      <link>https://mostlymaths.net/tags/bread/</link>
-      <pubDate>Sat, 19 Oct 2019 13:06:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/bread/</guid>
       <description></description>
     </item>
     
@@ -341,6 +305,15 @@
       <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://mostlymaths.net/tags/blog/</link>
+      <pubDate>Tue, 10 Sep 2019 19:42:11 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/blog/</guid>
       <description></description>
     </item>
     
@@ -426,15 +399,6 @@
     </item>
     
     <item>
-      <title>math</title>
-      <link>https://mostlymaths.net/tags/math/</link>
-      <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Maps</title>
       <link>https://mostlymaths.net/tags/maps/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
@@ -498,15 +462,6 @@
     </item>
     
     <item>
-      <title>Perl</title>
-      <link>https://mostlymaths.net/tags/perl/</link>
-      <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/perl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Programming</title>
       <link>https://mostlymaths.net/tags/programming/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
@@ -543,7 +498,7 @@
     </item>
     
     <item>
-      <title>plan9</title>
+      <title>Plan9</title>
       <link>https://mostlymaths.net/tags/plan9/</link>
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
@@ -552,7 +507,7 @@
     </item>
     
     <item>
-      <title>iPhone</title>
+      <title> iPhone</title>
       <link>https://mostlymaths.net/tags/iphone/</link>
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
@@ -624,7 +579,7 @@
     </item>
     
     <item>
-      <title>github</title>
+      <title>Github</title>
       <link>https://mostlymaths.net/tags/github/</link>
       <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
       
@@ -696,38 +651,11 @@
     </item>
     
     <item>
-      <title>opensource</title>
-      <link>https://mostlymaths.net/tags/opensource/</link>
-      <pubDate>Sun, 25 Mar 2018 12:21:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/opensource/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Review</title>
-      <link>https://mostlymaths.net/tags/review/</link>
-      <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Visualization</title>
       <link>https://mostlymaths.net/tags/visualization/</link>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Actors</title>
-      <link>https://mostlymaths.net/tags/actors/</link>
-      <pubDate>Wed, 14 Feb 2018 15:28:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/actors/</guid>
       <description></description>
     </item>
     
@@ -800,24 +728,6 @@
       <pubDate>Sun, 20 Aug 2017 19:30:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/trick/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2016</title>
-      <link>https://mostlymaths.net/tags/2016/</link>
-      <pubDate>Sat, 31 Dec 2016 14:34:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/2016/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>meetup</title>
-      <link>https://mostlymaths.net/tags/meetup/</link>
-      <pubDate>Mon, 31 Oct 2016 21:37:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/meetup/</guid>
       <description></description>
     </item>
     
@@ -903,15 +813,6 @@
     </item>
     
     <item>
-      <title>Backgammon</title>
-      <link>https://mostlymaths.net/tags/backgammon/</link>
-      <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/backgammon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Thoughts</title>
       <link>https://mostlymaths.net/tags/thoughts/</link>
       <pubDate>Sun, 08 Mar 2015 12:30:00 +0100</pubDate>
@@ -921,7 +822,7 @@
     </item>
     
     <item>
-      <title>acme</title>
+      <title>Acme</title>
       <link>https://mostlymaths.net/tags/acme/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
@@ -939,38 +840,11 @@
     </item>
     
     <item>
-      <title>ag</title>
-      <link>https://mostlymaths.net/tags/ag/</link>
-      <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/ag/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Command Line</title>
       <link>https://mostlymaths.net/tags/command-line/</link>
       <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/command-line/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diff</title>
-      <link>https://mostlymaths.net/tags/diff/</link>
-      <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/diff/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grep</title>
-      <link>https://mostlymaths.net/tags/grep/</link>
-      <pubDate>Sun, 21 Apr 2013 21:30:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/grep/</guid>
       <description></description>
     </item>
     
@@ -984,83 +858,11 @@
     </item>
     
     <item>
-      <title>Analytics</title>
-      <link>https://mostlymaths.net/tags/analytics/</link>
-      <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Tag Manager</title>
-      <link>https://mostlymaths.net/tags/google-tag-manager/</link>
-      <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/google-tag-manager/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GTM</title>
-      <link>https://mostlymaths.net/tags/gtm/</link>
-      <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/gtm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jQuery</title>
-      <link>https://mostlymaths.net/tags/jquery/</link>
-      <pubDate>Mon, 01 Oct 2012 18:41:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/jquery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://mostlymaths.net/tags/git/</link>
-      <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rcs</title>
-      <link>https://mostlymaths.net/tags/rcs/</link>
-      <pubDate>Sun, 30 Sep 2012 10:28:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rcs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Shoemaking</title>
       <link>https://mostlymaths.net/tags/shoemaking/</link>
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/shoemaking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shoes</title>
-      <link>https://mostlymaths.net/tags/shoes/</link>
-      <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/shoes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Fancy Puffin</title>
-      <link>https://mostlymaths.net/tags/the-fancy-puffin/</link>
-      <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/the-fancy-puffin/</guid>
       <description></description>
     </item>
     
@@ -1119,38 +921,11 @@
     </item>
     
     <item>
-      <title>Running</title>
-      <link>https://mostlymaths.net/tags/running/</link>
-      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/running/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Teaching</title>
       <link>https://mostlymaths.net/tags/teaching/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/teaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://mostlymaths.net/tags/blog/</link>
-      <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iceland2010</title>
-      <link>https://mostlymaths.net/tags/iceland2010/</link>
-      <pubDate>Tue, 21 Jun 2011 09:45:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/iceland2010/</guid>
       <description></description>
     </item>
     
@@ -1173,33 +948,6 @@
     </item>
     
     <item>
-      <title>Irish</title>
-      <link>https://mostlymaths.net/tags/irish/</link>
-      <pubDate>Fri, 11 Mar 2011 21:50:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/irish/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Focused Interviews</title>
-      <link>https://mostlymaths.net/tags/focused-interviews/</link>
-      <pubDate>Wed, 16 Feb 2011 12:15:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/focused-interviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gaelic</title>
-      <link>https://mostlymaths.net/tags/gaelic/</link>
-      <pubDate>Sat, 12 Feb 2011 16:15:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/gaelic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Islensk</title>
       <link>https://mostlymaths.net/tags/islensk/</link>
       <pubDate>Fri, 21 Jan 2011 00:10:00 +0100</pubDate>
@@ -1218,15 +966,6 @@
     </item>
     
     <item>
-      <title>Pyrography</title>
-      <link>https://mostlymaths.net/tags/pyrography/</link>
-      <pubDate>Mon, 27 Dec 2010 21:45:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/pyrography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Places</title>
       <link>https://mostlymaths.net/tags/places/</link>
       <pubDate>Wed, 01 Sep 2010 17:00:00 +0200</pubDate>
@@ -1236,38 +975,11 @@
     </item>
     
     <item>
-      <title>Gcal</title>
-      <link>https://mostlymaths.net/tags/gcal/</link>
-      <pubDate>Sat, 24 Apr 2010 16:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/gcal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CJuicer</title>
-      <link>https://mostlymaths.net/tags/cjuicer/</link>
-      <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/cjuicer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PostScript</title>
       <link>https://mostlymaths.net/tags/postscript/</link>
       <pubDate>Tue, 11 Aug 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/postscript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Karate</title>
-      <link>https://mostlymaths.net/tags/karate/</link>
-      <pubDate>Tue, 19 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/karate/</guid>
       <description></description>
     </item>
     

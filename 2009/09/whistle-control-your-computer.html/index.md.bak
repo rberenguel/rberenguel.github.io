@@ -1,0 +1,162 @@
+---
+title: 'Whistle control your computer (Linux&Mac)'
+date: 2009-09-23T08:59:00.010+02:00
+draft: false
+tags : [Programming, emacs, Linux, Mac, How-to, Bizarre, Productivity]
+dropcap: true
+---
+
+{{< figure src="whistle.jpg" class="fig-left" caption="From [flickr](http://www.flickr.com/photos/stevendepolo/3830812620/) ">}}
+
+  
+Around a year ago, I stumbled into this [lifehacker page](http://lifehacker.com/271755/whistle-to-control-your-computer), suggesting an [IBM-developerWorks](http://www.ibm.com/developerworks/) tutorial on how to install a just 3 things to your system to be able to... [whistle control your computer](http://www.ibm.com/developerworks/library/os-whistle/index.html?ca=dgr-lnxw97whistlework_). Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details. And the script had a small problem that had to be solved.
+
+In this post you will find 
+--------------------------------
+
+*   How to install a modified sndpeek in Mac (OS X 10.5.8) and Linux (Ubuntu 9.04+Fluxbox)
+*   Modifications needed by cmdWhistle.pl, the main _whistly_ script to run in Mac OSX
+*   Modifications I needed to compile sndpeek in Ubuntu
+*   How to use it
+*   Examples
+
+Instructions for MacOS X
+------------------------
+
+The first and most important ingredient is having th set of compilers... if you
+don't have gcc and the developer-related software, you can't do anything.
+Assuming you do (your "Extra" CD of Mac OS installation contains everything
+needed), you'll need to download:
+
+*   `cmdWhistle.pl` from [here](http://www.ibm.com/developerworks/library/os-whistle/). Browse to the bottom of this page, it is where I got the instructions. You should take a look at it.  
+    
+*   `sndpeek` source from [here](http://soundlab.cs.princeton.edu/software/sndpeek/)
+
+After you have the source code, go to your editor of choice, open src/sndpeek/sndkpeek.cpp and add the following line  
+
+```C
+fflush(stdout);
+
+```
+just after (yes, I know the following line is damn long!)
+
+```C
+fprintf( stdout, "%.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f ",
+mfcc(0), mfcc(1), mfcc(2), mfcc(3), mfcc(4), mfcc(5), mfcc(6), mfcc(7), mfcc(8), mfcc(9), mfcc(10), mfcc(11), mfcc(12) );  
+fprintf( stdout, "\\n" );
+```
+
+This refreshes the printout every so often to the terminal window, to interact
+with the script. Now open a terminal window, navigate to src/sndpeek and type
+make osx. It worked for me just out of the box... if you run into some
+problem... ask Google, then ask me, although Google is a best bet. Then, sudo
+make install, so you can execute it. Now go to a terminal and try to execute
+sndpeek. It should give you some nice output like the following image, if your
+microphone works and you are whistling.
+
+{{< figure src="Picture5.png" class="fig-wide" caption="Whistle!">}}
+
+After this, I needed to create the set of intermediate perl headers from C
+headers... Because cmdWhistle complained about them. I found the info
+[here](http://docstore.mik.ua/orelly/perl/cookbook/ch12_15.htm). You just have
+to (corrected a typo: thanks Rhettigan!)
+
+```bash
+sudo cd /usr/include
+sudo h2ph \*.h \*/\*.h
+```
+from a terminal window.
+  
+After this you can try to get some whistles in, but in my case, the script didn't work: it wasn't able to get correctly the time of day (via `gettimeofday()` in the `C` headers). To test it, go to the folder where you have `cmdWhistle`, and write
+
+```bash
+sndpeek --nodisplay --print | perl cmdWhistle.pl -c
+```
+
+and whistle a couple of times (a simple whistle, repeated two times with a small delay from one to the other, then remain silent for a couple seconds). You should get something like this output:
+
+> enter a tone sequence:
+> Tone: 77.00 ## last: \[925263\] curr: \[0\] difference is: 925263
+> Tone: 81.00 ## last: \[925848\] curr: \[925263\] difference is: 585
+> place the following line in /Users/ruben/.toneFile
+> 
+> 77.00 81.00 \_#\_ 0 585 \_#\_ (command here) \_#\_
+
+If you don't, probably means your time-getting code also don't work. Go and edit cmdWhistle by adding the following
+
+```perl
+use Time::HiRes;
+```
+
+after `use strict;` and replace subs `getEpochSeconds` and `getEpochMicroSeconds` by 
+
+```perl
+sub getEpochMicroSeconds {
+  my ($seconds, $microseconds) = Time::HiRes::gettimeofday;
+  return($microseconds);
+}#getEpochMicroSeconds
+ 
+sub getEpochSeconds {
+  my ($seconds, $microseconds) = Time::HiRes::gettimeofday;
+  return($seconds);
+}#getEpochSeconds
+```
+
+and it should work by now. Try it again. If it doesn't... well, ask again.
+
+Instructions for Linux (more or less distro-agnostic)
+-----------------------------------------------------
+
+It should be easier in Linux. You also need to download, `configure`, `make` and
+`sudo make install` the library `libsndfile` from
+[here](http://www.mega-nerd.com/libsndfile/). Then follow the steps from Mac
+OSX, editing `sndpeek.cpp`. Now try to make `linux-alsa`, or make `linux-oss`
+depending on which sound system do you have installed. I couldn't get any one
+working... so I just went to synaptics package manager, installed ALSA's
+developer libraries, and tried again `make linux-alsa`. All went fine... until
+compiling `src/maryas/LPC.cpp`. The compiler complained about the use of `abs`, the
+integer version of `fabs`, claiming it was undeclared. Just edit `src/maryas/LPC.h`,
+and add `stdlib.h` to the set of includes. It should work. Follow the directions
+for the Mac OS if it compiled now.
+
+In a follow up story son I will give a patch I wrote to use it in my Aspire
+one... The microphone is not that accurate, and `sndpeek+cmdWhistle` always give
+511 as a signal received (in a sndpeek image you can always see a peak).
+
+How to Control Your Computer by Whistling?
+------------------------------------------
+
+The idea is to whistle a certain sequence of tones, and map it into a certain
+command. For example, you whistle a part of a tune you like... this opens
+Firefox. The first part, is to turn this tune into a set of tones and times. To
+do so,
+
+```bash
+sndpeek --nodisplay --print | perl cmdWhistle.pl -c
+```
+
+and just whistle to it. Then wait for a few seconds. The output should be as above,
+the important information is the last line:
+
+> place the following line in /Users/ruben/.toneFile
+> 
+> 77.00 81.00 \_#\_ 0 585 \_#\_ (command here) \_#\_
+
+Follow its advice! Open the suggested file, and this line is the set of tones
+and timings. Replace (command here) by... either `open
+/Applications/Firefox.app` or `/usr/bin/firefox`. To test if it does work,
+
+> sndpeek --nodisplay --print | perl cmdWhistle.pl -v
+
+will try to map what you whistle with the stored whistles, without stop in
+verbose mode. To end it, press `C-c`. To run it without output, remove the `-v`
+flag.
+
+Usage Example
+-------------
+
+In Mac OSX a useful command is show desktop. I have this in my notes file:
+
+> 49.00 \_#\_ 0 \_#\_ osascript -e 'tell application "System Events" to key code 103' \_#\_ 103 is F11
+
+Assuming you have the default keybindings, of course!

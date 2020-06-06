@@ -1,0 +1,78 @@
+---
+title: "2019#26 Readings of the Week"
+date: 2019-09-28T21:06:45+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "rust.jpg"
+tags : [Rust, Python, Cooking, History, ReadingsOfTheWeek]
+---
+
+A bit of Python, some more Rust and the usual randomness. The first one looks
+tasty. <!--more-->
+
+**NOTE**: The themes are varied, and some links below are affiliate links.
+Python, Rust, tasty stuff and the usual miscellanea. Expect a similar wide range in
+the future as well. You can check all my weekly readings by checking the [tag
+here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also
+get these as a weekly newsletter by subscribing
+[here](http://eepurl.com/geFw7P).
+
+{{< figure src="rust.jpg" class="fig-wide" caption="Photo by [Brandon Molitwenik](https://unsplash.com/@brandomol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)">}}
+
+
+
+## [Deconstructing the perfect Patty Melt](https://www.saveur.com/deconstructing-perfect-patty-melt/)
+I’m a big fan of Saveur. Good recipes and pretty good food history writing.
+Also, our favorite coffee shop used to have a _patty melt_ sandwich, although it
+was chicken. And very good.
+
+## [The simple words that save lives](http://www.bbc.com/future/story/20190919-the-simple-words-that-save-lives)
+Choosing the right words can make all the difference. Just like the concept of
+_metaphor building_ mentioned in [Readings of the Week
+18](https://mostlymaths.net/2019/06/201918-readings-of-week.html/), having the
+right word can make it be (or not) the last word.
+
+## [Face Detection with Actix Web](https://cetra3.github.io/blog/face-detection-with-actix-web/)
+A very feature-complete example of using Actix and linking it with a highly
+non-trivial system. One of the best technical writings I’ve read lately!
+
+## [Exploring your data with just 1 line of Python](https://towardsdatascience.com/exploring-your-data-with-just-1-line-of-python-4b35ce21a82d)
+To be fair, the line is after all importing a package, but the results you can
+get from this import show promise. Added to my toolbox.
+
+## [The Church of Interruption](https://sambleckley.com/writing/church-of-interruption.html)
+This... was pretty mind blowing. I wasn’t aware, and I’m not even sure what kind
+I am: I nod a lot, and try to keep people explaining stuff... But I’m also prone
+to stopping if I know what they are telling me. I need to be more careful and
+find it out.
+
+## [Making a Case: Rust for Python developers](https://medium.com/@rajasekar3eg/making-a-case-rust-for-python-developers-1a114e2d89f4)
+Although the example comparison is not fair at all (if you write a custom data
+processor in Scala or Python, they’ll also beat Spark, that’s not the goal of
+Spark) I also think Rust is _a_ future for data processing at high speed.
+
+## [Why The Fugate Family Are Literally "The Blue People Of Kentucky"](https://allthatsinteresting.com/fugate-family-blue-people-of-kentucky)
+The world is weirder than you think.
+
+## [Fold in Python](https://www.burgaud.com/foldl-foldr-python)
+I’ve been writing a lot of Python lately, and I’m always finding myself reaching
+for the standard approaches I’d use in Scala. Maps (the fact that map creates a
+map object still baffles me), folds, filters. Here’s a short post on _fold_ in
+Python from a Haskell point of view.
+
+## [🔊 Empires of EVE](https://www.amazon.com/Empires-EVE-History-Great-Online/dp/0990972402/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=2a9b21f6ff1d47267fee198952544200&language=en_US)
+I have always enjoyed reading the stories about EVE online and similar ([did you
+know Yannis Varoufakis worked for
+Valve?](http://blogs.valvesoftware.com/economics/it-all-began-with-a-strange-email/)).
+Also, Simon Wardley mentioned recently he would think any EVE online CEO to be a
+[very good candidate for real world
+manager](https://mobile.twitter.com/swardley/status/1172419432003424256). So in
+the end this audiobook was pretty entertaining, although it’s somewhat hard to
+follow at times, as an audiobook.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking [here](http://eepurl.com/geFw7P).

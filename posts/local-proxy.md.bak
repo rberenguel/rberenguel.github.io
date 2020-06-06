@@ -1,0 +1,37 @@
+---
+title: 'How to get a local proxy'
+date: 2009-05-29T11:00:00.003+02:00
+draft: false
+tags : [Linux, Mac, How-to, Maths, Productivity]
+---
+
+[![](http://4.bp.blogspot.com/_f3d3llNlZKQ/SgiiruMrAzI/AAAAAAAAA20/gnPmeKfjnJc/s400/Proxy.png)](http://4.bp.blogspot.com/_f3d3llNlZKQ/SgiiruMrAzI/AAAAAAAAA20/gnPmeKfjnJc/s1600-h/Proxy.png)  
+
+  
+Setting a local proxy through a remote machine  
+  
+
+To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and  
+
+> ssh -D 42 YourRemoteMachineName
+
+And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before. Now you can browse as if you were browsing in YourRemoteMachineName. See the figure for more information.
+
+Some Mac/Linux-related posts you may like:  
+
+*   [Whistle control your computer (Linux&Mac)](http://berenguel.blogspot.com/2009/09/whistle-control-your-computer.html)  
+    
+*   [My backup script in Mac/Linux](http://berenguel.blogspot.com/2009/09/my-backup-script-in-maclinux.html)  
+    
+*   [Screenshot via command-line in Linux](http://berenguel.blogspot.com/2009/08/screenshot-via-command-line-in-linux.html)  
+    
+*   [How to download YouTube .flv videos](http://berenguel.blogspot.com/2009/06/how-to-download-youtube-flv-videos.html)  
+    
+*   [Extremely useful (mostly free) Mac applications](http://berenguel.blogspot.com/2009/05/extremely-useful-mostly-free-mac.html)
+*   [MP3 to iPod audiobook: personal reminder](http://berenguel.blogspot.com/2009/05/mp3-to-ipod-audiobook-personal-reminder.html)  
+    
+*   [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)
+*   [Three dee (3-dimensional file system browsers review)  
+    ](http://berenguel.blogspot.com/2009/07/three-dee.html)
+*   [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)
+*   [How to get a local proxy](http://berenguel.blogspot.com/2009/05/local-proxy.html)

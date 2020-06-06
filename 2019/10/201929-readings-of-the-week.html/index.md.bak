@@ -1,0 +1,166 @@
+---
+title: "2019#29 Readings of the Week"
+date: 2019-10-27T13:06:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "curry.jpg"
+tags : [Haskell, Scala, Python, Data engineering, Rust, Formal methods, Alloy, ReadingsOfTheWeek]
+---
+This feels like a heavy engineering edition. A lot of Haskell, Rust, Python and
+Scala. There’s still a bit of everything, but this will appeal hardcore
+developers more than usual.
+
+<!--more-->
+
+{{< figure src="curry.jpg" class="fig-wide" caption="Photo by  [Taylor Kiser](https://unsplash.com/@foodfaithfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)  on  [Unsplash](https://unsplash.com/s/photos/curry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) ">}}
+
+**NOTE**: The themes are varied, and some links below are affiliate links.
+Haskell, Rust (and Spark), Python, formal methods, maps. Expect a similar wide
+range in the future as well. You can check all my weekly readings by checking
+the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You
+can also get these as a kind-of-weekly newsletter by subscribing
+[here](http://eepurl.com/geFw7P).
+
+## [CEO Shadow Program](https://about.gitlab.com/handbook/ceo/shadow/)
+An interesting idea from GitLab on training executives.
+
+## [How to write to a Parquet file in Scala without using Apache Spark](https://www.mikulskibartosz.name/how-to-write-to-a-parquet-file-in-scala-without-using-apache-spark/)
+You may have wondered how to do this. Obviously the answer is
+[Parquet4s](https://github.com/mjakubowski84/parquet4s) and here’s an example
+
+## [Interested in improving your relationships? Try Nonviolent Communication](https://www.clearerthinking.org/single-post/2019/03/06/Want-to-improve-your-relationships-Try-Nonviolent-Communication-1)
+I should practice this.
+
+## [Solving Planning Problems with Fast Downward and Haskell](https://ocharles.org.uk/blog/posts/2018-12-25-fast-downward.html)
+I had a “I need a planner” project in my personal project list and was
+considering a lame solution with Prolog (very 70s), but this is so much better,
+and a great excuse to finally write something in Haskell.
+
+## [FastSpark: A New Fast Native Implementation of Spark from Scratch](https://medium.com/@rajasekar3eg/fastspark-a-new-fast-native-implementation-of-spark-from-scratch-368373a29a5c)
+An implementation of the RDD interface from Spark in Rust. The speed up is
+promising, the code looks clean and clear enough. Has lots of potential, if I
+have some time someday I’d like to help with some Arrow stuff here.
+
+## [Open-sourcing Polynote: an IDE-inspired polyglot notebook](https://medium.com/netflix-techblog/open-sourcing-polynote-an-ide-inspired-polyglot-notebook-7f929d3f447)
+_Caveat_: won’t respect the python environment you start it on. Aside from what,
+it offers `jep` for data interchange between cells written in Scala and cells
+written in Python. How cool is that? It also offers auto-graphing (like
+Zeppelin) and a very convenient autocomplete/symbol expansion system. All in all
+seems to have huge potential, and is usable from moment 0.
+
+## [Beating C with 80 lines of Haskell: wc](https://chrispenner.ca/posts/wc)
+It’s of course beating the unoptimized version present by default in Mac OS. But
+it’s a good exercise in how to optimize Haskell code, which is notoriously
+tricky to do.
+
+## [Python at Scale: Strict Modules](https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834)
+Instagram has a very large Python monolith, and of course this means some
+problems that are minor for others are huge for them. Here they share how they
+handle the unconstrained “power” Python module loading “offers”. I’m looking
+forward this being added to some Python version.
+
+## [Introducing Apache Arrow Flight: A Framework for Fast Data Transport](http://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/)
+Anybody up for rewriting Spark’s inter-machine communication? (Not me, if I go
+to that codebase soon will be for a suggestion by [Holden
+Karau](https://twitter.com/hkarau) to improve/implement a pandas thingy)
+
+## [A Tiny, Static, Full-Text Search Engine using Rust and WebAssembly](https://endler.dev/2019/tinysearch/)
+Super-neat. Writing a search engine leveraging Bloom filters, serialized into
+WASM, together with the full engine. And written in Rust. Buzzword bingo time!
+
+## [Turtle.Tutorial](https://hackage.haskell.org/package/turtle-1.5.15/docs/Turtle-Tutorial.html)
+Turtle is a Haskell library to write shell scripts (type safe, effect-neat,
+etc). I don’t remember seeing this tutorial last time I checked it: this
+tutorial is superb.
+
+## [Formally Modeling Database Migrations](https://www.hillelwayne.com/post/formally-modeling-migrations)
+I’m not 100% convinced of the approach, since it feels overkill-ish (and Alloy
+is pretty terse, so that feels like an additional downer), but I like seeing formal methods
+approaching the data engineering space.
+
+## [My favourite Git commit](https://fatbusinessman.com/2019/my-favourite-git-commit)
+Writing git commits is hard. I’m trying to work on it, but sometimes I still
+write `TICKET-### fix bug`. At least I have stopped naming my branches using
+`in_soviet_russia` jokes. Although I kind of miss that.
+
+## ['The perfect combination of art and science': mourning the end of paper maps](https://www.theguardian.com/travel/2019/oct/20/the-perfect-combination-of-art-and-science-mourning-the-end-of-paper-maps)
+I’m a kind of map junkie (and I don’t mean only [Wardley
+maps](https://mostlymaths.net/tags/wardley-maps/)). Have several books on maps,
+many maps (more than I can hang), I [GIS-ed a custom map of my
+hometown](https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/),
+would love to take some workshop on hand-drawn mapmaking at some point (does
+this exist?). So this is just excellent.
+
+## [Marshall Island Stick Charts](https://www.historytoday.com/archive/marshall-island-stick-charts)
+I saw these in the link above and just loved them. I’ve been collecting _tools
+for thought_ since I wrote my presentation for SoCraTesUK 2019 on Wardley
+Mapping, and this could definitely go there.
+
+## [The $10m engineering problem](https://segment.com/blog/the-10m-engineering-problem/)
+Cost optimization in AWS is hard, and here the Segment team share how they
+improved their margins.
+
+## [With Category Theory, Mathematics Escapes From Equality](https://www.quantamagazine.org/with-category-theory-mathematics-escapes-from-equality-20191010/)
+Turtles, turtles all the way down! (this one talks about the development of
+infinite stacks of equivalence relationships, a form of infinite categories).
+
+## [Lesser Known Coding Fonts](https://vfoley.xyz/lesser-known-coding-fonts/)
+Not sure if _lesser_ in my case, I’ve been using
+[Monoid](https://larsenwork.com/monoid/) myself for a year or so. It’s a very
+beautiful font to write code in.
+
+## [Invisibility cloak](https://futurism.com/the-byte/watch-invisibility-cloak-military-use)
+Well, I’d rather have a [bag of
+holding](https://en.wikipedia.org/wiki/Bag_of_holding) or a [wand of
+wishing](https://nethackwiki.com/wiki/Wand_of_wishing) but
+[this](https://nethackwiki.com/wiki/Cloak_of_invisibility) is interesting
+engineering.
+
+## [📚 Micromastery](https://www.amazon.com/Micromastery-Unlock-Potential-Achieve-Anything/dp/0143132326/ref=as_li_ss_tl?crid=1SXZIFIY96L48&keywords=micromastery&qid=1572104446&sprefix=micromastery,aps,279&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=c8793985b26b67e1c8eb9711306727f8&language=en_US)
+I read this one last weekend. Had too much overlap with other books I have read,
+so the new content was minimal. The only useful thing I got from it was learning
+there is a form of prose known as _flash fiction_, ranging from 10-1000 words.
+I’m kind of attracted to the idea of writing 100 word prose, so I have
+investigated a bit more that one.
+
+## [📚 Category Theory for Programmers (Scala edition)](https://github.com/hmemcpy/milewski-ctfp-pdf)
+> So, all told, a category is just a monad in the bi-category of spans.
+
+This has taken me _very_ long, and has sprouted several side readings of
+category theory papers, a renewed interest in Haskell, and a list of exercises
+from the book I want to try. Also a renewed interest in re-reading stuff about
+schemes and sheaves (Hartshorne where are thou?). I’m not sure I recommend you
+read it, it’s _long_.
+
+## [🍿 Alloy for TLA+ users by Jay Parlar](https://m.youtube.com/watch?list=PLWLcqZLzY8u_Osnz-YPOVrptG1ys73OkR&v=tZywZc04lJg)
+An excellent introduction to Alloy by [Jay
+Parlar](https://mobile.twitter.com/parlar). You don’t need to know TLA+ to watch
+it (but would help).
+
+## [🍿 Fast Downward: Solving Declarative Planning problems in Haskell](https://m.youtube.com/watch?v=riugQmHx0K0)
+If you think you’ve seen this before, yes. The blog past by
+[Ollie](https://twitter.com/acid2) above is related to this talk. And he’s
+giving this talk in [London Haskell next
+week](https://www.meetup.com/London-Haskell/events/265822997/).
+
+## [🍿 A Talk Near the Future of Python](https://m.youtube.com/watch?feature=youtu.be&v=r-A78RgMhZU)
+Holly molly. I’m afraid of giving spoilers, but... So, here [David
+Beazley](https://mobile.twitter.com/dabeaz) starts by writing a simple stack
+machine in Python. Extends it a bit, not much. And then uses it to interpret
+_and play_ (through pygame) a game written in Rust and compiled into WASM. There
+are like 4 instances where the public applauds in the middle of the talk, and I
+felt like doing the same at home.
+
+## [🍿 Upgrade Your Future](https://m.youtube.com/watch?v=USgfku1h7Hw)
+[John de Goes](https://mobile.twitter.com/jdegoes) evangelizing on ZIO. And
+indeed, using ZIO has many advantages, watch it.
+
+## [🍿 No Garden of Eden - Adventures in Teaching Haskell to Kids](https://m.youtube.com/watch?index=8&list=PL6pAiTPnKkEN_LlgodlGhDLCmIOsizE1o&v=bL6dL1fUTxY)
+The comments from kids about Haskell can be hilarious.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking [here](http://eepurl.com/geFw7P).

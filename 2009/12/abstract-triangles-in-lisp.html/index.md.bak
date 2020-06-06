@@ -1,0 +1,9 @@
+---
+title: 'Abstract triangles in LISP'
+date: 2009-12-02T00:01:00.001+01:00
+draft: false
+tags : [Programming, C, LISP]
+dropcap: false
+---
+
+{{< figure src="Abstracte.jpg" class="fig-wide" caption="A LISP random triangle generator. Also wrote a C version.">}}

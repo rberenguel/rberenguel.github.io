@@ -1,0 +1,28 @@
+---
+title: 'Again and Again: Playing Go'
+date: 2011-11-23T22:28:00.001+01:00
+draft: false
+tags : [Go, Thoughts, Games]
+---
+
+[![](http://2.bp.blogspot.com/-Tmlc_dmjmLQ/Ts1lcVm5A_I/AAAAAAAADbk/35xJZzIAoJs/s200/Goban.png)](http://2.bp.blogspot.com/-Tmlc_dmjmLQ/Ts1lcVm5A_I/AAAAAAAADbk/35xJZzIAoJs/s1600/Goban.png)
+
+I’ve been playing the game of Go (also known as _weiqi_ or _baduk_) on and off for almost 10 years. In case you don’t know, Go is a board game with very old roots, that can be traced back to at least 2500 years ago, probably a lot more. Very popular in Japan (known as Go or Igo), Korea (baduk) and China (weiqi), it has been slowly spreading among the west during the last century. It is featured in the movies [Pi](http://www.imdb.com/title/tt0138704/) and [A beautiful mind](http://www.imdb.com/title/tt0268978/), for example.  
+  
+For some odd reason, every autumn I decide I want to play again, and I pick up playing only for it to wane after a while. As every year, I hope this is the last and I keep on playing. **What has this game that is so appealing?**  
+  
+Go is a beautiful game. If you are anything into programming, _it's like the Lisp of board games_. Lisp (at the core [McCarthy sketched](http://www.paulgraham.com/rootsoflisp.html)) is so simple that it is almost like it was discovered more than developed or invented. Likewise, Go is probably one of the simplest games you can define, yet it hides a deepness that is astonishing.  
+  
+I used to be a chess player back in my early teen years and there was something that always bothered me: _why are chess rules so arbitrary?_ Why does the knight jump in an L shape and no other piece jumps? Why is the rook placed on the sides? I was unsatisfied with these arbitrary rules. In addition to this, even as a very, very early amateur, you could get nowhere without either killer move reading (anticipating moves is usually called reading in the board game lingo) or a quite decent knowledge of some openings. In my days, I settled for the Indian openings, by the way (which then could be stretched into the Catalan opening, which I also used very often).  
+  
+After giving up chess due to lack of time and drive, I discovered Go, a game where the rules are kind of natural. Although there are some kind of openings close to the sense of chess (known as _[joseki](http://en.wikipedia.org/wiki/Joseki)_, which means _fixed pattern_), they are not fundamental until you are quite a decent amateur, and even yet, are not essential.  
+  
+For a long time I was member (also was vice-president, accountant and maybe even president for some days) of the club in my maths faculty, where we taught many peope the game. Lack of time and a persistent avoidance of playing, moved me away from the game. **Why was I avoiding playing?** Fear of competition, fear of losing, fear of making stupid moves and looking stupid. These are feelings I still have, even 10 years later. Slightly less: failing and doing stupid things cures you from this.  
+  
+This autumn, just a few days after I had joined the [baduk subreddit](http://www.reddit.com/r/baduk/), one of the admins there started a tournament, and I found it perfect to get me playing. So I registered, removing two ranks from what I remembered was my rank. In Go, ranks start at 30 kyu, and progress towards 1 kyu, afterwards you get 1 dan and progress towards 9 dan (there is nothing beyond 9 dan). The rank I remembered (in the online server [KGS](http://senseis.xmp.net/?KGSGoServer)) was 12k, a rank I held for a long time, and accordingly set my new rank as 14k.  
+  
+What I did not remember was the fact that KGS had undergone a rank shift. I don't remember the details, but it had something to do with moving the peak of the normal distribution of ranks. After this rank shift (and probably a little improvement while I didn't play) I got to be 6k for a while, maybe even more for short while due to rank drift. What rank drift? When you play a game against a player and win, if the player improves your rank improves accordingly (the effect fades after a certain time, but carries some weight). Since I was playing very little, I was subject to very strong drift effects.  
+  
+And this is the story of how I have started playing again, and what is this thing called Go. Maybe I'll write more about the game, maybe not. If you are a subscriber you already know how my interests shift from time to time... But I always come back to the basics!  
+  
+ParseList(ScrambleList(Relateds(programming)),2)

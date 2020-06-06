@@ -150,7 +150,7 @@ In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdq
     </item>
     
     <item>
-      <title>Learning to use vim in my iPad (even if I&#39;m an emacs geek)</title>
+      <title>Learning to use vim in my iPad</title>
       <link>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
@@ -159,7 +159,7 @@ In case you don&amp;rsquo;t know, Spacemacs is a &amp;ldquo;distribution&amp;rdq
     </item>
     
     <item>
-      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <title>Good Books I have Read in 2011: Perfect Gifts for Geeks!</title>
       <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
@@ -177,6 +177,15 @@ This year I&amp;rsquo;ve read several good books that I&amp;rsquo;d like to shar
       <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
       <description>All hail Steve Jobs
   Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode. My setup is similar, but I use an iPad 1 and 6sync for the VPS.</description>
+    </item>
+    
+    <item>
+      <title>Time Tracking Like There Is No Tomorrow (with Javascript and HTML5)</title>
+      <link>https://mostlymaths.net/2011/11/time-tracking-like-there-is-no-tomorrow.html/</link>
+      <pubDate>Sun, 06 Nov 2011 13:08:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/11/time-tracking-like-there-is-no-tomorrow.html/</guid>
+      <description>A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in her homepage. Although I&amp;rsquo;m a regular at her blog and I follow her RSS feed, I had not seen it &amp;ldquo;live&amp;rdquo; yet. My inner geek yelled &amp;ldquo;gimme gimme&amp;rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, sadly), it is Android only app. Oh well. I don&amp;rsquo;t want another device.</description>
     </item>
     
     <item>
@@ -534,18 +543,6 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <guid>https://mostlymaths.net/2009/08/two-weeks-still-loving-fluxbox.html/</guid>
       <description>Two and a half weeks ago, I got a netbook and promptly installed Ubuntu, followed by Fluxbox (as already explained). And after two weeks of almost continued use, I like it even more than when I decided to use it. Some of the points I really enjoy (in no particular order).
  Strong keyboard shortcuts. As an emacs junkie as I am, I love keyboard shortcuts. And Fluxbox is incredibly flexible in defining or removing them: Even system-wide shortcuts are customizable.</description>
-    </item>
-    
-    <item>
-      <title>How to get a local proxy</title>
-      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
-      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
-      <description>Setting a local proxy through a remote machine
-To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
- ssh -D 42 YourRemoteMachineName
- And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
     </item>
     
     <item>

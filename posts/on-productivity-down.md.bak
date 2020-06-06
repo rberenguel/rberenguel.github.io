@@ -1,0 +1,40 @@
+---
+title: 'On a productivity down'
+date: 2010-06-06T12:30:00.000+02:00
+draft: false
+tags : [Blog, Programming, Linux, Origami, Thoughts, Fractals, Maths, Bizarre, Productivity, NanoNote]
+---
+
+A week without writing here. A week with little thesis related work done. But it has also been a week with ideas and things and such. You know, two weeks ago I was in Dresden for a conference. Lots of parallel sessions, and quite a few time to think. This post is mostly a digest from my [life bookmarks](http://www.mostlymaths.net/2010/05/life-bookmarking.html) for these two weeks.  
+  
+Several complex dynamic ideas: Unrelated to my thesis, but I've been thinking about them these days. I even rewrote a program to test an idea, and did some calculations yesterday. Looks like it will work out, and I will be able to finish some things.  
+  
+Heard a few interesting plenary talks: Cloaking, invisibility and inverse problems by Gunther Uhlman, who talked about theoretical solutions for creating invisible objects, as well as some real life applications like a cloaking system against tsunamis (by making an island invisible to water waves). Recovery of Data Matrices from Incomplete and Corrupted Entries by Emmanuel Candes was really interesting. He talks about a method (and related theorems) for recovering a full matrix from a very small sample of it (one of his examples was a 30000x30000 low rank matrix, where he only sampled 0.4% of its entries, and recovered the full matrix with a very low error. Really interesting! You can read the preprint in [ArXiV](http://arxiv.org/abs/0903.1476).  
+  
+Heard also a few interesting short talks: partial differential equations related talks, mostly, also one about neuron networks. Had an idea about the wake-sleep cycle problem as a synchronization problem.  
+  
+Ate interesting things: I didn't remember [spätzle](http://en.wikipedia.org/wiki/Sp%C3%A4tzle) were that good. Should cook some day. Also tasted [Pho bo](http://en.wikipedia.org/wiki/Pho_bo) soup in a Vietnamese place, and it is really a wonderful soup.  
+  
+
+* * *
+
+  
+After coming back, I have also done a few things, but not so much related to my thesis  
+  
+Installed Debian on the Ben NanoNote: Now I use emacs and org mode to keep my life bookmarking. In the nanonote you need emacs23-nox, emacs22-nox complains about little memory, don't really know why (it only uses 7mb, there are still a lot left!). Also, if you happen to find a bus error while reading the aptitude package list (which will appear as Bus errorackage list 0% in your console), first try to delete /var/cache/apt/\*.bin (or /var/apt/cache/\*.bin) and apt-get update. If it does not work... I advise you to reinstall your debian system. I was not able to solve it, and ditched Lenny for Sid, then it worked well. But if you Ctrl-C while apt-getting something, you'll find the bus error again, which can be solved by removing all these bin files.  
+  
+Ordered, got and tried a pair of Fivefinger KSO's: These are a barefoot-like running shoes. You can [buy your pair from Amazon](http://www.amazon.com/gp/product/B002JIMMNO?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002JIMMNO)![](http://www.assoc-amazon.com/e/ir?t=rbersblog-20&l=as2&o=1&a=B002JIMMNO) (affiliate link). They are really good, running never felt like this before.  
+  
+Had some origami ideas: It was really long since I created something. Have a few ideas, or at least, a few things worth sharing.  
+  
+Decided to finish unfinished things: I have one lemma left since my DEA (advanced courses) days. I need to finish its proof. I am also considering having another look at my previous thesis topic. I don't feel like keeping things undone is good for my mental health.  
+  
+Discovered an interesting site: [CreateSpace.com](https://www.createspace.com/) for self-publishing and selling in Amazon.  
+  
+Baked an interesting dish: Very close to [Aeblekage](http://www.google.es/search?q=aeblekage), a Danish recipe I like a lot. Ate it today for breakfast.  
+  
+
+* * *
+
+  
+I don't know when I will be able to post this coming week... I used to write my posts in advance (usually one Friday and two Saturday), but this week I have none! But don't think I am not here, this is just being out of sync.

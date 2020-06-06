@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs iPod on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/emacs-ipod/</link>
+    <description>Recent content in emacs iPod on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Nov 2009 01:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/emacs-ipod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Retro on iPod Touch (1): Mini vMac</title>
+      <link>https://mostlymaths.net/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</link>
+      <pubDate>Thu, 19 Nov 2009 01:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/11/retro-on-ipod-touch-1-mini-vmac.html/</guid>
+      <description>A few days ago I jailbroke my iPod touch. Just for the geek factor, first, as I thought I could get a C compiler on it. I can&amp;rsquo;t yet, so I just have it jailbreaken for a few applications. I&amp;rsquo;ll start my review for a long time loved application in Linux and Mac: Mini vMac.Mini vMac is a hardware emulator, which emulates a whole Mac Plus from the eighties. You just need a real Mac ROM, from a Mac you or someone you know owns.</description>
+    </item>
+    
+  </channel>
+</rss>

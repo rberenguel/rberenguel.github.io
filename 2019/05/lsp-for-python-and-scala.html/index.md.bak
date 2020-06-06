@@ -1,0 +1,125 @@
+---
+title: 'LSP for Python and Scala'
+date: 2019-05-21T23:41:00.000+02:00
+draft: false
+tags : [emacs, Python, Scala, Rust, spacemacs]
+dropcap: true
+featured_image: "lsp.png"
+minimap: true
+---
+
+If you have have known me for any length of time you'll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy `emacs` user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been [spacemacs](http://spacemacs.org/). I used to have a very long, customised and complex .emacs and with `spacemacs` I get a mostly-batteries-included package. That's nice after a while, and I also have gotten really proficient at using evil.
+
+
+One problem of using `emacs` is the integration with some languages. If you write Scala, with IntelliJ you get super-fancy completion, refactoring, code analysis, jump-to-definition... Many goodies. In emacs, the best-in-class system used to be [ensime](http://ensime.github.io/). It worked, but it was not really supported for spacemacs (since I'm an old emacs user I could play around that), but the main issue was that my old MacBook was short on memory for running ensime and a lot more. So, I wrote most of my Scala code in hardcode mode. No completion, documentation or jump to definition.
+
+This is why I learnt how to [set up GNU global](https://www.mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html), jump to definition is just too handy. Luckily, the people at Scala Center not only are smart, but also try to improve developer experience, and had been working in a _language server_ for Scala for a while, called [metals](https://scalameta.org/metals/). I got it working recently, and it's great. You get documentation on hover, error messages, jump to definition. Oh, I forgot to mention, the _language server protocol_ is an invention from Microsoft to standardise how editors handle language completions and all that. They probably introduced it for [Visual Studio Code](https://code.visualstudio.com/) (I actually use it from time to time, it has some remote pair programming capabilities I'll talk someday), but now it's extending across all editors.
+
+After using LSP in emacs for Scala for a while I decided to set it up for Python as well, in preparation for our next [PyBCN](http://pybcn.org/) [podcast](https://podcasts.apple.com/us/podcast/python-barcelona-podcast/id1412561460), about tools we use. I was pretty happy with the completions I was getting, but semantic completions from a language server are usually better. So far, lsp with python is ok. Oh, you'll see screenshots at the end!
+
+You'll need to install the language server. I usually have a high level Python environment with all my tools, for things I am just starting to work on:
+
+
+```bash
+pyenv virtualenv 3.7.1 tools
+pyenv activate 3.7.1/envs/tools
+pip install "python-language-server[all]" bpython mypy flake8
+```
+
+
+After this, some configuration is needed in `emacs`. Here you can find parts of my configuration, commented. These sit in my `dotspacemacs/user-config`
+
+```emacs-lisp
+;; First come the configurations for Scala language server 
+;; thingies. sbt is the Scala build system.
+
+(use-package scala-mode
+:mode "\\.s\\(cala\\|bt\\)$")
+
+(use-package sbt-mode
+:commands sbt-start sbt-command
+:config
+(substitute-key-definition
+ 'minibuffer-complete-word
+ 'self-insert-command
+ minibuffer-local-completion-map))
+
+;; This is the main mode for LSP
+(use-package lsp-mode
+:init (setq lsp-prefer-flymake nil)
+:ensure t)
+
+;; This makes imenu-lsp-minor-mode available. This minor mode 
+;; will show a table of contents of methods, classes, variables. 
+;; You can configure it to be on the left by using `configure`
+
+(add-hook 'lsp-after-open-hook 'lsp-enable-imenu)
+
+;; lsp-ui enables the fancy showing of documentation, error 
+;; messages and type hints
+(use-package lsp-ui
+:ensure t
+:config
+(setq lsp-ui-sideline-ignore-duplicate t)
+(add-hook 'lsp-mode-hook 'lsp-ui-mode))
+
+;; company is the best autocompletion system for emacs (probably)
+;; and this uses the language server to provide semantic completions
+
+(use-package company-lsp
+:commands company-lsp
+:config
+(push 'company-lsp company-backends))
+
+;; I use pyenv to handle my virtual environments, so when I enable
+;; pyenv in a Python buffer, it will trigger lsp. Otherwise, it 
+;; will use the old systems (I think based on jedi)
+
+(add-hook 'pyenv-mode-hook 'lsp)
+
+;; Flycheck checks your code and helps show alerts from the linter
+(use-package flycheck
+:init (global-flycheck-mode))
+
+;; Show flake8 errors in lsp-ui
+(defun lsp-set-cfg ()
+(let ((lsp-cfg `(:pyls (:configurationSources ("flake8")))))
+(lsp--set-configuration lsp-cfg)))
+
+;; Activate that after lsp has started
+(add-hook 'lsp-after-initialize-hook 'lsp-set-cfg)
+
+;; I like proper fonts for documentation, in this case I use the 
+;; Inter font. High legibility, small size
+
+(add-hook 'lsp-ui-doc-frame-hook
+(lambda (frame _w)
+(set-face-attribute 'default frame 
+
+ :font "Inter" 
+
+ :height 140)))
+
+;; Configure lsp-scala after Scala file has been opened
+(use-package lsp-scala
+:after scala-mode
+:demand t
+:hook (scala-mode . lsp))
+```
+
+
+You can see how it looks now.
+
+{{< figure src="non-lsp.png" class="fig-wide" caption="Traditional completion (non-LSP)">}}
+
+{{< figure src="lsp.png" class="fig-wide" caption="LSP-powered completion. Way more information!">}}
+
+{{< figure src="inline-doc.png" class="fig-wide" caption="Fancy inlined documentation">}}
+
+
+Sadly, inlined documentation doesn't look as good as it should: compare with Scala with `metals` and `lsp-scala`:
+
+{{< figure src="fancy-inline-doc.png" class="fig-wide" caption="LSP mode in Scala with metals">}}
+
+
+If you've gotten this far, I share my most interesting weekly readings in [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).

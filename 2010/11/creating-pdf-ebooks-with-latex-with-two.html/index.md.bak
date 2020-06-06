@@ -1,0 +1,54 @@
+---
+title: 'Creating pdf ebooks with LaTeX'
+date: 2010-11-21T21:45:00.002+01:00
+draft: false
+tags : [Time Management, LaTeX, Productivity, Books]
+featured_image: "Dragon.jpg"
+dropcap: true
+subtitle: 'With free PDFs of **The Art of War** & **How to Live on 24 Hours a Day**'
+---
+
+If you are looking for the sample ebooks, open the post and scroll down a
+little.
+
+{{< figure src="Dragon.jpg" class="fig-left">}}  
+
+<!--more-->
+  
+
+I started to look for ways to use LaTeX for doing ebooks recently. My plan is to
+write an ebook on productivity and time management, with no deadline. I strive
+to make it the book I'd love to read when I started reading about time
+management… And this means I'll need quite a time.
+
+
+I wanted to use LaTeX because it is the typesetting system I use for
+mathematical typing, I know it well and it works wonders. The default document
+classes range from book to article to report, but they weren't completely well
+suited for an ebook at first look.
+
+
+To solve this problem, I realised that the powerful memoir class covers a lot of
+ground. Memoir lets you tweak a lot of options, and gives nicely looking books,
+and with some tweaking, PDF ebooks. To test the settings, I have compiled a few
+posts from this blog just as a test in a pdf ebook with 2 pages per sheet, cover
+pages and such and the result looks pretty good. If you think someone may be
+interested in a _Best of mostlymaths.net_, I may consider finishing it and
+posting it here.
+
+  
+
+When the time to test the [How to do A6 booklets in 7 easy steps (with
+LaTeX)](http://www.mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html)
+came, I went for typesetting some good books with the memoir class, and decided
+to pick up the Project Gutenberg plain text files for _The Art of War_ and _How
+to Live on 24 Hours a Day_.
+
+*   **The Art of War**: [ebook formatted](AOW.pdf), [tex source](taow.tex) and
+    [A6 booklet format](AOW-8x1.pdf)
+*   **How to Live on 24 Hours a Day**: [ebook formatted](24Hours.pdf), [tex
+    source](24hours.tex) and [A6 booklet format](24Hours-8x1.pdf)
+
+The settings I used for memoir can be found [here](Wrapper.tex) and you can read
+ a commented version
+ [here](http://www.mostlymaths.net/2010/12/commented-version-of-latex-file-to.html))

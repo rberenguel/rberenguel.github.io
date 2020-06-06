@@ -76,7 +76,7 @@ The package can be downloaded in .deb format for Debian-like distributions.</des
     </item>
     
     <item>
-      <title>The emacs 30 Day Challenge: Using &#39;gnus&#39; to read mail</title>
+      <title>E30DC: Using &#39;gnus&#39; to read mail</title>
       <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html/</link>
       <pubDate>Sat, 11 Dec 2010 20:10:00 +0100</pubDate>
       
@@ -87,7 +87,7 @@ When the time to choose a mail reader for emacs came, as part of my emacs 30 Day
     </item>
     
     <item>
-      <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
+      <title>E30DC: Writing this in Conkeror</title>
       <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
@@ -385,10 +385,7 @@ I guess you may already know I love the emacs text editor, and use it as often a
       <pubDate>Tue, 13 Oct 2009 01:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/fluxconf-fluxbox-graphical-way.html/</guid>
-      <description>A quick one: Graphical configuration for fluxbox: fluxconf. You can just apt-get it. I found out about it in tuxmachines.org, following this link. But after using it I realized I had lost 3 entries&amp;hellip; I am not sure if it was a bug, or what (they all had parentheses in them!). Use it at your own risk!
-Other fluxbox&amp;amp;Linux related posts:
- Whistle control your computer (Linux&amp;amp;Mac)
- My backup script in Mac/Linux</description>
+      <description>A quick one: Graphical configuration for fluxbox: fluxconf. You can just apt-get it. I found out about it in tuxmachines.org, following this link. But after using it I realized I had lost 3 entries&amp;hellip; I am not sure if it was a bug, or what (they all had parentheses in them!). Use it at your own risk!</description>
     </item>
     
     <item>
@@ -432,23 +429,6 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
       <guid>https://mostlymaths.net/2009/09/slicing-scannings.html/</guid>
       <description>Last year our department got a nice and shiny Xerox WorkCentre, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&amp;hellip; of course, the machine scans two pages each time, and thus creates a double bound PDF.
 And this doesn&amp;rsquo;t work well with my way to print booklets, so a working solution was to use ghostscript and ImageMagick from the command line.</description>
-    </item>
-    
-    <item>
-      <title>My backup script in Mac/Linux</title>
-      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
-      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
-      <description>My backup script in Mac/Linux
-#!/bin/sh
-# This script backs up a set of files and directories incrementally,
-# storing only the modified files in a folder-per-day basis. Each time
-# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
-# refreshed to the newest copy, and the previous version of a modified
-# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
-# for instance)
-# Root to be safeguarded</description>
     </item>
     
     <item>
@@ -522,18 +502,6 @@ Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdqu
       <guid>https://mostlymaths.net/2009/07/hyperoid-aka-sdlroids.html/</guid>
       <description>Screenshots!
 Back when I was in school, I had a really nice game in my 80286 computer, under Windows 3.1. Yes, it was 15 years ago&amp;hellip; The game was Hyperoid, by Edward Hutchins. When I got my first Pentium with Windows 95, I longed that game&amp;hellip; and the 3.1. version didn&amp;rsquo;t work completely OK in it. Anyway I played&amp;hellip; then found Hyperoid95. I even recompiled it, to add firepower (the author of this version cut the fire speed).</description>
-    </item>
-    
-    <item>
-      <title>How to get a local proxy</title>
-      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
-      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
-      <description>Setting a local proxy through a remote machine
-To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
- ssh -D 42 YourRemoteMachineName
- And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
     </item>
     
     <item>

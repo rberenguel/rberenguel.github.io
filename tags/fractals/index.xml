@@ -103,16 +103,6 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
     </item>
     
     <item>
-      <title>Project: emacs fractal zoomer</title>
-      <link>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</link>
-      <pubDate>Sun, 11 Oct 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</guid>
-      <description>I have several (really, a lot) of programs to compute different images for my article, amusement, anything. And all of them require a change-and-try approach for zooming. The first I wrote needed to be finished quickly&amp;hellip; so I just hard-coded in the source the parameters. And this program turned to be the basis for all others&amp;hellip; And now each zoom requires some calculations and recompile.
-A time ago I decided to do something about it.</description>
-    </item>
-    
-    <item>
       <title>Infinite complexity</title>
       <link>https://mostlymaths.net/2009/10/infinite-complexity.html/</link>
       <pubDate>Wed, 07 Oct 2009 01:00:00 +0200</pubDate>

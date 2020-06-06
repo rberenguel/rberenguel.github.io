@@ -1,0 +1,76 @@
+---
+title: 'Find Search Engine Rankings... via the Command Line'
+date: 2013-05-22T18:33:00.000+02:00
+draft: false
+tags : [Command Line, Linux, Data, SEO, Mac, DIY, acme]
+---
+
+[![](http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg)](http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg)
+
+Via [pixelfrenzy](http://www.flickr.com/photos/pixelfrenzy/)@flickr
+
+**Beware! The software described here is just for personal and _very_ light use. Its use beyond purely recreational value is against Google Search terms of service, and I don't want you or anyone to step that line. Any use of this code is at your own risk.**
+
+  
+
+Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.
+
+  
+
+I'm a command line interface geek. I enjoy tools like [taskwarrior](http://www.blogger.com/blogger.g?blogID=13497321#editor/target=post;postID=7811882883874030608;onPublishedMenu=overview;onClosedMenu=overview;postNum=60;src=postname) or [imagemagick](http://www.imagemagick.org/script/index.php). And every time I have to chew some data, I go down the command line route. In the last months I have found the incredibly effectiveness of awk, sed, head, tail and tr to convert what some web service spits into useful data I can feed to R to do something useful.
+
+  
+
+Today I was thinking about search rankings, and wondering if I could write a small tool that eased my occasional curiosity. Yes, I have done this by hand: search for some keyword and look through 8 pages of results looking for one of my websites. I don't do it very often, but sometimes it has to be done. And since I love automating things and the command line, I wrote the following blurb. I don't claim it is beautiful, but it works:
+
+  
+
+```
+#/bin/sh
+``````
+  
+\# Perform a web search in Google via the command line. Usage:
+``````
+  
+\# automatic.sh "search term" domain pages 
+``````
+\# domain stands for what goes after the dot in "google." and 
+``````
+\# defaults to com. Pages is the number of search pages to 
+``````
+\# process. Defaults to 1, since this script fetches  
+\# 100 results per page.
+``````
+  
+domain\=${2\-com}  
+pages\=${3\-4}  
+span\=$(seq 0 1 $pages)  
+for num in $span  
+do  iter\=$((num\*100))
+``````
+  \# This sets the user agent to Lynx, a command-line web browser to  
+  \# let google know it's better if there is no javascript and fluff  
+  \# laying around.  
+ wget --header="User-Agent: Lynx/2.6 libwww-FM/2.14"  "http://www.google.$domain/search?q=$1&start=$iter&num=100" -O search$num -q \# Comments about this piping:  \# The sed 'E'xtended command looks for patterns like  
+  \# href="/url=something", with the goal of grabbing that something:  
+  \# that's the result URL from the search. It captures this group  
+  \# and rewrites it as "SearchData, something" with several new lines  
+  \# for readability (in case you remove the grep pipe.)  
+  \# The grep is just used to prune all lines that are not search  
+  \# results, and then awk is used to print the search result number  
+  \# and the URL  
+ sed -E "s/<\[^h\]\*href=\\"\\/url\[^=\]\*=(\[^&\]\*)&\[^\\"\]\*\\">/\\n SearchData, \\1    \\n\\n/g" search$num | grep "SearchData" | awk "{print $iter+NR \\" \\" \\$2}"  done
+``````
+  
+\# The script leaves a lot of files named "search??" laying in the directory it  
+\# is executed. In some sense this is a feature, not a bug. You can  
+\# then do something with them. If you don't want them laying around,  
+\# add rm search$num before done.  
+
+```
+
+To find the search standings of a particular page for a particular term, just pipe through grep or ag:  
+  
+./automatic.sh "learn to remember everything" | grep "mostlymaths"  
+  
+For extra fancy points you can use this to create reports inside [Acme](http://www.mostlymaths.net/search/label/acme), if you are so oriented.

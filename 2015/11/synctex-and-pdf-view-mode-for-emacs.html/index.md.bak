@@ -1,0 +1,100 @@
+---
+title: 'SyncTeX and pdf-view-mode for emacs'
+date: 2015-11-02T23:33:00.002+01:00
+draft: false
+tags : [emacs, LaTeX, Research, Maths, spacemacs]
+subtitle: Or, _destiny is cruel_
+dropcap: true
+---
+
+Back in the days of yore, when I was switching between my Windows machine and a
+Linux machine, I remember having
+[SyncTeX](http://mactex-wiki.tug.org/wiki/index.php/SyncTeX) active in my
+Windows machine. It was a wonderful experience: `SyncTeX` lets you click
+anywhere on a generated file from LaTeX and gets back to your editor, to the
+place generating where you clicked. This was extremely useful, specially later
+on when you need to adjust many formulas to fit and you need a bit of
+back-and-forth-ing.
+
+Then I got a Mac, and since `Preview` is so handy I slowly forgot about
+`SyncTeX`. Time went on, and I merrily kept on editing LaTeX files as usual. I
+even managed to deliver my PhD dissertation a couple weeks ago, the formal
+speech will be in a month or two ([come at your own
+risk](https://twitter.com/berenguel/status/660915269825638400)). [AucTeX’s
+preview](2009/09/auctex-again.html) saved most of the
+days, so I slowly _even forgot_ `SyncTeX` existed. Shame on me indeed.
+
+
+The other day I got an annotated PDF from one of my advisors, and I just
+couldn’t open the annotations. I tried all programs I had for Mac, and no luck:
+annotations weren’t showing, just saw the icons. Surveying for some command-line
+tool to extract annotations (just in case) I found
+[pdf-tools](https://github.com/politza/pdf-tools), a replacement for `DocView`
+based on [Poppler](http://poppler.freedesktop.org/). It had the awesome ability
+of actually displaying annotations, with it it was pretty clear the annotations
+were broken in that PDF. I got a new set of PDFs from my advisor with the
+annotations in place, though. While waiting for it to arrive…
+
+
+
+I saw `SyncTeX` was an option of `pdf-tools`. I had been using that, hadn’t I?
+So, I activated `SyncTeX` in AucTeX (it is `TeX-source-correlate-method`, see
+[here](https://www.gnu.org/software/auctex/manual/auctex/I_002fO-Correlation.html))
+and indeed: I could have two frames, one with the actual LaTeX sources and the
+other with a PDF, and go from one to the other. Even hyperreferences in PDF
+work. See (well, click on the full-screen mode to see it larger or you won't see
+anything) here:
+
+{{< vimeo 144418644 >}}
+
+
+Getting `pdf-tools` to work wasn’t incredibly tricky (given the hoops you need
+for some packages, sometimes). Just
+
+
+
+```bash
+brew install pdf-tools
+```
+
+and after reading
+
+```bash
+brew info pdf-tools
+```
+
+I was told to run
+
+
+
+```bash
+ emacs -Q --batch --eval "(package-install-file \"/usr/local/Cellar/pdf-tools/0.60/pdf-tools-0.60.tar\")"
+```
+
+
+and this does the trick (well, change emacs for your actual emacs, which likely
+is `/Applications/Emacs.app/Contents/MacOS/Emacs`) You’ll also need to add to
+your `.emacs` file (or temporarily in your `*scratch*` buffer)
+
+
+
+```emacs-lisp
+(setenv "PKG\_CONFIG\_PATH"
+(concat
+"/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig"
+":"
+"/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig"))
+
+(getenv "PKG_CONFIG_PATH")
+```
+and run
+
+```
+(pdf-tools-install)
+```
+
+as advised in the package’s README. And that's it, open a PDF and activate
+pdf-view-mode to check everything is in place. Well worth it!
+
+<span class="scaps">Note: </span> Post-2018 you are better served by installing
+[spacemacs](/tags/spacemacs), which comes with pdftools already set up for your enjoyment

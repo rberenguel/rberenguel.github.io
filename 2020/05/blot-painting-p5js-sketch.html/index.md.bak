@@ -1,0 +1,201 @@
+---
+title: "Blot/Painting p5js sketch"
+date: 2020-05-26T19:00:33+02:00
+draft: false
+dropcap: true
+affiliate: false
+featured_image: "BlotPainting.png"
+js: ["https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML", "/js/mathjax.js"]
+tags : [processing, javascript, generative, p5js]
+---
+
+Some details of my `p5js` sketch [`Blot/Painting`](https://mostlymaths.net/sketches/blot-painting/blot.html)
+
+<!--more-->
+<br/>
+Since the beginning of the month I've been having a lot of fun with generative
+sketches in [p5js](https://p5js.org). I have been coding them on my iPad Mini,
+on the sofa (more details in a separate blog post), and they have been the
+source of a lot of enjoyment.
+
+{{< figure src="blot.png" class="fig-wide" caption="Blot">}} 
+
+See, I have been always interested in generative "stuff" (see
+[some](https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/)
+[examples](https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/)
+I had done in the past), but I have been avoiding sitting on a computer after
+work hours, except for open source stuff. I stumbled upon [p5js](https://p5js.org) around the end of
+last month, and thus found a way to have coding fun without needing a computer.
+ 
+ {{< figure src="painting.jpg" class="fig-wide" caption="Painting">}}
+ 
+One particular area I have always been fascinated with is **generation of
+real-looking paint and watercolour**. I don't know when I started collecting
+references (well, I still remember reading [Bresenham's line
+algorithm](https://en.m.wikipedia.org/wiki/Bresenham%27s_line_algorithm) when I
+was 9 or 10), but one of the first sketches I wrote recently was [this
+one](https://github.com/rberenguel/sketches#watercolour-p5js):
+
+{{< figure src="watercolor.png" class="fig-not-so-wide" caption="Watercolour">}}
+
+This was based on a [blog post I had read in
+2017](https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints), although I found ot recently [the way it's done in
+Tint](https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/creating-realtime-watercolour-simulation-for-the-mobile-game-tint-on-apple-arcade-r5372/),
+and I _need_ to implement that one as well. Soon after implementing this, I landed on [Esteban
+Hufstedler](https://estebanhufstedler.com/)'s webpage, after he posted [pulled
+string art](https://estebanhufstedler.com/2020/05/04/pulled-string-art/). There
+I found his [ink splashes](https://estebanhufstedler.com/2018/10/02/splash/) and
+I knew what I wanted to implement next. Diving on.
+
+## Details
+My method is the same as his:
+
+1. Generate some [metaballs](https://en.wikipedia.org/wiki/Metaballs) with different strengths (depending on distance), radiating from a certain point `C`
+2. Use a normal distribution centred at `C`
+3. Angle and direction point towards `C`
+
+Note that in Esteban's version, it looks like he allows for the point in `3` to be different from `C`. I didn't. 
+
+Now, _what the heck is a metaball?_
+
+### What is a metaball?
+
+They are basically blobby spheres that merge together in an elegant and smooth way. Think drops in a glass, for instance.
+
+{{< figure src="metaballWikipedia.png" class="fig-wide" caption="[From Wikipedia](https://en.wikipedia.org/wiki/Metaballs#/media/File:Metaball_contact_sheet.png)">}}
+
+They were first described by James Blinn while at JPL [on this paper](https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/blinn-blobby.pdf), as a way to describe electron density maps… and other artistically interesting structures.
+
+{{< figure src="metaballBlinn.png" class="fig-not-so-wide" caption="From the paper above.">}}
+
+
+After skimming through the paper and reading a [couple](http://blobs.webflow.io/) [references](http://www6.uniovi.es/hypgraph/modeling/metaballs/metaballs%5C_mward.html) it was clear that I just needed to simulate some field (for instance, an electrical field) around many particles, and sample it for each pixel. Set a threshold, and there is your metaball. To be fair, that's exactly the [definition given in Wikipedia](https://en.wikipedia.org/wiki/Metaballs#Definition). 
+
+## Implementation details
+
+So, I just set out to write that field estimation. I settled for a field given by $1/r^2$, which is relatively easy to calculate and to reason about: it's either charge or gravitational, depending on what you want to think it is. 
+
+Next there was _a lot_ of tuning of the parameters. I eventually settled my threshold around 0.5 field strength, and I got this
+
+{{< figure src="inkBlot.png" class="fig-not-so-wide" caption="">}}
+
+Yeah! An ink blot! But… **It's pretty jaggy**. Obviously, since it's a hard cutoff at 0.5: this gives no room for antialiasing or anything that can make it smoother.
+
+## Smoothing hell
+I went down the rabbit hole of how to smooth the image above without resorting to _do everything with 4x resolution and downsample_.
+
+I got pretty crazy during a couple of days, and implemented/tried:
+
+1. Modifying the potential
+2. Using an alternate cut-off using a bump function
+3. Writing a boundary detection algorithm to hypersample the outside
+4. Writing an incremental sampling algorithm
+
+### Potential woes
+Modifying the potential got me nowhere aside from ruining the nice blots. If you go higher powers, rounding errors (and more expensive computations) will kill you. Discarded.
+### Alternate cut-off via [bump functions](https://en.wikipedia.org/wiki/Bump_function)
+This was the right idea, but I was focused on the wrong area. Didn't get me anywhere.
+### Boundary detection and hypersampling
+The idea I had here was to draw a somewhat loose resolution version of the blobs, and then determine pixels/points at the boundaries. Placing a `curveVertex` from `p5js` at each boundary point would give smooth blot-looking curvesfree with no supersampling. It may have been pretty fast as well.
+
+The algorithm for boundary detection was relatively easy:
+
+1. Start from pixel 0, 0 at top-left, moving row-wise, left to right.
+2. If you find a blot pixel,
+	1. Check if there is any blot pixel to up-left from your current direction, repeat with this pixel. Otherwise,
+	2. Check if there is any blot pixel up from your current direction, repeat with this pixel. Otherwise,
+	3. ...
+	4. Check if there is any blot pixel to the left from your current direction, repeat with this pixel. Otherwise big failure.
+
+It may be hard to follow in writing, but if you imagine yourself at a square grid of pixels, the idea is that you keep moving in such a way that _empty_ is to the left and _full_ is to the right. This only works if your blot is simply connected, but this is the case here. I remember being told this method by a meteorologist friend 10 or 12 years ago, and it came handy.
+
+Sadly, it didn't work well. Basically, keeping track of all the seen points, unseen points and all that was a big javascripty mess. I eventually gave up (although I may recover this idea for other projects) and started…
+
+### Writing an incremental sampling algorithm
+I was like, _this has to totally work_. I had started reducing sampling resolution in the previous idea, to be able to debug the point arrays I was getting, and realised I could:
+
+1. Use a low resolution approach to find a coarse grid with blots
+2. Around each blot, supersample
+3. Ignore blots that are "inside"
+
+Basically, quad-tree sampling of the blot. This should actually work, but the way I implemented it (with no trees) was too cumbersome.
+
+The idea was sound (and it could give a pretty decent boundary detection, to boot), the problems were manyfold. The worse was with step 3. I started with a counting algorithm: if you have more than `N` neighbour points in the previous refinement, you are an inside point and thus need no further refinement. It worked for some layers but not others, and was hard to tweak. Then, I ended up adding [ray-casting](https://stackoverflow.com/a/218081) to remove anything "inside" but I hit several roadblocks (the worst being that at very low resolutions you get edges parallel to the rays). 
+
+I implemented this while having breakfast, and then went to work. And of course, when you stop thinking of a problem you find the solution.
+
+### Use the damn potential
+
+It was as easy as that. The potential _itself_ is a bump function around the metaball, so I just tweaked the parameters. Instead of using 0.5 as a hard-cutoff, I would use 0.4 and [lerp](https://en.wikipedia.org/wiki/Linear_interpolation) from ink colour to transparency until 0.5. And just like that, you get pretty smooth ink blots.
+
+<div style="clear: both;">
+{{< figure src="field1.png" class="fig-side" caption="Ink over potential">}} {{< figure src="field2.png" class="fig-side" caption="Ink on low alpha over potential">}}
+</div>
+
+This is how the potential looks like, by the way. I added a way to see the potential (press `F` to generate the force potential and `T` to toggle its display):
+
+You will see it is a circle around the blot: This is to reduce computations as much as possible. Since the blot is mostly circular due to the gaussian, this way we need to compute the potential in less pixels.
+
+## The sketch
+
+{{< figure src="BlotPainting.png" class="fig-wide" caption="Blot/Painting" link="https://mostlymaths.net/sketches/blot-painting/" target="_blank">}}
+
+After I added enough tweaks and speed ups, I ended up with two closely related sketches. I merged them in one "project". I call it `Blot/Painting`. 
+
+In [blot](https://mostlymaths.net/sketches/blot-painting/blot.html) you can just drop black/randomly coloured ink blots, as well as see the potential and the vectors. 
+
+In [painting](https://mostlymaths.net/sketches/blot-painting/painting.html) you can drop ink blots with the colours of an underlying image, thus "painting" it.
+
+Both are written as p5js _instance mode_ sketches, to be able to use ES6 import syntax for helpers (like the GUI described below), modulo and the common code for drawing metaballs. Actually most of the code in them is the GUI, since all the complexity is hidden in the [library](https://github.com/rberenguel/sketches/blob/master/libraries/blotLibraries.js).
+
+One relatively fancy thing I do in the sketches is having a background image that is not part of the "real" canvas. I achieve this by using either one image and a graphics renderer (for `painting`) or two graphics renderers. The trick is to have an image (or image-like, in the case of a graphic renderer) with the same size as the canvas.
+
+One interesting issue I had here was that `blot` didn't run at first on my iPhone: the canvas was too large. By default I was creating full-screen canvases, and the high DPI screen is too large (for either Safari or p5js, not sure). I have limited my canvases at 1600 pixels wide, and I have a few helper functions to ensure images are fitting inside.
+
+Another one (and one I haven't found a solution yet) is using accelerometer information: I can't access it (even after requesting permissions to the user) from p5js, and I'd love to control the GUI via shake events. If anyone has any suggestions, I'd love to hear.
+
+## The GUI
+
+{{< figure src="gui.png" class="fig-not-so-wide" caption="GUI for Blot">}}
+
+There were a lot of tweakable options, and my ad-hoc pieces of Javascript and CSS (written for [Conway's Game of Life](https://rberenguel.github.io/sketches/life/index.html) and [Going Crazy](https://mostlymaths.net/sketches/crazy/index.html)) were not up to the task.
+
+So, I set aside some time to clean up some ideas and spin off a [library](https://github.com/rberenguel/sketches/blob/master/libraries/gui.js) (ES6 module) I could reuse in all my sketches. It lets you
+
+- Define commands (like save, clear…)
+- Define controls (like strength of a metaball), and bind them to several keys and a variable. Key names are clickable, so it's somewhat mobile friendly
+- Load an image
+- Display all of the above in an unobstrusive and reusable way.
+
+There is not a lot of documentation at the moment (and no tests!) but there are plenty of examples in my sketch repository.
+
+These sketch(es) are the ones with the largest amount of controls:
+
+- Modify spread (sigma) of the normal distribution
+- Modify strength of the particles in the field
+- Adjust the number of metaballs per blot
+- Use an image as the source for colours (in painting)
+- Add random colouring
+- Draw the vectors driving the metaballs
+- Turn on/off the field/display it
+
+If you get into p5js, I recommend you find a way to control your parameters without needing to rewrite your code. It makes for a much more comfortable experience.
+
+### Suggested settings if you want to paint
+Spread (changed via `,` and `.`) and strength (`(`, `)`) are highly correlated. Some good settings are:
+
+- For spread 100, strength around 1000
+- For spread 50, strength around 30
+- For spread 10, strength below 0.2
+- For spread 5, strength below 0.002 (here significant less strength looks best)
+
+## Future improvements and ideas
+- Adjust better the size of the circle around the blot depending on field strength and spread. I have it fixed (and it cuts a bit on the blots in some cases), which is bad for small blots.
+- "Painting web app", with buttons with the sizes suggested above as controls
+- ~~Add a way to add your own images to [Painting](https://mostlymaths.net/sketches/blot-painting/painting.html)~~ I actually added this yesterday:
+
+{{< figure src="pearl.png" class="fig-wide" caption="Girl with a pearl earring, using an iPad, Apple Pencil and [painting](https://mostlymaths.net/sketches/blot-painting/painting.html)">}}
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

@@ -1,0 +1,58 @@
+---
+title: 'Current programming projects'
+date: 2010-03-05T11:50:00.006+01:00
+draft: false
+tags : [Programming]
+---
+
+[![](http://1.bp.blogspot.com/_f3d3llNlZKQ/S5DmDTEB2RI/AAAAAAAAB6w/IB5vg_2BFio/s400/Mosaic.jpg)](http://1.bp.blogspot.com/_f3d3llNlZKQ/S5DmDTEB2RI/AAAAAAAAB6w/IB5vg_2BFio/s1600-h/Mosaic.jpg)CML with the Duffing Map  
+
+  
+This is just to remind me of what I'm doing and how is it going  
+
+##### Approximation of images by randomly placed translucent triangles
+
+> Finished the first version, it works (I used it for my [Christmas postcard](http://berenguel.blogspot.com/2009/12/evolutionary-approximation-of-christmas.html)), but the speed is not really good. Should rewrite big parts to make it faster.
+
+##### [Lisp raytracer](http://berenguel.blogspot.com/2009/06/lisp-raytracing-again.html)
+
+> Stalled as I was rewriting the refraction code of the rewritten inner loop. Will probably savage something, someday, but just don't know when.
+
+##### [Forth raytracer](http://berenguel.blogspot.com/2010/03/learning-forth-by-working-on-raytracer.html)
+
+> Just an idea to work on to learn some Forth. Will start soon, using the framework and knowledge learnt while working in the Lisp version
+
+##### Coupled map lattice simulations
+
+> C code just for looking at how my theorem applies to some artificial models. I got some insights on further development while looking at 5x5 models. Re-used some code from my postcard gluing code to create the projected lattice images.
+
+##### iPod Todo
+
+> Javascript (JQuery+JQtouch) offline-able web app to beat all other to-do's. At least for me and some other users, as I will tailor it to suit our needs. Have some code, but will forget about it in some sense and do some design first, because the code is getting too convoluted.
+
+##### [CJuicer](http://berenguel.blogspot.com/2010/02/cjuicer-beats-humans-and-unixs-diff.html)
+
+> Works pretty well. Should add some automated processing via some bash scripts to use it quicker, and solve a small problem with includes.
+
+##### Cohen map
+
+> gp-pari code to find transverse intersections for the Cohen map. I have the Taylor expansions code by hand, should write it and do a MAJOR rewrite of all code.
+
+##### Approximating instability
+
+> Need to improve the algorithms used before even thinking of publishing.
+
+##### Lisp SIRDS
+
+> Has some bug I still have not found. Not working on it since January.
+
+##### Box iteration
+
+> An idea I have. Should work it on pen and paper first.
+
+  
+  
+I bet against myself 10€ that I have forgotten something in this list.  
+  
+Some inner (and random) links related to these projects  
+ParseList(ScrambleList(Relateds(Programming)),10)

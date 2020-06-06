@@ -1,0 +1,93 @@
+---
+title: '2019#3 Readings of the week'
+date: 2019-01-27T20:01:00.000+01:00
+draft: false
+tags : [ReadingsOfTheWeek, Spark, Rust, TLA+, Productivity]
+dropcap: true
+minimap: true
+affiliate: true
+---
+
+Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+<!--more-->
+
+[Fermentation and Daily Life](https://www.notechmagazine.com/2018/07/fermentation-and-daily-life.html)
+------------------------------------------------------------------------------------------------------
+
+I’m not a fan of fermented food, but my girlfriend is. The article is interesting even for me.
+
+[Why Are Young People Pretending to Love Work?](https://www.nytimes.com/2019/01/26/business/against-hustle-culture-rise-and-grind-tgim.html)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+The “grind and hustle” gets old pretty quick.
+
+[📚 Specifying Systems](https://lamport.azurewebsites.net/tla/book.html)
+------------------------------------------------------------------------
+
+_The book_ for learning TLA+ (and, free to download from the link above). I’m reading it right now, step by step. You can also get a paperback version from [Amazon](https://www.amazon.com/Specifying-Systems-Language-Hardware-Engineers/dp/032114306X/ref=as_li_ss_tl?ie=UTF8&qid=1548615553&sr=8-2&keywords=practical+tla+&linkCode=ll1&tag=rbersblog-20&linkId=b28c49dcc2aab1732af9966f8d9708e0) (affiliate link) but it's kind of expensive.
+
+[The Perils and Pleasures of Bartending in Antarctica](https://www.atlasobscura.com/articles/bartender-antarctica-south-pole)
+-----------------------------------------------------------------------------------------------------------------------------
+
+It kind of makes sense.
+
+[“O Uommibatto”: How the Pre-Raphaelites Became Obsessed with the Wombat](https://publicdomainreview.org/2019/01/10/how-the-pre-raphaelites-became-obsessed-with-the-wombat/)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Whomwhat?
+
+[Why Don’t People Use Formal Methods?](https://www.hillelwayne.com/post/why-dont-people-use-formal-methods/)
+------------------------------------------------------------------------------------------------------------
+
+As you may have realized, I’m interested in formal methods and verification. I’m not the only one, and since I now pay more attention to articles on the subject, I find more articles to share. Hillel is the author of [Practical TLA+](https://www.amazon.com/Practical-TLA-Planning-Driven-Development/dp/1484238281/ref=as_li_ss_tl?ie=UTF8&qid=1548615491&sr=8-1&keywords=practical+tla+&linkCode=ll1&tag=rbersblog-20&linkId=9da563f0c274543c113482957c9c57c7) (affiliate link), the book that finally got me to write specs.
+
+[The 1859 Carrington Event](https://hackaday.com/2019/01/22/the-1859-carrington-event/)
+---------------------------------------------------------------------------------------
+
+The idea of this happening “now” is actually scary.
+
+[Ask HN: What are your “brain hacks” that help you manage everyday situations?](https://news.ycombinator.com/item?id=18588727)
+------------------------------------------------------------------------------------------------------------------------------
+
+You may pick up one or two tricks that can be useful.
+
+[What if the Placebo Effect Isn’t a Trick?](https://www.nytimes.com/2018/11/07/magazine/placebo-effect-medicine.html)
+---------------------------------------------------------------------------------------------------------------------
+
+Here, take this sugar pill. You’ll be cured.
+
+[Kafka at Criteo](https://www.slideshare.net/RicardoPaiva17/how-criteo-is-managing-one-of-the-largest-kafka-infrastructure-in-europe)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Slides from Slideshare. The scale is astounding. Note that the [engineering blog at Criteo](http://labs.criteo.com/engineering-blog/) is top notch, but your adblocker is probably going to give you a hard time reading it.
+
+[When Rust is safer than Haskell](https://www.fpcomplete.com/blog/when-rust-is-safer-than-haskell)
+--------------------------------------------------------------------------------------------------
+
+I’m closer to doing useful stuff in Rust than in Haskell, so it’s always good to know Rust has some nice tricks up its sleeve.
+
+[Inductive invariants](https://lorinhochstein.wordpress.com/2018/12/27/inductive-invariants/)
+---------------------------------------------------------------------------------------------
+
+More TLA+ goodness, from Lorin Hochstein.
+
+[Spark Barcelona Meetup: Speeding up PySpark with Arrow](https://www.meetup.com/Spark-Barcelona/events/258139339/)
+------------------------------------------------------------------------------------------------------------------
+
+This Thursday I’m speaking about how PySpark got faster by using Arrow internally. If you are around Barcelona please join us! Note that the slides for this talk are not up yet!
+
+[📚 Meditation for Fidgety Skeptics by Dan Harris](https://www.amazon.com/Meditation-for-Fidgety-Skeptics/dp/B07CNR397V/ref=as_li_ss_tl?ie=UTF8&qid=1548614747&sr=8-3&keywords=meditation+for+fidgety+skeptics+by+dan+harris&linkCode=ll1&tag=rbersblog-20&linkId=ca507dfaed37d3bcc9edc89b46c44d9d)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(note there are affiliate links in here) This is the follow-up to [10% Happier](https://www.amazon.com/10-Happier-Reduced-Self-Help-Actually/dp/B077TYZQMQ/ref=as_li_ss_tl?ie=UTF8&qid=1548614747&sr=8-4&keywords=meditation+for+fidgety+skeptics+by+dan+harris&linkCode=ll1&tag=rbersblog-20&linkId=97fabcca3dc51c2d5d7e0c2e773d187e). MfFS is good, offering a more practical take than the previous one. As books to stand on its own, [10% Happier](https://www.amazon.com/10-Happier-Reduced-Self-Help-Actually/dp/B077TYZQMQ/ref=as_li_ss_tl?ie=UTF8&qid=1548614747&sr=8-4&keywords=meditation+for+fidgety+skeptics+by+dan+harris&linkCode=ll1&tag=rbersblog-20&linkId=97fabcca3dc51c2d5d7e0c2e773d187e) is better though.
+
+[📽 10 tips for failing badly at microservices](https://m.youtube.com/watch?v=X0tjziAQfNQ)
+------------------------------------------------------------------------------------------
+
+This is a very fun talk about what you should do if you want to prevent (in an ironic way) your company from moving to a microservices-based architecture. You may get flashbacks to the [Simple Sabotage Field Manual](https://www.cia.gov/news-information/featured-story-archive/2012-featured-story-archive/CleanedUOSSSimpleSabotage_sm.pdf) from the CIA.
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+I’m considering converting this into a weekly newsletter in addition to a blog post. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P) and if enough people join I’ll send these every Sunday night or so.

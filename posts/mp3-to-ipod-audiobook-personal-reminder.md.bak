@@ -1,0 +1,29 @@
+---
+title: 'MP3 to iPod audiobook: personal reminder'
+date: 2009-05-05T11:00:00.004+02:00
+draft: false
+tags : [Music, Mac]
+---
+
+New: The previous version is rubbish! Just add your MP3 encoded files to iTunes library, select the entire album, choose get info from right-clicking it, go to the last tab (options) and select: Part of a compilation, remember position, skip when shuffling and in media type, Audibook. And you are done in a moment.  
+
+  
+Time-wasting version by Google: This is just to remind myself how to do this simple thing. I got the information from [here](http://www.dagondesign.com/articles/turning-mp3-audiobooks-into-ipod-audiobooks/) (via Google).  
+
+1.  Add your MP3 to your iTunes library
+2.  Select that file in iTunes
+3.  Right-click, convert to AAC (or create AAC copy)
+4.  Remove both instances in your iTunes library (without deleting files!)  
+    
+5.  Go to the folder where the file is  
+    
+6.  Remove the MP3 version (if you want)
+7.  Go to your iTunes Library folder (Documents-Music-iTunes-iTunes Library-path to your file)
+8.  Move it to where you like it to be  
+    
+9.  Change the extension of the file from M3A to M3B
+10.  Add this file to iTunes
+11.  You are done!
+12.  Now you can edit file info and properties as usual.
+
+If you happen to have used this post, leave me a comment!

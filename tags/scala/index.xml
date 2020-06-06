@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>scala on mostlymaths.net</title>
+    <title>Scala on mostlymaths.net</title>
     <link>https://mostlymaths.net/tags/scala/</link>
-    <description>Recent content in scala on mostlymaths.net</description>
+    <description>Recent content in Scala on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 12:30:33 +0200</lastBuildDate>

@@ -1,0 +1,65 @@
+---
+title: 'Scribus+Latex in Mac OS'
+date: 2009-09-29T01:00:00.009+02:00
+draft: false
+tags : [Linux, Mac, LaTeX, Maths]
+---
+
+or the trouble with hard-coded paths and ineffective menus.  
+  
+
+[![](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sr_HTCuCKxI/AAAAAAAABVM/_rxJzMnVyHI/s400/Picture+2.png)](http://4.bp.blogspot.com/_f3d3llNlZKQ/Sr_HTCuCKxI/AAAAAAAABVM/_rxJzMnVyHI/s1600-h/Picture+2.png)  
+Cross platform page-layout software:  
+Scribus. Now with more LaTeX  
+
+  
+
+I am supposed to present a poster in a conference, about some work I am doing. I asked office mates about what they used... A Mac user suggested [Pages](http://www.apple.com/iwork/pages/), and I asked a more Linux oriented, [LaTeX](http://en.wikipedia.org/wiki/LaTeX) savvy, and he told me: forget about LaTeX and use some [WYSIWYG](http://en.wikipedia.org/wiki/Wysiwyg) program, you'll save time and effort. It will be nicer, too.  
+
+  
+  
+
+It looked like a good advice, but I am leaving more and more my Mac at home, and working in the office with the [netbook](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html). So I started a search for a cross-platform open source page layout program. I had already stumbled onto [Scribus](http://en.wikipedia.org/wiki/Scribus) a few years ago (I had to write a triptych with the rules of Go to teach teenagers in an event at the faculty, finally did it in LaTeX), and knew it may be up to the task.  
+
+  
+  
+
+Indeed, it is up to the task, and cross-platform. I installed it in the Mac... had a nice TeX button. I thought WOW! I don't have to generate intermediate PS files! But it didn't work. I installed the same version in the netbook... TeX working fine. What was the problem?  
+
+  
+  
+
+A damned problem: The path to the TeX compiler is hard-wired. And it is not even an "assume it is in the path", which would be... well, sane. No, it is hard-wired to some Mac specific route. I guess to the "usual" path to have LaTeX installed, I don't have it there. If you have trouble with Scribus in Mac OS and LaTeX frames (i.e. if it says it cannot start pdflatex), start by opening up your Terminal and write  
+
+> which pdflatex  
+
+to get the path you need in the following step. Now open up your favourite text editor, and open the file:  
+  
+
+> /Applications/Scribus.app/Contents/share/scribus/editorconfig/100\_latex.xml  
+
+and change the following line  
+
+>   
+
+to match the result of which before. In my case it was:  
+
+>   
+
+The peculiar point is that there is a menu item (Preferences->External Tools) to change the path, but it doesn't apply the change, ever.  
+
+  
+Related posts:
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Calendars & emacs](http://berenguel.blogspot.com/2009/09/calendars-emacs.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Overwhelmed With Projects? Declare Task Bankruptcy](http://www.mostlymaths.net/2010/10/overwhelmed-with-projects-declare-task.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Book Review: The War of Art, by Steven Pressfield](http://www.mostlymaths.net/2010/09/book-review-war-of-art-by-steven.html) (**highly recommended book**)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Quick latex-ing with emacs](http://berenguel.blogspot.com/2009/09/quick-latex-ing-with-emacs.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Time boxing: you will work like never before](http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html)
+
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Winning Against Your Reading List](http://www.mostlymaths.net/2010/08/winning-against-your-reading-list.html)  
+ParseList(ScrambleList(Relateds(Maths, Programming,Latex)),2)

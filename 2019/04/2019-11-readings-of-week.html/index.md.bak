@@ -1,0 +1,84 @@
+---
+title: '2019#11 Readings of the week'
+date: 2019-04-28T17:39:00.000+02:00
+draft: false
+tags : [ReadingsOfTheWeek, Apache Spark, Python, Scala, Rust, TLA+]
+dropcap: true
+affiliate: true
+featured_image: "beowulf.jpg"
+---
+
+{{< figure src="beowulf.jpg" class="fig-left" >}}
+
+Software engineering, Spark, history, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).  
+    
+
+[Testing and debugging Apache Airflow](https://blog.godatadriven.com/testing-and-debugging-apache-airflow)
+----------------------------------------------------------------------------------------------------------
+
+We've been using Airflow for almost a year (on my suggestion). I'm not super-happy with it, and testing it is one of the pain points. Knowing how to do it is half the battle.  
+
+[Mind control, levitation and no pain: the race to find a superman in sports](https://www.theguardian.com/books/2019/apr/18/superhuman-sport-cold-war-mind-power-men-on-magic-carpets-ed-hawkins-extract)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+_You must lose_  
+
+[I can't Do Anything for Fun Anymore; Every Hobby Is an Attempt to Make Money](https://www.bennettnotes.com/post/making-money-out-of-every-hobby/)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+You've probably felt the same  
+
+[Databricks open-sources Delta Lake to make data lakes more reliable](https://techcrunch.com/2019/04/24/databricks-open-sources-delta-lake-to-make-data-lakes-more-reliable/)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I'm looking forward checking the code for this (should be equivalent to Databricks' Delta product)  
+
+[Tolkien was right: Scholars conclude Beowulf likely the work of single author](https://arstechnica.com/science/2019/04/tolkien-was-right-scholars-conclude-beowulf-likely-the-work-of-single-author/)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> In off the moors, down through the mist beams, god-cursed Grendel came greedily loping.
+
+[Don’t inherit Python built-in dict type](http://www.kr41.net/2016/03-23-dont_inherit_python_builtin_dict_type.html)
+--------------------------------------------------------------------------------------------------------------------
+
+Remember kids, what you want to do is either `Mapping` (read-only) or `MutableMapping` abstract base classes from [collections.abc](https://docs.python.org/3/library/collections.abc.html)  
+
+[How to Integrate Your Stuff into Spark SQL](https://www.shangzeyuan.com/how_to_integrate_your_stuff_into_spark_sql/)
+---------------------------------------------------------------------------------------------------------------------
+
+A pity you need a custom build of Spark in this case (and fighting with EMR to install it)  
+
+[Using Direct Writes to Significantly Increase the Performance of Spark Workloads](https://www.qubole.com/blog/direct-writes-to-increase-spark-performance/)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+If you happen to use Qubole and Hive, this can be a winner.  
+
+[Low-memory symbol indexing with bloom filters](https://scalameta.org/metals/blog/2019/01/22/bloom-filters.html)
+----------------------------------------------------------------------------------------------------------------
+
+I love bloom filters, and have been using the [metals](https://scalameta.org/metals/) Scala language server for a while now in emacs (spacemacs).  
+
+[CONSTANT Anti-Patterns : tlaplus](https://www.reddit.com/r/tlaplus/comments/aj018f/constant_antipatterns/?st=jr9b7dlx&sh=6c33c16a)
+-----------------------------------------------------------------------------------------------------------------------------------
+
+That's no constant  
+
+[Why software projects take longer than you think -a statistical model](https://erikbern.com/2019/04/15/why-software-projects-take-longer-than-you-think-a-statistical-model.html)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+We all know we are bad at estimates as humans, mathematical models just can confirm this  
+
+[How to knit a sports car with carbon fibre - The new black arts of manufacturing](https://www.economist.com/science-and-technology/2019/04/13/how-to-knit-a-sports-car-with-carbon-fibre)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rapid prototyping and construction with carbon fibre can change a lot of things in manufacturing  
+
+[🎥 Build a roguelike in Rust](https://m.youtube.com/watch?v=Q0-xjeEiYw4)
+-------------------------------------------------------------------------
+
+Using [libtcod](https://github.com/tomassedovic/tcod-rs). Also a blogpost series available [here](https://tomassedovic.github.io/roguelike-tutorial/).  
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

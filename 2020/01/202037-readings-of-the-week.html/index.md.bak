@@ -1,0 +1,118 @@
+---
+title: "2020#37 Readings of the Week"
+date: 2020-01-11T18:30:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "waves.jpg"
+tags : [Spark, Python, Data engineering, Psychology, ReadingsOfTheWeek]
+---
+
+First edition of the New Year. As eclectic as usual, I hope. The audio-based monitoring of servers and the weird uses of the GPT-2 neural network could be two highlights.
+
+<!--more-->
+
+**NOTE**: This week is more of a hodgepodge. There is Python and data engineering, Haskell… And the rest feels hard to classify as a whole. I hope you enjoy regardless. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+Also note that there are no books read, surprisingly: the reason is that I stopped any books I was in the middle of reading and started with a fresh "want to read" list for 2020 (which happens to have 20+1 books). It's still to early for any to be finished (first may be in next week's edition).
+
+{{< figure src="waves.jpg" class="fig-wide" caption="Photo by Borys Liechti on Unsplash">}}
+
+## [20 Online Courses That Will Make You More Successful in 2020](https://www.inc.com/jessica-stillman/20-online-courses-that-will-make-you-more-successful-in-2020.html)
+
+I have registered to 2. Won’t tell you which, but feel free to email me with your guesses if you fancy.
+
+## [The Trouble with Typed Errors](https://www.parsonsmatt.org/2018/11/03/trouble_with_typed_errors.html)
+
+Error chaining can easily lead to having huge error sum types. That’s usually a sign of a wrong design or approach.
+
+## [Mathematician Makes Euler Equations ‘Blow Up’](https://www.quantamagazine.org/mathematician-makes-euler-equations-blow-up-20191218/)
+
+I’m still a mathematician and this is pretty close to my expertise area to be interesting without any further reason.
+
+## [What we can learn from the history of Systems Thinking](https://medium.com/systems-thinking-for-non-systems-thinkers/what-we-can-learn-from-the-history-of-systems-thinking-79852d8955c4)
+
+I didn’t learn anything from the history, but it was interesting to see every step in its historical context, and be reminded I should read [Urban Dynamics](https://www.amazon.com/Urban-Dynamics-Jay-Wright-Forrester/dp/0262060264/ref=as_li_ss_tl?keywords=urban+dynamics&qid=1578771215&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=d046c9d51c668ab6b5e407a14c59afbb&language=en_US), has been on my reading list for 2 years.
+
+## [How to Ruin Your Company with One Bad Process](https://a16z.com/2014/07/22/how-to-ruin-your-company-with-one-bad-process/)
+
+Beware rules that incentivize gamification of the system. Written by the H in a16z.
+
+## [Beware What You Measure: The Principle of Pairing Indicators](https://www.holistics.io/blog/beware-what-you-measure-the-principle-of-pairing-indicators/)
+
+This was mentioned above, and since I wasn’t aware of the concept, found this article. So interesting! A way of anchoring what you really want to measure (the _concept_) with more than one metric to prevent drift in unwanted directions.
+
+## [Java JIT vs Java AOT vs Go for small, short-lived processes](http://macias.info/entry/201912201300_graal_aot.md)
+
+“Java is slow, Go is fast”. Yeah, sure. Use whatever language makes most sense for your problem, _please_.
+
+## [How a Cartographer Drew a Massive, Freehand Map of North America](https://www.atlasobscura.com/articles/north-america-big-map?fbclid=IwAR3AFi7MromNQEjoTCw-methAt3cu6qhK2-YMhFoqlF12j8ZVKKmYus6MBg)
+
+I found it funny how the title says _cartographer_ and the text says _not a cartographer_. Interesting regardless of this small tidbit. Also, there’s a map on a fridge.
+
+## [Notes on Technical Writing](https://mkaz.blog/misc/notes-on-technical-writing/)
+
+Some good notes to remember when writing documentation. I noted for further thinking the notions of _minimalist instruction_.
+
+## [Beware SAFe (the Scaled Agile Framework for Enterprise), an Unholy Incarnation of Darkness](https://medium.com/@seandexter1/beware-safe-the-scaled-agile-framework-for-enterprise-an-unholy-incarnation-of-darkness-bf6819f6943f)
+
+The process sounds the less Agile and agile thing ever. Glad I have always worked at small companies.
+
+## [Down with Pipeline debt / Introducing Great Expectations](https://medium.com/@expectgreatdata/down-with-pipeline-debt-introducing-great-expectations-862ddc46782a)
+
+A library to test your data. Not your code, but your _data_. How cool is that, fellow data engineers?
+
+## [Veteran Sonarman Explains Why Pump-jets Are Superior To Props On Modern Submarines](https://www.thedrive.com/the-war-zone/31708/veteran-sonarman-explains-why-pump-jets-are-superior-to-props-on-modern-submarines)
+
+(Sonar) echoes of the Red October here.
+
+## [CGA in 1024 Colors - a New Mode: the Illustrated Guide](https://int10h.org/blog/2015/04/cga-in-1024-colors-new-mode-illustrated/)
+
+Long, but worth it. If you remember, CGA was a 4-colour display mode of yore, improved upon by EGA (16) and VGA (256). Well, there are always surprises… And in this demo they show how to get to _1024_ colours in CGA. That would have been batshit crazy in 1980.
+
+## [Rise above it or drown - How elite NBA athletes handle pressure](https://www.espn.com/nba/story/_/id/26802987/rise-drown-how-elite-nba-athletes-handle-pressure)
+
+I wonder how this can be applied by “normal” people, in normal situations.
+
+## [A Very Unlikely Chess Game](https://slatestarcodex.com/2020/01/06/a-very-unlikely-chess-game/)
+
+The result is pretty impressive: a [GPT-2](https://openai.com/blog/better-language-models/) (text-based) neural network is trained on chess game transcriptions. _Only_. By _just_ guessing next “words” it can play chess at a… level. With no knowledge of rules, or even what the board might look like. I’m out of words to describe how fascinating this is.
+
+## [The empty promises of Marie Kondo and the craze for minimalism](https://www.theguardian.com/lifeandstyle/2020/jan/03/empty-promises-marie-kondo-craze-for-minimalism)
+
+Spark joy for 9.99/month. Add an extra dose of sparkling by 14.99/month.
+
+## [Minimalist Journaling: A Fun and Effective Tool for Tremendous Habit Change](https://medium.com/better-humans/draft-how-to-hack-your-brain-to-achieve-consistency-that-lasts-7f5fdc520d28)
+
+I read this one early-ish last year, but for some reason it didn’t make it into any _Weekly Readings_. Maybe it was before I started? Not sure. In any case, looks like an interesting way of journaling. Although I enjoy drawing and diagramming and all that, I’m more of a writing person for journals.
+
+## [Peep (The Network Auralizer): Original project proposal](http://peep.sourceforge.net/docs/peep-proposal.html)
+
+This… looks so interesting. I can imagine converting our Grafana dashboards to ambient sounds, with storms rising as traffic gathers.
+
+## [Remote work: Why we put "virtual coffee breaks" in our company handbook](https://qz.com/work/1147877/remote-work-why-we-put-virtual-coffee-breaks-in-our-company-handbook/)
+
+We are _more_ remote now, and I’m looking for ways to keep the serendipitous moments that bring most projects forward. I don’t fancy all of GitLab’s ideas, but the virtual coffee breaks sounds promising.
+
+## [A Spectre is Haunting Unicode](https://www.dampfkraft.com/by-id/a824aa10/#A-Spectre-is-Haunting-Unicode)
+
+The Ways of Unicode are mysterious
+
+## 🍿 [Optimizing Delta Parquet Data Lakes for Apache Spark](https://www.youtube.com/watch?v=euBvYFTVN8s)
+
+We have started testing Databricks lately, and I finally found time to watch this excellent presentation by Matthew.
+
+## 🍿 [Patrick Winston on How to Speak in Public](https://m.youtube.com/watch?v=Unzc731iCUY)
+
+[Marc](https://twitter.com/marcraminv) recommended this talk a few days ago, and my first reaction was "The Lisp guy?" And yes, that [Patrick Winston](https://en.wikipedia.org/wiki/Patrick_Winston). It's excellent. I disagree on a couple things on ending presentations, but that's a personal take.
+
+## 🍿 [Think Fast, Talk Smart: Communication Techniques](https://m.youtube.com/watch?v=HAnw168huqA)
+
+Improvisation techniques for speaking. It was a good watch, appeared as recommended watching after the previous one and Youtube was spot on.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Improve Yourself iPad Mac on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/improve-yourself-ipad-mac/</link>
+    <description>Recent content in Improve Yourself iPad Mac on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Dec 2011 20:31:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/improve-yourself-ipad-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
+      <link>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</link>
+      <pubDate>Sat, 03 Dec 2011 20:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/</guid>
+      <description>All hail Steve Jobs
+  Inspired by a post by Mark O&amp;rsquo;Connor from Yield Thought (my frequent readers will have already read something from him from my link collections), I have been working remotely for a week. His set-up is an iPad 2, Apple wireless keyboard, the iSSH app and an account in Linode. My setup is similar, but I use an iPad 1 and 6sync for the VPS.</description>
+    </item>
+    
+  </channel>
+</rss>

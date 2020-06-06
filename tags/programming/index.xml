@@ -169,7 +169,7 @@ In the last few months have been writing and thinking about several ideas to pro
     </item>
     
     <item>
-      <title>Learning to use vim in my iPad (even if I&#39;m an emacs geek)</title>
+      <title>Learning to use vim in my iPad</title>
       <link>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</link>
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
@@ -178,7 +178,7 @@ In the last few months have been writing and thinking about several ideas to pro
     </item>
     
     <item>
-      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <title>Good Books I have Read in 2011: Perfect Gifts for Geeks!</title>
       <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
@@ -393,18 +393,6 @@ I decided to allocate a few global variables (for &amp;ldquo;current point&amp;r
     </item>
     
     <item>
-      <title>Current programming projects</title>
-      <link>https://mostlymaths.net/2010/03/current-programming-projects.html/</link>
-      <pubDate>Fri, 05 Mar 2010 11:50:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/2010/03/current-programming-projects.html/</guid>
-      <description>CML with the Duffing Map
-This is just to remind me of what I&amp;rsquo;m doing and how is it going
-Approximation of images by randomly placed translucent triangles  Finished the first version, it works (I used it for my Christmas postcard), but the speed is not really good. Should rewrite big parts to make it faster.
- Lisp raytracer  Stalled as I was rewriting the refraction code of the rewritten inner loop.</description>
-    </item>
-    
-    <item>
       <title>Learning Forth by working on a raytracer</title>
       <link>https://mostlymaths.net/2010/03/learning-forth-by-working-on-raytracer.html/</link>
       <pubDate>Wed, 03 Mar 2010 22:30:00 +0100</pubDate>
@@ -429,7 +417,7 @@ Looks like a nice language, having something I enjoy about Lisp (interactivity) 
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
-      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
+      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.</description>
     </item>
     
     <item>
@@ -563,16 +551,6 @@ int love=0; if(friday){love=1;} - The Cure</description>
     </item>
     
     <item>
-      <title>Project: emacs fractal zoomer</title>
-      <link>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</link>
-      <pubDate>Sun, 11 Oct 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/10/project-emacs-fractal-zoomer.html/</guid>
-      <description>I have several (really, a lot) of programs to compute different images for my article, amusement, anything. And all of them require a change-and-try approach for zooming. The first I wrote needed to be finished quickly&amp;hellip; so I just hard-coded in the source the parameters. And this program turned to be the basis for all others&amp;hellip; And now each zoom requires some calculations and recompile.
-A time ago I decided to do something about it.</description>
-    </item>
-    
-    <item>
       <title>gdb &amp; CEDET &amp; ECB</title>
       <link>https://mostlymaths.net/2009/10/gdb-cedet-ecb.html/</link>
       <pubDate>Mon, 05 Oct 2009 01:00:00 +0200</pubDate>
@@ -617,23 +595,6 @@ Source code:
       <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
       <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
-    </item>
-    
-    <item>
-      <title>My backup script in Mac/Linux</title>
-      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
-      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
-      <description>My backup script in Mac/Linux
-#!/bin/sh
-# This script backs up a set of files and directories incrementally,
-# storing only the modified files in a folder-per-day basis. Each time
-# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
-# refreshed to the newest copy, and the previous version of a modified
-# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
-# for instance)
-# Root to be safeguarded</description>
     </item>
     
     <item>

@@ -1,0 +1,106 @@
+---
+title: "2020#41 Readings of the Week"
+date: 2020-03-07T15:30:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "harmonica.jpg"
+tags : [Data engineering, Python, Maths, Forth, Apache Spark, ReadingsOfTheWeek]
+---
+
+No specific theme this week, but feels more data engineering heavy than lately. As it should. Oh, and beware door knobs, they can bring evil.
+
+<!--more-->
+
+**NOTE**: The themes are varied, and some links below are affiliate links. Apache Spark, category theory, Scala, Python, data engineering, engineering management. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+{{< figure src="harmonica.jpg" class="fig-wide" caption="Photo by Rafael Leão on Unsplash">}}
+
+## [Coronavirus: the second-weirdest solution?](https://www.scottaaronson.com/blog/?p=4664)
+
+Maybe some kind of mental training can work.
+
+## [Enhance Your Databricks Workflow](https://menziess.github.io/howto/enhance/your-databricks-workflow/)
+
+We've been using Databricks for some time now. I'm more in the Scala side than
+the Python side, but if we decide to start writing jobs mostly in Python, I'll
+keep this post in mind.
+
+## [When Bloom filters don't bloom](https://blog.cloudflare.com/when-bloom-filters-dont-bloom/)
+
+I think a Bloom filter didn't fit the problem too well from the start, but I
+guess I'm biased because I have read the article. Hindsight is so 2020.
+
+## [Loading NumPy arrays from disk: mmap() vs. Zarr/HDF5](https://pythonspeed.com/articles/mmap-vs-zarr-hdf5/)
+
+I don't think I have ever been in a position where I have needed such speed, but
+I'll keep this in mind.
+
+## [AWS unit tests with localstack and scalatest](https://gist.github.com/kag0/d0e601195f2d06e74f2675a36d68fb07)
+
+This is a code gist. Worth starring if you understand what the subject is about.
+
+## [Prevent Repetition with Assignment Expressions](https://effectivepython.com/2020/02/02/prevent-repetition-with-assignment-expressions)
+
+The infamous walrus from Python. Oh, Python simplicity of yore, where thou
+hidst?
+
+## [Hit the mute button: why everyone is trying to silence the outside world](https://www.theguardian.com/society/2019/jun/12/hit-mute-button-why-everyone-trying-to-silence-outside-world-uber)
+
+Active Noise Cancelling (or Control) is a rising business. Typed while wearing
+[Bowers & Wilkins' PX7s](https://www.amazon.com/Bowers-Wilkins-Bluetooth-Headphone-Cancelling/dp/B07WK5XT8T/ref=as_li_ss_tl?keywords=bowers+wilkins&qid=1583592562&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=704e3589ececc58dbf877884689f3160&language=en_US) set at _high_.
+
+## [A Vaccine Won’t Stop the New Coronavirus - The Atlantic](https://www.theatlantic.com/health/archive/2020/02/covid-vaccine/607000/)
+
+We can only expect to slow down the spread so that health systems can cope with
+most people getting ill.
+
+## [Typed functional Dependency Injection in Python](https://sobolevn.me/2020/02/typed-functional-dependency-injection)
+
+I hate dependency _injection_. Or at least, magic DI frameworks that don't state
+explicitly what is going on.
+
+## [BFG & Muddy Waters - Billy F Gibbons of ZZ Top](https://billygibbons.com/2017/06/bfg-muddy-waters/)
+
+I don't remember how I found this article. Probably the harmonica roots of Muddy
+Waters and the fun looks of ZZ Top made me read it, and it wasn't wasted.
+
+## [The prisoner’s dilemma at 70 – at what we get wrong about it](http://timharford.com/2020/02/the-prisoners-dilemma-at-70-at-what-we-get-wrong-about-it/)
+
+From Tim Harford. I found slightly weird that he mentioned climate change as an
+example of the Prisoner's Dilemma, for me it's one of the best examples of
+Tragedy of the Commons. Maybe there is something I can't see there.
+
+## [Reorder JOIN optimizer - cost-based optimization](https://www.waitingforcode.com/apache-spark-sql/reorder-join-optimizer-cost-based-optimization/read)
+
+An overview (with code and examples) of how the join optimiser in Apache Spark
+uses CBO.
+
+## [Down on the Farm That Harvests Metal From Plants](https://www.nytimes.com/2020/02/26/science/metal-plants-farm.html)
+
+Beware the NY Times Great Paywall. The article is super interesting though.
+
+## [Product vs. Feature Teams](https://svpg.com/product-vs-feature-teams/)
+
+There is something vaguely depressing about this post and I can't put my finger
+on what or where.
+
+## [Five principles that will keep your data warehouse organized](https://blog.fishtownanalytics.com/five-principles-that-will-keep-your-data-warehouse-organized-9c3d29caf6ce)
+
+From the creators of [DBT](https://www.getdbt.com). Good rules.
+
+## [On editing text](https://bosker.wordpress.com/2012/05/10/on-editing-text/)
+
+A categorical approach to text editing. It's unexpected.
+
+## [🔊 Matt Rocklin - Parallel Computing & Founding OSS Companies (PyData Deep Dive podcast)](https://overcast.fm/+UQGuZE2Us)
+
+I've been interested in Dask for some time now (wow, closing in to… 3 years?).
+This is a good chat about it.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

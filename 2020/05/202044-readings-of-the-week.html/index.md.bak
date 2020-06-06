@@ -1,0 +1,148 @@
+---
+title: "2020#44 Readings of the Week"
+date: 2020-05-10T13:20:33+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "coffee.jpg"
+tags : [Engineering, Apache Spark, Python, Remote Working, Maths, ReadingsOfTheWeek]
+---
+
+The lack of commute is _very_ hard on my reading, and I have also been working on several projects that have eaten into my reading/writing time.
+
+<!--more-->
+
+Sorry for the delay. I have been working on [several](https://github.com/rberenguel/motllo) [personal](https://github.com/rberenguel/bear-note-graph) [projects](https://github.com/rberenguel/paque) and this has eaten on my reading and writing time. I can't promise I'll come back to weekly posts, at the moment I'm having fun with [generative coding](https://github.com/rberenguel/sketches) in the afternoons, which is where I did most of my reading.
+
+**NOTE**: Apache Spark, engineering, management, remote working, art… A lot of subjects since it covers almost a full month of varied reading. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+{{< figure src="coffee.jpg" class="fig-wide" caption="Coffee from a Kompresso (by myself)">}}
+
+## [The Devastating Decline of a Brilliant Young Coder](https://www.wired.com/story/lee-holloway-devastating-decline-brilliant-young-coder/)
+
+It's a very tough read.
+
+## [The problem with Product Owners](https://www.allankellyassociates.co.uk/archives/4399/the-problem-with-product-owners/)
+
+Being a product OWNER is different from being a product owner
+
+## [📚 Stealing the Corner Office](https://www.amazon.com/Stealing-Corner-Office-Strategies-Business/dp/1601633203/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=rbersblog-20&linkId=c9e1918226a73d10583bd012c05fa7e6&language=en_US)
+
+Recommended by a friend. Nothing _surprising_ but many _oh crap_ moments.
+
+## [🔊 The Laws of Human Nature](https://www.amazon.com/The-Laws-of-Human-Nature-audiobook/dp/B07HGJGP7G/ref=as_li_ss_tl?_encoding=UTF8&qid=1589113483&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=5bc0836803253db04e14e3b67e2bedd3&language=en_US)
+
+Interesting, but too long
+
+## [Why You Should Document Your Tests](https://hynek.me/articles/document-your-tests/)
+
+I had never thought of this.
+
+## [Product for Internal Platforms](https://medium.com/@skamille/product-for-internal-platforms-9205c3a08142)
+
+Internal products are not SAASes.
+
+## [How to emulate hand-drawn shapes / Algorithms behind RoughJS](https://shihn.ca/posts/2020/roughjs-algorithms/)
+
+A long time ago I implemented a [rough drawing style for sgf2png](https://twitter.com/berenguel/status/1256509914786250752). I have kept an interest in the area.
+
+## [Stretching exercises - Repetitive Strain Injury (RSI)](https://www.rsipain.com/stretching-exercises.php)
+
+Shared by [Michael](https://mobile.twitter.com/citizen428). Seems like a good set.
+
+## [Google AI Blog: Using Neural Networks to Find Answers in Tables](https://ai.googleblog.com/2020/04/using-neural-networks-to-find-answers.html?m=1)
+
+This has potential. Siri for your data.
+
+## [How to write docstrings for tests](https://jml.io/pages/test-docstrings.html)
+
+A how to on improving your test docs or your regression commit messages.
+
+## [Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
+
+I'll be stealing some things from here, I will probably create a [motllo](https://mostlymaths.net/2020/05/scratching-my-own-itch-templating-motllo.html/) template for it when finished.
+
+## [Comment Only What the Code Cannot Say](https://medium.com/@kevlinhenney/comment-only-what-the-code-cannot-say-dfdb7b8595ac)
+
+My approach. Code should be readable. Only comment if you really, really need a comment.
+
+## [Spotify’s Failed #SquadGoals](https://www.jeremiahlee.com/posts/failed-squad-goals/)
+
+Huh, it makes sense, and is unexpected at the same time.
+
+## [What the heck is pyproject.toml?](https://snarky.ca/what-the-heck-is-pyproject-toml/)
+
+I have been using [poetry](https://python-poetry.org) in my latest projects, and you need a pyproject.toml file for that. Handling python projects with these is a breeze.
+
+## [Quarantine work is not Remote work](https://www.hanselman.com/blog/QuarantineWorkIsNotRemoteWork.aspx)
+
+Every week we have a "team sanity check meeting" and I always mention how tired I am since lockdown started. I am used to working remotely (8 or 9 years already) but this is not a normal situation.
+
+## [Blurred rounded rectangles](https://raphlinus.github.io/graphics/2020/04/21/blurred-rounded-rects.html)
+
+This is like too much information on how to do this.
+
+## [Tauba Auerbach’s RGB Colorspace Atlas Depicts Every Color Imaginable](https://www.thisiscolossal.com/2012/09/tauba-auerbachs-rgb-colorspace-atlas-depicts-every-color-imaginable)
+
+It feels like a magic illusion, holding the whole of the colours. Worth mentioning [Shades of Grey](https://www.amazon.com/Shades-of-Grey/dp/B006N0FBHI/ref=as_li_ss_tl?_encoding=UTF8&qid=1589114070&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=3f2ce73ba10cd010ef5d0d851c2f2f85&language=en_US) here. One of my favourite books, and at the moment of this writing heavily discounted on Kindle.
+
+## [Mac: How to find cause of high kernel_task cpu usage? - Ask Different](https://apple.stackexchange.com/questions/363337/how-to-find-cause-of-high-kernel-task-cpu-usage/363933#363933)
+
+It's because of here you place your USB-C cables!1!!!!
+
+## [Animated Multi-Julia Sets with Finite Precision](https://weigert.vsos.ethz.ch/2020/04/14/animated-multi-julia-sets/)
+
+Julia sets on shaders. I may [play back with shaders](https://twitter.com/berenguel/status/1259508172068454402) [again](https://twitter.com/berenguel/status/1259513661770604544)…
+
+## [🍿 Introducción a la programación funcional con ZIO - YouTube](https://m.youtube.com/watch?v=i0nOJyGfyzI)
+
+In Spanish, intro to ZIO
+
+## [📚 Difficult conversations](https://www.amazon.com/Difficult-Conversations-Discuss-What-Matters-ebook/dp/B004CR6ALA/ref=as_li_ss_tl?crid=3OVYXIL3209GN&dchild=1&keywords=difficult+conversations&qid=1589115095&sprefix=difficult+conversations,aps,280&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=97e37146b570ba7d57b0744082856166&language=en_US)
+
+A classic, but everything sounds like NVC without mentioning NVC.
+
+## [Conway's Prime-Producing Machine](https://www.futilitycloset.com/2010/06/27/conways-prime-producing-machine/)
+
+A Fractran algorithm
+
+## [Amazon Redshift CI/CD - How we did it and why you should do it too](https://medium.com/big-data-engineering/redshift-cicd-how-we-did-it-and-why-you-should-do-it-to-e46ecf734eab)
+
+Not sure about running on Redshift   Otherwise wo do sqlite
+
+## [The Big Draw: How The Harmonica Is Helping People Breathe Easier](https://www.harmonica.com/breath-easy-56795.html)
+
+I play (badly) many instruments.
+
+## [This Super-Clean Smart Screen Puts a Newspaper on Your Wall](https://onezero.medium.com/the-morning-paper-revisited-35b407822494)
+
+Looks awesome, but pricewise out of reality
+
+## [🍿 SQL databases come up with algorithms you’d never have dreamed of (2017)](https://www.youtube.com/watch?v=wTPGW1PNy_Y)
+
+Watched a while ago so I no longer remember much more than "I should read more on database internals"
+
+## [PEP 544 -- Protocols: Structural subtyping (static duck typing)](https://www.python.org/dev/peps/pep-0544/)
+
+Huh, I missed this. Interesting way to improve my Python
+
+## [We released simdjson 0.3: the fastest JSON parser in the world is even better! ](https://lemire.me/blog/2020/03/31/we-released-simdjson-0-3-the-fastest-json-parser-in-the-world-is-even-better/)
+
+Sadly it sounds like it wouldn't help in one usecase we have, newline separated JSONs (where the win would be marginal). But I will try at some point.
+
+## [A Developer's Guide to Surviving the Coronapocalypse ](http://degoes.net/articles/coronapocalypse)
+
+Kind of pairs well with Stealing the Corner Office
+
+## [📚 Decisive: How to Make Better Choices in Life and Work](https://www.amazon.com/Decisive-Make-Better-Choices-Life/dp/B00B3Z5QFK/ref=as_li_ss_tl?crid=CWSNRMS3AGSH&dchild=1&keywords=decisive+by+chip+and+dan+heath&qid=1589115381&s=books&sprefix=decisive,aps,256&sr=1-1&linkCode=ll1&tag=rbersblog-20&linkId=1e72f081a6bbacb9e038ac2f12bf8444&language=en_US)
+
+This was super-interesting, as the large amount of notes I kept say. How to take decisions, basically. A framework you may use.
+
+## [The Invention of the AeroPress](https://priceonomics.com/the-invention-of-the-aeropress/)
+
+I don't know how I found this. For my birthday, I got a [Cafflano Kompresso](https://www.amazon.com/Cafflano-Kompresso-Carry-Coffee-Maker/dp/B074TRBKW4/ref=as_li_ss_tl?crid=29PFCKFUWB5PE&dchild=1&keywords=cafflano+kompresso&qid=1589115485&sprefix=cafflano,aps,273&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=c5edcc085b10b7b10032665de5ed5cb9&language=en_US) (kind of a fancier, better, Aeropress, rendering a very good espresso) so it may be due to that.
+
+
+---
+
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>

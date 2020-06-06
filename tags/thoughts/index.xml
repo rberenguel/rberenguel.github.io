@@ -305,7 +305,7 @@ Start strong Start your day doing some work for at least half an hour straight. 
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
-      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
+      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.</description>
     </item>
     
     <item>

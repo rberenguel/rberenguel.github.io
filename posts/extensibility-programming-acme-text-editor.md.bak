@@ -1,0 +1,215 @@
+---
+title: 'Extensibility in the Acme text editor'
+date: 2013-03-09T18:31:00.000+01:00
+draft: false
+tags : [Programming, emacs, vim, acme]
+---
+
+Text editors. You hate them or love them. Praise them with religious zeal, and attack them with the same power. I've been an emacs user for the last 8 years, getting as deep as I could without checking the source. And the past few months I have started using evil-mode in emacs, to get some taste of vim in my daily editing (mostly text objects.)  
+
+  
+
+There's still a third contestant in editor-land, for me. It is Acme, the odd editor from Plan9 from Outer Space, the even-more-odd operating system from Bell Labs. There's no need to install Plan9 and fight against your current hardware. If you are in any kind of Unix derivative (Mac OS, Linux) you can install Plan9 from User Space, a port of most of Plan9 to work in user space (as you may guess.) Plan9 is a whole different thing from other Unix systems, and Acme is an incredibly different beast from any other editor you know.
+
+  
+
+I can start with a screenshot of it:
+
+  
+
+[![](http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s400/Screen+shot+2013-03-09+at+12.01.54+AM.png)](http://4.bp.blogspot.com/-QgzEWU2klyQ/UTtnqx_tBYI/AAAAAAAADic/7-ULG8Hbzck/s1600/Screen+shot+2013-03-09+at+12.01.54+AM.png)
+
+This is how this post looks like. You can see an adict window by the side
+
+  
+  
+This is Acme. I hope you like this shade of yellow and this shade of blue. There's no way to change it without getting into the source code and recompiling. It may be sound odd, but I kind of like it. It's refreshing. In emacs and vim it is very easy to get a beautiful colour scheme (I use solarized-dark everywhere I can,) but this means you can choose. And choosing means a decision, with pros, cons and whatever. Just screw it and pick blue and yellow.
+
+  
+
+Once you are used to it, you have to face something "worse." If you come from emacs or vim this will sound just horrible. Wait for it. Everything is done with the mouse. Yes, you read that well. No keyboard shortcuts (well, there are a few, I'll get into these in a short while.) Mouse clicking, moving and chording. The likes. I know this will sound stupid, a waste of time, prone to carpal tunnel syndrome. Let me go on for a while.
+
+  
+
+Emacs and vim users alike like to bash any other editor in the grounds of speed. I can refactor faster than you can, is almost the motto. Watch how fast I type, thus how fast I change code. I'm one of these, I usually don't even have to think when I'm doing "something" in emacs or vim and changing stuff. But then again, how often I'm changing stuff?
+
+  
+
+Emacs and vim make easy changing what's there. Multiple-marks, text objects, quick jumps. All this is there just to make changing stuff fast. Agree? Ok, go on. If you don't, no problem. Go on anyway.
+
+  
+
+Now the revelation: most of the time I'm writing, I'm creating new stuff, not rewriting or moving old stuff. Shocking? Watch your own coding/writing habits. Yes, I change what's in text strings (ci", in vim) and is incredibly fast. In Acme, you can double-click after the first quotation mark (or just before the last) to select everything inside a pair of delimiters (a pity it is not smart enough to understand dollar-delimiters as used by LaTeX.) But the point is not that speed. What are you changing this string for? Did you wait to think about it or you just changed it, compiled it, checked it and went back to square one?
+
+Pause: the file servers
+-----------------------
+
+Acme and Plan9 follow a special philosophy: in some sense, everything is a file. And most programs (I could say all, but I'm not that into Plan9 to be sure) act as file servers. Acme is just one of these: everything you can see in an Acme session is a file. For example, this text I'm writing (you saw it in the previous screenshot) has window ID 10. So...
+
+  
+
+```
+acme/10/        is the directory associated to this text  
+acme/10/addr  is a file with an address position for text insertions  
+acme/10/body  is a file with the contents of the editing window (can't overwrite)  
+acme/10/ctl  is a "file" (socket-like) that allows you to send commands to the window  
+acme/10/data  is a file with the data of the editing window (can overwrite)   
+acme/10/errors  is a file with data spat by commands executed by this window  
+acme/10/event  is a "file" (socket-like) where you can read/write the editing session  
+acme/10/tag  is a file holding the contents of the tag (the menu above)  
+acme/10/xdata  is a file with the data (addr bound) of the editing window  
+
+```
+
+  
+
+What does this mean? It means I can write code in any language that can manipulate this text. Read this out loud: I script something, and make it work with the text I'm editing. Think about indenting, linting, type-checking, done against the working copy, not the real file. With output to a special buffer associated to the file. Extending the editor is just a matter of writing a program.
+
+Back into Acme
+--------------
+
+Back into Acme. In Acme there's no GUI: text is the user interface. TUI. Every window is composed of two pieces: the text in the window (its "body") and a tag above it (in blue.) If you want to copy something, select it and middle-click on Snarf. Then put your cursor where you want to paste and middle-click on Paste. Done. Of course, Snarf and Paste can be anywhere. In the tag menu, in the text you are editing or even in another document. They are just words. Words that do the work. 
+
+  
+
+But the same works with shell commands. I can type date and middle-click it, to get the current date in a new buffer. Same goes with ls. Or even |md5sum to calculate the checksum of some text. Or append something to a window. For example, there's an easy way to make small queries to Wikipedia via the command line (see http://www.commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns) I wrote a script to do it, sitting in my path, so I can now type here <wikiCLI.sh Acme with the cursor a few lines below this... and middle click.
+
+  
+Result:  
+
+> "Acme (\\; , the peak, zenith, prime) denotes the best of something. Acme or ACME may also refer to: Acme Corporation, a fictional company in the cartoon world of Looney Tunes, ACME Detective Agency, a fictional detective agency from the Carmen Sandiego seri" "es of computer games and television shows, Acme (album), the sixth album by the Jon Spencer Blues Explosion, Acme Novelty... http://en.wikipedia.org/wiki/Acme"
+
+On button clicking
+------------------
+
+I use a Macbook (almost 5 years old already, and still kicking.) And as you may guess, it only has one button. So, how do I manage to use middle and right clicking with ease? Well, easy. Or almost. Pressing alt while clicking simulates middle click, command while clicking simulates right clicking (in Acme, not in general.) Easy, since alt is in the middle and command just right to it. 
+
+  
+
+Problem is, chording is most awesome with a real 3-button mouse. Why? I'd rather search for wikiCLI.sh Acme (text editor) to get:
+
+  
+
+> ;; Truncated, retrying in TCP mode.  
+> "Acme is a text editor and graphical shell from the Plan 9 from Bell Labs operating system, designed and implemented by Rob Pike. It can use the sam command language. The design of the interface was influenced by Oberon. It is different from other editing " "environments in that it acts as a 9P server. A distinctive element of the user interface is mouse chording... http://en.wikipedia.org/wiki/Acme\_(text\_editor)"
+
+  
+
+Doing so is a little more troublesome: select "Acme (text editor)" and select the command with the second button (to execute) finally click: clicking sends the last selection as argument 1 to the program. Doing so with a Mac trackpad is impossible: there's no way to simulate a left-click while middle-clicking. I also find there's a glitch here: there's no way to redirect the output of the command. It's either overwriting the selection of the argument, or goes to the +Errors window.
+
+Selections, regexes and other furry animals
+-------------------------------------------
+
+How can I select everything? :0,$ and right-click. Done. Want to replace all instances of acme for Acme? Middle click this: Edit ,s,acme,Acme,g The sam syntax is easy but... odd. The first , is to select everything, s to replace acme for Acme, g for global. Easy? Not much, but Acme is just different. And works. Edit is the command to execute an editing command, by the way.
+
+  
+
+You can also do regex searches. Like :/interface/ or :/click\[i|.\]/. And you can get fancy, by doing filename:<search-or-position>. For example, acmescripting:/interface/ in another window would open acmescripting in the first instance of interface. And acmescripting:20 opens it, selecting line 20. As you can see, filename is implied to be current file in case of doubt. Also, this kind of referencing works nice with most compilers and linters.
+
+Keyboard shortcuts
+------------------
+
+There are a few keyboard shortcuts, even if Acme is mouse-centric. Press Esc, and all text written since the last click is selected. In addition to this, we have the other standards:  
+  
+C-U ‚Äì> Delete from cursor to start of line.  
+C-W ‚Äì> Delete word before the cursor.  
+C-H ‚Äì> Delete character before the cursor.  
+C-A ‚Äì> Move cursor to start of the line.  
+C-E ‚Äì> Move cursor to end of the line.  
+  
+Nothing more, nothing less. Minimal, isn't it?  
+
+Scripting power
+---------------
+
+Finally, I want to show some scripting power of acme. I introduced the concept of the filesystem a few paragraphs ago. Now, let's see how it can be used. Let's say for example I'm an avid C programmer, and like to have code neatly indented. Well, an option is to write a script that uses the indent command line program to indent the text in the window. How? Now comes a trivial example, not written in the best way possible
+
+  
+
+```
+#!/bin/zsh  
+#9indent  
+echo "WinId is: " $winid  
+echo -n "1,$" | 9p write acme/$winid/addr  
+echo "Selected whole contents for overwriting with 'write'"  
+9p read acme/$winid/body | indent -st | 9p write acme/$winid/data  
+
+```
+
+  
+First is to check which is the ID of the window. When invoking a command, its environment has it in a variable, aptly named winid. To overwrite the contents of the file, we set the addr to the whole file with the selector 1,$. We do so by piping to 9p with the command write. 9p is the middleman, allowing us to read and write files in 9P servers, like the ones acme and other Plan9 programs offer. Finally we get the body, indent it (-st is the command to use stdin in indent) and pipe it to data. Done! This indents a well-formed C file as expected.  
+  
+Add this file to your path and add 9indent to your tag. Ready to indent by middle-clicking.  
+  
+A slightly more complex example is to generate the output of a Markdown file. The code is as follows:  
+  
+
+```
+#!/bin/zsh  
+echo "WinId is: " $winid  
+format=$(9p read acme/$winid/tag)  
+echo "Tag is " $format  
+echo "Format in tag"  
+case $format in  
+    \*"latex"\* )  
+        echo "latex ouput selected"  
+        format="latex" ;;  
+    \*"groff-mm"\* )  
+        echo "groff-mm output selected"   
+        format="groff-mm" ;;  
+    \*"odf"\* )  
+        echo "odf ouput selected"   
+        format="odf" ;;  
+    \*"html"\* )  
+        echo "html output selected"   
+        format="html" ;;  
+    \* )  
+     echo "Unrecognized format, defaulting to html"  
+     format="html" ;;  
+esac  
+echo -n "1,$" | 9p write acme/$winid/addr  
+echo "Selected whole contents for overwriting with 'write'"  
+9p read acme/$winid/body | peg-markdown --to=$format | 9p write acme/new/body  
+echo "Wrote the html-markdowned version to a new buffer"  
+last=$(9p ls acme | sort -g | tail -n 1)  
+echo "Get last created buffer"  
+echo -n "clean" | 9p write acme/$last/ctl  
+echo -n "0,0" | 9p write acme/$last/addr          
+echo -n "dot=addr" | 9p write acme/$last/ctl  
+echo -n "show" | 9p write acme/$last/ctl      
+echo "Moved to beginning"  
+
+```
+
+  
+
+This is slightly more complex, at least on the shell side. It checks the tag for one of the accepted formats for peg-markdown and then creates the formatted output in a new window, by writing to acme/new/body. Then I want the cursor to be at the beginning of this file, not at the end (as is the default.) It was slightly tricky, but the best way was to sort in numerical order and get the last-created window (that's this tail -n 1) then to set the address at 0,0 and set the dot (selection) at address by writing at the control file. Then the command show makes the window show the selected position: 0,0. Done! Intersped among all this is a "clean" command, to make this new window to close.
+
+  
+
+Here you can see a video of these scripts in a sample use (and you'll see how I miss a middle click - execute -  for a right-click - open)  
+  
+
+  
+
+  
+
+Dirty, Clean, Put
+-----------------
+
+A window can be dirty or clean. It is clean when the contents and the disk file are the same. It is dirty when it is being edited. The best way to know if it is dirty is if you see "Put" in your tag menu, just beside the vertical bar. By middle-clicking Put (or Putall in the main tag) you save this file and mark it as clean. 
+
+  
+
+Also, making a window clean makes closing it quicker (middle click in Del.) Dirty windows need to be Put, or you have to Del again. 
+
+That's all, folks (for now)
+---------------------------
+
+I have yet to introduce the plumber, a mechanism that allows you to open arbitrary files (using rules) from within acme. For example, I can open pdf files by right-clicking on them (i.e. some.pdf) but instead of using page (the Plan9 image viewer) I use MacOS Preview. I was forced to do so, since page can't handle all the fonts in a LaTeX generated PDF, so for me it's useless. I'll probably write how I configured the plumber in my next Acme installment.
+
+  
+
+In some sense, the plumber is like a system-wide, app-deep "open" mechanism. In Mac OS, you can "open" almost anything from the command line. If you open an URL, your default browser opens it, if you open an image, Preview handles it. Plumbing is like "open 3.0" but it is hard to manage :/  
+  
+Below you can see another video with a simpler scripting: browsing reddit from the command line, inside acme. The Python code snippet that gets Reddit data is available in this gist: [reddi.py](https://gist.github.com/rberenguel/5130837)

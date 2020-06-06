@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on mostlymaths.net</title>
+    <title>blog on mostlymaths.net</title>
     <link>https://mostlymaths.net/tags/blog/</link>
-    <description>Recent content in Blog on mostlymaths.net</description>
+    <description>Recent content in blog on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Dec 2011 20:31:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 19:42:11 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog Moved</title>
+      <link>https://mostlymaths.net/2019/09/blog-moved-to-hugo.html/</link>
+      <pubDate>Tue, 10 Sep 2019 19:42:11 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/09/blog-moved-to-hugo.html/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been in this blog before, you may wonder if it looks different or is
+just your imagination. Fear not! You are not going crazy, this blag &lt;em&gt;has&lt;/em&gt;
+changed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Slightly Better reddit Upvote/Downvote Widget (button)</title>
+      <link>https://mostlymaths.net/2013/09/a-slightly-better-reddit-upvotedownvote.html/</link>
+      <pubDate>Thu, 19 Sep 2013 16:43:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2013/09/a-slightly-better-reddit-upvotedownvote.html/</guid>
+      <description>A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&amp;rsquo;t offer asynchronous buttons, I rolled my poor man&amp;rsquo;s version: wrap it in a $(document).ready() It&amp;rsquo;s not asynchronous, but at least it won&amp;rsquo;t block page loading.
+Both happy, we deployed and I tested.</description>
+    </item>
     
     <item>
       <title>Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</title>
@@ -43,7 +64,7 @@ But you plug your earphones, turn up the volume just until you can&amp;rsquo;t h
     </item>
     
     <item>
-      <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
+      <title>E30DC: Writing this in Conkeror</title>
       <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
@@ -79,6 +100,19 @@ I was expecting to use idle hours between talks and afternoons to write posts an
       
       <guid>https://mostlymaths.net/2010/08/linux-is-time-killer.html/</guid>
       <description>Preface: I have been using Linux since around 1998, when I installed Debian from scratch in my old Pentium II. I am more end-user than power user, but the computer I use most often (my netbook) has Linux in it by default. Also, my office computer is a Linux computer. And I am writing this in my MacBook. Which is not Linux, but at least it is Unix. What comes now is a personal rant, after a fight with my netbook.</description>
+    </item>
+    
+    <item>
+      <title>New family member and (photo)blog</title>
+      <link>https://mostlymaths.net/2010/07/new-family-member-and-photoblog.html/</link>
+      <pubDate>Sat, 24 Jul 2010 16:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/07/new-family-member-and-photoblog.html/</guid>
+      <description>I just want to introduce you Fatou, our little cat.
+
+I like napping in the sofa
+We adopted him last Saturday, and he is 2 months old. He is named after French mathematician Pierre Fatou&amp;hellip; Mostly because Laia didn&amp;rsquo;t want him to be named Kolmogorov, and Fatou was the first mathematician name she liked.
+He is very cute (as you can see), and well-mannered. Last Monday he had to go to the veterinary clinic for a revision, and the vet told us it is amazing how good he is: he even wears his collar!</description>
     </item>
     
     <item>
@@ -178,6 +212,15 @@ Source code:
 This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.
 To add this code to your blogger blog:
  Go to layout settings, and select edit HTML Select &amp;lsquo;Expand widgets&amp;rsquo; Search in the text box for the string:</description>
+    </item>
+    
+    <item>
+      <title>Times a changin&#39;</title>
+      <link>https://mostlymaths.net/2005/06/times-a-changing.html/</link>
+      <pubDate>Fri, 10 Jun 2005 07:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2005/06/times-a-changing.html/</guid>
+      <description>This blog was started on this day, and was written in Catalan until mid-2007. On August 22nd, 2019 I moved from Blogger, my original blogging platform to GitHub pages. Since the readership has shifted to English speakers and the interest of the early posts is low (also, I had to port the posts to another format…) I deleted a great deal (around 350, out of the 670 I had at migration time) of the earliest posts.</description>
     </item>
     
   </channel>

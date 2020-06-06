@@ -1,0 +1,69 @@
+---
+title: '2019#17 Readings of the week'
+date: 2019-06-17T17:24:00.002+02:00
+draft: false
+tags : [ReadingsOfTheWeek, Data, Agile, History, Big data, Bizarre, math]
+dropcap: true
+minimap: true
+affiliate: true
+featured_image: "Untitled.jpg"
+---
+
+_This week is a bit light on technical content because I was attending [Scala Days 2019](https://scaladays.org/) in Lausanne and I had enough with the talks. _  
+  
+Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).  
+
+<!--more-->
+
+{{< figure src="Untitled.jpg" class="fig-wide" caption="Photo by  [Eduardo Romero](https://unsplash.com/@edu5669?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on  [Unsplash](https://unsplash.com/search/photos/hexagon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)">}}
+  
+
+[The mindfulness conspiracy](https://www.theguardian.com/lifeandstyle/2019/jun/14/the-mindfulness-conspiracy-capitalist-spirituality)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+It’s a trap!  
+
+[One Diagram To Mind Them All: Hyperspace in the 1970s](https://frieze.com/article/one-diagram-mind-them-all-hyperspace-1970s)
+------------------------------------------------------------------------------------------------------------------------------
+
+The beginnings and history of mind mapping, and Tony Buzan in particular.  
+
+[A tale of lost WW2 uranium cubes shows why Germany’s nuclear program failed](https://arstechnica.com/science/2019/06/physicists-hunt-uranium-cubes-to-shed-light-on-germanys-failed-nuclear-reactor/)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Splitting your efforts won’t lead to faster splitting of the atom.  
+
+[Exploring Domain-Driven Design at CircleCI](https://circleci.com/blog/exploring-domain-driven-design-at-circleci/)
+-------------------------------------------------------------------------------------------------------------------
+
+DDD is an interesting concept, and knowing how companies implement it is always good. This lacks a bit of more material though.  
+
+[A Year’s Worth](https://medium.com/@kentbeck_7670/a-years-worth-c1cbc3085e9d)
+------------------------------------------------------------------------------
+
+An interesting way of visualizing a year’s worth of technical effort, by Kent Beck.  
+
+[The Making of Lemmings](https://readonlymemory.vg/the-making-of-lemmings/)
+---------------------------------------------------------------------------
+
+I enjoy a lot tales of the dark ages of gaming. If you haven’t, read [The Making of Prince of Persia](https://www.amazon.com/Making-Prince-Persia-Jordan-Mechner-ebook/dp/B005WUE6Q2/ref=as_li_ss_tl?crid=3ENBE4F7IKDB0&keywords=making+of+prince+of+persia&qid=1560782409&s=gateway&sprefix=making+of+prince+of+,aps,217&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=5f70e0cb70e47d80daf88385f932458e&language=en_US) (you may enjoy the “prequel”, [The Making of Karateka](https://www.amazon.com/Making-Karateka-Jordan-Mechner-ebook/dp/B00AEH0EDM/ref=as_li_ss_tl?keywords=making+of+karateka&qid=1560782518&s=gateway&sr=8-2&linkCode=ll1&tag=rbersblog-20&linkId=3f405018366d52fa4b4bd79acefb5abb&language=en_US)) or [Masters of Doom](https://www.amazon.com/Masters-Doom-Created-Transformed-Culture-ebook/dp/B000FBFNL0/ref=as_li_ss_tl?keywords=masters+of+doom&qid=1560782455&s=gateway&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=f32c964a096d1cfb61cd10ee5782387b&language=en_US)).  
+
+[Feynman’s Breakthrough, Disregard Others!](https://stepsandleaps.wordpress.com/2017/10/17/feynmans-breakthrough-disregard-others/)
+-----------------------------------------------------------------------------------------------------------------------------------
+
+If you focus too much in what others do, you’ll lose your uniqueness.  
+
+[📚 Tribe of mentors](https://www.amazon.com/Tribe-Mentors-Short-Advice-World-ebook/dp/B071KJ7PTB/ref=as_li_ss_tl?keywords=tribe+of+mentors&qid=1560783144&s=gateway&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=8870f82e40b9d531c4a4763f672d5658&language=en_US)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A book by Tim Ferris, where he quick-interviews _a lot_ of people, asking tips. It’s a kind of a not-amusing read, because it’s not designed to be “read”, I suspect.  
+
+[📚 How to Draw Fantasy Art and RPG Maps: Step by Step Cartography for Gamers and Fans](https://www.amazon.com/How-Draw-Fantasy-Art-Maps-ebook/dp/B013KZ269Y/ref=as_li_ss_tl?keywords=%F0%9F%93%9A+How+to+Draw+Fantasy+Art+and+RPG+Maps:+Step+by+Step+Cartography+for+Gamers+and+Fans&qid=1560783080&s=gateway&sr=8-1-fkmr0&linkCode=ll1&tag=rbersblog-20&linkId=ad628539852ecfa9b8b1fac62c697904&language=en_US)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I had a lot of fun with this one. Super-readable and easy to follow.  
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

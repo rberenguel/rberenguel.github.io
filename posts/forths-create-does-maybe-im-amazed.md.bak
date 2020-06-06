@@ -1,0 +1,65 @@
+---
+title: 'Forth''s "CREATE .. DOES>" maybe I''m amazed?'
+date: 2010-03-05T23:01:00.004+01:00
+draft: false
+tags : [Programming, Forth, Maths]
+---
+
+As I wrote in a [previous post](http://berenguel.blogspot.com/2010/03/learning-forth-by-working-on-raytracer.html), I'm on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.  
+  
+I decided to allocate a few global variables (for "current point", "current vector", "light source", etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.  
+
+  
+
+And of course, the first thing to do is to create arrays. But... Forth has no arrays! Oh god! What to do!? CREATE .. DOES>. Amazing, truly. Now follows my code to create an n\-vector of floats, as a first example of what it DOES  
+
+> : n-vector ( n -- ) ( i -- address)  
+> create floats allot  
+> does> swap floats + ;
+
+What does this stand for? Create stands for what n-vector does when it is first called, and does stands for what the thing n-vector created does when called. In short: 3 n-vector Vector adds Vector to the dictionary, and 1 Vector returns the address of the second element in Vector.  
+
+  
+But there is more! I will only work with 3-vectors, so I wrote a 3-vector creator,  
+
+> : 3vector ( -- ) ( i -- address )  
+> \\ Creates a 3 vector in memory  
+> create 3 floats allot  
+> does> cells + ;
+
+So far so good, but this is standard. I am a lazy programmer, I thought I would (and definitely will) need accessors for exactly this vector (where this means one of the "global variables" I set as vectors). Create .. does> allows me to write the two following marvels of... laziness (although it took me 30 minutes to get it right!):  
+
+> : n.vector-reader ( n v ) ( value )  
+> create ,  
+> does> @ f@ ;  
+>   
+> : n.vector-writer ( n v ) ( -- )  
+> create ,  
+> does> @ f! ;
+
+Upon calling, n.vector-reader/writter with a position in the stack, and a vector as defined before, return a function which reads/sets said position. First a sample session, then the "how does it work". In bold the system responses.  
+
+> 3vector Vector  
+> 3vector Vector ok  
+> 0 Vector f@ .  
+> 0 Vector f@ . 9142112 ok  
+> 0 Vector 10.0e1 f!  
+> 0 Vector 10.0e1 f! ok  
+> 0 Vector f@ f.  
+> 0 Vector f@ f. 100. ok  
+> 0 Vector n.vector-reader .x  
+> 0 Vector n.vector-reader .x ok  
+> 0 Vector n.vector-writer !x  
+> 0 Vector n.vector-writer !x ok  
+> 12.e0 !x  
+> 12.e0 !x ok  
+> .x f.  
+> .x f. 12. ok  
+> 0 Vector f@ f.  
+> 0 Vector f@ f. 12. ok
+
+As you can see, now I have a function to set values and one to get them. The inner working is somewhat strange. At create time , puts the adress of the value of the top of stack inside the body, and upon calling, acts on it. The operator @ gets the contents (which is the adress of Vector!) and f@ gets its value (or f! sets it). Et voilà!  
+
+  
+Some maybe related posts  
+ParseList(ScrambleList(Relateds(Programming, Forth)),10)

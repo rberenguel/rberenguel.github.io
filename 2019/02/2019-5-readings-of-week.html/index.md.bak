@@ -1,0 +1,63 @@
+---
+title: '2019#5 Readings of the week'
+date: 2019-02-10T22:38:00.000+01:00
+draft: false
+tags : [ReadingsOfTheWeek, Python, Rust, Maths]
+minimap: true
+dropcap: true
+affiliate: true
+featured_image: "simcity.gif"
+---
+
+Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the [tag here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek) . You can also get these as a weekly newsletter by subscribing [here](http://eepurl.com/geFw7P).
+
+<!--more-->
+
+{{< figure src="simcity.gif" class="fig-wide" caption="Major Broccoli">}}
+
+
+
+[Playing with Rust](https://perevillega.com/playing-with-rust)
+--------------------------------------------------------------
+
+I've known Pere for several years, and I'm glad to see his views on Rust. Looks like not every Scala developer has to move from Scala to Haskell.
+
+[Try out walrus operator in Python 3.8](https://medium.com/hultner/try-out-walrus-operator-in-python-3-8-d030ce0ce601)
+----------------------------------------------------------------------------------------------------------------------
+
+_I am the egg man, they are the egg men, I am the PEP 572: Goo goo g'joob_. Well, or not. This feels very un-pythonic, and we all know the amount of flak BDFL got for that. But oh well, it's in Python 3.8-dev. Let this serve as the weekly reminder that [pyenv](https://github.com/pyenv/pyenv) is excellent.
+
+[Cognitive Journaling: A Systematic Method to Overcome Negative Beliefs](https://betterhumans.coach.me/cognitive-journaling-a-systematic-method-to-overcome-negative-beliefs-119be459842c)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Last year I had been journaling on and off, and this year I have been consistent, every day so far since New Year. This has interesting approaches to understand your mind better.
+
+[How Jeff Bezos Turned Narrative into Amazon's Competitive Advantage](https://slab.com/blog/jeff-bezos-writing-management-strategy)
+-----------------------------------------------------------------------------------------------------------------------------------
+
+This idea is gold, but the [HackerNews comments](https://news.ycombinator.com/item?id=19115686) are better than the original article.
+
+[Model Metropolis](https://logicmag.io/06-model-metropolis/)
+------------------------------------------------------------
+
+I read about Forrester's [Urban Dynamics](https://www.amazon.com/Urban-Dynamics-Jay-Wright-Forrester/dp/0262060264/ref=as_li_ss_tl?keywords=forrester+urban+dynamics&qid=1549830974&s=gateway&sr=8-1-fkmrnull&linkCode=ll1&tag=rbersblog-20&linkId=5da390ef8c08e724d1f989d97c94afa7) in the excellent [Thinking in Systems](https://www.amazon.com/Thinking-in-Systems-A-Primer/dp/B07FW9Z4KG/ref=as_li_ss_tl?keywords=meadows+systems+thinking&qid=1549831040&s=gateway&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=209b94245ac5ee9b2edcf2df48abff48) from Donella Meadows. And this also talks about SimCity, what else could I want?
+
+[A Humility Training Exercise for Technical Interviewers](https://triplebyte.com/blog/a-humility-training-exercise-for-technical-interviewers)
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+The idea presented here is powerful: learn to remove biases from your interviews. As an occasional interviewer (and interviewee), I can totally see how this can help.
+
+[pandas blog – Pandas Extension Arrays](https://pandas-dev.github.io/pandas-blog/pandas-extension-arrays.html)
+--------------------------------------------------------------------------------------------------------------
+
+Extension arrays show a lot of promise, and right now there is work underway for Pandas extension arrays based on Arrow ([fletcher](https://github.com/xhochy/fletcher)). Although the cool work will happen when the underlying memory layout and building blocks of Pandas are actually Arrow... And that is underway as well.
+
+[Demystifying JOIN Algorithms](http://blog.felipe.rs/2019/01/29/demystifying-join-algorithms/)
+----------------------------------------------------------------------------------------------
+
+A very good explanation of basic join algorithms, with a pseudocode that looks pretty much like Python
+
+[Newsletter](http://eepurl.com/geFw7P)?
+---------------------------------------
+
+These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking [here](http://eepurl.com/geFw7P).

@@ -1,0 +1,167 @@
+---
+title: 'Just as Mario: Using the Plan9 plumber utility'
+date: 2013-04-21T21:30:00.001+02:00
+draft: false
+tags : [Plan9, Command Line, Acme, Github]
+---
+
+**Note:** It's best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It's not hard to find where they are, if you run into any problems let me know.  
+  
+If you've been following this blog, you'll know I've been using Acme and related [Plan 9 from User Space](http://swtch.com/plan9port/) utilities lately. One of its pieces is the plumber. And knowing what it does may be tricky:  
+  
+
+> Plumbing is a new mechanism for inter-process communication in Plan 9, specifically the passing of messages between interactive programs as part of the user interface. Although plumbing shares some properties with familiar notions such as cut and paste, it offers a more general data exchange mechanism without imposing a particular user interface.
+
+From [Plumbing and other utilities](http://plan9.bell-labs.com/sys/doc/plumb.html) by Rob Pike  
+  
+
+  
+  
+  
+
+### What is the plumber?
+
+It's somewhat hard to explain at first. I'll try to give you a simple example from Mac OS. In Mac OS you can find a command line utility named "open" (/usr/bin/open). From its manual entry you can read:  
+
+> open -- open files and directories
+
+Simple and easy. And it just does what you'd expect:  
+  
+
+*   open something.jpeg will open this image in Preview (or its default opener)
+*   open afile.txt will open this text file with its default opener, too.
+*   open http://web.something will open the webpage in the default browser.
+
+I think you get the idea. Open just opens something. If you use the command line in Mac OS, you have probably used it on and off to quickly open images or pdfs. I know I have.  
+  
+The Plan9 plumber is like open on steroids. Why?  
+
+### Plumbing superpowers
+
+The strength of the plumber is two sided:  
+
+*   Completely configurable
+*   System wide (kind of)
+
+#### Completely configurable
+
+The plumber works with rules, and you can just write your own cool roles in a file ~/lib/plumbing What does a rule look like? Here is a rule to open an image using the Mac OS open utility:  
+
+```
+type  is  text  
+data matches '\[a−zA−Z0−9\_–./\]+'  
+data  matches  '(\[a-zA-Z¡-�0-9\_\\-./\]+)
+``````
+ \\.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)'  
+arg  isfile  $0  
+plumb  start  open $file  
+
+```
+
+  
+Rules work in a trigger-and-fire way. A set of tests make the trigger, if the text you pass to the plumber matches, the rule is fired. In this case:  
+  
+
+*   The type of the data has to be text (in fact is the only type the plumber handles)
+*   The content of the message has to match this regular expression \[1\]
+*   The content of the message has to match this regular expression, with groupings
+*   The argument group $0 (the whole regexp match) has to be a file, then the variable $file holds its full path
+*   THEN we run "open $file"
+
+  
+\[1\] This is needed. From the plumb manual section 7 (man 7 plumb or right click plumb(7) inside acme):  
+
+> The first expression extracts the largest subset of the data around the click that contains file name characters; the second sees if it ends with, for example, .jpeg. If only the second pattern were present, a piece of text horse.gift could be misinterpreted as an image file named horse.gif.
+
+This relatively simple example is big enough to allow us to make pretty cool things with the plumber. Although this example only allows us to type plumb filename.jpg and the image will be opened via "open".  
+  
+But we may get as fancy as we like, for example:  
+  
+
+```
+\# isbn10 search through Amazon  
+type is text  
+data matches '(\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]
+``````
+ \[0-9\]\[0-9\]\[0-9\]\[0-9\])'  
+plumb start open 'http://www.amazon.com/s/?field-keywords='$1  
+
+```
+
+  
+
+*   Type has to be text, as always
+*   Match exactly 10 digits (Plan9 regexes don't have brace count)
+*   Then search the ISBN through Amazon
+
+Now we can run plumb 0836213122 to find what book this ISBN points to. Neat, isn't it? Well, it just gets better.  
+
+### System wideness of the plumber
+
+When I say the plumber works system wide, I mean that in the Plan9 ecosystem (or in plan9ports) anything the plumber recognises as "special" can be easily plumbed. For example, I'm typing this in acme, thus I can right-click this ISBN (0836213122) to switch to Chrome and find what this book is. And if I'm in a [9term](http://swtch.com/plan9port/man/man1/9term.html) window, I can middle click-and-release to get the same. It's neat, but of course it gets neater: right clicking in an expression filename:lineno gets you to this match, making grep a whole lot more useful.  
+  
+For me, its main strength is inside acme, since it is almost the only piece of Plan9 I use with regularity (I use zsh which is pretty good as it is.) As such, using the plumber we can add even more awesomeness to this editor:  
+  
+
+```
+type is text  
+data matches 'ag:"?(\[a-zA-Z¡-�0-9\_\\-./\]+)"?'  
+arg isdir .  
+plumb start zsh -c 'ag --nogroup --nocolor --search-files "'$1'" '$dir' 
+``````
+ | plumb -i -d edit -a ''action=showdata filename='$dir'/ag/'$1' '''  
+
+```
+
+  
+  
+This lets me write ag:word or ag:"something longer" to search for word or "something longer" recursively in the current working directory using [The Silver Searcher](https://github.com/ggreer/the_silver_searcher).  
+  
+_The Silver Searcher_ is a source code file searcher, similar to ack. Ack and tss are both faster than grep because they omit .ignore, backup and non-source files. Of course this can be overriden, but since I usually work only with source when using grep, it is a great tradeoff.  
+  
+The \--search-files is a hidden option, without it line numbers are not rendered when ag is ran from another program (see [this github issue](https://github.com/leonid-shevtsov/SearchInProject_SublimeText2/issues/1)).  
+  
+Or I can add the following to use my wikipedia quick searcher script (based on this [neat commandlinefu hack](http://commandlinefu.com/commands/view/2829/query-wikipedia-via-console-over-dns)):  
+  
+
+```
+type is text  
+data matches 'def:"?(\[a-zA-Z¡-�0-9\_\\-./\]+)"?'  
+plumb start zsh -c 'wikiCLI.sh '$1' 
+``````
+ | plumb -i -d edit -a ''action=showdata filename='$dir'/wikipedia/'$1' '''  
+
+```
+
+  
+So I can write and use def:europium in case of need. Of course, it is far more handy to use acme's 1-2 chords for this: select europium with button 1, select wikiCLI.sh (the name of my script) with button 2 and without releasing, tap button 1...  
+  
+  
+  
+As you can guess, this won't work in a 1-button Mac laptop without external mouse, since you can't press button 1 while pressing button 2... After all, button 2 is button 1 while pressing Alt. To make it work, I patched devdraw in plan9ports:  
+  
+
+```
+diff -r 1bd8b25173d5 src/cmd/devdraw/cocoa-screen.m  
+\--- a/src/cmd/devdraw/cocoa-screen.m  Tue Mar 19 14:36:50 2013 -0400  
++++ b/src/cmd/devdraw/cocoa-screen.m  Sat Apr 06 20:02:44 2013 +0200  
+@@ -847,7 +847,9 @@  
+   case NSFlagsChanged:  
+   if(in.mbuttons || in.kbuttons){  
+   in.kbuttons = 0;  
+\-  if(m & NSAlternateKeyMask)  
++  if(m & NSControlKeyMask)  
++  in.kbuttons |= 1;  
+\+                        if(m & NSAlternateKeyMask)  
+   in.kbuttons |= 2;  
+   if(m & NSCommandKeyMask)  
+   in.kbuttons |= 4;  
+
+```
+
+  
+And now you can press Ctrl while having Alt pressed to send a "button 1" chord. Simple and innocuous patch.  
+
+### Final remarks
+
+As you can see, the plumber can be useful in every day tasks, enhancing acme. Together with the ability to execute text, the plumber makes acme and incredibly different text editor. It's not vim, it's not emacs. It is acme, in its own right a very powerful piece of software. I hope these posts I'm writing lately are making you have an itch to use acme and have a look at what Plan 9 has to offer.

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Mac on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/linux-mac/</link>
+    <description>Recent content in Linux Mac on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Nov 2010 18:20:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/linux-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</title>
+      <link>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</link>
+      <pubDate>Sat, 06 Nov 2010 18:20:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/11/mathematics-poster-dropbox-scribus-and.html/</guid>
+      <description>This week I&amp;rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled Approximating bifurcation loci by zeros of functions. This is heavily based on a poster I presented last year in Copenhagen (titled Sets approximating regions of instability). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.</description>
+    </item>
+    
+    <item>
+      <title>Scribus&#43;Latex in Mac OS</title>
+      <link>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</link>
+      <pubDate>Tue, 29 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/scribuslatex-in-mac-os.html/</guid>
+      <description>or the trouble with hard-coded paths and ineffective menus.
+
+Cross platform page-layout software:
+Scribus. Now with more LaTeX
+I am supposed to present a poster in a conference, about some work I am doing. I asked office mates about what they used&amp;hellip; A Mac user suggested Pages, and I asked a more Linux oriented, LaTeX savvy, and he told me: forget about LaTeX and use some WYSIWYG program, you&amp;rsquo;ll save time and effort.</description>
+    </item>
+    
+    <item>
+      <title>Whistle control your computer (Linux&amp;Mac)</title>
+      <link>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</link>
+      <pubDate>Wed, 23 Sep 2009 08:59:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
+      <description>From flickr
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac.</description>
+    </item>
+    
+    <item>
+      <title>Quick latex-ing with emacs: dabbrev and skeletons</title>
+      <link>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</link>
+      <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
+    </item>
+    
+    <item>
+      <title>My backup script in Mac/Linux</title>
+      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
+      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
+      <description>My backup script in Mac/Linux
+#!/bin/sh
+# This script backs up a set of files and directories incrementally,
+# storing only the modified files in a folder-per-day basis. Each time
+# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
+# refreshed to the newest copy, and the previous version of a modified
+# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
+# for instance)
+# Root to be safeguarded</description>
+    </item>
+    
+    <item>
+      <title>Hyperoid a.k.a. SDLRoids</title>
+      <link>https://mostlymaths.net/2009/07/hyperoid-aka-sdlroids.html/</link>
+      <pubDate>Thu, 02 Jul 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/07/hyperoid-aka-sdlroids.html/</guid>
+      <description>Screenshots!
+Back when I was in school, I had a really nice game in my 80286 computer, under Windows 3.1. Yes, it was 15 years ago&amp;hellip; The game was Hyperoid, by Edward Hutchins. When I got my first Pentium with Windows 95, I longed that game&amp;hellip; and the 3.1. version didn&amp;rsquo;t work completely OK in it. Anyway I played&amp;hellip; then found Hyperoid95. I even recompiled it, to add firepower (the author of this version cut the fire speed).</description>
+    </item>
+    
+    <item>
+      <title>How to get a local proxy</title>
+      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
+      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
+      <description>Setting a local proxy through a remote machine
+To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
+ ssh -D 42 YourRemoteMachineName
+ And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
+    </item>
+    
+  </channel>
+</rss>

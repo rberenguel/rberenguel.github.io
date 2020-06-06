@@ -1,0 +1,116 @@
+---
+title: 'How does the ''in'' keyword work in Python?'
+date: 2018-04-15T22:11:00.001+02:00
+draft: false
+tags : [Python, C, github]
+dropcap: true
+subtitle: "A subtitle to this post could be _More yak shaving_"
+---
+
+A few days go I played a bit with a naive implementation of [Bloom
+filters](https://en.wikipedia.org/wiki/Bloom_filter) in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the `in` worked _too fast_ for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does `in` find stuff _in_ sequences?
+<!--more-->
+ 
+Instead of reading the documentation I delved into the
+[cpython](https://github.com/python/cpython) source. Skipping the documentation
+was a bad idea, since it is not only pretty comprehensive but explains
+everything… if you know what you are looking for. But a dive into this big
+pile of C was more fun. I was also stupid enough to not Google the answer until
+I was editing this post… When writing this, I found out [this excellent Stack Overflow
+answer](https://stackoverflow.com/a/12244378) covers more or less what I explain
+here.
+ 
+The `in` keyword (defined
+[here](https://github.com/python/cpython/blob/master/Python/graminit.c#L2195))
+is actually a shorthand for running `__contains__` from the target object, you
+probably know this already. Your class will be able to provide `in` if you add
+this magic method, you can read about this in the first chapter of [Fluent
+Python](https://amzn.to/2GEEZct). But tracing this inside `cpython` is a bit
+cumbersome and got me diving into interesting pieces of the code. By the way,
+how the Python compiler works is documented
+[here](https://devguide.python.org/compiler/).
+ 
+First, after we have parsed the code and generated a parse tree from our text,
+we go to the abstract syntax tree. Converting the string `in` as part of some
+node of Python source in this tree into _an_ `In`
+[here](https://github.com/python/cpython/blob/master/Python/ast.c#L1163):
+ 
+ {{< gist rberenguel 2fa518c6150c951228cdbb13f94fb3fe >}}
+ 
+And now, what does actually `in` do? Well, we need to move forward in the
+compilation chain, and check
+[compile.c](https://github.com/python/cpython/blob/a95d98607efe0c43475b354543e49bf8e240bc6f/Python/compile.c#L2185):
+ 
+ {{< gist rberenguel 2b1b844d8a2432771bde136f3857f67d >}}
+ 
+This is inside a function called `cmpop`, which is called when we find the
+`COMPARE_OP` opcode. This is the opcode we’d see by disassembling anything
+running `in` or `==` or any other comparison operator (all comparison operators
+are in the same basket, see
+[here](https://github.com/python/cpython/blob/702f8f3611bc49b73772cce2b9b041bd11ff9b35/Include/opcode.h#L139)).
+We can follow the route through
+[ceval.c](https://github.com/python/cpython/blob/d8b291a74284307610946f1b5801aa95d7f1e052/Python/ceval.c#L4685)
+now:
+ 
+{{< gist rberenguel c0ad8b35a80f57ee0d38b5858e5c5ea6 >}}
+ 
+So, we are calling this `PySequence_Contains` thingy. A bit more grep and we can
+find it defined in
+[abstract.c](https://github.com/python/cpython/blob/f320be77ffb73e3b9e7fc98c37b8df3975d84b40/Objects/abstract.c#L2037):
+ 
+{{< gist rberenguel dc95cf3a932dcf978d057bde2a831c9d >}}
+ 
+And now we can see what it does: 
+
+1. Get a pointer to the sequence’s base sequence methods in the C struct slot `tp_as_sequence`
+2. If there is a `sq_contains` method pointer there, invoke it and return
+3. Otherwise, use iterative search
+
+Hey, where is my `__contains__`? The magic happens on new object/class/type
+definition:
+[typeobject.c](https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L4711)
+The base object all classes extend from looks like the following struct (from
+[object.h](https://github.com/python/cpython/blob/a5552f023e1d8cbafee1e51d316cc581deb2295f/Include/object.h#L346)):
+ 
+{{< gist rberenguel  e80a7d4ff1c8260029942346865870c0 >}}
+ 
+This means that, technically, all objects have a field in their defining struct
+for sequences: `tp_as_sequence`. This is populated when we define a new class
+(which internally is known as _type_) in
+[typeobject.c](https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2602).
+Slots [are populated from what is essentially a dictionary of
+methods](https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L2515)
+by invoking
+[fixup\_slot\_dispatchers](https://www.blogger.com/blogger.g?blogID=13497321).
+This maps the python name `__contains__` to the corresponding slot in the
+struct, `sq_contains` and defines which function sets it up,
+[slot\_sq\_contains](https://github.com/python/cpython/blob/c3d9508ff22ece9a96892b628dd5813e2fb0cd80/Objects/typeobject.c#L6098):
+ 
+ {{< gist rberenguel acef7aec405d402b99266635a293c8b1 >}}
+
+Built-in objects (and likely libraries with C extensions) implement these directly in C, and point its slot to the C method: 
+ 
+ {{< gist rberenguel b5299798f3222c9be0951b769fc61c41 >}}
+ 
+Finally, this method looks for a method defined in the class and called `__contains__`. If it is `None` (that is, it is defined and is `None`), object is not a container, that’s it. If it is _not defined_ (hence the null, and this one is actually puzzling... reduces to it not being provided when defining the class... I think), Python falls back to iterating for search using `__iter__` (which is what eventually gets called under `PySequence_IterSearch`). If this is also not valid or available, an error returns, following a chain of -1 in the method lookups. 
+ 
+If you have been paying attention you’ll see that we are actually deferring to iterative search in two places: when defining the slot in `sq_contains` but also when invoking `PySequence_Contains`. I’m not 100% sure about why this is the case, and experimenting with the REPL does not get you very far, since you can never be sure if you are hitting `PySequence_Contains -> PY_ITERSEARCH_CONTAINS` or `PySequence_Contains -> sq_contains -> PY_ITERSEARCH_CONTAINS` without changing the messages (and I don’t feel like recompiling `Cpython`). Weirdly, the second case should be faster since it is going straight for the method via the slot without needing an extra method lookup. 
+ 
+As expected, dictionary lookup is fancier. It is a common and known performance improvement in Python to change lists or other sequence-like datatypes for dictionaries, since they show the best performance for most operations. Since internally in Python everything from methods/functions to classes is implemented in one way or another as dictionaries (or reusing the machinery that is built for dictionaries), anything that speeds dictionaries up, speeds the whole of Python code. Of _course_, dictionary lookup is _usually_ fast no matter the language: hash table lookup in general (leaving aside how collision resolution might be implemented in lookup) is O(1) fast. Note that below we have the macro: `#define PyUnicode_CheckExact(op) (Py_TYPE(op) == &PyUnicode_Type)` 
+ 
+{{< gist rberenguel c35eec71f0dc25134d571c2be8ecb44a >}}
+ 
+There even is a specialised method for cases when the hash key is known (not sure of the use case, since magic methods are hardcoded in the object structs, maybe it’s used to optimise tighter loops?). 
+ 
+ {{< gist rberenguel 0c419252c5e707384656a3a35e6af84d >}}
+ 
+And if you wonder how `key in dict` works, it is of course by introducing the method in the struct for sequences. The snippet below is from `dictobject.c`, as the methods above. 
+ 
+ {{< gist rberenguel 13d47f995b443511abb2abd4b454b2e7 >}}
+ 
+And here finishes my exploration of `cpython` to figure out how `in` contains. Not sure about you, but I had a lot of fun.

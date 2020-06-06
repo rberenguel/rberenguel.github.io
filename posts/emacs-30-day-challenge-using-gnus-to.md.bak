@@ -1,0 +1,163 @@
+---
+title: 'The emacs 30 Day Challenge: Using ''gnus'' to read mail'
+date: 2010-12-11T20:10:00.003+01:00
+draft: false
+tags : [emacs, Linux, Mac]
+---
+
+[![](https://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s400/gnus.gif)](http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s1600/gnus.gif)  
+
+The gnus logo,  
+from [gnus homepage](http://www.gnus.org/)
+
+When the time to choose a mail reader for emacs came, as part of my [emacs 30 Day Challenge](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html), there were not really a lot of options. A long, long time ago I had tried vm (view mail) with no luck. I don't remember the details (it was something like 3 years ago), but the results where unappealing. The only contenders where gnus and wanderlust.  
+  
+I managed to configure gnus pretty quickly: in only 30 minutes I had my gmail inbox working and was able to send mails through my main account. As an addition to gnus, I use bbdb to manage my contacts. You can read my post about [bbdb and gnus integration](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html).  
+  
+I decided to give wanderlust a try, after reading a good review and configuration steps from [emacs-fu](http://emacs-fu.blogspot.com/2009/06/e-mail-with-wanderlust.html). But had no luck (at least in my [netbook](http://www.amazon.com/gp/product/B0041K3CGO?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0041K3CGO)), some kind of connectivity problem, probably due to some package which was not the correct version: wanderlust is very picky with what version of what package you have installed. I gave up and stood with gnus.  
+
+Installing and configuring gnus with gmail and multiple smtp accounts
+---------------------------------------------------------------------
+
+If you have a recent emacs version, you'll have already gnus installed and you can start it with M-x gnus. But it is far better to configure it first. And it is far better to start by installing gnutls or starttls, depending on your system. You can do this with your package manager in Linux, or using fink or [macports](http://gnutls.darwinports.com/) in Mac OS. This allows you to use SSL to connect to your mail servers. This is also a required step to use twittering.el (to be covered in a few days) and I guess it is also required (or should be required!) by jabber.el  
+  
+I use gmail, together with several accounts from [mostlymaths.net](http://www.mostlymaths.net/), and have configured my main account in gmail to be able to send mails through all my other accounts. Let's configure this. The following configuration is taken from the [emacswiki](http://www.emacswiki.org/emacs/MultipleSMTPAccounts) with a few other tweaks from here and there. First C-x C-f ~/.gnus.el, and add the following lines, filling in your details
+
+```
+;; You need this to be able to list all labels in gmail  
+(setq gnus-ignored-newsgroups "")  
+  
+;; And this to configure gmail imap  
+(setq gnus-select-method '(nnimap "gmail"  
+(nnimap-address "imap.gmail.com")  
+(nnimap-server-port 993)  
+(nnimap-stream ssl)))  
+  
+;; My version of gnus in my Mac does not handle html messages;; correctly (the one in the netbook does, I guess it is a different;; version). The following will chose plaintext every time this is;; possible.  
+(setq mm-discouraged-alternatives '("text/html" "text/richtext"))  
+  
+;; Available SMTP accounts. The format is;; type of connection - account in the from field - smtp server -;; port - login name - password. You can leave the password field  
+;; as NIL and emacs will ask every time  
+(defvar smtp-accounts  
+'(  
+(ssl "mainaccount@gmail.com" "smtp.gmail.com"  
+587 "mainaccount@gmail.com" "yourpassword")  
+(ssl "mainaccount@mygoogleapps" "smtp.gmail.com"  
+587 "mainaccount@mygoogleapps" "otherpassword")  
+(ssl "workaccount@university" "smtp.gmail.com"  
+587 "mainaccount@gmail.com" "yourpassword") ))  
+  
+;; Now lets configure smtpmail.el with your name and functions to send;; mail using your smtp accounts by changing the from field  
+(require 'smtpmail)  
+(setq send-mail-function 'smtpmail-send-it  
+message-send-mail-function 'smtpmail-send-it  
+mail-from-style nil user-full-name "Your name"  
+smtpmail-debug-info t smtpmail-debug-verb t)  
+  
+(defun set-smtp (mech server port user password)  
+"Set related SMTP variables for supplied parameters."  
+(setq smtpmail-smtp-server server smtpmail-smtp-service port  
+smtpmail-auth-credentials (list (list server port user  
+password)) smtpmail-auth-supported (list mech)  
+smtpmail-starttls-credentials nil)  
+(message "Setting SMTP server to \`%s:%s' for user \`%s'."  
+server port user))  
+  
+(defun set-smtp-ssl (server port user password &optional key  
+            cert)  
+"Set related SMTP and SSL variables for supplied parameters."  
+(setq starttls-use-gnutls t  
+starttls-gnutls-program "gnutls-cli"  
+starttls-extra-arguments nil smtpmail-smtp-server server  
+smtpmail-smtp-service port  
+smtpmail-auth-credentials (list (list server port user  
+password)) smtpmail-starttls-credentials (list (list  
+server port key cert)))  
+(message  
+"Setting SMTP server to \`%s:%s' for user \`%s'. (SSL  
+enabled.)" server port user))  
+  
+(defun change-smtp ()  
+"Change the SMTP server according to the current from line."  
+(save-excursion  
+(loop with from = (save-restriction  
+        (message-narrow-to-headers)  
+        (message-fetch-field "from"))  
+for (auth-mech address . auth-spec) in smtp-accounts  
+when (string-match address from) do (cond  
+((memq auth-mech '(cram-md5 plain login))  
+(return (apply 'set-smtp (cons auth-mech auth-spec))))  
+((eql auth-mech 'ssl)  
+(return (apply 'set-smtp-ssl auth-spec)))  
+(t (error "Unrecognized SMTP auth. mechanism:  
+\`%s'." auth-mech))) finally (error "Cannot infer SMTP  
+information."))))  
+  
+;; The previous function will complain if you fill the from field with;; an account not present in smtp-accounts.  
+(defvar %smtpmail-via-smtp (symbol-function 'smtpmail-via-smtp))  
+  
+(defun smtpmail-via-smtp (recipient smtpmail-text-buffer)  
+(with-current-buffer smtpmail-text-buffer  
+(change-smtp))  
+(funcall (symbol-value '%smtpmail-via-smtp) recipient  
+smtpmail-text-buffer))  
+  
+;; This wraps send mail via smtp mail, to be able to send multiple;; messages with smtpmail.  
+
+```
+
+Now, we can configure the authentication process. Open ~/.authinfo and fill it with the following data
+
+  
+machine imap.gmail.com login john\_doe@gmail.com password notapassword port 993  
+  
+
+If you don't like to store your passwords in plain text, you can either leave it blank (gnus will ask every time for your password) or use an [encrypted authinfo](http://www.emacswiki.org/emacs/GnusEncryptedAuthInfo) file. I could not use this solution, as the emacs I have in my Mac has no encryption. But you can check it if you do!  
+  
+Ready to use gnus! M-x gnus. After a few seconds of data processing, you should have a buffer named \*Groups\*. In gnus, you subscribe to groups, and the available groups should be your gmail labels. To subscribe to something, issue U followed by a double tab. This will show all the available labels. INBOX is the one you should not miss, of course.
+
+  
+
+[![](https://1.bp.blogspot.com/_f3d3llNlZKQ/TQPFuLb_5vI/AAAAAAAACwY/fAwBRuJE_rk/s400/gnus-groups.jpg)](http://1.bp.blogspot.com/_f3d3llNlZKQ/TQPFuLb_5vI/AAAAAAAACwY/fAwBRuJE_rk/s1600/gnus-groups.jpg) [](http://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s1600/gnus-gotmail.jpg) [![](https://2.bp.blogspot.com/_f3d3llNlZKQ/TQPFuTFz8zI/AAAAAAAACwg/0q0VK375jy8/s400/gnus-INBOX.jpg)](http://2.bp.blogspot.com/_f3d3llNlZKQ/TQPFuTFz8zI/AAAAAAAACwg/0q0VK375jy8/s1600/gnus-INBOX.jpg) [![](https://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s400/gnus-gotmail.jpg)](http://3.bp.blogspot.com/_f3d3llNlZKQ/TQPFumobpyI/AAAAAAAACwo/r3YHPdhoAHg/s1600/gnus-gotmail.jpg)   
+gnus groups -> INBOX -> new mail
+
+  
+
+Once you have INBOX in your \*Groups\* buffer, you may need to update it for new mails. Pressing g will fetch new mails (or news) from the server. Pressing enter will open that group and show you your unread mails. If they don't appear in the INBOX buffer, it is somehow usual. If you had already checked and read your mail, fetch again in the \*Groups\* buffer and press enter, it takes you to the old INBOX buffer, without the new mails. Press M-g in it to fetch new headers and summaries. Pressing enter in your mails of course opens them.  
+
+Deleting mails, composing and replying
+--------------------------------------
+
+Now let's say you want to move a message to the Trash folder in your Gmail account, or your Spam folder. Scroll to your mail and press B m (Backend command + move). Now you can choose which folder, and if everything worked smoothly, you could press double tab and show all folders. If not, write \[Gmail\]/Trash. This is the correct gmail trash folder. Once you are done with operating with your mails in this way, press M-g to really do move them to the trash (and by the way, marking them in Gmail as read).  
+  
+To quit gnus, in the groups buffer press q (or Q if you don't want to save "your progress"). In case of being lost... Please, use the menus: gnus has a menu for almost anything and they are quite descriptive. And more important, never leave gnus without properly q or Quitting. Also, in my [netbook](http://www.amazon.com/gp/product/B0041K3CGO?ie=UTF8&tag=rbersblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0041K3CGO) I can't suspend to RAM and then be able to re-start gnus. I have to q first. But in my [Mac](https://www.amazon.com/s/ref=as_li_ss_tl?fst=as:off&rh=n:172282,n:!493964,n:541966,n:13896617011,n:565108,n:13896615011,p_n_operating_system_browse-bin:7529233011&bbn=13896615011&ie=UTF8&qid=1490118101&rnid=562215011&linkCode=ll2&tag=rbersblog-20&linkId=297edf12429801fc2ee46ab244137f15) it works correctly.  
+  
+We are almost done covering the simplest way to use gnus. Of course, we want to be able to write emails, or reply to mails we got! In the INBOX buffer, that would be r while reading or selecting a mail. To compose an email out in the cold, you can either use m in INBOX or \*Groups\* buffers. If you are in any buffer, you can compose an email with C-x m.  
+  
+And if you use [bbdb](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html) (the big brother database, a contact manager with automatic fetching of gnus data), which I will cover in the next writing, you can compose an email after searching for someone (M-x bbdb query and then m in the resulting search results buffer). You can read about basic use of bbdb in [A glimpse of bbdb and gnus](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-glimpse-of-bbdb.html).  
+
+Searching your mail through imap
+--------------------------------
+
+And another interesting thing would be to be able to search within your mail. To do so you will need the nnir package and add a line in the imap configuration.
+
+```
+;; To be able to search within your gmail/imap mail  
+(require 'nnir)  
+  
+(setq gnus-select-method '(nnimap "gmail"  
+(nnimap-address "imap.gmail.com")  
+(nnimap-server-port 993)  
+(nnimap-stream ssl))  
+(nnir-search-engine imap))
+```
+
+You should subscribe to \[Gmail\]/All mail, and then press G G to search within your mail. This is a little slow... But works.
+
+  
+I'm still fiddling with gnus, and learning to use it more effectively, but this can get you going with using it for reading your mail. If I learn something new along the way (or someone more used to gnus posts it here) I'll add it here or in a new gnus post.  
+  
+If you enjoyed this, please share it with your emacs friends through Reddit, Hackernews or whatever you enjoy.
+
+  
+ParseList(ScrambleList(Relateds(emacs)),5)

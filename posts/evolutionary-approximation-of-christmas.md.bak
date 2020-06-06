@@ -1,0 +1,27 @@
+---
+title: 'Evolutionary approximation of a Christmas postcard'
+date: 2009-12-23T19:17:00.010+01:00
+draft: false
+tags : [Blog, Programming, Linux, Christmas, Maths, Drawing]
+---
+
+[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/SzJe1GpGOQI/AAAAAAAABog/VmuhGUPjMlg/s400/Postal7x7-2009.jpg)](http://3.bp.blogspot.com/_f3d3llNlZKQ/SzJe1GpGOQI/AAAAAAAABog/VmuhGUPjMlg/s1600-h/Postal7x7-2009.jpg)  
+If you liked it, leave a comment, digg, stumble  
+or whatever you feel like doing  
+  
+
+Stochastic hill-climbing algorithm to [approximate a picture by triangles](http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html) (algorithm and source code). This image contains 48 images out of 1000, from iterating for 11000 generations the evolution code. The source image is the last square in the tile set.  
+
+  
+
+Bon Nadal!  
+Feliz Navidad!  
+Merry Christmas!  
+Joyeux Nöel!  
+Buon Natale!  
+Frohe Weihnachten!  
+Mutlu Noeller!  
+
+  
+  
+You may be also interested in:ParseList(ScrambleList(Relateds(Linux,Programming)))

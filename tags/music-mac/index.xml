@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music Mac on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/music-mac/</link>
+    <description>Recent content in Music Mac on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Dec 2010 15:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/music-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
+      <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
+      <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</guid>
+      <description>It&amp;rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&amp;rsquo;ll start giving configuration updates along the way, I&amp;rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
+Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).</description>
+    </item>
+    
+  </channel>
+</rss>

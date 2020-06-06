@@ -1,0 +1,37 @@
+---
+title: 'Apache Hive and java.lang.ClassCastException on start'
+date: 2019-02-19T23:47:00.000+01:00
+draft: false
+tags : [Data, Mac, Big data, Hive]
+dropcap: true
+featured_image: "annie-spratt-137316-unsplash.jpg"
+---
+
+A couple of days ago I installed [Hive](https://github.com/apache/hive) from [Homebrew](https://brew.sh/) on my Mac. Sadly, when I tried to run the `hive` command, I got the weird-looking error  
+
+<!--more-->
+
+{{< figure src="annie-spratt-137316-unsplash.jpg" class="fig-wide" caption="Photo by [Annie Spratt](https://unsplash.com/photos/8_WZU5xKFKk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/hive?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)">}}  
+
+
+```
+Exception in thread "main" java.lang.ClassCastException:   
+  class jdk.internal.loader.ClassLoaders$AppClassLoader   
+   cannot be cast to   
+  class java.net.URLClassLoader   
+  (jdk.internal.loader.ClassLoaders$AppClassLoader   
+    and   
+  java.net.URLClassLoader are in module java.base of loader 'bootstrap')
+```  
+That looked like a JVM incompatibility, so I switched from GraalVM (the one I use by default) to Java 8 (I have aliases `jgrce`, `jgree`, `j8` and `j11` to switch JVMs). Still, the same error regardless. Weird. Maybe Java 11 (the other JVM I have installed)? Nope, same error.  
+  
+A quick Googling confirmed that this was related to Hive picking up Java 11, but only working with 7, 8 or 9 (not sure about 9). This in turn is due to the Hive boot scripts looking for the latest JRE which is at least 7, like the `hive` command here:  
+  
+```
+JAVA_HOME="$(/usr/libexec/java_home --version 1.7+)" \   
+HIVE_HOME="/usr/local/Cellar/hive/3.1.1/libexec" exec \  
+"/usr/local/Cellar/hive/3.1.1/libexec/bin/hive" "$@"
+```  
+This will pick 11, which no longer has `URLClassLoader` (I think this was changed in Java 9). So, won't start.  
+  
+Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java > 1.8. For me this was not an option, so I just modified the scripts by removing the `JAVA_HOME` condition (since I set my `JAVA_HOME` globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.

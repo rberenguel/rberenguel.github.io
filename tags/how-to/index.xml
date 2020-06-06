@@ -23,7 +23,7 @@ En este post os voy a enseñar cómo recordar a la perfección una lista. No imp
     </item>
     
     <item>
-      <title>The Mind Palace Memory Technique (or: what I&#39;m watching on TV lately)</title>
+      <title>The Mind Palace Memory Technique (or: what I&#39;&#39;m watching on TV lately)</title>
       <link>https://mostlymaths.net/2012/03/mind-palace-memory-technique-or-what-im.html/</link>
       <pubDate>Wed, 21 Mar 2012 20:01:00 +0100</pubDate>
       
@@ -77,7 +77,7 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
     </item>
     
     <item>
-      <title>Emacs 30 Day Challenge Update #1: Writing this in Conkeror</title>
+      <title>E30DC: Writing this in Conkeror</title>
       <link>https://mostlymaths.net/2010/12/emacs-30-day-challenge-update-1-writing.html/</link>
       <pubDate>Tue, 07 Dec 2010 15:00:00 +0100</pubDate>
       
@@ -196,23 +196,6 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
     </item>
     
     <item>
-      <title>My backup script in Mac/Linux</title>
-      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
-      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
-      <description>My backup script in Mac/Linux
-#!/bin/sh
-# This script backs up a set of files and directories incrementally,
-# storing only the modified files in a folder-per-day basis. Each time
-# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
-# refreshed to the newest copy, and the previous version of a modified
-# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
-# for instance)
-# Root to be safeguarded</description>
-    </item>
-    
-    <item>
       <title>Calendars &amp; emacs</title>
       <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
@@ -240,30 +223,6 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <guid>https://mostlymaths.net/2009/06/how-to-download-youtube-flv-videos.html/</guid>
       <description>There is a plain and easy way to download YouTube .flv videos (which you can watch with VLC Media Player, or in a Mac with Quicktime Player and additional plug-ins).
 To do so, you need the Safari Web Browser (Mac or Windows). Go to your desired page hosting a Flash Video file, and select Activity in the Window menu. There you will find the files being downloaded in the web-page you are visiting&amp;hellip; double click the bigger one (as usually flash videos are the biggest files in YouTube pages, if you can&amp;rsquo;t find such a big file, check for the .</description>
-    </item>
-    
-    <item>
-      <title>How to get a local proxy</title>
-      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
-      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
-      <description>Setting a local proxy through a remote machine
-To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
- ssh -D 42 YourRemoteMachineName
- And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
-    </item>
-    
-    <item>
-      <title>How to fold and iron your karategi</title>
-      <link>https://mostlymaths.net/2009/05/how-to-fold-and-iron-your-karategi.html/</link>
-      <pubDate>Tue, 19 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/05/how-to-fold-and-iron-your-karategi.html/</guid>
-      <description>Folded &amp;amp; Ironed
-You can view all steps together here.
- 
-All steps in one image (click to enlarge):</description>
     </item>
     
     <item>

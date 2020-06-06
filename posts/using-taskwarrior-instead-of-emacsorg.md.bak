@@ -1,0 +1,95 @@
+---
+title: 'Using Taskwarrior Instead Of Emacs+Org Mode For To-Do And Appointment Tracking'
+date: 2011-03-13T13:50:00.001+01:00
+draft: false
+tags : [emacs, Linux, Time Management, NanoNote]
+---
+
+[![](http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s400/7.jpg)](http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s1600/7.jpg)  
+
+[One of my fractal images  
+](http://www.mostlymaths.net/p/free-downloads.html)
+
+I have a confession to make: **I'm not using emacs+org mode to keep my to-do list and appointments**. What? The same emacs junkie that [used emacs for (almost) everything last December](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html) gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.  
+
+TaskWarrior is very geeky
+-------------------------
+
+TaskWarrior as implied by the title of this post is a program you can use to keep a to-do list, appointments and project related lists of tasks. And is very geeky because it works from the command line. Yes, it is a task manager with a CLI (command line interface, as much as I love CLI's and acronyms, I had never used this one before!). And this is close to being the top in geekyness you can get.  
+
+  
+You could get over the top and write your own task manager as a lot of people have done. In fact, I found about TW after learning about [t](http://stevelosh.com/projects/t/), the python based minimalistic task manager, through finding [t-](http://www.penzba.co.uk/t-/t-.html?HN1) in HackerNews, an even more minimalistic version of it.  
+  
+Adding a task to taskwarrior is a little more _simple_ than using org-mode, but this is just a matter of taste. You can add a task to an org file just by writing a line, whereas to add a task to TaskWarrior you issue task add task. Which I feel better about, it is the way it should be.  
+
+I want to use my Ben Nanonote for something
+-------------------------------------------
+
+You probably remember my little pocket computer, the [Ben Nanonote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html). It is a somewhat shiny little gadget, very lovely and for me, quite useless.... I have an iPod Touch and an iPad, what use can have a pocket-sized Linux based clamshell computer with [Debian](http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html) without X and 320x200 pixels?  
+
+  
+At first, as part of my [emacs 30 day challenge](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html), I planned to use the [Nanonote](http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html) as an agenda, with emacs and org-mode. But this was hard to do: the keyboard has small keys and I have big fingers. I gave up, and almost stopped using it completely. Then, while on Switzerland I used the tiny beast to do some computations using Pari/GP and started to like it again. Although it lacks (mine, with my Debian installation) a good graphical plotter and visualiser (gnuplot does not work completely), it has yacas for symbolic algebra, Pari/GP for number theory and high precision computation and Octave. It also has C compiler... Forth, Lisp, Python, you name it. It is a nice gadget to keep close, but I wanted to use it for something. Here enters TaskWarrior, which fits like hand in glove with my Ben.  
+
+Using TaskWarrior (with screenshots)
+------------------------------------
+
+I add whatever task is lingering in my mind as I wake up, like buying something for supper?, with task add task. List my tasks by issuing task (note: add alias t=task in your .bashrc!). This is because the default action (which can be customised) is list. You can change this (and a whole lot of other options), but this is out of the scope of this short introduction. Read the [full TaskWarrior manual here](http://taskwarrior.org/wiki/taskwarrior).  
+
+  
+
+[![](http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s400/AddingListingTaskWarrior.png)](http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s1600/AddingListingTaskWarrior.png) [![](http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s400/DatesTaskWarrior.png)](http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s1600/DatesTaskWarrior.png)  
+Adding tasks, setting projects and so on  
+
+  
+
+You can add projects, due dates, priorities and tags to a task with the keywords _project_, _due_, _priority_ and _tag_, followed by a colon. Like task add Do something today due:today priority:H project:Hey +tag1. You add a _+_ to a tag to decide whether adding a tag, +tagname or removing a tag, -tagname. To mark a task as done, you issue task #taskID done. And to find tasks matching some criteria, you should task list criteria. You can be more specific, with task list project:specificproject, or use some custom show function like task list complete. I know that TaskWarrior at first is a little verbose... but **you can abbreviate**: t add Tasktoadd pro:Aproject due:tom pri:L.  
+
+  
+
+[![](http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s400/PrioritiesTaskWarrior.png)](http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s1600/PrioritiesTaskWarrior.png) [![](http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s400/ListingTaskWarrior.png)](http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s1600/ListingTaskWarrior.png)  
+Advanced listing and adding  
+
+  
+
+There is also a lot of possibilities to list tasks, task list limit:2 will show only 2 tasks, task next will show you **what to do next** (based on priority, due date and last time acted). Even more, **you can create your custom reports**! I did one that listed the what to work next with a minimal view (to fit the screen of the Ben Nanonote), and it is as simple as adding this to your .taskrc file:  
+
+> #Custom report:  
+> report.look10.description=Minimal next with due date  
+> report.look10.columns=id,description,due,priority  
+> report.look10.labels=ID,Description,Due,P  
+> report.look10.sort=due+,priority-  
+> report.look10.filter=depends.none: status:pending  
+> report.look10.limit=10  
+
+  
+
+[![](http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s400/ReportsTaskWarrior.png)](http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s1600/ReportsTaskWarrior.png) [![](http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s400/CustomReportsTaskWarrior.png)](http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s1600/CustomReportsTaskWarrior.png)  
+Listing and custom reports  
+
+  
+
+I also did a custom report that showed me 10 tasks marked as _fun_, i.e. with the tag +Fun added to them. Thus when I wasn't like working on real work, I could do some fun work. To learn how specific reports work, you can ask TaskWarrior to show them, like task show next:  
+
+> Config variable Value  
+> next 2  
+> report.next.columns id,project,priority,due,active,age,description  
+> report.next.description Lists the most urgent tasks  
+> report.next.filter status:pending limit:page depends.none:  
+> report.next.labels ID,Project,Pri,Due,Active,Age,Description  
+> report.next.sort due+,priority-,active-,project+  
+> urgency.next.coefficient 10.0  
+
+There are a lot more options to tweak, like color themes (TaskWarrior comes with quite a few, and you can write your own or download them from somewhere), adding **task dependency**, i.e. task 3 should only be done (and showed) after task 5, adding recurrence to tasks and quite a few more things. If you are interested in finding more about TaskWarrior, install it, play with it a little and start browsing the [online tutorial](http://taskwarrior.org/wiki/taskwarrior).  
+
+My usage of TaskWarrior in the Ben Nanonote
+-------------------------------------------
+
+I wake up, plug it to my MacBook, configure the network (see this post about [Debian on the Ben Nanonote](http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html) to read about networking it) and ssh from the Mac to it.  
+  
+When I'm ready to go to my office, I unplug my Ben and head for my office. While on commute, I can check my tasks in the Ben or add one as needed just by taking it from my pocket. To save battery life I wrote two scripts named on and off, which just turn the screen on and off (the default timeout is way too long and with fbterm is hard to set up correctly, AFAIK) with echo 0 > /sys/devices/platform/jz4740-fb/graphics/fb0/blank  
+  
+I get to my office, plug the Ben to my office computer, check for due tasks and work. When the day is over, unplug and head home... This way, it has always battery left, and my task list is always with me in a very browsable way. And I use my Ben for something!  
+  
+All these reasons and use cases could work as well with org-mode. I could start emacs in my Ben at boot up, and work in the same way, but I wanted to try something different. So far, I'm very happy about how TaskWarrior works, and I was just happy with org-mode, mostly because org-mode works like a super organiser system. And I wanted something more minimalistic, for this specific aspect of my work-life. I.e., I won't be using vi without being forced to do it before hell freezes :).  
+
+ParseList(ScrambleList(Relateds(emacs)),2)

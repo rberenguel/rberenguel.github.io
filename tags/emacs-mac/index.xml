@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs Mac on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/emacs-mac/</link>
+    <description>Recent content in emacs Mac on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jun 2009 11:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/emacs-mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lisp raytracing, again</title>
+      <link>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</link>
+      <pubDate>Tue, 23 Jun 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/06/lisp-raytracing-again.html/</guid>
+      <description>This evening I was bored at home, and decided to have a look at my old Lisp raytracer… a project that just went idle a year ago. I picked up another programming project I had idling for a long time (an emacs lisp project, to interact with my console-based fractal drawers). I had a coding breakthrough that time, and managed to advance quite a bit in a little time, so today I tried again.</description>
+    </item>
+    
+    <item>
+      <title>Productivity enhancers (or time wasting avoiders)</title>
+      <link>https://mostlymaths.net/2009/05/productivity-enhancers-or-time-wasting.html/</link>
+      <pubDate>Sat, 23 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/productivity-enhancers-or-time-wasting.html/</guid>
+      <description>I have been using several productivy enhancers (or time-wasting avoiders) as of late. Although I find them quite useful, I wonder if I could find something even better.
+Think: I have already talked about think elsewhere. Think enables the user to focus on just one application, seeing nothing more. It is like the blinders of a horse to keep you from distracting.
+LeechBlock: A FireFox addon, which allows you to block certain sites at certain times of the week, or after a predetermined amount of time has been wasted there.</description>
+    </item>
+    
+    <item>
+      <title>Extremely useful (mostly free) Mac applications</title>
+      <link>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</link>
+      <pubDate>Wed, 13 May 2009 11:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</guid>
+      <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
+ Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
+    </item>
+    
+  </channel>
+</rss>

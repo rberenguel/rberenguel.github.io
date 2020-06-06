@@ -114,6 +114,26 @@ edition. Sorry!&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>2019#17 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</link>
+      <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34; target=&#34;_blank&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#16 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
+      <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>2019#10 Readings of the week</title>
       <link>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</link>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
@@ -271,7 +291,7 @@ I guess if you are geeky enough to read mostlymaths.net, you know how a slide ru
     </item>
     
     <item>
-      <title>Good Books I&#39;ve Read in 2011: Perfect Gifts for Geeks!</title>
+      <title>Good Books I have Read in 2011: Perfect Gifts for Geeks!</title>
       <link>https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/</link>
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
@@ -439,7 +459,7 @@ I decided to allocate a few global variables (for &amp;ldquo;current point&amp;r
       <pubDate>Sun, 21 Feb 2010 19:05:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/02/cjuicer-beats-humans-and-unixs-diff.html/</guid>
-      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is a very simple code&amp;hellip; then almost everyone writes the same), without problems with changing names of variables.</description>
+      <description>Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &amp;ldquo;logical tree&amp;rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.</description>
     </item>
     
     <item>
@@ -620,23 +640,6 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
     </item>
     
     <item>
-      <title>My backup script in Mac/Linux</title>
-      <link>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</link>
-      <pubDate>Mon, 07 Sep 2009 01:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/09/my-backup-script-in-maclinux.html/</guid>
-      <description>My backup script in Mac/Linux
-#!/bin/sh
-# This script backs up a set of files and directories incrementally,
-# storing only the modified files in a folder-per-day basis. Each time
-# you run it, the &amp;ldquo;current&amp;rdquo; directory in the backup server gets
-# refreshed to the newest copy, and the previous version of a modified
-# file is stored in a directory corresponding to &amp;ldquo;today&amp;rdquo; (20090905,
-# for instance)
-# Root to be safeguarded</description>
-    </item>
-    
-    <item>
       <title>Calendars &amp; emacs</title>
       <link>https://mostlymaths.net/2009/09/calendars-emacs.html/</link>
       <pubDate>Thu, 03 Sep 2009 17:00:00 +0200</pubDate>
@@ -776,18 +779,6 @@ Background: Let K={A,B,C&amp;hellip;} be a finite set of alternatives (maybe pol
       <guid>https://mostlymaths.net/2009/06/levelling-up.html/</guid>
       <description>Sometimes I feel like a character from a RPG (or NetHack), where you have a certain level and experience, and as you advance killing monsters, your experience points go up, your level eventually rises and your enemies turn harder.
 I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesis) is more or less like this&amp;hellip; Enemies appear, you overcome them, and as you advance, they get stronger, bigger and thicker.</description>
-    </item>
-    
-    <item>
-      <title>How to get a local proxy</title>
-      <link>https://mostlymaths.net/2009/05/local-proxy.html/</link>
-      <pubDate>Fri, 29 May 2009 11:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/2009/05/local-proxy.html/</guid>
-      <description>Setting a local proxy through a remote machine
-To set up a local proxy using some computer in another network (in my case, my office computer to accessing MathSciNet search and such), go to a console and
- ssh -D 42 YourRemoteMachineName
- And then set Firefox to use a proxy. In preferences, go to the Advanced Tab and select Connection Settings. Here you should select manual proxy configuration, in localhost with the same port number (42 in this example) as you used up before.</description>
     </item>
     
     <item>

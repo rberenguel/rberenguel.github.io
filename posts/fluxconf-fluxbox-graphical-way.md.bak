@@ -1,0 +1,20 @@
+---
+title: 'fluxconf: fluxbox the graphical way'
+date: 2009-10-13T01:00:00.003+02:00
+draft: false
+tags : [Linux]
+---
+
+A quick one: Graphical configuration for fluxbox: [fluxconf](http://freshmeat.net/projects/fluxconf/). You can just apt-get it. I found out about it in [tuxmachines.org](http://www.tuxmachines.org/), following this [link](http://linuxcritic.wordpress.com/2009/09/18/fluxconf-configuring-fluxbox-the-graphical-way/). But after using it I realized I had lost 3 entries... I am not sure if it was a bug, or what (they all had parentheses in them!). Use it at your own risk!  
+  
+Other fluxbox&Linux related posts:  
+
+*   [Whistle control your computer (Linux&Mac)](http://berenguel.blogspot.com/2009/09/whistle-control-your-computer.html)  
+    
+*   [My backup script in Mac/Linux](http://berenguel.blogspot.com/2009/09/my-backup-script-in-maclinux.html)  
+    
+*   [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)
+*   [Three dee (3-dimensional file system browsers review)  
+    ](http://berenguel.blogspot.com/2009/07/three-dee.html)
+*   [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)
+*   [How to get a local proxy](http://berenguel.blogspot.com/2009/05/local-proxy.html)

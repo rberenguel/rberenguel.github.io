@@ -1,0 +1,78 @@
+---
+title: "2019#24 Readings of the Week"
+date: 2019-09-14T17:54:45+02:00
+draft: false
+dropcap: true
+affiliate: true
+featured_image: "3DIceland.jpg"
+tags : [Big data, Data, Python, Scala, Writing, ReadingsOfTheWeek]
+---
+
+Although this week I have been reading mostly Apache Cassandra documentation, I
+have tried to avoid an onslaught of tips, tricks and readings on it. Just one
+article. <!--more-->
+
+**NOTE**: The themes are varied, and some links below are affiliate links. City
+planning, writing, Python’s typing, Cassandra. Expect a similar wide range in
+the future as well. You can check all my weekly readings by checking the [tag
+here](https://www.mostlymaths.net/search/label/ReadingsOfTheWeek). You can also
+get these as a weekly newsletter by subscribing
+[here](http://eepurl.com/geFw7P).
+
+{{< figure src="3DIceland.jpg" class="fig-wide" caption="Image credits: [Gústi Productions](https://www.facebook.com/gustiphotography/)">}}
+
+## [BLUF: The Military Standard That Can Make Your Writing More Powerful](https://www.animalz.co/blog/bottom-line-up-front/)
+A technique to be succinct and clear in communication. Pair it with
+five.sentenc.es for maximum punch.
+
+## [📺 Design Challenges of Bloop by Jorge Vican](https://jvican.github.io/slides/scalaworld-2019/Design-challenges-of-Bloop.pdf)
+One of the presentations I enjoyed the most in Scala World 2019 (aside from [Sam
+Aaron’s](https://twitter.com/samaaron) presentation on [Sonic
+Pi](https://sonic-pi.net))
+
+## [Types for Python HTTP APIs: An Instagram Story](https://instagram-engineering.com/types-for-python-http-apis-an-instagram-story-d3c3a207fdb7)
+Instagram is a clear success story on Django. But Python’s lack of stronger
+static typing is always a thread. This is how they approach the problem
+
+## [Town in Iceland Paints 3D Zebra Crosswalk To Slow Down Speeding Cars](https://www.boredpanda.com/3d-pedestrian-crossing-island/)
+I visited Stykkyshólmur (and I had used this city name as secret question
+once... Bad idea) many years ago. I recognised the city just from the pictures
+in this article. I think this is an excellent idea, and all pedestrian crossings
+should be painted this way. Subconsciously, everyone would brake, even knowing
+it’s flat.
+
+## [How does a relational database work](http://coding-geek.com/how-databases-work/)
+An extremely long and informative article on internals. Only thing missing would
+be discussing the Volcano iterator model. Or I didn’t see it there.
+
+## [7 mistakes when using Apache Cassandra](https://blog.softwaremill.com/7-mistakes-when-using-apache-cassandra-51d2cf6df519)
+I’ve read a lot of material about Cassandra this past week, and this is a
+standout.
+
+## [The Wheel](https://aws.amazon.com/blogs/opensource/the-wheel/)
+How large teams can handle reporting
+
+## [Learning to build distributed systems](http://brooker.co.za/blog/2019/04/03/learning.html)
+Tips and tricks on how to work on big, distributed systems.
+
+## [📚 Programming Interviews Exposed](https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/ref=as_li_ss_tl?crid=MMJU1VG9AAE&keywords=programming+interview+exposed&qid=1568471595&sprefix=programming+intervie,aps,221&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=43bf939e0feac3f893340369bc29a723&language=en_US)
+I skimmed most of it. Interesting… but boring as well. Not sure I’d recommend
+unless you plan on interviewing extensively.
+
+## [📚🔈 Super Thinking: The Big Book of Mental Models](https://www.amazon.com/Super-Thinking-Book-Mental-Models/dp/0525533583/ref=as_li_ss_tl?keywords=super+thinking&qid=1568471658&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=bee484ed0b171ffa2cb40ce7552ac23f&language=en_US)
+I went for the audiobook. This is the extended version of G. Weinberg’s (of
+[DuckDuckGo fame](https://en.wikipedia.org/wiki/DuckDuckGo#History)) [post on
+mental
+models](https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d).
+It is an excellent book: compares extremely well with Shane Parrish’s one.
+
+## [📚🔈 Black Box Thinking](https://www.amazon.com/Black-Box-Thinking-People-Mistakes-But/dp/1591848229/ref=as_li_ss_tl?keywords=black+box+thinking&qid=1568471704&sr=8-1&linkCode=ll1&tag=rbersblog-20&linkId=5c340833a41aa77675bcf5aeaf56c032&language=en_US)
+Wavy. Some parts were extremely interesting (especially the beliefs/mind
+changing part), others were pretty much average of worse. But, I’m not sure if
+it is because I’m already familiar with the material.
+
+## [Newsletter](http://eepurl.com/geFw7P)?
+These weekly posts are also available as a newsletter. These days (since RSS
+went into limbo) most of my regular information comes from several newsletters
+I’m subscribed to, instead of me going directly to a blog. If this is also your
+case, subscribe by clicking [here](http://eepurl.com/geFw7P).

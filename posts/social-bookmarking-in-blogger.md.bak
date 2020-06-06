@@ -1,0 +1,43 @@
+---
+title: 'Social bookmarking in blogger'
+date: 2008-09-27T17:12:00.006+02:00
+draft: false
+tags : [Blog]
+---
+
+After trying different methods to add "Digg this", "Stumble this!" and similar buttons, I've decided that [MyFolia](http://myfolia.com/)'s approach is the best.  
+  
+
+[![](http://4.bp.blogspot.com/_f3d3llNlZKQ/SN5OuLCzgxI/AAAAAAAAAjs/wBeOYUVxefE/s400/SB.jpg)](http://4.bp.blogspot.com/_f3d3llNlZKQ/SN5OuLCzgxI/AAAAAAAAAjs/wBeOYUVxefE/s1600-h/SB.jpg)
+
+  
+  
+
+This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.  
+  
+To add this code to your blogger blog:  
+
+1.  Go to layout settings, and select edit HTML
+2.  Select 'Expand widgets'
+3.  Search in the text box for the string:  
+    
+4.  Just below this line paste the following:
+
+> <a expr:href='&quot;http://digg.com/submit?phase=2&amp;url=&quot; data:post.url &quot;&amp;title=&quot; data:post.title' title='Digg it!'><img alt='\[Digg\]' height='16' src='http://digg.com/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://reddit.com/submit?url=&quot; data:post.url &quot;&amp;title=&quot; data:post.title' title='Reddit'><img alt='\[Reddit\]' height='16' src='http://reddit.com/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://del.icio.us/post?url=&quot; data:post.url &quot;&amp;title=&quot; data:post.title' title='Save to del.icio.us'><img alt='\[del.icio.us\]' height='16' src='http://del.icio.us/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://www.facebook.com/share.php?u=&quot; data:post.url' title='Share on Facebook'><img alt='\[Facebook\]' height='16' src='http://www.facebook.com/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://technorati.com/faves?add=&quot; data:post.url' title='Add to my technorati favorites'><img alt='\[Technorati\]' height='16' src='http://technorati.com/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=&quot; data:post.url &quot;&amp;title=&quot; data:post.title' title='Save to your Google bookmarks'><img alt='\[Google\]' height='16' src='http://www.google.com/favicon.ico' width='16'/></a>  
+>   
+> <a expr:href='&quot;http://www.stumbleupon.com/submit?url=&quot; data:post.url &quot;&amp;title=&quot; data:post.title' title='Stumble this!'><img alt='\[StumbleUpon\]' height='16' src='http://www.stumbleupon.com/favicon.ico' width='16'/></a>  
+>   
+
+Save your template and enjoy your possible visitors.  
+  
+PS: To convert huge html code to "blogger pastable" code to write a post like this one, you can use [this](http://www.elliotswan.com/postable/).

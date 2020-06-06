@@ -1,0 +1,46 @@
+---
+title: '8 reasons for re-inventing the wheel as a programmer'
+date: 2010-03-26T20:55:00.008+01:00
+draft: false
+tags : [Programming, Linux, Thoughts]
+---
+
+Has someone ever told you "_Don't re-invent the wheel_"?
+--------------------------------------------------------
+
+Again and again I read somewhere around the net that 're-inventing the wheel' is one of the worse errors a programmer can fall into. In fact, I've read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.  
+  
+But here, I advocate my pro's (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it. You can also read the follow-up: [8 reader reasons for re-inventing the wheel as a programmer](http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html).  
+  
+1. I don't like the default wheel color: Sometimes you need a specific type of algorithm, one that the 'library standard' just does, without the bells and whistles you need. Writing your own version allows you to tweak it to suit your problem domain. Do it!  
+  
+2. I want a bigger wheel: What happens when the usual algorithm doesn't fit at all? When you need to write really context-specific code, working with generalistic libraries is impossible. Even worse, what happens when you are writing the specific library? Go ahead!  
+  
+3. I am a wheel engineer: if you are deep in the know-hows of the subject, re-inventing the wheel is a way to be sure of your complete knowledge of your domain of expertise. A kind of self-knowledge test. Test it!  
+  
+4. I want to know how does the wheel work: related to the previous item, but focused to amateurs on the subject. I feel this way quite often, and sometimes this has paid off in the long run. This can lead to spicing up a boring afternoon. Discover it!  
+  
+5. My wheel is better than your wheel: Pride. You can write it better, can't you? Closely related to the programmer virtues: laziness, impatience and [hubris](http://en.wikipedia.org/wiki/Hubris).(check [this page](http://www.hhhh.org/wiml/virtues.html) for them). Be proud of it!  
+  
+6. Proprietary vs free: maybe the wheel you want to use is a proprietary wheel, thus you can't add it to your open-source project, or have to pay some fee to use it. Free it!  
+  
+7. Create a new wheel: you need to know how the old stuff works to be able to create the new big thing (usually, in most areas). We are standing on the shoulders of giants, but if we don't know how tall they are, we can step over midgets. Learn it!  
+  
+8. Boredom: maybe you have a free Sunday afternoon and don't want to code something over-the-top, and you decide to write your own algorithm for X. Closely related to reasons 4 and 5. Enjoy!  
+  
+  
+Do you have your reasons and they are not in this list? Post a comment and I'll write a new (collaborative) version! (Written! [8 reader reasons for re-inventing the wheel as a programmer](http://www.mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html)).  
+
+  
+
+If you enjoyed this post, please share it with your friends or subscribe to this blog!
+
+  
+Related posts:  
+
+*   [9 Best Programming Books I Have Read (So Far)](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)
+*   [Learn to Remember Everything: The Memory Palace Technique](http://www.mostlymaths.net/2011/03/learn-to-remember-everything-memory.html)
+*   [And e appears from nowhere](http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html)
+*   [Timeboxing: You Will Work Like _Never_ Before](http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html)
+
+ParseList(ScrambleList(Relateds(Linux, Programming)))

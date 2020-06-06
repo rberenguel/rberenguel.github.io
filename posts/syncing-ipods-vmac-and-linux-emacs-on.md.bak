@@ -1,0 +1,107 @@
+---
+title: 'Syncing iPod''s vMac and Linux: emacs on iPod Touch'
+date: 2010-01-02T00:01:00.004+01:00
+draft: false
+tags : [Programming, emacs, Linux, iPod]
+---
+
+Using emacs on the go in your iPod Touch / iPhone
+-------------------------------------------------
+
+Maybe you remember a [previous post](http://berenguel.blogspot.com/2009/11/retro-on-ipod-touch-1-mini-vmac.html) on installing vMac, a Mac Plus emulator for the iPod Touch. I did it just for the geek factor... and for being able to edit things with Emacs. I have emacs installed:
+
+[![Emacs and iPod Touch/iPhone](http://3.bp.blogspot.com/_f3d3llNlZKQ/SwRX5-uNUcI/AAAAAAAABcI/CwacRBVXYlM/s400/IMG_0067.jpg "Emacs and iPod Touch/iPhone")](http://3.bp.blogspot.com/_f3d3llNlZKQ/SwRX5-uNUcI/AAAAAAAABcI/CwacRBVXYlM/s1600/IMG_0067.jpg)  
+  
+
+But what's the use of emacs, without files to edit? It didn't bother me... at first. Keep on reading for how to keep in sync files edited inside the vMac emacs and files in your Linux box, along with the "why should I use emacs in my iPod/iPhone?". Or why should I have a Mac Plus on my iPod? Keep reading for my points, afterwards you can read [86 Mac Plus Vs. 07 AMD DualCore. You Won't Believe Who Wins](http://hubpages.com/hub/_86_Mac_Plus_Vs_07_AMD_DualCore_You_Wont_Believe_Who_Wins).
+
+At first I had problems with the keybindings... promptly solved with this nice settings window in the Special menu... Be sure to read it carefully. I was always understanding it reversed.  
+  
+
+[![Emacs and iPod Touch/iPhone](http://2.bp.blogspot.com/_f3d3llNlZKQ/SzUXy9QXwSI/AAAAAAAABpA/vtSo15Xd96U/s400/IMG_0155.JPG "Emacs and iPod Touch/iPhone")](http://2.bp.blogspot.com/_f3d3llNlZKQ/SzUXy9QXwSI/AAAAAAAABpA/vtSo15Xd96U/s1600-h/IMG_0155.JPG)  
+Click to enlarge  
+  
+
+Ok, now I could edit things with emacs on the go. Why should I bother? But as stress pills up, my LaTeX-ing needs grow. Maybe I need to rewrite something? I have a bunch of paper stacks, waiting to be LaTeXed. And writing LaTeX... is somewhat of a [PITA](http://www.acronymfinder.com/PITA.html)... unless you have a editor you enjoy using :) The customization level that can be achieved with emacs is unrivaled... even in this tiny thing. Beware! The configuration of keybindings should follow [this](http://www.gnu.org/software/emacs/manual/html_node/emacs/Init-Rebinding.html#Init-Rebinding), but don't use the kbd macro, it is not implemented.
+
+What are the strong points of editing with emacs on the go?  
+
+1\. Abbrev mode and dabbrev-expand: With these options, writing is extremely quick, at least on a current-time computer. abbrev-mode automatically expands your own abbreviations. As an example, when I write conn and press space (to keep on writing), emacs changes conn to connected, automatically. To learn how to add an abbreviation to the system, read [this](http://www.emacswiki.org/emacs/AbbrevMode#toc1). dabbrev-expand, is bound to some key, in my main machines I have it bound to S-Tab, below you can see a screenshot of how to configure it to Esc-Tab. You only have to write a part of a word. For example, in this post, I could write opt, press S-Tab... and it would get expanded into options... and if I pressed further, it would cycle through all possible completions. Nice, isn't it?  
+  
+
+[![Emacs and iPod Touch/iPhone](http://1.bp.blogspot.com/_f3d3llNlZKQ/SzUXzFx9gRI/AAAAAAAABpI/iroVNUKxS_s/s400/IMG_0157.JPG "Emacs and iPod Touch/iPhone")](http://1.bp.blogspot.com/_f3d3llNlZKQ/SzUXzFx9gRI/AAAAAAAABpI/iroVNUKxS_s/s1600-h/IMG_0157.JPG)  
+Click to enlarge  
+  
+
+2\. Paragraph filling: M-q refills the paragraph. I use this such frequently, that I have to stop from doing this in non-emacs windows. A must, for text writing.
+
+3\. Keyboard macros: Curly braces, parentheses, \\\[\\\]... all these are painful to add to a writing, in such a small keyboard. The solution? Adding keyboard macros to keyboard shortcuts. You start recording a macro with C-x ( and stops with C-x ). As an example macro I use, start recording write {} and move the cursor inside the curly braces with the keyboard arrow. Stop recording with C-x ), you are done. Now M-x name-last-kbd-macro (remember, tab completes command names), name it as Curly. Now open your .emacs, go to the keybindings section, and M-x insert-kbd-macro will write the code needed for the function to be useful! Now you just need to add a global key-binding to it. I mapped it to C-m (which previously added a newline... I don't think I'll use it). Below you can see an image of the .emacs file editing for this. To know what a command does, press C-h k followed by the key combination. With this you can decide if it was a really useful command or you can dump it for the one you really need. As before, you can find more information on keyboard macros in the [emacsWiki](http://www.emacswiki.org/emacs/KeyboardMacros).  
+  
+
+[![Emacs and iPod Touch/iPhone](http://1.bp.blogspot.com/_f3d3llNlZKQ/SzUXzV-seNI/AAAAAAAABpQ/mmTrUWG_now/s400/IMG_0158.JPG "Emacs and iPod Touch/iPhone")](http://1.bp.blogspot.com/_f3d3llNlZKQ/SzUXzV-seNI/AAAAAAAABpQ/mmTrUWG_now/s1600-h/IMG_0158.JPG)  
+Click to enlarge  
+  
+
+Well, it has also problems... mostly iPod, not emacs related. But I won't list them here, you can already think them out.  
+
+Ok, now we have a problem to be solved. How to keep files in sync in&out of vMac's filesystem? Luckily, Linux can mount the hfs filesystem used by dsk image files, your iPod has wifi and ssh and I learnt enough bash to write a couple of scripts. I could squeeze it into just one, but these two work and now I don't bother. If anyone wants to merge them, let me know after you are done. Both scripts expect your iPod/iPhone IP from the command line. Usually something like 192.168.1.???. I.e. you should run it as ./FromIpod.sh 192.168.1.34. To use it, you need root credentials to mount loop filesystems (at least I had to), and the mobile account password.If you dont have a suitable dsk file to start working, the best is use the FromIpod.sh script first, after creating a dsk image file from inside vMac. You can do so sliding two fingers from right to left to get the "Disks" menu, and taping add. After it is added, mount it, open and your Mac Plus will complain it is not formatted, format it. Unmount it and run the script.  
+
+> ```
+> #!/bin/sh# Copyright 2009 Ruben Berenguel  
+> \# (GPL omitted here)  
+> #  
+> \# FromIpod: Will copy FILENAME from  
+> \# your iPod's MacOsClassic directory  
+> \# into DSKDESTINATIONDIRECTORY, mount  
+> \# it and copy all files into  
+> \# DATADESTINATIONDIRECTORY, setting all  
+> \# possible permissions (I had problems  
+> \# with permissions before). You can  
+> \# download the latest version (and read  
+> \# the GPL license) version from  
+> \# [http://rberenguel.googlecode.com/svn/trunk/Bash/FromIpod.sh](http://rberenguel.googlecode.com/svn/trunk/Bash/FromIpod.sh)
+> ```
+> 
+> FILENAME=TeXFiles.dsk  
+> DSKDESTINATIONDIRECTORY=~/Documents/  
+> MOUNTPOINT=/mnt/hfs-disk/  
+> DATADESTINATIONDIRECTORY=~/Documents/iPod-Data  
+> scp mobile@$1:/var/mobile/Library/MacOSClassic/$FILENAME $DSKDESTINATIONDIRECTORY  
+> sudo mount -oloop -t hfs $DSKDESTINATIONDIRECTORY$FILENAME $MOUNTPOINT  
+> sudo cp $MOUNTPOINT\*.\* $DATADESTINATIONDIRECTORY  
+> sudo chmod u+rxw $DATADESTINATIONDIRECTORY/\*.\* -v  
+> sudo umount $MOUNTPOINT
+
+The second script, as the first, needs you to be root and expects to be run with an IP.  
+
+> #!/bin/sh# Copyright 2009 Ruben Berenguel  
+> \# (GPL omitted here)  
+> #  
+> 
+> \# ToIpod: will mount DSKSOURCE/FILENAME in  
+> \# MOUNTPOINT, and copy all files in  
+> \# DATASOURCEDIRECTORY to the mounted  
+> \# filesystem. It will set all permissions.  
+> \# Then will unmount and use scp to copy  
+> \# FILENAME to your iPod/iPhone. You can  
+> \# download the latest version (and read  
+> \# the GPL license) from  
+> \# [http://rberenguel.googlecode.com/svn/trunk/Bash/ToIpod.sh](http://rberenguel.googlecode.com/svn/trunk/Bash/ToIpod.sh)
+> 
+> FILENAME=TeXFiles.dsk  
+> DSKSOURCE=~/Documents/  
+> MOUNTPOINT=/mnt/hfs-disk/  
+> DATASOURCEDIRECTORY=~/Documents/iPod-Data  
+> 
+> sudo mount -oloop -t hfs $DSKSOURCE$FILENAME $MOUNTPOINT  
+> sudo cp $DATASOURCEDIRECTORY/\*.\* $MOUNTPOINT  
+> sudo chmod a+rxw $MOUNTPOINT\*.\*  
+> sudo umount $MOUNTPOINT  
+> scp $DSKSOURCE$FILENAME mobile@$1:/var/mobile/Library/MacOSClassic/$FILENAME
+
+Keep in mind that the DATADESTINATION/SOURCE directory should not be your real working directory, but a kind of swap directory, where you know you can mess things up!
+
+  
+If you found this useful, consider sharing it on Reddit, Twitter, Digg, Stumble or whatever you enjoy using. Thanks!  
+  
+You may also be interested inParseList(ScrambleList(Relateds(Linux,iPod,Mac,emacs)))
