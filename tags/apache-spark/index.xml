@@ -6,10 +6,19 @@
     <description>Recent content in Apache Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2020 19:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 10:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020#46 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/06/202046-readings-of-the-week.html/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/06/202046-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;I made a hard push to clean up my reading list, deleting &lt;em&gt;a lot&lt;/em&gt; and reading &lt;em&gt;another lot&lt;/em&gt;. It went from 369 items to 99 🎉&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2020#45 Readings of the Week</title>
@@ -66,6 +75,33 @@
     </item>
     
     <item>
+      <title>2020#37 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/01/202037-readings-of-the-week.html/</link>
+      <pubDate>Sat, 11 Jan 2020 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/01/202037-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;First edition of the New Year. As eclectic as usual, I hope. The audio-based monitoring of servers and the weird uses of the GPT-2 neural network could be two highlights.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#36 Readings of the Week</title>
+      <link>https://mostlymaths.net/2019/12/201936-readings-of-the-week.html/</link>
+      <pubDate>Sun, 22 Dec 2019 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/12/201936-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;On time this week. Nothing remarkable: I&amp;rsquo;m winding down a bit my reading (both articles and books) in preparation for the yearly review and having some cooldown period.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A (section) of a map of the data engineering space</title>
+      <link>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</link>
+      <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
+      <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34; target=&#34;_blank&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34; target=&#34;_blank&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34; target=&#34;_blank&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34; target=&#34;_blank&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34; target=&#34;_blank&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>2019#16 Readings of the week</title>
       <link>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</link>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
@@ -118,6 +154,60 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       
       <guid>https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/</guid>
       <description>&lt;p&gt;You know how you slip once on a habit and everything goes crazy? Well, I’ve been 4 weeks without writing these, so here’s the accumulated reading from 4 weeks. Because, even if I don’t write it, I read a lot anyway. Also, there’s lot of interesting content this “week”.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#4 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</link>
+      <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34; target=&#34;_blank&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34; target=&#34;_blank&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019#3 Readings of the week</title>
+      <link>https://mostlymaths.net/2019/01/2019-3-readings-of-week.html/</link>
+      <pubDate>Sun, 27 Jan 2019 20:01:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/01/2019-3-readings-of-week.html/</guid>
+      <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018: Year in Review</title>
+      <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
+      <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2019/01/2018-year-in-review.html/</guid>
+      <description>&lt;p&gt;The year has ended, what has been going on?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notifications from Spark on an Apple Watch (via IFTTT)</title>
+      <link>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</link>
+      <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34; target=&#34;_blank&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34; target=&#34;_blank&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala eXchange 2017</title>
+      <link>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</link>
+      <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
+      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34; target=&#34;_blank&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2017: Year in Review</title>
+      <link>https://mostlymaths.net/2018/01/2017-year-in-review.html/</link>
+      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
+      
+      <guid>https://mostlymaths.net/2018/01/2017-year-in-review.html/</guid>
+      <description>&lt;p&gt;I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say &lt;em&gt;we&lt;/em&gt;, it means Laia and me unless explicitly changed.&lt;/p&gt;</description>
     </item>
     
     <item>

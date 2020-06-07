@@ -3,27 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2020/06/202046-readings-of-the-week.html/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/generative/</loc>
-    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/p5js/</loc>
-    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/tags/nlp/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-05T21:30:33+02:00</lastmod>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/zio/</loc>
+    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/p5js/</loc>
     <lastmod>2020-06-05T21:30:33+02:00</lastmod>
   </url>
   
@@ -48,11 +88,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-03T22:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/mac/</loc>
     <lastmod>2020-06-03T22:30:33+02:00</lastmod>
   </url>
@@ -63,22 +98,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/javascript/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-06-01T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2020-06-01T19:30:33+02:00</lastmod>
   </url>
   
@@ -193,11 +213,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/spark/</loc>
-    <lastmod>2020-01-11T18:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/keyboard/</loc>
     <lastmod>2020-01-06T18:15:52+01:00</lastmod>
   </url>
@@ -229,11 +244,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2019-12-15T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
     <lastmod>2019-12-15T12:30:33+02:00</lastmod>
   </url>
   
@@ -423,12 +433,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/awk/</loc>
-    <lastmod>2019-06-04T20:34:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/zio/</loc>
+    <loc>https://mostlymaths.net/tags/command-line/</loc>
     <lastmod>2019-06-04T20:34:00+02:00</lastmod>
   </url>
   
@@ -563,11 +568,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/kubernetes/</loc>
-    <lastmod>2019-02-05T22:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/01/2019-3-readings-of-week.html/</loc>
     <lastmod>2019-01-27T20:01:00+01:00</lastmod>
   </url>
@@ -584,11 +584,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/languages/</loc>
-    <lastmod>2019-01-20T16:32:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/nlp/</loc>
     <lastmod>2019-01-20T16:32:00+01:00</lastmod>
   </url>
   
@@ -623,11 +618,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/yearinreview/</loc>
-    <lastmod>2019-01-01T15:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2018/12/things3-weekly-review-mode-shortcuts.html/</loc>
     <lastmod>2018-12-31T16:07:00+01:00</lastmod>
   </url>
@@ -639,11 +629,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</loc>
-    <lastmod>2018-05-05T02:40:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/sbt/</loc>
     <lastmod>2018-05-05T02:40:00+02:00</lastmod>
   </url>
   
@@ -693,16 +678,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/category-theory/</loc>
-    <lastmod>2018-02-07T23:27:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/conferences/</loc>
-    <lastmod>2018-02-07T23:27:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/london/</loc>
     <lastmod>2018-02-07T23:27:00+01:00</lastmod>
   </url>
@@ -728,12 +703,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/ipod/</loc>
+    <loc>https://mostlymaths.net/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</loc>
     <lastmod>2017-11-19T17:42:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2017/11/nimbus-steelseries-mfi-controller-for-christmas.html/</loc>
+    <loc>https://mostlymaths.net/tags/ipod/</loc>
     <lastmod>2017-11-19T17:42:00+01:00</lastmod>
   </url>
   
@@ -885,11 +860,6 @@
   <url>
     <loc>https://mostlymaths.net/2013/09/a-slightly-better-reddit-upvotedownvote.html/</loc>
     <lastmod>2013-09-19T16:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/command-line/</loc>
-    <lastmod>2013-05-22T18:33:00+02:00</lastmod>
   </url>
   
   <url>

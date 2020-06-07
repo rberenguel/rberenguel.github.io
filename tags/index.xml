@@ -6,17 +6,80 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 21:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 10:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Generative</title>
       <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Fri, 05 Jun 2020 21:30:33 +0200</pubDate>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>https://mostlymaths.net/tags/nlp/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ZIO</title>
+      <link>https://mostlymaths.net/tags/zio/</link>
+      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/zio/</guid>
       <description></description>
     </item>
     
@@ -48,15 +111,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Wed, 03 Jun 2020 22:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title> Mac</title>
       <link>https://mostlymaths.net/tags/mac/</link>
       <pubDate>Wed, 03 Jun 2020 22:30:33 +0200</pubDate>
@@ -66,38 +120,11 @@
     </item>
     
     <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>https://mostlymaths.net/tags/javascript/</link>
       <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Mon, 01 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -192,15 +219,6 @@
     </item>
     
     <item>
-      <title>Spark</title>
-      <link>https://mostlymaths.net/tags/spark/</link>
-      <pubDate>Sat, 11 Jan 2020 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Keyboard</title>
       <link>https://mostlymaths.net/tags/keyboard/</link>
       <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
@@ -233,15 +251,6 @@
       <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sun, 15 Dec 2019 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -408,20 +417,11 @@
     </item>
     
     <item>
-      <title>AWK</title>
-      <link>https://mostlymaths.net/tags/awk/</link>
+      <title>Command Line</title>
+      <link>https://mostlymaths.net/tags/command-line/</link>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/tags/awk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ZIO</title>
-      <link>https://mostlymaths.net/tags/zio/</link>
-      <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/zio/</guid>
+      <guid>https://mostlymaths.net/tags/command-line/</guid>
       <description></description>
     </item>
     
@@ -534,15 +534,6 @@
     </item>
     
     <item>
-      <title>Kubernetes</title>
-      <link>https://mostlymaths.net/tags/kubernetes/</link>
-      <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Go</title>
       <link>https://mostlymaths.net/tags/go/</link>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
@@ -557,15 +548,6 @@
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/languages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>https://mostlymaths.net/tags/nlp/</link>
-      <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/nlp/</guid>
       <description></description>
     </item>
     
@@ -606,29 +588,11 @@
     </item>
     
     <item>
-      <title>YearInReview</title>
-      <link>https://mostlymaths.net/tags/yearinreview/</link>
-      <pubDate>Tue, 01 Jan 2019 15:00:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/yearinreview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title> iOS</title>
       <link>https://mostlymaths.net/tags/ios/</link>
       <pubDate>Mon, 31 Dec 2018 16:07:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sbt</title>
-      <link>https://mostlymaths.net/tags/sbt/</link>
-      <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/sbt/</guid>
       <description></description>
     </item>
     
@@ -660,24 +624,6 @@
     </item>
     
     <item>
-      <title>Category Theory</title>
-      <link>https://mostlymaths.net/tags/category-theory/</link>
-      <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/category-theory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Conferences</title>
-      <link>https://mostlymaths.net/tags/conferences/</link>
-      <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/conferences/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>London</title>
       <link>https://mostlymaths.net/tags/london/</link>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
@@ -705,7 +651,7 @@
     </item>
     
     <item>
-      <title>iPod</title>
+      <title> iPod</title>
       <link>https://mostlymaths.net/tags/ipod/</link>
       <pubDate>Sun, 19 Nov 2017 17:42:00 +0100</pubDate>
       
@@ -836,15 +782,6 @@
       <pubDate>Sat, 02 Nov 2013 18:29:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/geek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command Line</title>
-      <link>https://mostlymaths.net/tags/command-line/</link>
-      <pubDate>Wed, 22 May 2013 18:33:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/command-line/</guid>
       <description></description>
     </item>
     
