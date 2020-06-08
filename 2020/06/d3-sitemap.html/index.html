@@ -43,7 +43,7 @@
 <meta itemprop="description" content="A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)">
 <meta itemprop="datePublished" content="2020-06-08T19:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-06-08T19:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="507">
+<meta itemprop="wordCount" content="506">
 
 
 
@@ -138,7 +138,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 507 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 506 words</span>
       
     </header>
     
@@ -163,7 +163,7 @@ if (!doNotTrack) {
 
 <p>A few weeks ago I started work on this feature, by rewriting a D3 force layout I had written for a half personal, half work project (unpublished): <strong>using YAML descriptions to create system diagrams for your (data) architecture</strong>. Those diagrams have 30-50 nodes, and as such are pretty fast to render on the browser, live, with draggable nodes. My note database though, has around 1000 notes, with <em>many</em> links. This made waiting for the force layout to converge painful. It took a significant time to render, and dragging nodes was super slow.</p>
 <p>I found a fix (as always with D3) in a sketch by <a href="https://en.m.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>: <a href="https://bl.ocks.org/mbostock/01ab2e85e8727d6529d20391c0fd9a16">using a web worker</a>. With this, I could calculate the force layout on the background.</p>
-<p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing at the moment. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
+<p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing now either. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
 <figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank">
     <img src="zoomed.png"
          alt="Filtered and zoomed with search term spark"/> </a><figcaption>
