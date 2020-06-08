@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LISP on mostlymaths.net</title>
@@ -102,8 +102,7 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <description>These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-   Lavaurs chords, depth 5
-   Lavaurs chords, depth 13</description>
+  You can get the black and white depth 13 PostScript file here here, and the color version here.</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Adding Notes to Emails in Gnus (in Summary View)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -45,8 +45,6 @@ Last month I switched email clients (for the 4th time in the past year.) I&rsquo
 <meta itemprop="description" content="Sensitive information blanked
 The gnusnotes.el package, with delete and edit capabilities is now available in the marmalade package repository. This post just explains why, how and what (code at the end, too)
 Last month I switched email clients (for the 4th time in the past year.) I&rsquo;ve passed through gnus, Thunderbird, mail.app and settled with Sparrow. Just 2 days before Sparrow was bought by Google I left for gnus (lucky moment!">
-
-
 <meta itemprop="datePublished" content="2012-08-01T23:21:00&#43;02:00" />
 <meta itemprop="dateModified" content="2012-08-01T23:21:00&#43;02:00" />
 <meta itemprop="wordCount" content="1428">
@@ -54,7 +52,6 @@ Last month I switched email clients (for the 4th time in the past year.) I&rsquo
 
 
 <meta itemprop="keywords" content="gnus,Programming,emacs,LISP," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -145,46 +142,28 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/--AsgDU906y4/UBmdUSPtLwI/AAAAAAAADgU/4VJiJiTGLCc/s1600/Screen+shot+2012-08-01+at+3.50.07+PM.png" target="_blank"><img src="http://4.bp.blogspot.com/--AsgDU906y4/UBmdUSPtLwI/AAAAAAAADgU/4VJiJiTGLCc/s400/Screen+shot+2012-08-01+at+3.50.07+PM.png" alt="" /></a></p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/--AsgDU906y4/UBmdUSPtLwI/AAAAAAAADgU/4VJiJiTGLCc/s1600/Screen+shot+2012-08-01+at+3.50.07+PM.png"><img src="http://4.bp.blogspot.com/--AsgDU906y4/UBmdUSPtLwI/AAAAAAAADgU/4VJiJiTGLCc/s400/Screen+shot+2012-08-01+at+3.50.07+PM.png" alt=""></a></p>
 <p>Sensitive information blanked</p>
-
-<p><strong>The gnusnotes.el package, with delete and edit capabilities is now available in the <a href="http://marmalade-repo.org/packages/gnusnotes/0.91" target="_blank">marmalade package repository</a>. This post just explains why, how and what (code at the end, too)</strong></p>
-
+<p><strong>The gnusnotes.el package, with delete and edit capabilities is now available in the <a href="http://marmalade-repo.org/packages/gnusnotes/0.91">marmalade package repository</a>. This post just explains why, how and what (code at the end, too)</strong></p>
 <p>Last month I switched email clients (for the 4th time in the past year.) I&rsquo;ve passed through gnus, Thunderbird, mail.app and settled with Sparrow. Just 2 days before Sparrow was bought by Google I left for gnus (lucky moment!) Smaller memory footprint, no harddisk hungry indexes. Works wonders. Would only be happier with a newer Macbook. Oh well.</p>
-
 <p>I&rsquo;m still unsure about going the hardcore way with offlineimap (dovecot, notmuch,) but I&rsquo;m more than happy with the current setup. I can move, delete or archive emails with just a few keystrokes. But I&rsquo;m not in <strong>inbox zero</strong> yet (won&rsquo;t be ever, I think.) I leave some mails in my inbox when I need to follow up later (to make sure I&rsquo;m on top of things.) Problem is, when you have more than 7 or 8 emails like this you start to lose touch. Furthermore, subject lines sometimes are not very descriptive &ldquo;Request&rdquo; is not the best subject. When more than 4 or 5 emails are of this kind, you need to check the email to know what it is about. Losing time. No way!</p>
-
 <p>After all, this is emacs. If you don&rsquo;t like something, or want something, you write it (well, after looking for it.) My goal? Adding notes to email messages. I googled quickly for this with no luck, checked Sacha&rsquo;s emacs lisp files just in case. So&hellip; Time for some emacs lisping.</p>
-
 <p>You may wonder: dude, use org-capture! This would be a good solution if I looked more often my todo list. But I only look my todo list when, well, I have to do something. Somehow stay-on-top things just distract me in my todo. I&rsquo;d rather have 15 emails in my inbox than 15 more tasks in my already crowded todo list. I still use org-capture with emails, but for long-term catchups or long tasks where I have to do something in the future. When I just have to make sure someone does their work, I leave the email. Works for me, somehow. Getting back to lisp-topic&hellip;</p>
-
 <p>It&rsquo;s not my first dive into emacs lisp: I&rsquo;ve written some helper functions to do small things (wrote a wraper to the wonderful mark-multiple package a few weeks ago and I&rsquo;m already using it to mark stuff at point,) I even wrote a major mode to simplify posting to mostlymaths.net, by adding my most usual HTML or CSS idioms with just a few keystrokes. The gnusnotes.el project was harder, though.</p>
-
 <p>First thing was planning how to make it work. The simplest solution: get some kind of email ID, and save it to file tied to a note. I thought for 3 minutes, no need to make it more complex than necessary. Just like a CSV file, I used comma as ID-note separator, newline as ID-note pair separator. Luckily, gnus works because it has the correct pieces. In no time I had found which function determines the current message header data, and among them, message ID (the ID used in backend operations.) Once I had that, I needed a function to find the ID in the file. It was pretty straightforward (find-file and a few search-forward commands.) Something was trickier, though&hellip;</p>
-
 <p>Gnus has two main windows: Groups and group summaries. For example, in Groups I have INBOX and sent-201208 as visible folders, I can check all folders (usually hidden) with L. When I open INBOX from here, I go to the INBOX summary, where all unread and marked as important emails show (and this is where my time is usually spent.) I want my notes to appear here, in the summary view. Not inside the email, not disjoint from emails. How!?</p>
-
 <p>Well, for each email a summary line is generated, according to some rules you can set. You can add any detail from the email: headers, references, from, subject, date&hellip; And there is also a whole range of custom functions. Adding the flag %u you can choose from a wide range of functions (followed by any letter): In my case, %un calls gnus-user-format-function-n. This function does the lifting: checking the list of notes, for each email.</p>
-
 <p>Problem: even if my notes file is small, hitting it for each email in my inbox can be dreadful. Even worse, the hit would be for any email in any folder. What if I check some archived folder with tens of thousands of emails? Well, these considerations are important, but I just found out that opening a file-buffer for each email somehow broke something within gnus, and filled the buffer with garbage. Later rationalisation turned out these problems :D</p>
-
 <p>The solution (at least the one I used) is to generate a list of cons (msgid . note) each time a group is opened or a note is added. This is done via hooks, tying the loader function to the group preparation hook. Perfect! What else? The function looks for the msgid in this list of notes, and returns the note if successfull (and nothing if unsuccessful.)</p>
-
 <p>To finish, just some cosmetic tweaks: adding some prettyfying of notes via highlight-regexp tied to another hook: the word note appears in italics and with the warning face, and the note appears with the default face. I&rsquo;m not sure how it will look in vanilla emacs, but with solarized-dark I enjoy the colors. Completely tweakable, though.</p>
-
 <p>By the way, my custom summary line is:</p>
-
 <pre><code>(setq-default  
  gnus-summary-line-format &quot;%U%R%z %(%&amp;user-date;  %-15,15f  %B%s%) %un\\n&quot;  
  gnus-user-date-format-alist '((t . &quot;%Y-%m-%d (%a) %H:%M&quot;)  
                                gnus-thread-sort-functions '(gnus-thread-sort-by-date)  
                                )  
  )
-</code></pre>
-
-<p>This is not yet a neat package with customizable options (yet). There&rsquo;s even no way to remove or edit notes (except by editing the notes file) since making this work appeared harder than editing this file by hand for the time being&hellip; But I may do it some day or another, it&rsquo;s not rocket science. Just needs some refactoring of the note-finder. Source code below, with many messages commented for dirty debugging. Enjoy!</p>
-
+</code></pre><p>This is not yet a neat package with customizable options (yet). There&rsquo;s even no way to remove or edit notes (except by editing the notes file) since making this work appeared harder than editing this file by hand for the time being&hellip; But I may do it some day or another, it&rsquo;s not rocket science. Just needs some refactoring of the note-finder. Source code below, with many messages commented for dirty debugging. Enjoy!</p>
 <pre><code>;;; gnusnotes.el ---   
 ;; Copyright (C) 2012  Ruben Berenguel &lt;[ruben@dreamattic.com](mailto:ruben@dreamattic.com)\&gt;  
   
@@ -310,8 +289,7 @@ if (!doNotTrack) {
         ;(gnus-summary-rescan-group)  
     )))  
 
-</code></pre>
-<hr/><ul class="pa0">
+</code></pre><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/gnus" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gnus</a>

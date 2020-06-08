@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Another Ben NanoNote port: pMARS</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -45,8 +45,6 @@ After my first successful port (gnugo), I decided to try something else, and whi
 <meta itemprop="description" content="Screenshot compositing, made with free software
 Since I bought the Nanonote, I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.
 After my first successful port (gnugo), I decided to try something else, and while idling at the train I thought that pMARS, the portable Memory Array Redcode Simulator was probably a good bet.">
-
-
 <meta itemprop="datePublished" content="2010-04-11T19:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-11T19:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="494">
@@ -54,7 +52,6 @@ After my first successful port (gnugo), I decided to try something else, and whi
 
 
 <meta itemprop="keywords" content="Programming,Linux,NanoNote," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -145,107 +142,86 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s1600/Composition.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s400/Composition.png" alt="Ben Nanonote" title="Ben Nanonote" /></a></p>
-
-<p>Screenshot compositing, <a href="http://www.mostlymaths.net/2010/04/linux-screenshots-made-easy-shutter.html" target="_blank">made with free software</a></p>
-
-<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">bought the Nanonote</a>, I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.</p>
-
-<p>After <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">my first successful port</a> (gnugo), I decided to try something else, and while idling at the train I thought that <a href="http://www.koth.org/pmars/" target="_blank">pMARS</a>, the portable Memory Array <a href="http://en.wikipedia.org/wiki/Redcode" target="_blank">Redcode</a> Simulator was probably a good bet. If you don&rsquo;t know what I am talking about, you can check <a href="http://www.koth.org/" target="_blank">here</a>. I had just started writing some test warriors, to see if I understood the code, but had too little time to test it working.</p>
-
-<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s1600/DSC_0300.JPG" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s400/DSC_0300.JPG" alt="" /></a></p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s1600/Composition.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8DY-OmYzPI/AAAAAAAACIA/6nbpDDqH5Ec/s400/Composition.png" alt="Ben Nanonote" title="Ben Nanonote"></a></p>
+<p>Screenshot compositing, <a href="http://www.mostlymaths.net/2010/04/linux-screenshots-made-easy-shutter.html">made with free software</a></p>
+<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">bought the Nanonote</a>, I have been finding new uses for it. Music player, note taker, voice recorder. I can also use it to start learning Python again, or Perl, which are (together with Lua) the languages currently installed by default.</p>
+<p>After <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">my first successful port</a> (gnugo), I decided to try something else, and while idling at the train I thought that <a href="http://www.koth.org/pmars/">pMARS</a>, the portable Memory Array <a href="http://en.wikipedia.org/wiki/Redcode">Redcode</a> Simulator was probably a good bet. If you don&rsquo;t know what I am talking about, you can check <a href="http://www.koth.org/">here</a>. I had just started writing some test warriors, to see if I understood the code, but had too little time to test it working.</p>
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s1600/DSC_0300.JPG"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S7udrccTYVI/AAAAAAAACE4/AnJJAB-puUM/s400/DSC_0300.JPG" alt=""></a></p>
 <p>And as I thought, pMARS was not as hard as other programs have turned to., but without graphical output, just text based. Enough. What changes are needed?</p>
-
-<p>Follow the steps in my <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">previous tutorial</a>, the changes needed fit in there.</p>
-
+<p>Follow the steps in my <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">previous tutorial</a>, the changes needed fit in there.</p>
 <p>The corresponding openwrt Makefile for pMARS should be</p>
-
 <blockquote>
-<p># Copyright &copy; 2008 OpenWrt.org</p>
-
+<p># Copyright (C) 2008 OpenWrt.org</p>
+<h1 id="heading"></h1>
 <p># This is free software, licensed under the GNU General Public License v2.</p>
-
-<p>include $(TOPDIR)/rules.mk<br />
-## Package name<br />
-PKG_NAME:=pmars<br />
-## Package version we need (to match our download source)<br />
-PKG_VERSION:=0.9.2<br />
-## Release version (don&rsquo;t really needed, just for completeness)<br />
-PKG_RELEASE:=3<br />
-## Name of the file we will download, with the previous package name definitions<br />
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz<br />
-## Url with the PKG_SOURCE file<br />
-PKG_SOURCE_URL:=<a href="http://downloads.sourceforge.net/project/corewar/pMARS/0.9.2/pmars-0.9.2.tar.gz?use_mirror=mesh" target="_blank">http://downloads.sourceforge.net/project/corewar/pMARS/0.9.2/pmars-0.9.2.tar.gz?use_mirror=mesh</a><br />
-## Program to uncompress the sources<br />
+<h1 id="heading-1"></h1>
+<p>include $(TOPDIR)/rules.mk<br>
+## Package name<br>
+PKG_NAME:=pmars<br>
+## Package version we need (to match our download source)<br>
+PKG_VERSION:=0.9.2<br>
+## Release version (don&rsquo;t really needed, just for completeness)<br>
+PKG_RELEASE:=3<br>
+## Name of the file we will download, with the previous package name definitions<br>
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz<br>
+## Url with the PKG_SOURCE file<br>
+PKG_SOURCE_URL:=http://downloads.sourceforge.net/project/corewar/pMARS/0.9.2/pmars-0.9.2.tar.gz?use_mirror=mesh<br>
+## Program to uncompress the sources<br>
 PKG_CAT:=zcat</p>
-
-<p>include $(INCLUDE_DIR)/package.mk<br />
-# Definition of the package, for adding to menuconfig and creating the ipkg.<br />
-define Package/pmars<br />
-TITLE:=Pmars<br />
-SECTION:=games<br />
-CATEGORY:=Games<br />
-URL:=<br />
-endef<br />
-# Directory where the sources will be uncompiled and built BUILD_DIR<br />
-# is an env variable from the OpenWrt toolchain, you don&rsquo;t need to set<br />
-# it.<br />
-PKG_BUILD_DIR:=$(BUILD_DIR)/pmars-$(PKG_VERSION)<br />
-# Long description of the package<br />
-define Package/pmars/description<br />
-PMARS<br />
-endef<br />
+<p>include $(INCLUDE_DIR)/package.mk<br>
+# Definition of the package, for adding to menuconfig and creating the ipkg.<br>
+define Package/pmars<br>
+TITLE:=Pmars<br>
+SECTION:=games<br>
+CATEGORY:=Games<br>
+URL:=<br>
+endef<br>
+# Directory where the sources will be uncompiled and built BUILD_DIR<br>
+# is an env variable from the OpenWrt toolchain, you don&rsquo;t need to set<br>
+# it.<br>
+PKG_BUILD_DIR:=$(BUILD_DIR)/pmars-$(PKG_VERSION)<br>
+# Long description of the package<br>
+define Package/pmars/description<br>
+PMARS<br>
+endef<br>
 # If ./configure does not need any options, leave it as follows</p>
-
-<p>define Build/Prepare<br />
-$(call Build/Prepare/Default)<br />
-$(CP) $(PKG_BUILD_DIR)/src/* $(PKG_BUILD_DIR)/<br />
+<p>define Build/Prepare<br>
+$(call Build/Prepare/Default)<br>
+$(CP) $(PKG_BUILD_DIR)/src/* $(PKG_BUILD_DIR)/<br>
 endef</p>
-
-<p>define Package/pmars/Build/Configure<br />
-$(call Build/Configure/Default)<br />
+<p>define Package/pmars/Build/Configure<br>
+$(call Build/Configure/Default)<br>
 endef</p>
-
-<p>define Package/pmars/Build/Compile<br />
-$(call Build/Compile/Default)<br />
+<p>define Package/pmars/Build/Compile<br>
+$(call Build/Compile/Default)<br>
 endef</p>
-
-<p># Where will be copied the binaries and libraries after installation.<br />
-define Package/pmars/install<br />
-$(INSTALL_DIR) $(1)/usr/sbin<br />
-$(INSTALL_BIN) $(PKG_BUILD_DIR)/pmars $(1)/usr/sbin/<br />
-endef<br />
-# Final step for bulding the package<br />
+<p># Where will be copied the binaries and libraries after installation.<br>
+define Package/pmars/install<br>
+$(INSTALL_DIR) $(1)/usr/sbin<br>
+$(INSTALL_BIN) $(PKG_BUILD_DIR)/pmars $(1)/usr/sbin/<br>
+endef<br>
+# Final step for bulding the package<br>
 $(eval $(call BuildPackage,pmars))</p>
 </blockquote>
-
 <p>And for it to work, you need to make some static patches to the Makefile in the src directory of the pmars package. Change the compiler for</p>
-
 <blockquote>
 <p>CC = mipsel-openwrt-linux-uclibc-gcc</p>
 </blockquote>
-
 <p>and the compiler and linker flags for</p>
-
 <blockquote>
-<p>CFLAGS = -O -DEXT94 -DPERMUTATE<br />
+<p>CFLAGS = -O -DEXT94 -DPERMUTATE<br>
 LFLAGS = -x</p>
 </blockquote>
-
 <p>And remove (or comment) this line:</p>
-
 <blockquote>
 <p>@strip $(MAINFILE)</p>
 </blockquote>
-
-<p>I hope you enjoy your Linux portable freedom, and write nice warriors to compete in <a href="http://www.koth.org/" target="_blank">The Hill</a>. I will look into making a graphical version, although it looks quite hard in such a small window. If you have any question, don&rsquo;t hesitate to post a comment or send me an e-mail.</p>
-
-<p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html" target="_blank">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<p>I hope you enjoy your Linux portable freedom, and write nice warriors to compete in <a href="http://www.koth.org/">The Hill</a>. I will look into making a graphical version, although it looks quite hard in such a small window. If you have any question, don&rsquo;t hesitate to post a comment or send me an e-mail.</p>
+<p>Related posts:<br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br>
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

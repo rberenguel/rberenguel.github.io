@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Ditching Ubuntu: Arch Linux in my Acer Aspire One</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,16 +41,13 @@
 <meta property="article:modified_time" content="2010-08-21T17:00:00+02:00" />
 <meta itemprop="name" content="Ditching Ubuntu: Arch Linux in my Acer Aspire One">
 <meta itemprop="description" content="Last Tuesday I made the move. I ditched Ubuntu and installed Arch Linux in my Acer Aspire One. After my post Linux is a time killer (which attracted a lot of attention, and didn&rsquo;t really carry the message I wanted) I got a lot of comments to think about. The two most suggested Linux distributions were Debian/unstable and Arch Linux. Well, maybe Arch Linux was not that talked about, but the following comment bought me out:">
-
-
 <meta itemprop="datePublished" content="2010-08-21T17:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-08-21T17:00:00&#43;02:00" />
-<meta itemprop="wordCount" content="1913">
+<meta itemprop="wordCount" content="1925">
 
 
 
 <meta itemprop="keywords" content="Linux,How-to," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -132,106 +129,69 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 9 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1913 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 10 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1925 words</span>
       
     </header>
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last Tuesday I made the move. I ditched Ubuntu and installed Arch Linux in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574" target="_blank">Acer Aspire One</a>. After my post <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html" target="_blank">Linux is a time killer</a> (which attracted a lot of attention, and didn&rsquo;t really carry the message I wanted) I got a lot of comments to think about. The two most suggested Linux distributions were Debian/unstable and Arch Linux. Well, maybe Arch Linux was not that talked about, but <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html#comment-68161984" target="_blank">the following comment</a> bought me out:</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last Tuesday I made the move. I ditched Ubuntu and installed Arch Linux in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574">Acer Aspire One</a>. After my post <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html">Linux is a time killer</a> (which attracted a lot of attention, and didn&rsquo;t really carry the message I wanted) I got a lot of comments to think about. The two most suggested Linux distributions were Debian/unstable and Arch Linux. Well, maybe Arch Linux was not that talked about, but <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html#comment-68161984">the following comment</a> bought me out:</p>
 <blockquote>
 <p>[&hellip;]</p>
-
 <p>I finally tried Arch and haven&rsquo;t looked back. Initial setup is a little more lengthy (more config files, etc. to edit than say, Debian/Ubuntu net-inst), but the config files are really well layed out and easy to understand. Once its set up, its rolling release, so you should basically never have to reinstall from scratch again (which is what drove me away from Ubuntu originally - new system install every 6 months, I have better things to do). Updates just stream in continuously (and very quickly after they&rsquo;re developed).</p>
-
 <p>But the killer feature is probably the community documentation. The Arch Wiki is a massive, thorough and well made resource. If you have an issue with setting up something in Arch, its probably covered in the wiki. The first few times I thought they missed something, I was later proven wrong - its amazing. The Arch community is just really good at documentation.</p>
-
 <p>If you&rsquo;re not too new to Linux (if you&rsquo;ve ever thought of Ubuntu as &ldquo;too mainstream&rdquo;), then give Arch a try, its awesome.</p>
-
-<p><a href="http://www.resplect.com/" target="_blank">Nick W.</a></p>
+<p><a href="http://www.resplect.com/">Nick W.</a></p>
 </blockquote>
-
-<p>I had used and installed Debian previously, knew it wasn&rsquo;t a thrilling experience. Thus, installing Arch Linux in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574" target="_blank">AAO</a> was worth a try (while implementing some disaster-preventing solutions from other commenters), at least one or two days of Linux fiddling. Thus I sat up, copied my important stuff in a USB stick and started the process</p>
-
-<p>The first step is just <a href="http://www.archlinux.org/download/" target="_blank">downloading the image file</a> to write in your USB stick. As I was already inside a Linux system, it was plain easy following the <a href="http://wiki.archlinux.org/index.php/Install_from_USB_stick" target="_blank">instructions on installing from USB stick</a>. I went for the net install image, where just the base system is written in the disk and the rest will be downloaded from the Internet. I managed to even configure my wifi connection from the command line, if I did it, you can do it too!</p>
-
-<p>Now comes one of the last easy steps. Reboot, press F12 (in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574" target="_blank">Acer Aspire One</a>) to change the boot device to the USB stick. Once it has booted, and before starting the installer, it is better to configure the keyboard map, console font and wifi.</p>
-
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TGzTFnAEwNI/AAAAAAAACg4/ICGI8XSsQoM/s1600/iso01-12x22.JPG" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TGzTFnAEwNI/AAAAAAAACg4/ICGI8XSsQoM/s400/iso01-12x22.JPG" alt="ISO01-12x22.psfu" title="ISO01-12x22.psfu" /></a><br />
+<p>I had used and installed Debian previously, knew it wasn&rsquo;t a thrilling experience. Thus, installing Arch Linux in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574">AAO</a> was worth a try (while implementing some disaster-preventing solutions from other commenters), at least one or two days of Linux fiddling. Thus I sat up, copied my important stuff in a USB stick and started the process</p>
+<p>The first step is just <a href="http://www.archlinux.org/download/">downloading the image file</a> to write in your USB stick. As I was already inside a Linux system, it was plain easy following the <a href="http://wiki.archlinux.org/index.php/Install_from_USB_stick">instructions on installing from USB stick</a>. I went for the net install image, where just the base system is written in the disk and the rest will be downloaded from the Internet. I managed to even configure my wifi connection from the command line, if I did it, you can do it too!</p>
+<p>Now comes one of the last easy steps. Reboot, press F12 (in my <a href="http://gan.doubleclick.net/gan_click?lid=41000000029472406&amp;pid=LU.SAL0D.277&amp;adurl=http%3A%2F%2Fwww.compuplus.com%2FACER-ASPIRE-ONE-532-INTEL-1124322.html&amp;usg=AFHzDLsRRFceG9JA0ZVoaggxZdF7KPU-Vg&amp;pubid=21000000000290574">Acer Aspire One</a>) to change the boot device to the USB stick. Once it has booted, and before starting the installer, it is better to configure the keyboard map, console font and wifi.</p>
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TGzTFnAEwNI/AAAAAAAACg4/ICGI8XSsQoM/s1600/iso01-12x22.JPG"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TGzTFnAEwNI/AAAAAAAACg4/ICGI8XSsQoM/s400/iso01-12x22.JPG" alt="ISO01-12x22.psfu" title="ISO01-12x22.psfu"></a><br>
 I like a lot this console font!</p>
-
 <p>To configure the keyboard and font, run km. I choose, of course, the qwerty_es key map, and as for a font, one I hadn&rsquo;t used before and I liked a lot afterwards, ISO01-12x22. It looks very Times New Roman, very nice and big.</p>
-
 <p>After that, it is the wireless moment. For me, this worked:</p>
-
 <blockquote>
-<p>ifconfig wlan0 up<br />
-iwconfig wlan0 essid &ldquo;myId&rdquo; key &ldquo;mypasswd&rdquo;<br />
+<p>ifconfig wlan0 up<br>
+iwconfig wlan0 essid &ldquo;myId&rdquo; key &ldquo;mypasswd&rdquo;<br>
 dhcpd wlan0</p>
 </blockquote>
-
-<p>because my key was WEP. If your router uses WPA passphrases, <a href="http://wiki.archlinux.org/index.php/WPA_supplicant" target="_blank">you need to use WPA_supplicant, which isn&rsquo;t as hard as it looks</a>. But if it is not your router, maybe you don&rsquo;t know which encryption it uses&hellip; start with WEP and then go to WPA. Maybe you&rsquo;ll need to do the two last steps of it twice, or wait a little before issuing the dhcpd.</p>
-
-<p>After this, test your net with an ifconfig wlan0 and ping www.google.com. If everything works as expected, run /arch/setup. If you have DNS problems, add nameserver 8.8.8.8 to /etc/resolv.conf (Google&rsquo;s DNS).</p>
-
+<p>because my key was WEP. If your router uses WPA passphrases, <a href="http://wiki.archlinux.org/index.php/WPA_supplicant">you need to use WPA_supplicant, which isn&rsquo;t as hard as it looks</a>. But if it is not your router, maybe you don&rsquo;t know which encryption it uses&hellip; start with WEP and then go to WPA. Maybe you&rsquo;ll need to do the two last steps of it twice, or wait a little before issuing the dhcpd.</p>
+<p>After this, test your net with an ifconfig wlan0 and ping <a href="http://www.google.com">www.google.com</a>. If everything works as expected, run /arch/setup. If you have DNS problems, add nameserver 8.8.8.8 to /etc/resolv.conf (Google&rsquo;s DNS).</p>
 <p>The installation procedure is guided, but there are several possible pitfalls&hellip; I slipped in at least two. Well, three counting my problems in configuring the wifi connection.</p>
-
 <p>First, when selecting your packages, be sure to select wireless-tools. If you don&rsquo;t&hellip; When the installation is complete and everything is working, there will be no networking. And you can&rsquo;t install any package.</p>
-
 <p>Once the base packages are installed, you need to configure them. First, you will be asked which editor do you prefer: nano, joe or vi. I selected nano the first time. Just before, you will be asked to either copy the current networking configuration into the future network configuration, or leave it as is. I decided to copy&hellip; And then all configuration files you were supposed to edit with nano were empty. Moreover, nano could not write the files either. And when I selected change root password, the installer broke. Restart needed.</p>
-
-<p>Once restarted, I selected vi as my editor (and I am an <a href="http://www.mostlymaths.net/search/label/emacs" target="_blank">emacs</a> guy&hellip; here you can find a <a href="http://www.lagmonster.org/docs/vi.html" target="_blank">cheatsheet</a>) and not to copy. Everything worked out as expected, following the guidelines of the <a href="http://wiki.archlinux.org/index.php/Beginners%27_Guide" target="_blank">Arch Linux beginners guide</a>. After a while, the system was working.</p>
-
-<p>Tweaking started. First, some modules and daemons from <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One" target="_blank">Acer Aspire One in the Arch Wiki</a>. Not everything, just one after the other to get <a href="http://wiki.archlinux.org/index.php/Xorg" target="_blank">xorg installed and working</a>. In case you don&rsquo;t know, installing in Arch Linux packages is done via pacman, with pacman -S package. You can also look for a string in the packages list with pacman -Ss package.</p>
-
-<p>Once I could startx, I had to choose a display manager (you can find them in this <a href="http://wiki.archlinux.org/index.php/Display_Manager" target="_blank">Arch Wiki list and set-up,</a> I went for <a href="http://en.wikipedia.org/wiki/SLiM" target="_blank">Slim</a>) and a window manager, which of course had to be <a href="http://www.mostlymaths.net/2009/08/two-weeks-still-loving-fluxbox.html" target="_blank">Fluxbox</a>. Fluxbox installation details <a href="http://wiki.archlinux.org/index.php/Fluxbox" target="_blank">here</a>.</p>
-
-<p>After some wrestling with .xinitrc and the like, I got it working, and realised it was the moment to <a href="http://wiki.archlinux.org/index.php/User_Management" target="_blank">adduser</a>. I added my main user, forgot about groups and had to manually add the user to all the relevant groups, detailed <a href="http://wiki.archlinux.org/index.php/Groups" target="_blank">here</a>.</p>
-
-<p>Now everything started to get downhill, as I had some working X. I installed the networkmanager and networkmanager-applet from Gnome, to control my wifi connections, although you have a lot of possibilities in this page for <a href="http://wiki.archlinux.org/index.php/Wireless_Setup" target="_blank">wireless set-up</a>. Installed emacs-23.6 and firefox-3.6, checked they worked and left the rest for the following day. It is the day of package installing, configuring Fluxbox keybindings and these small and long chores.</p>
-
+<p>Once restarted, I selected vi as my editor (and I am an <a href="http://www.mostlymaths.net/search/label/emacs">emacs</a> guy&hellip; here you can find a <a href="http://www.lagmonster.org/docs/vi.html">cheatsheet</a>) and not to copy. Everything worked out as expected, following the guidelines of the <a href="http://wiki.archlinux.org/index.php/Beginners%27_Guide">Arch Linux beginners guide</a>. After a while, the system was working.</p>
+<p>Tweaking started. First, some modules and daemons from <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One">Acer Aspire One in the Arch Wiki</a>. Not everything, just one after the other to get <a href="http://wiki.archlinux.org/index.php/Xorg">xorg installed and working</a>. In case you don&rsquo;t know, installing in Arch Linux packages is done via pacman, with pacman -S package. You can also look for a string in the packages list with pacman -Ss package.</p>
+<p>Once I could startx, I had to choose a display manager (you can find them in this <a href="http://wiki.archlinux.org/index.php/Display_Manager">Arch Wiki list and set-up,</a> I went for <a href="http://en.wikipedia.org/wiki/SLiM">Slim</a>) and a window manager, which of course had to be <a href="http://www.mostlymaths.net/2009/08/two-weeks-still-loving-fluxbox.html">Fluxbox</a>. Fluxbox installation details <a href="http://wiki.archlinux.org/index.php/Fluxbox">here</a>.</p>
+<p>After some wrestling with .xinitrc and the like, I got it working, and realised it was the moment to <a href="http://wiki.archlinux.org/index.php/User_Management">adduser</a>. I added my main user, forgot about groups and had to manually add the user to all the relevant groups, detailed <a href="http://wiki.archlinux.org/index.php/Groups">here</a>.</p>
+<p>Now everything started to get downhill, as I had some working X. I installed the networkmanager and networkmanager-applet from Gnome, to control my wifi connections, although you have a lot of possibilities in this page for <a href="http://wiki.archlinux.org/index.php/Wireless_Setup">wireless set-up</a>. Installed emacs-23.6 and firefox-3.6, checked they worked and left the rest for the following day. It is the day of package installing, configuring Fluxbox keybindings and these small and long chores.</p>
 <p>First, as I was in my office, I needed to get working the external monitor as I like it. Before it worked somehow ok, when setting up the external resolution the laptop monitor shut down. Now, for some odd reason it didn&rsquo;t happen&hellip; Thus I set up WinKey+F5 to display in external monitor and Shift+WinKey+F5 to switch back to the laptop screen. In Fluxbox&rsquo;s keys file:</p>
-
 <blockquote>
-<p>Mod4 F5: exec xrandr &ndash;output VGA1 &ndash;mode 1152x864 &ndash;output LVDS1 &ndash;off<br />
+<p>Mod4 F5: exec xrandr &ndash;output VGA1 &ndash;mode 1152x864 &ndash;output LVDS1 &ndash;off<br>
 Shift Mod4 F5: exec xrandr &ndash;output LVDS1 &ndash;mode 1024x600 &ndash;output VGA1 &ndash;off</p>
 </blockquote>
-
 <p>To find out which resolutions are available to your external monitor (even for your LCD screen), plug the monitor VGA connector and issue</p>
-
 <blockquote>
 <p>xrandr -q</p>
 </blockquote>
-
 <p>This will give you a list of available resolutions for all devices, with its corresponding names. In case of doubt of which is the external and which the LCD, unplug and repeat: one will disappear.</p>
-
-<p>Now, my computers are always on duty. This means, I need suspend on lid. To do so, be sure to add your default user to the power user group (in fact, read this <a href="http://wiki.archlinux.org/index.php/Groups" target="_blank">list of user groups</a> you should consider), then just read <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One#Suspend_on_lid.2C_shutdown_on_power_button" target="_blank">these steps</a>. They work perfectly&hellip; Except maybe for some X problems. Do it at your own risk, of course. For me, it worked ok after xrandr was configured correctly, see above. After coming back from sleep, the external monitor will flicker. Turn back to the LCD and then again to the external monitor (just 4 keypresses and 2 seconds) and it will be solved.</p>
-
-<p>Installing emacs packages was a charm using <a href="http://tromey.com/elpa/" target="_blank">ELPA</a>, texlive was installed in just 20 minutes (I didn&rsquo;t find a generic texlive with all packages, thus I had to write several texlive-stuff to get everything installed) and working in no time. The main afternoon problem was setting up networkmanager and gnome-keyring-daemon to work together. After much, much googling and changing, the solution can be found <a href="http://bugs.archlinux.org/task/18930" target="_blank">here</a>. In broad terms, you check that dbus is running, together with the addition of</p>
-
+<p>Now, my computers are always on duty. This means, I need suspend on lid. To do so, be sure to add your default user to the power user group (in fact, read this <a href="http://wiki.archlinux.org/index.php/Groups">list of user groups</a> you should consider), then just read <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One#Suspend_on_lid.2C_shutdown_on_power_button">these steps</a>. They work perfectly&hellip; Except maybe for some X problems. Do it at your own risk, of course. For me, it worked ok after xrandr was configured correctly, see above. After coming back from sleep, the external monitor will flicker. Turn back to the LCD and then again to the external monitor (just 4 keypresses and 2 seconds) and it will be solved.</p>
+<p>Installing emacs packages was a charm using <a href="http://tromey.com/elpa/">ELPA</a>, texlive was installed in just 20 minutes (I didn&rsquo;t find a generic texlive with all packages, thus I had to write several texlive-stuff to get everything installed) and working in no time. The main afternoon problem was setting up networkmanager and gnome-keyring-daemon to work together. After much, much googling and changing, the solution can be found <a href="http://bugs.archlinux.org/task/18930">here</a>. In broad terms, you check that dbus is running, together with the addition of</p>
 <blockquote>
-<p>auth optional pam_gnome_keyring.so<br />
+<p>auth optional pam_gnome_keyring.so<br>
 session optional pam_gnome_keyring.so auto_start</p>
 </blockquote>
-
 <p>to /etc/pam.d/slim (you should change slim for your session manager) and this line</p>
-
 <blockquote>
 <p>eval $(gnome-keyring-daemon -s &ndash;components=pkcs11,secrets,ssh)</p>
 </blockquote>
-
 <p>to your .xinitrc. All these three changes, together and nm-applet and gnome-keyring-daemon where happy ever after. Because writing a 16 hex digits key several times can be nerve-wrecking (I know, I know, I have it in a file, but anyway).</p>
-
-<p>Then, as I checked my <a href="http://twitter.com/berenguel" target="_blank">twitter timeline</a>, I followed a link to youtube&hellip; Installing the flash plugin was done via pacman -S flashplugin, then I had to copy /usr/lib/mozilla/plugins/libflashplayer.so to ~/.mozilla/plugins and chmod +xr it. Then, I realised I didn&rsquo;t have sound enabled&hellip; A little looking around until I realised it just was that Alsa is muted by default. You can solve it with</p>
-
+<p>Then, as I checked my <a href="http://twitter.com/berenguel">twitter timeline</a>, I followed a link to youtube&hellip; Installing the flash plugin was done via pacman -S flashplugin, then I had to copy /usr/lib/mozilla/plugins/libflashplayer.so to ~/.mozilla/plugins and chmod +xr it. Then, I realised I didn&rsquo;t have sound enabled&hellip; A little looking around until I realised it just was that Alsa is muted by default. You can solve it with</p>
 <blockquote>
 <p>amixer set Master 90% unmute</p>
 </blockquote>
-
-<p>After this, I wanted to be able to raise and lower the volume with the dedicated fn keys of the laptop&hellip; The proposed solution in <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One#Additional_function_keys" target="_blank">Arch Linux wiki page on Acer Aspire One</a> (using xbindkeys) didn&rsquo;t work directly, had to change it for</p>
-
+<p>After this, I wanted to be able to raise and lower the volume with the dedicated fn keys of the laptop&hellip; The proposed solution in <a href="http://wiki.archlinux.org/index.php/Acer_Aspire_One#Additional_function_keys">Arch Linux wiki page on Acer Aspire One</a> (using xbindkeys) didn&rsquo;t work directly, had to change it for</p>
 <pre><code>
 
 &gt;  &quot;(amixer sset Master toggle)&quot;  
@@ -248,41 +208,41 @@ session optional pam_gnome_keyring.so auto_start</p>
 &gt; XF86Sleep
 
 
-</code></pre>
+```I.e. remove the db after 2. This didn't satisfy me, I wanted libnotify (which I installed together with pidgin... remember to enable the pidgin notify plugin!) to tell me the volume levels. A solution I found over the web is a nice bash script called [bashmixer](https://bbs.archlinux.org/viewtopic.php?id=89100). I modified a little the code to show volume after every operation. Maybe there is a better solution for this... Any idea? Anyway, [the AAO has problems with audio playback from its speakers](http://en.wikipedia.org/wiki/Acer_Aspire_One#AOA150_speaker_vibration). Remember it!  
+  
+I also added gnome-power-manager, to see my battery levels (I forgot to install it the first day... bad!). As the netbook stands, everything I need is installed and working correctly. Just 1 day more or less. And [Arch Wiki](http://wiki.archlinux.org/) and [Arch Forums](http://bbs.archlinux.org/) are fantastic places to find solutions to Arch Linux problems and configurations (beating by a wide margin Ubuntu forums).  
 
-<p>I.e. remove the db after 2. This didn&rsquo;t satisfy me, I wanted libnotify (which I installed together with pidgin&hellip; remember to enable the pidgin notify plugin!) to tell me the volume levels. A solution I found over the web is a nice bash script called <a href="https://bbs.archlinux.org/viewtopic.php?id=89100" target="_blank">bashmixer</a>. I modified a little the code to show volume after every operation. Maybe there is a better solution for this&hellip; Any idea? Anyway, <a href="http://en.wikipedia.org/wiki/Acer_Aspire_One#AOA150_speaker_vibration" target="_blank">the AAO has problems with audio playback from its speakers</a>. Remember it!</p>
+  
+Oh, I almost forgot! I got the left hand and right hand card readers to hotplug by adding pciehp to the MODULES line in /etc/rc.conf, i.e. MODULES=(... pciehp) and creating the file /etc/modprobe.d/pciehp.conf with the following content:  
 
-<p>I also added gnome-power-manager, to see my battery levels (I forgot to install it the first day&hellip; bad!). As the netbook stands, everything I need is installed and working correctly. Just 1 day more or less. And <a href="http://wiki.archlinux.org/" target="_blank">Arch Wiki</a> and <a href="http://bbs.archlinux.org/" target="_blank">Arch Forums</a> are fantastic places to find solutions to Arch Linux problems and configurations (beating by a wide margin Ubuntu forums).</p>
+&gt; options pciehp pciehp\_force=1
 
-<p>Oh, I almost forgot! I got the left hand and right hand card readers to hotplug by adding pciehp to the MODULES line in /etc/rc.conf, i.e. MODULES=(&hellip; pciehp) and creating the file /etc/modprobe.d/pciehp.conf with the following content:</p>
+After rebooting, both card readers will hotplug (when inserting an SD card, which is the one I use).  
 
-<blockquote>
-<p>options pciehp pciehp_force=1</p>
-</blockquote>
+  
 
-<p>After rebooting, both card readers will hotplug (when inserting an SD card, which is the one I use).</p>
+* * *
 
-<hr />
+  
+In case you wonder, I am not the only one loving Arch Linux in my Acer Aspire One:  
 
-<p>In case you wonder, I am not the only one loving Arch Linux in my Acer Aspire One:</p>
+[Arch linux HOWTO « Acer Aspire One ZG5](http://aspireonezg5.wordpress.com/2010/02/15/arch-linux/trackback/) - The system I have now runs better than any other OS I’ve tried on my AAO — I may switch all my computers to Arch if this proves to be stable.
 
-<p><a href="http://aspireonezg5.wordpress.com/2010/02/15/arch-linux/trackback/" target="_blank">Arch linux HOWTO « Acer Aspire One ZG5</a> - The system I have now runs better than any other OS I’ve tried on my AAO — I may switch all my computers to Arch if this proves to be stable.</p>
+And another user blog:
 
-<p>And another user blog:</p>
+[Installing ArchLinux on Acer Aspire 7720-934G « Where r00t has no land](http://pestilence.insert.gr/installing-archlinux-on-acer-aspire-7720g/) - ArchLinux installation and configuration on Acer Aspire 7720-934G.
 
-<p><a href="http://pestilence.insert.gr/installing-archlinux-on-acer-aspire-7720g/" target="_blank">Installing ArchLinux on Acer Aspire 7720-934G « Where r00t has no land</a> - ArchLinux installation and configuration on Acer Aspire 7720-934G.</p>
-
-<p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html" target="_blank">Linux is a time killer</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html" target="_blank">Power to the command line</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html" target="_blank">Two weeks, still loving Fluxbox</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html" target="_blank">Three dee (3-dimensional file system browsers review)</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html" target="_blank">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a><br />
-ParseList(ScrambleList(Relateds(Maths,Programming,Linux)),5)</p>
-<hr/><ul class="pa0">
+Related posts:  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [9 programming books I have read and somewhat liked...](http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Linux is a time killer](http://www.mostlymaths.net/2010/08/linux-is-time-killer.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [My first port to the Ben NanoNote: gnugo](http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Power to the command line](http://www.mostlymaths.net/2010/04/power-to-command-line.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Two weeks, still loving Fluxbox](http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Three dee (3-dimensional file system browsers review)](http://berenguel.blogspot.com/2009/07/three-dee.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Gcal: the ultra-powerful command line GNU calendar](http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html)  
+![](http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png) [Acer Aspire One 8.9' + Ubuntu + Fluxbox](http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html)  
+ParseList(ScrambleList(Relateds(Maths,Programming,Linux)),5)
+</code></pre><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Linux</a>

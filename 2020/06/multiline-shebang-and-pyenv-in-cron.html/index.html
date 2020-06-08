@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Multiline shebang with zsh and running pyenv under cron</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,16 +41,13 @@
 <meta property="article:modified_time" content="2020-06-03T22:30:33+02:00" />
 <meta itemprop="name" content="Multiline shebang with zsh and running pyenv under cron">
 <meta itemprop="description" content="These probably qualify as the most one weird trick I have figured out this year.">
-
-
 <meta itemprop="datePublished" content="2020-06-03T22:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-06-03T22:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="500">
+<meta itemprop="wordCount" content="499">
 
 
 
 <meta itemprop="keywords" content="Linux, Mac,Python," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/hashsign.jpg"/>
@@ -141,18 +138,15 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 500 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 499 words</span>
       
     </header>
     
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>These probably qualify as the most <em>one weird trick</em> I have figured out this year.</p>
-
 <h2 id="multiline-shebang">Multiline shebang</h2>
-
-<p>Basically this is an answer to <em>how can I configure configure the Python environment in the shebang</em>? Like, say, to start a virtual environment. You can find many examples with <a href="https://rosettacode.org/wiki/Multiline_shebang#Python" target="_blank">bash</a> here. But, how do you use it with zsh? And what it is?</p>
-
+<p>Basically this is an answer to <em>how can I configure configure the Python environment in the shebang</em>? Like, say, to start a virtual environment. You can find many examples with <a href="https://rosettacode.org/wiki/Multiline_shebang#Python">bash</a> here. But, how do you use it with zsh? And what it is?</p>
 <figure class="fig-wide">
     <img src="hashsign.jpg"
          alt="Photo by Jan Baborák on Unsplash"/> <figcaption>
@@ -160,26 +154,22 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
-<p>It is text after a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)" target="_blank">shebang</a> expression in a script that is run by zsh, while eventually running the rest of the code. It feels a bit like a <a href="https://en.m.wikipedia.org/wiki/Quine_(computing)" target="_blank">quine</a>.</p>
-
-<p>I faced this when writing my own provider script for <a href="https://github.com/tanin47/tip" target="_blank">Tip</a> (a very recommended small app for Mac). Although it may not be required, but was fun as a problem to crack. The issue was twofold: I needed to run it under <code>zsh</code> <em>and</em> I wanted to run my script under a virtual environment.</p>
+<p>It is text after a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> expression in a script that is run by zsh, while eventually running the rest of the code. It feels a bit like a <a href="https://en.m.wikipedia.org/wiki/Quine_(computing)">quine</a>.</p>
+<p>I faced this when writing my own provider script for <a href="https://github.com/tanin47/tip">Tip</a> (a very recommended small app for Mac). Although it may not be required, but was fun as a problem to crack. The issue was twofold: I needed to run it under <code>zsh</code> <em>and</em> I wanted to run my script under a virtual environment.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
-</span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;&#34;&#34;true&#34;</span>
+</span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#e6db74">&#34;true&#34;</span>
 source /Users/ruben/.pyenvzshrc
 export PYENV_VIRTUALENV_DISABLE_PROMPT<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
 pyenv activate tip-provider
 exec python <span style="color:#e6db74">&#34;</span>$0<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
 exit <span style="color:#ae81ff">127</span>
-<span style="color:#e6db74">&#34;&#34;&#34;
+<span style="color:#e6db74">&#34;&#34;</span><span style="color:#e6db74">&#34;
 </span><span style="color:#e6db74">
-</span><span style="color:#e6db74">__doc__ = &#34;</span>Script <span style="color:#66d9ef">for</span> https://github.com/tanin47/tip<span style="color:#e6db74">&#34;
+</span><span style="color:#e6db74">__doc__ = &#34;</span>Script <span style="color:#66d9ef">for</span> https://github.com/tanin47/tip<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">
 </span><span style="color:#e6db74">
-</span><span style="color:#e6db74">[…python code in here…]</span></code></pre></div>
-<p>What is this? First, this is going to be executed as a <code>zsh</code> script. So, we have</p>
-
+</span><span style="color:#e6db74">[…python code in here…]
+</span></code></pre></div><p>What is this? First, this is going to be executed as a <code>zsh</code> script. So, we have</p>
 <h3 id="zsh-sees">ZSH sees</h3>
-
 <ol>
 <li>an empty string,</li>
 <li>a string containing true, which evaluates via expansion to <code>true</code>, inside quotes, so, another empty string.</li>
@@ -188,39 +178,30 @@ exit <span style="color:#ae81ff">127</span>
 <li>Runs python (the <em>python</em> from the correct environment), on this script itself with the same arguments</li>
 <li>Exit! This is important! This way nothing else is seen by <code>zsh</code>. It has to exit in error to prevent the shell seeing the rest.</li>
 </ol>
-
 <h3 id="python-sees">Python sees</h3>
-
 <ol>
 <li>A commented line (shebang)</li>
 <li>A triple-quoted string, which is then automatically added as the module docstring</li>
 <li>Modification of the docstring for consistency</li>
 <li>The rest</li>
 </ol>
-
 <p>Neat, isn&rsquo;t it? (<em>not</em>)</p>
-
 <h2 id="running-pyenv-in-cron">Running <code>pyenv</code> in cron</h2>
-
-<p>This is a repeated issue I have faced: running things under cron fails for… shell reasons. I wanted to run <a href="https://github.com/rberenguel/bear-note-graph" target="_blank">bear-note-graph</a> regularly, to always have my note graph fresh on iCloud. The goal is similar to the previous: running Python in a specific virtual environment.</p>
-
+<p>This is a repeated issue I have faced: running things under cron fails for… shell reasons. I wanted to run <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> regularly, to always have my note graph fresh on iCloud. The goal is similar to the previous: running Python in a specific virtual environment.</p>
 <p>Luckily, this is easier (although a bit slower):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
 </span><span style="color:#75715e"></span>source /Users/ruben/.zshrc
-pyenv activate bear-note-graph <span style="color:#f92672">||</span> true &gt;/tmp/bear_graph_tmp_stdout.log <span style="color:#ae81ff">2</span>&gt;/tmp/bear_graph_tmp_stderr.log
-bear-note-graph &gt;&gt;/tmp/bear_graph_tmp_stdout.log <span style="color:#ae81ff">2</span>&gt;&gt;/tmp/bear_graph_tmp_stderr.log
-mv /tmp/bear_graph* /Users/ruben/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/com<span style="color:#ae81ff">\~</span>apple<span style="color:#ae81ff">\~</span>CloudDocs/</code></pre></div>
-<ol>
+pyenv activate bear-note-graph <span style="color:#f92672">||</span> true &gt;/tmp/bear_graph_tmp_stdout.log 2&gt;/tmp/bear_graph_tmp_stderr.log
+bear-note-graph &gt;&gt;/tmp/bear_graph_tmp_stdout.log 2&gt;&gt;/tmp/bear_graph_tmp_stderr.log
+mv /tmp/bear_graph* /Users/ruben/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/com<span style="color:#ae81ff">\~</span>apple<span style="color:#ae81ff">\~</span>CloudDocs/
+</code></pre></div><ol>
 <li>Screw it and just evaluate the <code>.zshrc</code> file! (this could be changed with the modified one in the previous script)</li>
 <li>Activate the virtual environment, and redirect any errors to create output files</li>
 <li>Run <code>bear-note-graph</code> with default settings (I wrote this, so the defaults are the setup I like)</li>
 <li>Copy the results from <code>/tmp/</code> to iCloud&rsquo;s root</li>
 </ol>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Well, not much. These are interesting tricks that I want to remember, hence why I wrote this post.</p>
-
 <p>Note that the first one is specific for <code>zsh</code>, other shells behave slightly differently. For the second, likewise, the main issue is how to start <code>pyenv</code> in a way that works.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

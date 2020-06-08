@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | SyncTeX and pdf-view-mode for emacs</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,8 +41,6 @@
 <meta property="article:modified_time" content="2015-11-02T23:33:00+01:00" />
 <meta itemprop="name" content="SyncTeX and pdf-view-mode for emacs">
 <meta itemprop="description" content="Back in the days of yore, when I was switching between my Windows machine and a Linux machine, I remember having SyncTeX active in my Windows machine. It was a wonderful experience: SyncTeX lets you click anywhere on a generated file from LaTeX and gets back to your editor, to the place generating where you clicked. This was extremely useful, specially later on when you need to adjust many formulas to fit and you need a bit of back-and-forth-ing.">
-
-
 <meta itemprop="datePublished" content="2015-11-02T23:33:00&#43;01:00" />
 <meta itemprop="dateModified" content="2015-11-02T23:33:00&#43;01:00" />
 <meta itemprop="wordCount" content="452">
@@ -50,7 +48,6 @@
 
 
 <meta itemprop="keywords" content="emacs,LaTeX,Research,Maths,spacemacs," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -145,71 +142,62 @@ if (!doNotTrack) {
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Back in the days of yore, when I was switching between my Windows machine and a
 Linux machine, I remember having
-<a href="http://mactex-wiki.tug.org/wiki/index.php/SyncTeX" target="_blank">SyncTeX</a> active in my
+<a href="http://mactex-wiki.tug.org/wiki/index.php/SyncTeX">SyncTeX</a> active in my
 Windows machine. It was a wonderful experience: <code>SyncTeX</code> lets you click
 anywhere on a generated file from LaTeX and gets back to your editor, to the
 place generating where you clicked. This was extremely useful, specially later
 on when you need to adjust many formulas to fit and you need a bit of
 back-and-forth-ing.</p>
-
 <p>Then I got a Mac, and since <code>Preview</code> is so handy I slowly forgot about
 <code>SyncTeX</code>. Time went on, and I merrily kept on editing LaTeX files as usual. I
 even managed to deliver my PhD dissertation a couple weeks ago, the formal
-speech will be in a month or two (<a href="https://twitter.com/berenguel/status/660915269825638400" target="_blank">come at your own
-risk</a>). <a href="2009/09/auctex-again.html" target="_blank">AucTeX’s
+speech will be in a month or two (<a href="https://twitter.com/berenguel/status/660915269825638400">come at your own
+risk</a>). <a href="2009/09/auctex-again.html">AucTeX’s
 preview</a> saved most of the
 days, so I slowly <em>even forgot</em> <code>SyncTeX</code> existed. Shame on me indeed.</p>
-
 <p>The other day I got an annotated PDF from one of my advisors, and I just
 couldn’t open the annotations. I tried all programs I had for Mac, and no luck:
 annotations weren’t showing, just saw the icons. Surveying for some command-line
 tool to extract annotations (just in case) I found
-<a href="https://github.com/politza/pdf-tools" target="_blank">pdf-tools</a>, a replacement for <code>DocView</code>
-based on <a href="http://poppler.freedesktop.org/" target="_blank">Poppler</a>. It had the awesome ability
+<a href="https://github.com/politza/pdf-tools">pdf-tools</a>, a replacement for <code>DocView</code>
+based on <a href="http://poppler.freedesktop.org/">Poppler</a>. It had the awesome ability
 of actually displaying annotations, with it it was pretty clear the annotations
 were broken in that PDF. I got a new set of PDFs from my advisor with the
 annotations in place, though. While waiting for it to arrive…</p>
-
 <p>I saw <code>SyncTeX</code> was an option of <code>pdf-tools</code>. I had been using that, hadn’t I?
 So, I activated <code>SyncTeX</code> in AucTeX (it is <code>TeX-source-correlate-method</code>, see
-<a href="https://www.gnu.org/software/auctex/manual/auctex/I_002fO-Correlation.html" target="_blank">here</a>)
+<a href="https://www.gnu.org/software/auctex/manual/auctex/I_002fO-Correlation.html">here</a>)
 and indeed: I could have two frames, one with the actual LaTeX sources and the
 other with a PDF, and go from one to the other. Even hyperreferences in PDF
 work. See (well, click on the full-screen mode to see it larger or you won&rsquo;t see
 anything) here:</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//player.vimeo.com/video/144418644" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/144418644" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  </div>
-
 
 <p>Getting <code>pdf-tools</code> to work wasn’t incredibly tricky (given the hoops you need
 for some packages, sometimes). Just</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install pdf-tools</code></pre></div>
-<p>and after reading</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew info pdf-tools</code></pre></div>
-<p>I was told to run</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> emacs -Q --batch --eval <span style="color:#e6db74">&#34;(package-install-file \&#34;/usr/local/Cellar/pdf-tools/0.60/pdf-tools-0.60.tar\&#34;)&#34;</span></code></pre></div>
-<p>and this does the trick (well, change emacs for your actual emacs, which likely
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install pdf-tools
+</code></pre></div><p>and after reading</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew info pdf-tools
+</code></pre></div><p>I was told to run</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> emacs -Q --batch --eval <span style="color:#e6db74">&#34;(package-install-file \&#34;/usr/local/Cellar/pdf-tools/0.60/pdf-tools-0.60.tar\&#34;)&#34;</span>
+</code></pre></div><p>and this does the trick (well, change emacs for your actual emacs, which likely
 is <code>/Applications/Emacs.app/Contents/MacOS/Emacs</code>) You’ll also need to add to
 your <code>.emacs</code> file (or temporarily in your <code>*scratch*</code> buffer)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setenv <span style="color:#e6db74">&#34;PKG\_CONFIG\_PATH&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setenv <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PKG</span><span style="color:#e6db74">\_</span><span style="color:#e6db74">CONFIG</span><span style="color:#e6db74">\_</span><span style="color:#e6db74">PATH</span><span style="color:#e6db74">&#34;</span>
 (<span style="color:#a6e22e">concat</span>
-<span style="color:#e6db74">&#34;/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig&#34;</span>
-<span style="color:#e6db74">&#34;:&#34;</span>
-<span style="color:#e6db74">&#34;/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig&#34;</span>))
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">:</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig</span><span style="color:#e6db74">&#34;</span>))
 
-(getenv <span style="color:#e6db74">&#34;PKG_CONFIG_PATH&#34;</span>)</code></pre></div>
-<p>and run</p>
-
+(getenv <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PKG_CONFIG_PATH</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p>and run</p>
 <pre><code>(pdf-tools-install)
-</code></pre>
-
-<p>as advised in the package’s README. And that&rsquo;s it, open a PDF and activate
+</code></pre><p>as advised in the package’s README. And that&rsquo;s it, open a PDF and activate
 pdf-view-mode to check everything is in place. Well worth it!</p>
-
-<p><span class="scaps">Note: </span> Post-2018 you are better served by installing
+<p><!-- raw HTML omitted -->Note: <!-- raw HTML omitted --> Post-2018 you are better served by installing
 <a href="/tags/spacemacs">spacemacs</a>, which comes with pdftools already set up for your enjoyment</p>
 <hr/><ul class="pa0">
   

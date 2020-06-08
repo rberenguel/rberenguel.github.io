@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Con
 <meta itemprop="name" content="October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka">
 <meta itemprop="description" content="This has been the first time I could attend the Apache Kafka meetup in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).
 I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Confluent (and author of I Heart Logs), so, basically, a Kafka top committer himself.">
-
-
 <meta itemprop="datePublished" content="2016-10-31T21:37:00&#43;01:00" />
 <meta itemprop="dateModified" content="2016-10-31T21:37:00&#43;01:00" />
 <meta itemprop="wordCount" content="263">
@@ -52,7 +50,6 @@ I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of Con
 
 
 <meta itemprop="keywords" content="London,Scala,Kafka," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -142,17 +139,12 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>This has been the first time I could attend the <a href="http://www.meetup.com/Apache-Kafka-London/" target="_blank">Apache Kafka meetup</a> in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).</p>
-
-<p>I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of <a href="http://www.confluent.io/" target="_blank">Confluent</a> (and author of <a href="http://amzn.to/2fxKcVE" target="_blank">I Heart Logs</a>), so, basically, a Kafka top committer himself. He delivered the same presentation he gave in <a href="http://sched.co/8B6K" target="_blank">Reactive Summit 2016</a>, but since I wasn&rsquo;t in the former I could enjoy it this time. It was a hand-drawn presentation (I suspect using <a href="https://itunes.apple.com/gb/app/paper-by-fiftythree-sketch/id506003812" target="_blank">Paper</a> for iOS), hitting all the supposedly good points of technical presentations (short slides, don&rsquo;t read them, etc). It was also quite deep, explaining what/how and why we should use <a href="https://kafka.apache.org/0100/javadoc/org/apache/kafka/streams/KafkaStreams.html" target="_blank">Kafka Streams</a> for our real-time data pipelines.</p>
-
-<p><a href="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s1600/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg" target="_blank"><img src="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s320/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg" alt="" /></a></p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>This has been the first time I could attend the <a href="http://www.meetup.com/Apache-Kafka-London/">Apache Kafka meetup</a> in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).</p>
+<p>I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of <a href="http://www.confluent.io/">Confluent</a> (and author of <a href="http://amzn.to/2fxKcVE">I Heart Logs</a>), so, basically, a Kafka top committer himself. He delivered the same presentation he gave in <a href="http://sched.co/8B6K">Reactive Summit 2016</a>, but since I wasn&rsquo;t in the former I could enjoy it this time. It was a hand-drawn presentation (I suspect using <a href="https://itunes.apple.com/gb/app/paper-by-fiftythree-sketch/id506003812">Paper</a> for iOS), hitting all the supposedly good points of technical presentations (short slides, don&rsquo;t read them, etc). It was also quite deep, explaining what/how and why we should use <a href="https://kafka.apache.org/0100/javadoc/org/apache/kafka/streams/KafkaStreams.html">Kafka Streams</a> for our real-time data pipelines.</p>
+<p><a href="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s1600/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg"><img src="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s320/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg" alt=""></a></p>
 <p>Jay, presenting. This architecture needs some Kafka</p>
-
 <p>The key takeaway is that if you are already using Kafka as your real-time data hose-and-bucket, you can reuse this cluster (and all its goodies: partitions, groups, offsets) for processing the data as it comes, withouth needing an additional framework (Flink, Spark, Storm&hellip; you know the tune). Also, if you&rsquo;drather write Perl than Java and this is preventing you from using the KStreams API, behold! Even if they don&rsquo;t have an official Scala API, wrapping it is extremely easy.</p>
-
-<p>You can view (and download) the slides from <a href="http://www.slideshare.net/Reactivesummit/distributed-stream-processing-with-apache-kafka" target="_blank">here</a>, and watch Jay in video from Reactive Summit <a href="https://www.youtube.com/watch?v=rXzuZb3fHHM" target="_blank">here</a>.</p>
+<p>You can view (and download) the slides from <a href="http://www.slideshare.net/Reactivesummit/distributed-stream-processing-with-apache-kafka">here</a>, and watch Jay in video from Reactive Summit <a href="https://www.youtube.com/watch?v=rXzuZb3fHHM">here</a>.</p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

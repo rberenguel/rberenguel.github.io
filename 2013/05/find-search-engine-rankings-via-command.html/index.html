@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Find Search Engine Rankings... via the Command Line</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -45,16 +45,13 @@ Well, after this scary paragraph, lets get to the real meat. Which boils down to
 <meta itemprop="description" content="Via pixelfrenzy@flickr
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.">
-
-
 <meta itemprop="datePublished" content="2013-05-22T18:33:00&#43;02:00" />
 <meta itemprop="dateModified" content="2013-05-22T18:33:00&#43;02:00" />
-<meta itemprop="wordCount" content="530">
+<meta itemprop="wordCount" content="523">
 
 
 
 <meta itemprop="keywords" content="Command Line,Linux,Data,SEO, Mac,DIY,acme," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,73 +136,58 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 530 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 523 words</span>
       
     </header>
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg" target="_blank"><img src="http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg" alt="" /></a></p>
-
-<p>Via <a href="http://www.flickr.com/photos/pixelfrenzy/" target="_blank">pixelfrenzy</a>@flickr</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg"><img src="http://1.bp.blogspot.com/--SmywlQFXd4/UZzo2mlvcQI/AAAAAAAADk8/URgVTasznuM/s1600/2695499877_60eaaabce1_m.jpg" alt=""></a></p>
+<p>Via <a href="http://www.flickr.com/photos/pixelfrenzy/">pixelfrenzy</a>@flickr</p>
 <p><strong>Beware! The software described here is just for personal and <em>very</em> light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.</strong></p>
-
 <p>Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.</p>
-
-<p>I&rsquo;m a command line interface geek. I enjoy tools like <a href="http://www.blogger.com/blogger.g?blogID=13497321#editor/target=post;postID=7811882883874030608;onPublishedMenu=overview;onClosedMenu=overview;postNum=60;src=postname" target="_blank">taskwarrior</a> or <a href="http://www.imagemagick.org/script/index.php" target="_blank">imagemagick</a>. And every time I have to chew some data, I go down the command line route. In the last months I have found the incredibly effectiveness of awk, sed, head, tail and tr to convert what some web service spits into useful data I can feed to R to do something useful.</p>
-
+<p>I&rsquo;m a command line interface geek. I enjoy tools like <a href="http://www.blogger.com/blogger.g?blogID=13497321#editor/target=post;postID=7811882883874030608;onPublishedMenu=overview;onClosedMenu=overview;postNum=60;src=postname">taskwarrior</a> or <a href="http://www.imagemagick.org/script/index.php">imagemagick</a>. And every time I have to chew some data, I go down the command line route. In the last months I have found the incredibly effectiveness of awk, sed, head, tail and tr to convert what some web service spits into useful data I can feed to R to do something useful.</p>
 <p>Today I was thinking about search rankings, and wondering if I could write a small tool that eased my occasional curiosity. Yes, I have done this by hand: search for some keyword and look through 8 pages of results looking for one of my websites. I don&rsquo;t do it very often, but sometimes it has to be done. And since I love automating things and the command line, I wrote the following blurb. I don&rsquo;t claim it is beautiful, but it works:</p>
-
 <pre><code>#/bin/sh
-``````
-  
-\# Perform a web search in Google via the command line. Usage:
-``````
-  
+</code></pre><p># Perform a web search in Google via the command line. Usage:</p>
+<pre><code>  
 \# automatic.sh &quot;search term&quot; domain pages 
-``````
-\# domain stands for what goes after the dot in &quot;google.&quot; and 
-``````
-\# defaults to com. Pages is the number of search pages to 
-``````
-\# process. Defaults to 1, since this script fetches  
-\# 100 results per page.
-``````
-  
+</code></pre><p># domain stands for what goes after the dot in &ldquo;google.&rdquo; and </p>
+<pre><code>\# defaults to com. Pages is the number of search pages to 
+</code></pre><p># process. Defaults to 1, since this script fetches<br>
+# 100 results per page.</p>
+<pre><code>  
 domain\=${2\-com}  
 pages\=${3\-4}  
 span\=$(seq 0 1 $pages)  
 for num in $span  
 do  iter\=$((num\*100))
-``````
-  \# This sets the user agent to Lynx, a command-line web browser to  
-  \# let google know it's better if there is no javascript and fluff  
-  \# laying around.  
- wget --header=&quot;User-Agent: Lynx/2.6 libwww-FM/2.14&quot;  &quot;http://www.google.$domain/search?q=$1&amp;start=$iter&amp;num=100&quot; -O search$num -q \# Comments about this piping:  \# The sed 'E'xtended command looks for patterns like  
-  \# href=&quot;/url=something&quot;, with the goal of grabbing that something:  
-  \# that's the result URL from the search. It captures this group  
-  \# and rewrites it as &quot;SearchData, something&quot; with several new lines  
-  \# for readability (in case you remove the grep pipe.)  
-  \# The grep is just used to prune all lines that are not search  
-  \# results, and then awk is used to print the search result number  
-  \# and the URL  
- sed -E &quot;s/&lt;\[^h\]\*href=\\&quot;\\/url\[^=\]\*=(\[^&amp;\]\*)&amp;\[^\\&quot;\]\*\\&quot;&gt;/\\n SearchData, \\1    \\n\\n/g&quot; search$num | grep &quot;SearchData&quot; | awk &quot;{print $iter+NR \\&quot; \\&quot; \\$2}&quot;  done
-``````
-  
+</code></pre><p># This sets the user agent to Lynx, a command-line web browser to<br>
+# let google know it&rsquo;s better if there is no javascript and fluff<br>
+# laying around.<br>
+wget &ndash;header=&quot;User-Agent: Lynx/2.6 libwww-FM/2.14&rdquo;  &ldquo;<a href="http://www.google">http://www.google</a>.$domain/search?q=$1&amp;start=$iter&amp;num=100&rdquo; -O search$num -q # Comments about this piping:  # The sed &lsquo;E&rsquo;xtended command looks for patterns like<br>
+# href=&rdquo;/url=something&rdquo;, with the goal of grabbing that something:<br>
+# that&rsquo;s the result URL from the search. It captures this group<br>
+# and rewrites it as &ldquo;SearchData, something&rdquo; with several new lines<br>
+# for readability (in case you remove the grep pipe.)<br>
+# The grep is just used to prune all lines that are not search<br>
+# results, and then awk is used to print the search result number<br>
+# and the URL<br>
+sed -E &ldquo;s/&lt;[^h]*href=\&quot;\/url[^=]*=([^&amp;]*)&amp;[^\&quot;]*\&ldquo;&gt;/\n SearchData, \1    \n\n/g&rdquo; search$num | grep &ldquo;SearchData&rdquo; | awk &ldquo;{print $iter+NR \&rdquo; \&rdquo; \$2}&rdquo;  done</p>
+<pre><code>  
 \# The script leaves a lot of files named &quot;search??&quot; laying in the directory it  
 \# is executed. In some sense this is a feature, not a bug. You can  
 \# then do something with them. If you don't want them laying around,  
 \# add rm search$num before done.  
 
-</code></pre>
+```
 
-<p>To find the search standings of a particular page for a particular term, just pipe through grep or ag:</p>
-
-<p>./automatic.sh &ldquo;learn to remember everything&rdquo; | grep &ldquo;mostlymaths&rdquo;</p>
-
-<p>For extra fancy points you can use this to create reports inside <a href="http://www.mostlymaths.net/search/label/acme" target="_blank">Acme</a>, if you are so oriented.</p>
-<hr/><ul class="pa0">
+To find the search standings of a particular page for a particular term, just pipe through grep or ag:  
+  
+./automatic.sh &quot;learn to remember everything&quot; | grep &quot;mostlymaths&quot;  
+  
+For extra fancy points you can use this to create reports inside [Acme](http://www.mostlymaths.net/search/label/acme), if you are so oriented.
+</code></pre><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/command-line" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Command Line</a>

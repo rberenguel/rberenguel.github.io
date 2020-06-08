@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | More emacs configuration tweaks (multiple-cursor on click, minimap, code folding, ensime eval overlays)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ Click for multiple-cursors I saw this on Jordi&rsquo;s Sublime, and it is much m
 <meta itemprop="name" content="More emacs configuration tweaks (multiple-cursor on click, minimap, code folding, ensime eval overlays)">
 <meta itemprop="description" content="At Affectv we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.
 Click for multiple-cursors I saw this on Jordi&rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so.">
-
-
 <meta itemprop="datePublished" content="2016-09-11T17:34:00&#43;02:00" />
 <meta itemprop="dateModified" content="2016-09-11T17:34:00&#43;02:00" />
 <meta itemprop="wordCount" content="472">
@@ -52,7 +50,6 @@ Click for multiple-cursors I saw this on Jordi&rsquo;s Sublime, and it is much m
 
 
 <meta itemprop="keywords" content="emacs,Scala,spacemacs," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -142,31 +139,17 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-
-<p>At <a href="http://www.affectv.com/" target="_blank">Affectv</a> we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>At <a href="http://www.affectv.com/">Affectv</a> we use a wide range of editors: Sublime, Atom, Emacs, Pycharm, IntelliJ&hellip; Actually only two people use the same editor! As such, from time to time I see things in other people&rsquo;s editors that I would like to have as well. So, yesterday I decided to improve on some configuration settings on Spacemacs.</p>
 <h2 id="click-for-multiple-cursors">Click for multiple-cursors</h2>
-
-<p>I saw this on Jordi&rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so. After all, a multi-cursor edit (proper edit, not as a substitute for a macro) is rare enough that I can tolerate leaving the home row. Easy enough to configure thanks to <a href="https://twitter.com/emacsrocks/status/304223468793237505" target="_blank">Magnar Sveen</a>.</p>
-
+<p>I saw this on Jordi&rsquo;s Sublime, and it is much more comfortable than using more-like-this or similar helper functions, even if I need to use the trackpad to do so. After all, a multi-cursor edit (proper edit, not as a substitute for a macro) is rare enough that I can tolerate leaving the home row. Easy enough to configure thanks to <a href="https://twitter.com/emacsrocks/status/304223468793237505">Magnar Sveen</a>.</p>
 <pre><code>(global-unset-key (kbd &quot;M-&lt;down-mouse-1&gt;&quot;))  
 (global-set-key (kbd &quot;M-&lt;mouse-1&gt;&quot;) 'mc/add-cursor-on-click)
-</code></pre>
-
-<p><a href="https://1.bp.blogspot.com/-a69eC9niTvQ/V9Vz4Yo7FOI/AAAAAAAAEYc/pyqcsOMr-p4bd48uYVCintKKFc9vNF3fgCLcB/s1600/MC.gif" target="_blank"><img src="https://1.bp.blogspot.com/-a69eC9niTvQ/V9Vz4Yo7FOI/AAAAAAAAEYc/pyqcsOMr-p4bd48uYVCintKKFc9vNF3fgCLcB/s640/MC.gif" alt="" /></a></p>
-
+</code></pre><p><a href="https://1.bp.blogspot.com/-a69eC9niTvQ/V9Vz4Yo7FOI/AAAAAAAAEYc/pyqcsOMr-p4bd48uYVCintKKFc9vNF3fgCLcB/s1600/MC.gif"><img src="https://1.bp.blogspot.com/-a69eC9niTvQ/V9Vz4Yo7FOI/AAAAAAAAEYc/pyqcsOMr-p4bd48uYVCintKKFc9vNF3fgCLcB/s640/MC.gif" alt=""></a></p>
 <h2 id="minimap">Minimap</h2>
-
 <p>Also from Sublime, I used to have this on my old emacs setup. As simple as adding minimap to the list of additional packages and configuring its property group. See animation below.</p>
-
 <pre><code>dotspacemacs-additional-packages '(helm-dash key-chord pig-mode mmm-mode minimap origami ansible)
-</code></pre>
-
-<h2 id="folding">Folding</h2>
-
+</code></pre><h2 id="folding">Folding</h2>
 <p>I have always loved how clean vim&rsquo;s folding works, and how Sublime has this nice folding. Then I found origami-mode and my emacs-life was complete. I tweaked a little the folding functions so that minimap was updated on fold (for some reason it is not, I guess minimap is tied to the &ldquo;modified&rdquo; hook or similar). I bound <code>z</code> and <code>Z</code> (and <code>A-z</code> which maps to <code>æ</code> in Colemak) to the basic fold operations.</p>
-
 <pre><code>(eval-after-load 'origami  
     '(progn  
        (defun rb-show-only (buffer point)  
@@ -189,19 +172,12 @@ if (!doNotTrack) {
    )))  
   
 
-</code></pre>
-
-<p>For some reason just advising the functions with after didn&rsquo;t work, this is not great but does work. I left the Z bindings as they are, since I have not used them yet, and will probably delete them if I keep not using them.</p>
-
-<p><a href="https://1.bp.blogspot.com/-B472yAC46lM/V9V1ks3gD9I/AAAAAAAAEYk/YxmCx7l3R1UUuY2m8hh4AqiBR-EYrSwWgCLcB/s1600/F.gif" target="_blank"><img src="https://1.bp.blogspot.com/-B472yAC46lM/V9V1ks3gD9I/AAAAAAAAEYk/YxmCx7l3R1UUuY2m8hh4AqiBR-EYrSwWgCLcB/s640/F.gif" alt="" /></a></p>
-
+</code></pre><p>For some reason just advising the functions with after didn&rsquo;t work, this is not great but does work. I left the Z bindings as they are, since I have not used them yet, and will probably delete them if I keep not using them.</p>
+<p><a href="https://1.bp.blogspot.com/-B472yAC46lM/V9V1ks3gD9I/AAAAAAAAEYk/YxmCx7l3R1UUuY2m8hh4AqiBR-EYrSwWgCLcB/s1600/F.gif"><img src="https://1.bp.blogspot.com/-B472yAC46lM/V9V1ks3gD9I/AAAAAAAAEYk/YxmCx7l3R1UUuY2m8hh4AqiBR-EYrSwWgCLcB/s640/F.gif" alt=""></a></p>
 <p><strong>Note (2018)</strong>: I moved to use yafolding (specifically yafolding-toggle-all and yafolding-toggle-element) at the end of 2017. Although origami is very good, yafolding works seamlessly under more languages. I bound Return in normal mode to toggle element and C-return to toggle all, as well as unbounding all the default bindings.</p>
-
 <h2 id="execution-overlays-in-ensime-scala">Execution overlays in Ensime (Scala)</h2>
-
-<p>I saw this for <a href="https://github.com/clojure-emacs/cider" target="_blank">Cider</a> in the emacs church meeting from August, and heard <a href="https://twitter.com/fommil" target="_blank">@fommil</a> (I think it was him) mention that it was coming to ensime. And <a href="https://twitter.com/fommil/status/766736564705759232?ref_src=twsrc%5Etfw" target="_blank">indeed it was</a>. And it&rsquo;s easy enough to use <code>C-c C-v C-r</code> (thing of it as extended <strong>c</strong>ommand, e<strong>v</strong>al, <strong>r</strong>egion to remember), given an open inferior Scala interpreter. Symbol prettify does not apply to overlays, so you need to customise the arrow used therein.</p>
-
-<p><a href="https://3.bp.blogspot.com/-Cr11eWs8n4k/V9V3UKHk4iI/AAAAAAAAEYs/e6ipa0-TM685903ruUhexQBODr-PRJUeQCLcB/s1600/EN.gif" target="_blank"><img src="https://3.bp.blogspot.com/-Cr11eWs8n4k/V9V3UKHk4iI/AAAAAAAAEYs/e6ipa0-TM685903ruUhexQBODr-PRJUeQCLcB/s640/EN.gif" alt="" /></a></p>
+<p>I saw this for <a href="https://github.com/clojure-emacs/cider">Cider</a> in the emacs church meeting from August, and heard <a href="https://twitter.com/fommil">@fommil</a> (I think it was him) mention that it was coming to ensime. And <a href="https://twitter.com/fommil/status/766736564705759232?ref_src=twsrc%5Etfw">indeed it was</a>. And it&rsquo;s easy enough to use <code>C-c C-v C-r</code> (thing of it as extended <strong>c</strong>ommand, e<strong>v</strong>al, <strong>r</strong>egion to remember), given an open inferior Scala interpreter. Symbol prettify does not apply to overlays, so you need to customise the arrow used therein.</p>
+<p><a href="https://3.bp.blogspot.com/-Cr11eWs8n4k/V9V3UKHk4iI/AAAAAAAAEYs/e6ipa0-TM685903ruUhexQBODr-PRJUeQCLcB/s1600/EN.gif"><img src="https://3.bp.blogspot.com/-Cr11eWs8n4k/V9V3UKHk4iI/AAAAAAAAEYs/e6ipa0-TM685903ruUhexQBODr-PRJUeQCLcB/s640/EN.gif" alt=""></a></p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

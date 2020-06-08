@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | A Slightly Better reddit Upvote/Downvote Widget (button)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ Both happy, we deployed and I tested." />
 <meta itemprop="name" content="A Slightly Better reddit Upvote/Downvote Widget (button)">
 <meta itemprop="description" content="A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.
 Both happy, we deployed and I tested.">
-
-
 <meta itemprop="datePublished" content="2013-09-19T16:43:00&#43;02:00" />
 <meta itemprop="dateModified" content="2013-09-19T16:43:00&#43;02:00" />
 <meta itemprop="wordCount" content="479">
@@ -52,7 +50,6 @@ Both happy, we deployed and I tested.">
 
 
 <meta itemprop="keywords" content="blog," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -143,42 +140,28 @@ if (!doNotTrack) {
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A few days ago I found myself with a problem. I wanted a reddit button in one of our websites, and our technical guy wanted it to be asynchronous. After a little poking around and deciding that reddit doesn&rsquo;t offer asynchronous buttons, I rolled my poor man&rsquo;s version: wrap it in a $(document).ready() It&rsquo;s not asynchronous, but at least it won&rsquo;t block page loading.</p>
-
-<p>Both happy, we deployed and I tested. Worked well, no problem. Well, actually, yes. A problem shared by all reddit buttons, one that was very troublesome here in <a href="http://www.mostlymaths.net/" target="_blank">mostlymaths</a> (back when I had a share on reddit button just beside the post title.)</p>
-
+<p>Both happy, we deployed and I tested. Worked well, no problem. Well, actually, yes. A problem shared by all reddit buttons, one that was very troublesome here in <a href="http://www.mostlymaths.net/">mostlymaths</a> (back when I had a share on reddit button just beside the post title.)</p>
 <p>When setting up the button you select the target reddit you&rsquo;d rather have your users send your content. In a page about Apple stuff, it would be r/apple. The problem is though that your users are free and can do whatever they want. So they go and submit to r/technology. Fine, r/technology is cool enough, lots of readers. Trouble is, when a user arrives from r/technology to your blog, after clicking on the link&hellip; He will see your widget with an ugly <em>submit</em> text, and no upvotes or downvotes:</p>
-
-<p><a href="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png" target="_blank"><img src="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png" alt="" /></a></p>
-
+<p><a href="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png"><img src="http://3.bp.blogspot.com/-IoEOQ_CqzqY/UjsE3OopywI/AAAAAAAADnY/vbK9mw-cf_g/s1600/Screen+Shot+2013-09-19+at+4.03.58+PM.png" alt=""></a></p>
 <p>even though your post has quite a few votes already in r/technology. The trouble comes from setting the target subreddit beforehand: if the url is not in this subreddit, reddit looks nowhere else. Of course, you&rsquo;d rather have:</p>
-
-<p><a href="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png" target="_blank"><img src="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png" alt="" /></a></p>
-
+<p><a href="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png"><img src="http://4.bp.blogspot.com/-LkdIbtSWVy8/UjsFpSFlNdI/AAAAAAAADnk/8eP9n8h4uhI/s1600/25points.png" alt=""></a></p>
 <p>with the real counter. After all, this means making the experience completely seamless:</p>
-
 <ol>
 <li>Reddit user sees a cool link to your content in r/whatever. Clicks</li>
 <li>Lands on your page</li>
 <li>Upvotes (or downvotes)</li>
 </ol>
-
 <p>instead of</p>
-
 <ol>
 <li>Reddit user sees a cool link to your content in r/whatever. Clicks</li>
 <li>Lands on the page</li>
 <li>Tries to upvote, needs to submit instead</li>
 <li>Is forced to submit to r/whatever, gives up (or not)</li>
 </ol>
-
 <p>An easy way to solve this problem is to check the referring URL. If it matches a subreddit, we can set the target of our widget to <em>that</em> subreddit instead of the default one. <strong>All reddit readers happy!</strong></p>
-
 <p>There&rsquo;s another issue, though: users not arriving from reddit.</p>
-
 <p>A random user landing in your awesome post, which has a bazillion points in r/whatever likes your content, and wants to upvote it. But, alas! He sees the dreaded submit button, because our default is r/apple. Or worse, sees 0 (or even a negative number!) because it has been downvoted in our target subreddit.</p>
-
 <p>This can also be solved. Reddit offers a clear-cut json API, allowing jsonp callbacks. This means that we can write a small piece of javascript that will check whether our post has been submitted to another reddit AND change the target to <em>that</em> one! <strong>All reddit users happy!</strong></p>
-
 <p>Below you can find the code. Fork it, use it, whatever. Be happy. If something breaks or doesn&rsquo;t work as expected it&rsquo;s not my fault: use cases may vary.</p>
 <hr/><ul class="pa0">
   

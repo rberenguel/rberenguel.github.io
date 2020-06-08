@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | New Keyboard: Gergo</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,8 +41,6 @@
 <meta property="article:modified_time" content="2020-01-06T18:15:52+01:00" />
 <meta itemprop="name" content="New Keyboard: Gergo">
 <meta itemprop="description" content="My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a Gergo.">
-
-
 <meta itemprop="datePublished" content="2020-01-06T18:15:52&#43;01:00" />
 <meta itemprop="dateModified" content="2020-01-06T18:15:52&#43;01:00" />
 <meta itemprop="wordCount" content="987">
@@ -50,7 +48,6 @@
 
 
 <meta itemprop="keywords" content="Keyboard, Mac,Productivity," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/01/new-keyboard-gergo.html/gergo.jpg"/>
@@ -147,8 +144,7 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a <a href="https://www.gboards.ca/product/gergo" target="_blank">Gergo</a>.</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a <a href="https://www.gboards.ca/product/gergo">Gergo</a>.</p>
 <figure class="fig-wide">
     <img src="gergo.jpg"
          alt="Gergo says hi"/> <figcaption>
@@ -156,42 +152,28 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
-<p>A few months ago I had a sudden bout of wrist/finger pain on my right arm. That&rsquo;s not new: 3 years ago I <a href="https://mostlymaths.net/2016/12/2016-in-review.html/" target="_blank">learned Colemak</a> to help with it (it did), but still on occasion my elbow nerves play funny and I need to stretch more than usual. This time I decided it was enough. Checked all keyboard recommendations, and it sounded like a split keyboard could help.</p>
-
-<p>After a lot of checking of different models (<a href="https://flashquark.com/product/gb-mitosis-wireless-split-ergonomic-keyboard-w-acrylic-case/" target="_blank">Mitosis</a>, <a href="https://shop.keyboard.io" target="_blank">Keyboardio</a>, <a href="https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard?variant=29480467267678" target="_blank">Iris</a>) I found out the <a href="https://www.gboards.ca/product/gergo" target="_blank">Gergo</a>. It had some interesting properties:</p>
-
+<p>A few months ago I had a sudden bout of wrist/finger pain on my right arm. That&rsquo;s not new: 3 years ago I <a href="https://mostlymaths.net/2016/12/2016-in-review.html/">learned Colemak</a> to help with it (it did), but still on occasion my elbow nerves play funny and I need to stretch more than usual. This time I decided it was enough. Checked all keyboard recommendations, and it sounded like a split keyboard could help.</p>
+<p>After a lot of checking of different models (<a href="https://flashquark.com/product/gb-mitosis-wireless-split-ergonomic-keyboard-w-acrylic-case/">Mitosis</a>, <a href="https://shop.keyboard.io">Keyboardio</a>, <a href="https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard?variant=29480467267678">Iris</a>) I found out the <a href="https://www.gboards.ca/product/gergo">Gergo</a>. It had some interesting properties:</p>
 <ul>
-<li>Customizable with <a href="https://config.qmk.fm/#/gergo/LAYOUT_gergo" target="_blank">QMK firmware</a> (more on this later)</li>
+<li>Customizable with <a href="https://config.qmk.fm/#/gergo/LAYOUT_gergo">QMK firmware</a> (more on this later)</li>
 <li>Relatively cheap (cheaper than most, on par with others, nice looking, unexpensive shipping)</li>
 <li>You can buy a pre-built kit</li>
 </ul>
-
 <p>The last one is fundamental, since I know that if I need to assemble anything (no matter how fun it can be) it will sit undone for months or years.</p>
-
 <p>I&rsquo;ve been using my Gergo for more than a month already, and now is the time to share how the ride has been.</p>
-
 <h2 id="qmk">QMK</h2>
-
 <p>QMK is the Swiss-army knife grade firmware for keyboards. It lets you customise <em>a lot of things</em>, both by writing your own code and extensions and also comes with a graphical system you can use online (<em>not in Safari</em>).</p>
-
 <p>Customising everything may sound… okay-ish, but painful. Why not use the defaults? Defaults are fine when you do default things, but a Gergo is a split, weird, 50-keys keyboard. Unless you tweak it to your liking, it&rsquo;s going to be a pain. But once configured, this little thing is capable of <em>a lot</em>.</p>
-
 <h3 id="what-does-qmk-offer">What does QMK offer?</h3>
-
 <p>In short, high customisation. For instance, QMK offerst <em>layers</em>, that you can switch to with modifiers. Think of them as shifted keys: pressing a modifier gets you to a different layer. Even without going into the firmware and going crazy, I have set up my Gergo to:</p>
-
 <ul>
 <li>Have conditional modifier keys. So, TAB doubles as Hyper (Cmd-Ctrl-Alt), and space doubles as switch-to-layer-1</li>
 <li>Be able to work one-handed. For no specific reason, I can use my Gergo using only the right side.</li>
 <li>Be as similar as possible to a &ldquo;normal-ish&rdquo; QWERTY. This may sound surprising, but my layout is still relatively close to normal. Except for <code>-</code>, <code>[]</code>, <code>{}</code>, the rest of the symbols are pretty much where you&rsquo;d expect them in a normal keyboard</li>
 <li>Have a dedicated key (in the second layer) to bring up the emoji switcher. I never remember the proper keypress for it, now it&rsquo;s built in</li>
 </ul>
-
-<p>The <a href="https://config.qmk.fm/#/gergo/LAYOUT_gergo" target="_blank">online configurator</a> is easy to use: move keys around and compile the firmware. Once compiled and downloaded, you can flash your keyboard with the <a href="https://github.com/qmk/qmk_toolbox/releases" target="_blank">QMK Toolbox</a>. In the case of the Gergo, you can set it into DFU mode by holding the right-lower blue key (where you&rsquo;d expect Right Shift to be) while you plug it in.</p>
-
+<p>The <a href="https://config.qmk.fm/#/gergo/LAYOUT_gergo">online configurator</a> is easy to use: move keys around and compile the firmware. Once compiled and downloaded, you can flash your keyboard with the <a href="https://github.com/qmk/qmk_toolbox/releases">QMK Toolbox</a>. In the case of the Gergo, you can set it into DFU mode by holding the right-lower blue key (where you&rsquo;d expect Right Shift to be) while you plug it in.</p>
 <h2 id="this-is-what-my-current-layout-looks-like">This is what my current layout looks like</h2>
-
 <figure class="fig-full">
     <img src="L0.jpg"
          alt="Layer 0: Typing and basic modifiers"/> <figcaption>
@@ -199,9 +181,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <h4 id="legend-and-comments">Legend and comments</h4>
-
 <ul>
 <li><code>LCAG_T(KC_TAB)</code>: <code>Command</code>-<code>Option</code>-<code>Control</code> when held, <code>TAB</code> when pressed. This is what is known as the HYPER key in most Mac circles (QMK calls Hyper all modifiers, including <code>shift</code>, at the same time)</li>
 <li><code>LCTL_T(KC_GRV)</code>: Left Control when held, grave/tilde otherwise</li>
@@ -213,9 +193,7 @@ if (!doNotTrack) {
 <li><code>LT 2, KC_MINS</code>: Toggle Layer 2 when held, minus/dash when pressed</li>
 <li><code>LT 1, KC_SLASH</code>: Toggle Layer 1 when held, slash/question when pressed</li>
 </ul>
-
 <p>Note that it is a pretty symmetric layout with respect to layer toggling, and otherwise has keys in &ldquo;expected&rdquo; places. Also, many layer toggles, you can never have enough?</p>
-
 <figure class="fig-full">
     <img src="L1.jpg"
          alt="Layer 1: Symbol base and persistent keys and modifiers"/> <figcaption>
@@ -223,18 +201,14 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <h4 id="legend-and-comments-1">Legend and comments</h4>
-
 <ul>
 <li><code>LCAG_T(KC_TAB)</code>: <code>Command</code>-<code>Option</code>-<code>Control</code> when held, <code>TAB</code> when pressed</li>
 <li><code>LT 2, KC_SPC</code>: Toggle Layer 2 when held, <code>SPACE</code> when pressed</li>
 <li><code>LCTL_T(KC_GRV)</code>: Left <code>Control</code> when held, grave/tilde otherwise</li>
 <li><code>LCTL(LGUI(KC), SPC)</code>: Show emoji picker in Mac OS</li>
 </ul>
-
 <p>Note that <code>hyper</code>, <code>shift</code> and <code>control</code> are kept in this layer. This is to allow stacked modifiers, so you can do control-!. Also note that <code>SPACE</code>-<code>'</code> (with space held) maps to return, which is relatively natural. Holding both spaces switches to layer 2. Symbols are &ldquo;where you&rsquo;d expect them&rdquo;, just lower. So, holding <code>SPACE</code> has a vibe of &ldquo;holding <code>SHIFT</code>&rdquo;.</p>
-
 <figure class="fig-full">
     <img src="L2.jpg"
          alt="Layer 2: Number and arrow base and persistent keys"/> <figcaption>
@@ -242,20 +216,14 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <h4 id="legend-and-comments-2">Legend and comments</h4>
-
 <ul>
 <li><code>LCAG_T(KC_TAB)</code>: Command-Option-Control when held, <code>TAB</code> when pressed</li>
 <li><code>LCTL_T(KC_GRV)</code>: Left <code>Control</code> when held, grave/tilde otherwise</li>
 </ul>
-
 <p>Almost nothing is preserved here: keeping hyper in the number layer allows me to do hyper-4, which I have mapped to screenshot (and shift-hyper-4, mapped to screenshot to disk). VIM home arrows, and volume control are here. Numbers are also where expected, holding two SPACEs or the Layer 2 toggles brings them on.</p>
-
 <h4 id="one-handed-layout">One-handed layout</h4>
-
 <p>This is still a work in progress I never use, but is fun to think about it.</p>
-
 <p><figure class="fig-full">
     <img src="L4.jpg"
          alt="Layer 4: One handed, base layer"/> <figcaption>
@@ -277,13 +245,10 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 </p>
-
-<p>And <a href="gergo_rberenguel.json" target="_blank">here</a> you can find the JSON for it. You can upload it to the Configurator to adapt it to your needs.</p>
-
+<p>And <a href="gergo_rberenguel.json">here</a> you can find the JSON for it. You can upload it to the Configurator to adapt it to your needs.</p>
 <h2 id="downsides-of-a-gergo-or-most-split-keyboards">Downsides of a Gergo (or most split keyboards)</h2>
-
 <ul>
-<li>Transport hassle: The Gergo doesn&rsquo;t have a case, so I have been using a Tupperware that more or less fits it neatly. It also fits well inside a <a href="https://bellroy.com/products/tech-kit/ripstop_recycled/light_grey" target="_blank">Bellroy Tech Kit</a>.</li>
+<li>Transport hassle: The Gergo doesn&rsquo;t have a case, so I have been using a Tupperware that more or less fits it neatly. It also fits well inside a <a href="https://bellroy.com/products/tech-kit/ripstop_recycled/light_grey">Bellroy Tech Kit</a>.</li>
 <li>That&rsquo;s it. Once I got used to typing on it (to be fair ortholinear was harder than split), it has been a joy to use.</li>
 </ul><hr/><ul class="pa0">
   

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Change the parameters of a docker container without knowing the docker run command used</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ At work, we have several instances running a suite of Docker containers, with so
 <meta itemprop="name" content="Change the parameters of a docker container without knowing the docker run command used">
 <meta itemprop="description" content="I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.
 At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using ansible: writing link/port/volume mappings in ansible (using the docker, container or docker-container modules, depending how long ago we set it up).">
-
-
 <meta itemprop="datePublished" content="2017-08-20T19:30:00&#43;02:00" />
 <meta itemprop="dateModified" content="2017-08-20T19:30:00&#43;02:00" />
 <meta itemprop="wordCount" content="466">
@@ -52,7 +50,6 @@ At work, we have several instances running a suite of Docker containers, with so
 
 
 <meta itemprop="keywords" content="Programming,Docker,Trick," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -143,17 +140,11 @@ if (!doNotTrack) {
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.</p>
-
 <p>At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using <code>ansible</code>: writing link/port/volume mappings in ansible (using the <code>docker</code>, <code>container</code> or <code>docker-container</code> modules, depending how long ago we set it up). The syntax is similar to <code>docker-compose</code>, but scripted for ansible.</p>
-
 <p>The problem arises when you are logged in on one of the machines and you want to change (or add) one parameter to one of the currently running containers. Re-running the <code>ansible</code> script in full is not always an option (for reasons I don&rsquo;t want to get into), so up until now we had to painfully rewrite the <code>docker run</code> command from the <code>ansible</code> set up, by hand. Which is terribly error prone. And a pain. And in general very much a process you don&rsquo;t want to follow, ever. We were very close to writing a short python script to convert the <code>yaml</code> specifications from python into <code>docker run</code> commands when we found out a relatively less painful way of doing it.</p>
-
 <p><strong>We jokingly call it the Indy swap</strong></p>
-
-<p><a href="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s1600/IndySwap.gif" target="_blank"><img src="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s400/IndySwap.gif" alt="" /></a></p>
-
+<p><a href="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s1600/IndySwap.gif"><img src="https://1.bp.blogspot.com/-dkaeFpSpxIY/WZnGBijWBRI/AAAAAAAAEfY/2obr6fqN6_46A4Rb536UKRvDMoavRkr5gCLcBGAs/s400/IndySwap.gif" alt=""></a></p>
 <p>It&rsquo;s quite easy, and is best described using a checklist to avoid messing up.</p>
-
 <ol>
 <li>First, you figure out what you want to do. For instance, map a port</li>
 <li>Change to super-user</li>
@@ -162,15 +153,10 @@ if (!doNotTrack) {
 <li><code>service docker stop</code></li>
 <li>Edit the file in step 4 to add/remove any extra setting</li>
 <li><code>service docker start</code></li>
-<li>Voilà
-
-<br /></li>
+<li>Voilà</li>
 </ol>
-
 <p><strong>Steps 5-7 are the actual Indy swap</strong>, if we are not fast enough the healthcheks in our elastic load balancers will mark the instance as failing and stop it. Yes, we could disable the check while we do this, <em>but where&rsquo;s the thrill, then?</em></p>
-
 <p>By the way, the file in 4 will be a JSON file with the settings of the container. Any saved edit needs to be done with the docker service closed (since the file is in use otherwise). The format of adding ports, volumes or links is pretty self-explanatory as long as you have already a port, link or volume set up in the instance. Otherwise, check the configuration of any other running container having that. I suggest opening it in 4 with the editor already so you can up-arrow just after stopping the service without needing to find it, and also having planned the changes beforehand (or having done them in a <code>config.json1</code> you then swap)</p>
-
 <p>Oh, and don&rsquo;t do this in production. Oh, of course you won&rsquo;t because you are not using Docker in production, are you?</p>
 <hr/><ul class="pa0">
   

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Quick PostScript Programming Tutorial</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,16 +41,13 @@
 <meta property="article:modified_time" content="2008-12-11T15:27:00+01:00" />
 <meta itemprop="name" content="Quick PostScript Programming Tutorial">
 <meta itemprop="description" content="For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it.">
-
-
 <meta itemprop="datePublished" content="2008-12-11T15:27:00&#43;01:00" />
 <meta itemprop="dateModified" content="2008-12-11T15:27:00&#43;01:00" />
-<meta itemprop="wordCount" content="1819">
+<meta itemprop="wordCount" content="1815">
 
 
 
 <meta itemprop="keywords" content="Programming,PostScript," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/Postal2008.jpg"/>
@@ -141,40 +138,23 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 9 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1819 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1815 words</span>
       
     </header>
     
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>For those of you who don&rsquo;t know,
-<a href="http://en.wikipedia.org/wiki/PostScript" target="_blank"><em>PostScript</em></a> <em>is a programming
+<a href="http://en.wikipedia.org/wiki/PostScript"><em>PostScript</em></a> <em>is a programming
 language (and also the name of the type of files you write in this language)
 used as a way to define what a page looks like</em>. A PostScript file contains
 instructions which create text, or draw images, and these instructions can do
 quite a lot of work. PostScript is directly processed by almost all laser
 printers, and if you are a Linux or MacOs user you already have some mean to
-process and open it. In Windows you can download an install <a href="http://pages.cs.wisc.edu/~ghost/doc/AFPL/index.htm" target="_blank">AFPL
-GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm" target="_blank">this
+process and open it. In Windows you can download an install <a href="http://pages.cs.wisc.edu/~ghost/doc/AFPL/index.htm">AFPL
+GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm">this
 page to convert a PS to PDF</a>.</p>
-
-<div style="text-align: center;">
-<figure class="fig-40">
-    <img src="Koch.png"
-         alt="Koch curve"/> <figcaption>
-            <p>Koch curve</p>
-        </figcaption>
-</figure>
- 
-<figure class="fig-40">
-    <img src="Mand.png"
-         alt="Mandelbrot set"/> <figcaption>
-            <p>Mandelbrot set</p>
-        </figcaption>
-</figure>
-
-</div>
-
+<!-- raw HTML omitted -->
 <figure class="fig-wide">
     <img src="Postal2008.jpg"
          alt="Christmas card"/> <figcaption>
@@ -182,8 +162,7 @@ page to convert a PS to PDF</a>.</p>
         </figcaption>
 </figure>
 
-
-<p>As you may already know, PostScript is a <a href="http://en.wikipedia.org/wiki/Turing_complete" target="_blank">Turing
+<p>As you may already know, PostScript is a <a href="http://en.wikipedia.org/wiki/Turing_complete">Turing
 complete</a> programming language.
 This means that any program you can write in any programming language, you can
 write in PostScript (albeit it will be slower). As geekish and curious as I am,
@@ -192,20 +171,18 @@ forget new languages almost as quick as I learnt them (<em>Oh Python, where are
 thou?</em>) I started writing some small reminders. If I forgot, I just read them
 and ready to go. In this quick tutorial/knowledge-refresher for PostScript
 programming, I&rsquo;ll sketch some key points and show a pair of examples: a
-<a href="http://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot set</a> and a <a href="http://en.wikipedia.org/wiki/Koch_snowflake" target="_blank">Koch&rsquo;s
+<a href="http://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> and a <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch&rsquo;s
 snowflake</a>. As a side note, the
 code for the snowflake is quite general for
-<a href="http://en.wikipedia.org/wiki/L-system" target="_blank">L-systems</a>.&ldquo;My&rdquo; code for this system is
+<a href="http://en.wikipedia.org/wiki/L-system">L-systems</a>.&ldquo;My&rdquo; code for this system is
 a rewriting, rescaling and simplifying of the code from Michel Charpentier at
-<a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/" target="_blank">this page</a>. When you are
+<a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">this page</a>. When you are
 through this tutorial, take a look at his code, he is much more clever than I am
 when PostScript-ing, and his results are <em>awesome</em>.</p>
-
 <p><em>From now on, PS will mean, of course, PostScript.</em></p>
-
-<p><em>PS is</em> <a href="http://en.wikipedia.org/wiki/Category:Stack-oriented_programming_languages" target="_blank"><em>stack
+<p><em>PS is</em> <a href="http://en.wikipedia.org/wiki/Category:Stack-oriented_programming_languages"><em>stack
 oriented</em></a><em>,
-based on RPN (</em><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation" target="_blank"><em>reverse polish
+based on RPN (</em><a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation"><em>reverse polish
 notation</em></a><em>)</em>. This
 means that you have a stack, like a stack of plates, and if you want to multiply
 3 by 4, you should write <code>3 4 mu</code> to push 3 and 4 to the stack (4 being the
@@ -216,24 +193,21 @@ mind</em>. When writing some complex formulae or algorithms, the state of the st
 is important, if you start to lose track, write it down on the side. Also, it is
 more efficient and quicker to just use what you have on the stack and don&rsquo;t rely
 on named variables.</p>
-
 <p>To make a comment within a PS program, write <code>%</code>, and it is customary to start
 every PS file with the comment line <code>%!PS</code> which allows all devices to recognize
 it as PostScript.</p>
-
 <p><em>There are two separate stacks</em>: a operand stack and a dictionary stack. Well,
-in fact as <a href="http://www.reddit.com/user/xardox" target="_blank">xardox</a> from Reddit points out,
+in fact as <a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit points out,
 there are 3 stacks, these two and the function stack: thanks to it you don&rsquo;t
 need to mess with function call and return addresses in the other two stacks. In
 the first one, operands (as 3 and 4 in the previous example) are kept. In the
 second one, names of operators or variables are kept. And as it is a stack, if
 you define a variable named A twice, when you call it only the most recent
 (nearer to the top of the stack) will be used.</p>
-
 <p>In fact, defining a variable or defining an operator has the same syntax as
 defining a variable. <code>/name content def</code> for a variable, <code>/name {operations} def</code>
 for an operator. I find this nice (very
-<a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29" target="_blank">Lisp</a>-y).
+<a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a>-y).
 <em>Variable and function names are made of combinations of characters (a…z) and
 numbers, as usual in other programming languages</em>. Curiously enough, you can
 name a variable <code>7U</code> if you want, but starting variables with a number is &ldquo;bad
@@ -241,21 +215,17 @@ style&rdquo;, usually. Keep it in mind. You may wonder why I wrote <code>/name</
 a variable. Well preceding a name with a <code>/</code> (slash) puts the name itself as
 operand in the stack, without the slash, PS looks for it in the dictionary stack
 and puts its corresponding value in the stack. (Thanks to
-<a href="http://www.reddit.com/user/xardox" target="_blank">xardox</a> from Reddit for the slash/backslash
+<a href="http://www.reddit.com/user/xardox">xardox</a> from Reddit for the slash/backslash
 distinction).</p>
-
 <p>After so much talking, sure you are wondering <em>How does one draw?</em> Well,</p>
-
 <ol>
 <li>first we have to define a path with <code>newpath</code>,</li>
 <li>then we issue some movement and tracing commands,</li>
 <li>then <code>fill</code> or <code>stroke</code> these commands,</li>
 <li>and finally finish the path.</li>
 </ol>
-
 <p>As a starting point, a square 200 points per side in the bottom left of
 the page:</p>
-
 <figure class="fig-not-so-wide">
     <img src="Picture2.png"/> 
 </figure>
@@ -263,32 +233,29 @@ the page:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">newpath</span> 
 <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">moveto</span> <span style="color:#75715e">% as the name says, move the cursor to x y 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% line from actual point toward the right 
-</span><span style="color:#75715e">% side 
+</span><span style="color:#75715e"></span><span style="color:#75715e">% side 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% the actual point is now in the right side, 
-</span><span style="color:#75715e">% go up 
+</span><span style="color:#75715e"></span><span style="color:#75715e">% go up 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
-<span style="color:#960050;background-color:#1e0010">showpage</span></code></pre></div>
-<p><code>newpath</code> and <code>closepath</code> enclose a drawing path, and <code>moveto</code> moves the cursor to an
+<span style="color:#a6e22e">showpage</span>
+</code></pre></div><p><code>newpath</code> and <code>closepath</code> enclose a drawing path, and <code>moveto</code> moves the cursor to an
 starting position. <code>rlineto</code> creates lines in relative coordinates (from the
 actual point taken as (0,0)), a similar construct with <code>lineto</code> uses global
 coordinates (and there is also a <code>rmoveto</code>). <code>stroke</code> draws the previous paths, and
 if we were to put <code>fill</code> instead of <code>stroke</code>, it would be a black square.</p>
-
 <p>Changing colors is as easy as (before stroking or filling) issuing a <code>num setgray</code>
 for a gray level, where <code>num</code> is between 0 (black) and 1 (white). If you prefer
 RGB, <code>Red Green Blue setrgbcolor</code> would do the same with RGB values (also ranging
 from 0 to 1 for each colour component).</p>
-
 <p>Writing is a little trickier in PostScript. First, you have to <em>find a font</em>
 with <code>name findfont</code>, then <code>numpt scalefont</code> to scale it to a
 certain number of points, finally <code>setfont</code>. And how do you write?
 <code>newpath</code>, <code>move</code> to wherever you want and <code>(Text) show</code>. Show acts as
 both a <code>stroke</code> and <code>closepath</code> for text, so if you want to change colors or something, do so
 before writing.</p>
-
 <figure class="fig-not-so-wide">
     <img src="Picture3.png"/> 
 </figure>
@@ -303,18 +270,17 @@ before writing.</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">235</span> <span style="color:#ae81ff">295</span> <span style="color:#a6e22e">moveto</span> 
-<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
+<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
-<span style="color:#a6e22e">showpage</span> </code></pre></div>
-<p>You can <code>rotate</code>, translate or scale your constructs (and if you want to keep
+<span style="color:#a6e22e">showpage</span> 
+</code></pre></div><p>You can <code>rotate</code>, translate or scale your constructs (and if you want to keep
 your previous transformation safe, issue a <code>gsave</code> before doing anything and a
 <code>grestore</code> after doing it, this way the initial and final position states are the
 same). To <code>rotate</code> by 60 degrees our friend <em>A Square</em>, put a <code>60 rotate</code> command
 after the first <code>moveto</code>. Also, if you pretended to draw something in the usual
 orientation, you should issue a <code>gsave</code> before rotating, and a <code>grestore</code> after
 stroking. This is important!</p>
-
 <figure class="fig-not-so-wide">
     <img src="Picture4.png"/> 
 </figure>
@@ -331,7 +297,7 @@ stroking. This is important!</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
+<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">grestore</span> 
@@ -345,7 +311,7 @@ stroking. This is important!</p>
 <span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">grestore</span> 
@@ -357,11 +323,11 @@ stroking. This is important!</p>
 <span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
-<span style="color:#960050;background-color:#1e0010">showpage</span></code></pre></div>
-<p>This starts to get annoying, so let&rsquo;s define a square function, which assumes we
+<span style="color:#a6e22e">showpage</span>
+</code></pre></div><p>This starts to get annoying, so let&rsquo;s define a square function, which assumes we
 are already at a point where we will draw a square of a certain side (the side value will be in the
 stack).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/box { 
@@ -370,8 +336,8 @@ stack).</p>
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#a6e22e">exch</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% exch swaps the first and second argument 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">neg</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% neg changes the sign 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">neg</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">exch</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% you guess? 
-</span><span style="color:#75715e"></span>} <span style="color:#960050;background-color:#1e0010">def</span></code></pre></div>
-<p>and this simplifies the <code>gsave-grestore</code> blocks as</p>
+</span><span style="color:#75715e"></span>} <span style="color:#a6e22e">def</span>
+</code></pre></div><p>and this simplifies the <code>gsave-grestore</code> blocks as</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">gsave</span> 
 <span style="color:#a6e22e">newpath</span> 
 <span style="color:#ae81ff">0.6</span> <span style="color:#a6e22e">setgray</span> 
@@ -379,11 +345,11 @@ stack).</p>
 <span style="color:#a6e22e">x</span> <span style="color:#a6e22e">rotate</span> 
 <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">box</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
-<span style="color:#960050;background-color:#1e0010">grestore</span></code></pre></div>
-<p><code>dup</code> is a really useful command, which duplicates the topmost item in the stack,
+<span style="color:#a6e22e">grestore</span>
+</code></pre></div><p><code>dup</code> is a really useful command, which duplicates the topmost item in the stack,
 you will be using it a lot. And the same goes for <code>exch</code>, which swaps the first
 and second items. The most useful one, when doing some &ldquo;big&rdquo; code is <code>m n roll</code>…
 but it is trickier. As an example, if you have <code>n</code> elements in the stack, and want
@@ -392,55 +358,42 @@ you want to shift to the other side, <code>n n-1 roll</code>. Have a look at how
 some references below if you need anything harder, but these two are
 almost all there is to it. <code>neg</code>, together with <code>add</code> <code>sub</code> <code>mul</code> and <code>div</code> form the core
 arithmetic structure.</p>
-
 <p>PS of course has a number of flow control structures. The simplest, is <code>repeat</code>.
 As a simple example, <code>3 {dup} repeat</code> would result in the first line in our box
 operator. Enclosing something in braces lets PS know it is a set of
 instructions, by the way.</p>
-
 <p>The <code>for</code> loop is by far the most interesting and the one you (well, at least me)
-will be using more often. Its syntax is <code>initial increment final {what to do}
-for</code>.</p>
-
+will be using more often. Its syntax is <code>initial increment final {what to do} for</code>.</p>
 <p><code>for</code> puts the counter at the topmost of the stack, so if you want to have a named
-variable corresponding to the counter, the first line in the <code>for</code> block should be <code>/n
-exch def</code>. Later on in the final samples I will show some nested <code>for</code> constructs
+variable corresponding to the counter, the first line in the <code>for</code> block should be <code>/n exch def</code>. Later on in the final samples I will show some nested <code>for</code> constructs
 for more entertainment value.</p>
-
 <p>For conditionals, you have <code>if</code> and <code>ifelse</code>. They are quite straightforward,
 <code>condition {true procedure} {false procedure} ifelse</code> and <code>if</code> it were an <code>if</code>, dont
 write a <em>false</em> procedure.</p>
-
 <p><em>I think that this is almost all needed to start with PostScript.</em></p>
-
 <p>Now, the &ldquo;hard&rdquo; examples. Click to go to a gist with the code!</p>
-
 <figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">
     <img src="Mand.png"
          alt="Mandelbrot set"/> </a><figcaption>
-            <p><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254" target="_blank">Mandelbrot set</a></p>
+            <p><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">Mandelbrot set</a></p>
         </figcaption>
 </figure>
-
 
 <figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">
     <img src="Koch.png"
          alt="Koch&amp;rsquo;s island."/> </a><figcaption>
-            <p><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033" target="_blank">Koch&rsquo;s island.</a></p>
+            <p><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">Koch&rsquo;s island.</a></p>
         </figcaption>
 </figure>
 
-
 <p>And some references</p>
-
 <ul>
-<li><a href="http://en.wikipedia.org/wiki/PostScript" target="_blank">Wikipedia article</a></li>
-<li><a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/" target="_blank">L-systems in PostScript</a></li>
-<li><a href="http://www.pugo.org/main/project_pshttpd/" target="_blank">A PostScript web-server</a></li>
-<li><a href="http://www.tailrecursive.org/postscript/postscript.html" target="_blank">A first guide to PostScript</a></li>
-<li><a href="https://www.adobe.com/content/dam/acom/en/devnet/actionscript/articles/PLRM.pdf" target="_blank">PostScript Language Reference (Red book)</a> (if this link stops working, just Google for it, it&rsquo;s freely available from Adobe but the location changes)</li>
+<li><a href="http://en.wikipedia.org/wiki/PostScript">Wikipedia article</a></li>
+<li><a href="http://www.cs.unh.edu/~charpov/Programming/L-systems/">L-systems in PostScript</a></li>
+<li><a href="http://www.pugo.org/main/project_pshttpd/">A PostScript web-server</a></li>
+<li><a href="http://www.tailrecursive.org/postscript/postscript.html">A first guide to PostScript</a></li>
+<li><a href="https://www.adobe.com/content/dam/acom/en/devnet/actionscript/articles/PLRM.pdf">PostScript Language Reference (Red book)</a> (if this link stops working, just Google for it, it&rsquo;s freely available from Adobe but the location changes)</li>
 </ul>
-
 <p>If you enjoyed this small tutorial, please share its link with your friends! It
 would made a difference, PostScript is a wonderful programming language which
 deserves to be more widely known.</p>

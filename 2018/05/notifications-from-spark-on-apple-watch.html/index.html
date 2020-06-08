@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Notifications from Spark on an Apple Watch (via IFTTT)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,8 +41,6 @@
 <meta property="article:modified_time" content="2018-05-05T02:40:00+02:00" />
 <meta itemprop="name" content="Notifications from Spark on an Apple Watch (via IFTTT)">
 <meta itemprop="description" content="This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with GraphFrames (the successor of GraphX on Spark).">
-
-
 <meta itemprop="datePublished" content="2018-05-05T02:40:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-05-05T02:40:00&#43;02:00" />
 <meta itemprop="wordCount" content="428">
@@ -50,7 +48,6 @@
 
 
 <meta itemprop="keywords" content=" Watch,Apache Spark,Open Source,Scala, iPhone," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,25 +136,17 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes" target="_blank">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html" target="_blank">GraphX</a> on Spark).</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html">GraphX</a> on Spark).</p>
 <p>This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished. This way I could work on something else while the process is doing its thing, and I could come back for the next step as soon as the data is ready.</p>
-
-<p>I have most of my notifications deactivated, though. No emails, Twitter, WhatsApp. Nothing shows on my Mac screen, few show on my <a href="https://amzn.to/2reDmZl" target="_blank">phone</a> or <a href="https://amzn.to/2Kq0Lid" target="_blank">watch</a>, and only a handful are allowed to vibrate (none to make a sound). What could I do to get a notification? Even if I overrode some of my settings, I needed something that either could work cross-device or could make my watch vibrate, since it’s the only device I have always with me.</p>
-
-<p>Well, <a href="https://ifttt.com/discover" target="_blank">IFTTT</a> can actually do that. IFTTT is a service to plumb external services with iOS/Android devices, to build workflows. It also has a <a href="https://ifttt.com/maker_webhooks" target="_blank">handy webhook you can use as a trigger for workflows</a>. And the IFTTT app can send notifications, to the phone or watch. Ticks all the boxes.</p>
-
-<p>To use the webhook (a POST endpoint) from Scala I used a library I had never used before: <a href="https://ifttt.com/discover" target="_blank">scalaj-http</a> It seems highly convenient for these quick-and-dirty “make a request” in a program that includes no other http library.</p>
-
+<p>I have most of my notifications deactivated, though. No emails, Twitter, WhatsApp. Nothing shows on my Mac screen, few show on my <a href="https://amzn.to/2reDmZl">phone</a> or <a href="https://amzn.to/2Kq0Lid">watch</a>, and only a handful are allowed to vibrate (none to make a sound). What could I do to get a notification? Even if I overrode some of my settings, I needed something that either could work cross-device or could make my watch vibrate, since it’s the only device I have always with me.</p>
+<p>Well, <a href="https://ifttt.com/discover">IFTTT</a> can actually do that. IFTTT is a service to plumb external services with iOS/Android devices, to build workflows. It also has a <a href="https://ifttt.com/maker_webhooks">handy webhook you can use as a trigger for workflows</a>. And the IFTTT app can send notifications, to the phone or watch. Ticks all the boxes.</p>
+<p>To use the webhook (a POST endpoint) from Scala I used a library I had never used before: <a href="https://ifttt.com/discover">scalaj-http</a> It seems highly convenient for these quick-and-dirty “make a request” in a program that includes no other http library.</p>
 <p>When I have some action I expect to run for a while, I’ll finish the command with <code>; notif(“Process X finished”)</code> This way, when the command finishes my wrist will gently buzz and I’ll know I can go back to work more on it.</p>
-
 <p>It is worth noting that this would also work for a long running <code>bash</code> or <code>sbt</code> command (I’m looking at you, Spark test suite), or compiling <code>boost</code> or anything else that can, basically, run <code>curl</code> against an endpoint at the end of the process.</p>
-
 <p>By the way, to run a spark shell with this library, use</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spark-shell --packages org.scalaj:scalaj-http_2.11:2.3.0<span style="color:#e6db74">`</span></code></pre></div>
-<p>Remember that multiple packages are separated by commas in case you also happen to, you know, use GraphFrames.</p>
-
-<p>Oh, and if you happen to want notifications after an sbt task, you can use my <a href="https://github.com/rberenguel/sbt-ifttt" target="_blank">sbt-ifttt plugin</a>.</p><hr/><ul class="pa0">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spark-shell --packages org.scalaj:scalaj-http_2.11:2.3.0<span style="color:#e6db74">`</span>
+</code></pre></div><p>Remember that multiple packages are separated by commas in case you also happen to, you know, use GraphFrames.</p>
+<p>Oh, and if you happen to want notifications after an sbt task, you can use my <a href="https://github.com/rberenguel/sbt-ifttt">sbt-ifttt plugin</a>.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/watch" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif"> Watch</a>

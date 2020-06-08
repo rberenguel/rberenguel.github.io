@@ -150,6 +150,15 @@ function ended
     dnodes.forEach(function(node) {
         nodeLabels.push(node.label)
     });
+    $(function() {
+        $("#search").autocomplete({
+            select: function(e, u) {
+                updateSearch()
+            },
+            source: nodeLabels.filter(n => n !== undefined)
+        });
+    });
+
     meter.style.display = "none";
 
     simulation
@@ -293,12 +302,3 @@ function positionLink(d) {
 function positionNode(d) {
     return "translate(" + d.x + "," + d.y + ")";
 }
-
-$(function() {
-    $("#search").autocomplete({
-        select: function(e, u) {
-            updateSearch()
-        },
-        source: nodeLabels.filter(n => n !== undefined)
-    });
-});

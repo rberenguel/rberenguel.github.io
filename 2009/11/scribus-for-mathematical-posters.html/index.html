@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Scribus for mathematical posters</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -47,8 +47,6 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
  Setting up
   Note from 2019: I can&rsquo;t find the final version of that poster, only a modified version from a few months later for another conference.
 The first piece of advise, is to set page guides where needed (in the Page menu, you can put them at a certain numerical place, and then move them along) and then Snap to guides in the same menu.">
-
-
 <meta itemprop="datePublished" content="2009-11-02T01:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2009-11-02T01:00:00&#43;01:00" />
 <meta itemprop="wordCount" content="280">
@@ -56,7 +54,6 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
 
 
 <meta itemprop="keywords" content="Fractals,Maths," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/scribus.jpg"/>
@@ -157,9 +154,8 @@ if (!doNotTrack) {
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As you may already know, I presented a <a href="/docs/20101009-PosterWarsaw.jpg">poster</a>
-at a conference recently, and did the set up with <a href="https://www.scribus.net" target="_blank">Scribus</a>, the texts with LaTeX
-with the Beamer and <a href="https://ctan.org/pkg/beamerposter?lang=en" target="_blank">Beamerposter</a> packages.</p>
-
+at a conference recently, and did the set up with <a href="https://www.scribus.net">Scribus</a>, the texts with LaTeX
+with the Beamer and <a href="https://ctan.org/pkg/beamerposter?lang=en">Beamerposter</a> packages.</p>
 <figure class="fig-wide">
     <img src="scribus.jpg"
          alt="Setting up"/> <figcaption>
@@ -167,10 +163,8 @@ with the Beamer and <a href="https://ctan.org/pkg/beamerposter?lang=en" target="
         </figcaption>
 </figure>
 
-
-<p><span class="scaps">Note from 2019</span>: I can&rsquo;t find the final version of
+<p><!-- raw HTML omitted -->Note from 2019<!-- raw HTML omitted -->: I can&rsquo;t find the final version of
 that poster, only a modified version from a few months later for another conference.</p>
-
 <p>The first piece of advise, is to set page guides where needed (in the <em>Page</em> menu,
 you can put them at a certain numerical place, and then move them along) and
 then <em>Snap to guides</em> in the same menu. This way, you can move everything into the
@@ -179,7 +173,6 @@ resolution and image visible settings for embedded images. In my poster, everyth
 except the main title were embedded images (<code>PS</code> for the <code>LaTeX</code> output, <code>PNG</code> for the
 images), thus the draw time was really long. I also sett the DPI of all non-PS
 images at at least 400. I wanted a nice print.</p>
-
 <p>The code for the slide-like blocks is the following:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>slidestop,compress<span style="color:#e6db74">\]</span>{beamer} 
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>orientation<span style="color:#f92672">=</span>portrait,size<span style="color:#f92672">=</span>custom, width<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, debug<span style="color:#e6db74">\]</span>{beamerposter} 
@@ -196,8 +189,8 @@ images at at least 400. I wanted a nice print.</p>
 Content of block 
 <span style="color:#66d9ef">\\</span>end{block} 
 <span style="color:#66d9ef">\\</span>end{frame} 
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<p>This setup generates just a &ldquo;block piece&rdquo;, which could also be a <code>Theorem</code> piece
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><p>This setup generates just a &ldquo;block piece&rdquo;, which could also be a <code>Theorem</code> piece
 (if you have already Beamer-ized something you know what I mean). You need to
 generate as many .tex files as &ldquo;pieces&rdquo; in your poster, and then generate
 <code>Postscript</code> files for them. In the current version of Scribus, it is better to

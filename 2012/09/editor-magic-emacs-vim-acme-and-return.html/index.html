@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Editor Magic: emacs, vim, acme and the return key</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ A few months ago I wrote about how I&rsquo;m using vim in my ipad. You know, I&r
 <meta itemprop="name" content="Editor Magic: emacs, vim, acme and the return key">
 <meta itemprop="description" content="Glenda, the Plan 9 bunny. Image copyrighted by Lucent Technologies, hosted by Wikimedia Commons and posted here for information purposes
 A few months ago I wrote about how I&rsquo;m using vim in my ipad. You know, I&rsquo;m an emacs guy, just started writing my own (useful) stuff to improve it. Recently I finished gnusnotes.el, a package which allows you to easily add notes to emails. Of course, before this I had already written emacs code, just that it was only for me.">
-
-
 <meta itemprop="datePublished" content="2012-09-23T11:02:00&#43;02:00" />
 <meta itemprop="dateModified" content="2012-09-23T11:02:00&#43;02:00" />
 <meta itemprop="wordCount" content="742">
@@ -52,7 +50,6 @@ A few months ago I wrote about how I&rsquo;m using vim in my ipad. You know, I&r
 
 
 <meta itemprop="keywords" content="Emacs, iPad,Vim,Acme," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -142,25 +139,16 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="https://upload.wikimedia.org/wikipedia/en/7/7e/Plan9bunnysmblack.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Plan9bunnysmblack.jpg" alt="" /></a></p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="https://upload.wikimedia.org/wikipedia/en/7/7e/Plan9bunnysmblack.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Plan9bunnysmblack.jpg" alt=""></a></p>
 <p><strong>Glenda, the Plan 9 bunny</strong>. Image copyrighted by Lucent Technologies, hosted by Wikimedia Commons and posted here for information purposes</p>
-
-<p>A few months ago I wrote about how I&rsquo;m using <a href="http://www.mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html" target="_blank">vim in my ipad</a>. You know, I&rsquo;m an emacs guy, just started writing my own (useful) stuff to improve it. Recently I finished <a href="http://www.mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html" target="_blank">gnusnotes.el</a>, a package which allows you to easily add notes to emails. Of course, before this I had already written emacs code, just that it was only for me. A step ahead.</p>
-
+<p>A few months ago I wrote about how I&rsquo;m using <a href="http://www.mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html">vim in my ipad</a>. You know, I&rsquo;m an emacs guy, just started writing my own (useful) stuff to improve it. Recently I finished <a href="http://www.mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html">gnusnotes.el</a>, a package which allows you to easily add notes to emails. Of course, before this I had already written emacs code, just that it was only for me. A step ahead.</p>
 <p>Anyway, back to vim. As much as I love emacs, I also love learning new things, and getting to grips with vim would improve how I edit and think about editing. So, I used it for a while, learning its basic usage. Then after a few weeks I had to edit some php, and emacs&rsquo; php editing abilities are (at least until I configure multi-mode) below par. I used vim, so I got to use it more. So far, so good, its different but it also feels &ldquo;right&rdquo;.</p>
-
-<p>Now, a few days ago a <a href="http://news.ycombinator.org/item?id=4533156" target="_blank">post in Hacker News</a> reminded me about an editor I wanted to check. For a few months I had a mental post it that read &ldquo;Plan 9 from user space,&rdquo; the *nix port of Plan 9 from Bell Labs&rsquo;s operating system tools. I had used Plan 9 in a virtual machine many years ago (it was interesting) so I knew more or less what it was and how it worked. The post that made me remember it was <a href="http://research.swtch.com/acme" target="_blank">A tour of the acme text editor</a> by Russ Cox (of go-lang, among other things, fame) and as you may guess the editor was the <a href="http://acme.cat-v.org/" target="_blank">acme text editor</a>.</p>
-
+<p>Now, a few days ago a <a href="http://news.ycombinator.org/item?id=4533156">post in Hacker News</a> reminded me about an editor I wanted to check. For a few months I had a mental post it that read &ldquo;Plan 9 from user space,&rdquo; the *nix port of Plan 9 from Bell Labs&rsquo;s operating system tools. I had used Plan 9 in a virtual machine many years ago (it was interesting) so I knew more or less what it was and how it worked. The post that made me remember it was <a href="http://research.swtch.com/acme">A tour of the acme text editor</a> by Russ Cox (of go-lang, among other things, fame) and as you may guess the editor was the <a href="http://acme.cat-v.org/">acme text editor</a>.</p>
 <p>Acme is very different from other <em>classic</em> text editors (though acme is from the 90s, I think it is a &ldquo;classic&rdquo;.) It is very mouse centric, which for an emacs and/or vim user is almost like&hellip; sacrilege. But it has a few neat tricks in its sleeve that make it quite awesome. A quick example: if you type in a buffer pdflatex thisfile.tex and selet this text with the middle button, you&rsquo;ll compile thisfile.tex If you type in your current file New and press the middle button on it, you will get a new buffer for a new file. And so on, and so on (give a look at the tour!) As you see, cool. But&hellip; how does it compare to emacs or vim?</p>
-
 <p>I&rsquo;ve been using it for a while. Far less featured than emacs or vim, without syntax highlighting, modes or beautiful indentation. Nothing. Anyway, I like it a lot. Why? Well, it feels a little like magic. Just click that and do something. I kept thinking about this feeling, this <strong>feels like magic</strong>. For me, emacs also feels like magic whereas vim does not (at least usually, sometimes it does). I kept poking &ldquo;Why&rdquo;? Your mileage may vary, but&hellip;</p>
-
 <p>For me, the answer is the enter key. A lot of things in emacs can be done without ever hitting the enter key (search, buffer switching, generic commands, exit or edit something in the recent file list.) On the other hand, in vim quite a few of the most basic commands require a press of enter. Saving, quitting, searching are the first I can think about. Also, the way vim works can require enter with more frequency. For me, enter is the anti-magic key, it removes the feeling of flow asking for <em>confirmation</em> in situations I don&rsquo;t want any, just do it. Acme addresses the same workflow asking for a click (emacs and vim can work like this for file opening with dired or :e respectively.)</p>
-
 <p>I will write again about acme, because I want to bring some of its capabilities to emacs, so I need to use it more thus I&rsquo;ll give you some more examples of usage as time goes by. Of course, emacs already has find-file-at-point (ffap) that opens the file at point&hellip; But asks for a press of enter. No way. I wrote my own simple version of ff-at-point, that works without asking for anything. I&rsquo;m already using it in LaTeX buffers to open included files. I need to extend it to any kind of file and related files, and add execute-at-point. Stay tuned, if I ever finish it I&rsquo;ll post it here and in the marmalade repository.</p>
-
-<p><em>Update:</em> you can find the work in progress in my <a href="https://github.com/rberenguel/scame/" target="_blank">github</a><br />
+<p><em>Update:</em> you can find the work in progress in my <a href="https://github.com/rberenguel/scame/">github</a><br>
 ParseList(ScrambleList(Relateds(emacs, Programming)),2)</p>
 <hr/><ul class="pa0">
   

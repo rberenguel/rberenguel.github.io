@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Things3 Weekly Review mode shortcut(s)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,8 +41,6 @@
 <meta property="article:modified_time" content="2018-12-31T16:07:00+01:00" />
 <meta itemprop="name" content="Things3 Weekly Review mode shortcut(s)">
 <meta itemprop="description" content="This is how I handle the dreaded GTD (Getting Things Done) weekly review when using Things 3.">
-
-
 <meta itemprop="datePublished" content="2018-12-31T16:07:00&#43;01:00" />
 <meta itemprop="dateModified" content="2018-12-31T16:07:00&#43;01:00" />
 <meta itemprop="wordCount" content="781">
@@ -50,7 +48,6 @@
 
 
 <meta itemprop="keywords" content=" iOS,GTD,Productivity," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -140,36 +137,23 @@ if (!doNotTrack) {
 
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This is how I handle the dreaded GTD (Getting Things Done) weekly review when using Things 3.</p>
-
 <h2 id="requirements">Requirements</h2>
-
 <p>This post will only make sense if</p>
-
 <ul>
-<li>You are a user of <a href="https://itunes.apple.com/us/app/things-3/id904237743?mt=8" target="_blank">Things3</a>, and heavy on Getting Things Done</li>
-<li><a href="https://itunes.apple.com/us/app/shortcuts/id915249334?mt=8" target="_blank">Shortcuts</a> app </li>
-<li>You have or can install the shortcuts _<a href="https://www.icloud.com/shortcuts/4067274534184fda83c1e86bb875d58e" target="_blank">Weekly Review</a> <em>and </em><a href="https://www.icloud.com/shortcuts/ece21feb6d9c49808d845d41c9dd17b7" target="_blank">Update weekly review hash</a>_</li>
-<li>You have <a href="https://itunes.apple.com/us/app/drafts-5-capture-act/id1236254471?mt=8" target="_blank">Drafts</a> or <a href="https://itunes.apple.com/us/app/bear/id1016366447?mt=8" target="_blank">Bear</a> app (either could be used, the shortcut linked below uses Drafts)</li>
+<li>You are a user of <a href="https://itunes.apple.com/us/app/things-3/id904237743?mt=8">Things3</a>, and heavy on Getting Things Done</li>
+<li><a href="https://itunes.apple.com/us/app/shortcuts/id915249334?mt=8">Shortcuts</a> app </li>
+<li>You have or can install the shortcuts _<a href="https://www.icloud.com/shortcuts/4067274534184fda83c1e86bb875d58e">Weekly Review</a> _and <em><a href="https://www.icloud.com/shortcuts/ece21feb6d9c49808d845d41c9dd17b7">Update weekly review hash</a></em></li>
+<li>You have <a href="https://itunes.apple.com/us/app/drafts-5-capture-act/id1236254471?mt=8">Drafts</a> or <a href="https://itunes.apple.com/us/app/bear/id1016366447?mt=8">Bear</a> app (either could be used, the shortcut linked below uses Drafts)</li>
 </ul>
-
 <h2 id="initial-setup-around-10-30-minutes-depending-on-the-amount-of-projects-you-have">Initial setup (around 10-30 minutes depending on the amount of projects you have)</h2>
-
 <p>Create a note in <em>Drafts</em> (you can put it in the note archive) with some text, does’t matter what you write. I used the letter <em>a</em> when I created these shortcuts and the weekly workflow.</p>
-
 <p>Get the <em>document id</em> from the draft (with the draft open, press the <em>i</em> Information button, select UUID and press copy) and set it up on all the shortcuts, as the UUID in the action <em>Get Draft Contents</em>.</p>
-
 <p>Run the shortcut <em>Update weekly review hash</em>. This will open your draft and add a new line below it, should look similar to <em>54f74fbfb94518a527a36474dc904c25</em> (this is the text you introduced, hashed). Copy this and add it to the end of the <em>Notes</em> section of any project (or, if you fancy, task) you want to be included in your weekly review in Things3. You only need to do this long manual part once. Note that you can’t add areas to review (since this is based on notes and areas don’t have notes).</p>
-
 <p>Finally, add your Things3 authorization token to the <em>Weekly Review</em> shortcut.</p>
-
 <h2 id="usage">Usage</h2>
-
-<p>When the time to review arrives, run the shortcut <em><a href="https://www.icloud.com/shortcuts/4067274534184fda83c1e86bb875d58e" target="_blank">Weekly Review</a></em>. This will open Things3, searching for any project containing the hash in your draft. Switch to selection mode, select a bunch of projects (I usually do it in blocks of 5-10), press the 3 dots ➡️ Share ➡️ Copy link. Then press the <em>Shortcuts</em> “go back” link at the top left of your device to go back to Shortcuts.</p>
-
+<p>When the time to review arrives, run the shortcut <em><a href="https://www.icloud.com/shortcuts/4067274534184fda83c1e86bb875d58e">Weekly Review</a></em>. This will open Things3, searching for any project containing the hash in your draft. Switch to selection mode, select a bunch of projects (I usually do it in blocks of 5-10), press the 3 dots ➡️ Share ➡️ Copy link. Then press the <em>Shortcuts</em> “go back” link at the top left of your device to go back to Shortcuts.</p>
 <p>The <em>Weekly Review</em> shortcut will now work with your clipboard contents to modify these projects. First, you’ll get a notification telling you how many projects are going to be reviewed. Once you press OK, the first one will open in <em>Things3</em>. Adjust the project as needed (edit the title, schedule it, add tasks&hellip;) and then delete the hash from the end of the notes section (you can do this later, but I find it easier at this point). Once finish, press the <em>Shorcuts</em> “go back” button to go back to Shortcuts. This will bring you back to <em>Things3</em>, but at the end of the notes section you will have a different hash. This is as what it should be 😃 Press the <em>Shorcuts</em> “go back” again, and this procedure will repeat for all the projects you “shared” in the previous step.</p>
-
 <p>Step wise it looks like:</p>
-
 <ol>
 <li>Run <em>Weekly Review</em></li>
 <li>Select some projects</li>
@@ -182,21 +166,15 @@ if (!doNotTrack) {
 <li>You are back on Things. You can still edit the project if you have anything to add or do</li>
 <li>Go back to shortcuts</li>
 </ol>
-
 <p>And here’s a video so you can see it in action:</p>
 
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//player.vimeo.com/video/308112441" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/308112441" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  </div>
 
-
 <p>By deleting the previous hash you ensure already reviewed projects don’t show again if you exit the workflow from <em>Shortcuts</em> and need to run <em>Weekly Review</em> again. Also makes the review process start-stoppable, so you can do a few projects today, a few tomorrow and then “finish”.</p>
-
 <p>In writing, it sounds slow, but it’s super fast in practice (weekly review took me around 2 hours before, now takes me around 30-45 minutes, the amount of projects I have has increased, not diminished). The main advantage I have is that I can specify which projects are to be reviewed and which not beforehand (for instance, if I decide a <em>Someday/Maybe</em> project should move to action state, I just add current week’s hash to its notes and is ready to be reviewed).</p>
-
-<p>Once there are no projects left to review, run <em><a href="https://www.icloud.com/shortcuts/ece21feb6d9c49808d845d41c9dd17b7" target="_blank">Update weekly review hash</a></em>, which will set you up for next week’s review.</p>
-
+<p>Once there are no projects left to review, run <em><a href="https://www.icloud.com/shortcuts/ece21feb6d9c49808d845d41c9dd17b7">Update weekly review hash</a></em>, which will set you up for next week’s review.</p>
 <p>Keep in mind though you need to remember to add this week’s hash to any new project you create. Usually this just means open another project, copy the hash from it and add it to the notes section. Usually I do this as part of my daily inbox purge: I create new projects outside of any area (or more like, in the area I consider to be the project inbox), and when I clean my inboxes I add the hashes.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

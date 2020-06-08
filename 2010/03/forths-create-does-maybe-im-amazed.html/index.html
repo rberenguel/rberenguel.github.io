@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,16 +43,13 @@ I decided to allocate a few global variables (for &ldquo;current point&rdquo;, &
 <meta itemprop="name" content="Forth&#39;s &#34;CREATE .. DOES&gt;&#34; maybe I&#39;m amazed?">
 <meta itemprop="description" content="As I wrote in a previous post, I&rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.
 I decided to allocate a few global variables (for &ldquo;current point&rdquo;, &ldquo;current vector&rdquo;, &ldquo;light source&rdquo;, etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.">
-
-
 <meta itemprop="datePublished" content="2010-03-05T23:01:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-03-05T23:01:00&#43;01:00" />
-<meta itemprop="wordCount" content="501">
+<meta itemprop="wordCount" content="504">
 
 
 
 <meta itemprop="keywords" content="Programming,Forth,Maths," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -136,78 +133,62 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 501 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 504 words</span>
       
     </header>
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I wrote in a <a href="http://berenguel.blogspot.com/2010/03/learning-forth-by-working-on-raytracer.html" target="_blank">previous post</a>, I&rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I wrote in a <a href="http://berenguel.blogspot.com/2010/03/learning-forth-by-working-on-raytracer.html">previous post</a>, I&rsquo;m on my way to learn forth, and to do so, rewrite my Lispy raytracer into a.. Forthy raytracer. Of course, the first steps are deciding on some implementation ideas.</p>
 <p>I decided to allocate a few global variables (for &ldquo;current point&rdquo;, &ldquo;current vector&rdquo;, &ldquo;light source&rdquo;, etc), to avoid too much clutter in the stack. This way it will be cleaner, maybe even cleaner than my Lisp version.</p>
-
 <p>And of course, the first thing to do is to create arrays. But&hellip; Forth has no arrays! Oh god! What to do!? CREATE .. DOES&gt;. Amazing, truly. Now follows my code to create an n-vector of floats, as a first example of what it DOES</p>
-
 <blockquote>
-<dl>
-<dd>n-vector ( n &ndash; ) ( i &ndash; address)<br />
-create floats allot<br />
-does&gt; swap floats + ;</dd>
-</dl>
+<p>: n-vector ( n &ndash; ) ( i &ndash; address)<br>
+create floats allot<br>
+does&gt; swap floats + ;</p>
 </blockquote>
-
 <p>What does this stand for? Create stands for what n-vector does when it is first called, and does stands for what the thing n-vector created does when called. In short: 3 n-vector Vector adds Vector to the dictionary, and 1 Vector returns the address of the second element in Vector.</p>
-
 <p>But there is more! I will only work with 3-vectors, so I wrote a 3-vector creator,</p>
-
 <blockquote>
-<dl>
-<dd>3vector ( &ndash; ) ( i &ndash; address )<br />
-\ Creates a 3 vector in memory<br />
-create 3 floats allot<br />
-does&gt; cells + ;</dd>
-</dl>
+<p>: 3vector ( &ndash; ) ( i &ndash; address )<br>
+\ Creates a 3 vector in memory<br>
+create 3 floats allot<br>
+does&gt; cells + ;</p>
 </blockquote>
-
 <p>So far so good, but this is standard. I am a lazy programmer, I thought I would (and definitely will) need accessors for exactly this vector (where this means one of the &ldquo;global variables&rdquo; I set as vectors). Create .. does&gt; allows me to write the two following marvels of&hellip; laziness (although it took me 30 minutes to get it right!):</p>
-
 <blockquote>
 <dl>
-<dd><p>n.vector-reader ( n v ) ( value )<br />
-create ,<br />
-does&gt; @ f@ ;</p></dd>
-<dd><p>n.vector-writer ( n v ) ( &ndash; )<br />
-create ,<br />
-does&gt; @ f! ;</p></dd>
+<dt>: n.vector-reader ( n v ) ( value )</dt>
+<dt>create ,</dt>
+<dt>does&gt; @ f@ ;</dt>
+<dd>n.vector-writer ( n v ) ( &ndash; )<br>
+create ,<br>
+does&gt; @ f! ;</dd>
 </dl>
 </blockquote>
-
 <p>Upon calling, n.vector-reader/writter with a position in the stack, and a vector as defined before, return a function which reads/sets said position. First a sample session, then the &ldquo;how does it work&rdquo;. In bold the system responses.</p>
-
 <blockquote>
-<p>3vector Vector<br />
-3vector Vector ok<br />
-0 Vector f@ .<br />
-0 Vector f@ . 9142112 ok<br />
-0 Vector 10.0e1 f!<br />
-0 Vector 10.0e1 f! ok<br />
-0 Vector f@ f.<br />
-0 Vector f@ f. 100. ok<br />
-0 Vector n.vector-reader .x<br />
-0 Vector n.vector-reader .x ok<br />
-0 Vector n.vector-writer !x<br />
-0 Vector n.vector-writer !x ok<br />
-12.e0 !x<br />
-12.e0 !x ok<br />
-.x f.<br />
-.x f. 12. ok<br />
-0 Vector f@ f.<br />
+<p>3vector Vector<br>
+3vector Vector ok<br>
+0 Vector f@ .<br>
+0 Vector f@ . 9142112 ok<br>
+0 Vector 10.0e1 f!<br>
+0 Vector 10.0e1 f! ok<br>
+0 Vector f@ f.<br>
+0 Vector f@ f. 100. ok<br>
+0 Vector n.vector-reader .x<br>
+0 Vector n.vector-reader .x ok<br>
+0 Vector n.vector-writer !x<br>
+0 Vector n.vector-writer !x ok<br>
+12.e0 !x<br>
+12.e0 !x ok<br>
+.x f.<br>
+.x f. 12. ok<br>
+0 Vector f@ f.<br>
 0 Vector f@ f. 12. ok</p>
 </blockquote>
-
 <p>As you can see, now I have a function to set values and one to get them. The inner working is somewhat strange. At create time , puts the adress of the value of the top of stack inside the body, and upon calling, acts on it. The operator @ gets the contents (which is the adress of Vector!) and f@ gets its value (or f! sets it). Et voilà!</p>
-
-<p>Some maybe related posts<br />
+<p>Some maybe related posts<br>
 ParseList(ScrambleList(Relateds(Programming, Forth)),10)</p>
 <hr/><ul class="pa0">
   

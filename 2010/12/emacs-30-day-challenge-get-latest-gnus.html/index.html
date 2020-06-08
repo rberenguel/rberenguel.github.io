@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | E30DC: Get the latest gnus to improve speed</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -47,16 +47,13 @@ The main drawback was keeping it nicely cross-platform." />
 from gnus homepage
 Ever since my first post of the emacs 30 Day Challenge, I was warned about gnus slowness. A lot of comments in reddit pointed to this, and suggested using wanderlust or installing a local IMAP server (like dovecot or notmuch) to speed up the IMAP back-end (search, retrieval and processing), while also allowing for offline reading.
 The main drawback was keeping it nicely cross-platform.">
-
-
 <meta itemprop="datePublished" content="2010-12-30T13:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-12-30T13:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="626">
+<meta itemprop="wordCount" content="447">
 
 
 
 <meta itemprop="keywords" content="emacs," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -142,96 +139,49 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 626 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 447 words</span>
       
     </header>
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s1600/gnus.gif" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s400/gnus.gif" alt="" /></a></p>
-
-<p>The gnus logo,<br />
-from <a href="http://www.gnus.org/" target="_blank">gnus homepage</a></p>
-
-<p>Ever since my first post of the <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html" target="_blank">emacs 30 Day Challenge</a>, I was warned about <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a> slowness. A lot of comments in reddit pointed to this, and suggested using wanderlust or installing a local IMAP server (like dovecot or notmuch) to speed up the IMAP back-end (search, retrieval and processing), while also allowing for offline reading.</p>
-
-<p>The main drawback was keeping it nicely cross-platform. As you may remember, I split my time between two computers: my <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26x%3D0%26ref_%3Dnb_sb_noss%26y%3D0%26field-keywords%3Dmacbook%26url%3Dsearch-alias%253Delectronics&amp;tag=rbersblog-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" target="_blank">MacBook</a><img src="https://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=ur2&amp;o=1" alt="" /> and my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">Acer netbook</a>. Any solution regarding to <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a> had to be completely cross-platform in the most seamless way I could. And having a local IMAP server didn&rsquo;t look like it (although notmuch can be installed through macports).</p>
-
-<p>When I posted my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">first update on gnus</a> in HackerNews, a kind reader pointed me to the latest development snapshot, as having far, far better IMAP and nnir (the <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a> IMAP search system) support. I went to the <a href="http://www.gnus.org/" target="_blank">gnus homepage</a>, and downloaded the latest CVS snapshot. It didn&rsquo;t work any better, it was in fact worse: <em>nnir search didn&rsquo;t even work!</em></p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s1600/gnus.gif"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TQN46avwdLI/AAAAAAAACwQ/DYNHN21qMQc/s400/gnus.gif" alt=""></a></p>
+<p>The gnus logo,<br>
+from <a href="http://www.gnus.org/">gnus homepage</a></p>
+<p>Ever since my first post of the <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">emacs 30 Day Challenge</a>, I was warned about <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">gnus</a> slowness. A lot of comments in reddit pointed to this, and suggested using wanderlust or installing a local IMAP server (like dovecot or notmuch) to speed up the IMAP back-end (search, retrieval and processing), while also allowing for offline reading.</p>
+<p>The main drawback was keeping it nicely cross-platform. As you may remember, I split my time between two computers: my <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26x%3D0%26ref_%3Dnb_sb_noss%26y%3D0%26field-keywords%3Dmacbook%26url%3Dsearch-alias%253Delectronics&amp;tag=rbersblog-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957">MacBook</a><img src="https://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=ur2&amp;o=1" alt=""> and my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">Acer netbook</a>. Any solution regarding to <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">gnus</a> had to be completely cross-platform in the most seamless way I could. And having a local IMAP server didn&rsquo;t look like it (although notmuch can be installed through macports).</p>
+<p>When I posted my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">first update on gnus</a> in HackerNews, a kind reader pointed me to the latest development snapshot, as having far, far better IMAP and nnir (the <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">gnus</a> IMAP search system) support. I went to the <a href="http://www.gnus.org/">gnus homepage</a>, and downloaded the latest CVS snapshot. It didn&rsquo;t work any better, it was in fact worse: <em>nnir search didn&rsquo;t even work!</em></p>
 <p>The problem? The latest development snapshot is in git, not in CVS! By the way, I have found very hard to know which is the latest version of gnus. I had Gnus 5.13 (if I&rsquo;m not mistaken) before installing the git version, which is NoGnus 0.11 All gnus alpha versions are labeled NoGnus, to distinguish them from the final versions.</p>
-
-<p>What do you need to install the latest gnus? First, a recent copy of git. At least 1.7.0.4 as suggested by the <a href="http://git.gnus.org/" target="_blank">gnus git page</a>. Don&rsquo;t ignore this: I had an outdated git in my MacBook and without upgrading it I could not get the package.</p>
-
-<p>Once you have a current git system, fire a terminal window and go to where you want to have your new <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a>. I did the following steps in ~/emacs/ Download the repository with</p>
-
+<p>What do you need to install the latest gnus? First, a recent copy of git. At least 1.7.0.4 as suggested by the <a href="http://git.gnus.org/">gnus git page</a>. Don&rsquo;t ignore this: I had an outdated git in my MacBook and without upgrading it I could not get the package.</p>
+<p>Once you have a current git system, fire a terminal window and go to where you want to have your new <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">gnus</a>. I did the following steps in ~/emacs/ Download the repository with</p>
 <pre><code>git clone http://git.gnus.org/gnus.git  
 
-</code></pre>
+```and then you are ready to go with  
+</code></pre><p>cd gnus<br>
+./configure</p>
+<pre><code class="language-Now" data-lang="Now"></code></pre><p>Cannot open doc string file &ldquo;/Applications/Emacs.app/Contents/Resources/etc/DOC-22.1.1&rdquo;<br>
+make[1]: *** [gnus-load.el] Error 255<br>
+make: *** [lick] Error 2</p>
+<pre><code class="language-I" data-lang="I"></code></pre><p>cd /Applications/Emacs.app/Contents/Resources/etc<br>
+cp DOC-22.3.1 DOC-22.1.1<br>
+cd -<br>
+make</p>
+<pre><code class="language-YMMV" data-lang="YMMV"></code></pre><p>(add-to-list &lsquo;load-path &ldquo;~/emacs/test-git-gnus/gnus/lisp/&quot;)<br>
+(require &lsquo;gnus-load)</p>
+<pre><code class="language-to" data-lang="to"></code></pre><p>nnir search Symbol&rsquo;s value as variable is void: gnus-registry-install</p>
+<pre><code class="language-D'uh!" data-lang="D'uh!"></code></pre><p>(setq gnus-registry-install t)</p>
+<pre><code class="language-Now" data-lang="Now"></code></pre><p>(setq nnmail-crosspost t)</p>
+<pre><code class="language-On" data-lang="On"></code></pre><p>(setq gnus-agent nil)</p>
+<pre><code>
+* * *
 
-<p>and then you are ready to go with</p>
-
-<pre><code>cd gnus  
-./configure  
-
-</code></pre>
-
-<p>Now make would finish the charm and get you a ready to use <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a>&hellip; But sadly, it didn&rsquo;t work in my <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26x%3D0%26ref_%3Dnb_sb_noss%26y%3D0%26field-keywords%3Dmacbook%26url%3Dsearch-alias%253Delectronics&amp;tag=rbersblog-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" target="_blank">MacBook</a> (had no problems in the netbook)! The problem?</p>
-
-<pre><code>Cannot open doc string file &quot;/Applications/Emacs.app/Contents/Resources/etc/DOC-22.1.1&quot;  
-make\[1\]: \*\*\* \[gnus-load.el\] Error 255  
-make: \*\*\* \[lick\] Error 2  
-
-</code></pre>
-
-<p>I did a ugly hack to solve this,</p>
-
-<pre><code>cd /Applications/Emacs.app/Contents/Resources/etc  
-cp DOC-22.3.1 DOC-22.1.1  
-cd -  
-make  
-
-</code></pre>
-
-<p>YMMV here when copying the correct DOC-emacs-ver file. Just check which one do you have. Then I changed where my emacs looked for gnus by adding</p>
-
-<pre><code>(add-to-list 'load-path &quot;~/emacs/test-git-gnus/gnus/lisp/&quot;)  
-(require 'gnus-load)  
-
-</code></pre>
-
-<p>to my .emacs file. When I checked with M-x gnus, it was blindingly fast. Starts up in a whim, and updates in a moment. But when I tried G G to do a mail search I got</p>
-
-<pre><code>nnir search Symbol's value as variable is void: gnus-registry-install  
-
-</code></pre>
-
-<p>D&rsquo;uh! What&rsquo;s this? I still don&rsquo;t know&hellip; But after a small google search I found a viable solution:</p>
-
-<pre><code>(setq gnus-registry-install t)  
-
-</code></pre>
-
-<p>Now you can check that G G searches amazingly fast through your Gmail inbox.</p>
-
-<pre><code>(setq nnmail-crosspost t)  
-
-</code></pre>
-
-<p>On the other hand, to prevent mails you processed through Gmail&rsquo;s website (or another mail reader) to be again in your gnus inbox (and then being unable to delete them or mark them as read as the server responds with a &ldquo;non existent post&rdquo;), add this to your .gnus.el:</p>
-
-<pre><code>(setq gnus-agent nil)  
-
-</code></pre>
-
-<hr />
-
-<p>I hope you enjoyed this second installment in the world of <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">gnus</a>. I hope you give gnus another try, if the problem you had was its speed. The development git gnus will surprise you!</p>
-
-<p>If you enjoyed this post, please share it with your emacs (or emacs-wannabe) friends through Hacker News, Reddit/emacs, Twitter or even Facebook. Thank you for reading this far!</p>
-
-<p>ParseList(ScrambleList(Relateds(emacs)),5)</p>
-<hr/><ul class="pa0">
+  
+I hope you enjoyed this second installment in the world of [gnus](http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html). I hope you give gnus another try, if the problem you had was its speed. The development git gnus will surprise you!  
+  
+If you enjoyed this post, please share it with your emacs (or emacs-wannabe) friends through Hacker News, Reddit/emacs, Twitter or even Facebook. Thank you for reading this far!  
+  
+ParseList(ScrambleList(Relateds(emacs)),5)
+</code></pre><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>

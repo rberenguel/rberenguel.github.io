@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Time Tracking Like There Is No Tomorrow (with Javascript and HTML5)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,8 +41,6 @@
 <meta property="article:modified_time" content="2011-11-06T13:08:00+01:00" />
 <meta itemprop="name" content="Time Tracking Like There Is No Tomorrow (with Javascript and HTML5)">
 <meta itemprop="description" content="A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in her homepage. Although I&rsquo;m a regular at her blog and I follow her RSS feed, I had not seen it &ldquo;live&rdquo; yet. My inner geek yelled &ldquo;gimme gimme&rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, sadly), it is Android only app. Oh well. I don&rsquo;t want another device.">
-
-
 <meta itemprop="datePublished" content="2011-11-06T13:08:00&#43;01:00" />
 <meta itemprop="dateModified" content="2011-11-06T13:08:00&#43;01:00" />
 <meta itemprop="wordCount" content="563">
@@ -50,7 +48,6 @@
 
 
 <meta itemprop="keywords" content="Productivity," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,38 +136,24 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.flickr.com/photos/aidanmorgan/2331754875/" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S4q0uAXMvlI/AAAAAAAAB6A/osWxeuImc2c/s400/2331754875_e6a2a81429.jpg" alt="" /></a>A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in <a href="http://home.sachachua.com/time/graph" target="_blank">her homepage</a>. Although I&rsquo;m a regular at <a href="http://sachachua.com/blog/" target="_blank">her blog</a> and I follow her RSS feed, I had not seen it &ldquo;live&rdquo; yet. My inner geek yelled &ldquo;gimme gimme&rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, <em>sadly</em>), it is Android only app. Oh well. I don&rsquo;t want another device. So how can I track my time <em>always</em>, when the only thing I have always with me is either an iPad Touch or an iPad?</p>
-
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.flickr.com/photos/aidanmorgan/2331754875/"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S4q0uAXMvlI/AAAAAAAAB6A/osWxeuImc2c/s400/2331754875_e6a2a81429.jpg" alt=""></a>A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in <a href="http://home.sachachua.com/time/graph">her homepage</a>. Although I&rsquo;m a regular at <a href="http://sachachua.com/blog/">her blog</a> and I follow her RSS feed, I had not seen it &ldquo;live&rdquo; yet. My inner geek yelled &ldquo;gimme gimme&rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, <em>sadly</em>), it is Android only app. Oh well. I don&rsquo;t want another device. So how can I track my time <em>always</em>, when the only thing I have always with me is either an iPad Touch or an iPad?</p>
 <p>There is a problem with the App Store. Usually, as the advertisement says <em>there&rsquo;s an app for that</em>. The problem is that I&rsquo;m very picky. I want an app that does exactly this and that, but I don&rsquo;t care about this other fluff or this nice buzzword.</p>
-
 <p>I asked myself what I wanted for a time tracking app. In the end, I want just one thing: timestamps and subjects. Nothing else. Something that may look like:</p>
-
 <pre><code>20111105 2103 2125 blog
-</code></pre>
-
-<p>Simple, isn&rsquo;t it?</p>
-
+</code></pre><p>Simple, isn&rsquo;t it?</p>
 <pre><code>Date | start time | end time| subject
-</code></pre>
-
-<p>I don&rsquo;t need graphing, or aggregating, or Dropbox syncing, or any other such thing in my iPod Touch. I don&rsquo;t even need length, because this can be recomputed later. I can do all these things far more effectively with Python and R and/or Google Fusion tables in my computer, for example. I could even do it with Python and Gnuplot, or if I was truly desperate, awk and Gnuplot.</p>
-
+</code></pre><p>I don&rsquo;t need graphing, or aggregating, or Dropbox syncing, or any other such thing in my iPod Touch. I don&rsquo;t even need length, because this can be recomputed later. I can do all these things far more effectively with Python and R and/or Google Fusion tables in my computer, for example. I could even do it with Python and Gnuplot, or if I was truly desperate, awk and Gnuplot.</p>
 <p>Now, the funny thing is that even if I don&rsquo;t have a developer account with Apple, or iOS development knowledge (yet), there&rsquo;s a quick way to create a program that does exactly this for my iDevices (in fact, for almost any device with a browser).</p>
-
 <p>HTML5+Javascript (using localStorage and cache mode). Simple, isn&rsquo;t it? Now I have a small app to track my time in my iPod Touch. Just a few lines of Javascript and a few buttons:</p>
-
 <ul>
 <li>A button to timestamp, press it again to end the timestamp</li>
 <li>A button to dump all the data from localStorage and show on screen</li>
 <li>A button to clear the data from localStorage</li>
 <li>A button to mail the data</li>
 </ul>
-
 <p>Nothing else. Nothing more.</p>
-
 <p>Each time the timestamp button is pressed, a nicely formatted string gets saved into localStorage, making sure everything works even when I lose the local cache copy due to refreshes. The dump data button is to know what I have already logged, before mailing. And of course, even if 5MB is quite a lot, I don&rsquo;t want to fill it so I need to clean up when I send.</p>
-
-<p>For now, I need to refactor the code before posting it. I finished it in two batches of 20 minutes, and in the second I gave up on refactoring, and clean a little the functionality. But it&rsquo;s simple and it works, I have already tracked more than a week of data. Now I only need to find the time to write the analysing code. So far I have a Python function to generate the spans from the time stamps, but I&rsquo;m still not sure how I want to analyse everything. If I want to generate aggregate data from Python (I&rsquo;m more fluent) or in R (more versatile, and I will do the graphing here).<br />
+<p>For now, I need to refactor the code before posting it. I finished it in two batches of 20 minutes, and in the second I gave up on refactoring, and clean a little the functionality. But it&rsquo;s simple and it works, I have already tracked more than a week of data. Now I only need to find the time to write the analysing code. So far I have a Python function to generate the spans from the time stamps, but I&rsquo;m still not sure how I want to analyse everything. If I want to generate aggregate data from Python (I&rsquo;m more fluent) or in R (more versatile, and I will do the graphing here).<br>
 ParseList(ScrambleList(Relateds(Productivity, Programming)),2)</p>
 <hr/><ul class="pa0">
   

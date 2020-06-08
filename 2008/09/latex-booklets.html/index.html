@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | How to create LaTeX booklets</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,8 +43,6 @@ When printing in MacOSX you can print booklets, but they are supposed to be cut,
 <meta itemprop="name" content="How to create LaTeX booklets">
 <meta itemprop="description" content="If you are printing a lot of… well, anything, sure you would love to make booklets out of what you print. If you happen to be a mathematician, you sure are printing lots of papers with more than 20 pages, which turn to 10 unmanageable pages when double-sided. But making a booklet allows you to turn them to just a little folded thing that you can read easier.
 When printing in MacOSX you can print booklets, but they are supposed to be cut, not folded across as you would do to bind a book.">
-
-
 <meta itemprop="datePublished" content="2008-09-18T18:31:00&#43;02:00" />
 <meta itemprop="dateModified" content="2008-09-18T18:31:00&#43;02:00" />
 <meta itemprop="wordCount" content="429">
@@ -52,7 +50,6 @@ When printing in MacOSX you can print booklets, but they are supposed to be cut,
 
 
 <meta itemprop="keywords" content="emacs,LaTeX,Maths," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -151,57 +148,54 @@ booklets out of what you print. If you happen to be a mathematician, you sure
 are printing lots of papers with more than 20 pages, which turn to 10
 unmanageable pages when double-sided. But making a booklet allows you to turn
 them to just a little folded thing that you can read easier.</p>
-
 <p>When printing in MacOSX you can print booklets, but they are supposed to be cut,
 not folded across as you would do to bind a book. But there is a clean solution
-using LaTeX to print your A4 booklets (and even your <a href="http://www.mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html" target="_blank">A6
+using LaTeX to print your A4 booklets (and even your <a href="http://www.mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html">A6
 booklets</a>!)
-The <a href="http://www.latex-project.org/" target="_blank">LaTeX</a> package
-<a href="http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/" target="_blank">pdfpages</a> lets
+The <a href="http://www.latex-project.org/">LaTeX</a> package
+<a href="http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/">pdfpages</a> lets
 you make the booklets you&rsquo;ve always loved. You&rsquo;ll need a .tex file with the
 following content:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>a<span style="color:#ae81ff">4</span>paper<span style="color:#e6db74">\]</span>{article} 
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>pdftex<span style="color:#e6db74">\]</span>{color,graphicx,epsfig} 
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>final<span style="color:#e6db74">\]</span>{pdfpages} 
 <span style="color:#66d9ef">\\</span>begin{document} 
-<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=-</span>,nup<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>x<span style="color:#ae81ff">2</span>,landscape,signature<span style="color:#f92672">=</span> 
+<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=</span><span style="color:#f92672">-</span>,nup<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>x<span style="color:#ae81ff">2</span>,landscape,signature<span style="color:#f92672">=</span> 
 explain later<span style="color:#e6db74">\]</span>{complete path to your pdf file} 
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<p>If you take a look to a nearby book, you&rsquo;ll see that it is formed by a certain
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><p>If you take a look to a nearby book, you&rsquo;ll see that it is formed by a certain
 number of packages which consist of folded pages. The signature is the number of
 pages you want to have in each package, and must be a multiple of 4. This said,
 if you just have something small (around 40 or 50 pages) you can ignore this
 setting and set it as a multiple of 4 which exceeds the number of pages (32 is a
 good guess). I set usually this to 32, unless what I print is between 32 and 64
 pages, then I adjust for the largest multiple of 4. If I&rsquo;m doing something more
-like a book, I&rsquo;ll go for 44, as in my tutorial <a href="http://www.mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/" target="_blank">Easy Paperback Bookbinding
+like a book, I&rsquo;ll go for 44, as in my tutorial <a href="http://www.mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/">Easy Paperback Bookbinding
 How-to</a>.</p>
-
 <p>Fill in the gaps, and compile with pdflatex to get a nice pdf booklet.</p>
-
 <p>If you happen to be also an Emacs junkie (and know something about Emacs Lisp), below you can find a function definition. If not, be sure to check related posts for some other interesting (maybe!) things.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun Booklet (NumPag) 
-  (interactive <span style="color:#e6db74">&#34;sNumPàg:&#34;</span>) 
+  (interactive <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">sNumPàg:</span><span style="color:#e6db74">&#34;</span>) 
   (let ((bookletprev (<span style="color:#a6e22e">buffer-file-name</span> (<span style="color:#a6e22e">current-buffer</span>)))) 
-  (<span style="color:#a6e22e">set-buffer</span> (find-file <span style="color:#e6db74">&#34;/Users/YourUser/Documents/Booklets.tex&#34;</span>)) 
+  (<span style="color:#a6e22e">set-buffer</span> (find-file <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">/Users/YourUser/Documents/Booklets.tex</span><span style="color:#e6db74">&#34;</span>)) 
   (<span style="color:#a6e22e">erase-buffer</span>) 
-  (<span style="color:#a6e22e">insert</span> (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;\\\\documentclass\[a4paper\]{article} 
-</span><span style="color:#e6db74">      \\\\usepackage\[pdftex\]{color,graphicx,epsfig} 
-</span><span style="color:#e6db74">      \\\\usepackage\[final\]{pdfpages} 
-</span><span style="color:#e6db74">      \\\\begin{document} 
-</span><span style="color:#e6db74">      \\\\includepdf\[pages=-,nup=1x2,landscape,signature= 
-</span><span style="color:#e6db74">      &#34;</span> 
+  (<span style="color:#a6e22e">insert</span> (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">documentclass</span><span style="color:#e6db74">\[</span><span style="color:#e6db74">a4paper</span><span style="color:#e6db74">\]</span><span style="color:#e6db74">{article} 
+</span><span style="color:#e6db74">      </span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">usepackage</span><span style="color:#e6db74">\[</span><span style="color:#e6db74">pdftex</span><span style="color:#e6db74">\]</span><span style="color:#e6db74">{color,graphicx,epsfig} 
+</span><span style="color:#e6db74">      </span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">usepackage</span><span style="color:#e6db74">\[</span><span style="color:#e6db74">final</span><span style="color:#e6db74">\]</span><span style="color:#e6db74">{pdfpages} 
+</span><span style="color:#e6db74">      </span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">begin{document} 
+</span><span style="color:#e6db74">      </span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">includepdf</span><span style="color:#e6db74">\[</span><span style="color:#e6db74">pages=-,nup=1x2,landscape,signature= 
+</span><span style="color:#e6db74">      </span><span style="color:#e6db74">&#34;</span> 
   (<span style="color:#a6e22e">number-to-string</span> 
   (\* (<span style="color:#a6e22e">/</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">string-to-number</span> NumPag)) <span style="color:#ae81ff">4</span>) <span style="color:#ae81ff">4</span>)) 
-  <span style="color:#e6db74">&#34;\]{&#34;</span> 
+  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\]</span><span style="color:#e6db74">{</span><span style="color:#e6db74">&#34;</span> 
   (<span style="color:#a6e22e">substring</span> bookletprev <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">-</span> (<span style="color:#a6e22e">length</span> bookletprev) <span style="color:#ae81ff">4</span>)) 
-  <span style="color:#e6db74">&#34;.pdf} 
-</span><span style="color:#e6db74">  \\\\end{document} 
-</span><span style="color:#e6db74">  &#34;</span>))) 
+  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.pdf} 
+</span><span style="color:#e6db74">  </span><span style="color:#e6db74">\\</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">end{document} 
+</span><span style="color:#e6db74">  </span><span style="color:#e6db74">&#34;</span>))) 
   (tex-pdf-mode) 
   (save-buffer) 
-  <span style="color:#75715e">;(tex-run-command &#34;LaTeX&#34;))</span></code></pre></div>
-<p>I have this function assigned to <code>C-M-b</code>. It takes the current buffer (which
+  <span style="color:#75715e">;(tex-run-command &#34;LaTeX&#34;))</span>
+</code></pre></div><p>I have this function assigned to <code>C-M-b</code>. It takes the current buffer (which
 should be a PDF document with no blank spaces in its name) and asks for the
 number of pages, rounding up to a multiple of 4. It creates a new file
 <code>/Users/YourUser/Documents/Booklets.tex</code> (you should edit this to match your

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Coursier resolution failing with HTTP method 416 in sbt</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -47,8 +47,6 @@ commit to the heavens and CircleCI was happy." />
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
 commit to the heavens and CircleCI was happy.">
-
-
 <meta itemprop="datePublished" content="2018-03-25T12:21:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-03-25T12:21:00&#43;02:00" />
 <meta itemprop="wordCount" content="587">
@@ -56,7 +54,6 @@ commit to the heavens and CircleCI was happy.">
 
 
 <meta itemprop="keywords" content="open source,scala," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -147,7 +144,7 @@ if (!doNotTrack) {
     </header>
     
     <section class="w-60 mb2">
-        <span class="fw2 f3 i "><em>Or, how I made my first contribution to <a href="https://github.com/coursier/coursier" target="_blank">coursier</a></em></span>
+        <span class="fw2 f3 i "><em>Or, how I made my first contribution to <a href="https://github.com/coursier/coursier">coursier</a></em></span>
     </section>
     
 
@@ -155,8 +152,7 @@ if (!doNotTrack) {
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>I ran into this problem with <code>sbt</code> dependency resolution around 7 weeks ago. I
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
-commit to the heavens and <a href="https://circleci.com/" target="_blank">CircleCI</a> was happy.</p>
-
+commit to the heavens and <a href="https://circleci.com/">CircleCI</a> was happy.</p>
 <pre><code>[trace] Stack trace suppressed: run last service/*:update for the full output. 
 [error] (service/*:update) coursier.ResolutionException: 1 download error 
 [error]   Caught java.io.IOException:  
@@ -167,42 +163,32 @@ https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar) 
   while downloading  
   https://repo1.maven.org/maven2/org/graylog2/gelfj/1.1.14/gelfj-1.1.14.jar 
 
-</code></pre>
-
-<p>I was not happy though. For the next weeks (sounds like a lot, but it was more
+</code></pre><p>I was not happy though. For the next weeks (sounds like a lot, but it was more
 like 2 commits), every time I had to work on this project I was commenting the
 import to get it to compile/run/test. Until I was fed up enough to check what
 the problem was.</p>
-
 <h2 id="what-is-response-code-416">What is response code 416</h2>
-
 <p>This is <em>Range Not Satisfiable</em>. This means that either the file we are
 requesting does not have this range available: it is shorter, or the range is
 malformed, or who knows. The expectation should be that under a 416 error, a
 full request is issued, but this was not the case with Coursier (I created the
-<a href="https://github.com/coursier/coursier/issues/794" target="_blank">issue</a> and <a href="https://github.com/coursier/coursier/pull/795" target="_blank">submitted a
+<a href="https://github.com/coursier/coursier/issues/794">issue</a> and <a href="https://github.com/coursier/coursier/pull/795">submitted a
 PR</a> to fix it, should be fixed in
 the next release).</p>
-
 <p>So… Maven Central is not able to answer range queries? Some edge case is being
 hit? And, what are range queries used for? This one is easy, for resuming
 partial downloads.</p>
-
 <p>The likely culprit was me (or my network) stopping <code>sbt</code> while it was fetching
 the libraries, at some point in the past… maybe. There is a partial download
 <em>somewhere</em>. Easy fix: clean up the partial download that is lying there, then
 <code>update</code>. Problem is, <em>somewhere</em> can be more than one place with <code>coursier</code>.
 Also, I wasn’t sure where the problem was coming from.</p>
-
 <h2 id="what-to-remove">What to remove</h2>
-
 <p>In my case, I had to remove the <code>coursier</code> local cache at <code>\~/.coursier/cache</code>
 because this is where the partial download for <code>gelfj</code> was. But it might have
 been any of <code>.ivy2/cache</code> or <code>.m2/cache</code>. Maybe, even, <code>sbt</code> cache at <code>.sbt/</code> .
 Or the <code>ensime</code> cache.</p>
-
 <h2 id="reproducing-fixing">Reproducing, fixing</h2>
-
 <p>I managed to reproduce it relatively easily. Open any location in your
 <code>.coursier/cache/v1</code> folder containing a JAR file. Move said jar to
 <code>blah.jar.part</code>. This way, it has full size as a partial download, and the
@@ -210,18 +196,16 @@ requested range in a partial download request will be invalid (actually this was
 what was happening in my case: Coursier died just before moving <code>.part</code> to
 <code>.jar</code>). If you run <code>sbt update</code> under <code>coursier</code> on any project using this JAR,
 resolution will fail with a 416.</p>
-
 <p>Fixing it was straightforward (the code base for <code>coursier</code> seems easy to
 search) by adding a check for this return code in the area that resets the
 connection if the returned headers are not valid.</p>
-
 <p>To test the functionality I used <code>sbt-plugins/publish-local</code> to create a
 SNAPSHOT build I could set in my <code>.sbt</code>. Once I got the bug manually tested I
 ran the tests suites. I wanted to add a test, but this seemed untestable under
-the current suites, so I pushed and waited. The <a href="https://github.com/alexarchambault" target="_blank">lead
+the current suites, so I pushed and waited. The <a href="https://github.com/alexarchambault">lead
 maintainer</a> gave me some pointers on how to
 create a test using the current systems (I got close but didn’t work in the
-end), and then, a PR by <a href="https://github.com/wisechengyi" target="_blank">wisechengyi</a> added
+end), and then, a PR by <a href="https://github.com/wisechengyi">wisechengyi</a> added
 several helpers for testing a PR he created in a similar situation, so I could
 add a test to mine. And done!</p><hr/><ul class="pa0">
   
