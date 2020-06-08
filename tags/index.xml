@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 10:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 19:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog</title>
+      <link>https://mostlymaths.net/tags/blog/</link>
+      <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>d3js</title>
+      <link>https://mostlymaths.net/tags/d3js/</link>
+      <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/d3js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -17,15 +53,6 @@
       <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
       <description></description>
     </item>
     
@@ -44,15 +71,6 @@
       <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/nlp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 07 Jun 2020 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
     </item>
     
@@ -314,15 +332,6 @@
       <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>https://mostlymaths.net/tags/blog/</link>
-      <pubDate>Tue, 10 Sep 2019 19:42:11 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/blog/</guid>
       <description></description>
     </item>
     
