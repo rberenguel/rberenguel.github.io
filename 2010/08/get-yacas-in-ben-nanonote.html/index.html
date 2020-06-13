@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Get Yacas in the Ben NanoNote</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -47,6 +47,8 @@ I should have guessed, because yacas does not compile out of the box (the progra
 It comes handy when you need to do that odd symbolic computation which is too big to handle by hand (or you are plain lazy).
 By looking at the wikipedia entry, I discovered an startling truth: as of 2009, yacas is no longer maintained.
 I should have guessed, because yacas does not compile out of the box (the program needed to generate the manuals does not compile), and this led to some naïve patching (just removing all instances of said program&hellip;).">
+
+
 <meta itemprop="datePublished" content="2010-08-26T17:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-08-26T17:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="287">
@@ -54,6 +56,7 @@ I should have guessed, because yacas does not compile out of the box (the progra
 
 
 <meta itemprop="keywords" content="Linux,Maths,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -145,20 +148,29 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9tkhe3DELI/AAAAAAAACRI/OXis36J2Plc/s1600/Yacas.JPG"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9tkhe3DELI/AAAAAAAACRI/OXis36J2Plc/s400/Yacas.JPG" alt=""></a></p>
-<p><a href="http://yacas.sourceforge.net/">Yacas</a> is an advanced computer algebra system, with its own programming language and a lot of handful operators available.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9tkhe3DELI/AAAAAAAACRI/OXis36J2Plc/s1600/Yacas.JPG" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9tkhe3DELI/AAAAAAAACRI/OXis36J2Plc/s400/Yacas.JPG" alt="" /></a></p>
+
+<p><a href="http://yacas.sourceforge.net/" target="_blank">Yacas</a> is an advanced computer algebra system, with its own programming language and a lot of handful operators available.</p>
+
 <p>It comes handy when you need to do that odd symbolic computation which is too big to handle by hand (or you are plain lazy).</p>
+
 <p>By looking at the wikipedia entry, I discovered an startling truth: as of 2009, yacas is no longer maintained.</p>
+
 <p>I should have guessed, because yacas does not compile out of the box (the program needed to generate the manuals does not compile), and this led to some naïve patching (just removing all instances of said program&hellip;).</p>
-<p>The compilation process for the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">NanoNote</a> with OpenWRT follows the usual lines, with a twist. Yacas uses a host program to generate code, named mkfastprimes. And when cross-compiling, the resulting executable cannot be used.</p>
+
+<p>The compilation process for the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">NanoNote</a> with OpenWRT follows the usual lines, with a twist. Yacas uses a host program to generate code, named mkfastprimes. And when cross-compiling, the resulting executable cannot be used.</p>
+
 <p>To solve this small problem, you need to compile yacas in your host computer, and use the generated mkfastprimes to get the desired files. To do so, in the makefile I download the package, uncompress it, configure and make. Some minor problem is that configure generates several makefiles and folders in the working directory&hellip; and looks like OpenWRT&rsquo;s makefile system does not allow to change it. Thus I copy the original Makefile to Makefile2, let configure generate a new one, make yacas and copy back the original Makefile.</p>
-<p>And this can get you yacas working in the NanoNote. You can download the Makefile and patches from <a href="http://code.google.com/p/rberenguel/source/browse/#svn/trunk/NanoNote/ports/maths/yacas">here</a>.</p>
-<p>For additional instructions on how to set up a build environment, please refer to Qi hardware&rsquo;s wiki <a href="http://en.qi-hardware.com/wiki/Building_Software_Image">here</a>.</p>
-<p>Related posts:<br>
-<a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> Gcal: the ultra-powerful command line GNU calendar</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br>
+
+<p>And this can get you yacas working in the NanoNote. You can download the Makefile and patches from <a href="http://code.google.com/p/rberenguel/source/browse/#svn/trunk/NanoNote/ports/maths/yacas" target="_blank">here</a>.</p>
+
+<p>For additional instructions on how to set up a build environment, please refer to Qi hardware&rsquo;s wiki <a href="http://en.qi-hardware.com/wiki/Building_Software_Image" target="_blank">here</a>.</p>
+
+<p>Related posts:<br />
+ <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-to on mostlymaths.net</title>
@@ -123,7 +123,7 @@ The first step is checking for Mercurial (wikipedia) in your system. Open a term
       
       <guid>https://mostlymaths.net/2009/12/gluten-free-dark-brown-cane-sugar.html/</guid>
       <description>Although this looks like a all-free / no taste cake, it is wonderful. And of course, at it is gluten, dairy and egg free, almost everyone can eat it. What you will need:
- 1 measure soy yogurt 1 measure dark brown sugar (we used Tate&amp;amp;Lyle Dark Brown Sugar) 1 measure gluten-free flour 1/4 measure oil 1 teaspoon baking powder  Here measure depends on how much iogurt do you have.</description>
+ 1 measure soy yogurt 1 measure dark brown sugar (we used Tate&amp;amp;Lyle Dark Brown Sugar) 1 measure gluten-free flour 1&amp;frasl;4 measure oil 1 teaspoon baking powder  Here measure depends on how much iogurt do you have.</description>
     </item>
     
     <item>
@@ -133,7 +133,7 @@ The first step is checking for Mercurial (wikipedia) in your system. Open a term
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -182,7 +182,7 @@ Source code:
       
       <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
-  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details.</description>
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac.</description>
     </item>
     
     <item>
@@ -253,7 +253,7 @@ It will look like this when finished, closed and opened.</description>
       <pubDate>Thu, 07 May 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/05/how-to-do-easy-origami-cd-case.html/</guid>
-      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;lsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
+      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;rsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
     </item>
     
   </channel>

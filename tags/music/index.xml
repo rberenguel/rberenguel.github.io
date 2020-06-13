@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on mostlymaths.net</title>
@@ -58,7 +58,7 @@ Browsing with Conkeror The same day I started my 30 day challenge, the emacs foc
       
       <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
- KISS - know=&amp;quot;you cry&amp;rdquo;;know++=&amp;quot;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
     </item>
     

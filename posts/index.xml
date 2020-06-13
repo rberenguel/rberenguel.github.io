@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on mostlymaths.net</title>
@@ -6,10 +6,19 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2020 08:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 12:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020#47 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</link>
+      <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Another hard push at reducing my reading list. At the current pace I may not write many more of these posts.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Generative iris</title>
@@ -17,7 +26,7 @@
       <pubDate>Fri, 12 Jun 2020 08:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2020/06/iris-sketch.html/</guid>
-      <description>&lt;p&gt;Here are the details about how my procedural sketch &lt;a href=&#34;https://github.com/rberenguel/sketches#iris-p5js&#34;&gt;Iris&lt;/a&gt; works. This has been one of the fastest and most enjoyable sketches I have created lately&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here are the details about how my procedural sketch &lt;a href=&#34;https://github.com/rberenguel/sketches#iris-p5js&#34; target=&#34;_blank&#34;&gt;Iris&lt;/a&gt; works. This has been one of the fastest and most enjoyable sketches I have created lately&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +80,7 @@
       <pubDate>Tue, 26 May 2020 19:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/</guid>
-      <description>&lt;p&gt;Some details of my &lt;code&gt;p5js&lt;/code&gt; sketch &lt;a href=&#34;https://mostlymaths.net/sketches/blot-painting/blot.html&#34;&gt;&lt;code&gt;Blot/Painting&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Some details of my &lt;code&gt;p5js&lt;/code&gt; sketch &lt;a href=&#34;https://mostlymaths.net/sketches/blot-painting/blot.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Blot/Painting&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,7 +172,7 @@ up from them: templating without base repositories.&lt;/p&gt;</description>
       <pubDate>Mon, 13 Jan 2020 18:15:52 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2020/01/context-managing-time.html/</guid>
-      <description>&lt;p&gt;Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project &lt;em&gt;Timing Context Manager&lt;/em&gt;, which I actively ignored for many months. New year, new me, and a conversation with &lt;a href=&#34;https://twitter.com/marcraminv&#34;&gt;Marc Ramírez&lt;/a&gt; moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project &lt;em&gt;Timing Context Manager&lt;/em&gt;, which I actively ignored for many months. New year, new me, and a conversation with &lt;a href=&#34;https://twitter.com/marcraminv&#34; target=&#34;_blank&#34;&gt;Marc Ramírez&lt;/a&gt; moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -181,7 +190,7 @@ up from them: templating without base repositories.&lt;/p&gt;</description>
       <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2020/01/new-keyboard-gergo.html/</guid>
-      <description>&lt;p&gt;My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a &lt;a href=&#34;https://www.gboards.ca/product/gergo&#34;&gt;Gergo&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a &lt;a href=&#34;https://www.gboards.ca/product/gergo&#34; target=&#34;_blank&#34;&gt;Gergo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -221,9 +230,9 @@ interesting ones as well. This week they are centered in data engineering.&lt;/p
       <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/11/20193233-readings-of-the-week.html/</guid>
-      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34;&gt;Python Barcelona&lt;/a&gt;
-organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
-organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34;&gt;a workshop on
+      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34; target=&#34;_blank&#34;&gt;Python Barcelona&lt;/a&gt;
+organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34; target=&#34;_blank&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
+organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34; target=&#34;_blank&#34;&gt;a workshop on
 PySpark&lt;/a&gt;, so I felt pretty tired
 on Sunday. Of course this means this is a double issue.&lt;/p&gt;</description>
     </item>
@@ -268,7 +277,7 @@ developers more than usual.&lt;/p&gt;</description>
       <guid>https://mostlymaths.net/2019/10/201928-readings-of-the-week.html/</guid>
       <description>&lt;p&gt;This is a slightly longer edition because my reading list was overflowing with
 400+ articles. I “trimmed” it down to “only” 380 during this week, I had a lot
-of airport time due to going to &lt;a href=&#34;https://databricks.com/sparkaisummit/europe&#34;&gt;Spark Summit
+of airport time due to going to &lt;a href=&#34;https://databricks.com/sparkaisummit/europe&#34; target=&#34;_blank&#34;&gt;Spark Summit
 Europe&lt;/a&gt; to give a talk.&lt;/p&gt;</description>
     </item>
     
@@ -342,7 +351,8 @@ edition. Sorry!&lt;/p&gt;</description>
       
       <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
-&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+
+&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -351,7 +361,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
-      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -360,7 +370,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</guid>
-      <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The map and problem described here were part of my presentation &lt;a href=&#34;https://github.com/rberenguel/mapping&#34; target=&#34;_blank&#34;&gt;Mapping as a tool for thought&lt;/a&gt;, and mentioned in my interview with &lt;a href=&#34;https://twitter.com/jhngrant&#34; target=&#34;_blank&#34;&gt;John Grant&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/BenMosior&#34; target=&#34;_blank&#34;&gt;Ben Mosior&lt;/a&gt; (to appear sometime soon in the &lt;a href=&#34;https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow&#34; target=&#34;_blank&#34;&gt;Wardley Maps community youtube channel&lt;/a&gt;). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the &lt;a href=&#34;https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452&#34; target=&#34;_blank&#34;&gt;Wardley Maps Community forums requesting comments&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -369,7 +379,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -378,8 +388,9 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
-      <description>&lt;p&gt;_This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. _&lt;/p&gt;
-&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34; target=&#34;_blank&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -388,7 +399,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -397,7 +408,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201915-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Data engineering, adtech, ZIO, Rust, writing, some miscellaneous stuff. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -406,7 +417,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Data engineering, adtech, functional programing, formal specification. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -424,7 +435,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 19 May 2019 19:21:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/05/201913-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Functional programming, adtech, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -433,7 +444,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 13 May 2019 00:31:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/05/2019-12-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Big data and data engineering, metallurgy, Rust (not the metallurgy-related rust). Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Big data and data engineering, metallurgy, Rust (not the metallurgy-related rust). Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -442,7 +453,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Thu, 09 May 2019 17:27:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html/</guid>
-      <description>&lt;p&gt;As you may know, I’m a heavy &lt;a href=&#34;https://www.mostlymaths.net/search/label/emacs&#34;&gt;emacs&lt;/a&gt; user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you may know, I’m a heavy &lt;a href=&#34;https://www.mostlymaths.net/search/label/emacs&#34; target=&#34;_blank&#34;&gt;emacs&lt;/a&gt; user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -461,7 +472,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -479,7 +490,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</guid>
-      <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -488,7 +499,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Tue, 26 Feb 2019 22:54:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -497,7 +508,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
-      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
+      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34; target=&#34;_blank&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -506,7 +517,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -515,7 +526,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 10 Feb 2019 22:38:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -524,7 +535,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34; target=&#34;_blank&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34; target=&#34;_blank&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -533,7 +544,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 27 Jan 2019 20:01:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-3-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -542,7 +553,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -551,7 +562,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
-      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34; target=&#34;_blank&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34; target=&#34;_blank&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -578,7 +589,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34; target=&#34;_blank&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34; target=&#34;_blank&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -587,7 +598,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 29 Apr 2018 15:38:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/modifying-agnoster-theme-for-zsh.html/</guid>
-      <description>&lt;p&gt;Even though I have been a long time user of &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;oh-my-zsh&lt;/a&gt; on zsh (moved from &lt;a href=&#34;https://amzn.to/2KqeJR4&#34;&gt;plain bash to zsh&lt;/a&gt; like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: &lt;code&gt;robbyrussell&lt;/code&gt;. But recently I was showing my friend @&lt;a href=&#34;http://crafty-coder.com/&#34;&gt;craftycoder&lt;/a&gt; the tweaks I have on my system (&lt;a href=&#34;https://github.com/junegunn/fzf&#34;&gt;fzf&lt;/a&gt;, &lt;a href=&#34;https://github.com/wting/autojump&#34;&gt;autojump&lt;/a&gt;, etc) and he showed me this theme, &lt;a href=&#34;https://github.com/agnoster/agnoster-zsh-theme&#34;&gt;agnoster&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Even though I have been a long time user of &lt;a href=&#34;http://ohmyz.sh/&#34; target=&#34;_blank&#34;&gt;oh-my-zsh&lt;/a&gt; on zsh (moved from &lt;a href=&#34;https://amzn.to/2KqeJR4&#34; target=&#34;_blank&#34;&gt;plain bash to zsh&lt;/a&gt; like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: &lt;code&gt;robbyrussell&lt;/code&gt;. But recently I was showing my friend @&lt;a href=&#34;http://crafty-coder.com/&#34; target=&#34;_blank&#34;&gt;craftycoder&lt;/a&gt; the tweaks I have on my system (&lt;a href=&#34;https://github.com/junegunn/fzf&#34; target=&#34;_blank&#34;&gt;fzf&lt;/a&gt;, &lt;a href=&#34;https://github.com/wting/autojump&#34; target=&#34;_blank&#34;&gt;autojump&lt;/a&gt;, etc) and he showed me this theme, &lt;a href=&#34;https://github.com/agnoster/agnoster-zsh-theme&#34; target=&#34;_blank&#34;&gt;agnoster&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -596,7 +607,7 @@ Testing and debugging Apache Airflow We&amp;rsquo;ve been using Airflow for almo
       <pubDate>Sun, 15 Apr 2018 22:11:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</guid>
-      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34;&gt;Bloom
+      <description>&lt;p&gt;A few days go I played a bit with a naive implementation of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bloom_filter&#34; target=&#34;_blank&#34;&gt;Bloom
 filters&lt;/a&gt; in Python. I wanted to time
 them against just checking whether a field is in a set/collection. I found
 something slightly puzzling: it looked like the &lt;code&gt;in&lt;/code&gt; worked &lt;em&gt;too fast&lt;/em&gt; for
@@ -614,7 +625,7 @@ the question: how does &lt;code&gt;in&lt;/code&gt; find stuff &lt;em&gt;in&lt;/e
       <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
-commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34; target=&#34;_blank&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -623,7 +634,7 @@ commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI
       <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/book-review-work-clean.html/</guid>
-      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34; target=&#34;_blank&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -632,10 +643,10 @@ commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
-      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34;&gt;The
+      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34; target=&#34;_blank&#34;&gt;The
 Processing
 Handbook&lt;/a&gt; and
-&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34;&gt;Visualizing
+&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34; target=&#34;_blank&#34;&gt;Visualizing
 Data&lt;/a&gt;
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with &lt;code&gt;processing.js&lt;/code&gt; something around 2011 (there was a
@@ -651,7 +662,7 @@ iPod Touch).&lt;/p&gt;</description>
       <guid>https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/</guid>
       <description>&lt;p&gt;A few months ago I stumbled into the problem of Akka logging, specifically
 ClassNotFoundException when using &lt;code&gt;akka.event.slf4j.Slf4jLoggingFilter&lt;/code&gt;, just by
-following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34;&gt;Logging - SL4J section of Akka
+following the details of the &lt;a href=&#34;https://doc.akka.io/docs/akka/2.5/logging.html&#34; target=&#34;_blank&#34;&gt;Logging - SL4J section of Akka
 documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -661,7 +672,7 @@ documentation&lt;/a&gt;.&lt;/p&gt;</description>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
-      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34; target=&#34;_blank&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -819,9 +830,8 @@ It all started after reading If you can’t choose, pick at random at Aeon.co. I
       
       <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
-⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?
 
-APL is literally A Programming Language.</description>
+⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
     </item>
     
     <item>
@@ -928,7 +938,7 @@ A few months ago I wrote about how I&amp;rsquo;m using vim in my ipad. You know,
       <pubDate>Sun, 09 Sep 2012 21:26:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2012/09/polishing-a-shoe-to-get-a-good-shine.html/</guid>
-      <description>_&amp;lsquo;Of course I don&amp;rsquo;t have to do this,&amp;rsquo; one middle-aged man said, carefully cleaning the table with a damp cloth. He put the cloth in a little pouch, sat down beside him. &amp;lsquo;But look; this table&amp;rsquo;s clean.&amp;rsquo; _   _&amp;lsquo;Usually,&amp;rsquo; the man said. &amp;lsquo;I work on alien - no offence - alien religions; Directional Emphasis In Religious Observance; that&amp;rsquo;s my speciality&amp;hellip; like when temples or graves or __prayers always have to face in a certain direction; that sort of thing?</description>
+      <description>_&amp;lsquo;Of course I don&amp;rsquo;t have to do this,&amp;rsquo; one middle-aged man said, carefully cleaning the table with a damp cloth. He put the cloth in a little pouch, sat down beside him. &amp;lsquo;But look; this table&amp;rsquo;s clean.&amp;lsquo; _ _&amp;lsquo;Usually,&amp;rsquo; the man said. &amp;lsquo;I work on alien - no offence - alien religions; Directional Emphasis In Religious Observance; that&amp;rsquo;s my speciality&amp;hellip; like when temples or graves or _prayers always have to face in a certain direction; that sort of thing?</description>
     </item>
     
     <item>
@@ -971,7 +981,7 @@ I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wa
       
       <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
       <description>Note from 2020: The domain mentioned in the post is no longer active (or mine at least), I cancelled this project some time ago
-Last week I wrote about ~whatlanguageis.com~, my first simple try at creating a Django powered site. How did it came to be?
+Last week I wrote about [~whatlanguageis.com~](), my first simple try at creating a Django powered site. How did it came to be?
 In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web.</description>
     </item>
     
@@ -1203,7 +1213,7 @@ This weeks post in the Iceland road trip series comes a little late: Saturday wa
       
       <guid>https://mostlymaths.net/2011/04/doing-really-nothing.html/</guid>
       <description>Yesterday I did nothing. Absolutely, really nothing.
- And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
+And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
     </item>
     
     <item>
@@ -1300,7 +1310,7 @@ First, I have too many commitments. A few are with myself, others are with my gi
       <pubDate>Wed, 09 Mar 2011 12:30:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2011/03/road-trip-through-iceland-day-3.html/</guid>
-      <description>After visiting the wonders of the Golden Circle, we kept driving eastward getting into the region of waterfalls and glaciers. The day began with 2000 Icelandic krónur of fuel, that for 1/4 of the tank. Expensive, but not as expensive as one may guess, from prices in Spain. It continued with the first sighting of lambs in the middle of the road&amp;hellip; Get used to that, it is very common!</description>
+      <description>After visiting the wonders of the Golden Circle, we kept driving eastward getting into the region of waterfalls and glaciers. The day began with 2000 Icelandic krónur of fuel, that for 1&amp;frasl;4 of the tank. Expensive, but not as expensive as one may guess, from prices in Spain. It continued with the first sighting of lambs in the middle of the road&amp;hellip; Get used to that, it is very common!</description>
     </item>
     
     <item>
@@ -1517,6 +1527,7 @@ For those of you who don&amp;rsquo;t know, Leo Babauta is the creator of Zen Hab
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
 little.&lt;/p&gt;
+
 &lt;figure class=&#34;fig-left&#34;&gt;
     &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
 &lt;/figure&gt;</description>
@@ -1528,7 +1539,7 @@ little.&lt;/p&gt;
       <pubDate>Wed, 17 Nov 2010 00:13:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html/</guid>
-      <description>&lt;p&gt;A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of &lt;a href=&#34;https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;amp;qid=1566751724&amp;amp;s=gateway&amp;amp;sr=8-3&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=7ba78e7bea92ff3a5828022f23de2d47&#34;&gt;Sun Tzu&amp;rsquo;s Art
+      <description>&lt;p&gt;A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of &lt;a href=&#34;https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;amp;qid=1566751724&amp;amp;s=gateway&amp;amp;sr=8-3&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=7ba78e7bea92ff3a5828022f23de2d47&#34; target=&#34;_blank&#34;&gt;Sun Tzu&amp;rsquo;s Art
 of
 War&lt;/a&gt;,
 and this thought collided head on with another old thought I had: &lt;em&gt;could I use
@@ -1599,7 +1610,7 @@ A few weeks ago, Friday, this was what I saw when I looked at my office desktop.
       <description>From Yassin Hassan@Flickr
 Don&amp;rsquo;t forget to subscribe to my oddly newsletter!
  Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
-  Samuel Beckett
+Samuel Beckett
  One may say that to be a winner you have to be disciplined, commited, hard-worker, have a thirst for the win. But what a winner has almost always behind are countless failures, terrible defeats and fatal blunders.
 The topic for this post has been jumping on and off from my mind for a few weeks, and what prompted me to finally write it was a very recent post by Gabriel Weinberg, web entrepeneur and CEO of the alternative search engine DuckDuckGo.</description>
     </item>
@@ -1622,8 +1633,8 @@ The topic for this post has been jumping on and off from my mind for a few weeks
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the sixth (and last) post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
-How Is Iceland&amp;rsquo;s Weather?
-Iceland&amp;rsquo;s Water: the Best Water in the World</description>
+_How Is Iceland&amp;rsquo;s Weather?_
+____Iceland&amp;rsquo;s Water: the Best Water in the World____</description>
     </item>
     
     <item>
@@ -1678,8 +1689,8 @@ Some projects are just tombstones. There are certain huge projects, with hardnes
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the fifth post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
-How Is Iceland&amp;rsquo;s Weather?
-Iceland&amp;rsquo;s Water: the Best Water in the World</description>
+_How Is Iceland&amp;rsquo;s Weather?_
+____Iceland&amp;rsquo;s Water: the Best Water in the World____</description>
     </item>
     
     <item>
@@ -1691,7 +1702,7 @@ Iceland&amp;rsquo;s Water: the Best Water in the World</description>
       <description>As you may remember, Laia and me spent three weeks in Iceland for holidays two months ago. This is the fourth post in the series Things you should read before travelling to Iceland. If you came here directly don&amp;rsquo;t forget to read the previous post in this series
 Eating in Iceland (if you are not an Icelander)
 Road Trip Through Iceland
-How Is Iceland&amp;rsquo;s Weather?
+_How Is Iceland&amp;rsquo;s Weather?_
 If I had to gamble before going to Iceland, I would have thought tap water would be horrible.</description>
     </item>
     
@@ -1881,7 +1892,7 @@ From his own description,
       
       <guid>https://mostlymaths.net/2010/07/94-fundamental-things-you-should-pack.html/</guid>
       <description>Being a copilot in Iceland can be either stressing or boring. It depends if you are going to an almost unmarked farm where you will spend the night or just in the middle of an unending straight road. And in the boredom moments, I decided to compile a list of things we had packed and were really useful. I hope this helps you in your next trip!
-  Fishing line: Fishing line is quite useful for several things.</description>
+ Fishing line: Fishing line is quite useful for several things.</description>
     </item>
     
     <item>
@@ -1921,7 +1932,7 @@ I have a few scheduled posts for this few weeks (I&amp;rsquo;ll be back around 1
       <guid>https://mostlymaths.net/2010/06/origami-a5-booklet-size-paper-inbox.html/</guid>
       <description>[](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s1600/IMG_0193.JPG)[](http://4.bp.blogspot.com/_f3d3llNlZKQ/TBn_lAEoOuI/AAAAAAAACaI/cbTo8mFgkDU/s1600/IMG_0188.JPG)[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s400/IMG_0193.JPG)](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s1600/IMG_0193.JPG)
 One inbox to rule them all Since I started printing everything in A5 booklet format, more and more articles and printed stuff gets scattered over my desk, in this format. Which is really handy for reading and travelling, but not so much for piling over the desk.
-A pile of inner stapled A5 is slightly womb&amp;hellip; when there are more than 5 big documents stacked, it can easily fall. And I had several piles over my desktop: To read someday (better sooner than later), current references (papers I am using more than twice a week or so) and past references (the ones that were in the previous category but have not used in a while).</description>
+A pile of inner stapled A5 is slightly womb&amp;hellip; when there are more than 5 big documents stacked, it can easily fall.</description>
     </item>
     
     <item>
@@ -1963,6 +1974,7 @@ Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been t
 soups in need of crumbs of bread. Or you prepared a nice meal, asking for bread
 to dump in the sauce. And you have no bread at home! Not a single piece of
 bread.&lt;/p&gt;
+
 &lt;p&gt;This is the answer&lt;/p&gt;</description>
     </item>
     
@@ -1993,7 +2005,8 @@ A month later, more or less, I landed in this New York times article: The Data-D
       
       <guid>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
       <description>&lt;p&gt;&lt;em&gt;The file can be downloaded at the end of the post&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;As you may already know, &lt;a href=&#34;http://www.mostlymaths.net/2010/08/things-you-should-read-before.html&#34;&gt;I&amp;rsquo;m travelling to Iceland this
+
+&lt;p&gt;As you may already know, &lt;a href=&#34;http://www.mostlymaths.net/2010/08/things-you-should-read-before.html&#34; target=&#34;_blank&#34;&gt;I&amp;rsquo;m travelling to Iceland this
 July&lt;/a&gt;,
 and started learning Icelandic a few months ago. It advances slowly but firmly,
 but I found a problem:when you are self-learning a new language, an invaluable
@@ -2020,7 +2033,7 @@ A week and a half ago, @nochiel, a twitter follower retweeted the following, ini
       
       <guid>https://mostlymaths.net/2010/05/my-new-camera-canon-powershot-s90.html/</guid>
       <description>New and old
-For around 4/5 years I have been the proud owner of a Canon Ixus 30. A small and versatile pocket digital camera. But I missed a lot being able to tweak some settings, having manual focus, aperture and exposition controls is fantastic. Moreover, it shoots in RAW.
+For around 4&amp;frasl;5 years I have been the proud owner of a Canon Ixus 30. A small and versatile pocket digital camera. But I missed a lot being able to tweak some settings, having manual focus, aperture and exposition controls is fantastic. Moreover, it shoots in RAW.
 Using it is quite easy if you have used a previous Canon model and if you have ever touched a digital reflex.</description>
     </item>
     
@@ -2116,7 +2129,7 @@ As you can see, I used as identifiers XML-like expressions.</description>
       
       <guid>https://mostlymaths.net/2010/04/stop-it-no-more-idle-browser-while.html/</guid>
       <description>Introducing LeechBlock
- You arrive to your office. Quickly check urgent mails, close the mail program and browser and put a nice solid hour, hour and a half, even two straight hours of work. Then decide that you deserve a break, and maybe with a fresh cup of coffee from the coffee machine you decide to browse idly for a few minutes. And then a co-worker knocks at your door and asks if you are coming to lunch.</description>
+You arrive to your office. Quickly check urgent mails, close the mail program and browser and put a nice solid hour, hour and a half, even two straight hours of work. Then decide that you deserve a break, and maybe with a fresh cup of coffee from the coffee machine you decide to browse idly for a few minutes. And then a co-worker knocks at your door and asks if you are coming to lunch.</description>
     </item>
     
     <item>
@@ -2157,7 +2170,7 @@ After my first successful port (gnugo), I decided to try something else, and whi
       
       <guid>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
       <description>As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
-  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
+ You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
     </item>
     
     <item>
@@ -2208,7 +2221,7 @@ Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, j
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -2388,7 +2401,7 @@ But what&amp;rsquo;s the use of emacs, without files to edit? It didn&amp;rsquo;
       
       <guid>https://mostlymaths.net/2009/12/gluten-free-dark-brown-cane-sugar.html/</guid>
       <description>Although this looks like a all-free / no taste cake, it is wonderful. And of course, at it is gluten, dairy and egg free, almost everyone can eat it. What you will need:
- 1 measure soy yogurt 1 measure dark brown sugar (we used Tate&amp;amp;Lyle Dark Brown Sugar) 1 measure gluten-free flour 1/4 measure oil 1 teaspoon baking powder  Here measure depends on how much iogurt do you have.</description>
+ 1 measure soy yogurt 1 measure dark brown sugar (we used Tate&amp;amp;Lyle Dark Brown Sugar) 1 measure gluten-free flour 1&amp;frasl;4 measure oil 1 teaspoon baking powder  Here measure depends on how much iogurt do you have.</description>
     </item>
     
     <item>
@@ -2425,7 +2438,7 @@ Mutlu Noeller!</description>
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -2457,11 +2470,7 @@ Turns out (wikipedia link) it is a standard folklore image, dating back to the s
       <description>Maybe the best coffee time cookies?
 Picture courtesy of Shanidar
 Snickerdoodles are probably the best coffee time cookies I have eaten, and also one of the simplest cookie recipes to do. What you&amp;rsquo;ll need:
-  125 gr butter
-  110 gr sugar (+ 1 big spoon later)
-  1 egg, lightly beaten
-  1 teaspoon vanilla extract (or change some sugar for vanillated sugar)
-  250 gr flour</description>
+ 125 gr butter 110 gr sugar (+ 1 big spoon later) 1 egg, lightly beaten 1 teaspoon vanilla extract (or change some sugar for vanillated sugar) 250 gr flour 1&amp;frasl;2 teaspoon nutmeg 3&amp;frasl;4 teaspoon baking powder 1 teaspoon cinnamon</description>
     </item>
     
     <item>
@@ -2505,7 +2514,7 @@ Here is what you will need:
       
       <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
- KISS - know=&amp;quot;you cry&amp;rdquo;;know++=&amp;quot;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
     </item>
     
@@ -2534,7 +2543,7 @@ I guess you may already know I love the emacs text editor, and use it as often a
       <pubDate>Fri, 13 Nov 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/11/matjessalat-recipe.html/</guid>
-      <description>2 or 3 fillets of marinated herring with onion (typical scandinavian) 3 marinated cucumber, polish (sweet) style 1 Golden (yellow and somewhat sweet, not acid) apple 3 boiled potatos, diced 1 1/2 cups mayonnaise Optional: a little mustard  Slice finely the cucumber, cut the apple in dices and the fillets in small pieces. Mix the mustard, mayonnaise, a little vinegar from the herring and then add the fish, mix well.</description>
+      <description>2 or 3 fillets of marinated herring with onion (typical scandinavian) 3 marinated cucumber, polish (sweet) style 1 Golden (yellow and somewhat sweet, not acid) apple 3 boiled potatos, diced 1 1&amp;frasl;2 cups mayonnaise Optional: a little mustard  Slice finely the cucumber, cut the apple in dices and the fillets in small pieces. Mix the mustard, mayonnaise, a little vinegar from the herring and then add the fish, mix well.</description>
     </item>
     
     <item>
@@ -2555,15 +2564,13 @@ From my point of view, there are fundamentally two different kinds of copy:</des
       
       <guid>https://mostlymaths.net/2009/11/lime-pie-recipe.html/</guid>
       <description>Does not like like that, but tastes great!
-  2 ripe avocados
-  1/2 cup coconut milk
-  2 tablespoons vanilla (or vanillated sugar)
-  3/4 cup agave syrup (or sugar syrup)
-  1/2 cup lime juice
-  1/8 tablespoon salt
-  3/4 cup coconut butter (or coconut oil)
-  pie crust (below a recipe for it)
-  Mix all the ingredients (except the pie crust) in a blender.</description>
+ 2 ripe avocados 1&amp;frasl;2 cup coconut milk 2 tablespoons vanilla (or vanillated sugar) 3&amp;frasl;4 cup agave syrup (or sugar syrup)
+ 1&amp;frasl;2 cup lime juice
+ 1&amp;frasl;8 tablespoon salt
+ 3&amp;frasl;4 cup coconut butter (or coconut oil)
+ pie crust (below a recipe for it)
+  Mix all the ingredients (except the pie crust) in a blender.
+ 180 gr plain cookies 200 gr butter  Melt the butter and crush finely the cookies.</description>
     </item>
     
     <item>
@@ -2597,8 +2604,7 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
       <guid>https://mostlymaths.net/2009/11/future-in-mathematics.html/</guid>
       <description>With Sketchbook Mobile
 The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo; or even &amp;ldquo;location&amp;rdquo; are quite fuzzy when in Mathematics. I think I don&amp;rsquo;t know any PhD student who knows what he will be doing in 3 years, what he will be working on (not what he will be researching, but working&amp;hellip;) or even where he will be.
-  1-2 years of Master+Master thesis
-  2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
+ 1-2 years of Master+Master thesis 2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
     </item>
     
     <item>
@@ -2618,7 +2624,7 @@ ParseList(ScrambleList(Relateds(Maths)),5)</description>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
-      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;quot;.
+      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
@@ -2729,7 +2735,7 @@ I am supposed to present a poster in a conference, about some work I am doing. I
       
       <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
-  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details.</description>
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac.</description>
     </item>
     
     <item>
@@ -2824,7 +2830,8 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <description>These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here.</description>
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13</description>
     </item>
     
     <item>
@@ -2854,7 +2861,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <pubDate>Mon, 03 Aug 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/08/old-books-scent.html/</guid>
-      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;lsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
+      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;rsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
     </item>
     
     <item>
@@ -3004,7 +3011,7 @@ I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesi
       <pubDate>Fri, 05 Jun 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/06/light-reft.html/</guid>
-      <description>Around 1/2lf of the moments in which I look at my headphones to put them in, I pick them &amp;ldquo;switched&amp;rdquo;, i.e. I have (L)eft, I see an L and my head says (L)ight, then I see the other one, and it is (R)eft. Today I found out (R)eft is the past participle of reave, which means more or less &amp;ldquo;to rob&amp;rdquo;. But usually, in the presence of (R)ight there is nothing (L)eft.</description>
+      <description>Around 1/2lf of the moments in which I look at my headphones to put them in, I pick them &amp;ldquo;switched&amp;rdquo;, i.e. I have (L)eft, I see an L and my head says (L)ight, then I see the other one, and it is &amp;reg;eft. Today I found out &amp;reg;eft is the past participle of reave, which means more or less &amp;ldquo;to rob&amp;rdquo;. But usually, in the presence of &amp;reg;ight there is nothing (L)eft.</description>
     </item>
     
     <item>
@@ -3066,9 +3073,7 @@ It will look like this when finished, closed and opened.</description>
       
       <guid>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</guid>
       <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
-  Caffeine: Keep your Mac from sleeping.
-  Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out!
-  Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
+ Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
     </item>
     
     <item>
@@ -3086,7 +3091,7 @@ It will look like this when finished, closed and opened.</description>
       <pubDate>Thu, 07 May 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/05/how-to-do-easy-origami-cd-case.html/</guid>
-      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;lsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
+      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;rsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
     </item>
     
     <item>
@@ -3121,11 +3126,9 @@ I play the MacOs Tiles (or QT) version, which can be found in Nethack.org, confi
       <description>Pasteli
 The Greek home-made energy bar
 Ingredients (yields around 500 gr, can be scaled down or up):
-  250 gr honey
-  250 gr sesame seed, shredded pistachios and almond (I used: 50 gr shredded pistachios, 70 gr shredded almond and125 gr sesame seed)
-  Peel of half a lemon (optional)
-  Cinnamon (optional)
-  Some place to put it all on (A mould with parchment paper is perfect)</description>
+ 250 gr honey 250 gr sesame seed, shredded pistachios and almond (I used: 50 gr shredded pistachios, 70 gr shredded almond and125 gr sesame seed) Peel of half a lemon (optional)
+ Cinnamon (optional)
+ Some place to put it all on (A mould with parchment paper is perfect)</description>
     </item>
     
     <item>
@@ -3135,7 +3138,7 @@ Ingredients (yields around 500 gr, can be scaled down or up):
       
       <guid>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
-Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
+   Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
     
     <item>
@@ -3220,11 +3223,11 @@ Clean more often!</description>
       <pubDate>Sat, 27 Sep 2008 17:12:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2008/09/social-bookmarking-in-blogger.html/</guid>
-      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;lsquo;s approach is the best.
+      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;rsquo;s approach is the best.
 
 This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.
 To add this code to your blogger blog:
-  Go to layout settings, and select edit HTML</description>
+ Go to layout settings, and select edit HTML Select &amp;lsquo;Expand widgets&amp;rsquo; Search in the text box for the string:</description>
     </item>
     
     <item>
@@ -3246,10 +3249,8 @@ When printing in MacOSX you can print booklets, but they are supposed to be cut,
       <description>This is a recipe my grandfather used to make for me (and my cousins) when I was a child. Hopeyou like it as much as I liked it, and enjoy making fun figures and then eating them.
 
 What you will need
-  3 eggs,
-  3 tablespoons of olive oil,
-  3 tablespoons of sugar,
-  grated lemon skin (clean it before grating), or something to add flavour,</description>
+ 3 eggs, 3 tablespoons of olive oil, 3 tablespoons of sugar, grated lemon skin (clean it before grating), or something to add flavour,
+ 1 tablespoon baking powder,</description>
     </item>
     
     <item>
@@ -3277,7 +3278,7 @@ This made me think of a former article I read there, talking about student-advis
       <pubDate>Tue, 18 Mar 2008 14:53:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/03/origami-masks.html/</guid>
-      <description>Browsing old posts in Origami Tessellations, I found out about Joel Cooper&amp;lsquo;s origami masks. Here are a few examples taken from these two web pages.
+      <description>Browsing old posts in Origami Tessellations, I found out about Joel Cooper&amp;rsquo;s origami masks. Here are a few examples taken from these two web pages.
  
 They are really amazing&amp;hellip; I hope I can learn how to do that. I&amp;rsquo;ll have to start learning something about origami tessellations, which is a thing I&amp;rsquo;ve always skipped.</description>
     </item>
@@ -3318,7 +3319,7 @@ so late into the night</description>
       <pubDate>Wed, 27 Feb 2008 15:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/02/satoshis-pegasus.html/</guid>
-      <description>Kamiya Satoshi&amp;lsquo;s Pegasus, folded from a square from A4 standard paper (21x21 cm square). The model is about 8 cm long. Satoshi suggests 25x25 paper, which obviously must be thinner than 80g/m^2. But the model itself is wonderful, although my rendition of may not be worth of it.
+      <description>Kamiya Satoshi&amp;rsquo;s Pegasus, folded from a square from A4 standard paper (21x21 cm square). The model is about 8 cm long. Satoshi suggests 25x25 paper, which obviously must be thinner than 80g/m^2. But the model itself is wonderful, although my rendition of may not be worth of it.
 PS: Shame on me, for not rendering the head as it must be done (à la Dave Brill&amp;rsquo;s horse). Well, next time, with bigger paper :)</description>
     </item>
     

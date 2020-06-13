@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maths on mostlymaths.net</title>
@@ -6,10 +6,28 @@
     <description>Recent content in Maths on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2020 10:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 12:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020#47 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</link>
+      <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Another hard push at reducing my reading list. At the current pace I may not write many more of these posts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2020#47 Readings of the Week</title>
+      <link>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</link>
+      <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</guid>
+      <description>&lt;p&gt;Another hard push at reducing my reading list. At the current pace I may not write many more of these posts.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2020#46 Readings of the Week</title>
@@ -100,7 +118,8 @@ edition. Sorry!&lt;/p&gt;</description>
       
       <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
-&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+
+&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,7 +128,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
-      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,7 +137,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,8 +146,9 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
-      <description>&lt;p&gt;_This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. _&lt;/p&gt;
-&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34; target=&#34;_blank&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -137,7 +157,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 10 Jun 2019 21:18:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Wardley mapping, data engineering and big data, maths. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -146,7 +166,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -164,7 +184,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 17 Feb 2019 18:54:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-6-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, adtech, psychology, python. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -173,7 +193,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 10 Feb 2019 22:38:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-5-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, psychology, formal systems. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -182,7 +202,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 05 Feb 2019 22:56:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/2019-4-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Sorry for the delay, Sunday was my birthday (also, &lt;a href=&#34;https://en.wikipedia.org/wiki/Elmo&#34; target=&#34;_blank&#34;&gt;Elmo’s&lt;/a&gt;, and &lt;a href=&#34;https://www.amazon.com/American-Pie-LP-Don-McLean/dp/B01D0AKZJC/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=0d1c561dac803bc28d1f40bfa58c7841&#34; target=&#34;_blank&#34;&gt;The Day The Music Died&lt;/a&gt; as well) and I spent the day without access to a computer.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -191,7 +211,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-2-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, languages, writing. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -200,7 +220,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
-      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34; target=&#34;_blank&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34; target=&#34;_blank&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -218,10 +238,10 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Fri, 02 Mar 2018 17:40:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/processing-and-scala.html/</guid>
-      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34;&gt;The
+      <description>&lt;p&gt;I had always wanted to play with Processing (after leafing through &lt;a href=&#34;https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;amp;qid=1520004355&amp;amp;sr=8-1&amp;amp;keywords=processing+handbook&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=08457cedf1bdf882589a65f2a56c181b&#34; target=&#34;_blank&#34;&gt;The
 Processing
 Handbook&lt;/a&gt; and
-&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34;&gt;Visualizing
+&lt;a href=&#34;https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c&#34; target=&#34;_blank&#34;&gt;Visualizing
 Data&lt;/a&gt;
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with &lt;code&gt;processing.js&lt;/code&gt; something around 2011 (there was a
@@ -235,7 +255,7 @@ iPod Touch).&lt;/p&gt;</description>
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/02/scala-exchange-2017.html/</guid>
-      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Almost two months ago (time sure flies) I attended for the second time the conference &lt;a href=&#34;https://skillsmatter.com/conferences/8784-scala-exchange-2017&#34; target=&#34;_blank&#34;&gt;Scala eXchange&lt;/a&gt;, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,9 +303,8 @@ Work February-December Started working as a consultant in London, almost the day
       
       <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
-⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?
 
-APL is literally A Programming Language.</description>
+⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
     </item>
     
     <item>
@@ -541,8 +560,7 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
       <guid>https://mostlymaths.net/2009/11/future-in-mathematics.html/</guid>
       <description>With Sketchbook Mobile
 The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo; or even &amp;ldquo;location&amp;rdquo; are quite fuzzy when in Mathematics. I think I don&amp;rsquo;t know any PhD student who knows what he will be doing in 3 years, what he will be working on (not what he will be researching, but working&amp;hellip;) or even where he will be.
-  1-2 years of Master+Master thesis
-  2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
+ 1-2 years of Master+Master thesis 2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
     </item>
     
     <item>
@@ -562,7 +580,7 @@ ParseList(ScrambleList(Relateds(Maths)),5)</description>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
-      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;quot;.
+      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
@@ -688,7 +706,8 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <description>These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here.</description>
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13</description>
     </item>
     
     <item>
@@ -796,7 +815,7 @@ I guess life (or at least a mathematician&amp;rsquo;s life while doing his thesi
       
       <guid>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
-Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
+   Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | CJuicer beats humans (and Unix&#39;s diff)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,6 +41,8 @@
 <meta property="article:modified_time" content="2010-02-21T19:05:00+01:00" />
 <meta itemprop="name" content="CJuicer beats humans (and Unix&#39;s diff)">
 <meta itemprop="description" content="Maybe you remember my previous post about detection of copied assignments? Well, now I can say it succeeded. CJuicer is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &ldquo;logical tree&rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.">
+
+
 <meta itemprop="datePublished" content="2010-02-21T19:05:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-02-21T19:05:00&#43;01:00" />
 <meta itemprop="wordCount" content="380">
@@ -48,6 +50,7 @@
 
 
 <meta itemprop="keywords" content="Programming,Thoughts,Maths,Bizarre," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -136,29 +139,42 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Maybe you remember my <a href="http://berenguel.blogspot.com/2009/11/copied-programming-assignments-as.html">previous post about detection of copied assignments</a>? Well, now I can say it succeeded. <a href="http://code.google.com/p/rberenguel/">CJuicer</a> is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &ldquo;logical tree&rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Maybe you remember my <a href="http://berenguel.blogspot.com/2009/11/copied-programming-assignments-as.html" target="_blank">previous post about detection of copied assignments</a>? Well, now I can say it succeeded. <a href="http://code.google.com/p/rberenguel/" target="_blank">CJuicer</a> is a flex script, generating a lexycal analyzer with a rudimentary parser of C code, it outputs a PostScript with the &ldquo;logical tree&rdquo; of loops, function calls and conditionals. Same trees, copied assignment (unless it is simple code, then almost everyone writes the same), without problems with changing names of variables. Thus it could beat diff.</p>
+
 <p>After revising a lot of images (well, 34) I detected 5 copies, one literal (i.e. diff-detectable) but 2 were harder, as they had changed variable names, in an otherwise identical code.</p>
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S37dTCeAkGI/AAAAAAAAB3k/FOyYF2NWspU/s1600-h/Taylor2.jpg"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S37dTCeAkGI/AAAAAAAAB3k/FOyYF2NWspU/s400/Taylor2.jpg" alt=""></a> <a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S37dSt1gtwI/AAAAAAAAB3c/ZwwrrQROv1Y/s1600-h/Taylor1.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S37dSt1gtwI/AAAAAAAAB3c/ZwwrrQROv1Y/s400/Taylor1.jpg" alt=""></a></p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S37dTCeAkGI/AAAAAAAAB3k/FOyYF2NWspU/s1600-h/Taylor2.jpg" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S37dTCeAkGI/AAAAAAAAB3k/FOyYF2NWspU/s400/Taylor2.jpg" alt="" /></a> <a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S37dSt1gtwI/AAAAAAAAB3c/ZwwrrQROv1Y/s1600-h/Taylor1.jpg" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S37dSt1gtwI/AAAAAAAAB3c/ZwwrrQROv1Y/s400/Taylor1.jpg" alt="" /></a></p>
+
 <p>Click to enlarge</p>
+
 <p>Graphs looked equal, and after examining the code, it was clear.</p>
+
 <p>Student A</p>
-<p>int i,j;<br>
-double *xt,*yt, *hpaso, *s, *c;<br>
-hpaso=vector(4);<br>
-s=vector(ordre);<br>
+
+<p>int i,j;<br />
+double *xt,*yt, *hpaso, *s, *c;<br />
+hpaso=vector(4);<br />
+s=vector(ordre);<br />
 c=vector(ordre);</p>
+
 <p>Student B</p>
-<p>int i,j;<br>
-double *xt,*yt, *hmi, *s, *c;<br>
-hmi=(double*)calloc(4,sizeof(double));<br>
-s=(double*)calloc(ordre,sizeof(double));<br>
+
+<p>int i,j;<br />
+double *xt,*yt, *hmi, *s, *c;<br />
+hmi=(double*)calloc(4,sizeof(double));<br />
+s=(double*)calloc(ordre,sizeof(double));<br />
 c=(double*)calloc(ordre,sizeof(double));</p>
+
 <p>One was using a taylored function to allocate memory (something I always frown upon), and the other one was using the usual malloc/calloc. Besides this, different comments (in a quite broad sense&hellip; they looked very similar) and slightly different variable names kill diff, but they don&rsquo;t fool the graphical analyzer.</p>
+
 <p>For easier inspection I modified the Juicer code to output a string of numbers together with the ps. It is easier this way, more like what I was doing when comparing the trees: instead of looking for 3 bumps at the start, I can look for 343434. Easier.</p>
-<p>Student A: 7 7 7 7 7 7 7 7 7 7 57 67 7 11227 7 7 7 7 7 7 7 7 7 7 7 157 7 6257 657 61212567 7 7 7 7<br>
+
+<p>Student A: 7 7 7 7 7 7 7 7 7 7 57 67 7 11227 7 7 7 7 7 7 7 7 7 7 7 157 7 6257 657 61212567 7 7 7 7<br />
 Student B: 7 7 7 7 7 7 7 7 7 7 57 67 7 11227 7 7 7 7 7 7 7 7 7 7 7 157 7 6257 657 61212567 7 7 7 7</p>
-<p>If you would like to use it, or have a look, check my <a href="http://code.google.com/p/rberenguel/">Google code page</a>, you can find the source in the CJuicer link. Keep in mind, if you use it to check for copies, <em>be sure to use exactly the same revision</em>: different revisions may give different results. I&rsquo;m still solving some problems and bugs. Keep in touch!</p>
-<p>You may also like<br>
+
+<p>If you would like to use it, or have a look, check my <a href="http://code.google.com/p/rberenguel/" target="_blank">Google code page</a>, you can find the source in the CJuicer link. Keep in mind, if you use it to check for copies, <em>be sure to use exactly the same revision</em>: different revisions may give different results. I&rsquo;m still solving some problems and bugs. Keep in touch!</p>
+
+<p>You may also like<br />
 ParseList(ScrambleList(Relateds(Programming, Maths)),10)</p>
 <hr/><ul class="pa0">
   

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on mostlymaths.net</title>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 18 Apr 2019 11:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, psychology, generative art. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
-      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34; target=&#34;_blank&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34; target=&#34;_blank&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,9 +75,8 @@ I started with the usual 1+1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected
       
       <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
-⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?
 
-APL is literally A Programming Language.</description>
+⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
     </item>
     
     <item>
@@ -156,7 +155,7 @@ I&amp;rsquo;ve always been fascinated by juggling, and every time I wanted to ea
       
       <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
       <description>Note from 2020: The domain mentioned in the post is no longer active (or mine at least), I cancelled this project some time ago
-Last week I wrote about ~whatlanguageis.com~, my first simple try at creating a Django powered site. How did it came to be?
+Last week I wrote about [~whatlanguageis.com~](), my first simple try at creating a Django powered site. How did it came to be?
 In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web.</description>
     </item>
     
@@ -280,7 +279,8 @@ Several complex dynamic ideas: Unrelated to my thesis, but I&amp;rsquo;ve been t
       
       <guid>https://mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html/</guid>
       <description>&lt;p&gt;&lt;em&gt;The file can be downloaded at the end of the post&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;As you may already know, &lt;a href=&#34;http://www.mostlymaths.net/2010/08/things-you-should-read-before.html&#34;&gt;I&amp;rsquo;m travelling to Iceland this
+
+&lt;p&gt;As you may already know, &lt;a href=&#34;http://www.mostlymaths.net/2010/08/things-you-should-read-before.html&#34; target=&#34;_blank&#34;&gt;I&amp;rsquo;m travelling to Iceland this
 July&lt;/a&gt;,
 and started learning Icelandic a few months ago. It advances slowly but firmly,
 but I found a problem:when you are self-learning a new language, an invaluable
@@ -337,7 +337,7 @@ After my first successful port (gnugo), I decided to try something else, and whi
       
       <guid>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
       <description>As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
-  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
+ You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
     </item>
     
     <item>
@@ -366,7 +366,7 @@ Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, j
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -467,7 +467,7 @@ Mutlu Noeller!</description>
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -509,7 +509,7 @@ It is something like an execution tree, with function calls squared, and differe
       
       <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
- KISS - know=&amp;quot;you cry&amp;rdquo;;know++=&amp;quot;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
     </item>
     
@@ -584,7 +584,7 @@ Source code:
       
       <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
-  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details.</description>
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac.</description>
     </item>
     
     <item>
@@ -606,7 +606,8 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
       <description>These days I&amp;rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&amp;rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here.</description>
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13</description>
     </item>
     
     <item>
@@ -674,9 +675,7 @@ If you liked it, or have whatever else to say please leave a comment, digg, stum
       
       <guid>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</guid>
       <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
-  Caffeine: Keep your Mac from sleeping.
-  Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out!
-  Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
+ Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
     </item>
     
     <item>

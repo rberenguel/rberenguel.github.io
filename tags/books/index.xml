@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on mostlymaths.net</title>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/03/2019-8-readings-of-week.html/</guid>
-      <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This edition has Software engineering, formal methods, fraud, Scala. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/book-review-work-clean.html/</guid>
-      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34; target=&#34;_blank&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,6 +97,7 @@ The syntax highlighted TeX code comes from the htmlize package in emacs, to keep
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
 little.&lt;/p&gt;
+
 &lt;figure class=&#34;fig-left&#34;&gt;
     &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
 &lt;/figure&gt;</description>
@@ -108,7 +109,7 @@ little.&lt;/p&gt;
       <pubDate>Wed, 17 Nov 2010 00:13:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html/</guid>
-      <description>&lt;p&gt;A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of &lt;a href=&#34;https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;amp;qid=1566751724&amp;amp;s=gateway&amp;amp;sr=8-3&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=7ba78e7bea92ff3a5828022f23de2d47&#34;&gt;Sun Tzu&amp;rsquo;s Art
+      <description>&lt;p&gt;A few weeks ago I realised that I didn&amp;rsquo;t have a printed copy of &lt;a href=&#34;https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;amp;qid=1566751724&amp;amp;s=gateway&amp;amp;sr=8-3&amp;amp;linkCode=ll1&amp;amp;tag=rbersblog-20&amp;amp;linkId=7ba78e7bea92ff3a5828022f23de2d47&#34; target=&#34;_blank&#34;&gt;Sun Tzu&amp;rsquo;s Art
 of
 War&lt;/a&gt;,
 and this thought collided head on with another old thought I had: &lt;em&gt;could I use
@@ -181,7 +182,7 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
       <pubDate>Mon, 03 Aug 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/08/old-books-scent.html/</guid>
-      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;lsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
+      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;rsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
     </item>
     
     <item>
@@ -191,7 +192,7 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
       
       <guid>https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/</guid>
       <description>Softcover binding your own books is easier than you think
-Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
+   Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&amp;rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.</description>
     </item>
     
     <item>

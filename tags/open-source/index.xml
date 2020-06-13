@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open source on mostlymaths.net</title>
@@ -37,7 +37,7 @@ up from them: templating without base repositories.&lt;/p&gt;</description>
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34; target=&#34;_blank&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34; target=&#34;_blank&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ up from them: templating without base repositories.&lt;/p&gt;</description>
       <description>&lt;p&gt;I ran into this problem with &lt;code&gt;sbt&lt;/code&gt; dependency resolution around 7 weeks ago. I
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
-commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
+commit to the heavens and &lt;a href=&#34;https://circleci.com/&#34; target=&#34;_blank&#34;&gt;CircleCI&lt;/a&gt; was happy.&lt;/p&gt;</description>
     </item>
     
   </channel>

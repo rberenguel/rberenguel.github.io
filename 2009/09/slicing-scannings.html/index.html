@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Slicing scannings</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,6 +43,8 @@ And this doesn&rsquo;t work well with my way to print booklets, so a working sol
 <meta itemprop="name" content="Slicing scannings">
 <meta itemprop="description" content="Last year our department got a nice and shiny Xerox WorkCentre, with scan&#43;mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&hellip; of course, the machine scans two pages each time, and thus creates a double bound PDF.
 And this doesn&rsquo;t work well with my way to print booklets, so a working solution was to use ghostscript and ImageMagick from the command line.">
+
+
 <meta itemprop="datePublished" content="2009-09-11T01:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-09-11T01:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="427">
@@ -50,6 +52,7 @@ And this doesn&rsquo;t work well with my way to print booklets, so a working sol
 
 
 <meta itemprop="keywords" content="Linux,How-to,Maths,Books," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,46 +142,63 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last year our department got a nice and shiny <a href="http://www.office.xerox.com/multifunction-printer/multifunction-over-30ppm/workcentre-5665-5675-5687/enus.html">Xerox WorkCentre</a>, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&hellip; of course, the machine scans two pages each time, and thus creates a double bound <a href="http://en.wikipedia.org/wiki/Pdf">PDF</a>.</p>
-<p>And this doesn&rsquo;t work well with <a href="http://berenguel.blogspot.com/2008/09/latex-booklets.html">my way to print booklets</a>, so a working solution was to use <a href="http://en.wikipedia.org/wiki/Ghostscript">ghostscript</a> and <a href="http://en.wikipedia.org/wiki/Imagemagick">ImageMagick</a> from the command line. Automation at its finest.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last year our department got a nice and shiny <a href="http://www.office.xerox.com/multifunction-printer/multifunction-over-30ppm/workcentre-5665-5675-5687/enus.html" target="_blank">Xerox WorkCentre</a>, with scan+mail capabilities. Wonders of technology, now I can scan those chapters I use from books that weigth tons. But&hellip; of course, the machine scans two pages each time, and thus creates a double bound <a href="http://en.wikipedia.org/wiki/Pdf" target="_blank">PDF</a>.</p>
+
+<p>And this doesn&rsquo;t work well with <a href="http://berenguel.blogspot.com/2008/09/latex-booklets.html" target="_blank">my way to print booklets</a>, so a working solution was to use <a href="http://en.wikipedia.org/wiki/Ghostscript" target="_blank">ghostscript</a> and <a href="http://en.wikipedia.org/wiki/Imagemagick" target="_blank">ImageMagick</a> from the command line. Automation at its finest.</p>
+
 <p>First, scan whatever you have to scan. In my case, I had it reversed, and had a &ldquo;black scan line&rdquo; on the left side. Then:</p>
+
 <blockquote>
 <p>gs -sDEVICE=jpeg -q -dBATCH -dNOPAUSE -r300x300 -sOutputFile=Page%03d.jpg -dFirstPage=1 PdfFile.pdf</p>
 </blockquote>
+
 <p>This will split your PDF file into individual pages, and save them as jpg. The following step may be skipped, as I had them rotated&hellip; you may not.</p>
+
 <blockquote>
 <p>mogrify -rotate 180 Page*.jpg</p>
 </blockquote>
+
 <p>Now we want to get rid of that black rectangle on the right of every page. As this command cuts right sides, and I don&rsquo;t bother reading again ImageMagick&rsquo;s manual, if your black scan zone is on the other side, rotate as in the previous step, cut, and rotate back ;) Observe that mogrify needs its parameters before the file to process.</p>
+
 <blockquote>
 <p>mogrify -gravity East -chop 150x0 Page%d.jpg</p>
 </blockquote>
+
 <p>I suggest you try first on an individual page (with convert , not mogrify), and change the 150 pixels to be chopped as you see fit:</p>
+
 <blockquote>
 <p>convert Page%d.jpg -gravity East -chop 150x0 Test.jpg</p>
 </blockquote>
+
 <p>Now, look at the image dimensions, either by right-clicking and viewing image properties, or opening in some image editor (as GIMP) divide by two the width and round up. This is the cropping size.</p>
+
 <blockquote>
 <p>mogrify -crop CroppingSize Page*.jpg</p>
 </blockquote>
+
 <p>This will generate pair of files named PageN-0.jpg and PageN-1.jpg (if everything worked correctly). Now, delete your PageN.jpg, from the previous step, as you are ready to convert all PageN-M.jpg into PDF files.</p>
+
 <blockquote>
 <p>mogrify -format pdf -page A4 Page*.jpg</p>
 </blockquote>
+
 <p>To end this procedure mix them all in a (big!) pdf file</p>
+
 <blockquote>
 <p>gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf Page*.pdf</p>
 </blockquote>
-<p>Now you are ready to follow the steps <a href="http://berenguel.blogspot.com/2008/09/latex-booklets.html">here</a> to turn it into a booklet. Hope you found this useful!</p>
-<p>Related posts:<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html">Linux is a time killer</a> (follow-up – <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">Ditching Ubuntu: Arch Linux in my Acer Aspire One</a>)<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html">Power to the command line</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html">Two weeks, still loving Fluxbox</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html">Three dee (3-dimensional file system browsers review)</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a><br>
+
+<p>Now you are ready to follow the steps <a href="http://berenguel.blogspot.com/2008/09/latex-booklets.html" target="_blank">here</a> to turn it into a booklet. Hope you found this useful!</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html" target="_blank">Linux is a time killer</a> (follow-up – <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">Ditching Ubuntu: Arch Linux in my Acer Aspire One</a>)<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html" target="_blank">Power to the command line</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html" target="_blank">Two weeks, still loving Fluxbox</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html" target="_blank">Three dee (3-dimensional file system browsers review)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html" target="_blank">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a><br />
 ParseList(ScrambleList(Relateds(Maths,Programming,Linux)),5)</p>
 <hr/><ul class="pa0">
   

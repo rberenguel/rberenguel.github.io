@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on mostlymaths.net</title>
@@ -78,7 +78,7 @@ When do you have your best ideas? If you are anything like me, I have my best id
       
       <guid>https://mostlymaths.net/2011/04/doing-really-nothing.html/</guid>
       <description>Yesterday I did nothing. Absolutely, really nothing.
- And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
+And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
     </item>
     
     <item>
@@ -132,7 +132,7 @@ But you plug your earphones, turn up the volume just until you can&amp;rsquo;t h
       <description>From Yassin Hassan@Flickr
 Don&amp;rsquo;t forget to subscribe to my oddly newsletter!
  Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
-  Samuel Beckett
+Samuel Beckett
  One may say that to be a winner you have to be disciplined, commited, hard-worker, have a thirst for the win. But what a winner has almost always behind are countless failures, terrible defeats and fatal blunders.
 The topic for this post has been jumping on and off from my mind for a few weeks, and what prompted me to finally write it was a very recent post by Gabriel Weinberg, web entrepeneur and CEO of the alternative search engine DuckDuckGo.</description>
     </item>
@@ -234,7 +234,7 @@ A month later, more or less, I landed in this New York times article: The Data-D
       
       <guid>https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/</guid>
       <description>As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
-  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
+ You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.</description>
     </item>
     
     <item>
@@ -254,7 +254,7 @@ Or a more usual situation. If some litter gets accumulated in a sidewalk or a lo
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -338,8 +338,7 @@ From my point of view, there are fundamentally two different kinds of copy:</des
       <guid>https://mostlymaths.net/2009/11/future-in-mathematics.html/</guid>
       <description>With Sketchbook Mobile
 The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo; or even &amp;ldquo;location&amp;rdquo; are quite fuzzy when in Mathematics. I think I don&amp;rsquo;t know any PhD student who knows what he will be doing in 3 years, what he will be working on (not what he will be researching, but working&amp;hellip;) or even where he will be.
-  1-2 years of Master+Master thesis
-  2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
+ 1-2 years of Master+Master thesis 2-6 years of PhD thesis (3-4 years PhD grant+maybe some associated professor, 1-4 years)</description>
     </item>
     
     <item>
@@ -348,7 +347,7 @@ The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
-      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;quot;.
+      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     

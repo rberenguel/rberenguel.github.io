@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Gcal the ultra-powerful command line GNU calendar</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,6 +43,8 @@ The tutorial is quite good, but somewhat long, and lacks a few specific examples
 <meta itemprop="name" content="Gcal the ultra-powerful command line GNU calendar">
 <meta itemprop="description" content="The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
 The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.">
+
+
 <meta itemprop="datePublished" content="2010-04-15T16:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-15T16:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="1244">
@@ -50,6 +52,7 @@ The tutorial is quite good, but somewhat long, and lacks a few specific examples
 
 
 <meta itemprop="keywords" content="Linux,Command Line,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,87 +142,127 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>The <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Ben NanoNote</a> has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&rsquo;t know what Gcal was, and the <a href="http://en.qi-hardware.com/wiki/Ben_NanoNote_TimeZone_Date_and_Calendar_HOWTO#Installing_the_gcal_program">Qi hardware wiki page on Gcal</a> pointed me to this quite nice tutorial: <a href="http://www.basicallytech.com/blog/index.php?/archives/97-The-many-uses-of-gcal.html">The many uses of Gcal</a>.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>The <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Ben NanoNote</a> has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&rsquo;t know what Gcal was, and the <a href="http://en.qi-hardware.com/wiki/Ben_NanoNote_TimeZone_Date_and_Calendar_HOWTO#Installing_the_gcal_program" target="_blank">Qi hardware wiki page on Gcal</a> pointed me to this quite nice tutorial: <a href="http://www.basicallytech.com/blog/index.php?/archives/97-The-many-uses-of-gcal.html" target="_blank">The many uses of Gcal</a>.</p>
+
 <p>The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.</p>
+
 <p>Dear reader, if you find anything confusing, want a longer explanation or information about some command not explained here, feel free to post the question as a comment below, this will help everyone reading this.</p>
+
 <p>What can you use Gcal for? Gcal can be used for a lot of calendar related questions. A zillion calendar options (did you wonder what the old armenic months are?), more than you probably know about. Of course, if you are not a calendar freak, this is not the main selling point. Gcal works (and is intended to) as a diary, and appointment planner. It can also be used to determine sunset or sunshine in your local coordinates, and if you are an amateur astronomer, it can give you the twilight times. The same holds for data for the Moon, it can give you the moon phase, for instance.</p>
+
 <p>Hey, its already the 21st century! Command line? I can hear you mumbling How come I have to use a command-line calendar?&lsquo;Of course, if you are into really pretty UIs&hellip; Skip this article. This is more for the Unix/Linux user who just pops open a terminal and shouts gcal -f $mycalendar when he wants to know what today is due.</p>
+
 <p>Ultra-portable &amp; ultra-accessible. If you happen to have an ultraportable Linux thingy (like the NanoNote ;) you can carry your Gcal whenever you go. But if you have a fixed Linux box with Internet connection (at you office, at your server, wherever) you can ssh and run Gcal, from anywhere.</p>
+
 <p>First steps: Installing and month displays: Well, the first step is to have gcal installed. If you are on a Linux box, it is quite easy, as it is in all repositories.</p>
+
 <blockquote>
 <p>sudo apt-get install gcal</p>
 </blockquote>
+
 <p>Now you can run it, to get a calendar view of the current month (gcal). You can also view three months (gcal .), or a full year (gcal 2010). The command -b N selects the number of month rows to display (gcal -b 4). You can also select a specific year, or range of months (gcal 3-5 2009). There is also an alternate month view (gcal -i). Below you can see this examples in a composition of terminal captures</p>
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7-_4U5NWcI/AAAAAAAACFk/xeJgoLWwmNQ/s1600/Gcal1.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7-_4U5NWcI/AAAAAAAACFk/xeJgoLWwmNQ/s400/Gcal1.png" alt=""></a></p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7-_4U5NWcI/AAAAAAAACFk/xeJgoLWwmNQ/s1600/Gcal1.png" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S7-_4U5NWcI/AAAAAAAACFk/xeJgoLWwmNQ/s400/Gcal1.png" alt="" /></a></p>
+
 <p>Click to enlarge, and try by yourself!</p>
+
 <p>Resource files: your calendar and more, much more. The crux of Gcal is its ability to work with resource files. In a typical resource file example.gcal (the name and extension are of your choice) you have something that looks like</p>
+
 <blockquote>
-<p>0 This appears every day!<br>
+<p>0 This appears every day!<br />
 20100410 This only on 2010, April 11th</p>
 </blockquote>
+
 <p>Your diary will be something like this. You may wonder if this is enough&hellip; But I haven&rsquo;t told you what you can write and what you can do with these date fields! Some more examples</p>
+
 <blockquote>
-<p>2010apr01#99 All April<br>
-2010apr01#may99 April&amp;May<br>
+<p>2010apr01#99 All April<br />
+2010apr01#may99 April&amp;May<br />
 2010aprsa1#sa9.7 April saturdays</p>
 </blockquote>
+
 <p>The general notation for date ranges is date-identifier#final-date. Thus, we select the first day of April, and the event lasts until the 99th day, effectively marking all days of April. To mark all saturdays, a similar notation is used, but amazingly, a high number results in a error, please select 9 as in the sample. You can see a sample output in the following screenshot. You will also need to add .7, for each 7 days.</p>
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CSF6_m3QI/AAAAAAAACFw/y7qzS9uKQ9U/s1600/Selection_001.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CSF6_m3QI/AAAAAAAACFw/y7qzS9uKQ9U/s400/Selection_001.png" alt=""></a><br>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CSF6_m3QI/AAAAAAAACFw/y7qzS9uKQ9U/s1600/Selection_001.png" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CSF6_m3QI/AAAAAAAACFw/y7qzS9uKQ9U/s400/Selection_001.png" alt="" /></a><br />
 Click to enlarge</p>
+
 <p>You can also see how to call Gcal to open a resource file: with either --resource-file or the -f commands. To display the fixed date list (i.e. what there is in the resource file) you need the -c command, and -cd or -ct would only list today and tomorrow, respectively. The command shown is -cdl@t55 which stands for show today and 55 days ahead starting from tomorrow.</p>
-<p>You can find all range modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_25.html">here</a>.</p>
+
+<p>You can find all range modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_25.html" target="_blank">here</a>.</p>
+
 <p>Change of the date format. If you are a tinkerer, you probably don&rsquo;t like the default time representation. I don&rsquo;t I prefer to get output as YYYYMMDD without any separation. It can be easily pasted into file names to have them quickly sorted by date.</p>
-<p>How to change it? As usual, you can invoke gcal with a change for that. An example could be --date-format=&rsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; I can hear you saying d&rsquo;oh! But it is not as bad as it seems. It breaks down as</p>
+
+<p>How to change it? As usual, you can invoke gcal with a change for that. An example could be --date-format=&lsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; I can hear you saying d&rsquo;oh! But it is not as bad as it seems. It breaks down as</p>
+
 <blockquote>
-<p>%&gt;3w#K 3 letters of the weekday<br>
-%1 Start highlighting<br>
-%Y Year number<br>
-%&gt;02*M Fix 2 digits in month number<br>
-%&gt;02*D Fix 2 digits in month day number<br>
+<p>%&gt;3w#K 3 letters of the weekday<br />
+%1 Start highlighting<br />
+%Y Year number<br />
+%&gt;02*M Fix 2 digits in month number<br />
+%&gt;02*D Fix 2 digits in month day number<br />
 %2 End highlighting.</p>
 </blockquote>
-<p>Not as bad as it looked like? You can find all descriptions for this <a href="http://www.delorie.com/gnu/docs/gcal/gcal_8.html">here</a> (bottom).</p>
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s1600/Selection_002.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s400/Selection_002.png" alt=""></a><br>
+
+<p>Not as bad as it looked like? You can find all descriptions for this <a href="http://www.delorie.com/gnu/docs/gcal/gcal_8.html" target="_blank">here</a> (bottom).</p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s1600/Selection_002.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s400/Selection_002.png" alt="" /></a><br />
 Click to enlarge</p>
-<p>Change fixed date header list. That fixed date list heading is pretty ugly, don&rsquo;t you think? What happens when you call Gcal with --heading-text=&rdquo;%3 %Y %U %4&rdquo;? You can see the output below. It makes for a more appealing view of events. To learn about heading modifiers, look <a href="http://www.delorie.com/gnu/docs/gcal/gcal_9.html">here</a> (and search for heading).</p>
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s1600/Selection_003.png"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s400/Selection_003.png" alt=""></a><br>
+
+<p>Change fixed date header list. That fixed date list heading is pretty ugly, don&rsquo;t you think? What happens when you call Gcal with --heading-text=&ldquo;%3 %Y %U %4&rdquo;? You can see the output below. It makes for a more appealing view of events. To learn about heading modifiers, look <a href="http://www.delorie.com/gnu/docs/gcal/gcal_9.html" target="_blank">here</a> (and search for heading).</p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s1600/Selection_003.png" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s400/Selection_003.png" alt="" /></a><br />
 Click to enlarge</p>
-<p>Sample script: sunset and sunrise times. You can save this in astronomical.gcal, and open when you want to know at which time the sun sets or shines. There are a lot of related options, learn more about sun/moon modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_72.html">here</a>. You will need to know your latitude/longitude.</p>
+
+<p>Sample script: sunset and sunrise times. You can save this in astronomical.gcal, and open when you want to know at which time the sun sets or shines. There are a lot of related options, learn more about sun/moon modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_72.html" target="_blank">here</a>. You will need to know your latitude/longitude.</p>
+
 <blockquote>
-<p>; latitude 41.4798<br>
-; longitude 2.3188 for gcal add 2 trailing zeros<br>
-; height 0<br>
+<p>; latitude 41.4798<br />
+; longitude 2.3188 for gcal add 2 trailing zeros<br />
+; height 0<br />
 ; Winter time Barcelona: GMT+1 Summer time Barcelona: GMT+2</p>
-<p>$w=+60<br>
-$s=+120<br>
-$v=%2%4<br>
+
+<p>$w=+60<br />
+$s=+120<br />
+$v=%2%4<br />
 $p=0*d1#999</p>
-<p>$c=+41.4798+002.3188<br>
-$x=~Sunrise %o$c,$w | Sunset %s$c,$w ~Daylength %u$c,$w | Nightlength %z$c,$w<br>
+
+<p>$c=+41.4798+002.3188<br />
+$x=~Sunrise %o$c,$w | Sunset %s$c,$w ~Daylength %u$c,$w | Nightlength %z$c,$w<br />
 $y=~Sunrise %o$c,$s | Sunset %s$c,$s ~Daylength %u$c,$s | Nightlength %z$c,$s</p>
-<p>; Winter time selector<br>
-$b=%e#1980 %i0@a#0@b-1<br>
+
+<p>; Winter time selector<br />
+$b=%e#1980 %i0@a#0@b-1<br />
 b=10sun9</p>
-<p>; Summer time selector<br>
-$a=%e#1980 %e0@a#0@b-1<br>
+
+<p>; Summer time selector<br />
+$a=%e#1980 %e0@a#0@b-1<br />
 a=03sun9</p>
-<p>; What will be written, through selectors.<br>
-$p $a $x<br>
+
+<p>; What will be written, through selectors.<br />
+$p $a $x<br />
 $p $b $y</p>
 </blockquote>
-<p>And the output of gcal &ndash;resource-file=./astronomical &ndash;heading-text=&rdquo;%3 %Y %U %4&rdquo; &ndash;date-format=&rsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; -cdl@t4 is shown in the following screenshot.</p>
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s1600/Selection_005.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s400/Selection_005.png" alt=""></a><br>
+
+<p>And the output of gcal &ndash;resource-file=./astronomical &ndash;heading-text=&ldquo;%3 %Y %U %4&rdquo; &ndash;date-format=&lsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; -cdl@t4 is shown in the following screenshot.</p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s1600/Selection_005.png" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s400/Selection_005.png" alt="" /></a><br />
 Click to enlarge</p>
+
 <p>This is getting hard&hellip; I know, all these commands together are getting increasingly harder to write or comment. If you happen to use or call a specific command really often, you can call gcal -list-of-commands-really-long -S name and it will output that call into a executable shell script that when invoked calls Gcal with said options. This one is great!</p>
+
 <p>I hope you enjoyed this small tutorial on Gcal. Please also read the one I used as a guide (which covers a few more things I ommited), and refer to Gcal&rsquo;s documentation if in doubt. If you liked this post, consider sharing it with your favourite tool (Stumble, reddit, digg, mail). Thanks!</p>
+
 <p>Next week I&rsquo;ll show you how to use sed to add colours to your events, and how to set at to send you an email every day with your scheduled tasks. You can see a sample from my colour scheme below.</p>
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8YYKcfBkRI/AAAAAAAACKA/nCoRaY-Q_So/s1600/Selection_010.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8YYKcfBkRI/AAAAAAAACKA/nCoRaY-Q_So/s400/Selection_010.png" alt=""></a></p>
-<p>Related posts:<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html">sed (stream editor) to colorise script output in Linux</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a></p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8YYKcfBkRI/AAAAAAAACKA/nCoRaY-Q_So/s1600/Selection_010.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8YYKcfBkRI/AAAAAAAACKA/nCoRaY-Q_So/s400/Selection_010.png" alt="" /></a></p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/sed-stream-editor-to-colorise-script.html" target="_blank">sed (stream editor) to colorise script output in Linux</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html" target="_blank">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a></p>
+
 <p>ParseList(ScrambleList(Relateds(Linux)),5)</p>
 <hr/><ul class="pa0">
   

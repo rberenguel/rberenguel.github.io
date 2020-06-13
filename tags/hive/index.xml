@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hive on mostlymaths.net</title>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/</guid>
-      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
+      <description>&lt;p&gt;A couple of days ago I installed &lt;a href=&#34;https://github.com/apache/hive&#34; target=&#34;_blank&#34;&gt;Hive&lt;/a&gt; from &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt; on my Mac. Sadly, when I tried to run the &lt;code&gt;hive&lt;/code&gt; command, I got the weird-looking error&lt;/p&gt;</description>
     </item>
     
   </channel>

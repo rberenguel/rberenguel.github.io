@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | sed (stream editor) to colorise script output</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -49,6 +49,8 @@ As you can see, I used as identifiers XML-like expressions." />
 This is the sed-processed output given by Gcal. The original source looks like
 
 As you can see, I used as identifiers XML-like expressions.">
+
+
 <meta itemprop="datePublished" content="2010-04-24T16:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-24T16:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="391">
@@ -56,6 +58,7 @@ As you can see, I used as identifiers XML-like expressions.">
 
 
 <meta itemprop="keywords" content="Linux,Command Line,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -148,47 +151,59 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all <a href="http://www.pixelbeat.org/docs/terminal_colours/">here</a>.</p>
-<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s1600/Picture+25.png"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s400/Picture+25.png" alt=""></a></p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Yes, you can! Adding colors to terminal output is possible. You already know it, from ls &ndash;color In this post I show you a script that does it, in a simple way. I don&rsquo;t have a full range of colors implemented, but you can find all <a href="http://www.pixelbeat.org/docs/terminal_colours/" target="_blank">here</a>.</p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s1600/Picture+25.png" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CiLv6x9kI/AAAAAAAACNQ/M2MLhW6cGfQ/s400/Picture+25.png" alt="" /></a></p>
+
 <p>This is the sed-processed output given by Gcal. The original source looks like</p>
-<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s1600/Picture+26.png"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s400/Picture+26.png" alt=""></a></p>
+
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s1600/Picture+26.png" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/S9CkoDMLD9I/AAAAAAAACNc/vRmOmkSe3JE/s400/Picture+26.png" alt="" /></a></p>
+
 <p>As you can see, I used as identifiers XML-like expressions. At first I just used odd punctuation marks (@, &amp;, %&hellip;), but I realised it was too hard to remember. The script:</p>
+
 <blockquote>
 <p>#\bin\bash</p>
-<p>TEMP=calendartemp<br>
-TEMP2=calendartemp2<br>
-cat &gt; $TEMP<br>
-#Change for dark blue<br>
-sed -e &lsquo;s/.*&lt;\/dblue&gt;/\33 [1;34m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/dblue&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br>
-#Change for blue<br>
-sed -e &lsquo;s/.*&lt;\/blue&gt;/\33 [34m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/blue&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br>
-#Change for dark green<br>
-sed -e &lsquo;s/.*&lt;\/dgreen&gt;/\33 [32m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/dgreen&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br>
-#Change for green<br>
-sed -e &lsquo;s/.*&lt;\/green&gt;/\33 [1;32m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/green&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br>
-#Change for red<br>
-sed -e &lsquo;s/.*&lt;\/red&gt;/ \33[1;31m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/red&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br>
-#Change for dark red<br>
-sed -e &lsquo;s/.*&lt;\/dred&gt;/ \33[31m&amp; [0m/&rsquo; -e &lsquo;s/&lt;\/red&gt;//g&rsquo; -e &lsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br>
-cat $TEMP &gt; $TEMP2<br>
-sed -e &lsquo;s/[0-9][0-9]:[0-9][0-9]./\33 [1m&amp; [0m/g&rsquo; $TEMP2 &gt; $TEMP #White bold for hours<br>
-sed -r -e &lsquo;s/[A-Z][a-z][a-z][0-9]{8,8}/ \33[33m&amp; [0m/&rsquo; $TEMP &gt; $TEMP2 #Dark yellow for date<br>
-#Turn today&rsquo;s date into red bold<br>
-sed -e &lsquo;s/.*&lt;.*&gt;/\33[1;31m&amp; [0m/&rsquo; -e &lsquo;s// /g&rsquo; $TEMP2 &gt; $TEMP<br>
-sed -e &lsquo;s/ [0-9][0-9][0-9][0-9].*$/\33[1m&amp; [0m/&rsquo; $TEMP #White bold for header<br>
-rm $TEMP<br>
+
+<p>TEMP=calendartemp<br />
+TEMP2=calendartemp2<br />
+cat &gt; $TEMP<br />
+#Change for dark blue<br />
+sed -e &rsquo;s/.*&lt;\/dblue&gt;/\33 [1;34m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/dblue&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for blue<br />
+sed -e &rsquo;s/.*&lt;\/blue&gt;/\33 [34m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/blue&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+#Change for dark green<br />
+sed -e &rsquo;s/.*&lt;\/dgreen&gt;/\33 [32m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/dgreen&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for green<br />
+sed -e &rsquo;s/.*&lt;\/green&gt;/\33 [1;32m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/green&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+#Change for red<br />
+sed -e &rsquo;s/.*&lt;\/red&gt;/ \33[1;31m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/red&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP &gt; $TEMP2<br />
+#Change for dark red<br />
+sed -e &rsquo;s/.*&lt;\/dred&gt;/ \33[31m&amp; [0m/&rsquo; -e &rsquo;s/&lt;\/red&gt;//g&rsquo; -e &rsquo;s///g&rsquo; $TEMP2 &gt; $TEMP<br />
+cat $TEMP &gt; $TEMP2<br />
+sed -e &rsquo;s/[0-9][0-9]:[0-9][0-9]./\33 [1m&amp; [0m/g&rsquo; $TEMP2 &gt; $TEMP #White bold for hours<br />
+sed -r -e &rsquo;s/[A-Z][a-z][a-z][0-9]{8,8}/ \33[33m&amp; [0m/&rsquo; $TEMP &gt; $TEMP2 #Dark yellow for date<br />
+#Turn today&rsquo;s date into red bold<br />
+sed -e &rsquo;s/.*&lt;.*&gt;/\33[1;31m&amp; [0m/&rsquo; -e &rsquo;s// /g&rsquo; $TEMP2 &gt; $TEMP<br />
+sed -e &rsquo;s/ [0-9][0-9][0-9][0-9].*$/\33[1m&amp; [0m/&rsquo; $TEMP #White bold for header<br />
+rm $TEMP<br />
 rm $TEMP2</p>
 </blockquote>
-<p>You may wonder what \33 is: it is an escape character. They are the ones that tell the terminal to output color. In emacs it appears as ^[ (but only as one character, not two!). To write them (sorry, I didn&rsquo;t find an easier method), open a terminal, write echo &quot; then press Control-V followed by esc, then &quot; &gt; escape.txt and you&rsquo;ll have the escape character in escape.txt. You can open this file and copy-paste it where needed.</p>
+
+<p>You may wonder what \33 is: it is an escape character. They are the ones that tell the terminal to output color. In emacs it appears as ^[ (but only as one character, not two!). To write them (sorry, I didn&rsquo;t find an easier method), open a terminal, write echo &ldquo; then press Control-V followed by esc, then &rdquo; &gt; escape.txt and you&rsquo;ll have the escape character in escape.txt. You can open this file and copy-paste it where needed.</p>
+
 <p>The script is used just as a pipe:</p>
+
 <blockquote>
 <p>setmana.x | Colorise.sh</p>
 </blockquote>
-<p>where setmana.x calls gcal as I showed in my <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">previous Gcal post</a>. Now I only use it in the Gcal output, but I will probably use it somewhere else.</p>
-<p>Related posts:<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html">Three dee (3-dimensional file system browsers review)</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html">Power to the command line</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a></p>
+
+<p>where setmana.x calls gcal as I showed in my <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">previous Gcal post</a>. Now I only use it in the Gcal output, but I will probably use it somewhere else.</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html" target="_blank">Three dee (3-dimensional file system browsers review)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html" target="_blank">Power to the command line</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a></p>
+
 <p>ParseList(ScrambleList(Relateds(Linux)),10)</p>
 <hr/><ul class="pa0">
   

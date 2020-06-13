@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Installing Debian on my Ben Nanonote</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -51,6 +51,8 @@ in your Nanonote?
 Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound here.
 The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about reflashing your Ben Nanonote.
 The package can be downloaded in .deb format for Debian-like distributions.">
+
+
 <meta itemprop="datePublished" content="2011-01-26T13:45:00&#43;01:00" />
 <meta itemprop="dateModified" content="2011-01-26T13:45:00&#43;01:00" />
 <meta itemprop="wordCount" content="1669">
@@ -58,6 +60,7 @@ The package can be downloaded in .deb format for Debian-like distributions.">
 
 
 <meta itemprop="keywords" content="Programming,Linux,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -151,121 +154,198 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s1600/DebianNanonote.JPG"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s400/DebianNanonote.JPG" alt=""></a></p>
-<p>Yes, that&rsquo;s me with a polariser.<br>
-Wait, playing Dungeon Crawl<br>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s1600/DebianNanonote.JPG" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAWGQwJx1I/AAAAAAAAC3Q/SmMFFW-ocZc/s400/DebianNanonote.JPG" alt="" /></a></p>
+
+<p>Yes, that&rsquo;s me with a polariser.<br />
+Wait, playing Dungeon Crawl<br />
 in your Nanonote?</p>
-<p>Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound <a href="http://pyneo.org/howto/debian/nano.html">here</a>.</p>
-<p>The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about <a href="http://en.qi-hardware.com/wiki/Xburst-tools">reflashing your Ben Nanonote</a>.</p>
+
+<p>Installing Debian on the Ben is pretty easy after the work of the people at pyneo.org. I follow mostly their instructions which can befound <a href="http://pyneo.org/howto/debian/nano.html" target="_blank">here</a>.</p>
+
+<p>The first step is installing the package xburst-tools, following the instructions from the Qi Hardware Wiki about <a href="http://en.qi-hardware.com/wiki/Xburst-tools" target="_blank">reflashing your Ben Nanonote</a>.</p>
+
 <p>The package can be downloaded in .deb format for Debian-like distributions. As I am usually in Arch Linux, I installed the confuse library with pacman -S confuse , downloaded the package tarball and uncompressed it, following the instructions therein. The only drawback is that uncompressing the tarball puts the executable files in binary directories which are not in my path, and to use usbboot (the main program talking to the Ben waiting to be reflashed) I had to use global paths. No big deal, though.</p>
-<p>After getting this program, you&rsquo;ll need the boot image and the kernel, which can be found in the Qi Hardware&rsquo;s site as <a href="http://downloads.qi-hardware.com/software/images/Ben_NanoNote_2GB_NAND/latest/">Nanonote software repositories (latest)</a> Be sure to pick one file named (something like) openwrt-xburst-qi_lb60-u-boot.bin (the boot part), and openwrt-xburst-qi_lb60-uImage (kernel image). If you want to have sound enabled in your resulting Debian system, be sure to pick also the file openwrt-xburst-qi_lb60-rootfs.tar.gz (this may be deprecated after changes in the OpenWRT build process)</p>
+
+<p>After getting this program, you&rsquo;ll need the boot image and the kernel, which can be found in the Qi Hardware&rsquo;s site as <a href="http://downloads.qi-hardware.com/software/images/Ben_NanoNote_2GB_NAND/latest/" target="_blank">Nanonote software repositories (latest)</a> Be sure to pick one file named (something like) openwrt-xburst-qi_lb60-u-boot.bin (the boot part), and openwrt-xburst-qi_lb60-uImage (kernel image). If you want to have sound enabled in your resulting Debian system, be sure to pick also the file openwrt-xburst-qi_lb60-rootfs.tar.gz (this may be deprecated after changes in the OpenWRT build process)</p>
+
 <p>Now you have the boot and kernel, you&rsquo;ll need to download a Debian rootfs prepared for the Ben. You can find one for Debian-Lenny in the Pyneo.org page, get it with either</p>
+
 <blockquote>
-<p>wget <a href="http://pyneo.org/downloads/nano/debian-lenny-mini.ubi">http://pyneo.org/downloads/nano/debian-lenny-mini.ubi</a><br>
-wget <a href="http://pyneo.org/downloads/nano/debian-lenny.ubi">http://pyneo.org/downloads/nano/debian-lenny.ubi</a></p>
+<p>wget <a href="http://pyneo.org/downloads/nano/debian-lenny-mini.ubi" target="_blank">http://pyneo.org/downloads/nano/debian-lenny-mini.ubi</a><br />
+wget <a href="http://pyneo.org/downloads/nano/debian-lenny.ubi" target="_blank">http://pyneo.org/downloads/nano/debian-lenny.ubi</a></p>
 </blockquote>
+
 <p>The image I use is a debian-sid which you can get with</p>
+
 <blockquote>
-<p>wget <a href="http://mister-muffin.de/nanonote/debian-sid.ubi">http://mister-muffin.de/nanonote/debian-sid.ubi</a></p>
+<p>wget <a href="http://mister-muffin.de/nanonote/debian-sid.ubi" target="_blank">http://mister-muffin.de/nanonote/debian-sid.ubi</a></p>
 </blockquote>
-<p>You could also follow the instructions in Qi Hardware wiki about <a href="http://en.qi-hardware.com/wiki/Debootstrap">debootstrapping any distribution for the Ben NanoNote</a>, but it will be harder and messier.</p>
+
+<p>You could also follow the instructions in Qi Hardware wiki about <a href="http://en.qi-hardware.com/wiki/Debootstrap" target="_blank">debootstrapping any distribution for the Ben NanoNote</a>, but it will be harder and messier.</p>
+
 <p>Now you have all the ingredients to install Debian on your Nanonote.</p>
+
 <p>Be sure to have it shut down and connect it with the supplied cable (directly to your computer, no USB hubs whatsoever) and start it in USB boot mode (by pressing U and the power button). Run lsusb (list USB devices) in your console to check for changes, when 601a:4740 appears (or something like Ingenic LB60, depending on your system), you are ready to do the following (as root or using fakeroot).</p>
-<p>In what follows, path-to-loader is the path to the u-boot file, path-to-kernel to the uImage and path-to-rootfs the path to the ubi file with the filesystem (you should use the Debian you just got,<br>
+
+<p>In what follows, path-to-loader is the path to the u-boot file, path-to-kernel to the uImage and path-to-rootfs the path to the ubi file with the filesystem (you should use the Debian you just got,<br />
 but could use Qi Hardware&rsquo;s OpenWRT image.</p>
+
 <blockquote>
-<p>usbboot -c &ldquo;boot&rdquo;<br>
-usbboot -c &ldquo;nprog 0 path-to-loader 0 0 -n&rdquo;<br>
-usbboot -c &ldquo;nprog 1024 path-to-kernel 0 0 -n&rdquo;<br>
-usbboot -c &ldquo;boot;nerase 16 1024 0 0&rdquo;<br>
+<p>usbboot -c &ldquo;boot&rdquo;<br />
+usbboot -c &ldquo;nprog 0 path-to-loader 0 0 -n&rdquo;<br />
+usbboot -c &ldquo;nprog 1024 path-to-kernel 0 0 -n&rdquo;<br />
+usbboot -c &ldquo;boot;nerase 16 1024 0 0&rdquo;<br />
 usbboot -c &ldquo;nprog 2048 path-to-rootfs 0 0 -n&rdquo;</p>
 </blockquote>
+
 <p><strong>Don&rsquo;t skip step 4</strong>: I thought that the nerase part wasn&rsquo;t needed as I was just overwriting the filesystem, but if you don&rsquo;t, it won&rsquo;t work and you will be left wondering what is up.</p>
+
 <p>Now unplug your Nanonote, remove the battery and put it again (it is the easiest way to restart it 100% sure). Boot it up and you should get a nice Debian prompt after the kernel loading screen (which will still show OpenWRT&rsquo;s logo).</p>
+
 <p>You are done! No, not really. This barebones system needs something useful. More so, networking and sound enabled!</p>
+
 <h2 id="getting-sound-working-in-your-ben-nanonote-with-debian">Getting sound working in your Ben NanoNote with Debian</h2>
+
 <p>To get working sound I used a microSD card, if you don&rsquo;t have one you will need to set up networking and some scp enabled system in your Nano.</p>
+
 <p>To get sound working, uncompress the rootfs.tar.gz in your /tmp/ directory. Then copy everything from /tmp/lib/modules/kernelversion/ to your card or Nanonote. In my case, kernelversion was 2.6.32.16. In your Ben, create a directory named kernelversion in /lib/modules/ and copy everything in this newly created directory. The files you just copied are the kernel modules to get sound working.</p>
+
 <p>Run depmod /lib/modules/kernelversion/*.ko This will generate (among a few others) modules.dep in /lib/modules/kernelversion/. You are ready to go! Edit /etc/modules and add snd-soc-qi-lb60 at the end of the file and issue a reboot. You should see the following when the kernel ends its boot up steps:</p>
+
 <blockquote>
-<p>No device for DAI jz4740-i2s<br>
+<p>No device for DAI jz4740-i2s<br />
 asoc: jz-codec &lt;-&gt; jz4740 mapping ok</p>
 </blockquote>
+
 <p>Sound should be working, although you will need some alsa magic to get it to do something. For it, we will need networking. By the way, Debian with sound enabled as a kernel module takes around 17 seconds to boot in my Nanonote.</p>
+
 <h2 id="networking-in-your-ben-nanonote">Networking in your Ben Nanonote</h2>
+
 <p>Now you need networking to check if sound really works, we&rsquo;ll get some useful software in the Ben along the way.</p>
+
 <p>I have successfully set up this in both Linux and MacOS hosts. Start by plugging your Nanonote to your host with the supplied cable. We will configure the host system first, then the Nanonote.</p>
+
 <h4 id="for-linux">For Linux</h4>
+
 <p>You may need to be root to do this, I don&rsquo;t remember. First you&rsquo;ll need to enable network forwarding with</p>
+
 <blockquote>
 <p>echo &ldquo;1&rdquo; &gt; /proc/sys/net/ipv4/ip_forward</p>
 </blockquote>
+
 <p>Now you set up the network interface with</p>
+
 <blockquote>
 <p>ifconfig usb0 192.168.100.1 up</p>
 </blockquote>
-<p>This is it for Linux hosts, at least this was enough for me in Arch Linux. The wiki page on <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB">Networking in your Ben NanoNote</a> has a little more information in case this does not work.</p>
+
+<p>This is it for Linux hosts, at least this was enough for me in Arch Linux. The wiki page on <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB" target="_blank">Networking in your Ben NanoNote</a> has a little more information in case this does not work.</p>
+
 <h4 id="for-macos">For MacOS</h4>
+
 <p>When you plug your Nanonote, a network preferences alert will pop up, asking you to go to Network preferences, like this one:</p>
-<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s1600/NetworkInterfaceNanonote.png"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s400/NetworkInterfaceNanonote.png" alt=""></a></p>
-<p>There is a catch, though: it may fail to appear. To get it to appear then you have to start playing with power up power down your Nano and switching USB ports. I&rsquo;m not the only one with this problem, <a href="http://agrajag.posterous.com/ben-nanonote-stuff">agrajag</a> also pointed it out.</p>
+
+<p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s1600/NetworkInterfaceNanonote.png" target="_blank"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/TUAQabJBjqI/AAAAAAAAC3I/h07npiw8-h0/s400/NetworkInterfaceNanonote.png" alt="" /></a></p>
+
+<p>There is a catch, though: it may fail to appear. To get it to appear then you have to start playing with power up power down your Nano and switching USB ports. I&rsquo;m not the only one with this problem, <a href="http://agrajag.posterous.com/ben-nanonote-stuff" target="_blank">agrajag</a> also pointed it out.</p>
+
 <p>I got my Mac to forget about previous connections by using a USB hub to plug the Nano, then unplug it and plug again in the usual spot. Rebooting the Mac also solves it.</p>
+
 <p>CAUTION: I tried to use a hub to connect to internet, and after enabling internet sharing my Nano ran out of memory and ended kernel-panic-ing.</p>
+
 <p>Go there and set up the newly discovered ethernet adaptor and assign an IP manually: fill in with 192.168.100.1</p>
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s1600/ConfigureNetworkNanonote.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s400/ConfigureNetworkNanonote.png" alt=""></a></p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s1600/ConfigureNetworkNanonote.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZzHFrRI/AAAAAAAAC3A/MXgsZuNMgPc/s400/ConfigureNetworkNanonote.png" alt="" /></a></p>
+
 <p>Now go to the System Settings pane and open Sharing. Enable sharing your internet connection with the newly discovered ethernet device and apply, like the following</p>
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s1600/InternetSharingNanonote.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s400/InternetSharingNanonote.png" alt=""></a></p>
+
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s1600/InternetSharingNanonote.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TUAQZh5a4iI/AAAAAAAAC24/hPnUEt1GOXw/s400/InternetSharingNanonote.png" alt="" /></a></p>
+
 <h4 id="common-steps-in-the-ben-nanonote">Common steps in the Ben Nanonote</h4>
+
 <p>First set up the network interface with</p>
+
 <blockquote>
 <p>ifconfig usb0 192.168.100.2 up</p>
 </blockquote>
+
 <p>And enable a network gateway through your host system</p>
+
 <blockquote>
 <p>route add default gw 192.168.100.1</p>
 </blockquote>
+
 <p>Now point your DNS server to Google&rsquo;s DNS servers with (you&rsquo;ll only need to do this the first time you try networking)</p>
+
 <blockquote>
-<p>echo &ldquo;nameserver 8.8.8.8&rdquo; &raquo; /etc/resolv.conf</p>
+<p>echo &ldquo;nameserver 8.8.8.8&rdquo; &gt;&gt; /etc/resolv.conf</p>
 </blockquote>
+
 <p>This should be it check with ping google.com and it should work if the host steps were done correctly.</p>
+
 <h2 id="installing-shiny-new-software">Installing shiny new software</h2>
-<p>With the packages listed here (maybe you can add octave and some other programming lanaguages), the Ben Nanonote turns into one of the most complete (non-graphing) pocket calculators out there. In theory, you could use fim or fbi to display images generated by gnuplot to a framebuffer console&hellip; but I couldn&rsquo;t manage to get it to work without either seg-faulting or crashing. You can also find a list of interesting packages and hacks in <a href="http://www.mzlinux.org/node/386">Marc Zonzon&rsquo;s webpage</a>.</p>
+
+<p>With the packages listed here (maybe you can add octave and some other programming lanaguages), the Ben Nanonote turns into one of the most complete (non-graphing) pocket calculators out there. In theory, you could use fim or fbi to display images generated by gnuplot to a framebuffer console&hellip; but I couldn&rsquo;t manage to get it to work without either seg-faulting or crashing. You can also find a list of interesting packages and hacks in <a href="http://www.mzlinux.org/node/386" target="_blank">Marc Zonzon&rsquo;s webpage</a>.</p>
+
 <p>Start by updating the system:</p>
+
 <blockquote>
 <p>apt-get update</p>
 </blockquote>
+
 <p>Now you are ready to fill it up. Recommended stuff (i. e. What I put no matter what). Small descriptions included.</p>
+
 <p><strong>emacs23nox</strong> The No-X emacs 23 build. It works pretty well in the Ben, even with just 32MB of RAM. Having emacs in your pocket is awesome.</p>
+
 <p><strong>zile</strong> Zile is lossy emacs. It is a quicker loading small clone of emacs. Mostly keybindings, but for quick edits it loads way faster than the full fledged emacs</p>
+
 <p><strong>fbterm</strong> Frame buffer terminal. With it, you can resize fonts with fbterm -s fontsize</p>
+
 <p><strong>crawl</strong> Dungeon Crawl Stone Soup, one of the best dungeon crawl games out there. To get it to work (albeit very slowly&hellip;) you will need an SD card ext2 formatted to get swap memory in it (more on this later)</p>
+
 <p><strong>nethack</strong> Works out of the box without needing swap hacks</p>
+
 <p><strong>yacas</strong> Yet Another Computer Algebra System. Sadly it is no longer maintained, but it is awesome what it can do in just a tiny machine like the Ben.</p>
+
 <p><strong>pari-gp</strong> The calculator for number-theoretic people. I have also ran some computations in Pari, its programming language is pretty simple and its high precision arithmetic routines are awesome</p>
+
 <p><strong>alsa-</strong> You will need all the family of alsa-utils, dev and so on. apt-cache search alsa and pick almost all.</p>
-<p><strong>madplay</strong> a command line music player I used in my <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html">powernap script</a></p>
+
+<p><strong>madplay</strong> a command line music player I used in my <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html" target="_blank">powernap script</a></p>
+
 <p><strong>cron</strong> If you want to run something periodically you need cron</p>
+
 <p><strong>gcc</strong> Are you compiling something in your pocket or you are just happy to see me?</p>
+
 <p>Caveat: You may see the dreaded Bus errorackage list 0% when apt-getting or updating. This usually solves by deleting /var/cache/apt/*.bin (or /var/apt/cache/*.bin) and apt-get update again. If this does not solve it, clean completely var/cache/apt (files and directories), reboot and apt-get update. This made the trick for me, if it does not for you&hellip; Well, you can try re-installing the system.</p>
+
 <h2 id="swap">Swap</h2>
+
 <p>Okay, if you want to run crawl or just get short on memory, you will need either a swap partition or a swap file. As I am not into messing with partitions, I created a swap file. You will need an ext2 (or ext3 too, I think) formatted microSD card, mounted in /mnt/</p>
+
 <blockquote>
-<p>dd if=/dev/zero of=/mnt/swap/swapfile bs=1k count=20480<br>
-mkswap /mnt/swap/swapfile<br>
+<p>dd if=/dev/zero of=/mnt/swap/swapfile bs=1k count=20480<br />
+mkswap /mnt/swap/swapfile<br />
 swapon /mnt/swap/swapfile</p>
 </blockquote>
+
 <p>This will add a 20 MB swap file to your Nanonote memory. Currently I have a 50 MB one, previously I had 5 blocks of 10 MB that I swapped on when needed.</p>
+
 <p>Before unmounting the card you will need to</p>
+
 <blockquote>
 <p>swapoff /mnt/swap/swapfile</p>
 </blockquote>
+
 <p>Happy pocket hacking!</p>
-<p>Related posts:<br>
-<a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> Gcal: the ultra-powerful command line GNU calendar</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br>
+
+<p>Related posts:<br />
+ <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

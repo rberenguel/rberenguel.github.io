@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Lavaurs algorithm</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -37,7 +37,8 @@
 <meta property="og:description" content="These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here." />
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/2009/08/lavaurs-algorithm.html/" />
 <meta property="article:published_time" content="2009-08-11T11:00:00+02:00" />
@@ -46,14 +47,18 @@ The images don&rsquo;t look like much, but the output of the program is nicer: i
 <meta itemprop="description" content="These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here.">
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13">
+
+
 <meta itemprop="datePublished" content="2009-08-11T11:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-08-11T11:00:00&#43;02:00" />
-<meta itemprop="wordCount" content="272">
+<meta itemprop="wordCount" content="280">
 
 
 
 <meta itemprop="keywords" content="Programming,emacs,PostScript,Fractals,Maths,LISP," />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2009/08/lavaurs-algorithm.html/Lavaurs13-1280x800.jpg"/>
@@ -69,7 +74,8 @@ The images don&rsquo;t look like much, but the output of the program is nicer: i
 <meta name="twitter:description" content="These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here."/>
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13"/>
 
 
       
@@ -147,7 +153,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 272 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 280 words</span>
       
     </header>
     
@@ -155,21 +161,41 @@ if (!doNotTrack) {
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the
 idenfication of circle chords: the abstract Mandelbrot set.</p>
+
 <p>The images don&rsquo;t look like much, but the output of the program is nicer: it
 outputs an Encapsulated PostScript file which looks sharper. But when converting
 to <code>png</code> with ImageMagick some distortion appeared.</p>
-<figure class="fig-wide">
+
+<p><figure class="fig-wide">
     <img src="Lavaurs13-1280x800.jpg"
          alt="Lavaurs chords, depth 13 cutoff"/> <figcaption>
             <p>Lavaurs chords, depth 13 cutoff</p>
         </figcaption>
 </figure>
 
-<!-- raw HTML omitted -->
+<div style="text-align: center;">
+<figure class="fig-40">
+    <img src="Lavaurs5.jpg"
+         alt="Lavaurs chords, depth 5"/> <figcaption>
+            <p>Lavaurs chords, depth 5</p>
+        </figcaption>
+</figure>
+
+<figure class="fig-40">
+    <img src="BWLavaurs13.jpg"
+         alt="Lavaurs chords, depth 13"/> <figcaption>
+            <p>Lavaurs chords, depth 13</p>
+        </figcaption>
+</figure>
+
+</div></p>
+
 <p>You can get the black and white depth 13 PostScript file here
-<a href="BWLavaurs13.eps">here</a>, and the color
-version <a href="ColorLavaurs13.eps">here</a>.</p>
-<p><!-- raw HTML omitted -->Note from 2019: I had to dig quite a bit to locate these two files!<!-- raw HTML omitted --></p>
+<a href="BWLavaurs13.eps" target="_blank">here</a>, and the color
+version <a href="ColorLavaurs13.eps" target="_blank">here</a>.</p>
+
+<p><span class="scaps">Note from 2019: I had to dig quite a bit to locate these two files!</span></p>
+
 <figure class="fig-wide">
     <img src="ColorLavaurs13.png"
          alt="Lavaurs chords, depth 13"/> <figcaption>
@@ -177,24 +203,28 @@ version <a href="ColorLavaurs13.eps">here</a>.</p>
         </figcaption>
 </figure>
 
+
 <figure class="fig-left-small"><a href="www.lisperati.com/logo.html">
     <img src="lisplogo_fancy_256.png"/> </a>
 </figure>
+
 
 <p>The code is a set of Lisp functions, with
 the main one being recursive. I also have a double-recursive version, but the
 first time I used it I thought I had a problem with the code, and rewrote it.
 It did work, but it is slower. The output is a set of orthogonal circles to
 a main one, set as &ldquo;clip&rdquo; in the PostScript file.</p>
-<p><!-- raw HTML omitted -->Note from 2019:<!-- raw HTML omitted -->A few months after I wrote this post
-and code, <a href="https://commons.wikimedia.org/wiki/User:Adam_majewski">Adam Majewski</a>
+
+<p><span class="scaps">Note from 2019:</span>A few months after I wrote this post
+and code, <a href="https://commons.wikimedia.org/wiki/User:Adam_majewski" target="_blank">Adam Majewski</a>
 rewrote big chunks of my Lisp code (with my blessing), making it faster and
-cleaner. You can read about it, and about the Lavaurs algorithm in <a href="https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/lavaurs">this
+cleaner. You can read about it, and about the Lavaurs algorithm in <a href="https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/lavaurs" target="_blank">this
 wikibook</a>.
 Nowadays you can find many implementations of Lavaurs chords, back when I wrote
 mine I think it was the only one freely/easily available. I have recovered my
 original code (unmodified, for my modern shame), you can find it in this
-<a href="https://gist.github.com/rberenguel/384292c739172df8e2f530297e7b50f4">gist</a>.</p>
+<a href="https://gist.github.com/rberenguel/384292c739172df8e2f530297e7b50f4" target="_blank">gist</a>.</p>
+
 <p>I am increasingly happier of my last <a href="/2008/12/quick-postscript-programming-tutorial.html">Christmas postcard &amp;
 tutorial</a>, as they forced
 me to learn PostScript programming. Turns out to be more useful than I thought.</p>

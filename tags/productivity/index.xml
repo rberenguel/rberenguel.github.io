@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on mostlymaths.net</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 06 Jan 2020 18:15:52 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2020/01/new-keyboard-gergo.html/</guid>
-      <description>&lt;p&gt;My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a &lt;a href=&#34;https://www.gboards.ca/product/gergo&#34;&gt;Gergo&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;My girlfriend likes to joke/complain that I have more keyboards than hands. And indeed, I have probably a dozen or so different keyboards, most of them bluetooth. But, I have found the best one for the day-to-day work (sadly it is not bluetooth). It is a &lt;a href=&#34;https://www.gboards.ca/product/gergo&#34; target=&#34;_blank&#34;&gt;Gergo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +48,9 @@ interesting ones as well. This week they are centered in data engineering.&lt;/p
       <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/11/20193233-readings-of-the-week.html/</guid>
-      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34;&gt;Python Barcelona&lt;/a&gt;
-organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
-organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34;&gt;a workshop on
+      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34; target=&#34;_blank&#34;&gt;Python Barcelona&lt;/a&gt;
+organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34; target=&#34;_blank&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
+organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34; target=&#34;_blank&#34;&gt;a workshop on
 PySpark&lt;/a&gt;, so I felt pretty tired
 on Sunday. Of course this means this is a double issue.&lt;/p&gt;</description>
     </item>
@@ -72,7 +72,8 @@ edition. Sorry!&lt;/p&gt;</description>
       
       <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
-&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+
+&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -81,7 +82,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
-      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,7 +91,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,7 +100,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Sun, 27 Jan 2019 20:01:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-3-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software/data engineering, history, formal systems. Expect a similar wide range in the future as well. You can check all weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,7 +109,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 14 Jan 2019 00:50:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2019/01/2019-1-readings-of-week.html/</guid>
-      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you know me, you&amp;rsquo;ll know I have a quite extensive reading list. I keep it in &lt;a href=&#34;https://getpocket.com/&#34; target=&#34;_blank&#34;&gt;Pocket&lt;/a&gt;, and is part of my to do stored in &lt;a href=&#34;https://culturedcode.com/things/&#34; target=&#34;_blank&#34;&gt;Things3&lt;/a&gt;. It used to be &lt;em&gt;large&lt;/em&gt; (hovering around 230 items since August) but during Christmas it got out of control, reaching almost 300 items.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,7 +127,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Fri, 09 Mar 2018 23:47:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2018/03/book-review-work-clean.html/</guid>
-      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Down into some net rabbit hole, I stumbled upon a review of &lt;a href=&#34;http://amzn.to/2oV6B26&#34; target=&#34;_blank&#34;&gt;Work Clean&lt;/a&gt;. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (&lt;em&gt;mise en place&lt;/em&gt;) would fix all our problems? Bring it on, I have a long commute.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -214,7 +215,7 @@ Do you have problems to keep motivated? Is your usual to-do list filled with gre
       
       <guid>https://mostlymaths.net/2011/04/doing-really-nothing.html/</guid>
       <description>Yesterday I did nothing. Absolutely, really nothing.
- And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
+And it felt great. Before yesterday, my usual weekend was filled of what I thought was doing nothing, but far from it. I wrote posts, programmed, read a lot online and caught up with what was going in the A-List Blogger Club forum. Did some laundry, folded the clothes. All this (well, except for the laundry part) under the assumption that doing what you love does not tire you.</description>
     </item>
     
     <item>
@@ -267,6 +268,7 @@ You can check the challenge updates below:</description>
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
 little.&lt;/p&gt;
+
 &lt;figure class=&#34;fig-left&#34;&gt;
     &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
 &lt;/figure&gt;</description>
@@ -312,7 +314,7 @@ A few weeks ago, Friday, this was what I saw when I looked at my office desktop.
       <description>From Yassin Hassan@Flickr
 Don&amp;rsquo;t forget to subscribe to my oddly newsletter!
  Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
-  Samuel Beckett
+Samuel Beckett
  One may say that to be a winner you have to be disciplined, commited, hard-worker, have a thirst for the win. But what a winner has almost always behind are countless failures, terrible defeats and fatal blunders.
 The topic for this post has been jumping on and off from my mind for a few weeks, and what prompted me to finally write it was a very recent post by Gabriel Weinberg, web entrepeneur and CEO of the alternative search engine DuckDuckGo.</description>
     </item>
@@ -467,7 +469,7 @@ Vince Lombardi, said it:
       
       <guid>https://mostlymaths.net/2010/04/stop-it-no-more-idle-browser-while.html/</guid>
       <description>Introducing LeechBlock
- You arrive to your office. Quickly check urgent mails, close the mail program and browser and put a nice solid hour, hour and a half, even two straight hours of work. Then decide that you deserve a break, and maybe with a fresh cup of coffee from the coffee machine you decide to browse idly for a few minutes. And then a co-worker knocks at your door and asks if you are coming to lunch.</description>
+You arrive to your office. Quickly check urgent mails, close the mail program and browser and put a nice solid hour, hour and a half, even two straight hours of work. Then decide that you deserve a break, and maybe with a fresh cup of coffee from the coffee machine you decide to browse idly for a few minutes. And then a co-worker knocks at your door and asks if you are coming to lunch.</description>
     </item>
     
     <item>
@@ -509,7 +511,7 @@ Start strong Start your day doing some work for at least half an hour straight. 
       
       <guid>https://mostlymaths.net/2009/09/whistle-control-your-computer.html/</guid>
       <description>From flickr
-  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details.</description>
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&amp;hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac.</description>
     </item>
     
     <item>
@@ -561,9 +563,7 @@ LeechBlock: A FireFox addon, which allows you to block certain sites at certain 
       
       <guid>https://mostlymaths.net/2009/05/extremely-useful-mostly-free-mac.html/</guid>
       <description>There are a few Mac applications I use so often, I couldn&amp;rsquo;t live without them. And most of them are free, or really kind shareware.
-  Caffeine: Keep your Mac from sleeping.
-  Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out!
-  Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
+ Caffeine: Keep your Mac from sleeping. Carbon Emacs (F): Well, this is cross-platform. And you know, I can&amp;rsquo;t live without it. Plus, Carbon Emacs has some nifty additions. Check it out! Disk Inventory X (F): Shows graphically the size of files sitting in your drives.</description>
     </item>
     
     <item>

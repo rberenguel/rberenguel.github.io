@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Fractals</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,9 +40,12 @@
 <meta property="og:description" content="Ruben Berenguel&#39;s technical and non-technical blog" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mostlymaths.net/tags/fractals/" />
+
 <meta property="og:updated_time" content="2019-04-07T19:37:00+02:00" />
 <meta itemprop="name" content="Fractals">
 <meta itemprop="description" content="Ruben Berenguel&#39;s technical and non-technical blog">
+
+
 
 
 <meta name="twitter:title" content="Fractals"/>
@@ -134,7 +137,7 @@ if (!doNotTrack) {
     
     &nbsp;&nbsp;&nbsp;
     <span class="f9 fw1 mv2 dib tracked i"> 9 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 1890 words</span>
+    <span class="f9 fw1 mv2 dib tracked i" > | 1891 words</span>
     
         </div>
         
@@ -228,10 +231,10 @@ if (!doNotTrack) {
     </div>
     
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      <p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b">The
+      <p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b" target="_blank">The
 Processing
 Handbook</a> and
-<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c">Visualizing
+<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c" target="_blank">Visualizing
 Data</a>
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with <code>processing.js</code> something around 2011 (there was a
@@ -326,15 +329,14 @@ I started with the usual 1+1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected
     
     &nbsp;&nbsp;&nbsp;
     <span class="f9 fw1 mv2 dib tracked i"> 8 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 1518 words</span>
+    <span class="f9 fw1 mv2 dib tracked i" > | 1519 words</span>
     
         </div>
         
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
       Is this line noise?
-⍉&#39; *&#39;[⍎&#39;1+0&lt;|z&#39;,(∊150⍴⊂&#39;←c+m×m&#39;),&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?
 
-APL is literally A Programming Language.
+⍉&#39; *&#39;[⍎&#39;1+0&lt;|z&#39;,(∊150⍴⊂&#39;←c+m×m&#39;),&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   
@@ -689,7 +691,7 @@ September is again here, like a new year in more than a sense. I have no new &ld
     
     &nbsp;&nbsp;&nbsp;
     <span class="f9 fw1 mv2 dib tracked i"> 2 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 272 words</span>
+    <span class="f9 fw1 mv2 dib tracked i" > | 280 words</span>
     
         </div>
         
@@ -701,7 +703,8 @@ September is again here, like a new year in more than a sense. I have no new &ld
       These days I&rsquo;ve been busy programming a version of Lavaurs algorithm for the idenfication of circle chords: the abstract Mandelbrot set.
 The images don&rsquo;t look like much, but the output of the program is nicer: it outputs an Encapsulated PostScript file which looks sharper. But when converting to png with ImageMagick some distortion appeared.
  Lavaurs chords, depth 13 cutoff
-  You can get the black and white depth 13 PostScript file here here, and the color version here.
+   Lavaurs chords, depth 5
+   Lavaurs chords, depth 13
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History on mostlymaths.net</title>
@@ -39,9 +39,9 @@ interesting ones as well. This week they are centered in data engineering.&lt;/p
       <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/11/20193233-readings-of-the-week.html/</guid>
-      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34;&gt;Python Barcelona&lt;/a&gt;
-organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
-organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34;&gt;a workshop on
+      <description>&lt;p&gt;Yeah, I skipped last week. On Saturday &lt;a href=&#34;http://pybcn.org&#34; target=&#34;_blank&#34;&gt;Python Barcelona&lt;/a&gt;
+organised &lt;a href=&#34;https://pybcn.org/pyday-bcn-2019/&#34; target=&#34;_blank&#34;&gt;PyDay 2019&lt;/a&gt;, and I was one of the
+organisers aside from giving &lt;a href=&#34;https://github.com/rberenguel/pyspark_workshop&#34; target=&#34;_blank&#34;&gt;a workshop on
 PySpark&lt;/a&gt;, so I felt pretty tired
 on Sunday. Of course this means this is a double issue.&lt;/p&gt;</description>
     </item>
@@ -83,7 +83,8 @@ edition. Sorry!&lt;/p&gt;</description>
       
       <guid>https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/</guid>
       <description>&lt;p&gt;I have been pretty busy lately, and although reading doesn’t stop, my writing sometimes takes a hiatus.&lt;/p&gt;
-&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+
+&lt;p&gt;Data engineering, adtech, history, apple. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -92,7 +93,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</guid>
-      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;History, haskell, Wardley mapping, functional programming. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt;. You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,7 +102,7 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Tue, 25 Jun 2019 20:01:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201918-readings-of-week.html/</guid>
-      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software engineering, history, planning, data engineering. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,8 +111,9 @@ edition. Sorry!&lt;/p&gt;</description>
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2019/06/201917-readings-of-week.html/</guid>
-      <description>&lt;p&gt;_This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. _&lt;/p&gt;
-&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;This week is a bit light on technical content because I was attending &lt;a href=&#34;https://scaladays.org/&#34; target=&#34;_blank&#34;&gt;Scala Days 2019&lt;/a&gt; in Lausanne and I had enough with the talks. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Software engineering, psychology, history. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the &lt;a href=&#34;https://www.mostlymaths.net/search/label/ReadingsOfTheWeek&#34; target=&#34;_blank&#34;&gt;tag here&lt;/a&gt; . You can also get these as a weekly newsletter by subscribing &lt;a href=&#34;http://eepurl.com/geFw7P&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

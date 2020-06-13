@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Power Nap Via the Command Line in Linux/Mac OS</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,6 +41,8 @@
 <meta property="article:modified_time" content="2010-08-23T17:00:00+02:00" />
 <meta itemprop="name" content="Power Nap Via the Command Line in Linux/Mac OS">
 <meta itemprop="description" content="A month ago, Oscar del Ben posted an interesting tip in his blog to take power naps when you are feeling tired, How to Get a Quick 5-10 Minutes Nap Without Using an Alarm Clock. His idea is simple: pick a spoon on your hand. Once you fall asleep, your grip will relax, the spoon falls and you awaken with the sound. I found it amusing and interesting, as I am one of those types who feel really well after a 10 minutes nap.">
+
+
 <meta itemprop="datePublished" content="2010-08-23T17:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-08-23T17:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="854">
@@ -48,6 +50,7 @@
 
 
 <meta itemprop="keywords" content="Programming,Linux,Productivity," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -136,30 +139,43 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A month ago, Oscar del Ben posted an interesting tip in his blog to take power naps when you are feeling tired, <a href="http://freestylemind.com/how-to-get-a-quick-5-10-minute-nap">How to Get a Quick 5-10 Minutes Nap Without Using an Alarm Clock</a>. His idea is simple: pick a spoon on your hand. Once you fall asleep, your grip will relax, the spoon falls and you awaken with the sound. I found it amusing and interesting, as I am one of those types who feel really well after a 10 minutes nap. Thus I wanted to solve some problems of his approach in a Unix way, and I wrote the power nap script.</p>
-<p>The catch of Oscar&rsquo;s method? You sleep almost nothing, with this method. You doze, and when you enter real nap mode, you awaken. It can (and does!) refresh your mind, but it does not qualify as a <a href="http://en.wikipedia.org/wiki/Power_nap">Power nap</a>:</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A month ago, Oscar del Ben posted an interesting tip in his blog to take power naps when you are feeling tired, <a href="http://freestylemind.com/how-to-get-a-quick-5-10-minute-nap" target="_blank">How to Get a Quick 5-10 Minutes Nap Without Using an Alarm Clock</a>. His idea is simple: pick a spoon on your hand. Once you fall asleep, your grip will relax, the spoon falls and you awaken with the sound. I found it amusing and interesting, as I am one of those types who feel really well after a 10 minutes nap. Thus I wanted to solve some problems of his approach in a Unix way, and I wrote the power nap script.</p>
+
+<p>The catch of Oscar&rsquo;s method? You sleep almost nothing, with this method. You doze, and when you enter real nap mode, you awaken. It can (and does!) refresh your mind, but it does not qualify as a <a href="http://en.wikipedia.org/wiki/Power_nap" target="_blank">Power nap</a>:</p>
+
 <blockquote>
 <p>Scientific experiments (see Benefits section below) and anecdotal evidence suggest that an average power nap duration of around 15-30 minutes is most effective. Any more time, and the body enters into its usual sleep cycle. People who regularly take power naps may develop a good idea of what duration works best for them, as well as what tools, environment, position, and associated factors help induce the best results. Others may prefer to take power naps regularly even if their schedules allow a full night&rsquo;s sleep.</p>
-<p>From <a href="http://en.wikipedia.org/wiki/Power_nap">Wikipedia entry</a></p>
+
+<p>From <a href="http://en.wikipedia.org/wiki/Power_nap" target="_blank">Wikipedia entry</a></p>
 </blockquote>
+
 <p>Thus the ideal sleep length is around 15 minutes. How do you get yourself to sleep 15 minutes? I find it very hard, because a power nap is ideally taken after lunch, when you may be sleepy, but not that sleepy to fall asleep instantly, less if you are sitting in your office chair. You can estimate how long it takes (for you!) to fall asleep, but from my own experience, this varies greatly. I usually take around 5-15 minutes at night, but can take around 20 minutes when it is daytime. How to sleep for exactly 15 minutes after falling asleep?</p>
+
 <p>The solution is pretty easy: what do you have in your office, always on? Yes, your computer. If you are a Windows user, I am sorry: my solution works in Linux or Windows. You can use Cygwin, or fight your way to implement the same in your own platform. I encourage you to do so!</p>
+
 <p>What is this solution? A power nap bash script, with several command line parameters. Once started, it waits for a second for a key press. If a key is pressed constantly, i.e. you have your finger over a key, nothing happens. As soon as you release the key, a counter starts running, and when it finishes your computer plays a beeping sound or a file of your choice.</p>
+
 <p>The idea is that you get in a comfortable position in your desktop, start the script and keep your finger pressing on a key. You have to be in a position such that when you fall asleep, your finger falls of the keybord. One option is to slouch in your chair with your arm extended pressing the space bar, when you fall asleep, your hand will fall over your desktop. Another option is crossing your arms over your desktop, with your head over them and the keyboard on a side. You just press enter with your hand and when you fall asleep your hand will fall.</p>
+
 <p>When you sleep, the counter keeps ticking, and when it ends, music (or console beeps) awaken you. And the power nap is over and you can get away with your terrific job.</p>
+
 <p>Usage is ./nap.sh naptime &ldquo;musicplayer&rdquo; or ./nap.sh test &ldquo;musicplayer&rdquo;. If musicplayer is empty, it will use the system bell, and test is used to be sure it will do something after the selected time. As of this writing, the music file is encoded in the script (feel free to change it to some file you like!), and you have to use the music player best suited to your system. In my MacBook, I would use open as music player, in my NanoNote or netbook, madplay (command line music player) with the option -a -30 to adjust the volume.</p>
-<p>An example use (the way I use it in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">NanoNote</a>) is ./nap.sh 15 &ldquo;madplay -a -20&rdquo;</p>
-<p>You can get the most up-to-date script from <a href="http://code.google.com/p/rberenguel/">my Google Code repository</a> here: <a href="http://code.google.com/p/rberenguel/">nap.sh</a>. In a future version, I will add a safety control to beep after naptime+safetymargin minutes, to solve the problem of pressing a key and then falling asleep over the keyboard.</p>
-<p>If you have any suggestion or improvement to the script, or have used it please drop by and leave a comment! Also, share with your friends in <a href="http://reddit.com/submit?url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html&amp;title=Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS">Reddit</a>, <a href="http://news.ycombinator.com/submit">HackerNews</a>, <a href="http://digg.com/submit?phase=2&amp;url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html&amp;title=%22Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS%22">Digg</a> or <a href="http://www.stumbleupon.com/submit?url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html%20&amp;title=%22Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS%22">StumbleUpon</a>.</p>
-<p>Related posts:<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html">Linux is a time killer</a> (follow-up – <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">Ditching Ubuntu: Arch Linux in my Acer Aspire One</a>)<br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html">Power to the command line</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html">Two weeks, still loving Fluxbox</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html">Three dee (3-dimensional file system browsers review)</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a><br>
+
+<p>An example use (the way I use it in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">NanoNote</a>) is ./nap.sh 15 &ldquo;madplay -a -20&rdquo;</p>
+
+<p>You can get the most up-to-date script from <a href="http://code.google.com/p/rberenguel/" target="_blank">my Google Code repository</a> here: <a href="http://code.google.com/p/rberenguel/" target="_blank">nap.sh</a>. In a future version, I will add a safety control to beep after naptime+safetymargin minutes, to solve the problem of pressing a key and then falling asleep over the keyboard.</p>
+
+<p>If you have any suggestion or improvement to the script, or have used it please drop by and leave a comment! Also, share with your friends in <a href="http://reddit.com/submit?url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html&amp;title=Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS" target="_blank">Reddit</a>, <a href="http://news.ycombinator.com/submit" target="_blank">HackerNews</a>, <a href="http://digg.com/submit?phase=2&amp;url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html&amp;title=%22Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS%22" target="_blank">Digg</a> or <a href="http://www.stumbleupon.com/submit?url=http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html%20&amp;title=%22Power%20nap%20via%20the%20command%20line%20in%20Linux/Mac%20OS%22" target="_blank">StumbleUpon</a>.</p>
+
+<p>Related posts:<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/linux-is-time-killer.html" target="_blank">Linux is a time killer</a> (follow-up – <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">Ditching Ubuntu: Arch Linux in my Acer Aspire One</a>)<br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/power-to-command-line.html" target="_blank">Power to the command line</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/08/two-weeks-still-loving-fluxbox.html" target="_blank">Two weeks, still loving Fluxbox</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/three-dee.html" target="_blank">Three dee (3-dimensional file system browsers review)</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html" target="_blank">Acer Aspire One 8.9&rsquo; + Ubuntu + Fluxbox</a><br />
 ParseList(ScrambleList(Relateds(Maths,Programming,Linux)),5)</p>
 <hr/><ul class="pa0">
   

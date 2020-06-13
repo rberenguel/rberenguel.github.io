@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | NanoNote ports: Yacas &amp; 4th (Forth interpreter, compiler)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,6 +43,8 @@ Yacas (Yet Another Computer Algebra System) is a very interesting application to
 <meta itemprop="name" content="NanoNote ports: Yacas &amp; 4th (Forth interpreter, compiler)">
 <meta itemprop="description" content="Last saturday I was in a porting mood, and tackled two interesting packages to have in the Ben NanoNote: yacas and 4th.
 Yacas (Yet Another Computer Algebra System) is a very interesting application to have in such a small device. The best calculator I have used is my old faithful HP49g. But in these days, it is bulky, heavy and slow. It was superseded by m48 (a HP48&#43; emulator) inside my iPod Touch.">
+
+
 <meta itemprop="datePublished" content="2010-05-06T16:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-05-06T16:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="351">
@@ -50,6 +52,7 @@ Yacas (Yet Another Computer Algebra System) is a very interesting application to
 
 
 <meta itemprop="keywords" content="Linux,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,17 +142,23 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last saturday I was in a porting mood, and tackled two interesting packages to have in the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Ben NanoNote</a>: yacas and 4th.</p>
-<p><a href="http://en.wikipedia.org/wiki/Yacas">Yacas</a> (Yet Another Computer Algebra System) is a very interesting application to have in such a small device. The best calculator I have used is my old faithful <a href="http://en.wikipedia.org/wiki/Hp49g#HP_49G">HP49g</a>. But in these days, it is bulky, heavy and slow. It was superseded by <a href="http://www.mksg.de/m48/m48.html">m48</a> (a HP48+ emulator) inside my iPod Touch. Quite nice: the HP48 is programmable, has graphing capabilities and quite a good computer algebra system.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Last saturday I was in a porting mood, and tackled two interesting packages to have in the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Ben NanoNote</a>: yacas and 4th.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Yacas" target="_blank">Yacas</a> (Yet Another Computer Algebra System) is a very interesting application to have in such a small device. The best calculator I have used is my old faithful <a href="http://en.wikipedia.org/wiki/Hp49g#HP_49G" target="_blank">HP49g</a>. But in these days, it is bulky, heavy and slow. It was superseded by <a href="http://www.mksg.de/m48/m48.html" target="_blank">m48</a> (a HP48+ emulator) inside my iPod Touch. Quite nice: the HP48 is programmable, has graphing capabilities and quite a good computer algebra system.</p>
+
 <p>However, the NanoNote is a computer. It has a fully featured (fully as in you can put whatever you want in it, if you are able to do so) operating system, and as such, can hold far more than a pocket calculator. And it has a real keyboard, not a fake touch keyboard as in the iTouch or a (horrible) plastic keyboard like the HP49g.</p>
-<p>It turned out to be easier than I expected. The process needs a previous step, like <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">Gnugo</a> did. You have to compile it in your host system, and then use an intermediately generated file to cross-compile. I am almost done in writing a completely automatic Makefile that handles everything for you. As it stands, it is quite messy moving files around, but the program is usable.</p>
-<p>The other, <a href="http://directory.fsf.org/project/4tH/">4th</a> is a multi-platform <a href="http://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a> interpreter and compiler. My first try of porting a Forth system was <a href="http://www.gnu.org/software/gforth/">gforth</a>, but it didn&rsquo;t work: gforth compiles itself (more or less), and in a cross-compilation process this is really hard to handle. The developers even acknowledge it in the INSTALL file.</p>
+
+<p>It turned out to be easier than I expected. The process needs a previous step, like <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">Gnugo</a> did. You have to compile it in your host system, and then use an intermediately generated file to cross-compile. I am almost done in writing a completely automatic Makefile that handles everything for you. As it stands, it is quite messy moving files around, but the program is usable.</p>
+
+<p>The other, <a href="http://directory.fsf.org/project/4tH/" target="_blank">4th</a> is a multi-platform <a href="http://en.wikipedia.org/wiki/Forth_%28programming_language%29" target="_blank">Forth</a> interpreter and compiler. My first try of porting a Forth system was <a href="http://www.gnu.org/software/gforth/" target="_blank">gforth</a>, but it didn&rsquo;t work: gforth compiles itself (more or less), and in a cross-compilation process this is really hard to handle. The developers even acknowledge it in the INSTALL file.</p>
+
 <p>Fortunately, 4th is easy to cross-compile on purpose and indeed, it worked like a charm. I didn&rsquo;t need to do anything more than write the Makefile and copying the libraries to the Nano afterwards. I&rsquo;m also halfway writing a decent Makefile that copies these libraries where 4th can find them in the Nano.</p>
-<p>Related posts:<br>
-<a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> Gcal: the ultra-powerful command line GNU calendar</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html">My first port to the Ben NanoNote: gnugo</a><br>
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br>
+
+<p>Related posts:<br />
+ <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> Gcal: the ultra-powerful command line GNU calendar</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/my-first-port-to-ben-nanonote-gnugo.html" target="_blank">My first port to the Ben NanoNote: gnugo</a><br />
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | E30DC: Writing this in Conkeror</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,6 +43,8 @@ Browsing with Conkeror The same day I started my 30 day challenge, the emacs foc
 <meta itemprop="name" content="E30DC: Writing this in Conkeror">
 <meta itemprop="description" content="It&rsquo;s been already a week since I started my emacs 30 day challenge, and it is time for an update on how it is going and what packages I am using. I&rsquo;ll start giving configuration updates along the way, I&rsquo;m still fiddling with them. You can check also my post about using gnus to read mail with Gmail.
 Browsing with Conkeror The same day I started my 30 day challenge, the emacs focused blog emacs-fu posted a wonderful article highlighting the conkeror web browser (not to be confused with Konqueror, the standard browser in KDE based desktops).">
+
+
 <meta itemprop="datePublished" content="2010-12-07T15:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-12-07T15:00:00&#43;01:00" />
 <meta itemprop="wordCount" content="1295">
@@ -50,6 +52,7 @@ Browsing with Conkeror The same day I started my 30 day challenge, the emacs foc
 
 
 <meta itemprop="keywords" content="Blog,emacs,Linux,Music, Mac,How-to,NanoNote," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -139,84 +142,89 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>It&rsquo;s been already a week since I started my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">emacs 30 day challenge</a>, and it is time for an update on how it is going and what packages I am using. I&rsquo;ll start giving configuration updates along the way, I&rsquo;m still fiddling with them. You can check also my post about <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html">using gnus to read mail with Gmail</a>.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+
+<p>It&rsquo;s been already a week since I started my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html" target="_blank">emacs 30 day challenge</a>, and it is time for an update on how it is going and what packages I am using. I&rsquo;ll start giving configuration updates along the way, I&rsquo;m still fiddling with them. You can check also my post about <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html" target="_blank">using gnus to read mail with Gmail</a>.</p>
+
 <h2 id="browsing-with-conkeror">Browsing with Conkeror</h2>
-<p>The same day I started my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">30 day challenge</a>, the emacs focused blog emacs-fu posted a wonderful article highlighting the <a href="http://emacs-fu.blogspot.com/2010/12/conkeror-web-browsing-emacs-way.html">conkeror web browser</a> (not to be confused with Konqueror, the standard browser in KDE based desktops).</p>
+
+<p>The same day I started my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html" target="_blank">30 day challenge</a>, the emacs focused blog emacs-fu posted a wonderful article highlighting the <a href="http://emacs-fu.blogspot.com/2010/12/conkeror-web-browsing-emacs-way.html" target="_blank">conkeror web browser</a> (not to be confused with Konqueror, the standard browser in KDE based desktops).</p>
+
 <p>Conkeror is a web browser back-end over the Mozilla xul-runner engine, inspired by emacs. What does this mean? First, that it can be completely (or almost, as I have seen so far) used just with the keyboard, with (almost) standard emacs keybindings.</p>
+
 <p>For example, C-x C-f opens an url in a new browser tab, C-x b switches tabs and C-x k closes a tab. Lowercase f follows links, which appear numbered as you can see in the screenshot below. Of course, C-g cancels the current command. An interesting thing, is that c copies any URL (works as f), but you can copy the current URL by asking it to copy the url numbered 0 (zero).</p>
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4m85fM5PI/AAAAAAAACwA/cSWyxLuNBfE/s1600/Conkeror.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4m85fM5PI/AAAAAAAACwA/cSWyxLuNBfE/s400/Conkeror.jpg" alt=""></a></p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4m85fM5PI/AAAAAAAACwA/cSWyxLuNBfE/s1600/Conkeror.jpg" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4m85fM5PI/AAAAAAAACwA/cSWyxLuNBfE/s400/Conkeror.jpg" alt="" /></a></p>
+
 <p>Why did I go with a not fully emacs solution for browsing?</p>
+
 <p>Well, first problem is that w3m is (mostly) text-based. Conkeror is a full fledged Mozilla based browser: anything that works in Firefox will work in Conkeror. In particular, Flash or Java based pages. Meaning I can use Google Analytics in Conkeror.</p>
-<p>The other problem, is that the first time I wanted to search in Google in w3m, it wasn&rsquo;t able to acknowledge Google&rsquo;s reply, meaning I could not even search! Then I installed Conkeror in my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">netbook (Arch Linux)</a> and started playing with it. Felt in love almost instantly.</p>
+
+<p>The other problem, is that the first time I wanted to search in Google in w3m, it wasn&rsquo;t able to acknowledge Google&rsquo;s reply, meaning I could not even search! Then I installed Conkeror in my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">netbook (Arch Linux)</a> and started playing with it. Felt in love almost instantly.</p>
+
 <p>I am writing this in Conkeror, in my Mac OS. In principle, I was not going to get fully involved in the emacsification of my Mac computer, but yesterday I made up my mind. More on this later.</p>
-<p>In my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">Arch Linux</a> installation, it looked like the mouse did nothing, but so far I have found a few uses in the Mac: interacting with Flash and with the (non-Flash) blogger editor.</p>
-<h2 id="reading-mail-with-gnus-gave-wanderlust-a-try-didnt-work">Reading mail with gnus. Gave wanderlust a try, didn&rsquo;t work</h2>
-<p>I&rsquo;m reading mail with <a href="http://www.emacswiki.org/emacs/CategoryGnus">gnus</a>, mostly. I still use my <a href="http://www.mostlymaths.net/2009/10/why-i-bought-ipod-touch.html">iPod Touch</a> to read mail in the morning. And I still don&rsquo;t know how to configure multiple smtp accounts. Well, to be precise: I know how to configure multiple smtp accounts! The problem is that they are different smtp accounts based in the same server, and the solution I found (<a href="http://linil.wordpress.com/2008/01/18/gnus-gmail/">configuring multiple smtp accounts in gnus</a>) seems focused on different smtp servers. But I guess I can work on that to use all my gmail and Google Apps accounts.</p>
-<p>I tried to set up <a href="http://www.emacswiki.org/emacs/WanderLust">Wanderlust</a> in my netbook, but had no luck. It had some kind of connection problem I was not able to solve in 20 minutes, and I already had a working gnus configuration so decided to give up on it. I got a few comments in Reddit to my previous post regarding Wanderlust. Indeed, it looks like the perfect solution for Gmail reading with multiple smtp accounts, but it didn&rsquo;t work for me. I&rsquo;ll stick with gnus for now.</p>
-<p>An interesting point is that gnus also works (and works pretty well) to read RSS feeds. I checked this last Thursday with <a href="http://ryanwaggoner.com/">Ryan Waggoner</a>&lsquo;s blog feed (check his blog, is pretty good) and I may move my RSS reading from my <a href="http://www.mostlymaths.net/2009/10/why-i-bought-ipod-touch.html">iPod Touch</a> to my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Nanonote</a>.</p>
-<h2 id="chatting-with-jabberel">Chatting with jabber.el</h2>
-<p>To chat, I use <a href="http://emacs-jabber.sourceforge.net/">jabber.el</a> to use my Google talk account to chat within emacs. So far no problems: it is a wonderful package. I&rsquo;m using the latest version in my netbook, and an outdated version (but still working) in my Mac, just to save the 3 or 4 minutes of re-configuration. If it works, don&rsquo;t touch it!</p>
+
+<p>In my <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">Arch Linux</a> installation, it looked like the mouse did nothing, but so far I have found a few uses in the Mac: interacting with Flash and with the (non-Flash) blogger editor.</p>
+
+<h2 id="reading-mail-with-gnus-gave-wanderlust-a-try-didn-t-work">Reading mail with gnus. Gave wanderlust a try, didn&rsquo;t work</h2>
+
+<p>I&rsquo;m reading mail with <a href="http://www.emacswiki.org/emacs/CategoryGnus" target="_blank">gnus</a>, mostly. I still use my <a href="http://www.mostlymaths.net/2009/10/why-i-bought-ipod-touch.html" target="_blank">iPod Touch</a> to read mail in the morning. And I still don&rsquo;t know how to configure multiple smtp accounts. Well, to be precise: I know how to configure multiple smtp accounts! The problem is that they are different smtp accounts based in the same server, and the solution I found (<a href="http://linil.wordpress.com/2008/01/18/gnus-gmail/" target="_blank">configuring multiple smtp accounts in gnus</a>) seems focused on different smtp servers. But I guess I can work on that to use all my gmail and Google Apps accounts.</p>
+
+<p>I tried to set up <a href="http://www.emacswiki.org/emacs/WanderLust" target="_blank">Wanderlust</a> in my netbook, but had no luck. It had some kind of connection problem I was not able to solve in 20 minutes, and I already had a working gnus configuration so decided to give up on it. I got a few comments in Reddit to my previous post regarding Wanderlust. Indeed, it looks like the perfect solution for Gmail reading with multiple smtp accounts, but it didn&rsquo;t work for me. I&rsquo;ll stick with gnus for now.</p>
+
+<p>An interesting point is that gnus also works (and works pretty well) to read RSS feeds. I checked this last Thursday with <a href="http://ryanwaggoner.com/" target="_blank">Ryan Waggoner</a>&rsquo;s blog feed (check his blog, is pretty good) and I may move my RSS reading from my <a href="http://www.mostlymaths.net/2009/10/why-i-bought-ipod-touch.html" target="_blank">iPod Touch</a> to my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Nanonote</a>.</p>
+
+<h2 id="chatting-with-jabber-el">Chatting with jabber.el</h2>
+
+<p>To chat, I use <a href="http://emacs-jabber.sourceforge.net/" target="_blank">jabber.el</a> to use my Google talk account to chat within emacs. So far no problems: it is a wonderful package. I&rsquo;m using the latest version in my netbook, and an outdated version (but still working) in my Mac, just to save the 3 or 4 minutes of re-configuration. If it works, don&rsquo;t touch it!</p>
+
 <p>I&rsquo;m missing a little my MSN based friends (previously I used pidgin in my netbook and Adium in my Mac), but not a lot, as most of them also use Google Talk.</p>
+
 <p>I&rsquo;d also love to have a way to interact with Skype (although I don&rsquo;t use it very frequently), but the only one I&rsquo;ve found only works in Linux, where I don&rsquo;t do any Skype.</p>
-<h2 id="tweet-from-twitteringel">Tweet from twittering.el</h2>
-<p>The package <a href="http://www.emacswiki.org/emacs/TwitteringMode">Twittering.el</a> is the real deal with twitter posting from within emacs. I have it both in my netbook and Mac, and it works flawlessly, using OAuth. I had a small problem: the latest stable release didn&rsquo;t work straight in my Mac, but once I replaced twittering.el with the latest git version, it started working. Now almost all my tweets come from it, unless a few I have posted through tweetdeck in the last days (as I was in my Macbook).</p>
-<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4pw4Vg4II/AAAAAAAACwI/6CgPKyiEoSI/s1600/twittering.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4pw4Vg4II/AAAAAAAACwI/6CgPKyiEoSI/s400/twittering.jpg" alt=""></a></p>
+
+<h2 id="tweet-from-twittering-el">Tweet from twittering.el</h2>
+
+<p>The package <a href="http://www.emacswiki.org/emacs/TwitteringMode" target="_blank">Twittering.el</a> is the real deal with twitter posting from within emacs. I have it both in my netbook and Mac, and it works flawlessly, using OAuth. I had a small problem: the latest stable release didn&rsquo;t work straight in my Mac, but once I replaced twittering.el with the latest git version, it started working. Now almost all my tweets come from it, unless a few I have posted through tweetdeck in the last days (as I was in my Macbook).</p>
+
+<p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4pw4Vg4II/AAAAAAAACwI/6CgPKyiEoSI/s1600/twittering.jpg" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/TP4pw4Vg4II/AAAAAAAACwI/6CgPKyiEoSI/s400/twittering.jpg" alt="" /></a></p>
+
 <h2 id="and-aside-from-that">And aside from that?</h2>
+
 <p>Currently I&rsquo;m using the same packages I&rsquo;ve been using previously. Below comes a digest from my Modes.el, the file where I load all modes I use. I&rsquo;ll talk about most of these during these days.</p>
+
 <ul>
-<li>
-<p>AucTeX: The best way to do LaTeX</p>
-</li>
-<li>
-<p>Flyspell: Spell checking on the fly on any buffer</p>
-</li>
-<li>
-<p>Doc-view: View pdf&rsquo;s directly in emacs</p>
-</li>
-<li>
-<p>Slime: whenever I do some Lisp or Clojure, I use slime (Superior Lisp Interaction Mode for Emacs)</p>
-</li>
-<li>
-<p>Yasnippet: Started using it as a suggestion to improve my <a href="http://www.mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html">hacks to write faster LaTeX</a>. I don&rsquo;t use it a lot: I find my hacks simpler.</p>
-</li>
-<li>
-<p>Gforth.el: Whenever I do some Forth, I use it interactively within emacs</p>
-</li>
-<li>
-<p>Cat and mouse: mouse cursor avoidance, your mouse cursor runs from your text cursor to be sure it does not block your view.</p>
-</li>
-<li>
-<p>Artist mode: Drawing in ASCII has never been so fun!</p>
-</li>
-<li>
-<p>Strokes mode: I stopped using it a while ago&hellip; But is so much fun! Control emacs with mouse gestures.</p>
-</li>
-<li>
-<p>Org-mode: This is probably the best way to deal with your agenda. I use org-mode in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Ben Nanonote</a> as a portable agenda.</p>
-</li>
-<li>
-<p>Pari mode: To interact with the powerful programmable gp-pari &ldquo;calculator&rdquo;.</p>
-</li>
-<li>
-<p>Recentf mode with timid completion: To be able to open recently closed files just by switching buffers</p>
-</li>
-<li>
-<p>Iswitchb mode: You should have this activated in your .emacs. Switch buffers with substrings from the name.</p>
-</li>
-<li>
-<p>I don&rsquo;t know if it is deprecated, but boxquote.el is wonderful to create boxed comments in C-code, and are automatically re-boxed with rebox.el</p>
-</li>
-<li>
-<p>I started using very recently undotree mode, becase I liked a lot <a href="http://emacs-fu.blogspot.com/2010/11/undo.html">emacs-fu&rsquo;s post about undo modes</a>.</p>
-</li>
-<li>
-<p>I&rsquo;m using emms in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Nanonote</a> to listen mp3&rsquo;s. I got a suggestion to use <a href="http://www.gentei.org/%7Eyuuji/software/mpg123el/">mp321.el</a>, will give it a try later on.</p>
-</li>
+<li>AucTeX: The best way to do LaTeX</li>
+<li>Flyspell: Spell checking on the fly on any buffer</li>
+<li>Doc-view: View pdf&rsquo;s directly in emacs</li>
+<li>Slime: whenever I do some Lisp or Clojure, I use slime (Superior Lisp Interaction Mode for Emacs)</li>
+<li>Yasnippet: Started using it as a suggestion to improve my <a href="http://www.mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html" target="_blank">hacks to write faster LaTeX</a>. I don&rsquo;t use it a lot: I find my hacks simpler.</li>
+<li>Gforth.el: Whenever I do some Forth, I use it interactively within emacs</li>
+<li>Cat and mouse: mouse cursor avoidance, your mouse cursor runs from your text cursor to be sure it does not block your view.</li>
+<li>Artist mode: Drawing in ASCII has never been so fun!</li>
+<li>Strokes mode: I stopped using it a while ago&hellip; But is so much fun! Control emacs with mouse gestures.</li>
+<li>Org-mode: This is probably the best way to deal with your agenda. I use org-mode in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Ben Nanonote</a> as a portable agenda.</li>
+
+<li><p>Pari mode: To interact with the powerful programmable gp-pari &ldquo;calculator&rdquo;.</p></li>
+
+<li><p>Recentf mode with timid completion: To be able to open recently closed files just by switching buffers</p></li>
+
+<li><p>Iswitchb mode: You should have this activated in your .emacs. Switch buffers with substrings from the name.</p></li>
+
+<li><p>I don&rsquo;t know if it is deprecated, but boxquote.el is wonderful to create boxed comments in C-code, and are automatically re-boxed with rebox.el</p></li>
+
+<li><p>I started using very recently undotree mode, becase I liked a lot <a href="http://emacs-fu.blogspot.com/2010/11/undo.html" target="_blank">emacs-fu&rsquo;s post about undo modes</a>.</p></li>
+
+<li><p>I&rsquo;m using emms in my <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Nanonote</a> to listen mp3&rsquo;s. I got a suggestion to use <a href="http://www.gentei.org/%7Eyuuji/software/mpg123el/" target="_blank">mp321.el</a>, will give it a try later on.</p></li>
 </ul>
+
 <h2 id="why-i-emacsified-my-mac">Why I emacsified my Mac?</h2>
-<p>Here in Spain, yesterday (Monday) and tomorrow (Wednesday) are national holidays. And today (Tuesday) is an optional holiday day, meaning this week we had a really long weekend: 5 days. I was going to Switzerland with my girlfriend, but the <a href="http://www.mostlymaths.net/2010/12/covert-strike-of-spanish-air.html">treacherous strike of Spanish air controllers</a> left me on the ground&hellip; With my netbook in my office. That would have mean almost a week without being completely emacs, as my plan was to do it only in the office. After being able to configure gnus without problems in my Mac, I just took the plunge and yesterday I finished all the configuration steps to have all the nice pieces.</p>
+
+<p>Here in Spain, yesterday (Monday) and tomorrow (Wednesday) are national holidays. And today (Tuesday) is an optional holiday day, meaning this week we had a really long weekend: 5 days. I was going to Switzerland with my girlfriend, but the <a href="http://www.mostlymaths.net/2010/12/covert-strike-of-spanish-air.html" target="_blank">treacherous strike of Spanish air controllers</a> left me on the ground&hellip; With my netbook in my office. That would have mean almost a week without being completely emacs, as my plan was to do it only in the office. After being able to configure gnus without problems in my Mac, I just took the plunge and yesterday I finished all the configuration steps to have all the nice pieces.</p>
+
 <p>As you can see in the first screenshot (the conkeror one), I just have 6 application icons in my dock now: Finder, emacs, iTunes, Settings, Preview and conkeror. And I could remove iTunes, Settings and Preview!</p>
+
 <p>Stay tuned for more information on the challenge! Also, consider joining me and asking for specific configuration steps in the comment section.</p>
+
 <p>ParseList(ScrambleList(Relateds(emacs)),5)</p>
 <hr/><ul class="pa0">
   

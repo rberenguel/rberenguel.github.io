@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | gtags (GNU global) in emacs for Scala</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,6 +41,8 @@
 <meta property="article:modified_time" content="2019-05-09T17:27:00+02:00" />
 <meta itemprop="name" content="gtags (GNU global) in emacs for Scala">
 <meta itemprop="description" content="As you may know, I’m a heavy emacs user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.">
+
+
 <meta itemprop="datePublished" content="2019-05-09T17:27:00&#43;02:00" />
 <meta itemprop="dateModified" content="2019-05-09T17:27:00&#43;02:00" />
 <meta itemprop="wordCount" content="282">
@@ -48,6 +50,7 @@
 
 
 <meta itemprop="keywords" content="emacs,Scala,spacemacs," />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html/thom-masat-694057-unsplash.jpg"/>
@@ -144,25 +147,30 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As you may know, I’m a heavy <a href="https://www.mostlymaths.net/search/label/emacs">emacs</a> user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As you may know, I’m a heavy <a href="https://www.mostlymaths.net/search/label/emacs" target="_blank">emacs</a> user, and a frequent Scala developer. Scala tooling for emacs was restricted to mostly ensime until recently. Although ensime is an excellent piece of software, it made my old Macbook suffer a lot (it only had 8gb of RAM). So, most of the time I just went hardcore mode developer, and worked with no autocompletion, no jump to definition, no-nothing. A pervasive use of ripgrep and good memory were sometimes enough, but I was envious of many things I could see in my colleagues using IntelliJ. Of course, switching editors was not an option.</p>
+
 <figure class="fig-wide">
     <img src="thom-masat-694057-unsplash.jpg"
          alt="Photo by thom masat on Unsplash"/> <figcaption>
-            <p>Photo by <a href="https://unsplash.com/photos/8kLFdQh6scA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">thom masat</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/photos/8kLFdQh6scA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">thom masat</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
         </figcaption>
 </figure>
 
+
 <p>I looked up what solutions were available, and the only option that seemed good enough was using the classic <code>ctags/etags/gtags</code> I hadn’t used since my C days.</p>
+
 <p>Having a tags implementation can bring an almost-decent jump-to-definition essentially for free: gtags (and the others) work by pre-analysing the data and generating symbol maps which are usually stored as files, the overhead in speed and memory is minimal.</p>
+
 <p>Installing it can get somewhat unintuitive (specially on Mac), since you need <em>very</em> specific settings for it to work with emacs and especially, Scala code.</p>
-<p>Start by installing <a href="https://en.m.wikipedia.org/wiki/GNU_GLOBAL">GNU global</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install global --with-pygments --with-ctags --with-exuberant-ctags
-</code></pre></div><p>The key parts is having <code>pygments</code>.
+
+<p>Start by installing <a href="https://en.m.wikipedia.org/wiki/GNU_GLOBAL" target="_blank">GNU global</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install global --with-pygments --with-ctags --with-exuberant-ctags</code></pre></div>
+<p>The key parts is having <code>pygments</code>.
 Aside from this you will need to export the following environment variables:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">GTAGSCONF<span style="color:#f92672">=</span>/usr/local/share/gtags/gtags.conf
-GTAGSLABEL<span style="color:#f92672">=</span>pygments
-</code></pre></div><p>Finally, you need to install (or activate) <code>ggtags-mode</code>. If you use spacemacs, you only need to activate the <code>gtags</code> layer.
-All this has become moot as soon as <a href="https://scalameta.org/metals/">metals</a> has reached a usable state: now you can have a really fast language server for Scala, written in Scala with low memory overhead.</p><hr/><ul class="pa0">
+GTAGSLABEL<span style="color:#f92672">=</span>pygments</code></pre></div>
+<p>Finally, you need to install (or activate) <code>ggtags-mode</code>. If you use spacemacs, you only need to activate the <code>gtags</code> layer.
+All this has become moot as soon as <a href="https://scalameta.org/metals/" target="_blank">metals</a> has reached a usable state: now you can have a really fast language server for Scala, written in Scala with low memory overhead.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>

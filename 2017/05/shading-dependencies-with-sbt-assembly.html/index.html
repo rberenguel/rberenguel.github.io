@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,6 +43,8 @@ Everything seemed straightforward enough, and I got it working pretty quickly (a
 <meta itemprop="name" content="Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)">
 <meta itemprop="description" content="A few weeks ago I needed to parse configuration files in Scala for a Spark project and decided to use PureConfig. It is incredibly lean to use, needing minimal boilerplate. I recommend you check it out (give also a look at CaseClassy, which I haven&rsquo;t had time to test yet).
 Everything seemed straightforward enough, and I got it working pretty quickly (as in, it compiled properly). The surprise? spark-submit failed with a conflict with Shapeless (lacking a witness).">
+
+
 <meta itemprop="datePublished" content="2017-05-07T10:40:00&#43;02:00" />
 <meta itemprop="dateModified" content="2017-05-07T10:40:00&#43;02:00" />
 <meta itemprop="wordCount" content="141">
@@ -50,6 +52,7 @@ Everything seemed straightforward enough, and I got it working pretty quickly (a
 
 
 <meta itemprop="keywords" content="Apache Spark,scala," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -141,22 +144,23 @@ if (!doNotTrack) {
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A few weeks ago I needed to parse configuration files in Scala for a Spark
 project and decided to use
-<a href="https://github.com/pureconfig/pureconfig">PureConfig</a>. It is incredibly lean to
+<a href="https://github.com/pureconfig/pureconfig" target="_blank">PureConfig</a>. It is incredibly lean to
 use, needing minimal boilerplate. I recommend you check it out (give also a look
-at <a href="https://47deg.github.io/case-classy/">CaseClassy</a>, which I haven&rsquo;t had time
+at <a href="https://47deg.github.io/case-classy/" target="_blank">CaseClassy</a>, which I haven&rsquo;t had time
 to test yet).</p>
+
 <p>Everything seemed straightforward enough, and I got it working pretty quickly
 (as in, it compiled properly). The surprise? <code>spark-submit</code> failed with a
-conflict with <a href="https://github.com/milessabin/shapeless">Shapeless</a> (lacking a
+conflict with <a href="https://github.com/milessabin/shapeless" target="_blank">Shapeless</a> (lacking a
 <code>witness</code>). This is due to Spark 2.1.0 needing <code>Breeze</code>, which in turn needs
 <code>Shapeless 2.0.0</code> (which is pretty old). Problem is, Spark&rsquo;s required library
 prevented <code>PureConfig</code> from pulling the correct version. D&rsquo;oh!</p>
+
 <p>There is an easy fix, though, if you are using
-<a href="https://github.com/sbt/sbt-assembly">sbt-assembly</a> you can <a href="https://github.com/sbt/sbt-assembly#shading">shade
+<a href="https://github.com/sbt/sbt-assembly" target="_blank">sbt-assembly</a> you can <a href="https://github.com/sbt/sbt-assembly#shading" target="_blank">shade
 dependencies</a>, by adding something
 like the following to your <code>assembly.sbt</code> file:</p>
-<pre><code class="language-sbt" data-lang="sbt">assemblyShadeRules in assembly := Seq(ShadeRule.rename(&quot;shapeless.**&quot; -&gt; &quot;new_shapeless.@1&quot;).inAll)
-</code></pre><hr/><ul class="pa0">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sbt" data-lang="sbt">assemblyShadeRules in assembly := Seq(ShadeRule.rename(&#34;shapeless.**&#34; -&gt; &#34;new_shapeless.@1&#34;).inAll)</code></pre></div><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
@@ -182,6 +186,10 @@ like the following to your <code>assembly.sbt</code> file:</p>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
+           <a href="/2020/06/202047-readings-of-the-week.html/">2020#47 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="/2020/06/202046-readings-of-the-week.html/">2020#46 Readings of the Week</a>
        </li>
 	     
@@ -195,10 +203,6 @@ like the following to your <code>assembly.sbt</code> file:</p>
 	     
 	     <li  class="mb2">
            <a href="/2020/03/202043-readings-of-the-week.html/">2020#43 Readings of the Week</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="/2020/03/202042-readings-of-the-week.html/">2020#42 Readings of the Week</a>
        </li>
 	     
     </ul>

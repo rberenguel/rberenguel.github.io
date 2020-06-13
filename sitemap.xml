@@ -1,10 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apl/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/generative/</loc>
-    <lastmod>2020-06-12T08:30:33+02:00</lastmod>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/nlp/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/rust/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/zio/</loc>
+    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
   </url>
   
   <url>
@@ -18,22 +83,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-12T08:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/p5js/</loc>
-    <lastmod>2020-06-12T08:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-12T08:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-06-12T08:30:33+02:00</lastmod>
   </url>
   
@@ -53,42 +103,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-08T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/06/202046-readings-of-the-week.html/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/nlp/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2020-06-07T10:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/zio/</loc>
     <lastmod>2020-06-07T10:30:33+02:00</lastmod>
   </url>
   
@@ -294,11 +309,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/11/201930-readings-of-the-week.html/</loc>
-    <lastmod>2019-11-03T15:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/rust/</loc>
     <lastmod>2019-11-03T15:06:33+02:00</lastmod>
   </url>
   
@@ -830,11 +840,6 @@
   <url>
     <loc>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</loc>
     <lastmod>2015-06-14T20:12:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/apl/</loc>
-    <lastmod>2015-04-13T11:29:00+02:00</lastmod>
   </url>
   
   <url>

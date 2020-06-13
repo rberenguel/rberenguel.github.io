@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Apache Hive and java.lang.ClassCastException on start</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,6 +41,8 @@
 <meta property="article:modified_time" content="2019-02-19T23:47:00+01:00" />
 <meta itemprop="name" content="Apache Hive and java.lang.ClassCastException on start">
 <meta itemprop="description" content="A couple of days ago I installed Hive from Homebrew on my Mac. Sadly, when I tried to run the hive command, I got the weird-looking error">
+
+
 <meta itemprop="datePublished" content="2019-02-19T23:47:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-02-19T23:47:00&#43;01:00" />
 <meta itemprop="wordCount" content="247">
@@ -48,6 +50,7 @@
 
 
 <meta itemprop="keywords" content="Data, Mac,Big data,Hive," />
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2019/02/apache-hive-and-javalangclasscastexcept.html/annie-spratt-137316-unsplash.jpg"/>
@@ -144,13 +147,15 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A couple of days ago I installed <a href="https://github.com/apache/hive">Hive</a> from <a href="https://brew.sh/">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A couple of days ago I installed <a href="https://github.com/apache/hive" target="_blank">Hive</a> from <a href="https://brew.sh/" target="_blank">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
+
 <figure class="fig-wide">
     <img src="annie-spratt-137316-unsplash.jpg"
          alt="Photo by Annie Spratt on Unsplash"/> <figcaption>
-            <p>Photo by <a href="https://unsplash.com/photos/8_WZU5xKFKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/search/photos/hive?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/photos/8_WZU5xKFKk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Annie Spratt</a> on <a href="https://unsplash.com/search/photos/hive?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
         </figcaption>
 </figure>
+
 
 <pre><code>Exception in thread &quot;main&quot; java.lang.ClassCastException:   
   class jdk.internal.loader.ClassLoaders$AppClassLoader   
@@ -159,12 +164,19 @@ if (!doNotTrack) {
   (jdk.internal.loader.ClassLoaders$AppClassLoader   
     and   
   java.net.URLClassLoader are in module java.base of loader 'bootstrap')
-</code></pre><p>That looked like a JVM incompatibility, so I switched from GraalVM (the one I use by default) to Java 8 (I have aliases <code>jgrce</code>, <code>jgree</code>, <code>j8</code> and <code>j11</code> to switch JVMs). Still, the same error regardless. Weird. Maybe Java 11 (the other JVM I have installed)? Nope, same error.</p>
+</code></pre>
+
+<p>That looked like a JVM incompatibility, so I switched from GraalVM (the one I use by default) to Java 8 (I have aliases <code>jgrce</code>, <code>jgree</code>, <code>j8</code> and <code>j11</code> to switch JVMs). Still, the same error regardless. Weird. Maybe Java 11 (the other JVM I have installed)? Nope, same error.</p>
+
 <p>A quick Googling confirmed that this was related to Hive picking up Java 11, but only working with 7, 8 or 9 (not sure about 9). This in turn is due to the Hive boot scripts looking for the latest JRE which is at least 7, like the <code>hive</code> command here:</p>
+
 <pre><code>JAVA_HOME=&quot;$(/usr/libexec/java_home --version 1.7+)&quot; \   
 HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \  
 &quot;/usr/local/Cellar/hive/3.1.1/libexec/bin/hive&quot; &quot;$@&quot;
-</code></pre><p>This will pick 11, which no longer has <code>URLClassLoader</code> (I think this was changed in Java 9). So, won&rsquo;t start.</p>
+</code></pre>
+
+<p>This will pick 11, which no longer has <code>URLClassLoader</code> (I think this was changed in Java 9). So, won&rsquo;t start.</p>
+
 <p>Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java &gt; 1.8. For me this was not an option, so I just modified the scripts by removing the <code>JAVA_HOME</code> condition (since I set my <code>JAVA_HOME</code> globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">

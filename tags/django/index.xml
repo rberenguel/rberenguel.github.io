@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on mostlymaths.net</title>
@@ -18,7 +18,7 @@
       
       <guid>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</guid>
       <description>Note from 2020: The domain mentioned in the post is no longer active (or mine at least), I cancelled this project some time ago
-Last week I wrote about ~whatlanguageis.com~, my first simple try at creating a Django powered site. How did it came to be?
+Last week I wrote about [~whatlanguageis.com~](), my first simple try at creating a Django powered site. How did it came to be?
 In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web.</description>
     </item>
     

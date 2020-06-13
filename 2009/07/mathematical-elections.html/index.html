@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Mathematical elections</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -45,6 +45,8 @@ Background: Let K={A,B,C&hellip;} be a finite set of alternatives (maybe politic
 <meta itemprop="description" content="Image from Flickr
 Arrow&rsquo;s impossibility theorem and related results
 Background: Let K={A,B,C&hellip;} be a finite set of alternatives (maybe political parties), with more than 3 items. Let&rsquo;s call transitive preference a way to sort all these elements, with draws possible. It&rsquo;s just a funny name for a vote, in the more general sense as we can split our vote (Let A have 0.5, B 0.25 and C 0.25 of our vote).">
+
+
 <meta itemprop="datePublished" content="2009-07-01T11:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-07-01T11:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="493">
@@ -52,6 +54,7 @@ Background: Let K={A,B,C&hellip;} be a finite set of alternatives (maybe politic
 
 
 <meta itemprop="keywords" content="Maths,Bizarre," />
+
 
 <meta name="twitter:card" content="summary" />
 
@@ -142,42 +145,51 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.flickr.com/photos/adrianclarkmbbs/2939065035/"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sj9AuSjjNJI/AAAAAAAAA-o/haB0-A3h5H4/s400/2939065035_3281aa0da8.jpg" alt=""></a></p>
-<p>Image from <a href="http://www.flickr.com/photos/adrianclarkmbbs/2939065035/">Flickr</a></p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.flickr.com/photos/adrianclarkmbbs/2939065035/" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sj9AuSjjNJI/AAAAAAAAA-o/haB0-A3h5H4/s400/2939065035_3281aa0da8.jpg" alt="" /></a></p>
+
+<p>Image from <a href="http://www.flickr.com/photos/adrianclarkmbbs/2939065035/" target="_blank">Flickr</a></p>
+
 <p>Arrow&rsquo;s impossibility theorem and related results</p>
+
 <p>Background: Let K={A,B,C&hellip;} be a finite set of alternatives (maybe political parties), with more than 3 items. Let&rsquo;s call transitive preference a way to sort all these elements, with draws possible. It&rsquo;s just a funny name for a vote, in the more general sense as we can split our vote (Let A have 0.5, B 0.25 and C 0.25 of our vote). Now consider a set of N electors, each one with a transitive preference, i.e. a vote. We will call constitution (according to the naming in the theorem) a function which assigns each set of electors-votes a certain outcome: the final election, the people&rsquo;s choice. As a matter of notaton, A&gt;(n)B means that the elector n decides A is a better election than B.</p>
+
 <p>There are certain properties which a &ldquo;good&rdquo; constitution should verify:</p>
+
 <ul>
 <li>Transitivity: Assume an outcome is given, and the constitution says A&gt;B. The constitution will be transitive if JUST a voter changes his vote A&gt;(n)B for B&gt;(n)A, then the constitutional output will be either no change, or A gets dropped. This assumption is used so that voting isn&rsquo;t harmful for the voted party.</li>
 <li>Unanimity: If everyone votes A&gt;B, the constitution should result in A&gt;B.</li>
 <li>Independence of irrelevant alternatives: If the fact of A being above B in the constitution is only a result of A being above B in the individual votes.</li>
 </ul>
+
 <p>We say a constitution is a dictatorship if there is an elector n such that the constitution puts A&gt;B whenever n puts A above B.</p>
-<p><a href="http://en.wikipedia.org/wiki/Arrow%27s_theorem">Arrow&rsquo;s impossibility theorem</a>: Every constitution satisfying all three properties above is a dictatorship.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Arrow%27s_theorem" target="_blank">Arrow&rsquo;s impossibility theorem</a>: Every constitution satisfying all three properties above is a dictatorship.</p>
+
 <p>This theorem establishes compositions in a legislative chamber, for instance. And there is not a clear-cut way to do so, the theorem says. What happens if the constitution just selects, without order, a subset of candidates?</p>
-<p><a href="http://en.wikipedia.org/wiki/Duggan-Schwartz_theorem">Duggan-Schwartz&rsquo;s theorem</a>: A constitution to select a subset of candidates from a set of more than 3 always satisfies:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Duggan-Schwartz_theorem" target="_blank">Duggan-Schwartz&rsquo;s theorem</a>: A constitution to select a subset of candidates from a set of more than 3 always satisfies:</p>
+
 <ul>
-<li>
-<p>The system is not anonymous, thus the vote of certain electors has a bigger impact than others.</p>
-</li>
-<li>
-<p>The system pre-imposes that certain candidates never win.</p>
-</li>
-<li>
-<p>The preferred candidate amongst all electors is in the subset of electees.</p>
-</li>
-<li>
-<p>The election is manipulable.</p>
-</li>
+<li>The system is not anonymous, thus the vote of certain electors has a bigger impact than others.</li>
+<li>The system pre-imposes that certain candidates never win.</li>
+
+<li><p>The preferred candidate amongst all electors is in the subset of electees.</p></li>
+
+<li><p>The election is manipulable.</p></li>
 </ul>
+
 <p>And what if we just need to choose one winner, a president?</p>
-<p><a href="http://en.wikipedia.org/wiki/Gibbard-Satterthwaite_theorem">Gibbard-Satterthwaite&rsquo;s theorem</a>: A constitution to choose just one candidate amongs more than 3 candidates verifies one of the following:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Gibbard-Satterthwaite_theorem" target="_blank">Gibbard-Satterthwaite&rsquo;s theorem</a>: A constitution to choose just one candidate amongs more than 3 candidates verifies one of the following:</p>
+
 <ul>
 <li>It is a dictatorship,</li>
 <li>The system pre-imposes that certain candidates never win.</li>
 <li>The election is manipulable.</li>
 </ul>
+
 <p>What means that the election is manipulable? There are different ways it could be manipulated. For instance, knowing how the system works, and certain voting trends, the vote of a number of individuals can change the outcome of the election. A typical example, the slightly extreme leftists voting moderate leftists, knowing that more extreme leftists won&rsquo;t get representation in the election.</p>
+
 <p>This, of course, doesn&rsquo;t mean you should not vote&hellip; just think a little before doing so.</p>
 <hr/><ul class="pa0">
   
@@ -217,11 +229,11 @@ if (!doNotTrack) {
        </li>
 	     
 	     <li  class="mb2">
-           <a href="/2011/01/counter-examples-converging-sequences.html/">Counter-examples, Converging Sequences and Giving Immediate Answers</a>
+           <a href="/2020/06/202047-readings-of-the-week.html/">2020#47 Readings of the Week</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="/2010/08/and-e-appears-from-nowhere.html/">And e appears from nowhere!</a>
+           <a href="/2011/01/counter-examples-converging-sequences.html/">Counter-examples, Converging Sequences and Giving Immediate Answers</a>
        </li>
 	     
     </ul>
