@@ -3,12 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2020/06/202048-readings-of-the-week.html/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/golang/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/rust/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/06/202047-readings-of-the-week.html/</loc>
     <lastmod>2020-06-13T12:30:33+02:00</lastmod>
   </url>
   
@@ -23,47 +68,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/nlp/</loc>
     <lastmod>2020-06-13T12:30:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/rust/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-06-13T12:30:33+02:00</lastmod>
   </url>
   
@@ -414,11 +424,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/</loc>
-    <lastmod>2019-07-07T13:34:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/golang/</loc>
     <lastmod>2019-07-07T13:34:00+02:00</lastmod>
   </url>
   
