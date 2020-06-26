@@ -3,12 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/06/202048-readings-of-the-week.html/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2020/06/202049-readings-of-the-week.html/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/d3/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/generative/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maps/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maths/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-06-26T12:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/06/202048-readings-of-the-week.html/</loc>
     <lastmod>2020-06-20T12:30:33+02:00</lastmod>
   </url>
   
@@ -18,37 +68,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/rust/</loc>
-    <lastmod>2020-06-20T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-06-20T12:30:33+02:00</lastmod>
   </url>
   
@@ -59,11 +79,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/apl/</loc>
-    <lastmod>2020-06-13T12:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/generative/</loc>
     <lastmod>2020-06-13T12:30:33+02:00</lastmod>
   </url>
   
@@ -449,11 +464,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/06/201916-readings-of-week.html/</loc>
-    <lastmod>2019-06-10T21:18:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maps/</loc>
     <lastmod>2019-06-10T21:18:00+02:00</lastmod>
   </url>
   
