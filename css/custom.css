@@ -59,6 +59,7 @@ blockquote {
 }
 
 blockquote p {
+    text-indent: 0 !important;
     margin: 0 !important;
 }
 
