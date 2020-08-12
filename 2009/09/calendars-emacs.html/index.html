@@ -129,9 +129,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Calendars &amp; emacs</h1>
@@ -140,18 +138,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 1 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 179 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 1 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 179 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sp-vQdgjEqI/AAAAAAAABTA/Jav7iabgUS8/s1600-h/Cal.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sp-vQdgjEqI/AAAAAAAABTA/Jav7iabgUS8/s400/Cal.jpg" alt=""></a><br>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sp-vQdgjEqI/AAAAAAAABTA/Jav7iabgUS8/s1600-h/Cal.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Sp-vQdgjEqI/AAAAAAAABTA/Jav7iabgUS8/s400/Cal.jpg" alt=""></a><br>
 My month, starting</p>
 <p>For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &ldquo;next Monday&rdquo;, or had a workshop somewhere &ldquo;in the last weeks of January&rdquo;. But these days I&rsquo;ve come to realize I just need a calendar now&hellip; And finally managed to mix <a href="http://orgmode.org/">org-mode&rsquo;</a>s events with standard <a href="http://en.wikipedia.org/wiki/Emacs">emacs</a> <a href="http://www.gnu.org/software/emacs/manual/html_node/emacs/Calendar_002fDiary.html">calendar+diary</a> views. This calendar is emacs calendar&rsquo;s mode standard one (I love its looks) but harvests information from org-mode&rsquo;s headlines and timestamps. I can now have the best of both worlds: a nice printed calendar (calendar mode), and a nice computerized one (org-mode).</p>
 <p>I had some problems with the setup of my diary file to open .org files, and the problem solved by putting this in my diary file:</p>
@@ -163,7 +159,8 @@ My month, starting</p>
 <p>&amp;%%(org-diary :timestamp) ~/path/to/file</p>
 </blockquote>
 <p>And the useful options are :timestamp, :sexp, :schedule and :deadline, to select which things to show. The initial problem is the :sexp as default, it won&rsquo;t work with non-diary (org-mode&rsquo;s) diary entries.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/emacs" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">emacs</a>

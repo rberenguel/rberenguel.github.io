@@ -129,9 +129,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">RCS &amp; SVN: Version control</h1>
@@ -140,18 +138,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 423 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 423 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/Syf-dJJe2_I/AAAAAAAABng/wKLgTvvvWcg/s1600-h/Picture+5.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/Syf-dJJe2_I/AAAAAAAABng/wKLgTvvvWcg/s400/Picture+5.png" alt=""></a><br>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/Syf-dJJe2_I/AAAAAAAABng/wKLgTvvvWcg/s1600-h/Picture+5.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/Syf-dJJe2_I/AAAAAAAABng/wKLgTvvvWcg/s400/Picture+5.png" alt=""></a><br>
 With GIMP&rsquo;s &ldquo;Map to sphere&rdquo;</p>
 <p>A few years ago, while I was still mainly a Windows user, I read &lsquo;<a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X">Pragmatic programmer: From journeyman to master</a>', and learnt about <a href="http://en.wikipedia.org/wiki/Version_control">Version Control Systems</a>. You know, <a href="http://en.wikipedia.org/wiki/Subversion_%28software%29">SVN</a>, <a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>, <a href="http://en.wikipedia.org/wiki/Git_%28software%29">Git</a>, <a href="http://en.wikipedia.org/wiki/Darcs">Darcs</a>. As I was just a single user working locally (just wanted the incremental and logged backups), I installed <a href="http://en.wikipedia.org/wiki/Revision_Control_System">RCS</a>. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of <a href="http://en.wikipedia.org/wiki/Delta_encoding">delta</a> (text added from one revision to the next) which is a plain text, human readable file. If something messes up, it can be solved easily.</p>
 <p>I was happily revising my source, as emacs has a nice transparent way of dealing with revisions.. until I had username conflict problems. Still don&rsquo;t know exactly why, I blamed Windows and gave up. Then I became a fully UNIX user (MacOS and Linux) sadly forgot about versioning. But recently I started using an SVN repository in Google Project Hosting, and it was working so well I re-installed RCS. Still a week and it works like a charm.</p>
@@ -159,7 +155,8 @@ With GIMP&rsquo;s &ldquo;Map to sphere&rdquo;</p>
 <p>Using RCS with emacs (or using CVS, SVN or even darcs) is quite transparent. Setting aside the keyboard shortcuts, there is a submenu in the &lsquo;Tools&rsquo; menu with the revisioning options. Emacs automagically detects from the directory structure if the revisions should be RCS, CVS or SVN and deals with it with almost no interaction. C-x v v either checks in or out the latest revision from the delta file, and C-x v c reverts the last check-in. As you can see, all shortcuts of the version control system start by C-x v. To add a file to the repository system, I always use the console, as emacs doesn&rsquo;t know by default which version control system to use. To add version control to filename, go to the working directory and ci -u filename.</p>
 <p>As I am working on what I want to be freely available source, I also use SVN in emacs, keeping in sync the source files from my Linux netbook with my Macbook via Google Project Hosting. Soon you&rsquo;ll know more about what these projects are, with links for download, of course!</p>
 <p>Now there is no excuse for keeping up with back-ups&hellip; And no excuse for saying &ldquo;Oh dear, I need that piece of code I deleted last week!&quot;.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>

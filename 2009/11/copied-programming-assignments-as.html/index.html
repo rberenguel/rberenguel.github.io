@@ -132,9 +132,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Copied programming assignments as cryptograms</h1>
@@ -143,18 +141,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 290 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 290 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s1600-h/3317243295_39c3fa4175.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s400/3317243295_39c3fa4175.jpg" alt=""></a></p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s1600-h/3317243295_39c3fa4175.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s400/3317243295_39c3fa4175.jpg" alt=""></a></p>
 <p>Pieces of an ENIGMA machine, from <a href="http://www.flickr.com/photos/brewbooks/3317243295/">Flickr</a></p>
 <p>Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&rsquo;s mind. As a teacher, how do you detect this?</p>
 <p>From my point of view, there are fundamentally two different kinds of copy:</p>
@@ -166,7 +162,8 @@ if (!doNotTrack) {
 <p>How to detect this? I am still writing code to test it with our last assignment, but my idea is that this is like (like, as looks like, not as equal to) a cryptogram, with a simple enough substitution cipher. Not exactly, but probably quite similar. And singular value decomposition could help detect these kind of ciphers.</p>
 <p>I am writing a set of awk scripts that rip off C comments, printf, scanf, fopen and such, just to leave the skeleton of the real algorithm, and another script that separates each C file into individual functions. Why? Because a whole program is unlikely to be copied, but individual functions are most probably shared. I&rsquo;ll start with a word frequency analysis of individual functions. If this works&hellip; ok, if it doesn&rsquo;t, maybe I&rsquo;ll try higher rank approximations. Word frequency (rank 1 approximation, roughly) can be done straight in awk, and then compared.</p>
 <p>I&rsquo;ll keep writing about this as it goes on.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>

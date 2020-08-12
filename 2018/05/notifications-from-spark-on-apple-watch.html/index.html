@@ -126,9 +126,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Notifications from Spark on an Apple Watch (via IFTTT)</h1>
@@ -137,18 +135,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 428 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 428 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-    <p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html">GraphX</a> on Spark).</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with <a href="https://github.com/graphframes/graphframes">GraphFrames</a> (the successor of <a href="https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html">GraphX</a> on Spark).</p>
 <p>This is quite large: before running the graph algorithms I did some exploratory analysis, and each step took at least 10 minutes. Checking stage/task progress bars or generated analysis plans is only interesting for the first fee&hellip; I wanted a way to get a subtle notification when the process finished. This way I could work on something else while the process is doing its thing, and I could come back for the next step as soon as the data is ready.</p>
 <p>I have most of my notifications deactivated, though. No emails, Twitter, WhatsApp. Nothing shows on my Mac screen, few show on my <a href="https://amzn.to/2reDmZl">phone</a> or <a href="https://amzn.to/2Kq0Lid">watch</a>, and only a handful are allowed to vibrate (none to make a sound). What could I do to get a notification? Even if I overrode some of my settings, I needed something that either could work cross-device or could make my watch vibrate, since it’s the only device I have always with me.</p>
 <p>Well, <a href="https://ifttt.com/discover">IFTTT</a> can actually do that. IFTTT is a service to plumb external services with iOS/Android devices, to build workflows. It also has a <a href="https://ifttt.com/maker_webhooks">handy webhook you can use as a trigger for workflows</a>. And the IFTTT app can send notifications, to the phone or watch. Ticks all the boxes.</p>
@@ -158,7 +154,8 @@ if (!doNotTrack) {
 <p>By the way, to run a spark shell with this library, use</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spark-shell --packages org.scalaj:scalaj-http_2.11:2.3.0<span style="color:#e6db74">`</span>
 </code></pre></div><p>Remember that multiple packages are separated by commas in case you also happen to, you know, use GraphFrames.</p>
-<p>Oh, and if you happen to want notifications after an sbt task, you can use my <a href="https://github.com/rberenguel/sbt-ifttt">sbt-ifttt plugin</a>.</p><hr/><ul class="pa0">
+<p>Oh, and if you happen to want notifications after an sbt task, you can use my <a href="https://github.com/rberenguel/sbt-ifttt">sbt-ifttt plugin</a>.</p><hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/watch" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif"> Watch</a>

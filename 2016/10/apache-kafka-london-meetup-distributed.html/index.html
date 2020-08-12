@@ -129,9 +129,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">October Kafka London Meetup - Jay Kreps: Distributed stream processing with Apache Kafka</h1>
@@ -140,24 +138,23 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 263 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 263 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p>This has been the first time I could attend the <a href="http://www.meetup.com/Apache-Kafka-London/">Apache Kafka meetup</a> in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>This has been the first time I could attend the <a href="http://www.meetup.com/Apache-Kafka-London/">Apache Kafka meetup</a> in London. Previous meetings had me in Barcelona or flying. First realisation: it is a surprisingly crowded meetup! Clearly, everyone is using Kafka, even if it is not clear from the outside. Oh, and the food was pretty good, too. Thanks to the sponsor (which I have sadly forgotten).</p>
 <p>I really enjoyed this one. The speaker was Jay Kreps, CEO and co-founder of <a href="http://www.confluent.io/">Confluent</a> (and author of <a href="http://amzn.to/2fxKcVE">I Heart Logs</a>), so, basically, a Kafka top committer himself. He delivered the same presentation he gave in <a href="http://sched.co/8B6K">Reactive Summit 2016</a>, but since I wasn&rsquo;t in the former I could enjoy it this time. It was a hand-drawn presentation (I suspect using <a href="https://itunes.apple.com/gb/app/paper-by-fiftythree-sketch/id506003812">Paper</a> for iOS), hitting all the supposedly good points of technical presentations (short slides, don&rsquo;t read them, etc). It was also quite deep, explaining what/how and why we should use <a href="https://kafka.apache.org/0100/javadoc/org/apache/kafka/streams/KafkaStreams.html">Kafka Streams</a> for our real-time data pipelines.</p>
 <p><a href="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s1600/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg"><img src="https://3.bp.blogspot.com/-f0Rx_89z_tg/WBerKmefN0I/AAAAAAAAEas/LfydFdiUiWsIG5awIBCk-cIUt5a7Ry71gCLcB/s320/File%2B31-10-2016%252C%2B20%2B16%2B07.jpeg" alt=""></a></p>
 <p>Jay, presenting. This architecture needs some Kafka</p>
 <p>The key takeaway is that if you are already using Kafka as your real-time data hose-and-bucket, you can reuse this cluster (and all its goodies: partitions, groups, offsets) for processing the data as it comes, withouth needing an additional framework (Flink, Spark, Storm&hellip; you know the tune). Also, if you&rsquo;drather write Perl than Java and this is preventing you from using the KStreams API, behold! Even if they don&rsquo;t have an official Scala API, wrapping it is extremely easy.</p>
 <p>You can view (and download) the slides from <a href="http://www.slideshare.net/Reactivesummit/distributed-stream-processing-with-apache-kafka">here</a>, and watch Jay in video from Reactive Summit <a href="https://www.youtube.com/watch?v=rXzuZb3fHHM">here</a>.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/london" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">London</a>

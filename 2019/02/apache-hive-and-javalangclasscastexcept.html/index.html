@@ -134,9 +134,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Apache Hive and java.lang.ClassCastException on start</h1>
@@ -145,18 +143,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 247 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 247 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-    <p>A couple of days ago I installed <a href="https://github.com/apache/hive">Hive</a> from <a href="https://brew.sh/">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A couple of days ago I installed <a href="https://github.com/apache/hive">Hive</a> from <a href="https://brew.sh/">Homebrew</a> on my Mac. Sadly, when I tried to run the <code>hive</code> command, I got the weird-looking error</p>
 <figure class="fig-wide">
     <img src="annie-spratt-137316-unsplash.jpg"
          alt="Photo by Annie Spratt on Unsplash"/> <figcaption>
@@ -177,7 +173,8 @@ if (!doNotTrack) {
 HIVE_HOME=&quot;/usr/local/Cellar/hive/3.1.1/libexec&quot; exec \  
 &quot;/usr/local/Cellar/hive/3.1.1/libexec/bin/hive&quot; &quot;$@&quot;
 </code></pre><p>This will pick 11, which no longer has <code>URLClassLoader</code> (I think this was changed in Java 9). So, won&rsquo;t start.</p>
-<p>Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java &gt; 1.8. For me this was not an option, so I just modified the scripts by removing the <code>JAVA_HOME</code> condition (since I set my <code>JAVA_HOME</code> globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.</p><hr/><ul class="pa0">
+<p>Sadly the only reasonable fix is modifying the scripts after installation, unless you want to just uninstall Java &gt; 1.8. For me this was not an option, so I just modified the scripts by removing the <code>JAVA_HOME</code> condition (since I set my <code>JAVA_HOME</code> globally when I switch between JVMs). And crossing fingers to remember I did so next time I upgrade HomeBrew.</p><hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>

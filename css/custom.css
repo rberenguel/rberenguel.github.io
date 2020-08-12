@@ -39,7 +39,11 @@
 .scaps { font-variant: small-caps; }
 .smallText {
     line-height: unset;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.reviewDetails {
+    display: none;
 }
 
 .rating-text {

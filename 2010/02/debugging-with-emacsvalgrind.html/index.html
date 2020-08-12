@@ -126,9 +126,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Debugging with emacs&#43;valgrind</h1>
@@ -137,18 +135,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 722 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 722 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <h2 id="the-easiest-way-to-debug-_valgrind_-with-the-most-powerful-text-editor-_emacs_">The easiest way to debug: <em>valgrind</em> with the most powerful text editor: <em>emacs</em></h2>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><h2 id="the-easiest-way-to-debug-_valgrind_-with-the-most-powerful-text-editor-_emacs_">The easiest way to debug: <em>valgrind</em> with the most powerful text editor: <em>emacs</em></h2>
 <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s1600-h/valgrindemacs.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S4rAT4q87rI/AAAAAAAAB6M/b_biKhfUDjE/s400/valgrindemacs.png" alt="Emacs and valgrind" title="Emacs and valgrind"></a>A few days ago my office mate told me about the great debugging tool known as <a href="http://valgrind.org/">valgrind</a>. Before I have been using the great pairing of <a href="http://www.gnu.org/software/emacs/">emacs</a>+<a href="http://www.gnu.org/software/gdb/">gdb</a> to debug segmentation faults and memory leaks&hellip; Now I would never use gdb for this. Moreover, I found a way to somewhat use it from within a shell in emacs to allow fast error browsing.</p>
 <p>How to use valgrind?</p>
 <p>Consider the following C code (where I have omitted the include statements), I&rsquo;ll assume it is in SegFault.c In fact, this code would not yield a segmentation fault as it is, at least without some compilation tweaking.</p>
@@ -216,7 +212,8 @@ return 0;}</p>
 </blockquote>
 <p>Now when I start a shell window from within emacs, the function valgrind I defined is automatically loaded, starts compilation-minor-mode and redefines the return and shifted-return keys as I wanted. Now return works as usual in shell buffers, and shift-return visits error at point.I also made this function interactive (thus you can call it as M-x valgrind), in case I decide to remove the hook.</p>
 <p>You may be also interested in:ParseList(ScrambleList(Relateds(Linux,Programming,emacs)),15)</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>

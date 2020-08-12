@@ -126,9 +126,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Time Tracking Like There Is No Tomorrow (with Javascript and HTML5)</h1>
@@ -137,18 +135,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 563 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 563 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p><a href="http://www.flickr.com/photos/aidanmorgan/2331754875/"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S4q0uAXMvlI/AAAAAAAAB6A/osWxeuImc2c/s400/2331754875_e6a2a81429.jpg" alt=""></a>A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in <a href="http://home.sachachua.com/time/graph">her homepage</a>. Although I&rsquo;m a regular at <a href="http://sachachua.com/blog/">her blog</a> and I follow her RSS feed, I had not seen it &ldquo;live&rdquo; yet. My inner geek yelled &ldquo;gimme gimme&rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, <em>sadly</em>), it is Android only app. Oh well. I don&rsquo;t want another device. So how can I track my time <em>always</em>, when the only thing I have always with me is either an iPad Touch or an iPad?</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://www.flickr.com/photos/aidanmorgan/2331754875/"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S4q0uAXMvlI/AAAAAAAAB6A/osWxeuImc2c/s400/2331754875_e6a2a81429.jpg" alt=""></a>A few weeks ago I found out the awesome time tracking setup that Sacha Chua has in <a href="http://home.sachachua.com/time/graph">her homepage</a>. Although I&rsquo;m a regular at <a href="http://sachachua.com/blog/">her blog</a> and I follow her RSS feed, I had not seen it &ldquo;live&rdquo; yet. My inner geek yelled &ldquo;gimme gimme&rdquo; and I asked her what mobile software is she using for time tracking. Sadly (well, <em>sadly</em>), it is Android only app. Oh well. I don&rsquo;t want another device. So how can I track my time <em>always</em>, when the only thing I have always with me is either an iPad Touch or an iPad?</p>
 <p>There is a problem with the App Store. Usually, as the advertisement says <em>there&rsquo;s an app for that</em>. The problem is that I&rsquo;m very picky. I want an app that does exactly this and that, but I don&rsquo;t care about this other fluff or this nice buzzword.</p>
 <p>I asked myself what I wanted for a time tracking app. In the end, I want just one thing: timestamps and subjects. Nothing else. Something that may look like:</p>
 <pre><code>20111105 2103 2125 blog
@@ -167,7 +163,8 @@ if (!doNotTrack) {
 <p>Each time the timestamp button is pressed, a nicely formatted string gets saved into localStorage, making sure everything works even when I lose the local cache copy due to refreshes. The dump data button is to know what I have already logged, before mailing. And of course, even if 5MB is quite a lot, I don&rsquo;t want to fill it so I need to clean up when I send.</p>
 <p>For now, I need to refactor the code before posting it. I finished it in two batches of 20 minutes, and in the second I gave up on refactoring, and clean a little the functionality. But it&rsquo;s simple and it works, I have already tracked more than a week of data. Now I only need to find the time to write the analysing code. So far I have a Python function to generate the spans from the time stamps, but I&rsquo;m still not sure how I want to analyse everything. If I want to generate aggregate data from Python (I&rsquo;m more fluent) or in R (more versatile, and I will do the graphing here).<br>
 ParseList(ScrambleList(Relateds(Productivity, Programming)),2)</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/productivity" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Productivity</a>

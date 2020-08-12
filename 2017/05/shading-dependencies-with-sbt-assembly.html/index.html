@@ -129,9 +129,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Shading dependencies with sbt-assembly (in particular, shapeless in Spark 2.1.0)</h1>
@@ -140,18 +138,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 1 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 141 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 1 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 141 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-    <p>A few weeks ago I needed to parse configuration files in Scala for a Spark
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A few weeks ago I needed to parse configuration files in Scala for a Spark
 project and decided to use
 <a href="https://github.com/pureconfig/pureconfig">PureConfig</a>. It is incredibly lean to
 use, needing minimal boilerplate. I recommend you check it out (give also a look
@@ -168,7 +164,8 @@ prevented <code>PureConfig</code> from pulling the correct version. D&rsquo;oh!<
 dependencies</a>, by adding something
 like the following to your <code>assembly.sbt</code> file:</p>
 <pre><code class="language-sbt" data-lang="sbt">assemblyShadeRules in assembly := Seq(ShadeRule.rename(&quot;shapeless.**&quot; -&gt; &quot;new_shapeless.@1&quot;).inAll)
-</code></pre><hr/><ul class="pa0">
+</code></pre><hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>

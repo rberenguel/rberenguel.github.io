@@ -135,9 +135,7 @@ if (!doNotTrack) {
 
 
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">The Mandelbrot set in one line of APL</h1>
@@ -146,18 +144,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 8 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 1519 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 8 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 1519 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-    <p>Is this line noise?</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Is this line noise?</p>
 <br/>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span><span style="color:#f92672">⍎</span><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span>(<span style="color:#f92672">∊</span><span style="color:#ae81ff">150</span><span style="color:#f92672">⍴</span><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>)<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;</span><span style="color:#e6db74">]</span>
 </code></pre></div><p>Nope. This is not line noise, but a complete APL program to display the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> in glorious ASCII, with asterisks and spaces just like Brooks and Matelski <a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel.png">did</a> a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?</p>
@@ -236,7 +232,8 @@ export LANG<span style="color:#f92672">=</span>es_ES.UTF-8
 </code></pre></div><p>Since a matrix can be used to index a vector, we use this newly computed matrix as indexes (i.e. between square bracket) with the vector <code>' \*'</code> so we get almost a Mandelbrot set. But since I was slightly lazy when generating the grid of points, it is transposed. <code>⍉</code> (transpose) fixes it and finishes the line and the program.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Writing this line of code took me quite a long time, mostly because I was getting used to APL and I didn&rsquo;t know my way around the language. Now that I&rsquo;m done I&rsquo;m quite impressed, and I&rsquo;m looking forward to doing some more fun stuff with it. And if possible, some useful stuff.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>

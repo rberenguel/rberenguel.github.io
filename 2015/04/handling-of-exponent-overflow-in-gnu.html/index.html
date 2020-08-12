@@ -129,9 +129,7 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
-  
   
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Handling of exponent overflow in GNU APL and Dyalog APL (on Mac)</h1>
@@ -140,18 +138,16 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 2 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 337 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 337 words</span>
       
-      <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net"><span property="author" typeof="Person"></property>Ruben Berenguel</span></a></span> 
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-    <p>A few weeks ago I started trying a pre-beta release of <a href="http://www.dyalog.com/prices-and-licences.htm">Dyalog APL</a> (now available as &ldquo;full beta&rdquo;) for Mac. Fellow Mac users, looks like we are in for a treat after so much time of only having <a href="http://www.gnu.org/software/apl/">GNU APL</a> and the pretty <a href="http://www.microapl.co.uk/apl/buyonline/buyaplx.html">expensive APLX</a>. Now Mac APL lovers, users and aficionados will have a competitive, commercial option. At last!</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>A few weeks ago I started trying a pre-beta release of <a href="http://www.dyalog.com/prices-and-licences.htm">Dyalog APL</a> (now available as &ldquo;full beta&rdquo;) for Mac. Fellow Mac users, looks like we are in for a treat after so much time of only having <a href="http://www.gnu.org/software/apl/">GNU APL</a> and the pretty <a href="http://www.microapl.co.uk/apl/buyonline/buyaplx.html">expensive APLX</a>. Now Mac APL lovers, users and aficionados will have a competitive, commercial option. At last!</p>
 <p>I started with the usual 1+1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected. Then I moved on to a simple “hello world,” my <a href="http://www.mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html">Mandelbrot one-liner</a>, which is probably the most complex piece of APL I&rsquo;ve written. But it didn&rsquo;t work at the first run (I had actually found it out back when I was writing it, since it didn&rsquo;t work on <a href="http://tryapl.org/">TryAPL</a>.) So I set to find out what the issue may be and learn a little more about APL while at it.</p>
 <p>According to <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=22817">ISO/IEC 13751</a> (Programming Language APL, Extended) there is no clear guideline about what to do with <em>exponent-overflow</em> (or exponent underflow for that matter.) This is relatively usual in ISO specs for programming languages, and is a common pitfall when switching implementations.</p>
 <p>Case in point, GNU APL returns <strong>infinity</strong> on overflow (for instance, you can try 3*1000 to see the difference) whereas Dyalog APL returns <strong>Domain error</strong>. Of course, both are valid and depending on your code and computation one can be much handier than the other.</p>
@@ -165,7 +161,8 @@ if (!doNotTrack) {
 <p>⍉&rsquo; *'[⍎'1+2&lt;|z&rsquo;,(∊130⍴⊂'←(d×4&gt;|d)+4×4&lt;|d←c+m×m&rsquo;),&lsquo;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))']</p>
 </blockquote>
 <p>And this did the trick, and I leaned some more about how APLs work.</p>
-<hr/><ul class="pa0">
+<hr/>
+        <ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
