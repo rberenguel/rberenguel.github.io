@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | External rays &amp; Lavaurs algorithm</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@
 <meta itemprop="description" content="As you may remember, I spent quite some time this August with Lavaurs algorithm for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able… and then found Mandel.
  Thanks to Mandel, LISP and my Lavaurs code
   Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference).">
-
-
 <meta itemprop="datePublished" content="2009-11-03T01:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2009-11-03T01:00:00&#43;01:00" />
 <meta itemprop="wordCount" content="347">
@@ -54,7 +56,6 @@
 
 
 <meta itemprop="keywords" content="Mac,Fractals,Maths,LISP," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2009/11/external-rays-lavaurs-algorithm.html/Picture.png"/>
@@ -88,7 +89,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -139,7 +140,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">External rays &amp; Lavaurs algorithm</h1>
         
@@ -155,22 +159,20 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As you may remember, I spent quite some time this August with <a href="/2009/08/lavaurs-algorithm.html">Lavaurs algorithm</a> for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able… and then found <a href="http://www.mndynamics.com/indexp.html" target="_blank">Mandel</a>.</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>As you may remember, I spent quite some time this August with <a href="/2009/08/lavaurs-algorithm.html">Lavaurs algorithm</a> for the topological identification of the circle corresponding to the Mandelbrot set. After that, I spent quite some more trying to do pictures of external rays to show side by side. I was not able… and then found <a href="http://www.mndynamics.com/indexp.html">Mandel</a>.</p>
 <figure class="fig-wide">
     <img src="Picture.png"
          alt="Thanks to Mandel, LISP and my Lavaurs code"/> <figcaption>
-            <p>Thanks to <a href="http://www.mndynamics.com/indexp.html" target="_blank">Mandel</a>, LISP and my Lavaurs code</p>
+            <p>Thanks to <a href="http://www.mndynamics.com/indexp.html">Mandel</a>, LISP and my Lavaurs code</p>
         </figcaption>
 </figure>
 
-
 <p>Really nice program, with lots and lots of options (and I met the programmer, which happens to be also mathematician, we met at a conference). I asked if there was some whay to draw all rays in one step, as it stands I needed to press &ldquo;e&rdquo;, enter the rational number corresponding to the ray, and enter. &ldquo;No, you should change the source… probably the best way was to do it by hand if there are not too many rays&rdquo;.</p>
-
 <p>I though <em>No way!</em> I don&rsquo;t want to do it by hand, neither mess with someone else&rsquo;s code… I am teaching a class of computer things, and I must look at too much C code.</p>
-
 <p>I wrote a LISP program that, given a <em>level</em> uses my Lavaurs code to generate a shell script in Mac OS (full of command line AppleScript) such that the needed keystrokes are sent to the Mandel application.</p>
-
 <p>The code is as follows</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defun GenerateScript (Num) 
  (<span style="color:#66d9ef">progn</span> 
@@ -187,8 +189,8 @@ if (!doNotTrack) {
     (<span style="color:#66d9ef">progn</span> 
      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;osascript -e &#39;tell application \\&#34;</span>System Events\\<span style="color:#e6db74">&#34; to keystroke \\&#34;</span>e ~A\\<span style="color:#e6db74">&#34;&#39;;~%&#34;</span> X) 
      (<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;osascript -e &#39;tell application \\&#34;</span>System Events\\<span style="color:#e6db74">&#34; to keystroke return&#39;;~%&#34;</span>) 
-     )))))</code></pre></div>
-<p>This opens Mandel, changes resolution and drawing algorithm and sends all rays. And you can see the results in the beginning of the post.</p>
+     )))))
+</code></pre></div><p>This opens Mandel, changes resolution and drawing algorithm and sends all rays. And you can see the results in the beginning of the post.</p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -250,8 +252,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

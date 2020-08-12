@@ -1,6 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/books/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/haskell/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/08/review-success-haskell.html/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
+  </url>
   
   <url>
     <loc>https://mostlymaths.net/2020/07/202050-readings-of-the-week.html/</loc>
@@ -18,27 +48,12 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-07-12T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-07-12T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2020-07-12T19:30:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-07-12T19:30:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-07-12T19:30:33+02:00</lastmod>
   </url>
   
@@ -323,11 +338,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2019-11-24T14:00:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/11/201931-readings-of-the-week.html/</loc>
     <lastmod>2019-11-10T11:00:33+02:00</lastmod>
   </url>
@@ -549,11 +559,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/akka/</loc>
-    <lastmod>2019-04-07T19:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/books/</loc>
     <lastmod>2019-04-07T19:37:00+02:00</lastmod>
   </url>
   

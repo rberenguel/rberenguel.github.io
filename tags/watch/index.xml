@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Watch on mostlymaths.net</title>
@@ -17,7 +17,7 @@
       <pubDate>Sat, 05 May 2018 02:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2018/05/notifications-from-spark-on-apple-watch.html/</guid>
-      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34; target=&#34;_blank&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34; target=&#34;_blank&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
+      <description>&lt;p&gt;This week I have been working a lot with a relatively large dataset on a Spark shell. It was a graph with 1 billion nodes and 2 billion edges that I wanted to analyse with &lt;a href=&#34;https://github.com/graphframes/graphframes&#34;&gt;GraphFrames&lt;/a&gt; (the successor of &lt;a href=&#34;https://spark.apache.org/docs/2.2.1/graphx-programming-guide.html&#34;&gt;GraphX&lt;/a&gt; on Spark).&lt;/p&gt;</description>
     </item>
     
   </channel>

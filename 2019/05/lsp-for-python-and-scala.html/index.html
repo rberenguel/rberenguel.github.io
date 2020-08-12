@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | LSP for Python and Scala</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2019-05-21T23:41:00+02:00" />
 <meta itemprop="name" content="LSP for Python and Scala">
 <meta itemprop="description" content="If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package.">
-
-
 <meta itemprop="datePublished" content="2019-05-21T23:41:00&#43;02:00" />
 <meta itemprop="dateModified" content="2019-05-21T23:41:00&#43;02:00" />
 <meta itemprop="wordCount" content="776">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="emacs,Python,Scala,Rust,spacemacs," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/lsp.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">LSP for Python and Scala</h1>
         
@@ -149,24 +153,23 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy <code>emacs</code> user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been <a href="http://spacemacs.org/" target="_blank">spacemacs</a>. I used to have a very long, customised and complex .emacs and with <code>spacemacs</code> I get a mostly-batteries-included package. That&rsquo;s nice after a while, and I also have gotten really proficient at using evil.</p>
-
-<p>One problem of using <code>emacs</code> is the integration with some languages. If you write Scala, with IntelliJ you get super-fancy completion, refactoring, code analysis, jump-to-definition&hellip; Many goodies. In emacs, the best-in-class system used to be <a href="http://ensime.github.io/" target="_blank">ensime</a>. It worked, but it was not really supported for spacemacs (since I&rsquo;m an old emacs user I could play around that), but the main issue was that my old MacBook was short on memory for running ensime and a lot more. So, I wrote most of my Scala code in hardcode mode. No completion, documentation or jump to definition.</p>
-
-<p>This is why I learnt how to <a href="https://www.mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html" target="_blank">set up GNU global</a>, jump to definition is just too handy. Luckily, the people at Scala Center not only are smart, but also try to improve developer experience, and had been working in a <em>language server</em> for Scala for a while, called <a href="https://scalameta.org/metals/" target="_blank">metals</a>. I got it working recently, and it&rsquo;s great. You get documentation on hover, error messages, jump to definition. Oh, I forgot to mention, the <em>language server protocol</em> is an invention from Microsoft to standardise how editors handle language completions and all that. They probably introduced it for <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (I actually use it from time to time, it has some remote pair programming capabilities I&rsquo;ll talk someday), but now it&rsquo;s extending across all editors.</p>
-
-<p>After using LSP in emacs for Scala for a while I decided to set it up for Python as well, in preparation for our next <a href="http://pybcn.org/" target="_blank">PyBCN</a> <a href="https://podcasts.apple.com/us/podcast/python-barcelona-podcast/id1412561460" target="_blank">podcast</a>, about tools we use. I was pretty happy with the completions I was getting, but semantic completions from a language server are usually better. So far, lsp with python is ok. Oh, you&rsquo;ll see screenshots at the end!</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy <code>emacs</code> user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been <a href="http://spacemacs.org/">spacemacs</a>. I used to have a very long, customised and complex .emacs and with <code>spacemacs</code> I get a mostly-batteries-included package. That&rsquo;s nice after a while, and I also have gotten really proficient at using evil.</p>
+<p>One problem of using <code>emacs</code> is the integration with some languages. If you write Scala, with IntelliJ you get super-fancy completion, refactoring, code analysis, jump-to-definition&hellip; Many goodies. In emacs, the best-in-class system used to be <a href="http://ensime.github.io/">ensime</a>. It worked, but it was not really supported for spacemacs (since I&rsquo;m an old emacs user I could play around that), but the main issue was that my old MacBook was short on memory for running ensime and a lot more. So, I wrote most of my Scala code in hardcode mode. No completion, documentation or jump to definition.</p>
+<p>This is why I learnt how to <a href="https://www.mostlymaths.net/2019/05/gtags-gnu-global-in-emacs-for-scala.html">set up GNU global</a>, jump to definition is just too handy. Luckily, the people at Scala Center not only are smart, but also try to improve developer experience, and had been working in a <em>language server</em> for Scala for a while, called <a href="https://scalameta.org/metals/">metals</a>. I got it working recently, and it&rsquo;s great. You get documentation on hover, error messages, jump to definition. Oh, I forgot to mention, the <em>language server protocol</em> is an invention from Microsoft to standardise how editors handle language completions and all that. They probably introduced it for <a href="https://code.visualstudio.com/">Visual Studio Code</a> (I actually use it from time to time, it has some remote pair programming capabilities I&rsquo;ll talk someday), but now it&rsquo;s extending across all editors.</p>
+<p>After using LSP in emacs for Scala for a while I decided to set it up for Python as well, in preparation for our next <a href="http://pybcn.org/">PyBCN</a> <a href="https://podcasts.apple.com/us/podcast/python-barcelona-podcast/id1412561460">podcast</a>, about tools we use. I was pretty happy with the completions I was getting, but semantic completions from a language server are usually better. So far, lsp with python is ok. Oh, you&rsquo;ll see screenshots at the end!</p>
 <p>You&rsquo;ll need to install the language server. I usually have a high level Python environment with all my tools, for things I am just starting to work on:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv <span style="color:#ae81ff">3</span>.7.1 tools
-pyenv activate <span style="color:#ae81ff">3</span>.7.1/envs/tools
-pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</span> bpython mypy flake8</code></pre></div>
-<p>After this, some configuration is needed in <code>emacs</code>. Here you can find parts of my configuration, commented. These sit in my <code>dotspacemacs/user-config</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pyenv virtualenv 3.7.1 tools
+pyenv activate 3.7.1/envs/tools
+pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</span> bpython mypy flake8
+</code></pre></div><p>After this, some configuration is needed in <code>emacs</code>. Here you can find parts of my configuration, commented. These sit in my <code>dotspacemacs/user-config</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; First come the configurations for Scala language server </span>
 <span style="color:#75715e">;; thingies. sbt is the Scala build system.</span>
 
 (use-package scala-mode
-:mode <span style="color:#e6db74">&#34;\\.s\\(cala\\|bt\\)$&#34;</span>)
+:mode <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">.s</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">(cala</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">|bt</span><span style="color:#e6db74">\\</span><span style="color:#e6db74">)$</span><span style="color:#e6db74">&#34;</span>)
 
 (use-package sbt-mode
 :commands sbt-start sbt-command
@@ -215,7 +218,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 
 <span style="color:#75715e">;; Show flake8 errors in lsp-ui</span>
 (defun lsp-set-cfg ()
-(let ((lsp-cfg <span style="color:#f92672">`</span>(:pyls (:configurationSources (<span style="color:#e6db74">&#34;flake8&#34;</span>)))))
+(let ((lsp-cfg <span style="color:#f92672">`</span>(:pyls (:configurationSources (<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">flake8</span><span style="color:#e6db74">&#34;</span>)))))
 (lsp--set-configuration lsp-cfg)))
 
 <span style="color:#75715e">;; Activate that after lsp has started</span>
@@ -228,7 +231,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 (lambda (frame _w)
 (set-face-attribute <span style="color:#e6db74">&#39;default</span> frame 
 
- :font <span style="color:#e6db74">&#34;Inter&#34;</span> 
+ :font <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Inter</span><span style="color:#e6db74">&#34;</span> 
 
  :height <span style="color:#ae81ff">140</span>)))
 
@@ -236,16 +239,14 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 (use-package lsp-scala
 :after scala-mode
 :demand <span style="color:#66d9ef">t</span>
-:hook (scala-mode <span style="color:#f92672">.</span> lsp))</code></pre></div>
-<p>You can see how it looks now.</p>
-
+:hook (scala-mode <span style="color:#f92672">.</span> lsp))
+</code></pre></div><p>You can see how it looks now.</p>
 <figure class="fig-wide">
     <img src="non-lsp.png"
          alt="Traditional completion (non-LSP)"/> <figcaption>
             <p>Traditional completion (non-LSP)</p>
         </figcaption>
 </figure>
-
 
 <figure class="fig-wide">
     <img src="lsp.png"
@@ -254,7 +255,6 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
         </figcaption>
 </figure>
 
-
 <figure class="fig-wide">
     <img src="inline-doc.png"
          alt="Fancy inlined documentation"/> <figcaption>
@@ -262,9 +262,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
         </figcaption>
 </figure>
 
-
 <p>Sadly, inlined documentation doesn&rsquo;t look as good as it should: compare with Scala with <code>metals</code> and <code>lsp-scala</code>:</p>
-
 <figure class="fig-wide">
     <img src="fancy-inline-doc.png"
          alt="LSP mode in Scala with metals"/> <figcaption>
@@ -272,8 +270,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
         </figcaption>
 </figure>
 
-
-<p>If you&rsquo;ve gotten this far, I share my most interesting weekly readings in <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek" target="_blank">tag here</a>. You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
+<p>If you&rsquo;ve gotten this far, I share my most interesting weekly readings in <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek">tag here</a>. You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P">here</a>.</p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -343,8 +340,9 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

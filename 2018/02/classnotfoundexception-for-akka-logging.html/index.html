@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | ClassNotFoundException for Akka logging</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -47,8 +51,6 @@ documentation." />
 ClassNotFoundException when using akka.event.slf4j.Slf4jLoggingFilter, just by
 following the details of the Logging - SL4J section of Akka
 documentation.">
-
-
 <meta itemprop="datePublished" content="2018-02-14T15:28:00&#43;01:00" />
 <meta itemprop="dateModified" content="2018-02-14T15:28:00&#43;01:00" />
 <meta itemprop="wordCount" content="107">
@@ -56,7 +58,6 @@ documentation.">
 
 
 <meta itemprop="keywords" content="Scala,Akka," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2018/02/classnotfoundexception-for-akka-logging.html/RubenBerenguelFacepalm.jpg"/>
@@ -91,7 +92,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -142,7 +143,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">ClassNotFoundException for Akka logging</h1>
         
@@ -158,11 +162,13 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A few months ago I stumbled into the problem of Akka logging, specifically
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>A few months ago I stumbled into the problem of Akka logging, specifically
 ClassNotFoundException when using <code>akka.event.slf4j.Slf4jLoggingFilter</code>, just by
-following the details of the <a href="https://doc.akka.io/docs/akka/2.5/logging.html" target="_blank">Logging - SL4J section of Akka
+following the details of the <a href="https://doc.akka.io/docs/akka/2.5/logging.html">Logging - SL4J section of Akka
 documentation</a>.</p>
-
 <figure class="fig-left-small">
     <img src="RubenBerenguelFacepalm.jpg"
          alt="Make it so"/> <figcaption>
@@ -170,16 +176,14 @@ documentation</a>.</p>
         </figcaption>
 </figure>
 
-
 <p>Of course, the
 error source is obvious in hindsight, but in the moment the fact that this was a
 multiproject build with several dependency paths made me miss a crucial reason
 for longer than I want to admit:</p>
-
 <p><strong>YOU NEED TO ADD THE SL4J IMPORT IF YOU WANT TO USE SL4J FOR LOGGING!</strong></p>
-
 <p>Add this to your dependencies (I&rsquo;m assuming you have a val for akkaVersion to DRY):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sbt" data-lang="sbt">&#34;com.typesafe.akka&#34; %% &#34;akka-slf4j&#34;  % akkaVersion</code></pre></div><hr/><ul class="pa0">
+<pre><code class="language-sbt" data-lang="sbt">&quot;com.typesafe.akka&quot; %% &quot;akka-slf4j&quot;  % akkaVersion
+</code></pre><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Scala</a>
@@ -232,8 +236,9 @@ for longer than I want to admit:</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2010-11-06T18:20:00+01:00" />
 <meta itemprop="name" content="Mathematics Poster: Dropbox, Scribus and LaTeX for the Win">
 <meta itemprop="description" content="This week I&rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled Approximating bifurcation loci by zeros of functions. This is heavily based on a poster I presented last year in Copenhagen (titled Sets approximating regions of instability). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.">
-
-
 <meta itemprop="datePublished" content="2010-11-06T18:20:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-11-06T18:20:00&#43;01:00" />
 <meta itemprop="wordCount" content="652">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="Linux, Mac,Maths,Productivity," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -80,7 +81,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -125,7 +126,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Mathematics Poster: Dropbox, Scribus and LaTeX for the Win</h1>
         
@@ -141,58 +145,34 @@ if (!doNotTrack) {
     
 
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s1600/PosterWarsaw.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s400/PosterWarsaw.png" alt="Scribus and LaTeX for Mathematical Posters" /></a></p>
-
+    <p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s1600/PosterWarsaw.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/TNWHN2GE_KI/AAAAAAAACuY/AX1IokMWOiY/s400/PosterWarsaw.png" alt="Scribus and LaTeX for Mathematical Posters"></a></p>
 <p>This week I&rsquo;ll be in a workshop on Complex Dynamics in Warsaw, and will present a poster titled <em>Approximating bifurcation loci by zeros of functions</em>. This is heavily based on a poster I presented last year in Copenhagen (titled <em>Sets approximating regions of instability</em>). The underlying work in progress has changed quite a bit since then, but this does not show in the poster. I just solve some problems in the exposition, from the questions I got back then.</p>
-
-<p>The poster I did last year was typeset using Scribus and LaTeX, in my MacBook. I explained the procedure in <a href="http://www.mostlymaths.net/2009/11/scribus-for-mathematical-posters.html" target="_blank">Scribus for Mathematical Posters</a>. Scribus does a wonderful work&hellip; once you get used to how it works. And LaTeX of course is <em>the tool</em>.</p>
-
+<p>The poster I did last year was typeset using Scribus and LaTeX, in my MacBook. I explained the procedure in <a href="http://www.mostlymaths.net/2009/11/scribus-for-mathematical-posters.html">Scribus for Mathematical Posters</a>. Scribus does a wonderful work&hellip; once you get used to how it works. And LaTeX of course is <em>the tool</em>.</p>
 <h2 id="the-trouble-starts-in-the-mac-part">The trouble starts in the Mac part</h2>
-
 <p>The interesting part is that when time came to make the editions, some odd change in my LaTeX system on the Mac made the TeX sources unable to compile. It seems to boil down to the keyval package not working correctly, but I just could not find why as it was installed correctly.</p>
-
 <p>Last time I messed with my LaTeX system in the Mac I realised I didn&rsquo;t remember exactly how I installed: was it fink, was it TeXLive or is it through MacPorts? Thus, solving this particular problem could result in spending far more time than I really wanted&hellip; And I was already knee-deep in things to do before Monday.</p>
-
 <h2 id="the-trouble-continues-in-the-linux-part">The trouble continues in the Linux part</h2>
-
-<p>I checked my netbook, and the LaTeX files compiled just fine. Thus, no problem: install Scribus on the netbook and go. But turns out I don&rsquo;t have Latin Modern (the LaTeX fonts are Computer Modern, and Latin Modern are its most recent replacement) fonts for Scribus there. And I remember that the last time I installed fonts, back when I was an <a href="http://www.mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html" target="_blank">Ubuntu</a> user was not really enjoyable.</p>
-
-<p>My experiences with <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html" target="_blank">Arch Linux</a> have been so far wonderful, but wasting half an hour or more solving this particular problem didn&rsquo;t really appeal my Saturday-afternoon-doing-a-maths-poster self. I had to find a simpler solution. Compiling the TeX in the netbook and moving everything to the MacBook to generate the poster? Yes, but&hellip;</p>
-
+<p>I checked my netbook, and the LaTeX files compiled just fine. Thus, no problem: install Scribus on the netbook and go. But turns out I don&rsquo;t have Latin Modern (the LaTeX fonts are Computer Modern, and Latin Modern are its most recent replacement) fonts for Scribus there. And I remember that the last time I installed fonts, back when I was an <a href="http://www.mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html">Ubuntu</a> user was not really enjoyable.</p>
+<p>My experiences with <a href="http://www.mostlymaths.net/2010/08/arch-linux-in-my-acer-aspire-one.html">Arch Linux</a> have been so far wonderful, but wasting half an hour or more solving this particular problem didn&rsquo;t really appeal my Saturday-afternoon-doing-a-maths-poster self. I had to find a simpler solution. Compiling the TeX in the netbook and moving everything to the MacBook to generate the poster? Yes, but&hellip;</p>
 <h2 id="dropbox-to-the-rescue">Dropbox to the rescue!</h2>
-
-<p>My solution was somewhat inspired. I registered for a <a href="http://www.dropbox.com/referrals/NTc3MDIyNTM5" target="_blank">Dropbox</a> account two weeks ago, to simplify transferring files from my Mac at home and my Linux machine at work. Installing it in a Mac is as simple as any other Mac app, surprisingly, installing it in Arch Linux took me less than 15 minutes, together with thunar (file browser) extension and adding it to the start up scripts.</p>
-
-<p>I started to use it more frequently when I began to use <a href="http://www.mostlymaths.net/2010/10/plaintext-text-editor-with-dropbox-sync.html" target="_blank">PlainText</a> in my iPod Touch to write blog posts and draft ideas. A few days ago I read this post on Reddit: <a href="http://www.reddit.com/r/apple/comments/dwbwr/share_your_most_creative_and_best_uses_of_dropbox/" target="_blank">Share your more creative uses of Dropbox, Hazel, Growl, Automator&hellip;</a> I just remembered it as I was thinking how much work it would be to use a USB drive to do this.</p>
-
+<p>My solution was somewhat inspired. I registered for a <a href="http://www.dropbox.com/referrals/NTc3MDIyNTM5">Dropbox</a> account two weeks ago, to simplify transferring files from my Mac at home and my Linux machine at work. Installing it in a Mac is as simple as any other Mac app, surprisingly, installing it in Arch Linux took me less than 15 minutes, together with thunar (file browser) extension and adding it to the start up scripts.</p>
+<p>I started to use it more frequently when I began to use <a href="http://www.mostlymaths.net/2010/10/plaintext-text-editor-with-dropbox-sync.html">PlainText</a> in my iPod Touch to write blog posts and draft ideas. A few days ago I read this post on Reddit: <a href="http://www.reddit.com/r/apple/comments/dwbwr/share_your_most_creative_and_best_uses_of_dropbox/">Share your more creative uses of Dropbox, Hazel, Growl, Automator&hellip;</a> I just remembered it as I was thinking how much work it would be to use a USB drive to do this.</p>
 <p>I moved the poster folder to m Dropbox folder, worked the TeX files in my netbook and the Scribus file on the Mac. The best of both worlds (and the only solution not involving wasting my time) by using Dropbox.</p>
-
 <p>And my poster is finished on time!</p>
-
-<hr />
-
-<p>If you want to get the most out of Scribus, you can get the book <a href="http://www.bookdepository.co.uk/book/9780956078001/Scribus-Open-source-Desktop-Publishing/?a_aid=mostlymathsdotnet" target="_blank">Scribus: Open Source Desktop Publishing</a> from <a href="http://www.bookdepository.co.uk/?a_aid=mostlymathsdotnet" target="_blank">The Book Depository</a> (<em>free international shipping</em>, affiliate link).</p>
-
-<p>And if you want to improve your geeky presentation skills, get <a href="http://www.amazon.com/gp/product/156352628X?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=156352628X" target="_blank">Even a Geek Can Speak: Low-Tech Presentation Skills for High-Tech People</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=156352628X" alt="" /> from <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2F&amp;tag=rbersblog-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957" target="_blank">Amazon.com</a><img src="https://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=ur2&amp;o=1" alt="" /> (affiliate link).</p>
-
-<hr />
-
+<hr>
+<p>If you want to get the most out of Scribus, you can get the book <a href="http://www.bookdepository.co.uk/book/9780956078001/Scribus-Open-source-Desktop-Publishing/?a_aid=mostlymathsdotnet">Scribus: Open Source Desktop Publishing</a> from <a href="http://www.bookdepository.co.uk/?a_aid=mostlymathsdotnet">The Book Depository</a> (<em>free international shipping</em>, affiliate link).</p>
+<p>And if you want to improve your geeky presentation skills, get <a href="http://www.amazon.com/gp/product/156352628X?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=156352628X">Even a Geek Can Speak: Low-Tech Presentation Skills for High-Tech People</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=156352628X" alt=""> from <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2F&amp;tag=rbersblog-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957">Amazon.com</a><img src="https://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=ur2&amp;o=1" alt=""> (affiliate link).</p>
+<hr>
 <p>Related posts:</p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/10/keeping-up-with-reading-research-papers.html" target="_blank">Keeping Up With Reading Research Papers</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/10/overwhelmed-with-projects-declare-task.html" target="_blank">Overwhelmed With Projects? Declare Task Bankruptcy</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/09/book-review-war-of-art-by-steven.html" target="_blank">Book Review: The War of Art, by Steven Pressfield</a> (<strong>highly recommended book</strong>)</p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/10/procrastinating-find-next-step-up.html" target="_blank">Procrastinating? Find the Next Step Up</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html" target="_blank">Time boxing: you will work like never before</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/winning-against-your-reading-list.html" target="_blank">Winning Against Your Reading List</a></p>
-
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/10/keeping-up-with-reading-research-papers.html">Keeping Up With Reading Research Papers</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/10/overwhelmed-with-projects-declare-task.html">Overwhelmed With Projects? Declare Task Bankruptcy</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/09/book-review-war-of-art-by-steven.html">Book Review: The War of Art, by Steven Pressfield</a> (<strong>highly recommended book</strong>)</p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/10/procrastinating-find-next-step-up.html">Procrastinating? Find the Next Step Up</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/06/timeboxing-you-will-work-like-never.html">Time boxing: you will work like never before</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/08/winning-against-your-reading-list.html">Winning Against Your Reading List</a></p>
 <p>ParseList(ScrambleList(Relateds(Maths)),2)</p>
 <hr/><ul class="pa0">
   
@@ -255,8 +235,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

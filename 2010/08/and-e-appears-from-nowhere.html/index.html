@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | And e appears from nowhere!</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -43,8 +47,6 @@
 <meta itemprop="name" content="And e appears from nowhere!">
 <meta itemprop="description" content="As I posted in Best Posts I Have Read in June and July, I liked a lot a numerical experiment in Re: Factor, a blog about learning the Factor programming language. The idea comes from another blog, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from Prime Obsession (Amazon affiliate link) by John Derbyshire. The footnote reads:
  Here is an example of e turning up unexpectedly.">
-
-
 <meta itemprop="datePublished" content="2010-08-05T23:52:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-08-05T23:52:00&#43;02:00" />
 <meta itemprop="wordCount" content="1050">
@@ -52,7 +54,6 @@
 
 
 <meta itemprop="keywords" content="Programming,Maths,Bizarre," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -83,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -134,7 +135,10 @@ if (!doNotTrack) {
 
 
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">And e appears from nowhere!</h1>
         
@@ -157,24 +161,23 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As I posted in <a href="http://www.mostlymaths.net/2010/08/best-posts-i-have-read-in-june-and-july.html" target="_blank">Best Posts I Have Read in June and July</a>, I liked a lot a numerical experiment in <a href="http://re-factor.blogspot.com/" target="_blank">Re: Factor</a>, a blog about learning the Factor programming language. The idea comes from <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html" target="_blank">another blog</a>, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497" target="_blank">Prime Obsession</a> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>As I posted in <a href="http://www.mostlymaths.net/2010/08/best-posts-i-have-read-in-june-and-july.html">Best Posts I Have Read in June and July</a>, I liked a lot a numerical experiment in <a href="http://re-factor.blogspot.com/">Re: Factor</a>, a blog about learning the Factor programming language. The idea comes from <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">another blog</a>, this time about Clojure (a Lisp dialect running in the Java Virtual Machine), based on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497">Prime Obsession</a> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
 <blockquote>
 <p><em>Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1</em>? The answer is e. (See sketch of proof below)</p>
 </blockquote>
-
-<p>In the original post, a quick <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html" target="_blank">Clojure implementation</a> is programmed, and in Re: Factor, a <a href="http://re-factor.blogspot.com/2010/07/curious-factor-to-rescue.html" target="_blank">Factor implementation</a> is added. When I originally read the post, I missed that the original version was in Clojure, and decided I was good to go by writing a Common Lisp version. I&rsquo;d prefer a Forth version, but as Factor is close to Forth, it was close to cheating. Keep in mind that I wasn&rsquo;t aware that the first version was in Clojure, though.</p>
-
+<p>In the original post, a quick <a href="http://citizen428.net/archives/421-Curious-Clojure-to-the-rescue%21.html">Clojure implementation</a> is programmed, and in Re: Factor, a <a href="http://re-factor.blogspot.com/2010/07/curious-factor-to-rescue.html">Factor implementation</a> is added. When I originally read the post, I missed that the original version was in Clojure, and decided I was good to go by writing a Common Lisp version. I&rsquo;d prefer a Forth version, but as Factor is close to Forth, it was close to cheating. Keep in mind that I wasn&rsquo;t aware that the first version was in Clojure, though.</p>
 <p>I switched to my emacs session and started slime. To my surprise, slime fired up Clojure, instead of Common Lisp! I didn&rsquo;t remember that a few months back I got interested in this language, and set up slime to start Clojure. Oh well. My first program in Clojure, I thought.</p>
-
 <p>The first function was easy to define. A function which picks random numbers from 0 to 1 and keeps on adding them until they are bigger than 1. As this was my first Clojure project, I didn&rsquo;t want to bother learning how Clojure loops work… I wrote a recursive version. I did not try to make it even tail recursive:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>plus-random <span style="color:#e6db74">\[</span>initial steps<span style="color:#e6db74">\]</span>
   <span style="color:#75715e">; Initial and step start at 0. Will return how many times it takes</span>
   <span style="color:#75715e">; to be greater than 1</span>
   (<span style="color:#66d9ef">if </span>(&gt; initial <span style="color:#ae81ff">1</span>)
   steps
-  (<span style="color:#a6e22e">plus-random</span> (+ initial (<span style="color:#a6e22e">rand</span>)) (+ <span style="color:#ae81ff">1</span> steps))))</code></pre></div>
-<p>Ugly, I can hear you mutter. Maybe, but this was my first ever Clojure function, and it is almost the same I would write in Lisp. Moreover, after inspection, it looks like it is indeed tail recursive. It still amazes me that it worked. Of course, this can be improved, at least to make it more clear, with an auxiliary function:</p>
+  (<span style="color:#a6e22e">plus-random</span> (+ initial (<span style="color:#a6e22e">rand</span>)) (+ <span style="color:#ae81ff">1</span> steps))))
+</code></pre></div><p>Ugly, I can hear you mutter. Maybe, but this was my first ever Clojure function, and it is almost the same I would write in Lisp. Moreover, after inspection, it looks like it is indeed tail recursive. It still amazes me that it worked. Of course, this can be improved, at least to make it more clear, with an auxiliary function:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>plus-random-aux [initial steps]
 <span style="color:#75715e">; Initial and step start at 0.</span>
 <span style="color:#75715e">; Will return how many times</span>
@@ -184,38 +187,34 @@ if (!doNotTrack) {
    (<span style="color:#a6e22e">recur</span> (<span style="color:#a6e22e">plus-random-aux</span> (+ initial (<span style="color:#a6e22e">rand</span>)) (+ <span style="color:#ae81ff">1</span> steps)))))
 
 (<span style="color:#66d9ef">defn </span>plus-random []
- (<span style="color:#a6e22e">plus-random-aux</span>))</code></pre></div>
-<p>After this , we have to take averages of what the last function returns, for a large number of iterates. My first version of this function was recursive, too. But it blew away the stack, which is not good. I relented, and looked at Clojure&rsquo;s <a href="http://clojure.org/special_forms#Special%20Forms--%28loop%20[bindings*%20]%20exprs*%29" target="_blank">loop</a> construct, and the result was</p>
+ (<span style="color:#a6e22e">plus-random-aux</span>))
+</code></pre></div><p>After this , we have to take averages of what the last function returns, for a large number of iterates. My first version of this function was recursive, too. But it blew away the stack, which is not good. I relented, and looked at Clojure&rsquo;s <a href="http://clojure.org/special_forms#Special%20Forms--%28loop%20%5Bbindings*%20%5D%20exprs*%29">loop</a> construct, and the result was</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>average-plus-random [iterates]
 <span style="color:#75715e">; Takes the average of &#34;iterates&#34; iterations of the previous</span>
 <span style="color:#75715e">; function. Accumulator should start at 0</span>
   (<span style="color:#66d9ef">loop </span><span style="color:#e6db74">\[</span>n iterates accumulator <span style="color:#ae81ff">0</span><span style="color:#e6db74">\]</span>
    (<span style="color:#66d9ef">if </span>(= n <span style="color:#ae81ff">0</span>)
     (double (/ accumulator iterates))
-    (<span style="color:#a6e22e">recur</span> (dec n) (+ accumulator (<span style="color:#a6e22e">PlusRandom</span>))))))</code></pre></div>
-<p>Now, I look at <a href="http://clojure.org/special_forms#Special%20Forms--%28recur%20exprs*%29" target="_blank">recur</a>, because it looks odd. Turns out, Clojure does no tail call optimization. Big fail for my plus-random function. Rewritten with a loop construct, with recur:</p>
+    (<span style="color:#a6e22e">recur</span> (dec n) (+ accumulator (<span style="color:#a6e22e">PlusRandom</span>))))))
+</code></pre></div><p>Now, I look at <a href="http://clojure.org/special_forms#Special%20Forms--%28recur%20exprs*%29">recur</a>, because it looks odd. Turns out, Clojure does no tail call optimization. Big fail for my plus-random function. Rewritten with a loop construct, with recur:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>PlusRandom []
  (<span style="color:#66d9ef">loop </span><span style="color:#e6db74">\[</span>cnt <span style="color:#ae81ff">0</span> accumulator <span style="color:#ae81ff">0</span><span style="color:#e6db74">\]</span>
  (<span style="color:#66d9ef">if </span>(<span style="color:#e6db74">\&gt;</span> accumulator <span style="color:#ae81ff">1</span>) cnt
- (<span style="color:#a6e22e">recur</span> (+ <span style="color:#ae81ff">1</span> cnt) (+ accumulator (<span style="color:#a6e22e">rand</span>))))))</code></pre></div>
-<p>for a gain of an 11% execution time (from 3.9 to 3.5 seconds). It looks like too little for a tail call, but as most calls end either with 2 or 3 recursions, the improvement should be small? No! It turns out that the auxiliary function call adds an overhead, which accounts for a change from 3.9 seconds to 3.7 seconds. And the real improvement from tail call optimization is just a mere 6%.</p>
-
+ (<span style="color:#a6e22e">recur</span> (+ <span style="color:#ae81ff">1</span> cnt) (+ accumulator (<span style="color:#a6e22e">rand</span>))))))
+</code></pre></div><p>for a gain of an 11% execution time (from 3.9 to 3.5 seconds). It looks like too little for a tail call, but as most calls end either with 2 or 3 recursions, the improvement should be small? No! It turns out that the auxiliary function call adds an overhead, which accounts for a change from 3.9 seconds to 3.7 seconds. And the real improvement from tail call optimization is just a mere 6%.</p>
 <p>Of course, if you want a quick program, you do it in C, if you want to program quick, you do in (insert your favourite quick language). The convergence of this scheme is too slow, too. But the answer comes from the mathematical proof.</p>
-
 <blockquote>
 <p>user=&gt; (time (AveragePlusRandom 100000))
 &ldquo;Elapsed time: 421.315711 msecs&rdquo;
 2.71938
 user=&gt; (time (AveragePlusRandom 1000000))
 &ldquo;Elapsed time: 3445.167485 msecs&rdquo;
-2.718408<br />
+2.718408<br>
 user=&gt; (time (AveragePlusRandom 10000000))
 &ldquo;Elapsed time: 34082.850845 msecs&rdquo;
 2.7182318</p>
 </blockquote>
-
 <p>By the way, the proof from the convergence to e is quite straightforward, but this morning I was in no mood for this kind of problem (I am not fond of counting or probabilities) and googled it. I found it in the Google cache for Derbyshire&rsquo;s book FAQ. I have edited a little his version</p>
-
 <p>The first step is key. What&rsquo;s the probability that the sum of just two random
 numbers exceeds 1? The same probability as that a point $(x,y)$ in the unit
 square (corners are at $(0,0)$, $(0,1)$, $(1,0)$, and $(1,1))$, satisfied the
@@ -226,7 +225,6 @@ exceeds 1 is got by &ldquo;cutting a slice&rdquo; across the unit cube through t
 $(1,0,0)$, $(0,1,0)$, and $(0,0,1)$. Observe that this pyramid (shown below)
 also cuts the unit square along the diagonal! This pyramid has volume $\frac{1}{6}$, and
 the probability $x + y + z \geq 1$ is then $1-\frac{1}{6}=\frac{5}{6}$.</p>
-
 <figure class="fig-wide">
     <img src="E.png"
          alt="Photo by Romain Vignes on Unsplash"/> <figcaption>
@@ -234,21 +232,18 @@ the probability $x + y + z \geq 1$ is then $1-\frac{1}{6}=\frac{5}{6}$.</p>
         </figcaption>
 </figure>
 
-
 <p>A little calculus, plus the principle of induction, shows that the pyramid
 (standard simplex) sliced off an $n$-dimensional unit cube by a hyper-plane
 through its corners $(1,0,0,0,&hellip;)$, $(0,1,0,0,&hellip;)$, $(0,0,1,0,&hellip;)$,&hellip;$ has
 volume $1/n!$ If you don&rsquo;t believe it, you can check Wikipedia for the volume of
 the standard
-<a href="http://en.wikipedia.org/wiki/Simplex#Geometric_properties" target="_blank">simplex</a>.</p>
-
+<a href="http://en.wikipedia.org/wiki/Simplex#Geometric_properties">simplex</a>.</p>
 <p>The probability that a total of 1 is exceeded after adding $n$ random numbers is
 therefore $1 - \frac{1}{n!}$ The probability that a total of $1$ is exceeded
 after adding $n$ random numbers <em>but not before</em> is therefore $(1 -
 \frac{1}{n!}) - (1 - \frac{1}{\frac{n}{(n-1)!}}$, which simplifies to $\frac{n -
 1}{n!}$. The expected number of selections until a total of 1 is exceeded is
 therefore the following sum:</p>
-
 <p>$$\sum_{n=2}^\infty\frac{n-1}{n!}=\sum^\infty_{n=1}\frac{n}{n!}=e$$</p>
 <hr/><ul class="pa0">
   
@@ -307,8 +302,9 @@ therefore the following sum:</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

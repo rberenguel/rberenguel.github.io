@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Creating A6 Booklets in 7 Easy Steps</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -55,16 +59,13 @@ pdfpages to create A6 booklets? I use it frequently to turn my papers into
 handy A4 booklets (a few A4 folded in half), butI did not know if I could do it
 another time to generate A5 booklets, or even another time to get a small and
 nice A6 booklet">
-
-
 <meta itemprop="datePublished" content="2010-11-17T00:13:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-11-17T00:13:00&#43;01:00" />
-<meta itemprop="wordCount" content="622">
+<meta itemprop="wordCount" content="623">
 
 
 
 <meta itemprop="keywords" content="LaTeX,Books," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2010/11/creating-a6-booklets-in-7-easy-steps.html/A6Booklet5.JPG"/>
@@ -103,7 +104,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -154,7 +155,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Creating A6 Booklets in 7 Easy Steps</h1>
         
@@ -163,7 +167,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 622 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 623 words</span>
       
       <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -177,7 +181,10 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A few weeks ago I realised that I didn&rsquo;t have a printed copy of <a href="https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;qid=1566751724&amp;s=gateway&amp;sr=8-3&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=7ba78e7bea92ff3a5828022f23de2d47" target="_blank">Sun Tzu&rsquo;s Art
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>A few weeks ago I realised that I didn&rsquo;t have a printed copy of <a href="https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;qid=1566751724&amp;s=gateway&amp;sr=8-3&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=7ba78e7bea92ff3a5828022f23de2d47">Sun Tzu&rsquo;s Art
 of
 War</a>,
 and this thought collided head on with another old thought I had: <em>could I use
@@ -185,78 +192,69 @@ and this thought collided head on with another old thought I had: <em>could I us
 handy A4 booklets (a few A4 folded in half), butI did not know if I could do it
 another time to generate A5 booklets, or even another time to get a small and
 nice A6 booklet</p>
-
 <figure class="fig-not-so-wide">
     <img src="A6Booklet5.JPG"/> 
 </figure>
 
-
 <p>As these two thoughts collided, I decided that the best way to check was to use
-as base PDF <a href="https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;qid=1566751724&amp;s=gateway&amp;sr=8-3&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=7ba78e7bea92ff3a5828022f23de2d47" target="_blank">The Art of
+as base PDF <a href="https://www.amazon.com/Art-War-Everymans-Library/dp/1101908009/ref=as_li_ss_tl?keywords=art+of+war&amp;qid=1566751724&amp;s=gateway&amp;sr=8-3&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=7ba78e7bea92ff3a5828022f23de2d47">The Art of
 War</a>,
-a book available through <a href="http://www.gutenberg.org/ebooks/132" target="_blank">The Project
+a book available through <a href="http://www.gutenberg.org/ebooks/132">The Project
 Gutenberg</a>. I formatted it as a LaTeX ebook
 with custom sizes (to get readable fonts) and compiled using the fantastic and
 powerful <code>memoir</code> class. I&rsquo;ll give the details of how to create ebooks with
 LaTeX later this year or in the beginning of the next. I also did the same to
-Arnold Bennett&rsquo;s <a href="https://www.amazon.com/How-Live-Twenty-Four-Hours-Day/dp/1545469881/ref=as_li_ss_tl?crid=3O729KMSUATL0&amp;keywords=how+to+live+on+24+hours+a+day&amp;qid=1566751800&amp;s=gateway&amp;sprefix=how+to+live+on+,aps,217&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=f6e41a390369ff97d2c1f7c879817a12" target="_blank">How to Live on 24 Hours a
+Arnold Bennett&rsquo;s <a href="https://www.amazon.com/How-Live-Twenty-Four-Hours-Day/dp/1545469881/ref=as_li_ss_tl?crid=3O729KMSUATL0&amp;keywords=how+to+live+on+24+hours+a+day&amp;qid=1566751800&amp;s=gateway&amp;sprefix=how+to+live+on+,aps,217&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=f6e41a390369ff97d2c1f7c879817a12">How to Live on 24 Hours a
 Day</a>.</p>
-
 <p>You&rsquo;ll need three TeX files, based on the one I already used in <a href="/2008/09/latex-booklets.html">How to Create
 LaTeX Booklets</a>. You can refer to that page if
 there is something missing in here. These files will turn the PDF successively
 into 2-pages per sheet to 4-pages per sheet to the final 8-pages per sheet
 printable booklet.</p>
-
 <p>I named the files <code>Booklet2x1.tex</code>, <code>Booklet4x1.tex</code> and <code>Booklet8x1.tex</code> for
 pretty obvious reasons. Their contents are:</p>
-
-<h3 id="booklet2x1-tex">Booklet2x1.tex</h3>
+<h3 id="booklet2x1tex">Booklet2x1.tex</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>a<span style="color:#ae81ff">5</span>paper<span style="color:#e6db74">\]</span>{article}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>pdftex<span style="color:#e6db74">\]</span>{color,graphicx,epsfig}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>left<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm,top<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,bottom<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,right<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm<span style="color:#e6db74">\]</span>{geometry}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>final<span style="color:#e6db74">\]</span>{pdfpages}
 <span style="color:#66d9ef">\\</span>begin{document}
-<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Wrapper.pdf}
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<h3 id="booklet4x1">Booklet4x1.</h3>
+<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=</span><span style="color:#f92672">-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Wrapper.pdf}
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><h3 id="booklet4x1">Booklet4x1.</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>a<span style="color:#ae81ff">5</span>paper<span style="color:#e6db74">\]</span>{article}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>pdftex<span style="color:#e6db74">\]</span>{color,graphicx,epsfig}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>left<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm,top<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,bottom<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,right<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm<span style="color:#e6db74">\]</span>{geometry}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>final<span style="color:#e6db74">\]</span>{pdfpages}
 <span style="color:#66d9ef">\\</span>begin{document}
-<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">40</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Booklet2x1.pdf}
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<h3 id="booklet8x1-te">Booklet8x1.te</h3>
+<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=</span><span style="color:#f92672">-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">40</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Booklet2x1.pdf}
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><h3 id="booklet8x1te">Booklet8x1.te</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>a<span style="color:#ae81ff">5</span>paper<span style="color:#e6db74">\]</span>{article}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>pdftex<span style="color:#e6db74">\]</span>{color,graphicx,epsfig}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>left<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm,top<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,bottom<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>.cm,right<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>cm<span style="color:#e6db74">\]</span>{geometry}
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>final<span style="color:#e6db74">\]</span>{pdfpages}
 <span style="color:#66d9ef">\\</span>begin{document}
-<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Booklet4x1.pdf}
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<p>Later I realised that I did not need <code>a5paper</code> in the class part. As I explained
-in <a href="http://www.mostlymaths.net/2008/09/latex-booklets.html" target="_blank">How to Create LaTeX
+<span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=</span><span style="color:#f92672">-</span>, signature<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,landscape, frame<span style="color:#f92672">=</span>true<span style="color:#e6db74">\]</span>{Booklet4x1.pdf}
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><p>Later I realised that I did not need <code>a5paper</code> in the class part. As I explained
+in <a href="http://www.mostlymaths.net/2008/09/latex-booklets.html">How to Create LaTeX
 Booklets</a>, the signature
 is the number of pages per fold: in the case of a booklet, you have to aim for
 the closest multiple of 4 from above to the number of pages of the PDF file. In
 this case, I was lucky: the original file had 80 pages, that turned into 40 and
 then into 20 (resulting in just 10 pages to print).</p>
-
 <p>The building can get a little tricky, because you need to cut correctly the
-booklet. That is why I used the<code>frame=true</code> option of pdfpages, this draws a
+booklet. That is why I used the<code> frame=true</code> option of pdfpages, this draws a
 thin line around the pages for a easy cutting process.</p>
-
 <p>Start by compiling the first <code>tex</code> file with <code>pdflatex</code>, and follow with the
 other files until you have <code>Booklet8x1.pdf</code> and print it two sided.</p>
-
 <figure class="fig-wide">
     <img src="A6Booklet1.JPG"
          alt="You start with a bunch of pages resulting from the TeX files above"/> <figcaption>
             <p>You start with a bunch of pages resulting from the TeX files above</p>
         </figcaption>
 </figure>
-
 
 <figure class="fig-wide">
     <img src="A6Booklet2.JPG"
@@ -265,7 +263,6 @@ other files until you have <code>Booklet8x1.pdf</code> and print it two sided.</
         </figcaption>
 </figure>
 
-
 <figure class="fig-wide">
     <img src="A6Booklet3.JPG"
          alt="And repeat to get A6 slices. Beware! You have to cut to have an A6 booklet consisting of A7 pages, not separate A7 pages!"/> <figcaption>
@@ -273,11 +270,9 @@ other files until you have <code>Booklet8x1.pdf</code> and print it two sided.</
         </figcaption>
 </figure>
 
-
 <figure class="fig-wide">
     <img src="A6Booklet4.JPG"/> 
 </figure>
-
 
 <p>You&rsquo;ll end with a bunch of small groups of 2 pages (4 pages per sheet). Pile
 them in a way that the numbers are consecutive. Keep in mind that you will be
@@ -285,20 +280,16 @@ folding in half, thus on the left you will have page 2 and the right side you
 will have page 79. On top of this you need to have page 3 and page 78 (covering
 pages 2 and 79), and so on. If you don&rsquo;t get it know, you&rsquo;ll understand it once
 you have the pages in front of you, don&rsquo;t worry.</p>
-
 <figure class="fig-wide">
     <img src="A6Booklet6.JPG"/> 
 </figure>
 
-
 <p>Once you have them neatly folded in half and piled, place them over a soft cloth
 and staple them along the spine. I usually get by with 2 staples, but feel free
 to go with one or add a third or fourth.</p>
-
 <figure class="fig-wide">
     <img src="A6Booklet5.JPG"/> 
 </figure>
-
 
 <p>You are done! Enjoy your pocket reading. If you wish, you can cover in plastic
 the booklet, it will last longer.</p><hr/><ul class="pa0">
@@ -354,8 +345,9 @@ the booklet, it will last longer.</p><hr/><ul class="pa0">
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

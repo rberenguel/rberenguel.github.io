@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | And e/2 Appears from Nowhere! (Follow up to &#39;And e Appears from Nowhere&#39;)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -43,8 +47,6 @@
 <meta itemprop="name" content="And e/2 Appears from Nowhere! (Follow up to &#39;And e Appears from Nowhere&#39;)">
 <meta itemprop="description" content="You may remember a post I wrote a month ago titled And e Appears from Nowhere. It was based (through some blogs I read) on a footnote from Prime Obsession(Amazon affiliate link) by John Derbyshire. The footnote reads:
  Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers.">
-
-
 <meta itemprop="datePublished" content="2010-10-06T17:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-10-06T17:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="464">
@@ -52,7 +54,6 @@
 
 
 <meta itemprop="keywords" content="Programming,Maths,LISP," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -83,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -128,7 +129,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">And e/2 Appears from Nowhere! (Follow up to &#39;And e Appears from Nowhere&#39;)</h1>
         
@@ -144,76 +148,51 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>You may remember a post I wrote a month ago titled <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html" target="_blank">And e Appears from Nowhere</a>. It was based (through some blogs I read) on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497" target="_blank">Prime Obsession</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=0309085497" alt="" /> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p>You may remember a post I wrote a month ago titled <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html">And e Appears from Nowhere</a>. It was based (through some blogs I read) on a footnote from <a href="http://www.amazon.com/gp/product/0309085497?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0309085497">Prime Obsession</a><img src="http://www.assoc-amazon.com/e/ir?t=rbersblog-20&amp;l=as2&amp;o=1&amp;a=0309085497" alt=""> (Amazon affiliate link) by John Derbyshire. The footnote reads:</p>
 <blockquote>
-<p><em>Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1</em>? The answer is e. (See sketch of proof in <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html" target="_blank">the previous post</a>)</p>
+<p><em>Here is an example of e turning up unexpectedly. Select a random number between 0 and 1. Now select another and add it to the first. Keep doing this, piling on random numbers. How many random numbers, on average, do you need to make the total greater than 1</em>? The answer is e. (See sketch of proof in <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html">the previous post</a>)</p>
 </blockquote>
-
-<p>I wrote some clojure code to test it, and even found the proof lying around. It was very interesting.., and the post was quite visited. A few weeks ago I got <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html#comment-77581713" target="_blank">a comment in that post</a>, hinting at another bizarre happening.</p>
-
+<p>I wrote some clojure code to test it, and even found the proof lying around. It was very interesting.., and the post was quite visited. A few weeks ago I got <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html#comment-77581713">a comment in that post</a>, hinting at another bizarre happening.</p>
 <p>If you follow the previous procedure, in each step you will get a number greater than 1, say <em>x(i)</em> (for the step <em>i</em>). What is the average of <em>x(i)</em>? This is the average number you get greater than one in each step. Well, James (he made the comment) had a bug in his first try and computed that. He found out that this average looks suspiciously close to <em>e/2</em>.</p>
-
 <p>I also checked, and found the same. The modifications from my previous code were minimal:</p>
-
 <blockquote>
 <p>(defn PlusRandom2 [initial steps]</p>
-
 <p>; Initial and step start at 0. Will return how many times it takes</p>
-
 <p>; to be greater than 1</p>
-
 <p>(if (&gt; initial 1)</p>
-
 <p>initial</p>
-
 <p>(PlusRandom2 (+ initial (rand)) (+ 1 steps))))</p>
-
 <p>(defn AveragePlusRandom2 [iterates accumulator]</p>
-
 <p>; Takes the average of &ldquo;iterates&rdquo; iterations of the previous</p>
-
 <p>; function. Accumulator should start at 0</p>
-
 <p>(loop [n iterates accumulator 0]</p>
-
 <p>(if (= n 0)</p>
-
 <p>(/ (float accumulator) iterates)</p>
-
 <p>(recur (dec n) (+ accumulator (PlusRandom2 0 0))))))</p>
-
 <p>(def ehalf 1.359140914229522617680143736)</p>
 </blockquote>
-
 <p>And one run yields</p>
-
 <blockquote>
 <p>(AveragePlusRandom2 10000 0)</p>
-
 <p>1.3563358</p>
 </blockquote>
-
 <p>And indeed, a few runs comparing to e/2 return</p>
-
 <blockquote>
 <p>(- (AveragePlusRandom2 10000000 0) ehalf)</p>
-
 <p>-1.0387256539901024E-4</p>
-
 <p>(- (AveragePlusRandom2 100000000 0) ehalf)</p>
-
 <p>-4.57122720320946E-6</p>
 </blockquote>
-
-<p>The problem now is, <strong>how to prove it?</strong> I have been thinking it over for a while, and I guess it has something to do with the <a href="http://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank">central limit theorem</a> (maybe indirectly via <a href="http://mathworld.wolfram.com/UniformSumDistribution.html" target="_blank">sums of uniform distributions</a>). But my knowledge of probability is far below the requirements, or maybe isn&rsquo;t, but the time I can allot to keep trying is scarce. If any reader takes the plunge and finds a proof, I&rsquo;ll be very happy to share it here as a guest post. Prepare your pens!</p>
-
-<p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html" target="_blank">C code juicer: detecting copied programming assignments</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html" target="_blank">Cron, diff &amp; wget: Watch changes in a webpage</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html" target="_blank">8 reasons for re-inventing the wheel as a programmer</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html" target="_blank">Approximating images with randomly placed translucent triangles</a><br />
+<p>The problem now is, <strong>how to prove it?</strong> I have been thinking it over for a while, and I guess it has something to do with the <a href="http://en.wikipedia.org/wiki/Central_limit_theorem">central limit theorem</a> (maybe indirectly via <a href="http://mathworld.wolfram.com/UniformSumDistribution.html">sums of uniform distributions</a>). But my knowledge of probability is far below the requirements, or maybe isn&rsquo;t, but the time I can allot to keep trying is scarce. If any reader takes the plunge and finds a proof, I&rsquo;ll be very happy to share it here as a guest post. Prepare your pens!</p>
+<p>Related posts:<br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2010/01/cron-diff-wget-watch-changes-in-webpage.html">Cron, diff &amp; wget: Watch changes in a webpage</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a><br>
 ParseList(ScrambleList(Relateds(Maths,Programming)),5)</p>
 <hr/><ul class="pa0">
   
@@ -272,8 +251,9 @@ ParseList(ScrambleList(Relateds(Maths,Programming)),5)</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

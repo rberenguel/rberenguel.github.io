@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | gdb &amp; CEDET &amp; ECB</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -43,8 +47,6 @@ Today, after battling for an hour, I realized I missed the &ldquo;intellisense&r
 <meta itemprop="name" content="gdb &amp; CEDET &amp; ECB">
 <meta itemprop="description" content="Emacs fun, in other words. This weekend I&rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&hellip; I always miss on such matrix-here-matrix-there-solve-that.
 Today, after battling for an hour, I realized I missed the &ldquo;intellisense&rdquo; part of CEDET, and started to install it here in MacOs, and &ldquo;there&rdquo; in my netbook.">
-
-
 <meta itemprop="datePublished" content="2009-10-05T01:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-10-05T01:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="268">
@@ -52,7 +54,6 @@ Today, after battling for an hour, I realized I missed the &ldquo;intellisense&r
 
 
 <meta itemprop="keywords" content="Programming,emacs,Maths," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -83,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -128,7 +129,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">gdb &amp; CEDET &amp; ECB</h1>
         
@@ -144,22 +148,17 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><em>Emacs fun</em>, in other words. This weekend I&rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&hellip; I always miss on such matrix-here-matrix-there-solve-that.</p>
-
-<p>Today, after battling for an hour, I realized I missed the &ldquo;<a href="http://en.wikipedia.org/wiki/IntelliSense" target="_blank">intellisense</a>&rdquo; part of <a href="http://cedet.sourceforge.net/" target="_blank">CEDET</a>, and started to install it here in MacOs, and &ldquo;there&rdquo; in my netbook. The number of things you can do with it are&hellip; well, mind-blowing. I just use it for a few things, and probably with time will start using it more often. Like it.</p>
-
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/Ssj6l0qVo0I/AAAAAAAABVU/UeSapXHqDu4/s1600-h/Picture+1.png" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/Ssj6l0qVo0I/AAAAAAAABVU/UeSapXHqDu4/s320/Picture+1.png" alt="" /></a></p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p><em>Emacs fun</em>, in other words. This weekend I&rsquo;m writing some programs in C, to review major problems before my students ask. Yesterday I finished the part due Wednesday (for them), and today I tackled the final part. But there is some bug somewhere&hellip; I always miss on such matrix-here-matrix-there-solve-that.</p>
+<p>Today, after battling for an hour, I realized I missed the &ldquo;<a href="http://en.wikipedia.org/wiki/IntelliSense">intellisense</a>&rdquo; part of <a href="http://cedet.sourceforge.net/">CEDET</a>, and started to install it here in MacOs, and &ldquo;there&rdquo; in my netbook. The number of things you can do with it are&hellip; well, mind-blowing. I just use it for a few things, and probably with time will start using it more often. Like it.</p>
+<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/Ssj6l0qVo0I/AAAAAAAABVU/UeSapXHqDu4/s1600-h/Picture+1.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/Ssj6l0qVo0I/AAAAAAAABVU/UeSapXHqDu4/s320/Picture+1.png" alt=""></a></p>
 <p>GNU Debugger mode</p>
-
-<p>After too many printf&rsquo;s out there to debug, I decided to give a try and opened a terminal, wrote <a href="http://en.wikipedia.org/wiki/GNU_Debugger" target="_blank">gdb</a>&hellip; it works. I thought I had already tried in MacOs and didn&rsquo;t work&hellip; Well, then, give it a try together with emacs&rsquo; gdb-mode (in fact it is the <em>Grand Unifier Debug</em> mode&hellip; I use gdb). After having a quick peek to the user manual (WTF!? 493 pages!?) and discovering how to set up a breakpoint&hellip; I&rsquo;ve fallen in love. Just it&hellip; I can write variables, follow variables, stop and go&hellip; I can&rsquo;t ask for more. And the way to interact is via emacs&hellip; I just say process until &ldquo;here&rdquo; with my cursor in the source code, where &ldquo;here&rdquo; is located&hellip; and here it goes (C-x C-a C-u). Whoa. Love it.</p>
-
-<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Ssj6riER7HI/AAAAAAAABVc/lE20zq0xOZI/s1600-h/Picture+2.png" target="_blank"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Ssj6riER7HI/AAAAAAAABVc/lE20zq0xOZI/s320/Picture+2.png" alt="" /></a></p>
-
+<p>After too many printf&rsquo;s out there to debug, I decided to give a try and opened a terminal, wrote <a href="http://en.wikipedia.org/wiki/GNU_Debugger">gdb</a>&hellip; it works. I thought I had already tried in MacOs and didn&rsquo;t work&hellip; Well, then, give it a try together with emacs&rsquo; gdb-mode (in fact it is the <em>Grand Unifier Debug</em> mode&hellip; I use gdb). After having a quick peek to the user manual (WTF!? 493 pages!?) and discovering how to set up a breakpoint&hellip; I&rsquo;ve fallen in love. Just it&hellip; I can write variables, follow variables, stop and go&hellip; I can&rsquo;t ask for more. And the way to interact is via emacs&hellip; I just say process until &ldquo;here&rdquo; with my cursor in the source code, where &ldquo;here&rdquo; is located&hellip; and here it goes (C-x C-a C-u). Whoa. Love it.</p>
+<p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Ssj6riER7HI/AAAAAAAABVc/lE20zq0xOZI/s1600-h/Picture+2.png"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Ssj6riER7HI/AAAAAAAABVc/lE20zq0xOZI/s320/Picture+2.png" alt=""></a></p>
 <p>ECB</p>
-
 <p>And to add a little graphical goodness&hellip; ECB, an addition to CEDET&rsquo;s greatness. It makes emacs look like a &ldquo;usual&rdquo; IDE.</p>
-
 <p>You may also likeParseList(ScrambleList(Relateds(emacs,Programming)),15)</p>
 <hr/><ul class="pa0">
   
@@ -218,8 +217,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

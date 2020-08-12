@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Cron, diff &amp; wget: Watch changes in a webpage</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@ Then I realised I could write a script to do it, using diff and wget. You can ge
 <meta itemprop="description" content="From flickr
 A few months ago, I realised I was checking some pages frequently for changes. They were some congress pages, and I was waiting for them to add information about registration and such.
 Then I realised I could write a script to do it, using diff and wget. You can get it below. You have to edit it to add the pages you want to follow, then run it with the &ldquo;write&rdquo; option to download the first version, then edit your crontab file (crontab -e) to run it every day at a specified time with the &ldquo;diff&rdquo; option.">
-
-
 <meta itemprop="datePublished" content="2010-01-04T00:01:00&#43;01:00" />
 <meta itemprop="dateModified" content="2010-01-04T00:01:00&#43;01:00" />
 <meta itemprop="wordCount" content="462">
@@ -54,7 +56,6 @@ Then I realised I could write a script to do it, using diff and wget. You can ge
 
 
 <meta itemprop="keywords" content="Programming,Linux," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -86,7 +87,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -131,7 +132,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Cron, diff &amp; wget: Watch changes in a webpage</h1>
         
@@ -147,20 +151,17 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s1600-h/3387189144_955030cc27.jpg" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s400/3387189144_955030cc27.jpg" alt="" /></a></p>
-
-<p>From <a href="http://www.flickr.com/photos/robbie73/3387189144/" target="_blank">flickr</a></p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s1600-h/3387189144_955030cc27.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SzfNveCJTgI/AAAAAAAABpw/g0LENmHEKTw/s400/3387189144_955030cc27.jpg" alt=""></a></p>
+<p>From <a href="http://www.flickr.com/photos/robbie73/3387189144/">flickr</a></p>
 <p>A few months ago, I realised I was checking some pages frequently for changes. They were some congress pages, and I was waiting for them to add information about registration and such.</p>
-
 <p>Then <strong>I realised I could write a script to do it, using</strong> <strong>diff</strong> <strong>and</strong> <strong>wget</strong>. You can get it below. You have to edit it to add the pages you want to follow, then run it with the &ldquo;write&rdquo; option to download the first version, then edit your crontab file (crontab -e) to run it every day at a specified time with the &ldquo;diff&rdquo; option. For example:</p>
-
 <blockquote>
 <p>00 13 1,7,14,21,28 * * /home/user/PageDiff.sh diff</p>
 </blockquote>
-
 <p>will run it every 1st, 7th, 14th, 21st and 28th of the month, at 13:00. Be sure to first run it as write.</p>
-
 <pre><code>
 
 &gt; #!/bin/sh  
@@ -219,21 +220,14 @@ if (!doNotTrack) {
 &gt; mail -s &quot;Page changed alert!&quot; $MAILRECIPIENT 
 
 
-</code></pre>
-
-<p>Related posts:</p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html" target="_blank">And e Appears From Nowhere!</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html" target="_blank">Power Naps With a Command Line Utility in Linux</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html" target="_blank">C code juicer: detecting copied programming assignments</a></p>
-
-<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html" target="_blank">8 reasons for re-inventing the wheel as a programmer</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html" target="_blank">Approximating images with randomly placed translucent triangles</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html" target="_blank">The 100 Most Common Icelandic Words with a Bash Script</a>ParseList(ScrambleList(Relateds(Programming)),4)</p>
+</code></pre><p>Related posts:</p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/08/and-e-appears-from-nowhere.html">And e Appears From Nowhere!</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/08/power-nap-via-command-line-in-linuxmac.html">Power Naps With a Command Line Utility in Linux</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2009/12/c-code-juicer.html">C code juicer: detecting copied programming assignments</a></p>
+<p><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">8 reasons for re-inventing the wheel as a programmer</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/approximating-images-with-randomly.html">Approximating images with randomly placed translucent triangles</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/05/100-most-common-words-in-icelandic-more.html">The 100 Most Common Icelandic Words with a Bash Script</a>ParseList(ScrambleList(Relateds(Programming)),4)</p>
 <hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -287,8 +281,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

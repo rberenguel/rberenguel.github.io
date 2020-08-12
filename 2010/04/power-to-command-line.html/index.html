@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Power to the command line</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@ Among its all time greats I found some gems, and some others I discovered elsewh
 <meta itemprop="description" content="The command line. That small place, where a lot can happen. And more so if you are a Linux user… How to maximize it? Where to harness its power?
 I discovered commandlinefu.com a few years ago, while looking for a way to do&hellip; something. I don&rsquo;t even enter that often, although it is a brilliant place to discover how to do X in Linux/UNIX.
 Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up.">
-
-
 <meta itemprop="datePublished" content="2010-04-08T00:01:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-08T00:01:00&#43;02:00" />
 <meta itemprop="wordCount" content="464">
@@ -54,7 +56,6 @@ Among its all time greats I found some gems, and some others I discovered elsewh
 
 
 <meta itemprop="keywords" content="Linux," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -86,7 +87,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -131,7 +132,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Power to the command line</h1>
         
@@ -158,73 +162,54 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-
-<p>The command line. That small place, where a lot can happen. And more so if you
+    <p>The command line. That small place, where a lot can happen. And more so if you
 are a Linux user… How to maximize it? Where to harness its power?</p>
-
-<p>I discovered <a href="http://www.commandlinefu.com/commands/browse" target="_blank">commandlinefu.com</a> a
+<p>I discovered <a href="http://www.commandlinefu.com/commands/browse">commandlinefu.com</a> a
 few years ago, while looking for a way to do&hellip; something. I don&rsquo;t even enter
 that often, although it is a brilliant place to discover how to do X in
 Linux/UNIX.</p>
-
 <p>Among its all time greats I found some gems, and some others I discovered
 elsewhere, or even I made up.</p>
-
 <h2 id="command-line-gems">Command line gems</h2>
-
 <p>Run the last command as root: <code>sudo !!</code> as in</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install something -&gt; error, you have to be root 
-sudo !!</code></pre></div>
-<p>The double exclamation mark recovers the last command in the history.</p>
-
+sudo !!
+</code></pre></div><p>The double exclamation mark recovers the last command in the history.</p>
 <p>Use the last argument for the last command: <code>!$</code> as in</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /path/to/somewhere
-cd !$</code></pre></div>
-<p>Change to the previous directory: <code>cd -</code> as in (after the previous example to
+cd !$
+</code></pre></div><p>Change to the previous directory: <code>cd -</code> as in (after the previous example to
 get back to where you started). Good paired with <code>popd</code> (bash keeps a stack of
 visited directories)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd -</code></pre></div>
-<p>Backward history incremental search: <code>C-r</code> in the terminal prompt, start writing
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd -
+</code></pre></div><p>Backward history incremental search: <code>C-r</code> in the terminal prompt, start writing
 the command you want to backward-search. Press <code>C-r</code> to keep on searching for that
 term. Best combined with <a href="/2018/04/modifying-agnoster-theme-for-zsh/"><code>fzf</code></a></p>
-
 <p>Correct typo in previous command: <code>^typo^corrected</code> as in</p>
-
 <pre><code>sudo apt-get isntall somepackage
 ^isnt^inst
-</code></pre>
-
-<p>Write command in editor: <code>C-x</code> <code>C-e</code> will fire the editor in <code>$EDITOR</code> to write the
+</code></pre><p>Write command in editor: <code>C-x</code> <code>C-e</code> will fire the editor in <code>$EDITOR</code> to write the
 following command.</p>
-
 <p>Open the last modified file of a type: I use this to open the most recent <code>ppm</code>
 file in a directory with Eye Of Gnome: <code>eog &quot;$(ls -rt \*.ppm | tail -n 1)&quot;</code></p>
-
-<p>Use locate to search for a specific PDF and open it with evince: <code>evince
-&quot;$(locate \*partofname\*.pdf)&quot;</code> This will only work if it results in only one
-instance. If you want to open only the first occurrence <code>evince &quot;$(locate
-\*partofname\*.pdf | head -n 1)&quot;</code></p>
-
+<p>Use locate to search for a specific PDF and open it with evince: <code>evince &quot;$(locate \*partofname\*.pdf)&quot;</code> This will only work if it results in only one
+instance. If you want to open only the first occurrence <code>evince &quot;$(locate \*partofname\*.pdf | head -n 1)&quot;</code></p>
 <p>The same with find: <code>evince &quot;$(find -name 'NameOfPdf.pdf')&quot;</code></p>
-
 <p>Mighty heads and tails: <code>head -n N file</code>, <code>tail -n N file</code> will return the first
 (resp. last) <code>N</code> lines of file.</p>
-
 <p>Get <code>pid</code> of a process by name: <code>ps ax | grep &quot;firefox&quot;</code></p>
-
 <p>Follow changes on a incremental file: <code>tail -f filename</code> as in following <code>nohup.out</code>
 from a running process.</p>
-
 <p>Get all lines containing a string in a file: <code>grep -e &quot;string&quot; file &gt; outputfile</code>
 Useful as intermediate step for plotting specific data lines from a <code>nohup.out</code>
 file. With <code>-r</code>, change the string for a
-<a href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">regexp</a> (consider buying this
-book if you will use them more than once, I recommend it: <a href="http://www.amazon.com/gp/product/0596528124?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596528124" target="_blank">Mastering Regular
+<a href="http://en.wikipedia.org/wiki/Regular_expression">regexp</a> (consider buying this
+book if you will use them more than once, I recommend it: <a href="http://www.amazon.com/gp/product/0596528124?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596528124">Mastering Regular
 Expressions</a>).</p>
-
 <p>I think I have a few more, but I just don&rsquo;t remember them.</p>
-
 <p><span class="scaps">Note from 2019:</span> This was written a long time ago, and
 my list of tips and speed ups for bash/zsh is way larger now. Hit me on twitter
 if you want to know more.</p>
@@ -277,8 +262,9 @@ if you want to know more.</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | 8 reader reasons for re-inventing the wheel as a programmer</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -35,16 +39,14 @@
 
     <meta property="og:title" content="8 reader reasons for re-inventing the wheel as a programmer" />
 <meta property="og:description" content="As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
- You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most." />
+  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/2010/04/8-reader-reasons-for-re-inventing-wheel.html/" />
 <meta property="article:published_time" content="2010-04-10T14:00:00+02:00" />
 <meta property="article:modified_time" content="2010-04-10T14:00:00+02:00" />
 <meta itemprop="name" content="8 reader reasons for re-inventing the wheel as a programmer">
 <meta itemprop="description" content="As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
- You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.">
-
-
+  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most.">
 <meta itemprop="datePublished" content="2010-04-10T14:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-10T14:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="520">
@@ -52,7 +54,6 @@
 
 
 <meta itemprop="keywords" content="Programming,Thoughts," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -64,7 +65,7 @@
 
 <meta name="twitter:title" content="8 reader reasons for re-inventing the wheel as a programmer"/>
 <meta name="twitter:description" content="As I promised in my previous post reasons for re-inventing the wheel as a programmer, here I collect 8 reader reasons for re-inventing the wheel from comments on the reddit thread and on page comments. They are in no particular order AFAIK.
- You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most."/>
+  You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -83,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -128,7 +129,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">8 reader reasons for re-inventing the wheel as a programmer</h1>
         
@@ -144,35 +148,43 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I promised in my previous post <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html" target="_blank">reasons for re-inventing the wheel as a programmer</a>, here I collect 8 reader reasons for re-inventing the wheel from comments on the <a href="http://www.reddit.com/r/programming/comments/bizqa/eight_reasons_for_reinventing_the_wheel_as_a/" target="_blank">reddit thread</a> and on page comments. They are in no particular order AFAIK.</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p>As I promised in my previous post <a href="http://www.mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html">reasons for re-inventing the wheel as a programmer</a>, here I collect 8 reader reasons for re-inventing the wheel from comments on the <a href="http://www.reddit.com/r/programming/comments/bizqa/eight_reasons_for_reinventing_the_wheel_as_a/">reddit thread</a> and on page comments. They are in no particular order AFAIK.</p>
 <ol>
-<li><p>You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most. By <a href="http://www.reddit.com/user/adshea/" target="_blank">AdShea</a>, Reddit, also by <a href="http://stevenbenner.com/" target="_blank">Steven Benner</a>, on page comment.</p></li>
-
-<li><p>Ability to support future wheel-enhancement requests at a moment&rsquo;s notice: Richard Feynman wrote &ldquo;What I cannot build, I do not understand.&rdquo; Thus, if you need to maintain a large piece of code for a long time, it is better to have it written to suit your style and your understanding of the system. By <a href="http://www.reddit.com/user/glibc/" target="_blank">glibc</a>, Reddit.</p></li>
-
-<li><p>Harder to understand currently existing wheel: Some systems are designed with such poor documentation or interfaces that using them can be a pain, and a lot of time can be saved just by writing your own implementation. By <a href="http://www.reddit.com/user/tmoertel/" target="_blank">tmoertel</a>, Reddit.</p></li>
-
-<li><p>The existing wheel is ineffective: You are 3 weeks into the project, and the existing wheel you used breaks if it goes over 50 mph in a 3 lane eastbound highway in a state on the western coast. Or discovering that it doesn&rsquo;t have support for dirt roads. Or that the wheels fall off on hybrid cars. By <a href="http://www.reddit.com/user/thekludge/" target="_blank">TheKludge</a>, Reddit.</p></li>
-
-<li><p>Current wheels are not suitable: All our wheels are square, because we support driving up and down steps. If you don&rsquo;t want to drive up and down steps, and want to drive on roads, just ignore the 900mb of additional classes that you don&rsquo;t want, and include these 57 lines of XML config. By <a href="http://www.reddit.com/user/jstddvwls/" target="_blank">jstddvwls</a>, Reddit.</p></li>
-
-<li><p>Wheel quality: All software contains bugs. If you need to rely on a piece of code, it is better to write and understand it yourself than to trust a random library you&rsquo;ve found somewhere for download. By <a href="http://www.blogger.com/profile/06987859804935271173" target="_blank">Luzius Meisser</a>, on page comment.</p></li>
-
-<li><p>Funny axles: It&rsquo;s quicker to re-invent my own wheel because then I can be sure it just fits where I want it to go, whereas otherwise I&rsquo;d have to spend hours inventing an axle adapter. Using off-the-shelf implementations sometimes demands coping with a lot of baggage in the way of interfaces and setup, that may not be a good fit with code you&rsquo;ve already produced. By <a href="http://www.blogger.com/profile/12389605901783666517" target="_blank">Jerboa</a>, on page comment.</p></li>
-
-<li><p>Ignorance: You didn&rsquo;t know that it was a wheel, at that it already was invented. By <a href="http://blog.schauderhaft.de/" target="_blank">Jens Schauder</a>, on page comment. This one is probably the best I&rsquo;ve read.</p></li>
+<li>
+<p>You need a faster wheel: Embedded software is the prime example of such. Average 10 cycles, worst case 15 cycles is not good when your system can explode if you do not attain 14 cycles at most. By <a href="http://www.reddit.com/user/adshea/">AdShea</a>, Reddit, also by <a href="http://stevenbenner.com/">Steven Benner</a>, on page comment.</p>
+</li>
+<li>
+<p>Ability to support future wheel-enhancement requests at a moment&rsquo;s notice: Richard Feynman wrote &ldquo;What I cannot build, I do not understand.&rdquo; Thus, if you need to maintain a large piece of code for a long time, it is better to have it written to suit your style and your understanding of the system. By <a href="http://www.reddit.com/user/glibc/">glibc</a>, Reddit.</p>
+</li>
+<li>
+<p>Harder to understand currently existing wheel: Some systems are designed with such poor documentation or interfaces that using them can be a pain, and a lot of time can be saved just by writing your own implementation. By <a href="http://www.reddit.com/user/tmoertel/">tmoertel</a>, Reddit.</p>
+</li>
+<li>
+<p>The existing wheel is ineffective: You are 3 weeks into the project, and the existing wheel you used breaks if it goes over 50 mph in a 3 lane eastbound highway in a state on the western coast. Or discovering that it doesn&rsquo;t have support for dirt roads. Or that the wheels fall off on hybrid cars. By <a href="http://www.reddit.com/user/thekludge/">TheKludge</a>, Reddit.</p>
+</li>
+<li>
+<p>Current wheels are not suitable: All our wheels are square, because we support driving up and down steps. If you don&rsquo;t want to drive up and down steps, and want to drive on roads, just ignore the 900mb of additional classes that you don&rsquo;t want, and include these 57 lines of XML config. By <a href="http://www.reddit.com/user/jstddvwls/">jstddvwls</a>, Reddit.</p>
+</li>
+<li>
+<p>Wheel quality: All software contains bugs. If you need to rely on a piece of code, it is better to write and understand it yourself than to trust a random library you&rsquo;ve found somewhere for download. By <a href="http://www.blogger.com/profile/06987859804935271173">Luzius Meisser</a>, on page comment.</p>
+</li>
+<li>
+<p>Funny axles: It&rsquo;s quicker to re-invent my own wheel because then I can be sure it just fits where I want it to go, whereas otherwise I&rsquo;d have to spend hours inventing an axle adapter. Using off-the-shelf implementations sometimes demands coping with a lot of baggage in the way of interfaces and setup, that may not be a good fit with code you&rsquo;ve already produced. By <a href="http://www.blogger.com/profile/12389605901783666517">Jerboa</a>, on page comment.</p>
+</li>
+<li>
+<p>Ignorance: You didn&rsquo;t know that it was a wheel, at that it already was invented. By <a href="http://blog.schauderhaft.de/">Jens Schauder</a>, on page comment. This one is probably the best I&rsquo;ve read.</p>
+</li>
 </ol>
-
 <p>If you find any spelling error in your name, or want to add your real name and web-page to your reason, send me a message using the same channel you used for commenting. Thanks!</p>
-
-<p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html" target="_blank">9 programming books I have read and somewhat liked&hellip;</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/03/two-best-mind-mapping-apps-for-iphone.html" target="_blank">The two best mind mapping apps for iPhone</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://berenguel.blogspot.com/2010/03/love-thy-tools.html" target="_blank">Love thy tools to maximize your productivity</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/slow-natural-deadly-importance-of.html" target="_blank">Slow, natural, deadly: The importance of fundamentals</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/what-broken-windows-theory-has-to-say.html" target="_blank">What the &lsquo;broken windows theory&rsquo; has to say about productivity</a></p>
-
+<p>Related posts:<br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/9-programming-books-i-have-read-and.html">9 programming books I have read and somewhat liked&hellip;</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2010/03/two-best-mind-mapping-apps-for-iphone.html">The two best mind mapping apps for iPhone</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://berenguel.blogspot.com/2010/03/love-thy-tools.html">Love thy tools to maximize your productivity</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/slow-natural-deadly-importance-of.html">Slow, natural, deadly: The importance of fundamentals</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/what-broken-windows-theory-has-to-say.html">What the &lsquo;broken windows theory&rsquo; has to say about productivity</a></p>
 <p>ParseList(ScrambleList(Relateds(Programming)),10)</p>
 <hr/><ul class="pa0">
   
@@ -227,8 +239,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

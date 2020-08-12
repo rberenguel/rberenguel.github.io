@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on mostlymaths.net</title>
@@ -216,11 +216,11 @@ Source code:
       <pubDate>Sat, 27 Sep 2008 17:12:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2008/09/social-bookmarking-in-blogger.html/</guid>
-      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;rsquo;s approach is the best.
+      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;lsquo;s approach is the best.
 
 This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.
 To add this code to your blogger blog:
- Go to layout settings, and select edit HTML Select &amp;lsquo;Expand widgets&amp;rsquo; Search in the text box for the string:</description>
+  Go to layout settings, and select edit HTML</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Language Detection in Python with NLTK Stopwords</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,16 +45,13 @@
 <meta property="article:modified_time" content="2012-06-07T14:55:00+02:00" />
 <meta itemprop="name" content="Language Detection in Python with NLTK Stopwords">
 <meta itemprop="description" content="Lately I&rsquo;ve been coding a little more Python than usual, some twitter API stuff, some data crunching code. The other day I was thinking how I could detect the language a twitter user was writing in. Of course, I&rsquo;m sure there is a library out there that does it… But the NLTK library (the Natural Language Toolkit for Python) does not have any function for this, or at least I was not able to find it after 5 minutes of Google search.">
-
-
 <meta itemprop="datePublished" content="2012-06-07T14:55:00&#43;02:00" />
 <meta itemprop="dateModified" content="2012-06-07T14:55:00&#43;02:00" />
-<meta itemprop="wordCount" content="773">
+<meta itemprop="wordCount" content="769">
 
 
 
 <meta itemprop="keywords" content="Programming,Thoughts,Python,NLP,Django," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html/whatlanguageis.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Language Detection in Python with NLTK Stopwords</h1>
         
@@ -142,7 +146,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> 4 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 773 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.4rem;"> | 769 words</span>
       
       <span class="f6 mv4 dib tracked" style="font-size: 0.4rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -160,13 +164,15 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Lately I&rsquo;ve been coding a little more Python than usual, some twitter API stuff,
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>Lately I&rsquo;ve been coding a little more Python than usual, some twitter API stuff,
 some data crunching code. The other day I was thinking how I could detect the
 language a twitter user was writing in. Of course, I&rsquo;m sure there is a library
 out there that does it… But the NLTK library (the Natural Language Toolkit for
 Python) does not have any function for this, or at least I was not able to find
 it after 5 minutes of Google search. So…</p>
-
 <figure class="fig-not-so-wide">
     <img src="whatlanguageis.png"
          alt="2019: Note that this link no longer works"/> <figcaption>
@@ -174,25 +180,22 @@ it after 5 minutes of Google search. So…</p>
         </figcaption>
 </figure>
 
-
 <p>I had a simple enough idea to determine it, though. NLTK comes equipped with
 several stopword lists. A stopword is a frequent word in a language, adding
 no significative information (&ldquo;the&rdquo; in English is the prime example. My idea:
 pick the text, find most common words and compare with stopwords. The language
 with the most stopwords &ldquo;wins&rdquo;.</p>
-
 <p>Implementing it was just a matter of a few minutes and around 45 lines.</p>
-
 <p><span class="scaps">Note from the future:</span> 2019 Ruben is ashamed of this code, as expected 😄</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> stopwords
 
 <span style="color:#75715e"># These are the available languages with stopwords from NLTK</span>
-NLTKlanguages<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;dutch&#34;</span>,<span style="color:#e6db74">&#34;finnish&#34;</span>,<span style="color:#e6db74">&#34;german&#34;</span>,<span style="color:#e6db74">&#34;italian&#34;</span>,
-               <span style="color:#e6db74">&#34;portuguese&#34;</span>,<span style="color:#e6db74">&#34;spanish&#34;</span>,<span style="color:#e6db74">&#34;turkish&#34;</span>,<span style="color:#e6db74">&#34;danish&#34;</span>,<span style="color:#e6db74">&#34;english&#34;</span>,
-               <span style="color:#e6db74">&#34;french&#34;</span>,<span style="color:#e6db74">&#34;hungarian&#34;</span>,<span style="color:#e6db74">&#34;norwegian&#34;</span>,<span style="color:#e6db74">&#34;russian&#34;</span>,<span style="color:#e6db74">&#34;swedish&#34;</span>]
+NLTKlanguages<span style="color:#f92672">=</span>[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">dutch</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">finnish</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">german</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">italian</span><span style="color:#e6db74">&#34;</span>,
+               <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">portuguese</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">spanish</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">turkish</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">danish</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">english</span><span style="color:#e6db74">&#34;</span>,
+               <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">french</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">hungarian</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">norwegian</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">russian</span><span style="color:#e6db74">&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">swedish</span><span style="color:#e6db74">&#34;</span>]
 <span style="color:#75715e"># Just in case I add optional stopword lists</span>
 
-FREElanguages<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;&#34;</span>]
+FREElanguages<span style="color:#f92672">=</span>[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>]
 languages<span style="color:#f92672">=</span>NLTKlanguages<span style="color:#f92672">+</span>FREElanguages
 <span style="color:#75715e"># Fill the dictionary of languages, to avoid unnecessary function calls</span>
 <span style="color:#66d9ef">for</span> lang <span style="color:#f92672">in</span> NLTKlanguages:
@@ -200,8 +203,8 @@ languages<span style="color:#f92672">=</span>NLTKlanguages<span style="color:#f9
 
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scoreFunction</span>(wholetext):
-  <span style="color:#e6db74">&#34;&#34;&#34;Get text, find most common words and compare with known
-</span><span style="color:#e6db74">  stopwords. Return dictionary of values&#34;&#34;&#34;</span>
+  <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">Get text, find most common words and compare with known</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">  stopwords. Return dictionary of values</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
   <span style="color:#75715e"># C makes me program like this: create always empty stuff just in case</span>
   dictiolist<span style="color:#f92672">=</span>{}
   scorelist<span style="color:#f92672">=</span>{}
@@ -221,33 +224,32 @@ languages<span style="color:#f92672">=</span>NLTKlanguages<span style="color:#f9
     scorelist[lang]<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
     <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> freq_dist<span style="color:#f92672">.</span>keys()[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">20</span>]:
       <span style="color:#66d9ef">if</span> word <span style="color:#f92672">in</span> dictiolist[lang]:
-        scorelist[lang]<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+        scorelist[lang]<span style="color:#f92672">+</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
   <span style="color:#66d9ef">return</span> scorelist
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">whichLanguage</span>(scorelist):
-  <span style="color:#e6db74">&#34;&#34;&#34;This function just returns the language name, from a given
-</span><span style="color:#e6db74">  &#34;scorelist&#34; dictionary as defined above.&#34;&#34;&#34;</span>
+  <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">This function just returns the language name, from a given</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">  </span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">scorelist</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> dictionary as defined above.</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
   maximum<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
   <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> scorelist:
     value<span style="color:#f92672">=</span>scorelist[item]
     <span style="color:#66d9ef">if</span> maximum<span style="color:#f92672">&lt;</span>value:
       maximum<span style="color:#f92672">=</span>value
       lang<span style="color:#f92672">=</span>item
-  <span style="color:#66d9ef">return</span> lang</code></pre></div>
-<p>Well, does it work? Quite! I tested it with some Wikipedia text:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">scoreFunction(<span style="color:#e6db74">&#34;e Operationen in der Karibik, ohne dass es dabei zu größeren See­schlachten gekommen wäre. In Europa war die erfolglose Belagerung des britischen Stütz­punktes Gibraltar die einzige nennens­werte Auseinander­setzung. Der englisch-­spanische Konflikt endete formell am 9. November 1729 mit dem Abschluss des Vertrages von Sevilla und der Wieder­herstellung des Status quo ante. Die grundsätzlichen Differenzen beider Staaten wurden jedoch nicht beseitigt, was kaum zehn Jahre später zum Ausbruch eines weiteren Krieges führte&#34;</span>) 
-<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74">&#39;swedish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;portuguese&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;english&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;hungarian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;finnish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;turkish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">**</span><span style="color:#e6db74">&#39;german&#39;</span>: <span style="color:#ae81ff">5</span><span style="color:#f92672">**</span>, <span style="color:#e6db74">&#39;dutch&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;french&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;norwegian&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;catalan&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;spanish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;russian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;danish&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;italian&#39;</span>: <span style="color:#ae81ff">1</span>} 
-scoreFunction(<span style="color:#e6db74">&#34;Man vet forholdsvis lite om Merkur; bakkebaserte teleskop viser kun en opplyst halvmåne med begrensede detaljer. Mye av informasjonen om planeten ble samlet av Mariner 10 (1974–76) som kartla rundt 45 % av overflaten.&#34;</span>) 
-<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74">&#39;swedish&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;portuguese&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;english&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;hungarian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;finnish&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;turkish&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;german&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;dutch&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;french&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">**</span><span style="color:#e6db74">&#39;norwegian&#39;</span>: <span style="color:#ae81ff">4</span><span style="color:#f92672">**</span>, <span style="color:#e6db74">&#39;catalan&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;spanish&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;russian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;danish&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;italian&#39;</span>: <span style="color:#ae81ff">0</span>} 
-scoreFunction(<span style="color:#e6db74">&#34;A transit of Venus across the Sun takes place when the planet Venus passes directly between the Sun and Earth, becoming visible against the solar disk. During a transit, Venus can be seen from Earth as a small black disk moving slowly across the face of the Sun&#34;</span>) 
-<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74">&#39;swedish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;portuguese&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#f92672">**</span><span style="color:#e6db74">&#39;english&#39;</span>: <span style="color:#ae81ff">9</span><span style="color:#f92672">**</span>, <span style="color:#e6db74">&#39;hungarian&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;finnish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;turkish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;german&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;dutch&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;french&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;norwegian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;catalan&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;spanish&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;russian&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;danish&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;italian&#39;</span>: <span style="color:#ae81ff">1</span>}</code></pre></div>
-<p>But it breaks with non-ascii text (like accents, umlauts and other funny
+  <span style="color:#66d9ef">return</span> lang
+</code></pre></div><p>Well, does it work? Quite! I tested it with some Wikipedia text:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">scoreFunction(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">e Operationen in der Karibik, ohne dass es dabei zu größeren See­schlachten gekommen wäre. In Europa war die erfolglose Belagerung des britischen Stütz­punktes Gibraltar die einzige nennens­werte Auseinander­setzung. Der englisch-­spanische Konflikt endete formell am 9. November 1729 mit dem Abschluss des Vertrages von Sevilla und der Wieder­herstellung des Status quo ante. Die grundsätzlichen Differenzen beider Staaten wurden jedoch nicht beseitigt, was kaum zehn Jahre später zum Ausbruch eines weiteren Krieges führte</span><span style="color:#e6db74">&#34;</span>) 
+<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">swedish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">portuguese</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">english</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hungarian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">finnish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">turkish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">german</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">dutch</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">french</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">norwegian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">catalan</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">spanish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">russian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">danish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">italian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>} 
+scoreFunction(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Man vet forholdsvis lite om Merkur; bakkebaserte teleskop viser kun en opplyst halvmåne med begrensede detaljer. Mye av informasjonen om planeten ble samlet av Mariner 10 (1974–76) som kartla rundt 45 </span><span style="color:#e6db74">%</span><span style="color:#e6db74"> av overflaten.</span><span style="color:#e6db74">&#34;</span>) 
+<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">swedish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">portuguese</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">english</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hungarian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">finnish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">turkish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">german</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">dutch</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">french</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">norwegian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">catalan</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">spanish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">russian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">danish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">italian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>} 
+scoreFunction(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">A transit of Venus across the Sun takes place when the planet Venus passes directly between the Sun and Earth, becoming visible against the solar disk. During a transit, Venus can be seen from Earth as a small black disk moving slowly across the face of the Sun</span><span style="color:#e6db74">&#34;</span>) 
+<span style="color:#f92672">&gt;</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">swedish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">portuguese</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">english</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">9</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hungarian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">finnish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">turkish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">german</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">dutch</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">french</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">norwegian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">catalan</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">spanish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">russian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">danish</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">italian</span><span style="color:#e6db74">&#39;</span>: <span style="color:#ae81ff">1</span>}
+</code></pre></div><p>But it breaks with non-ascii text (like accents, umlauts and other funny
 letters,) so it is quite un-useful in these cases. But oh well, for 10 minutes
 of coding it&rsquo;s not that bad, a quick hack.</p>
-
-<p>Since last week I had started to read the <a href="http://djangobook.com/" target="_blank">django book</a>,
+<p>Since last week I had started to read the <a href="http://djangobook.com/">django book</a>,
 I thought this would make for an interesting first project to post online, and
-you can find it at [~whatlanguageis.com~]() (Note: you could find it there, I
+you can find it at <a href="">~whatlanguageis.com~</a> (Note: you could find it there, I
 eventually cancelled the domain), with some unicode improvements. It&rsquo;s still in
 early beta, working with just a handful of languages and without any kind of
 text-length checker. Just a proof of concept about my django &ldquo;skills.&rdquo;</p>
@@ -316,8 +318,9 @@ text-length checker. Just a proof of concept about my django &ldquo;skills.&rdqu
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

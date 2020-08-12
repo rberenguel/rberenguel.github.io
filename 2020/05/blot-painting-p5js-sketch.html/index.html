@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Blot/Painting p5js sketch</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2020-05-26T19:00:33+02:00" />
 <meta itemprop="name" content="Blot/Painting p5js sketch">
 <meta itemprop="description" content="Some details of my p5js sketch Blot/Painting">
-
-
 <meta itemprop="datePublished" content="2020-05-26T19:00:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-05-26T19:00:33&#43;02:00" />
 <meta itemprop="wordCount" content="1957">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="processing,javascript,generative,p5js," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/BlotPainting.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -139,7 +140,10 @@ if (!doNotTrack) {
 
 
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Blot/Painting p5js sketch</h1>
         
@@ -155,14 +159,15 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Some details of my <code>p5js</code> sketch <a href="https://mostlymaths.net/sketches/blot-painting/blot.html" target="_blank"><code>Blot/Painting</code></a></p>
-
-<p><br/>
-Since the beginning of the month I&rsquo;ve been having a lot of fun with generative
-sketches in <a href="https://p5js.org" target="_blank">p5js</a>. I have been coding them on my iPad Mini,
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>Some details of my <code>p5js</code> sketch <a href="https://mostlymaths.net/sketches/blot-painting/blot.html"><code>Blot/Painting</code></a></p>
+<br/>
+Since the beginning of the month I've been having a lot of fun with generative
+sketches in [p5js](https://p5js.org). I have been coding them on my iPad Mini,
 on the sofa (more details in a separate blog post), and they have been the
-source of a lot of enjoyment.</p>
-
+source of a lot of enjoyment.
 <figure class="fig-wide">
     <img src="blot.png"
          alt="Blot"/> <figcaption>
@@ -170,14 +175,12 @@ source of a lot of enjoyment.</p>
         </figcaption>
 </figure>
 
-
 <p>See, I have been always interested in generative &ldquo;stuff&rdquo; (see
-<a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" target="_blank">some</a>
-<a href="https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/" target="_blank">examples</a>
+<a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/">some</a>
+<a href="https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/">examples</a>
 I had done in the past), but I have been avoiding sitting on a computer after
-work hours, except for open source stuff. I stumbled upon <a href="https://p5js.org" target="_blank">p5js</a> around the end of
+work hours, except for open source stuff. I stumbled upon <a href="https://p5js.org">p5js</a> around the end of
 last month, and thus found a way to have coding fun without needing a computer.</p>
-
 <figure class="fig-wide">
     <img src="painting.jpg"
          alt="Painting"/> <figcaption>
@@ -185,14 +188,12 @@ last month, and thus found a way to have coding fun without needing a computer.<
         </figcaption>
 </figure>
 
-
 <p>One particular area I have always been fascinated with is <strong>generation of
 real-looking paint and watercolour</strong>. I don&rsquo;t know when I started collecting
-references (well, I still remember reading <a href="https://en.m.wikipedia.org/wiki/Bresenham%27s_line_algorithm" target="_blank">Bresenham&rsquo;s line
+references (well, I still remember reading <a href="https://en.m.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham&rsquo;s line
 algorithm</a> when I
-was 9 or 10), but one of the first sketches I wrote recently was <a href="https://github.com/rberenguel/sketches#watercolour-p5js" target="_blank">this
+was 9 or 10), but one of the first sketches I wrote recently was <a href="https://github.com/rberenguel/sketches#watercolour-p5js">this
 one</a>:</p>
-
 <figure class="fig-not-so-wide">
     <img src="watercolor.png"
          alt="Watercolour"/> <figcaption>
@@ -200,44 +201,33 @@ one</a>:</p>
         </figcaption>
 </figure>
 
-
-<p>This was based on a <a href="https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints" target="_blank">blog post I had read in
-2017</a>, although I found ot recently <a href="https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/creating-realtime-watercolour-simulation-for-the-mobile-game-tint-on-apple-arcade-r5372/" target="_blank">the way it&rsquo;s done in
+<p>This was based on a <a href="https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints">blog post I had read in
+2017</a>, although I found ot recently <a href="https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/creating-realtime-watercolour-simulation-for-the-mobile-game-tint-on-apple-arcade-r5372/">the way it&rsquo;s done in
 Tint</a>,
-and I <em>need</em> to implement that one as well. Soon after implementing this, I landed on <a href="https://estebanhufstedler.com/" target="_blank">Esteban
-Hufstedler</a>&rsquo;s webpage, after he posted <a href="https://estebanhufstedler.com/2020/05/04/pulled-string-art/" target="_blank">pulled
+and I <em>need</em> to implement that one as well. Soon after implementing this, I landed on <a href="https://estebanhufstedler.com/">Esteban
+Hufstedler</a>&lsquo;s webpage, after he posted <a href="https://estebanhufstedler.com/2020/05/04/pulled-string-art/">pulled
 string art</a>. There
-I found his <a href="https://estebanhufstedler.com/2018/10/02/splash/" target="_blank">ink splashes</a> and
+I found his <a href="https://estebanhufstedler.com/2018/10/02/splash/">ink splashes</a> and
 I knew what I wanted to implement next. Diving on.</p>
-
 <h2 id="details">Details</h2>
-
 <p>My method is the same as his:</p>
-
 <ol>
-<li>Generate some <a href="https://en.wikipedia.org/wiki/Metaballs" target="_blank">metaballs</a> with different strengths (depending on distance), radiating from a certain point <code>C</code></li>
+<li>Generate some <a href="https://en.wikipedia.org/wiki/Metaballs">metaballs</a> with different strengths (depending on distance), radiating from a certain point <code>C</code></li>
 <li>Use a normal distribution centred at <code>C</code></li>
 <li>Angle and direction point towards <code>C</code></li>
 </ol>
-
 <p>Note that in Esteban&rsquo;s version, it looks like he allows for the point in <code>3</code> to be different from <code>C</code>. I didn&rsquo;t.</p>
-
 <p>Now, <em>what the heck is a metaball?</em></p>
-
 <h3 id="what-is-a-metaball">What is a metaball?</h3>
-
 <p>They are basically blobby spheres that merge together in an elegant and smooth way. Think drops in a glass, for instance.</p>
-
 <figure class="fig-wide">
     <img src="metaballWikipedia.png"
          alt="From Wikipedia"/> <figcaption>
-            <p><a href="https://en.wikipedia.org/wiki/Metaballs#/media/File:Metaball_contact_sheet.png" target="_blank">From Wikipedia</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Metaballs#/media/File:Metaball_contact_sheet.png">From Wikipedia</a></p>
         </figcaption>
 </figure>
 
-
-<p>They were first described by James Blinn while at JPL <a href="https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/blinn-blobby.pdf" target="_blank">on this paper</a>, as a way to describe electron density maps… and other artistically interesting structures.</p>
-
+<p>They were first described by James Blinn while at JPL <a href="https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/blinn-blobby.pdf">on this paper</a>, as a way to describe electron density maps… and other artistically interesting structures.</p>
 <figure class="fig-not-so-wide">
     <img src="metaballBlinn.png"
          alt="From the paper above."/> <figcaption>
@@ -245,85 +235,56 @@ I knew what I wanted to implement next. Diving on.</p>
         </figcaption>
 </figure>
 
-
-<p>After skimming through the paper and reading a <a href="http://blobs.webflow.io/" target="_blank">couple</a> <a href="http://www6.uniovi.es/hypgraph/modeling/metaballs/metaballs%5C_mward.html" target="_blank">references</a> it was clear that I just needed to simulate some field (for instance, an electrical field) around many particles, and sample it for each pixel. Set a threshold, and there is your metaball. To be fair, that&rsquo;s exactly the <a href="https://en.wikipedia.org/wiki/Metaballs#Definition" target="_blank">definition given in Wikipedia</a>.</p>
-
+<p>After skimming through the paper and reading a <a href="http://blobs.webflow.io/">couple</a> <a href="http://www6.uniovi.es/hypgraph/modeling/metaballs/metaballs%5C_mward.html">references</a> it was clear that I just needed to simulate some field (for instance, an electrical field) around many particles, and sample it for each pixel. Set a threshold, and there is your metaball. To be fair, that&rsquo;s exactly the <a href="https://en.wikipedia.org/wiki/Metaballs#Definition">definition given in Wikipedia</a>.</p>
 <h2 id="implementation-details">Implementation details</h2>
-
 <p>So, I just set out to write that field estimation. I settled for a field given by $1/r^2$, which is relatively easy to calculate and to reason about: it&rsquo;s either charge or gravitational, depending on what you want to think it is.</p>
-
 <p>Next there was <em>a lot</em> of tuning of the parameters. I eventually settled my threshold around 0.5 field strength, and I got this</p>
-
 <figure class="fig-not-so-wide">
     <img src="inkBlot.png"/> 
 </figure>
 
-
 <p>Yeah! An ink blot! But… <strong>It&rsquo;s pretty jaggy</strong>. Obviously, since it&rsquo;s a hard cutoff at 0.5: this gives no room for antialiasing or anything that can make it smoother.</p>
-
 <h2 id="smoothing-hell">Smoothing hell</h2>
-
 <p>I went down the rabbit hole of how to smooth the image above without resorting to <em>do everything with 4x resolution and downsample</em>.</p>
-
 <p>I got pretty crazy during a couple of days, and implemented/tried:</p>
-
 <ol>
 <li>Modifying the potential</li>
 <li>Using an alternate cut-off using a bump function</li>
 <li>Writing a boundary detection algorithm to hypersample the outside</li>
 <li>Writing an incremental sampling algorithm</li>
 </ol>
-
 <h3 id="potential-woes">Potential woes</h3>
-
 <p>Modifying the potential got me nowhere aside from ruining the nice blots. If you go higher powers, rounding errors (and more expensive computations) will kill you. Discarded.</p>
-
-<h3 id="alternate-cut-off-via-bump-functions-https-en-wikipedia-org-wiki-bump-function">Alternate cut-off via <a href="https://en.wikipedia.org/wiki/Bump_function" target="_blank">bump functions</a></h3>
-
+<h3 id="alternate-cut-off-via-bump-functionshttpsenwikipediaorgwikibump_function">Alternate cut-off via <a href="https://en.wikipedia.org/wiki/Bump_function">bump functions</a></h3>
 <p>This was the right idea, but I was focused on the wrong area. Didn&rsquo;t get me anywhere.</p>
-
 <h3 id="boundary-detection-and-hypersampling">Boundary detection and hypersampling</h3>
-
 <p>The idea I had here was to draw a somewhat loose resolution version of the blobs, and then determine pixels/points at the boundaries. Placing a <code>curveVertex</code> from <code>p5js</code> at each boundary point would give smooth blot-looking curvesfree with no supersampling. It may have been pretty fast as well.</p>
-
 <p>The algorithm for boundary detection was relatively easy:</p>
-
 <ol>
 <li>Start from pixel 0, 0 at top-left, moving row-wise, left to right.</li>
 <li>If you find a blot pixel,
-
 <ol>
 <li>Check if there is any blot pixel to up-left from your current direction, repeat with this pixel. Otherwise,</li>
 <li>Check if there is any blot pixel up from your current direction, repeat with this pixel. Otherwise,</li>
 <li>&hellip;</li>
 <li>Check if there is any blot pixel to the left from your current direction, repeat with this pixel. Otherwise big failure.</li>
-</ol></li>
 </ol>
-
+</li>
+</ol>
 <p>It may be hard to follow in writing, but if you imagine yourself at a square grid of pixels, the idea is that you keep moving in such a way that <em>empty</em> is to the left and <em>full</em> is to the right. This only works if your blot is simply connected, but this is the case here. I remember being told this method by a meteorologist friend 10 or 12 years ago, and it came handy.</p>
-
 <p>Sadly, it didn&rsquo;t work well. Basically, keeping track of all the seen points, unseen points and all that was a big javascripty mess. I eventually gave up (although I may recover this idea for other projects) and started…</p>
-
 <h3 id="writing-an-incremental-sampling-algorithm">Writing an incremental sampling algorithm</h3>
-
 <p>I was like, <em>this has to totally work</em>. I had started reducing sampling resolution in the previous idea, to be able to debug the point arrays I was getting, and realised I could:</p>
-
 <ol>
 <li>Use a low resolution approach to find a coarse grid with blots</li>
 <li>Around each blot, supersample</li>
 <li>Ignore blots that are &ldquo;inside&rdquo;</li>
 </ol>
-
 <p>Basically, quad-tree sampling of the blot. This should actually work, but the way I implemented it (with no trees) was too cumbersome.</p>
-
-<p>The idea was sound (and it could give a pretty decent boundary detection, to boot), the problems were manyfold. The worse was with step 3. I started with a counting algorithm: if you have more than <code>N</code> neighbour points in the previous refinement, you are an inside point and thus need no further refinement. It worked for some layers but not others, and was hard to tweak. Then, I ended up adding <a href="https://stackoverflow.com/a/218081" target="_blank">ray-casting</a> to remove anything &ldquo;inside&rdquo; but I hit several roadblocks (the worst being that at very low resolutions you get edges parallel to the rays).</p>
-
+<p>The idea was sound (and it could give a pretty decent boundary detection, to boot), the problems were manyfold. The worse was with step 3. I started with a counting algorithm: if you have more than <code>N</code> neighbour points in the previous refinement, you are an inside point and thus need no further refinement. It worked for some layers but not others, and was hard to tweak. Then, I ended up adding <a href="https://stackoverflow.com/a/218081">ray-casting</a> to remove anything &ldquo;inside&rdquo; but I hit several roadblocks (the worst being that at very low resolutions you get edges parallel to the rays).</p>
 <p>I implemented this while having breakfast, and then went to work. And of course, when you stop thinking of a problem you find the solution.</p>
-
 <h3 id="use-the-damn-potential">Use the damn potential</h3>
-
-<p>It was as easy as that. The potential <em>itself</em> is a bump function around the metaball, so I just tweaked the parameters. Instead of using 0.5 as a hard-cutoff, I would use 0.4 and <a href="https://en.wikipedia.org/wiki/Linear_interpolation" target="_blank">lerp</a> from ink colour to transparency until 0.5. And just like that, you get pretty smooth ink blots.</p>
-
+<p>It was as easy as that. The potential <em>itself</em> is a bump function around the metaball, so I just tweaked the parameters. Instead of using 0.5 as a hard-cutoff, I would use 0.4 and <a href="https://en.wikipedia.org/wiki/Linear_interpolation">lerp</a> from ink colour to transparency until 0.5. And just like that, you get pretty smooth ink blots.</p>
 <div style="clear: both;">
 <figure class="fig-side">
     <img src="field1.png"
@@ -339,13 +300,9 @@ I knew what I wanted to implement next. Diving on.</p>
 </figure>
 
 </div>
-
 <p>This is how the potential looks like, by the way. I added a way to see the potential (press <code>F</code> to generate the force potential and <code>T</code> to toggle its display):</p>
-
 <p>You will see it is a circle around the blot: This is to reduce computations as much as possible. Since the blot is mostly circular due to the gaussian, this way we need to compute the potential in less pixels.</p>
-
 <h2 id="the-sketch">The sketch</h2>
-
 <figure class="fig-wide"><a href="https://mostlymaths.net/sketches/blot-painting/" target="_blank">
     <img src="BlotPainting.png"
          alt="Blot/Painting"/> </a><figcaption>
@@ -353,23 +310,14 @@ I knew what I wanted to implement next. Diving on.</p>
         </figcaption>
 </figure>
 
-
 <p>After I added enough tweaks and speed ups, I ended up with two closely related sketches. I merged them in one &ldquo;project&rdquo;. I call it <code>Blot/Painting</code>.</p>
-
-<p>In <a href="https://mostlymaths.net/sketches/blot-painting/blot.html" target="_blank">blot</a> you can just drop black/randomly coloured ink blots, as well as see the potential and the vectors.</p>
-
-<p>In <a href="https://mostlymaths.net/sketches/blot-painting/painting.html" target="_blank">painting</a> you can drop ink blots with the colours of an underlying image, thus &ldquo;painting&rdquo; it.</p>
-
-<p>Both are written as p5js <em>instance mode</em> sketches, to be able to use ES6 import syntax for helpers (like the GUI described below), modulo and the common code for drawing metaballs. Actually most of the code in them is the GUI, since all the complexity is hidden in the <a href="https://github.com/rberenguel/sketches/blob/master/libraries/blotLibraries.js" target="_blank">library</a>.</p>
-
+<p>In <a href="https://mostlymaths.net/sketches/blot-painting/blot.html">blot</a> you can just drop black/randomly coloured ink blots, as well as see the potential and the vectors.</p>
+<p>In <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">painting</a> you can drop ink blots with the colours of an underlying image, thus &ldquo;painting&rdquo; it.</p>
+<p>Both are written as p5js <em>instance mode</em> sketches, to be able to use ES6 import syntax for helpers (like the GUI described below), modulo and the common code for drawing metaballs. Actually most of the code in them is the GUI, since all the complexity is hidden in the <a href="https://github.com/rberenguel/sketches/blob/master/libraries/blotLibraries.js">library</a>.</p>
 <p>One relatively fancy thing I do in the sketches is having a background image that is not part of the &ldquo;real&rdquo; canvas. I achieve this by using either one image and a graphics renderer (for <code>painting</code>) or two graphics renderers. The trick is to have an image (or image-like, in the case of a graphic renderer) with the same size as the canvas.</p>
-
 <p>One interesting issue I had here was that <code>blot</code> didn&rsquo;t run at first on my iPhone: the canvas was too large. By default I was creating full-screen canvases, and the high DPI screen is too large (for either Safari or p5js, not sure). I have limited my canvases at 1600 pixels wide, and I have a few helper functions to ensure images are fitting inside.</p>
-
 <p>Another one (and one I haven&rsquo;t found a solution yet) is using accelerometer information: I can&rsquo;t access it (even after requesting permissions to the user) from p5js, and I&rsquo;d love to control the GUI via shake events. If anyone has any suggestions, I&rsquo;d love to hear.</p>
-
 <h2 id="the-gui">The GUI</h2>
-
 <figure class="fig-not-so-wide">
     <img src="gui.png"
          alt="GUI for Blot"/> <figcaption>
@@ -377,22 +325,16 @@ I knew what I wanted to implement next. Diving on.</p>
         </figcaption>
 </figure>
 
-
-<p>There were a lot of tweakable options, and my ad-hoc pieces of Javascript and CSS (written for <a href="https://rberenguel.github.io/sketches/life/index.html" target="_blank">Conway&rsquo;s Game of Life</a> and <a href="https://mostlymaths.net/sketches/crazy/index.html" target="_blank">Going Crazy</a>) were not up to the task.</p>
-
-<p>So, I set aside some time to clean up some ideas and spin off a <a href="https://github.com/rberenguel/sketches/blob/master/libraries/gui.js" target="_blank">library</a> (ES6 module) I could reuse in all my sketches. It lets you</p>
-
+<p>There were a lot of tweakable options, and my ad-hoc pieces of Javascript and CSS (written for <a href="https://rberenguel.github.io/sketches/life/index.html">Conway&rsquo;s Game of Life</a> and <a href="https://mostlymaths.net/sketches/crazy/index.html">Going Crazy</a>) were not up to the task.</p>
+<p>So, I set aside some time to clean up some ideas and spin off a <a href="https://github.com/rberenguel/sketches/blob/master/libraries/gui.js">library</a> (ES6 module) I could reuse in all my sketches. It lets you</p>
 <ul>
 <li>Define commands (like save, clear…)</li>
 <li>Define controls (like strength of a metaball), and bind them to several keys and a variable. Key names are clickable, so it&rsquo;s somewhat mobile friendly</li>
 <li>Load an image</li>
 <li>Display all of the above in an unobstrusive and reusable way.</li>
 </ul>
-
 <p>There is not a lot of documentation at the moment (and no tests!) but there are plenty of examples in my sketch repository.</p>
-
 <p>These sketch(es) are the ones with the largest amount of controls:</p>
-
 <ul>
 <li>Modify spread (sigma) of the normal distribution</li>
 <li>Modify strength of the particles in the field</li>
@@ -402,39 +344,30 @@ I knew what I wanted to implement next. Diving on.</p>
 <li>Draw the vectors driving the metaballs</li>
 <li>Turn on/off the field/display it</li>
 </ul>
-
 <p>If you get into p5js, I recommend you find a way to control your parameters without needing to rewrite your code. It makes for a much more comfortable experience.</p>
-
 <h3 id="suggested-settings-if-you-want-to-paint">Suggested settings if you want to paint</h3>
-
 <p>Spread (changed via <code>,</code> and <code>.</code>) and strength (<code>(</code>, <code>)</code>) are highly correlated. Some good settings are:</p>
-
 <ul>
 <li>For spread 100, strength around 1000</li>
 <li>For spread 50, strength around 30</li>
 <li>For spread 10, strength below 0.2</li>
 <li>For spread 5, strength below 0.002 (here significant less strength looks best)</li>
 </ul>
-
 <h2 id="future-improvements-and-ideas">Future improvements and ideas</h2>
-
 <ul>
 <li>Adjust better the size of the circle around the blot depending on field strength and spread. I have it fixed (and it cuts a bit on the blots in some cases), which is bad for small blots.</li>
 <li>&ldquo;Painting web app&rdquo;, with buttons with the sizes suggested above as controls</li>
-<li><del>Add a way to add your own images to <a href="https://mostlymaths.net/sketches/blot-painting/painting.html" target="_blank">Painting</a></del> I actually added this yesterday:</li>
+<li><del>Add a way to add your own images to <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">Painting</a></del> I actually added this yesterday:</li>
 </ul>
-
 <figure class="fig-wide">
     <img src="pearl.png"
          alt="Girl with a pearl earring, using an iPad, Apple Pencil and painting"/> <figcaption>
-            <p>Girl with a pearl earring, using an iPad, Apple Pencil and <a href="https://mostlymaths.net/sketches/blot-painting/painting.html" target="_blank">painting</a></p>
+            <p>Girl with a pearl earring, using an iPad, Apple Pencil and <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">painting</a></p>
         </figcaption>
 </figure>
 
-
-<hr />
-
-<p><style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:&lsquo;Cookie&rsquo;, cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a></p><hr/><ul class="pa0">
+<hr>
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/processing" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">processing</a>
@@ -491,8 +424,9 @@ I knew what I wanted to implement next. Diving on.</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

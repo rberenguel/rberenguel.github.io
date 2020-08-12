@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | A (section) of a map of the data engineering space</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2019-07-07T13:34:00+02:00" />
 <meta itemprop="name" content="A (section) of a map of the data engineering space">
 <meta itemprop="description" content="The map and problem described here were part of my presentation Mapping as a tool for thought, and mentioned in my interview with John Grant and Ben Mosior (to appear sometime soon in the Wardley Maps community youtube channel). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the Wardley Maps Community forums requesting comments.">
-
-
 <meta itemprop="datePublished" content="2019-07-07T13:34:00&#43;02:00" />
 <meta itemprop="dateModified" content="2019-07-07T13:34:00&#43;02:00" />
 <meta itemprop="wordCount" content="2151">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="Apache Spark,Data,Wardley maps,Python,Scala,Golang,Big data,Functional Programming,Systems Thinking," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/Tech_Landscape-1.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">A (section) of a map of the data engineering space</h1>
         
@@ -156,58 +160,41 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>The map and problem described here were part of my presentation <a href="https://github.com/rberenguel/mapping" target="_blank">Mapping as a tool for thought</a>, and mentioned in my interview with <a href="https://twitter.com/jhngrant" target="_blank">John Grant</a> and <a href="https://twitter.com/BenMosior" target="_blank">Ben Mosior</a> (to appear sometime soon in the <a href="https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow" target="_blank">Wardley Maps community youtube channel</a>). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the <a href="https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452" target="_blank">Wardley Maps Community forums requesting comments</a>.</p>
-
-<h2 id="problem-i-m-trying-to-solve">Problem I&rsquo;m trying to solve</h2>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>The map and problem described here were part of my presentation <a href="https://github.com/rberenguel/mapping">Mapping as a tool for thought</a>, and mentioned in my interview with <a href="https://twitter.com/jhngrant">John Grant</a> and <a href="https://twitter.com/BenMosior">Ben Mosior</a> (to appear sometime soon in the <a href="https://www.youtube.com/channel/UCZ9-K9BLFozmmvmWzjyjkow">Wardley Maps community youtube channel</a>). I’m looking for ideas on how to make this map easier to understand and useful, so I posted it to the <a href="https://community.wardleymaps.com/t/rfc-a-section-of-a-map-of-the-data-engineering-space/452">Wardley Maps Community forums requesting comments</a>.</p>
+<h2 id="problem-im-trying-to-solve">Problem I&rsquo;m trying to solve</h2>
 <p>As a consultant (and as someone always trying to keep up with technology) I&rsquo;m interested in being able to answer three questions of a language or technology:</p>
-
 <ol>
 <li>How easy it is to find work/workers in the area <em>right now</em>?</li>
 <li>How <em>hard it is to learn</em>?</li>
 <li>How easy is it going to be to find work/workers in the area <em>once I&rsquo;m proficient enough</em>?</li>
 </ol>
-
 <p>Also, I need to know the relationship between any of them.</p>
-
 <p>This problem has been on the back of my mind for many years, and upon getting proficient with Wardley mapping, I thought I could just map it. Of course, it&rsquo;s <em>not</em> a Wardley map, because the axes are completely different, but having anchors and movement, it is spiritually close enough for me.</p>
-
 <p>In the diagram I will show in a while, I have placed technologies I am proficient in, currently learning, or looking forward to learn. In all of them I am at least a <em>beginner</em> in the sense that I know what they are used for and have done some minor PoC (proof of concept) to get an idea of how the work.</p>
-
 <h2 id="looking-for-axis-metrics">Looking for axis metrics</h2>
-
 <p>There are several ways you can address this technology space to answer the questions above. The first and easiest metric, and one of the axes I have used (Y axis) is <em>Difficulty</em>. Since I know something about each technology I can rank them on Difficulty, at least in relationship with each other. It&rsquo;s only a qualitative metric of difficulty, because in any new technology there are always unknown unknowns. There is no movement assumed in this axis, because Difficulty is supposed to be consistent throughout (leaving aside <em>the more you know the easier it is to learn</em> as well as <em>familiarity with similar concepts</em> that offset that, you could think of these two concepts as <em>doctrine</em> in such a map).</p>
-
 <p>One natural metric for the other axis could be <em>popularity</em>, as measured by any of the several programming language/framework popularity rankings. You can use popularity as one of the axes, and use arrows to indicate whether it is growing in popularity or diminishing in popularity. But, popularity alone does not help in answering questions 1 and 3. What we need is knowing how large the market for this technology is, and how large the pool of workers in this market is. Could we use either as an axis?</p>
-
-<p>If we were to use <em>market size</em> as X axis, we would probably have large markets on the right and small markets on the left, we would likely use arrows to indicate growing markets and shrinking markets. But, <em>market size</em> alone won&rsquo;t answer the questions either. A small thought experiment: imagine we have the largest market possible, it is growing&hellip; but the pool of workers for that technology is 2x the size of the market. It would be impossible to find work there (but, would be easy to find workers). This suggests that a possible correct for the X axis is <em>market saturation</em>, i.e. the ratio of <em>market size</em> with <em>worker pool</em>. Highly saturated markets are uninteresting to look for work, but are very interesting if you are starting a company: you&rsquo;d have an easy time finding hires for that technology. Market saturation is related to flows (as in <a href="https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=2b841bdb7b33c96bae43162c85961666" target="_blank">Systems thinking</a> flow analysis) of users into a variable-sized container.</p>
-
+<p>If we were to use <em>market size</em> as X axis, we would probably have large markets on the right and small markets on the left, we would likely use arrows to indicate growing markets and shrinking markets. But, <em>market size</em> alone won&rsquo;t answer the questions either. A small thought experiment: imagine we have the largest market possible, it is growing&hellip; but the pool of workers for that technology is 2x the size of the market. It would be impossible to find work there (but, would be easy to find workers). This suggests that a possible correct for the X axis is <em>market saturation</em>, i.e. the ratio of <em>market size</em> with <em>worker pool</em>. Highly saturated markets are uninteresting to look for work, but are very interesting if you are starting a company: you&rsquo;d have an easy time finding hires for that technology. Market saturation is related to flows (as in <a href="https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=2b841bdb7b33c96bae43162c85961666">Systems thinking</a> flow analysis) of users into a variable-sized container.</p>
 <p>Markets become saturated in one of 3 ways:</p>
-
 <ol>
 <li>Market is growing, but the pool of workers grows faster</li>
 <li>Market is stagnating with a growing pool of workers</li>
 <li>Market is shrinking faster than the pool of workers is shrinking</li>
 </ol>
-
 <p>Cases 1 and 2 are the most usual (I&rsquo;d put Python as type 1 and Java as type 2), but 3 is an interesting situation: it would indicate a technology that has died in favour of another. Workers in that pool have retrained in the new technology, but are still in pool for the dying technology (for instance, traditional MapReduce).</p>
-
 <p>Markets become desaturated in one of 3 ways as well:</p>
-
 <ol>
 <li>Market is growing faster than the pool of workers is growing</li>
 <li>Market is stagnating with a shrinking pool of workers</li>
 <li>Market is shrinking slower than the pool of workers is shrinking</li>
 </ol>
-
 <p>Likewise, here, cases 1 and 3 may be the most interesting. I&rsquo;d put Kubernetes in 1, and Scala in either 2 or 3. Please note that not only are these <em>subjective</em> evaluations, but are not meant to be <em>negative</em>. Scala has been my preferred language for a long while.</p>
-
 <p>We can represent all these with slanted arrows: <em>slant up covers growing markets</em>, <em>slant down covers shrinking markets</em>. And then the arrow points left or right whether it is becoming saturated or desaturated.</p>
-
 <p>With market saturation as an axis and arrows to indicate evolution of a technology, we can now <em>almost</em> answer questions 1 and 3. There is still the question of <em>market size</em>, which can&rsquo;t be represented with such a relative measure. Although we could add circles to represent current market size, that would bring an already weird map to more weirdness. Hence, <em>market size</em> is not considered.</p>
-
 <h2 id="the-map">The map</h2>
-
 <figure class="fig-wide">
     <img src="Tech_Landscape-1.png"
          alt="Tech landscape map"/> <figcaption>
@@ -215,9 +202,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>Here you can see the map. Before I get a bit into the topography of it, let me quickly define some of the technologies:</p>
-
 <ul>
 <li><strong>APL</strong>: programming language based on non-ASCII symbols designed in the 70s. Not extensively used, but in use</li>
 <li><strong>Airflow</strong>: workflow scheduler for data operations</li>
@@ -241,25 +226,15 @@ if (!doNotTrack) {
 <li><strong>Python</strong>: interpreted high level programming language, very extended in data science and engineering</li>
 <li><strong>Rust</strong>: memory safe, concurrency safe programming language. Has some functional capabilities</li>
 <li><strong>Scala</strong>: JVM based language offering strong typing and functional and OOP capabilities</li>
-<li><strong>Spark</strong>: cluster computing framework for big data, batch and stream (stronger in batch)
-
-<br /></li>
+<li><strong>Spark</strong>: cluster computing framework for big data, batch and stream (stronger in batch)</li>
 </ul>
-
 <p>These cover a range of the data engineering space (Flink, Spark), as well as technologies I want to get better at and are close enough (Kubernetes, FoundationDB) and technologies I know but are not directly related (AWK, APL, Forth) and are used as anchors.</p>
-
 <h3 id="anchors">Anchors</h3>
-
 <p>To display relative positions, I needed to anchor some of the technologies. For instance, Haskell and APL set the bar for <em>difficulty</em>, with AWK setting the minimum, and <em>Python</em> and <em>Forth</em> set the extremes for saturation. Everything else is placed in relation with these.</p>
-
 <h3 id="links-and-colours">Links and colours</h3>
-
 <p>In the map, I have used colours to distinguish languages, frameworks, libraries, containerisation and databases. Colour is not fundamental though, links are. Related technologies are linked: Spark is written in Scala, and can be used with Scala, Python and other languages. Hence, changes in market saturation for Spark indirectly affect market saturation for Scala.</p>
-
 <h3 id="empirical-map-division">Empirical map division</h3>
-
 <p>We can think of the map as divided in 2 areas vertically (high barrier to entry and low barrier to entry) and 3 areas horizontally (saturated, accessible, desaturated).</p>
-
 <figure class="fig-wide">
     <img src="Tech_Landscape-2.png"
          alt="Tech landscape map with sectors"/> <figcaption>
@@ -267,53 +242,34 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <h3 id="quick-overview">Quick overview</h3>
-
 <p>If you were a CTO, you&rsquo;d probably be interested in:</p>
-
 <ul>
 <li>Low barrier to entry, saturated market for high turnover positions (easier and cheaper to hire and train)</li>
 <li>Accessible currently becoming saturated for more stable positions (becoming easier to hire in the future)</li>
 <li>High barrier to entry, with growing markets for proof of concepts, exploration (exploring new technologies that may make an impact in the future)</li>
 </ul>
-
-<p>A map like the one above can help make these decisions.<br />
+<p>A map like the one above can help make these decisions.<br>
 For deciding on future work, I&rsquo;d be (as a consultant) interested in:</p>
-
 <ul>
 <li>First, growing market, high barrier to entry for current learning. If the barrier to entry is too low and the market is lucrative enough any return on time investment will tend to 0 in the end otherwise.</li>
 <li>Second, accessible with low-to-mid barrier to entry for imminent work opportunities.</li>
 <li>Finally, to hedge bets on a long term plan, anything which is very low saturation, and where the market is unknown or may be in growth.</li>
 </ul>
-
 <p>With this map (which is suited to my current knowledge and interests) I can definitely answer the question of where I should put my efforts right now.</p>
-
 <h3 id="curiosities">Curiosities</h3>
-
 <p>Haskell and Rust raise interesting questions. Haskell has a very high barrier to entry, the market is not very large and might not be growing fast, but there are developers working in other languages (Scala, Rust, Kotlin, Go, even Python) that would love the opportunity to <em>work</em> in Haskell. This makes the Haskell job market actually saturated (or at least saturated if you consider worldwide market). Thus, starting a company focused on Haskell might not be as bad of an idea as it might sound. Similarly with Rust: Rust is growing as a side project language, the amount of developers familiar with the language is growing faster than the market and thus is an interesting target for a starting company.</p>
-
 <p>We&rsquo;d have Python on the other side: since it is taking over as the <em>lingua franca</em> of data science and engineering, and becoming one of the teaching languages at universities, the amount of developers with enough knowledge to become part of the work pool is growing faster than the market (even if the market for Python is growing at a fast pace). It makes it an ideal language for creating a company or a consultancy company (large pool of candidate workers), but not so interesting for being an independent consultant, since competition could be too large</p>
-
 <h2 id="questions-and-further-ideas">Questions and further ideas</h2>
-
 <p>This is the approach and train of thought I have followed to trace these ideas, but it’s still a work in progress. I’d like to hear what you have to say about this: what would you change? What would you do different? I&rsquo;m still unsure about using market saturation and arrows to show market and pool of workers behaviour, but I have not found anything easier to represent. Ideas? And here are some areas I’m unsure or where I have more questions.</p>
-
 <h3 id="what-other-approaches-would-you-have-taken-to-explore-these-questions">What other approaches would you have taken to explore these questions?</h3>
-
 <p>There are probably many other ways you can take to approach these questions. What would be yours?</p>
-
-<h3 id="do-you-think-market-size-would-need-to-be-shown">Do you think <em>market size</em> would need to be shown?</h3>
-
+<h3 id="do-you-think-_market-size_-would-need-to-be-shown">Do you think <em>market size</em> would need to be shown?</h3>
 <p>It could be shown with a circle (different sizes to be able to compare) below the arrow indicating behaviour of saturation but that could make the map way too complex. Any other ideas? Do you think it is that important, as long as saturation is taken into account?</p>
-
 <h3 id="links-between-related-technologies-are-a-bit-hazy">Links between related technologies are a bit hazy</h3>
-
 <p>The links between technologies are a bit too abstract. An &ldquo;increase&rdquo; in &ldquo;Python&rdquo; moves &ldquo;higher&rdquo; Airflow, Spark, Dask and any related technologies&hellip; but in what sense? Popularity? Market share? Market saturation? I suspect the link is <em>useful to see</em>, and it is supposed to bring some dynamic/movement, but I&rsquo;m still unsure <em>how</em>.</p>
-
 <h3 id="flows">Flows</h3>
-
-<p>An interesting approach I didn&rsquo;t pursue is using <a href="https://en.wikipedia.org/wiki/Flow_map" target="_blank">flow maps</a>. For each programming language, there is a set of flows into other languages. For instance, developers in Scala have a tendency to be interested in Kotlin, Rust and Haskell, with some making the jump as soon as market is able to absorb them (and for each of these flows we can assume there is a non-zero flow to the other side). Similarly, we&rsquo;d have flows from Python to Go and Scala, from Go to Rust. These could inform on market trends and behaviours, but they are not only hard to show on a map (what would be the axes? what would be the anchors?) but also might not be interesting enough on their own. What do you think?</p><hr/><ul class="pa0">
+<p>An interesting approach I didn&rsquo;t pursue is using <a href="https://en.wikipedia.org/wiki/Flow_map">flow maps</a>. For each programming language, there is a set of flows into other languages. For instance, developers in Scala have a tendency to be interested in Kotlin, Rust and Haskell, with some making the jump as soon as market is able to absorb them (and for each of these flows we can assume there is a non-zero flow to the other side). Similarly, we&rsquo;d have flows from Python to Go and Scala, from Go to Rust. These could inform on market trends and behaviours, but they are not only hard to show on a map (what would be the axes? what would be the anchors?) but also might not be interesting enough on their own. What do you think?</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
@@ -363,28 +319,27 @@ For deciding on future work, I&rsquo;d be (as a consultant) interested in:</p>
 
 <aside class="w-30-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#problem-i-m-trying-to-solve">Problem I&rsquo;m trying to solve</a></li>
-<li><a href="#looking-for-axis-metrics">Looking for axis metrics</a></li>
-<li><a href="#the-map">The map</a>
-<ul>
-<li><a href="#anchors">Anchors</a></li>
-<li><a href="#links-and-colours">Links and colours</a></li>
-<li><a href="#empirical-map-division">Empirical map division</a></li>
-<li><a href="#quick-overview">Quick overview</a></li>
-<li><a href="#curiosities">Curiosities</a></li>
-</ul></li>
-<li><a href="#questions-and-further-ideas">Questions and further ideas</a>
-<ul>
-<li><a href="#what-other-approaches-would-you-have-taken-to-explore-these-questions">What other approaches would you have taken to explore these questions?</a></li>
-<li><a href="#do-you-think-market-size-would-need-to-be-shown">Do you think <em>market size</em> would need to be shown?</a></li>
-<li><a href="#links-between-related-technologies-are-a-bit-hazy">Links between related technologies are a bit hazy</a></li>
-<li><a href="#flows">Flows</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#problem-im-trying-to-solve">Problem I&rsquo;m trying to solve</a></li>
+    <li><a href="#looking-for-axis-metrics">Looking for axis metrics</a></li>
+    <li><a href="#the-map">The map</a>
+      <ul>
+        <li><a href="#anchors">Anchors</a></li>
+        <li><a href="#links-and-colours">Links and colours</a></li>
+        <li><a href="#empirical-map-division">Empirical map division</a></li>
+        <li><a href="#quick-overview">Quick overview</a></li>
+        <li><a href="#curiosities">Curiosities</a></li>
+      </ul>
+    </li>
+    <li><a href="#questions-and-further-ideas">Questions and further ideas</a>
+      <ul>
+        <li><a href="#what-other-approaches-would-you-have-taken-to-explore-these-questions">What other approaches would you have taken to explore these questions?</a></li>
+        <li><a href="#do-you-think-_market-size_-would-need-to-be-shown">Do you think market size would need to be shown?</a></li>
+        <li><a href="#links-between-related-technologies-are-a-bit-hazy">Links between related technologies are a bit hazy</a></li>
+        <li><a href="#flows">Flows</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
   <div style="min-height: 3em;">
@@ -425,8 +380,9 @@ For deciding on future work, I&rsquo;d be (as a consultant) interested in:</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

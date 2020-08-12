@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Using Processing from Scala</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -57,8 +61,6 @@ some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with processing.js something around 2011 (there was a
 native processing.js application for iOS, I used it for a while on my iPad and
 iPod Touch).">
-
-
 <meta itemprop="datePublished" content="2018-03-02T17:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2018-03-02T17:40:00&#43;01:00" />
 <meta itemprop="wordCount" content="626">
@@ -66,7 +68,6 @@ iPod Touch).">
 
 
 <meta itemprop="keywords" content="Scala,Visualization,Fractals,Maths,Processing,Generative," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2018/03/processing-and-scala.html/mandelbrot-gray-zoom.png"/>
@@ -106,7 +107,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -157,7 +158,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Using Processing from Scala</h1>
         
@@ -175,8 +179,7 @@ if (!doNotTrack) {
         <span class="fw2 f3 i "><blockquote>
 <p>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.</p>
 </blockquote>
-
-<p>From <a href="https://processing.org/" target="_blank">Processing.org</a></p>
+<p>From <a href="https://processing.org/">Processing.org</a></p>
 </span>
     </section>
     
@@ -189,16 +192,18 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b" target="_blank">The
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b">The
 Processing
 Handbook</a> and
-<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c" target="_blank">Visualizing
+<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c">Visualizing
 Data</a>
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with <code>processing.js</code> something around 2011 (there was a
 <em>native</em> processing.js application for iOS, I used it for a while on my iPad and
 iPod Touch).</p>
-
 <figure class="fig-wide">
     <img src="mandelbrot-gray-zoom.png"
          alt="Zoomin&amp;rsquo;"/> <figcaption>
@@ -206,47 +211,32 @@ iPod Touch).</p>
         </figcaption>
 </figure>
 
-
 <p>But, times have change and I’ve been working with Scala for 2 years already.
 Since Processing is built on top of Java, using it from Scala should be easy (or
 doable), but finding details (specially not involving using IntelliJ or other
 IDEs) is tricky. I could not find anything useful so I had to patch it up from
 several sources.</p>
-
 <p>These are the steps I had to follow to get it running on Mac OS, with Java 8 and Scala 2.12 (the version of Scala is not that important though, and after all is set in the SBT build).</p>
-
 <h2 id="clone-my-sample-project">Clone my sample project</h2>
-
-<p>You can find a minimal sample project <a href="https://github.com/rberenguel/processing-scala-sample" target="_blank">here</a>. I’m using <a href="https://github.com/non/spire" target="_blank">Spire</a> for its implementation of complex operations (also, I have wanted to try this library for a while), so this comes as an extra dependency in addition to the OpenGL bindings for Java.</p>
-
+<p>You can find a minimal sample project <a href="https://github.com/rberenguel/processing-scala-sample">here</a>. I’m using <a href="https://github.com/non/spire">Spire</a> for its implementation of complex operations (also, I have wanted to try this library for a while), so this comes as an extra dependency in addition to the OpenGL bindings for Java.</p>
 <p>You can run <code>sbt update</code> while you do all other steps, since fetching the dependencies can always take a while.</p>
-
-<p>This will draw the Mandelbrot set using the Distance Estimation Method. I first found this algorithm in <a href="https://www.amazon.com/Beauty-Fractals-Complex-Dynamical-Systems/dp/3642617190/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=6a6ab8987258d6b44726651ed3875a4d" target="_blank">The Beauty of Fractals</a> and have liked ever since. It is the algorithm used for the header on this blog and on my <a href="https://www.linkedin.com/in/rberenguel/" target="_blank">LinkedIn profile</a>. A pity it’s not as easy (or even possible) to derive for entire transcendental functions, otherwise I would have used it for my paper.</p>
-
+<p>This will draw the Mandelbrot set using the Distance Estimation Method. I first found this algorithm in <a href="https://www.amazon.com/Beauty-Fractals-Complex-Dynamical-Systems/dp/3642617190/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=6a6ab8987258d6b44726651ed3875a4d">The Beauty of Fractals</a> and have liked ever since. It is the algorithm used for the header on this blog and on my <a href="https://www.linkedin.com/in/rberenguel/">LinkedIn profile</a>. A pity it’s not as easy (or even possible) to derive for entire transcendental functions, otherwise I would have used it for my paper.</p>
 <p>It&rsquo;s a straight implementation to show a bit of Processing and have a nice image, but it has no antialiasing, no controls for iterations or parameter tweaking. Zoom and adjustments are automatically picked by a really dumb scaling (it shows as you start zooming) and there is no colour palette (nothing prevents adding it except that it would add complications).</p>
-
 <p>It&rsquo;s not the nicest Scala ever. Processing is based on Java, and to get some things working mutability seems to be the best approach. For now.</p>
-
 <h2 id="install-the-native-libraries-for-jogamp">Install the native libraries for jogamp</h2>
-
 <p><code>Jogamp</code> is the set of multimedia API bindings for Java (binds to OpenGL, for instance, with the <code>jogl</code> sub-package). For Processing we need to install the native libraries (<code>jnilibs</code> in the case of Mac OS, <code>dll</code>s for Windows, <code>so</code> for other Linux systems) into our Java classpath.</p>
+<p>To do so, first download the full jogamp <code>7zipped</code> package from <a href="http://jogamp.org/wiki/index.php/Downloading_and_installing_JOGL#Using_the_7z_jogamp-all-platforms_archive">here</a>. On uncompress, move all <code>jnilib</code>s in the <code>lib/macosx-universal</code> folder to somewhere in your Java library path so Java can find them (or, alternatively, change your path). You can easily look which paths form it by firing a Scala REPL and running</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#a6e22e">System</span><span style="color:#f92672">.</span>getProperty<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;java.library.path&#34;</span><span style="color:#f92672">)</span>
 
-<p>To do so, first download the full jogamp <code>7zipped</code> package from <a href="http://jogamp.org/wiki/index.php/Downloading_and_installing_JOGL#Using_the_7z_jogamp-all-platforms_archive" target="_blank">here</a>. On uncompress, move all <code>jnilib</code>s in the <code>lib/macosx-universal</code> folder to somewhere in your Java library path so Java can find them (or, alternatively, change your path). You can easily look which paths form it by firing a Scala REPL and running</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#a6e22e">System</span><span style="color:#f92672">.</span>getProperty<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;java.library.path&#34;</span><span style="color:#f92672">)</span></code></pre></div>
-<p>In my system this points to</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java</code></pre></div>
-<p>and I put them in the first (since it seems user specific)</p>
-
+</code></pre></div><p>In my system this points to</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+</code></pre></div><p>and I put them in the first (since it seems user specific)</p>
 <h2 id="download-processing">Download Processing</h2>
-
-<p>You need the core library from <a href="http://processing.org/" target="_blank">Processing</a> in <code>jar</code> format to use in your builds. Just download the processing app, and get <code>core.jar</code> from the <code>Contents/Java</code> folder in the application bundle. Place it into your <code>lib</code> folder.</p>
-
+<p>You need the core library from <a href="http://processing.org/">Processing</a> in <code>jar</code> format to use in your builds. Just download the processing app, and get <code>core.jar</code> from the <code>Contents/Java</code> folder in the application bundle. Place it into your <code>lib</code> folder.</p>
 <p>Although I <em>could</em> add it to the Github project (this core is LGPL), I prefer leaving this as a manual step to make sure anyone trying always has the latest version of Processing.</p>
-
 <p>Ready to go</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbt run</code></pre></div>
-<p>If everything went fine you should now see the following (after some time computing):</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbt run
+</code></pre></div><p>If everything went fine you should now see the following (after some time computing):</p>
 <figure class="fig-wide">
     <img src="mandelbrot-gray.png"
          alt="The beetle"/> <figcaption>
@@ -254,9 +244,7 @@ several sources.</p>
         </figcaption>
 </figure>
 
-
 <p>And, if you click randomly a few times</p>
-
 <figure class="fig-wide">
     <img src="mandelbrot-gray-zoom-2.png"
          alt="More zoomin&amp;rsquo;"/> <figcaption>
@@ -264,9 +252,7 @@ several sources.</p>
         </figcaption>
 </figure>
 
-
 <p>You can also try to find the magical command that gets you a coloured gradient</p>
-
 <figure class="fig-wide">
     <img src="mandelbrot-colour-zoom.png"
          alt="Shiny!"/> <figcaption>
@@ -345,8 +331,9 @@ several sources.</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

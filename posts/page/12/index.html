@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net </title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -40,12 +44,9 @@
 <meta property="og:description" content="Ruben Berenguel&#39;s technical and non-technical blog" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://mostlymaths.net/posts/" />
-
-<meta property="og:updated_time" content="2020-07-12T19:30:33+02:00" />
+<meta property="og:updated_time" content="2020-08-12T09:30:33+02:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="Ruben Berenguel&#39;s technical and non-technical blog">
-
-
 
 
 <meta name="twitter:title" content="Posts"/>
@@ -68,7 +69,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -125,6 +126,51 @@ if (!doNotTrack) {
     <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
         <div class="w-100">
     <h1 class="fw1 f3 mb1">
+        <a href="/2018/04/how-does-in-keyword-work-in-python.html/" class="link black dim">
+            How does the &#39;in&#39; keyword work in Python?
+        </a>
+    </h1>
+    <time class="f8 mv2 mb1 dib tracked" datetime="2018-04-15T22:11:00&#43;02:00">Apr 15, 2018</time>
+    
+    &nbsp;&nbsp;&nbsp;
+    <span class="f9 fw1 mv2 dib tracked i"> 5 minutes read</span>
+    <span class="f9 fw1 mv2 dib tracked i" > | 934 words</span>
+    
+        </div>
+        
+    <div class="nested-links f5 lh-copy nested-copy-line-height justify">
+      <p>A few days go I played a bit with a naive implementation of <a href="https://en.wikipedia.org/wiki/Bloom_filter">Bloom
+filters</a> in Python. I wanted to time
+them against just checking whether a field is in a set/collection. I found
+something slightly puzzling: it looked like the <code>in</code> worked <em>too fast</em> for
+smaller lists. And I wondered: maybe small lists are special internally, and
+allow for really fast lookups? Maybe they have some internal index? This raised
+the question: how does <code>in</code> find stuff <em>in</em> sequences?</p>
+    </div>
+    <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/python" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Python</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/c" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">C</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="/tags/github" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">github</a>
+   </li>
+  
+</ul>
+</div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+    <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
+        <div class="w-100">
+    <h1 class="fw1 f3 mb1">
         <a href="/2018/03/coursier-resolution-failing-with-http.html/" class="link black dim">
             Coursier resolution failing with HTTP method 416 in sbt
         </a>
@@ -141,7 +187,7 @@ if (!doNotTrack) {
       <p>I ran into this problem with <code>sbt</code> dependency resolution around 7 weeks ago. I
 was in a hurry, so I commented out the offending import (since it was not in the
 subproject I was working on, so was not needed for the run I was in) sent my
-commit to the heavens and <a href="https://circleci.com/" target="_blank">CircleCI</a> was happy.</p>
+commit to the heavens and <a href="https://circleci.com/">CircleCI</a> was happy.</p>
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   
@@ -176,7 +222,7 @@ commit to the heavens and <a href="https://circleci.com/" target="_blank">Circle
         </div>
         
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      <p>Down into some net rabbit hole, I stumbled upon a review of <a href="http://amzn.to/2oV6B26" target="_blank">Work Clean</a>. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (<em>mise en place</em>) would fix all our problems? Bring it on, I have a long commute.</p>
+      <p>Down into some net rabbit hole, I stumbled upon a review of <a href="http://amzn.to/2oV6B26">Work Clean</a>. I chuckled: a productivity book, philosophizing about how cook’s approach to preparation (<em>mise en place</em>) would fix all our problems? Bring it on, I have a long commute.</p>
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   
@@ -215,10 +261,10 @@ commit to the heavens and <a href="https://circleci.com/" target="_blank">Circle
     </div>
     
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      <p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b" target="_blank">The
+      <p>I had always wanted to play with Processing (after leafing through <a href="https://www.amazon.com/Processing-Programming-Handbook-Designers-Artists/dp/026202828X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1520004355&amp;sr=8-1&amp;keywords=processing+handbook&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=08457cedf1bdf882589a65f2a56c181b">The
 Processing
 Handbook</a> and
-<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c" target="_blank">Visualizing
+<a href="https://www.amazon.com/Visualizing-Data-Explaining-Processing-Environment/dp/0596514557/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=3aa08467e0b53ce75e261bf7a9d7cf3c">Visualizing
 Data</a>
 some years ago). My general dislike for Java or the JVM made me just play a
 short amount of time with <code>processing.js</code> something around 2011 (there was a
@@ -280,7 +326,7 @@ iPod Touch).</p>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
       <p>A few months ago I stumbled into the problem of Akka logging, specifically
 ClassNotFoundException when using <code>akka.event.slf4j.Slf4jLoggingFilter</code>, just by
-following the details of the <a href="https://doc.akka.io/docs/akka/2.5/logging.html" target="_blank">Logging - SL4J section of Akka
+following the details of the <a href="https://doc.akka.io/docs/akka/2.5/logging.html">Logging - SL4J section of Akka
 documentation</a>.</p>
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
@@ -320,7 +366,7 @@ documentation</a>.</p>
     </div>
     
     <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      <p>Almost two months ago (time sure flies) I attended for the second time the conference <a href="https://skillsmatter.com/conferences/8784-scala-exchange-2017" target="_blank">Scala eXchange</a>, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.</p>
+      <p>Almost two months ago (time sure flies) I attended for the second time the conference <a href="https://skillsmatter.com/conferences/8784-scala-exchange-2017">Scala eXchange</a>, one of the largest Scala conferences in the world, and which happens to be 1 tube stop from the office you can find me from time to time in London.</p>
     </div>
     <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
   
@@ -338,105 +384,6 @@ documentation</a>.</p>
   
    <li class="list" style="display:inline;">
      <a href="/tags/maths" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Maths</a>
-   </li>
-  
-</ul>
-</div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-    <div class="flex-row bg-white mb3 pa4 gray overflow-hidden">
-        <div class="w-100">
-    <h1 class="fw1 f3 mb1">
-        <a href="/2018/01/2017-year-in-review.html/" class="link black dim">
-            2017: Year in Review
-        </a>
-    </h1>
-    <time class="f8 mv2 mb1 dib tracked" datetime="2018-01-06T15:31:00&#43;01:00">Jan 6, 2018</time>
-    
-    &nbsp;&nbsp;&nbsp;
-    <span class="f9 fw1 mv2 dib tracked i"> 9 minutes read</span>
-    <span class="f9 fw1 mv2 dib tracked i" > | 1743 words</span>
-    
-        </div>
-        
-    <div class="nested-links f5 lh-copy nested-copy-line-height justify">
-      <p>I am trying to make these posts a tradition (even if a few days late). I thought 2016 had been a really weird and fun year, but 2017 has beaten it easily. And I only hope 2018 will be even better in every way. For the record, when I say <em>we</em>, it means Laia and me unless explicitly changed.</p>
-    </div>
-    <div class="nested-links f5 lh-copy nested-copy-line-height justify"><ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/london" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">London</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/emacs" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">emacs</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/linux" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Linux</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/music" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Music</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/trips" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Trips</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/python" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Python</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/christmas" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Christmas</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/time-management" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Time Management</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/ipad" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif"> iPad</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/maths" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Maths</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/books" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Books</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/programming" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Programming</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/apache-spark" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Apache Spark</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/seo" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">SEO</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/scala" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Scala</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/productivity" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Productivity</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/github" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">github</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="/tags/kafka" class="link f5 grow no-underline rounded-3 ba ph1 pv1 mb1 dib black sans-serif">Kafka</a>
    </li>
   
 </ul>

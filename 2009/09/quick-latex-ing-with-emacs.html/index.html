@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Quick latex-ing with emacs: dabbrev and skeletons</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -43,8 +47,6 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
 <meta itemprop="name" content="Quick latex-ing with emacs: dabbrev and skeletons">
 <meta itemprop="description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed.">
-
-
 <meta itemprop="datePublished" content="2009-09-17T01:00:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-09-17T01:00:00&#43;02:00" />
 <meta itemprop="wordCount" content="305">
@@ -52,7 +54,6 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
 
 
 <meta itemprop="keywords" content="Programming,emacs,Linux, Mac,LaTeX,Maths,Productivity," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -83,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -128,7 +129,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Quick latex-ing with emacs: dabbrev and skeletons</h1>
         
@@ -144,56 +148,44 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.</p>
 <p>Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed. The other example, I write \bth, press space and get a nice \begin{theorem} \end{theorem} delimiters with the cursor positioned between them.</p>
-
 <p>This should be in ~/Abbrev.el</p>
-
 <blockquote>
-<p>(define-abbrev-table &lsquo;text-mode-abbrev-table &lsquo;(<br />
-(&ldquo;mbb&rdquo; &ldquo;mathbb&rdquo; nil 0)<br />
-(&ldquo;bth&rdquo; &ldquo;&rdquo; latex-skel-thm 0)<br />
-&hellip;<br />
+<p>(define-abbrev-table &lsquo;text-mode-abbrev-table &lsquo;(<br>
+(&ldquo;mbb&rdquo; &ldquo;mathbb&rdquo; nil 0)<br>
+(&ldquo;bth&rdquo; &quot;&rdquo; latex-skel-thm 0)<br>
+&hellip;<br>
 ))</p>
 </blockquote>
-
 <p>The three dots are just to indicate my file is much, much longer. The following should be in a file ~/Skeletons.el</p>
-
 <blockquote>
-<p>(define-skeleton latex-skel-thm<br />
-&ldquo;Insert a \\begin{theorem} environment&rdquo; nil<br />
-&ldquo;begin{theorem}&rdquo; \n<br />
-&gt; _ ?\n<br />
-&ldquo;\\end{theorem}&ldquo;)</p>
+<p>(define-skeleton latex-skel-thm<br>
+&ldquo;Insert a \\begin{theorem} environment&rdquo; nil<br>
+&ldquo;begin{theorem}&rdquo; \n<br>
+&gt; _ ?\n<br>
+&ldquo;\\end{theorem}&quot;)</p>
 </blockquote>
-
 <p>And finally, in your .emacs you should add the following lines:</p>
-
 <blockquote>
-<p>(load &ldquo;~/Skeletons.el&rdquo;)<br />
-(setq abbrev-file-name &ldquo;~/Abbrev.el&rdquo;)<br />
+<p>(load &ldquo;~/Skeletons.el&rdquo;)<br>
+(setq abbrev-file-name &ldquo;~/Abbrev.el&rdquo;)<br>
 (add-hook &lsquo;text-mode-hook (lambda () (abbrev-mode 1)))</p>
 </blockquote>
-
 <p>A suggestion from a friend, using the ç and Ç to add {} and \[\] with the cursor positioned in between. Done via keyboard macros:</p>
-
 <blockquote>
-<p>(fset &lsquo;braces<br />
+<p>(fset &lsquo;braces<br>
 (lambda (&amp;optional arg) &ldquo;Keyboard macro.&rdquo; (interactive &ldquo;p&rdquo;) (kmacro-exec-ring-item (quote ([123 125 left] 0 &ldquo;%d&rdquo;)) arg)))</p>
-
 <p>(global-set-key (kbd &ldquo;ç&rdquo;) &lsquo;braces)</p>
-
-<p>(fset &lsquo;displaymode<br />
+<p>(fset &lsquo;displaymode<br>
 (lambda (&amp;optional arg) &ldquo;Keyboard macro.&rdquo; (interactive &ldquo;p&rdquo;) (kmacro-exec-ring-item (quote ([13 92 91 13 13 92 93 up] 0 &ldquo;%d&rdquo;)) arg)))</p>
-
 <p>(global-set-key (kbd &ldquo;Ç&rdquo;) &lsquo;displaymode)</p>
 </blockquote>
-
 <p>Although I may use the ç key (I&rsquo;m a catalan speaker), in emacs I write generally LaTeX, in english&hellip; so I don&rsquo;t really have a use for it. I may change the &ldquo;global-set-key&rdquo; to set it just for LaTeX&hellip; or even create a minor mode for it (Non-Catalan-Keyb?).</p>
-
 <p>What speed-up keyboard tricks do you have in your .emacs file? Share them!</p>
-
 <p>Related posts:ParseList(ScrambleList(Relateds(Productivity, Linux, emacs Mac, Latex)),15)</p>
 <hr/><ul class="pa0">
   
@@ -268,8 +260,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

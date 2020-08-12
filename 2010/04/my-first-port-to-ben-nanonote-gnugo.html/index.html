@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | My first port to the Ben NanoNote: gnugo</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@ Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just 
 <meta itemprop="description" content="Since I bought the Ben NanoNote, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its wiki says.
 David Reyes, from Tuxbrain did a great work by porting gnuchess to the Nano and documenting it in his blog.
 Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point.">
-
-
 <meta itemprop="datePublished" content="2010-04-04T00:09:00&#43;02:00" />
 <meta itemprop="dateModified" content="2010-04-04T00:09:00&#43;02:00" />
 <meta itemprop="wordCount" content="1146">
@@ -54,7 +56,6 @@ Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just 
 
 
 <meta itemprop="keywords" content="Programming,Linux,NanoNote," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -86,7 +87,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -131,7 +132,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">My first port to the Ben NanoNote: gnugo</h1>
         
@@ -147,172 +151,130 @@ if (!doNotTrack) {
     
 
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-
-<p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s1600/DSC_0284.JPG" target="_blank"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s400/DSC_0284.JPG" alt="" /></a></p>
-
-<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">bought the Ben NanoNote</a>, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its <a href="http://en.qi-hardware.com/wiki/NanoNote_Personalities_Program" target="_blank">wiki says</a>.</p>
-
-<p>David Reyes, from <a href="http://www.tuxbrain.com/" target="_blank">Tuxbrain</a> did a great work by porting gnuchess to the Nano and <a href="http://www.tuxbrain.com/en/content/my-first-port-ben-nanonote-gnuchess-howto" target="_blank">documenting</a> it in his blog.</p>
-
-<p>Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point. I first tried to port gforth&hellip; But cross-compiling a compiler like gforth is really painful. I&rsquo;ll give it more tries, but it will take a really long time. For now, I&rsquo;ll show you how I ported <a href="http://www.gnu.org/software/gnugo/" target="_blank">gnugo</a> to the NanoNote.</p>
-
+    <p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s1600/DSC_0284.JPG"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7ZDu85zDRI/AAAAAAAACEg/6yHj4ysSv9Y/s400/DSC_0284.JPG" alt=""></a></p>
+<p>Since I <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">bought the Ben NanoNote</a>, I thought I needed to port something to it, as the biggest point with the NanoNote is developing to it, as its <a href="http://en.qi-hardware.com/wiki/NanoNote_Personalities_Program">wiki says</a>.</p>
+<p>David Reyes, from <a href="http://www.tuxbrain.com/">Tuxbrain</a> did a great work by porting gnuchess to the Nano and <a href="http://www.tuxbrain.com/en/content/my-first-port-ben-nanonote-gnuchess-howto">documenting</a> it in his blog.</p>
+<p>Of course, I want to port big things, but I&rsquo;m not a great Linux guy, just average, so this tutorial makes a great starting point. I first tried to port gforth&hellip; But cross-compiling a compiler like gforth is really painful. I&rsquo;ll give it more tries, but it will take a really long time. For now, I&rsquo;ll show you how I ported <a href="http://www.gnu.org/software/gnugo/">gnugo</a> to the NanoNote.</p>
 <p>With respect to usability, the small screen in the Nano does not allow us to play a full 19x19 game (not in a way I&rsquo;m aware of), but it can play 9x9 as you can see in the picture I posted.</p>
-
 <p>Okey, now for the how-to for porting. For the first steps I just copied David&rsquo;s tutorial, as it covers everything you have to do, and is exactly the way I did it.</p>
-
 <h2 id="setting-up-the-developing-framework">Setting up the developing framework</h2>
-
 <p>This are Debian/Ubuntu instructions to ensure that we have everything needed for cross-compilation. To install everything needed, run the following in a console</p>
-
 <blockquote>
 <p>sudo apt-get install gcc g++ binutils patch bzip2 flex bison make gettext unzip libz-dev libc6 ncurses-dev subversion libxml-simple-perl gawk git-core</p>
 </blockquote>
-
 <p>Now we create a folder (in our home directory, for instance) where we will keep all OpenWRT stuff and the framework from the git repository qi-hardware has set up.</p>
-
 <blockquote>
-<p>mkdir openwrt<br />
-cd openwrt<br />
-git clone git://projects.qi-hardware.com/openwrt-xburst.git<br />
-cd openwrt-xburst<br />
-git fetch origin<br />
-git checkout &ndash;track -b xburst origin/xburst<br />
+<p>mkdir openwrt<br>
+cd openwrt<br>
+git clone git://projects.qi-hardware.com/openwrt-xburst.git<br>
+cd openwrt-xburst<br>
+git fetch origin<br>
+git checkout &ndash;track -b xburst origin/xburst<br>
 make menuconfig</p>
 </blockquote>
-
 <p>Now we will see a graphical menu for adding packages, and compiling a whole Linux image. It is similar to the Linux kernel configuration menu (in graphical mode). It has a lot of configuration options. Here we can select which packages to compile, which to generate as modules and so on. We have to select as Target System Ingenic Xburst, and Qi BenNanoNote as Target Profile (it may auto-select it). Now exit and save configuration changes, and run make to get a basic kernel and the toolchain.</p>
-
 <p>Now, start the porting process.</p>
-
 <h2 id="porting">Porting</h2>
-
 <p>Create a directory where we will keep all our porting applications:</p>
-
 <blockquote>
-<p>cd ..<br />
-mkdir ports<br />
-mkdir ports/games<br />
+<p>cd ..<br>
+mkdir ports<br>
+mkdir ports/games<br>
 mkdir ports/games/gnugo</p>
 </blockquote>
-
 <p>Fire your favourite text editor and create a file named Makefile in the recently created gnugo directory.</p>
-
 <p>In it we have to copy the following. BEWARE! Between define and endef you have to add tabs, real tabs, not four spaces! If you don&rsquo;t change it, make will complain about missing separators.</p>
-
 <blockquote>
-<p># Copyright &copy; 2008 OpenWrt.org</p>
-
+<p># Copyright (C) 2008 OpenWrt.org</p>
+<h1 id="heading"></h1>
 <p># This is free software, licensed under the GNU General Public License v2.</p>
-
-<p>include $(TOPDIR)/rules.mk<br />
-## Package name<br />
-PKG_NAME:=gnugo<br />
-## Package version we need (to match our download source)<br />
-PKG_VERSION:=3.8<br />
-## Release version (don&rsquo;t really needed, just for completeness)<br />
-PKG_RELEASE:=3<br />
-## Name of the file we will download, with the previous package name definitions<br />
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz<br />
-## Url with the PKG_SOURCE file<br />
-PKG_SOURCE_URL:=<a href="http://ftp.gnu.org/gnu/gnugo/" target="_blank">http://ftp.gnu.org/gnu/gnugo/</a><br />
-## Program to uncompress the sources<br />
+<h1 id="heading-1"></h1>
+<p>include $(TOPDIR)/rules.mk<br>
+## Package name<br>
+PKG_NAME:=gnugo<br>
+## Package version we need (to match our download source)<br>
+PKG_VERSION:=3.8<br>
+## Release version (don&rsquo;t really needed, just for completeness)<br>
+PKG_RELEASE:=3<br>
+## Name of the file we will download, with the previous package name definitions<br>
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz<br>
+## Url with the PKG_SOURCE file<br>
+PKG_SOURCE_URL:=http://ftp.gnu.org/gnu/gnugo/<br>
+## Program to uncompress the sources<br>
 PKG_CAT:=zcat</p>
-
-<p>include $(INCLUDE_DIR)/package.mk<br />
-# Definition of the package, for adding to menuconfig and creating the ipkg.<br />
-define Package/gnugo<br />
-TITLE:=Go GNU from FSF<br />
-SECTION:=games<br />
-CATEGORY:=Games<br />
-URL:=<a href="http://www.gnu.org/software/gnugo" target="_blank">http://www.gnu.org/software/gnugo</a><br />
-endef<br />
-# Directory where the sources will be uncompiled and built BUILD_DIR<br />
-# is an env variable from the OpenWrt toolchain, you don&rsquo;t need to set<br />
-# it.<br />
-PKG_BUILD_DIR:=$(BUILD_DIR)/gnugo-$(PKG_VERSION)<br />
-# Long description of the package<br />
-define Package/gnugo/description<br />
-GNU Go is a free program that plays the game of Go. GNU Go has played thousands of games on the NNGS Go server. GNU Go is now also playing regularly on the Legend Go Server in Taiwan, on the WING server in Japan, and many volunteers run GNU Go clients on KGS. GNU Go has established itself as the leading non-commercial go program in the recent tournaments that it has taken part in.<br />
-endef<br />
-# If ./configure does not need any options, leave it as follows<br />
-define Package/gnugo/Build/Configure<br />
-$(call Build/Configure/Default)<br />
-endef<br />
-# Where will be copied the binaries and libraries after installation.<br />
-# Gnugo creates the binary executable in the interface directory.<br />
-define Package/gnugo/install<br />
-$(INSTALL_DIR) $(1)/usr/sbin<br />
-$(INSTALL_BIN) $(PKG_BUILD_DIR)/interface/gnugo $(1)/usr/sbin/<br />
-endef<br />
-# Final step for bulding the package<br />
+<p>include $(INCLUDE_DIR)/package.mk<br>
+# Definition of the package, for adding to menuconfig and creating the ipkg.<br>
+define Package/gnugo<br>
+TITLE:=Go GNU from FSF<br>
+SECTION:=games<br>
+CATEGORY:=Games<br>
+URL:=http://www.gnu.org/software/gnugo<br>
+endef<br>
+# Directory where the sources will be uncompiled and built BUILD_DIR<br>
+# is an env variable from the OpenWrt toolchain, you don&rsquo;t need to set<br>
+# it.<br>
+PKG_BUILD_DIR:=$(BUILD_DIR)/gnugo-$(PKG_VERSION)<br>
+# Long description of the package<br>
+define Package/gnugo/description<br>
+GNU Go is a free program that plays the game of Go. GNU Go has played thousands of games on the NNGS Go server. GNU Go is now also playing regularly on the Legend Go Server in Taiwan, on the WING server in Japan, and many volunteers run GNU Go clients on KGS. GNU Go has established itself as the leading non-commercial go program in the recent tournaments that it has taken part in.<br>
+endef<br>
+# If ./configure does not need any options, leave it as follows<br>
+define Package/gnugo/Build/Configure<br>
+$(call Build/Configure/Default)<br>
+endef<br>
+# Where will be copied the binaries and libraries after installation.<br>
+# Gnugo creates the binary executable in the interface directory.<br>
+define Package/gnugo/install<br>
+$(INSTALL_DIR) $(1)/usr/sbin<br>
+$(INSTALL_BIN) $(PKG_BUILD_DIR)/interface/gnugo $(1)/usr/sbin/<br>
+endef<br>
+# Final step for bulding the package<br>
 $(eval $(call BuildPackage,gnugo))</p>
 </blockquote>
-
 <p>Now we need to tell OpenWRT we have new packages. To do so, go the trunk directory and run</p>
-
 <blockquote>
 <p>cp feeds.conf.default feeds.conf</p>
 </blockquote>
-
 <p>And add this line to the end of the file feeds.conf:</p>
-
 <blockquote>
 <p>src-link ports route/to/your/ports/dir</p>
 </blockquote>
-
 <p>and update the feeds:</p>
-
 <blockquote>
-<p>./scripts/feeds update -a<br />
+<p>./scripts/feeds update -a<br>
 ./scripts/feeds install -a</p>
 </blockquote>
-
 <p>Good, almost ready to go. What is the main problem for cross-compiling gnugo? Gnugo uses intermediate programs that process information and generate intermediate code, that is then compiled. And these intermediate programs can not be created by a cross-compiler: they have to be created for the host architecture.</p>
-
 <p>My take on it was to download gnugo&rsquo;s sources, ./configure and make gnugo. Then use the generated intermediate files to generate the target files. And it worked!</p>
-
 <p>Thus, now create a directory ~/testing-gnugo/ where you download gnugo&rsquo;s tar.gz sources, and uncompress it. Copy that directory into gnugo-3.8-mod and gnugo-3.8-old. And do the ./configure make stuff in the original gnugo-3.8. You will have some files in gnugo-3.8/patterns named mkpat, joseki, mkeyes and a few more. These are the key files!</p>
-
-<h2 id="patching-gnugo-s-makefile">Patching gnugo&rsquo;s makefile</h2>
-
+<h2 id="patching-gnugos-makefile">Patching gnugo&rsquo;s makefile</h2>
 <p>We need to make a patch for gnugo to compile. First, create a patches directory in ports/games/gnugo/. Now, open your favourite text editor and open gnugo-3.8-mod/patterns/Makefile.in</p>
-
 <p>You need to change all instances to ./joseki, ./mkpat, ./mkeyes, ./uncompress_fuseki, ./mkmcpat to use the ones in the gnugo-3.8/patterns directory you got earlier.</p>
-
 <p>After you are done, go to the testing-gnugo directory and create the patch with the following instruction</p>
-
 <p>diff -crB gnugo-3.8-old/ gnugo-3.8-mod/ &gt; 001_static_definition.patch</p>
-
 <p>and copy the 001_static_definition.patch to the patches directory you have just created. The number serves to order patches that have to be applied sequentally.</p>
-
 <p>Go to the trunk directory, make menuconfig and go to the Games section. Select gnugo with &ldquo;M&rdquo; to generate a separate package, exit and save. Now</p>
-
 <blockquote>
 <p>make package/gnugo/compile V=99</p>
 </blockquote>
-
 <p>If everything works correctly, there won&rsquo;t be any errors and you can end the process with</p>
-
 <blockquote>
 <p>make package/gnugo/install V=99</p>
 </blockquote>
-
 <p>If there was some error, it was probably due some missing replace in the Makefile. Check what change is missing and correct it.</p>
-
-<p>Now you can transfer (with the <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB" target="_blank">Ethernet via USB</a> connection) the file in trunk/bin/xburst/packages, named gnugo-3.8-3-xburst.ipk to the NanoNote, where you can install by going to the directory where you have copied the ipk file and</p>
-
+<p>Now you can transfer (with the <a href="http://en.qi-hardware.com/wiki/Ethernet_over_USB">Ethernet via USB</a> connection) the file in trunk/bin/xburst/packages, named gnugo-3.8-3-xburst.ipk to the NanoNote, where you can install by going to the directory where you have copied the ipk file and</p>
 <blockquote>
 <p>opkg install gnugo-3.8-3-xburst.ipk</p>
 </blockquote>
-
 <p>It may complain about some missing packages, but it is a Qi&rsquo;s distribution problem, not a fault from the freshly made package.</p>
-
-<p>Related posts:<br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Unpacking my Ben NanoNote</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html" target="_blank">Another Ben Nanonote port: pmars</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html" target="_blank">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br />
-<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt="" /> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html" target="_blank">Gcal: the ultra-powerful command line GNU calendar</a><br />
+<p>Related posts:<br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Unpacking my Ben NanoNote</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/another-ben-nanonote-port-pmars.html">Another Ben Nanonote port: pmars</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/05/nanonote-ports-yacas-4th-forth.html">Nanonote ports: Yacas, 4th (forth compiler and interpreter)</a><br>
+<img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S-VA4aF2G1I/AAAAAAAACT8/41SMm6kvdqs/s00/favicon.png" alt=""> <a href="http://www.mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html">Gcal: the ultra-powerful command line GNU calendar</a><br>
 ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
 <hr/><ul class="pa0">
   
@@ -371,8 +333,9 @@ ParseList(ScrambleList(Relateds(Linux, Programming)),10)</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

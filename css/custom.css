@@ -1,3 +1,11 @@
+.reforma {
+    font-family: 'Reforma1969';
+}
+
+.f4 {
+    font-size: 1.4rem;
+}
+
 .f8 {
     font-size: .5rem;
 }
@@ -7,7 +15,7 @@
 }
 
 .lh-copy {
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .a:hover {
@@ -29,7 +37,100 @@
 .dropcap:first-letter, .gr-dropcap:before { font-family: 'Euclid Initials'; float: left; font-size: 8.0rem; font-style: normal;  margin-right: 3px; }
 .first-word { font-style: normal; text-transform: uppercase; }
 .scaps { font-variant: small-caps; }
+.smallText {
+    line-height: unset;
+    font-size: 0.5rem;
+}
 
+.rating-text {
+    display: none;
+}
+
+.rating.checked {
+    color: #EEC700;
+}
+
+.rating {
+    color: #ddd;
+}
+
+blockquote {
+    margin-bottom: 0 !important;
+}
+
+blockquote p {
+    margin: 0 !important;
+}
+
+/* 
+    Optionally add <small>And now for something completely different</small> 
+    for a nice hover. Taken with love from here: https://codepen.io/joshuar/pen/MwdYLP
+*/
+
+.sb {
+    float: left;
+    margin-bottom: .5rem;
+    position: relative;
+    width: 100%;
+  }
+  .sb small {
+    background: slategray;
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    left: 50%;
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    -webkit-transition: opacity 1s ease-out, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 1s ease-out, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 1s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 1s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 5;
+  }
+  .sb:hover {
+    cursor: help;
+  }
+  .sb:hover > small {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -75%);
+            transform: translate(-50%, -75%);
+  }
+  
+  .section-break-2 {
+    font-family: 'Nymphette';
+    background-color: rgba(244,244,244, 255);
+    border: 0;
+    border-top: 1px solid #c8c8c8;
+    height: 1px;
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+  }
+  .section-break-2:before {
+    font-family: 'Nymphette';
+    background-color: rgba(244,244,244, 255);
+    color: #959595;
+    content: 'E F';
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    left: 50%;
+    letter-spacing: 0;
+    line-height: 1;
+    text-indent: -1px;
+    text-rendering: geometricPrecision;
+    -webkit-transform: translateY(-53%);
+            transform: translateY(-53%);
+    width: auto;
+  }
+  
+  
+  
 .dropcap:first-letter { font-size: 8.0rem; line-height: 3.0rem;}
 
 h2 {
@@ -70,13 +171,15 @@ article p {
 }
 
 .nested-copy-line-height p {
-    font-weight: 400;
+    text-indent: 0.7rem;
+    font-weight: 200;
     line-height: 1.3;
 }
 
 .nested-copy-line-height li {
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.3;
+    margin-bottom: 0.3rem;
 }
 
 .nested-copy-line-height h2 a {
@@ -131,6 +234,7 @@ code {
     width: 15%;
     float: left;
 }
+
 
 
 figcaption {

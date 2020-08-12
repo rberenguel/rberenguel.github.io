@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Copied programming assignments as cryptograms</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@ From my point of view, there are fundamentally two different kinds of copy:" />
 <meta itemprop="description" content="Pieces of an ENIGMA machine, from Flickr
 Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&rsquo;s mind. As a teacher, how do you detect this?
 From my point of view, there are fundamentally two different kinds of copy:">
-
-
 <meta itemprop="datePublished" content="2009-11-11T01:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2009-11-11T01:00:00&#43;01:00" />
 <meta itemprop="wordCount" content="290">
@@ -54,7 +56,6 @@ From my point of view, there are fundamentally two different kinds of copy:">
 
 
 <meta itemprop="keywords" content="Programming,Thoughts,Teaching,Maths," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -86,7 +87,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -131,7 +132,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Copied programming assignments as cryptograms</h1>
         
@@ -147,25 +151,20 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s1600-h/3317243295_39c3fa4175.jpg" target="_blank"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s400/3317243295_39c3fa4175.jpg" alt="" /></a></p>
-
-<p>Pieces of an ENIGMA machine, from <a href="http://www.flickr.com/photos/brewbooks/3317243295/" target="_blank">Flickr</a></p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
+    <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s1600-h/3317243295_39c3fa4175.jpg"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/SvdHLEpKKUI/AAAAAAAABbY/tXEwH_u6DjY/s400/3317243295_39c3fa4175.jpg" alt=""></a></p>
+<p>Pieces of an ENIGMA machine, from <a href="http://www.flickr.com/photos/brewbooks/3317243295/">Flickr</a></p>
 <p>Assume you have a set of alumni, which are due an individual programming assignment. All have the same assignment (as it is hard to come up with several), and it is hard enough that copying from each other passes for everyone&rsquo;s mind. As a teacher, how do you detect this?</p>
-
 <p>From my point of view, there are fundamentally two different kinds of copy:</p>
-
 <ul>
 <li>Information sharing: One teaches another as how to do it. Fine with me, everyone learns</li>
 <li>Code sharing: One gives another a piece of code. Bad.</li>
 </ul>
-
 <p>The code sharing scenario can have or not a postprocessing: the code is modified to fit the others code, and variables names are changed to look more inocuos. Usually, there are cases of full code copy.</p>
-
 <p>How to detect this? I am still writing code to test it with our last assignment, but my idea is that this is like (like, as looks like, not as equal to) a cryptogram, with a simple enough substitution cipher. Not exactly, but probably quite similar. And singular value decomposition could help detect these kind of ciphers.</p>
-
 <p>I am writing a set of awk scripts that rip off C comments, printf, scanf, fopen and such, just to leave the skeleton of the real algorithm, and another script that separates each C file into individual functions. Why? Because a whole program is unlikely to be copied, but individual functions are most probably shared. I&rsquo;ll start with a word frequency analysis of individual functions. If this works&hellip; ok, if it doesn&rsquo;t, maybe I&rsquo;ll try higher rank approximations. Word frequency (rank 1 approximation, roughly) can be done straight in awk, and then compared.</p>
-
 <p>I&rsquo;ll keep writing about this as it goes on.</p>
 <hr/><ul class="pa0">
   
@@ -228,8 +227,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

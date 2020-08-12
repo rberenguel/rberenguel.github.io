@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | D3 sitemap using a force layout and web workers</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2020-06-08T19:30:33+02:00" />
 <meta itemprop="name" content="D3 sitemap using a force layout and web workers">
 <meta itemprop="description" content="A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)">
-
-
 <meta itemprop="datePublished" content="2020-06-08T19:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-06-08T19:30:33&#43;02:00" />
 <meta itemprop="wordCount" content="506">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="Generative,d3js,Python,Blog," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/06/d3-sitemap.html/sitemap.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">D3 sitemap using a force layout and web workers</h1>
         
@@ -149,8 +153,10 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)</p>
 <figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank">
     <img src="sitemap.png"
          alt="Screenshot of the sitemap"/> </a><figcaption>
@@ -158,25 +164,18 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
-<p>I&rsquo;ll keep this post short. You may have seen my project, <a href="https://github.com/rberenguel/bear-note-graph" target="_blank">bear-note-graph</a> mentioned around here. Its goal is to convert your <a href="https://bear.app" target="_blank">Bear</a> notes into a graph you can explore (with links across notes and links from tags to notes).</p>
-
-<p>Its core processes the markdown documents from the Bear SQLite database, parsing it with a custom markdown parser I wrote. Then, it uses <a href="https://www.graphviz.org/doc/info/attrs.html" target="_blank">Graphviz</a> as the graph engine: it&rsquo;s convenient, but not the prettiest. Also it has some drawbacks in output formats, and the interactivity could be better. As a result, I&rsquo;ve had a card to improve bear-note-graph to optionally use a <a href="https://d3js.org" target="_blank">D3</a> force directed layout for some time.</p>
-
+<p>I&rsquo;ll keep this post short. You may have seen my project, <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> mentioned around here. Its goal is to convert your <a href="https://bear.app">Bear</a> notes into a graph you can explore (with links across notes and links from tags to notes).</p>
+<p>Its core processes the markdown documents from the Bear SQLite database, parsing it with a custom markdown parser I wrote. Then, it uses <a href="https://www.graphviz.org/doc/info/attrs.html">Graphviz</a> as the graph engine: it&rsquo;s convenient, but not the prettiest. Also it has some drawbacks in output formats, and the interactivity could be better. As a result, I&rsquo;ve had a card to improve bear-note-graph to optionally use a <a href="https://d3js.org">D3</a> force directed layout for some time.</p>
 <figure class="fig-wide">
     <img src="bear_graph.png"
          alt="bear-note-graph"/> <figcaption>
-            <p><a href="https://github.com/rberenguel/bear-note-graph" target="_blank">bear-note-graph</a></p>
+            <p><a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a></p>
         </figcaption>
 </figure>
 
-
 <p>A few weeks ago I started work on this feature, by rewriting a D3 force layout I had written for a half personal, half work project (unpublished): <strong>using YAML descriptions to create system diagrams for your (data) architecture</strong>. Those diagrams have 30-50 nodes, and as such are pretty fast to render on the browser, live, with draggable nodes. My note database though, has around 1000 notes, with <em>many</em> links. This made waiting for the force layout to converge painful. It took a significant time to render, and dragging nodes was super slow.</p>
-
-<p>I found a fix (as always with D3) in a sketch by <a href="https://en.m.wikipedia.org/wiki/Mike_Bostock" target="_blank">Mike Bostock</a>: <a href="https://bl.ocks.org/mbostock/01ab2e85e8727d6529d20391c0fd9a16" target="_blank">using a web worker</a>. With this, I could calculate the force layout on the background.</p>
-
-<p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing now either. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io" target="_blank">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
-
+<p>I found a fix (as always with D3) in a sketch by <a href="https://en.m.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>: <a href="https://bl.ocks.org/mbostock/01ab2e85e8727d6529d20391c0fd9a16">using a web worker</a>. With this, I could calculate the force layout on the background.</p>
+<p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing now either. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
 <figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank">
     <img src="zoomed.png"
          alt="Filtered and zoomed with search term spark"/> </a><figcaption>
@@ -184,9 +183,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
-<p>And just like this, I now have a <a href="https://mostlymaths.net/sitemap/" target="_blank">sitemap on this site</a>. It is still in beta: I cleaned up several tags that were repeated, or useless but there is still work to do in that regard. Also some links may not work, if it happens please reach to me on <a href="https://mobile.twitter.com/berenguel" target="_blank">Twitter</a>.</p>
-
+<p>And just like this, I now have a <a href="https://mostlymaths.net/sitemap/">sitemap on this site</a>. It is still in beta: I cleaned up several tags that were repeated, or useless but there is still work to do in that regard. Also some links may not work, if it happens please reach to me on <a href="https://mobile.twitter.com/berenguel">Twitter</a>.</p>
 <p>It has a neat autocompleting search (although it has a bug I need to fix) that reduces the amount of nodes to nodes matching the search term. Clicking on any node will take you to that tag or post. It doesn&rsquo;t have draggable nodes because I haven&rsquo;t figured out how to share the update ticker code between the worker and the graph… oh well. The code is available for you to see, but don&rsquo;t expect it to be pretty. If you want something neat, wait until I publish the final version in bear-note-graph.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -248,8 +245,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acme on mostlymaths.net</title>
@@ -18,8 +18,7 @@
       
       <guid>https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/</guid>
       <description>Is this line noise?
-
-⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
+ ⍉&amp;#39; *&amp;#39;[⍎&amp;#39;1+0&amp;lt;|z&amp;#39;,(∊150⍴⊂&amp;#39;←c+m×m&amp;#39;),&amp;#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&amp;#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&amp;rsquo;s a short paper, read it someday). I&amp;rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&amp;rsquo;s APL first?</description>
     </item>
     
     <item>

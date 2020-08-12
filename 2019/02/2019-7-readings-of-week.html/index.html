@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | 2019#7 Readings of the week</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2019-02-26T22:54:00+01:00" />
 <meta itemprop="name" content="2019#7 Readings of the week">
 <meta itemprop="description" content="Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the tag here . You can also get these as a weekly newsletter by subscribing here.">
-
-
 <meta itemprop="datePublished" content="2019-02-26T22:54:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-02-26T22:54:00&#43;01:00" />
 <meta itemprop="wordCount" content="448">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="ReadingsOfTheWeek,emacs,Data,Scala,Alloy,TLA&#43;," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2019/02/2019-7-readings-of-week.html/Ni.gif"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">2019#7 Readings of the week</h1>
         
@@ -156,57 +160,35 @@ if (!doNotTrack) {
                     <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
     </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek" target="_blank">tag here</a> . You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p>
-
-<p><a href="Ni.gif" target="_blank"><img src="Ni.gif" alt="" /></a></p>
-
-<h2 id="solving-knights-and-knaves-with-alloy-https-www-hillelwayne-com-post-knights-knaves"><a href="https://www.hillelwayne.com/post/knights-knaves/" target="_blank">Solving Knights and Knaves with Alloy</a></h2>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>Formal methods, Scala, productivity. Expect a similar wide range in the future as well. You can check all my weekly readings by checking the <a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek">tag here</a> . You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P">here</a>.</p>
+<p><a href="Ni.gif"><img src="Ni.gif" alt=""></a></p>
+<h2 id="solving-knights-and-knaves-with-alloyhttpswwwhillelwaynecompostknights-knaves"><a href="https://www.hillelwayne.com/post/knights-knaves/">Solving Knights and Knaves with Alloy</a></h2>
 <p>Once you start your journey down the formal methods rabbit hole (which I started with TLA+) you can never stop. This is a <em>very</em> good introduction to Alloy, a modelling language which seems well suited for data structure descriptions (not procedural/step-time models)</p>
-
-<h2 id="seeking-the-productive-life-some-details-of-my-personal-infrastructure-https-blog-stephenwolfram-com-2019-02-seeking-the-productive-life-some-details-of-my-personal-infrastructure"><a href="https://blog.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/" target="_blank">Seeking the Productive Life: Some Details of My Personal Infrastructure</a></h2>
-
+<h2 id="seeking-the-productive-life-some-details-of-my-personal-infrastructurehttpsblogstephenwolframcom201902seeking-the-productive-life-some-details-of-my-personal-infrastructure"><a href="https://blog.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/">Seeking the Productive Life: Some Details of My Personal Infrastructure</a></h2>
 <p>As much as I don&rsquo;t like Stephen Wolfram, his obsessive take on being productive echoes mine. And that worries me.</p>
-
-<h2 id="encryption-key-hierarchies-in-alloy-https-cloudbootup-com-post-encryption-key-hierarchies-in-alloy-html"><a href="https://cloudbootup.com/post/encryption-key-hierarchies-in-alloy.html" target="_blank">Encryption Key Hierarchies in Alloy</a></h2>
-
+<h2 id="encryption-key-hierarchies-in-alloyhttpscloudbootupcompostencryption-key-hierarchies-in-alloyhtml"><a href="https://cloudbootup.com/post/encryption-key-hierarchies-in-alloy.html">Encryption Key Hierarchies in Alloy</a></h2>
 <p>Next after the intro above, this is a short post about how you would set up a reasonable hierarchy of keys in an organisation. Something like &ldquo;Infrastructure team owns infrastructure keys, developers own GitHub&rdquo; but with more layers. Then you can automatically check somebody has access to stuff, etc. Neat.</p>
-
-<h2 id="is-your-scala-object-always-a-singleton-https-blog-softwaremill-com-is-your-scala-object-always-a-singleton-cb3fd24a2fd9"><a href="https://blog.softwaremill.com/is-your-scala-object-always-a-singleton-cb3fd24a2fd9" target="_blank">Is your Scala object always a singleton?</a></h2>
-
-<p>The guys at <a href="https://blog.softwaremill.com/" target="_blank">SoftwareMill</a> (excellent technical blog and people) stumbled upon this. The kind of bug that could defeat you, but they succeeded, and documented it for the rest of us.</p>
-
-<h2 id="proving-games-are-winnable-with-alloy-https-www-hillelwayne-com-post-alloy-randomizer"><a href="https://www.hillelwayne.com/post/alloy-randomizer/" target="_blank">Proving Games are Winnable with Alloy</a></h2>
-
+<h2 id="is-your-scala-object-always-a-singletonhttpsblogsoftwaremillcomis-your-scala-object-always-a-singleton-cb3fd24a2fd9"><a href="https://blog.softwaremill.com/is-your-scala-object-always-a-singleton-cb3fd24a2fd9">Is your Scala object always a singleton?</a></h2>
+<p>The guys at <a href="https://blog.softwaremill.com/">SoftwareMill</a> (excellent technical blog and people) stumbled upon this. The kind of bug that could defeat you, but they succeeded, and documented it for the rest of us.</p>
+<h2 id="proving-games-are-winnable-with-alloyhttpswwwhillelwaynecompostalloy-randomizer"><a href="https://www.hillelwayne.com/post/alloy-randomizer/">Proving Games are Winnable with Alloy</a></h2>
 <p>And the final instalment in this week&rsquo;s formal method extravaganza, how to prove a randomised game (say, Zelda) can be winnable using Alloy.</p>
-
-<h2 id="don-t-let-the-internet-dupe-you-event-sourcing-is-hard-https-chriskiehl-com-article-event-sourcing-is-hard"><a href="https://chriskiehl.com/article/event-sourcing-is-hard" target="_blank">Don&rsquo;t Let the Internet Dupe you, Event Sourcing is Hard</a></h2>
-
-<p>Yep, can totally agree, I&rsquo;ve hit some of the roadblocks and fun moments the author shares. As usual, some <a href="https://news.ycombinator.com/item?id=19072850" target="_blank">HackerNews comments</a> can be enlightening.</p>
-
-<h2 id="on-being-a-senior-engineer-https-www-kitchensoap-com-2012-10-25-on-being-a-senior-engineer"><a href="https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/" target="_blank">On Being A Senior Engineer</a></h2>
-
+<h2 id="dont-let-the-internet-dupe-you-event-sourcing-is-hardhttpschriskiehlcomarticleevent-sourcing-is-hard"><a href="https://chriskiehl.com/article/event-sourcing-is-hard">Don&rsquo;t Let the Internet Dupe you, Event Sourcing is Hard</a></h2>
+<p>Yep, can totally agree, I&rsquo;ve hit some of the roadblocks and fun moments the author shares. As usual, some <a href="https://news.ycombinator.com/item?id=19072850">HackerNews comments</a> can be enlightening.</p>
+<h2 id="on-being-a-senior-engineerhttpswwwkitchensoapcom20121025on-being-a-senior-engineer"><a href="https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/">On Being A Senior Engineer</a></h2>
 <p>There are many definitions of what being senior is, but you can&rsquo;t go wrong trying to follow these suggestions</p>
-
-<h2 id="hold-the-front-pages-meet-the-endpaper-enthusiasts-https-www-theguardian-com-books-booksblog-2019-jan-24-hold-the-front-pages-meet-the-endpaper-enthusiasts"><a href="https://www.theguardian.com/books/booksblog/2019/jan/24/hold-the-front-pages-meet-the-endpaper-enthusiasts" target="_blank">Hold the front pages: meet the endpaper enthusiasts</a></h2>
-
+<h2 id="hold-the-front-pages-meet-the-endpaper-enthusiastshttpswwwtheguardiancombooksbooksblog2019jan24hold-the-front-pages-meet-the-endpaper-enthusiasts"><a href="https://www.theguardian.com/books/booksblog/2019/jan/24/hold-the-front-pages-meet-the-endpaper-enthusiasts">Hold the front pages: meet the endpaper enthusiasts</a></h2>
 <p>I&rsquo;m pretty sure you didn&rsquo;t know there are collectors of endpaper.</p>
-
-<h2 id="beating-hash-tables-with-trees-the-art-ful-radix-trie-https-www-the-paper-trail-org-post-art-paper-notes"><a href="https://www.the-paper-trail.org/post/art-paper-notes/" target="_blank">Beating hash tables with trees? The ART-ful radix trie</a></h2>
-
+<h2 id="beating-hash-tables-with-trees-the-art-ful-radix-triehttpswwwthe-paper-trailorgpostart-paper-notes"><a href="https://www.the-paper-trail.org/post/art-paper-notes/">Beating hash tables with trees? The ART-ful radix trie</a></h2>
 <p>A synopsis of a data structure paper, about ART radix tries. They are kind-of-like tries, but try to use less memory.</p>
-
-<h2 id="scala-pattern-matching-apply-the-unapply-https-medium-com-wix-engineering-scala-pattern-matching-apply-the-unapply-7237f8c30b41"><a href="https://medium.com/wix-engineering/scala-pattern-matching-apply-the-unapply-7237f8c30b41" target="_blank">Scala pattern matching: apply the unapply</a></h2>
-
+<h2 id="scala-pattern-matching-apply-the-unapplyhttpsmediumcomwix-engineeringscala-pattern-matching-apply-the-unapply-7237f8c30b41"><a href="https://medium.com/wix-engineering/scala-pattern-matching-apply-the-unapply-7237f8c30b41">Scala pattern matching: apply the unapply</a></h2>
 <p>In case you didn&rsquo;t know how pattern matching works (hint: unapply), this post will tell you.</p>
-
-<h2 id="buffer-expose-emacs-package-https-github-com-clemera-buffer-expose-blob-master-readme-org"><a href="https://github.com/clemera/buffer-expose/blob/master/README.org" target="_blank">buffer-expose emacs package</a></h2>
-
+<h2 id="buffer-expose-emacs-packagehttpsgithubcomclemerabuffer-exposeblobmasterreadmeorg"><a href="https://github.com/clemera/buffer-expose/blob/master/README.org">buffer-expose emacs package</a></h2>
 <p>A package released late last week, it helps you navigate your open buffers in a visual way. Pretty neat, and even with my usual 20+ buffers seems to work seamlessly.</p>
-
-<h2 id="newsletter-http-eepurl-com-gefw7p"><a href="http://eepurl.com/geFw7P" target="_blank">Newsletter</a>?</h2>
-
-<p>These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking <a href="http://eepurl.com/geFw7P" target="_blank">here</a>.</p><hr/><ul class="pa0">
+<h2 id="newsletterhttpeepurlcomgefw7p"><a href="http://eepurl.com/geFw7P">Newsletter</a>?</h2>
+<p>These weekly posts are also available as a newsletter. These days (since RSS went into limbo) most of my regular information comes from several newsletters I’m subscribed to, instead of me going directly to a blog. If this is also your case, subscribe by clicking <a href="http://eepurl.com/geFw7P">here</a>.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/readingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ReadingsOfTheWeek</a>
@@ -275,8 +257,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Modifying the agnoster theme for zsh</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2018-04-29T15:38:00+02:00" />
 <meta itemprop="name" content="Modifying the agnoster theme for zsh">
 <meta itemprop="description" content="Even though I have been a long time user of oh-my-zsh on zsh (moved from plain bash to zsh like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: robbyrussell. But recently I was showing my friend @craftycoder the tweaks I have on my system (fzf, autojump, etc) and he showed me this theme, agnoster.">
-
-
 <meta itemprop="datePublished" content="2018-04-29T15:38:00&#43;02:00" />
 <meta itemprop="dateModified" content="2018-04-29T15:38:00&#43;02:00" />
 <meta itemprop="wordCount" content="464">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content=" Mac," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2018/04/modifying-agnoster-theme-for-zsh.html/screenshot.jpg"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Modifying the agnoster theme for zsh</h1>
         
@@ -149,54 +153,39 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Even though I have been a long time user of <a href="http://ohmyz.sh/" target="_blank">oh-my-zsh</a> on zsh (moved from <a href="https://amzn.to/2KqeJR4" target="_blank">plain bash to zsh</a> like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: <code>robbyrussell</code>. But recently I was showing my friend @<a href="http://crafty-coder.com/" target="_blank">craftycoder</a> the tweaks I have on my system (<a href="https://github.com/junegunn/fzf" target="_blank">fzf</a>, <a href="https://github.com/wting/autojump" target="_blank">autojump</a>, etc) and he showed me this theme, <a href="https://github.com/agnoster/agnoster-zsh-theme" target="_blank">agnoster</a>.</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>Even though I have been a long time user of <a href="http://ohmyz.sh/">oh-my-zsh</a> on zsh (moved from <a href="https://amzn.to/2KqeJR4">plain bash to zsh</a> like 10 years ago), I have been minimal on my use of its theme capabilities. I have used the default theme forever: <code>robbyrussell</code>. But recently I was showing my friend @<a href="http://crafty-coder.com/">craftycoder</a> the tweaks I have on my system (<a href="https://github.com/junegunn/fzf">fzf</a>, <a href="https://github.com/wting/autojump">autojump</a>, etc) and he showed me this theme, <a href="https://github.com/agnoster/agnoster-zsh-theme">agnoster</a>.</p>
 <p>It had several pieces I liked:</p>
-
 <ul>
 <li>Powerline-style prompt</li>
 <li>Git status</li>
 <li>Virtualenv detection</li>
 </ul>
-
-<p>I wasn’t sold on some of the default decisions, so I decided to completely tweak and remove stuff I didn’t need. You can have a look <a href="https://github.com/rberenguel/rb-zsh-theme" target="_blank">here</a>.</p>
-
+<p>I wasn’t sold on some of the default decisions, so I decided to completely tweak and remove stuff I didn’t need. You can have a look <a href="https://github.com/rberenguel/rb-zsh-theme">here</a>.</p>
 <h2 id="what-did-i-want-to-modify">What did I want to modify?</h2>
-
 <ul>
 <li>Too long branch names. Looks very nice with <code>master</code> but is a bit more troublesome with <code>feature/SAS-4028/kubernetes/poc</code></li>
 <li>I don’t care that much about the path. Current directory is enough</li>
 <li>Usually I like knowing in which <code>git</code> project I am in better</li>
 </ul>
-
 <figure class="fig-wide">
     <img src="screenshot.jpg"/> 
 </figure>
 
-
 <h2 id="path">Path</h2>
-
-<p>I played around with several options to make the path look as I would like. I started with the <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/shrink-path" target="_blank">shrink-path</a> Zsh plugin, but I didn’t totally like how it looked. I cobbled together a bit of <code>awk</code> to get 2 or 3 characters out of each piece of the path instead, it didn’t look much better but was taking much more space. Ended up with just current dir, this is excellent actually.</p>
-
+<p>I played around with several options to make the path look as I would like. I started with the <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/shrink-path">shrink-path</a> Zsh plugin, but I didn’t totally like how it looked. I cobbled together a bit of <code>awk</code> to get 2 or 3 characters out of each piece of the path instead, it didn’t look much better but was taking much more space. Ended up with just current dir, this is excellent actually.</p>
 <h2 id="branch-name">Branch name</h2>
-
-<p>Paths at work are of the form <code>{kind}/{ticket number}/{description}</code>. I don’t want to know all the pieces. Kind is any of <code>feature</code>, <code>hotfix</code> (very rarely) or occasionally might be something else. It could be shortened to just a few letters. In general, I like seeing the full ticket number (no specific reason). I don’t need to know the full description, it can be shortened to 4 or 5 characters. Awk to the rescue. I love awk. With it I reduced the branch names to what I wanted, additionally I wrote a small checker that makes Spark’s style pull request naming also be shortened. You can check the awk approach <a href="https://github.com/rberenguel/rb-zsh-theme/blob/master/rb.zsh-theme#L60" target="_blank">here</a>.</p>
-
+<p>Paths at work are of the form <code>{kind}/{ticket number}/{description}</code>. I don’t want to know all the pieces. Kind is any of <code>feature</code>, <code>hotfix</code> (very rarely) or occasionally might be something else. It could be shortened to just a few letters. In general, I like seeing the full ticket number (no specific reason). I don’t need to know the full description, it can be shortened to 4 or 5 characters. Awk to the rescue. I love awk. With it I reduced the branch names to what I wanted, additionally I wrote a small checker that makes Spark’s style pull request naming also be shortened. You can check the awk approach <a href="https://github.com/rberenguel/rb-zsh-theme/blob/master/rb.zsh-theme#L60">here</a>.</p>
 <h2 id="git-project">Git project</h2>
-
 <p>Knowing the project and current folder is everything I need to know. If I need to know more, I just <code>pwd</code>.</p>
-
 <h2 id="error-under-last-command-root-background-processing">Error under last command, root, background processing</h2>
-
 <p>I don’t like my prompt to change shape. I changed the error reporting to switch colours of the current directory to red. And dropped background processes and root reporting, since I’m never root on my machine, and never run anything in the background unless it needs to be globally.</p>
-
 <h2 id="user-information">User information</h2>
-
 <p>I’m usually pretty sure which user I am, so&hellip; Removed it, I prefer a shorter prompt if possible.</p>
-
 <h2 id="some-helpers">Some helpers</h2>
-
-<p>I added a couple of helpers, reusing some of the code/ideas: jump to Github and jump to JIRA. You can see them in the <a href="https://github.com/rberenguel/rb-zsh-theme" target="_blank">repository</a>.</p><hr/><ul class="pa0">
+<p>I added a couple of helpers, reusing some of the code/ideas: jump to Github and jump to JIRA. You can see them in the <a href="https://github.com/rberenguel/rb-zsh-theme">repository</a>.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/mac" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif"> Mac</a>
@@ -245,8 +234,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

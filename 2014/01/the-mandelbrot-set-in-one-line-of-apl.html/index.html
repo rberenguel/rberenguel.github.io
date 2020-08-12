@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | The Mandelbrot set in one line of APL</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -35,18 +39,14 @@
 
     <meta property="og:title" content="The Mandelbrot set in one line of APL" />
 <meta property="og:description" content="Is this line noise?
-
-⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?" />
+ ⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/2014/01/the-mandelbrot-set-in-one-line-of-apl.html/" />
 <meta property="article:published_time" content="2014-01-02T20:37:00+01:00" />
 <meta property="article:modified_time" content="2014-01-02T20:37:00+01:00" />
 <meta itemprop="name" content="The Mandelbrot set in one line of APL">
 <meta itemprop="description" content="Is this line noise?
-
-⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?">
-
-
+ ⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?">
 <meta itemprop="datePublished" content="2014-01-02T20:37:00&#43;01:00" />
 <meta itemprop="dateModified" content="2014-01-02T20:37:00&#43;01:00" />
 <meta itemprop="wordCount" content="1519">
@@ -54,7 +54,6 @@
 
 
 <meta itemprop="keywords" content="Programming,Emacs,Fractals,Acme,Maths,APL," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -66,8 +65,7 @@
 
 <meta name="twitter:title" content="The Mandelbrot set in one line of APL"/>
 <meta name="twitter:description" content="Is this line noise?
-
-⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?"/>
+ ⍉&#39; *&#39;[⍎&#39;1&#43;0&lt;|z&#39;,(∊150⍴⊂&#39;←c&#43;m×m&#39;),&#39;←c←(¯2.1J¯1.3&#43;(((2.6÷b-1)×(¯1&#43;⍳b))∘.&#43;(0J1×(2.6÷b-1)×(¯1&#43;⍳b←51))))&#39;] Nope. This is not line noise, but a complete APL program to display the Mandelbrot set in glorious ASCII, with asterisks and spaces just like Brooks and Matelski did a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?"/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -86,7 +84,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -137,7 +135,10 @@ if (!doNotTrack) {
 
 
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">The Mandelbrot set in one line of APL</h1>
         
@@ -153,112 +154,87 @@ if (!doNotTrack) {
     
 
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-
-<p>Is this line noise?</p>
-
-<p><br/></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span><span style="color:#f92672">⍎</span><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span>(<span style="color:#f92672">∊</span><span style="color:#ae81ff">150</span><span style="color:#f92672">⍴⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>)<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;</span><span style="color:#e6db74">]</span></code></pre></div>
-<p>Nope. This is not line noise, but a complete APL program to display the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot set</a> in glorious ASCII, with asterisks and spaces just like Brooks and Matelski <a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel.png" target="_blank">did</a> a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?</p>
-
-<p><a href="MandelbrotAPL.png" target="_blank"><img src="MandelbrotAPL.png" alt="" /></a></p>
-
+    <p>Is this line noise?</p>
+<br/>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span><span style="color:#f92672">⍎</span><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span>(<span style="color:#f92672">∊</span><span style="color:#ae81ff">150</span><span style="color:#f92672">⍴</span><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>)<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;</span><span style="color:#e6db74">]</span>
+</code></pre></div><p>Nope. This is not line noise, but a complete APL program to display the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> in glorious ASCII, with asterisks and spaces just like Brooks and Matelski <a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel.png">did</a> a long time ago while studying Kleinian groups (it&rsquo;s a short paper, read it someday). I&rsquo;ll explain in (a lot, I hope) detail this line in a few moments. So, what&rsquo;s APL first?</p>
+<p><a href="MandelbrotAPL.png"><img src="MandelbrotAPL.png" alt=""></a></p>
 <p>APL is literally <strong>A</strong> <strong>P</strong>rogramming <strong>L</strong>anguage. Funny, isn&rsquo;t it? Its origins can be traced back to a way to formalise algorithms created by Kenneth Iverson while at Harvard. It is famed as a very cryptic language, for a reason. Its fundamental functions are unicode chars, and at first it feels extremely weird.</p>
-
-<p>I got interested in it after finding an iOS interpreter for <a href="http://en.wikipedia.org/wiki/J_(programming_language)" target="_blank">J</a>, a programming language developed as a successor to APL, also by K.I. It just got away without Unicode, leaving only cryptic dygraphs, like &lt;.@o. (from a Wikipedia example of high precision computing.) J is very cool, in that it offers a terse syntax to operate with matrices and vectors, very much like Matlab (Octave in my case) or R. But I felt I&rsquo;d rather check the first idea, before diving into the even weirder syntax of J. So, it was APL.</p>
-
-<p>The first problem was finding a good APL interpreter. Most were paid (and extremely expensive) and I could only find 2 APL interpreters working in Mac OS. One is <a href="https://github.com/ngn/apl" target="_blank">NGN APL</a> an implementation focused on node.js Also usable on a browser, so it is cool. But I&rsquo;d rather get a little closer to the system&hellip; And decided to use <a href="http://www.gnu.org/software/apl/" target="_blank">Gnu APL</a> instead. Of course, using an emacs mode for <a href="https://github.com/lokedhs/gnu-apl-mode" target="_blank">gnu-apl</a>. Caveat: make sure to add</p>
+<p>I got interested in it after finding an iOS interpreter for <a href="http://en.wikipedia.org/wiki/J_(programming_language)">J</a>, a programming language developed as a successor to APL, also by K.I. It just got away without Unicode, leaving only cryptic dygraphs, like &lt;.@o. (from a Wikipedia example of high precision computing.) J is very cool, in that it offers a terse syntax to operate with matrices and vectors, very much like Matlab (Octave in my case) or R. But I felt I&rsquo;d rather check the first idea, before diving into the even weirder syntax of J. So, it was APL.</p>
+<p>The first problem was finding a good APL interpreter. Most were paid (and extremely expensive) and I could only find 2 APL interpreters working in Mac OS. One is <a href="https://github.com/ngn/apl">NGN APL</a> an implementation focused on node.js Also usable on a browser, so it is cool. But I&rsquo;d rather get a little closer to the system&hellip; And decided to use <a href="http://www.gnu.org/software/apl/">Gnu APL</a> instead. Of course, using an emacs mode for <a href="https://github.com/lokedhs/gnu-apl-mode">gnu-apl</a>. Caveat: make sure to add</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export LC_ALL<span style="color:#f92672">=</span>es_ES.UTF-8  
-export LANG<span style="color:#f92672">=</span>es_ES.UTF-8</code></pre></div>
-<p>to your .zshrc or similar, without it you&rsquo;ll need to add a hook to <code>gnu-apl</code> mode reading</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(set-buffer-process-coding-system <span style="color:#e6db74">&#39;utf-8</span> <span style="color:#e6db74">&#39;utf-8</span>)</code></pre></div>
-<p>to make sure emacs and apl talk in utf-8. Without it, there are no commands to send to the interpreter!</p>
-
-<p>Since I&rsquo;m also a heavy <a href="http://www.mostlymaths.net/search/label/acme" target="_blank">acme</a> user, and acme is well-known in its unicode support, I used it instead to develop that line above. But emacs works correctly, I just like having things to tinker with acme.</p>
-
+export LANG<span style="color:#f92672">=</span>es_ES.UTF-8
+</code></pre></div><p>to your .zshrc or similar, without it you&rsquo;ll need to add a hook to <code>gnu-apl</code> mode reading</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(set-buffer-process-coding-system <span style="color:#e6db74">&#39;utf-8</span> <span style="color:#e6db74">&#39;utf-8</span>)
+</code></pre></div><p>to make sure emacs and apl talk in utf-8. Without it, there are no commands to send to the interpreter!</p>
+<p>Since I&rsquo;m also a heavy <a href="http://www.mostlymaths.net/search/label/acme">acme</a> user, and acme is well-known in its unicode support, I used it instead to develop that line above. But emacs works correctly, I just like having things to tinker with acme.</p>
 <p>Getting back to the line-noisiness of APL, first you need to know that precedence is right-to-left, so</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">3</span><span style="color:#f92672">×</span><span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>  </code></pre></div>
-<p>in APL yields 12 instead of the expected 10. You can change this with parentheses. Now that I have taken this out, we can analyse the line above. Instead of explaining it from right to left, I&rsquo;ll explain how I proceeded to develop it.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">3</span><span style="color:#f92672">×</span><span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>  
+</code></pre></div><p>in APL yields 12 instead of the expected 10. You can change this with parentheses. Now that I have taken this out, we can analyse the line above. Instead of explaining it from right to left, I&rsquo;ll explain how I proceeded to develop it.</p>
 <h2 id="iterating-the-quadratic-polynomial">Iterating the quadratic polynomial</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">(<span style="color:#f92672">∊</span><span style="color:#ae81ff">150</span><span style="color:#f92672">⍴⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>)</code></pre></div>
-<p>Succintly (I could explain a lot of the mathematics behind, but I just want to do a picture today) to draw the Mandelbrot set we need to find complex points <code>c=x+iy</code> (remember: you can think of a complex point as a point in a plane, like a screen: it has an x coordinate and a y coordinate) such that computing</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">(<span style="color:#f92672">∊</span><span style="color:#ae81ff">150</span><span style="color:#f92672">⍴</span><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>)
+</code></pre></div><p>Succintly (I could explain a lot of the mathematics behind, but I just want to do a picture today) to draw the Mandelbrot set we need to find complex points <code>c=x+iy</code> (remember: you can think of a complex point as a point in a plane, like a screen: it has an x coordinate and a y coordinate) such that computing</p>
 <p>$$f(z)=z^2+c$$</p>
-
 <p>a lot of times with z=c is eventually a point outside a circle of radius 2. For instance, if c=1 this would be:</p>
-
 <ol>
 <li>$$f(1)=1^2+1=2$$</li>
 <li>$$f(f(1))=f(2)=2^2+1=5$$</li>
 <li>$$f(f(f(1)))=f(5)=25+1=26$$</li>
 </ol>
-
 <p>And so on. In this particular case, after the first iterate we could stop. Remember that to do so, the product c·c is the product of complex numbers.</p>
-
 <p>So the first part I wanted to get out of my way was generating this iteration. There are several ways to do it in APL, but a very cool way I found was to first generate the required computation like above. How?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;c+m×m&#39;</span></code></pre></div>
-<p>computes exactly this, if <code>m=c</code> or if <code>m</code> is any other iterate, like <code>m=f(f(f(c)))</code>. In <code>APL</code> speak, making <code>m</code> hold the same as <code>c</code> would be</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">m<span style="color:#66d9ef">←</span>c</code></pre></div>
-<p>and with right-to-left priority,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c</code></pre></div>
-<p>means &ldquo;assign to m the value of c, multiply m by m (remember: it&rsquo;s the same as c) and add c.&rdquo; Likewise,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c</code></pre></div>
-<p>ends is computing the 2nd term in the list above, if <code>c</code> is 1. So we have a pretty clear idea of how it should look like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">something<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c</code></pre></div>
-<p>This is essentially &ldquo;many times&rdquo; the string <code>c+m×m</code>. There&rsquo;s a very, very easy way to repeat something in APL. For instance, <code>3 ⍴ 1</code> (read 3 <em>reshape</em> 1) creates a vector with three ones, <code>1 1 1</code>. Reshape essentially multiplies or trims vectors. But&hellip; <code>3 ⍴ 'tomato'</code> is &lsquo;tom&rsquo;. The reshaping also cuts, of course! What we need is to make APL treat the string <code>c+m×m</code> as one element. This is done with the next instruction in the Mandelbrot line, as you may guess: <em>encapsulate</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span></code></pre></div>
-<p>ensures APL treats it as one element, so</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">20</span><span style="color:#f92672">⍴⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span></code></pre></div>
-<p>generates a neat and long string of what the iterates should look like. To make sure the final string makes APL-sense, first we <em>enlist</em> with <code>∊</code>: turns the vector of repeated iterates into just one iterated element, like a long string all together. This could actually be removed, but it allowed me to learn a new function and I think it&rsquo;s pretty interesting. To end in a proper way, we add to the string a receiver variable <code>z</code> and fuse the strings with <code>,</code>.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;c+m×m&#39;</span>
+</code></pre></div><p>computes exactly this, if <code>m=c</code> or if <code>m</code> is any other iterate, like <code>m=f(f(f(c)))</code>. In <code>APL</code> speak, making <code>m</code> hold the same as <code>c</code> would be</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">m<span style="color:#66d9ef">←</span>c
+</code></pre></div><p>and with right-to-left priority,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c
+</code></pre></div><p>means &ldquo;assign to m the value of c, multiply m by m (remember: it&rsquo;s the same as c) and add c.&rdquo; Likewise,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c
+</code></pre></div><p>ends is computing the 2nd term in the list above, if <code>c</code> is 1. So we have a pretty clear idea of how it should look like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">something<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c<span style="color:#f92672">+</span>m<span style="color:#f92672">×</span>m<span style="color:#66d9ef">←</span>c
+</code></pre></div><p>This is essentially &ldquo;many times&rdquo; the string <code>c+m×m</code>. There&rsquo;s a very, very easy way to repeat something in APL. For instance, <code>3 ⍴ 1</code> (read 3 <em>reshape</em> 1) creates a vector with three ones, <code>1 1 1</code>. Reshape essentially multiplies or trims vectors. But&hellip; <code>3 ⍴ 'tomato'</code> is &lsquo;tom&rsquo;. The reshaping also cuts, of course! What we need is to make APL treat the string <code>c+m×m</code> as one element. This is done with the next instruction in the Mandelbrot line, as you may guess: <em>encapsulate</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>
+</code></pre></div><p>ensures APL treats it as one element, so</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">20</span><span style="color:#f92672">⍴</span><span style="color:#f92672">⊂</span><span style="color:#e6db74">&#39;←c+m×m&#39;</span>
+</code></pre></div><p>generates a neat and long string of what the iterates should look like. To make sure the final string makes APL-sense, first we <em>enlist</em> with <code>∊</code>: turns the vector of repeated iterates into just one iterated element, like a long string all together. This could actually be removed, but it allowed me to learn a new function and I think it&rsquo;s pretty interesting. To end in a proper way, we add to the string a receiver variable <code>z</code> and fuse the strings with <code>,</code>.</p>
 <p>I know this was long, but the iteration was the trickiest part!</p>
-
 <h2 id="generating-the-grid-of-points">Generating the grid of points</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;</span></code></pre></div>
-<p>Since APL is cool with matrices (and complex numbers!) we can assign to the initial <code>c</code> a whole matrix of complex points (our screen pixels) and then we&rsquo;ll have all the data required for the picture.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))&#39;</span>
+</code></pre></div><p>Since APL is cool with matrices (and complex numbers!) we can assign to the initial <code>c</code> a whole matrix of complex points (our screen pixels) and then we&rsquo;ll have all the data required for the picture.</p>
 <p>This weird piece is just a compact way of generating a grid. To make it easier to understand,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span></code></pre></div>
-<p>(that&rsquo;s read as <em>iota</em> 10) generates the sequence <code>1 2 3 4 5</code>. To create a matrix we need two sequences (one for the $x$ coordinates and another for the $y$ coordinates.) For the complex numbers we can do</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">0J1</span> <span style="color:#f92672">⍳×</span> <span style="color:#ae81ff">5</span></code></pre></div>
-<p>which yields <code>0J1 0J2 0J3 0J4 0J5</code>. As you may guess if you&rsquo;ve been following, <code>0J1</code> is just the complex number $i$. For some weird reason APL uses the <code>j</code> letter instead of $i$. No big issue. Now we have the $x$&rsquo;s which go from 1 to 5 and the $y$&rsquo;s which go from $i$ to $5i$. Whichare then all the complex points in the plane we are creating? This means adding one of each $x$ to each $y$, to get a grid. Similar to a multiplication table, but with sums instead of products. APL magic to the rescue, there is a function for that&rsquo;s</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">(<span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span>) <span style="color:#a6e22e">.</span><span style="color:#f92672">+</span> (<span style="color:#ae81ff">0J1</span><span style="color:#f92672">×</span>(<span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span>))</code></pre></div>
-<p>returns</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span>
+</code></pre></div><p>(that&rsquo;s read as <em>iota</em> 10) generates the sequence <code>1 2 3 4 5</code>. To create a matrix we need two sequences (one for the $x$ coordinates and another for the $y$ coordinates.) For the complex numbers we can do</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#ae81ff">0J1</span> <span style="color:#f92672">⍳</span><span style="color:#f92672">×</span> <span style="color:#ae81ff">5</span>
+</code></pre></div><p>which yields <code>0J1 0J2 0J3 0J4 0J5</code>. As you may guess if you&rsquo;ve been following, <code>0J1</code> is just the complex number $i$. For some weird reason APL uses the <code>j</code> letter instead of $i$. No big issue. Now we have the $x$'s which go from 1 to 5 and the $y$'s which go from $i$ to $5i$. Whichare then all the complex points in the plane we are creating? This means adding one of each $x$ to each $y$, to get a grid. Similar to a multiplication table, but with sums instead of products. APL magic to the rescue, there is a function for that&rsquo;s</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl">(<span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span>) <span style="color:#a6e22e">.</span><span style="color:#f92672">+</span> (<span style="color:#ae81ff">0J1</span><span style="color:#f92672">×</span>(<span style="color:#f92672">⍳</span><span style="color:#ae81ff">5</span>))
+</code></pre></div><p>returns</p>
 <pre><code>1J1 1J2 1J3 1J4 1J5  
 2J1 2J2 2J3 2J4 2J5  
 3J1 3J2 3J3 3J4 3J5  
 4J1 4J2 4J3 4J4 4J5  
 5J1 5J2 5J3 5J4 5J5
-</code></pre>
-
-<p>which is pretty close to what we need. To plot the Mandelbrot set we are only interested (mostly, and in this particular instance) in points with real coordinate $-2.1&lt;x&lt;0.5$ and complex coordinate  $-1.3&lt;y&lt;1.3$ (just to make it square which is easier to reason). So, the next long APL blurb just adds a matrix similar to the one above to a complex point, generating the grid of points we want, and assigns it to <code>c</code>. Almost done!</p>
-
+</code></pre><p>which is pretty close to what we need. To plot the Mandelbrot set we are only interested (mostly, and in this particular instance) in points with real coordinate $-2.1&lt;x&lt;0.5$ and complex coordinate  $-1.3&lt;y&lt;1.3$ (just to make it square which is easier to reason). So, the next long APL blurb just adds a matrix similar to the one above to a complex point, generating the grid of points we want, and assigns it to <code>c</code>. Almost done!</p>
 <h2 id="computing-and-plotting">Computing and plotting</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span><span style="color:#f92672">⍎</span><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span></code></pre></div>
-<p>After we have the set of points in <code>c</code>, we merge this string (with <em>comma</em>) to the iteration we developed above. At the far right of the iteration we find this piece:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span></code></pre></div>
-<p>As you may guess, this adds to the string we have constructed the term <code>1+0&lt;|z</code> which from right to left does:</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span><span style="color:#f92672">⍎</span><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span>
+</code></pre></div><p>After we have the set of points in <code>c</code>, we merge this string (with <em>comma</em>) to the iteration we developed above. At the far right of the iteration we find this piece:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#e6db74">&#39;1+0&lt;|z&#39;</span><span style="color:#f92672">,</span>
+</code></pre></div><p>As you may guess, this adds to the string we have constructed the term <code>1+0&lt;|z</code> which from right to left does:</p>
 <ol>
 <li>Compute the norm (distance to the origin) of the final iterate, which was assigned to <code>z</code> at the end of the iteration, the norm is computed with <code>|</code></li>
 <li>Check if this is larger than 4. This generates a matrix of 1s and 0s (for booleans)</li>
 <li>Add 1 to all entries of this matrix (so we have a matrix full of 1s and 2s</li>
 </ol>
-
 <p><span class="scaps">Note:</span> The first version of this code had <code>0&lt;|z</code>, which works well for rough images of the Mandelbrot set, since most iterates are eventually <code>INFNAN</code>, which is a funny number in programming, since it is positive, smaller than 0, different from itself, etc. This is cleaner though.</p>
-
 <p>We have a neat string which can generate a matrix of 1s and 2s and represent the Mandelbrot set. How do we make this string compute something? Meta-magic</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍎</span></code></pre></div>
-<p>(known as <em>execute</em>) takes a string and computes it as an APL function. Just like <em>eval</em> in Lisp, Javascript or Python.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍎</span>
+</code></pre></div><p>(known as <em>execute</em>) takes a string and computes it as an APL function. Just like <em>eval</em> in Lisp, Javascript or Python.</p>
 <h2 id="represent-it-neatly">Represent it neatly</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span>stuff<span style="color:#e6db74">]</span></code></pre></div>
-<p>Since a matrix can be used to index a vector, we use this newly computed matrix as indexes (i.e. between square bracket) with the vector <code>' \*'</code> so we get almost a Mandelbrot set. But since I was slightly lazy when generating the grid of points, it is transposed. <code>⍉</code> (transpose) fixes it and finishes the line and the program.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apl" data-lang="apl"><span style="color:#f92672">⍉</span><span style="color:#e6db74">&#39; *&#39;</span><span style="color:#e6db74">[</span>stuff<span style="color:#e6db74">]</span>
+</code></pre></div><p>Since a matrix can be used to index a vector, we use this newly computed matrix as indexes (i.e. between square bracket) with the vector <code>' \*'</code> so we get almost a Mandelbrot set. But since I was slightly lazy when generating the grid of points, it is transposed. <code>⍉</code> (transpose) fixes it and finishes the line and the program.</p>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Writing this line of code took me quite a long time, mostly because I was getting used to APL and I didn&rsquo;t know my way around the language. Now that I&rsquo;m done I&rsquo;m quite impressed, and I&rsquo;m looking forward to doing some more fun stuff with it. And if possible, some useful stuff.</p>
 <hr/><ul class="pa0">
   
@@ -329,8 +305,9 @@ export LANG<span style="color:#f92672">=</span>es_ES.UTF-8</code></pre></div>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

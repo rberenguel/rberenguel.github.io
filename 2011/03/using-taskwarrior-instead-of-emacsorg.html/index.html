@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Using Taskwarrior Instead Of Emacs&#43;Org Mode For To-Do And Appointment Tracking</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="/css/custom.css">
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
     
 
     
@@ -45,8 +49,6 @@ I have a confession to make: I&rsquo;m not using emacs&#43;org mode to keep my t
 <meta itemprop="description" content="One of my fractal images
 
 I have a confession to make: I&rsquo;m not using emacs&#43;org mode to keep my to-do list and appointments. What? The same emacs junkie that used emacs for (almost) everything last December gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.">
-
-
 <meta itemprop="datePublished" content="2011-03-13T13:50:00&#43;01:00" />
 <meta itemprop="dateModified" content="2011-03-13T13:50:00&#43;01:00" />
 <meta itemprop="wordCount" content="1189">
@@ -54,7 +56,6 @@ I have a confession to make: I&rsquo;m not using emacs&#43;org mode to keep my t
 
 
 <meta itemprop="keywords" content="emacs,Linux,Time Management,NanoNote," />
-
 
 <meta name="twitter:card" content="summary" />
 
@@ -86,7 +87,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -131,7 +132,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Using Taskwarrior Instead Of Emacs&#43;Org Mode For To-Do And Appointment Tracking</h1>
         
@@ -147,81 +151,56 @@ if (!doNotTrack) {
     
 
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify ">
-
-<p><a href="http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s1600/7.jpg" target="_blank"><img src="http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s400/7.jpg" alt="" /></a></p>
-
-<p><a href="http://www.mostlymaths.net/p/free-downloads.html" target="_blank">One of my fractal images<br />
+    <p><a href="http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s1600/7.jpg"><img src="http://3.bp.blogspot.com/-PUFX0Tx4kac/TXy6fMfM8vI/AAAAAAAADCw/xQgvhMNj7Ek/s400/7.jpg" alt=""></a></p>
+<p><a href="http://www.mostlymaths.net/p/free-downloads.html">One of my fractal images<br>
 </a></p>
-
-<p>I have a confession to make: <strong>I&rsquo;m not using emacs+org mode to keep my to-do list and appointments</strong>. What? The same emacs junkie that <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html" target="_blank">used emacs for (almost) everything last December</a> gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.</p>
-
+<p>I have a confession to make: <strong>I&rsquo;m not using emacs+org mode to keep my to-do list and appointments</strong>. What? The same emacs junkie that <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">used emacs for (almost) everything last December</a> gave up emacs? Yes, the same, but only gave up for this use case. I have some good reasons about why I am using TaskWarrior. Which does not mean that I could not be using emacs for the same, I just wanted to try something new.</p>
 <h2 id="taskwarrior-is-very-geeky">TaskWarrior is very geeky</h2>
-
 <p>TaskWarrior as implied by the title of this post is a program you can use to keep a to-do list, appointments and project related lists of tasks. And is very geeky because it works from the command line. Yes, it is a task manager with a CLI (command line interface, as much as I love CLI&rsquo;s and acronyms, I had never used this one before!). And this is close to being the top in geekyness you can get.</p>
-
-<p>You could get over the top and write your own task manager as a lot of people have done. In fact, I found about TW after learning about <a href="http://stevelosh.com/projects/t/" target="_blank">t</a>, the python based minimalistic task manager, through finding <a href="http://www.penzba.co.uk/t-/t-.html?HN1" target="_blank">t-</a> in HackerNews, an even more minimalistic version of it.</p>
-
+<p>You could get over the top and write your own task manager as a lot of people have done. In fact, I found about TW after learning about <a href="http://stevelosh.com/projects/t/">t</a>, the python based minimalistic task manager, through finding <a href="http://www.penzba.co.uk/t-/t-.html?HN1">t-</a> in HackerNews, an even more minimalistic version of it.</p>
 <p>Adding a task to taskwarrior is a little more <em>simple</em> than using org-mode, but this is just a matter of taste. You can add a task to an org file just by writing a line, whereas to add a task to TaskWarrior you issue task add task. Which I feel better about, it is the way it should be.</p>
-
 <h2 id="i-want-to-use-my-ben-nanonote-for-something">I want to use my Ben Nanonote for something</h2>
-
-<p>You probably remember my little pocket computer, the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Ben Nanonote</a>. It is a somewhat shiny little gadget, very lovely and for me, quite useless&hellip;. I have an iPod Touch and an iPad, what use can have a pocket-sized Linux based clamshell computer with <a href="http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html" target="_blank">Debian</a> without X and 320x200 pixels?</p>
-
-<p>At first, as part of my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html" target="_blank">emacs 30 day challenge</a>, I planned to use the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html" target="_blank">Nanonote</a> as an agenda, with emacs and org-mode. But this was hard to do: the keyboard has small keys and I have big fingers. I gave up, and almost stopped using it completely. Then, while on Switzerland I used the tiny beast to do some computations using Pari/GP and started to like it again. Although it lacks (mine, with my Debian installation) a good graphical plotter and visualiser (gnuplot does not work completely), it has yacas for symbolic algebra, Pari/GP for number theory and high precision computation and Octave. It also has C compiler&hellip; Forth, Lisp, Python, you name it. It is a nice gadget to keep close, but I wanted to use it for something. Here enters TaskWarrior, which fits like hand in glove with my Ben.</p>
-
+<p>You probably remember my little pocket computer, the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Ben Nanonote</a>. It is a somewhat shiny little gadget, very lovely and for me, quite useless&hellip;. I have an iPod Touch and an iPad, what use can have a pocket-sized Linux based clamshell computer with <a href="http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html">Debian</a> without X and 320x200 pixels?</p>
+<p>At first, as part of my <a href="http://www.mostlymaths.net/2010/12/emacs-30-day-challenge.html">emacs 30 day challenge</a>, I planned to use the <a href="http://www.mostlymaths.net/2010/03/unpacking-my-ben-nanonote.html">Nanonote</a> as an agenda, with emacs and org-mode. But this was hard to do: the keyboard has small keys and I have big fingers. I gave up, and almost stopped using it completely. Then, while on Switzerland I used the tiny beast to do some computations using Pari/GP and started to like it again. Although it lacks (mine, with my Debian installation) a good graphical plotter and visualiser (gnuplot does not work completely), it has yacas for symbolic algebra, Pari/GP for number theory and high precision computation and Octave. It also has C compiler&hellip; Forth, Lisp, Python, you name it. It is a nice gadget to keep close, but I wanted to use it for something. Here enters TaskWarrior, which fits like hand in glove with my Ben.</p>
 <h2 id="using-taskwarrior-with-screenshots">Using TaskWarrior (with screenshots)</h2>
-
-<p>I add whatever task is lingering in my mind as I wake up, like buying something for supper?, with task add task. List my tasks by issuing task (note: add alias t=task in your .bashrc!). This is because the default action (which can be customised) is list. You can change this (and a whole lot of other options), but this is out of the scope of this short introduction. Read the <a href="http://taskwarrior.org/wiki/taskwarrior" target="_blank">full TaskWarrior manual here</a>.</p>
-
-<p><a href="http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s1600/AddingListingTaskWarrior.png" target="_blank"><img src="http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s400/AddingListingTaskWarrior.png" alt="" /></a> <a href="http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s1600/DatesTaskWarrior.png" target="_blank"><img src="http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s400/DatesTaskWarrior.png" alt="" /></a><br />
+<p>I add whatever task is lingering in my mind as I wake up, like buying something for supper?, with task add task. List my tasks by issuing task (note: add alias t=task in your .bashrc!). This is because the default action (which can be customised) is list. You can change this (and a whole lot of other options), but this is out of the scope of this short introduction. Read the <a href="http://taskwarrior.org/wiki/taskwarrior">full TaskWarrior manual here</a>.</p>
+<p><a href="http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s1600/AddingListingTaskWarrior.png"><img src="http://4.bp.blogspot.com/-Xw4kxx9xSy0/TXy0vVd4iEI/AAAAAAAADCo/jh_a7hLQj4A/s400/AddingListingTaskWarrior.png" alt=""></a> <a href="http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s1600/DatesTaskWarrior.png"><img src="http://4.bp.blogspot.com/-iwB-ohKkd6g/TXy0mxXy2DI/AAAAAAAADCY/xAVtFn5Kxyw/s400/DatesTaskWarrior.png" alt=""></a><br>
 Adding tasks, setting projects and so on</p>
-
 <p>You can add projects, due dates, priorities and tags to a task with the keywords <em>project</em>, <em>due</em>, <em>priority</em> and <em>tag</em>, followed by a colon. Like task add Do something today due:today priority:H project:Hey +tag1. You add a <em>+</em> to a tag to decide whether adding a tag, +tagname or removing a tag, -tagname. To mark a task as done, you issue task #taskID done. And to find tasks matching some criteria, you should task list criteria. You can be more specific, with task list project:specificproject, or use some custom show function like task list complete. I know that TaskWarrior at first is a little verbose&hellip; but <strong>you can abbreviate</strong>: t add Tasktoadd pro:Aproject due:tom pri:L.</p>
-
-<p><a href="http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s1600/PrioritiesTaskWarrior.png" target="_blank"><img src="http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s400/PrioritiesTaskWarrior.png" alt="" /></a> <a href="http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s1600/ListingTaskWarrior.png" target="_blank"><img src="http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s400/ListingTaskWarrior.png" alt="" /></a><br />
+<p><a href="http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s1600/PrioritiesTaskWarrior.png"><img src="http://1.bp.blogspot.com/-UuIWlODznQY/TXy0nG2GRWI/AAAAAAAADCg/2WPhhGs7CHk/s400/PrioritiesTaskWarrior.png" alt=""></a> <a href="http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s1600/ListingTaskWarrior.png"><img src="http://2.bp.blogspot.com/-18wCjpBzhhU/TXy0mlyl3aI/AAAAAAAADCQ/mE0osfUWU9c/s400/ListingTaskWarrior.png" alt=""></a><br>
 Advanced listing and adding</p>
-
 <p>There is also a lot of possibilities to list tasks, task list limit:2 will show only 2 tasks, task next will show you <strong>what to do next</strong> (based on priority, due date and last time acted). Even more, <strong>you can create your custom reports</strong>! I did one that listed the what to work next with a minimal view (to fit the screen of the Ben Nanonote), and it is as simple as adding this to your .taskrc file:</p>
-
 <blockquote>
-<p>#Custom report:<br />
-report.look10.description=Minimal next with due date<br />
-report.look10.columns=id,description,due,priority<br />
-report.look10.labels=ID,Description,Due,P<br />
-report.look10.sort=due+,priority-<br />
-report.look10.filter=depends.none: status:pending<br />
+<p>#Custom report:<br>
+report.look10.description=Minimal next with due date<br>
+report.look10.columns=id,description,due,priority<br>
+report.look10.labels=ID,Description,Due,P<br>
+report.look10.sort=due+,priority-<br>
+report.look10.filter=depends.none: status:pending<br>
 report.look10.limit=10</p>
 </blockquote>
-
-<p><a href="http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s1600/ReportsTaskWarrior.png" target="_blank"><img src="http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s400/ReportsTaskWarrior.png" alt="" /></a> <a href="http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s1600/CustomReportsTaskWarrior.png" target="_blank"><img src="http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s400/CustomReportsTaskWarrior.png" alt="" /></a><br />
+<p><a href="http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s1600/ReportsTaskWarrior.png"><img src="http://4.bp.blogspot.com/-fyi8VXLyGi4/TXy0mfJU7YI/AAAAAAAADCI/YpMQnHqOJUk/s400/ReportsTaskWarrior.png" alt=""></a> <a href="http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s1600/CustomReportsTaskWarrior.png"><img src="http://4.bp.blogspot.com/-ZLOohCJeJ3M/TXy0mOnVM8I/AAAAAAAADCA/7wlsiBCoep0/s400/CustomReportsTaskWarrior.png" alt=""></a><br>
 Listing and custom reports</p>
-
 <p>I also did a custom report that showed me 10 tasks marked as <em>fun</em>, i.e. with the tag +Fun added to them. Thus when I wasn&rsquo;t like working on real work, I could do some fun work. To learn how specific reports work, you can ask TaskWarrior to show them, like task show next:</p>
-
 <blockquote>
-<p>Config variable Value<br />
-next 2<br />
-report.next.columns id,project,priority,due,active,age,description<br />
-report.next.description Lists the most urgent tasks<br />
-report.next.filter status:pending limit:page depends.none:<br />
-report.next.labels ID,Project,Pri,Due,Active,Age,Description<br />
-report.next.sort due+,priority-,active-,project+<br />
+<p>Config variable Value<br>
+next 2<br>
+report.next.columns id,project,priority,due,active,age,description<br>
+report.next.description Lists the most urgent tasks<br>
+report.next.filter status:pending limit:page depends.none:<br>
+report.next.labels ID,Project,Pri,Due,Active,Age,Description<br>
+report.next.sort due+,priority-,active-,project+<br>
 urgency.next.coefficient 10.0</p>
 </blockquote>
-
-<p>There are a lot more options to tweak, like color themes (TaskWarrior comes with quite a few, and you can write your own or download them from somewhere), adding <strong>task dependency</strong>, i.e. task 3 should only be done (and showed) after task 5, adding recurrence to tasks and quite a few more things. If you are interested in finding more about TaskWarrior, install it, play with it a little and start browsing the <a href="http://taskwarrior.org/wiki/taskwarrior" target="_blank">online tutorial</a>.</p>
-
+<p>There are a lot more options to tweak, like color themes (TaskWarrior comes with quite a few, and you can write your own or download them from somewhere), adding <strong>task dependency</strong>, i.e. task 3 should only be done (and showed) after task 5, adding recurrence to tasks and quite a few more things. If you are interested in finding more about TaskWarrior, install it, play with it a little and start browsing the <a href="http://taskwarrior.org/wiki/taskwarrior">online tutorial</a>.</p>
 <h2 id="my-usage-of-taskwarrior-in-the-ben-nanonote">My usage of TaskWarrior in the Ben Nanonote</h2>
-
-<p>I wake up, plug it to my MacBook, configure the network (see this post about <a href="http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html" target="_blank">Debian on the Ben Nanonote</a> to read about networking it) and ssh from the Mac to it.</p>
-
+<p>I wake up, plug it to my MacBook, configure the network (see this post about <a href="http://www.mostlymaths.net/2011/01/installing-debian-on-my-ben-nanonote.html">Debian on the Ben Nanonote</a> to read about networking it) and ssh from the Mac to it.</p>
 <p>When I&rsquo;m ready to go to my office, I unplug my Ben and head for my office. While on commute, I can check my tasks in the Ben or add one as needed just by taking it from my pocket. To save battery life I wrote two scripts named on and off, which just turn the screen on and off (the default timeout is way too long and with fbterm is hard to set up correctly, AFAIK) with echo 0 &gt; /sys/devices/platform/jz4740-fb/graphics/fb0/blank</p>
-
 <p>I get to my office, plug the Ben to my office computer, check for due tasks and work. When the day is over, unplug and head home&hellip; This way, it has always battery left, and my task list is always with me in a very browsable way. And I use my Ben for something!</p>
-
 <p>All these reasons and use cases could work as well with org-mode. I could start emacs in my Ben at boot up, and work in the same way, but I wanted to try something different. So far, I&rsquo;m very happy about how TaskWarrior works, and I was just happy with org-mode, mostly because org-mode works like a super organiser system. And I wanted something more minimalistic, for this specific aspect of my work-life. I.e., I won&rsquo;t be using vi without being forced to do it before hell freezes :).</p>
-
 <p>ParseList(ScrambleList(Relateds(emacs)),2)</p>
 <hr/><ul class="pa0">
   
@@ -284,8 +263,9 @@ urgency.next.coefficient 10.0</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

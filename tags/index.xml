@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on mostlymaths.net</title>
@@ -6,10 +6,28 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 19:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 09:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Books</title>
+      <link>https://mostlymaths.net/tags/books/</link>
+      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -318,15 +336,6 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sun, 24 Nov 2019 14:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Alloy</title>
       <link>https://mostlymaths.net/tags/alloy/</link>
       <pubDate>Sun, 10 Nov 2019 11:00:33 +0200</pubDate>
@@ -503,15 +512,6 @@
       <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/akka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://mostlymaths.net/tags/books/</link>
-      <pubDate>Sun, 07 Apr 2019 19:37:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/books/</guid>
       <description></description>
     </item>
     

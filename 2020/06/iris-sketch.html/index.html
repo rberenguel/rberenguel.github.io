@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Generative iris</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2020-06-12T08:30:33+02:00" />
 <meta itemprop="name" content="Generative iris">
 <meta itemprop="description" content="Here are the details about how my procedural sketch Iris works. This has been one of the fastest and most enjoyable sketches I have created lately">
-
-
 <meta itemprop="datePublished" content="2020-06-12T08:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-06-12T08:30:33&#43;02:00" />
 <meta itemprop="wordCount" content="804">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="Generative,p5js,Javascript," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/06/iris-sketch.html/finalSmall.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Generative iris</h1>
         
@@ -149,8 +153,10 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Here are the details about how my procedural sketch <a href="https://github.com/rberenguel/sketches#iris-p5js" target="_blank">Iris</a> works. This has been one of the fastest and most enjoyable sketches I have created lately</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>Here are the details about how my procedural sketch <a href="https://github.com/rberenguel/sketches#iris-p5js">Iris</a> works. This has been one of the fastest and most enjoyable sketches I have created lately</p>
 <figure class="fig-wide">
     <img src="withUI.png"
          alt="This is what the sketch looks like"/> <figcaption>
@@ -158,9 +164,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>One day I woke up and thought to myself: <em>I should do a generative iris sketch</em>. I don&rsquo;t remember why.</p>
-
 <figure class="fig-not-so-wide">
     <img src="sheldon.gif"
          alt="I was working with luminous fish, and I thought, &amp;lsquo;Hey… loom&amp;rsquo;."/> <figcaption>
@@ -168,19 +172,12 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
-<p>I added it as an idea to my list of <a href="https://mostlymaths.net/tags/p5js/" target="_blank">p5js</a> sketches to create, and last Wednesday while waiting for ibuprofen to work (I had a two-days-and-counting headache), started with it. In just two short afternoons I had a result I am very happy with.</p>
-
-<p>There are several things that go into thinking &ldquo;I will program this&rdquo;. First, the question: <em>is it doable?</em> In this case, since I knew it could be drawn &ldquo;by humans&rdquo;, was <em>yes</em>. The next would be <em>how would I do it?</em>. To prepare, I watched <a href="http://youtube.com/watch?v=yqRhbjUQ7Qg&amp;app=desktop" target="_blank">this Youtube tutorial</a> on how to draw  an eye with <a href="https://procreate.art" target="_blank">Procreate</a>. This gave me the structural ideas I needed: if you don&rsquo;t know how you&rsquo;d draw/paint/construct the object, creating it with code is very hard.</p>
-
-<hr />
-
-<p>I started by implementing a solid circle with a blurred border. Pretty much the same I did for the moonlight and halo in <a href="https://github.com/rberenguel/sketches#crazy-nights-p5js" target="_blank">Crazy Nights</a>.</p>
-
+<p>I added it as an idea to my list of <a href="https://mostlymaths.net/tags/p5js/">p5js</a> sketches to create, and last Wednesday while waiting for ibuprofen to work (I had a two-days-and-counting headache), started with it. In just two short afternoons I had a result I am very happy with.</p>
+<p>There are several things that go into thinking &ldquo;I will program this&rdquo;. First, the question: <em>is it doable?</em> In this case, since I knew it could be drawn &ldquo;by humans&rdquo;, was <em>yes</em>. The next would be <em>how would I do it?</em>. To prepare, I watched <a href="http://youtube.com/watch?v=yqRhbjUQ7Qg&amp;app=desktop">this Youtube tutorial</a> on how to draw  an eye with <a href="https://procreate.art">Procreate</a>. This gave me the structural ideas I needed: if you don&rsquo;t know how you&rsquo;d draw/paint/construct the object, creating it with code is very hard.</p>
+<hr>
+<p>I started by implementing a solid circle with a blurred border. Pretty much the same I did for the moonlight and halo in <a href="https://github.com/rberenguel/sketches#crazy-nights-p5js">Crazy Nights</a>.</p>
 <p>With this, I could have an iris (although flat) and a pupil (with not a lot of interest).</p>
-
 <p>The next would be adding some pattern to the iris. Irises have a linear (muscular fibres, if I&rsquo;m not mistaken) pattern flowing from the pupil outside. For my first implementation, I wrote a generator of lines between the pupil and the outer iris. This method would generate <code>N</code> (for a large <code>N</code>) lines of length adjusted by Perlin noise in a radiating shape. I used a similar approach for the pupil. This is because the pupil is not perfectly circular, but has a ragged contour (because the iris is a muscle).</p>
-
 <figure class="fig-wide">
     <img src="firstIris.png"
          alt="Not so bad for the first. It&amp;rsquo;s watching"/> <figcaption>
@@ -188,11 +185,8 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>The generation of lines is parameterized by a random position (as a percentage) between the outer pupil and the outer iris and a percentage of size to fill for whatever is available until the borders. So, for example, if the initial position is at 0.5 (50%, or middle), a 1 of size (100%) would generate lines that would go up to a maximum of full span of the coloured area of the iris. If initial position is at 0.9 (so, almost at the outer border), 100% size would just fill a band of width from 80% of the iris to 100% of the iris.</p>
-
 <p>This was a good start, looked pretty decent for a quick coding session. I added some highlights: primary, secondary and pupil. The pupil one is fake: real pupils don&rsquo;t shine, the pupil is a hole. But the image looks so much better with it I don&rsquo;t care that much. The highlights are just a radial set of lines with very low opacity. In this first model, opacity decreases to the borders, but is constant along the radii.</p>
-
 <figure class="fig-wide">
     <img src="highlight.png"
          alt="Better with a highlight"/> <figcaption>
@@ -200,9 +194,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>This muscle fiber model looks decent for relatively low resolutions, but on zooming in, it is clear it is just <em>meh</em>. Better solution: with the same approach, construct  polygons and contours. The difference in code is small, the different in results is significant. You can zoom in on this with no issues, it just looks good. The old code with lines is still present, though: combining both gives the best results. I also looked for a good set of colours for irises. Still would need a bit of tweaking, some of the greens feel <em>too</em> green.</p>
-
 <figure class="fig-wide">
     <img src="polygonal.png"
          alt="Polygonal disc is way better"/> <figcaption>
@@ -210,11 +202,8 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>After this change (and a similar one in the pupil) I tweaked the highlights to be smoother. It&rsquo;s hard to get really smooth &ldquo;weird&rdquo; shapes in <code>p5js</code>. In the end I tweaked the sizes and numbers manually until it looked good enough. Alpha jagging is unavoidable with this approach. An idea I&rsquo;ve been floating is using polygonal shapes similar to these arcs but slightly wobbly: then you&rsquo;d think the alpha jagging combined with the uneven borders were just an artifact of the iris itself. It&rsquo;s an idea to explore, but I consider the sketch finished as is.</p>
-
 <p>I randomised the start angle of the discs for the fibers, and added some seed to perlin noise. Finally, added random, small, ellipses strewn over the iris. Irises have this kind of randomness.</p>
-
 <figure class="fig-wide">
     <img src="final.png"
          alt="Final iteration"/> <figcaption>
@@ -222,9 +211,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-
 <p>A happy coincidence with the closing of the polygons (using <code>curveVertex</code> means you need at least 4 vertices, and repeating the last vertex to make sure it closes… I forgot <code>¯\_(ツ)_/¯</code>) makes it look more jagged than it should if the code worked, but the result turns out better by it.</p>
-
 <figure class="fig-wide">
     <img src="withUI.png"
          alt="And the usual UI"/> <figcaption>
@@ -287,8 +274,9 @@ if (!doNotTrack) {
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

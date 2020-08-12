@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Easy paperback book binding how-to</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -38,21 +42,20 @@
    Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/" />
+<meta property="og:image" content="https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/BinderHalfCover.JPG"/>
 <meta property="article:published_time" content="2009-04-09T15:29:00+02:00" />
 <meta property="article:modified_time" content="2009-04-09T15:29:00+02:00" />
 <meta itemprop="name" content="Easy paperback book binding how-to">
 <meta itemprop="description" content="Softcover binding your own books is easier than you think
    Bookbinding for dummies As of late, I have been printing quite a lot of long mathematical papers, and a few free pdf-books, or tutorials. And I wanted them properly bound, but didn&rsquo;t want them so much as to pay for it. A few months ago, I found this tutorial on hardback binding. Although the tutorial, method and result are great, it is quite a lengthy effort.">
-
-
 <meta itemprop="datePublished" content="2009-04-09T15:29:00&#43;02:00" />
 <meta itemprop="dateModified" content="2009-04-09T15:29:00&#43;02:00" />
 <meta itemprop="wordCount" content="1092">
+<meta itemprop="image" content="https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/BinderHalfCover.JPG">
 
 
 
 <meta itemprop="keywords" content="DIY,LaTeX,Maths,Books," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2009/04/easy-paperback-book-binding-how-to.html/OpenUp.JPG"/>
@@ -85,7 +88,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -136,7 +139,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Easy paperback book binding how-to</h1>
         
@@ -152,10 +158,10 @@ if (!doNotTrack) {
     
 
     
+    
+    
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
-
-<p>Softcover binding your own books is easier than you think</p>
-
+    <p>Softcover binding your own books is easier than you think</p>
 <div style="text-align: center;">
 <figure class="fig-40">
     <img src="SideDown.JPG"/> 
@@ -166,12 +172,10 @@ if (!doNotTrack) {
 </figure>
 
 </div>
-
 <h2 id="bookbinding-for-dummies">Bookbinding for dummies</h2>
-
 <p>As of late, I have been printing quite a lot of long mathematical papers, and a
 few free pdf-books, or tutorials. And I wanted them properly bound, but didn&rsquo;t
-want them so much as to pay for it. A few months ago, I found this <a href="http://www.instructables.com/id/How-to-bind-your-own-Hardback-Book/" target="_blank">tutorial on
+want them so much as to pay for it. A few months ago, I found this <a href="http://www.instructables.com/id/How-to-bind-your-own-Hardback-Book/">tutorial on
 hardback
 binding</a>.
 Although the tutorial, method and result are great, it is quite a lengthy
@@ -180,9 +184,7 @@ just want all those pages bound together such that they don&rsquo;t look strange
 your shelves, or you don&rsquo;t look freakish at the sub, I would prefer my method
 (or something similar :) of paperback (softback, softcover) bookbinding. This is
 the how-to, step by step.</p>
-
 <p><em>What you will need:</em></p>
-
 <ul>
 <li>Around 3 hours. 90% of the time is just for the glue to dry, you can be
 elsewhere doing any other thing,</li>
@@ -194,9 +196,7 @@ for you if you don&rsquo;t, or go and install it, it is not really hard,</li>
 <li>Some thick paper (100gr/m^2 or so), a folder separator works great.</li>
 <li>A brush.</li>
 </ul>
-
 <h3 id="step-1">Step 1</h3>
-
 <p>Add some blank pages to your pdf. To do so, create a file named
 <code>Mybook.tex</code> with the following contents. Keep in mind that the name of the pdf
 file should have no blank spaces, so rename it to something like <em>Bookstart.pdf</em></p>
@@ -205,36 +205,29 @@ file should have no blank spaces, so rename it to something like <em>Bookstart.p
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>final<span style="color:#e6db74">\]</span>{pdfpages}  
 <span style="color:#66d9ef">\\</span>begin{document}  
 <span style="color:#66d9ef">\\</span>includepdf<span style="color:#e6db74">\[</span>pages<span style="color:#f92672">=</span>{{},{},<span style="color:#f92672">-</span>,{},{}}<span style="color:#e6db74">\]</span>{complete path to your pdf file}  
-<span style="color:#66d9ef">\\</span>end{document}</code></pre></div>
-<p>Compile the <code>tex</code> file (go to a terminal window, go to your <code>tex</code> file and <code>pdflatex</code>
+<span style="color:#66d9ef">\\</span>end{document}
+</code></pre></div><p>Compile the <code>tex</code> file (go to a terminal window, go to your <code>tex</code> file and <code>pdflatex</code>
 it, if you don&rsquo;t know what I am saying, ask some seasoned <code>TeXer</code>, or look
-<a href="http://www.google.es/search?q=how+to+use+latex" target="_blank">elsewhere</a>). You will get a
+<a href="http://www.google.es/search?q=how+to+use+latex">elsewhere</a>). You will get a
 <code>Mybook.pdf</code>. Those <code>{}</code> in the start of &ldquo;pages&rdquo; are blank pages. You need two at
 the end (they will be glued to the cover) and 2 at the start, but depending on
 the pdf, you will put 2 or 3 (depends, think what it will look like later). If
 you don&rsquo;t mind, 2 is ok.</p>
-
 <h3 id="step-2">Step 2</h3>
-
 <p>Create the stack of sheets, with a proper signature using LaTeX. To do
 so, follow the instructions in my <a href="/2008/09/latex-booklets.html">previous post about LaTeX
 booklets</a>, but set
 the signature as anything between 32 and 48 pages. These are the number of pages
 squeezed in chunks, the same you see in a properly bound book.</p>
-
 <h3 id="step-3">Step 3</h3>
-
 <p>Split all signatures (the blocks of pages you had), you now will need to
 fold them over. You will be folding together along consecutive pages (I mean, if
 you look at all your page numbers, you will find a page where one side has two
 consecutive page numbers, this is where you should split, and where the fold
 goes). Fold along, keeping ALL signature pages straight. Mark your fold
 strongly, using something hard (a pen, a ruler, the side of scissors).</p>
-
 <h3 id="step-4">Step 4</h3>
-
 <p>Open up all those signatures, and staple them.</p>
-
 <p><figure class="fig-wide">
     <img src="Stapling.JPG"/> 
 </figure>
@@ -243,9 +236,7 @@ strongly, using something hard (a pen, a ruler, the side of scissors).</p>
     <img src="GraparRegle.png"/> 
 </figure>
 </p>
-
 <p>Staple them over something soft</p>
-
 <p><figure class="fig-wide">
     <img src="Staple.JPG"/> 
 </figure>
@@ -254,32 +245,25 @@ strongly, using something hard (a pen, a ruler, the side of scissors).</p>
     <img src="Stapled.JPG"/> 
 </figure>
 </p>
-
 <p>Turn over, close them (with your fingers, or something harder) and you are done.</p>
-
 <p>The best way to do so is over something mildly soft (like a bag, a pair of old,
 folded jeans, newspaper), using a ruler as shown in the drawing. In this ruler
 you should have two markings, and staple alternating signatures so that staples
 are NOT aligned, as shown in the following picture. After all the stapling, put
 them together like this with some weight over it.</p>
-
 <figure class="fig-wide">
     <img src="xafar.png"/> 
 </figure>
 
-
 <p>Keep them this way for a while.</p>
-
 <h3 id="step-5">Step 5</h3>
-
 <p>Bind them together. To do so, use either some
-<a href="http://en.wikipedia.org/wiki/Clamp_%28tool%29" target="_blank">clamps</a> or <a href="http://en.wikipedia.org/wiki/Binder_clip" target="_blank">binder
+<a href="http://en.wikipedia.org/wiki/Clamp_%28tool%29">clamps</a> or <a href="http://en.wikipedia.org/wiki/Binder_clip">binder
 clips</a> as shown in the picture. If you
 are using clamps, use a pair of pieces of wood, or rulers, or something hard to
 hold together the almost-book, and glue the stapled side using a brush. If you
 use binder clips, put a row of them, take one of them out at a time, glue
 underneath and put it again.</p>
-
 <p><figure class="fig-wide">
     <img src="StapledAndBinded.JPG"/> 
 </figure>
@@ -288,13 +272,9 @@ underneath and put it again.</p>
     <img src="RowOfBinds.JPG"/> 
 </figure>
 </p>
-
 <p>Clamps work better, but clips are easier to get</p>
-
 <p>Let it dry for a while. At least 30 minutes. 1 or 2 hours, better.</p>
-
 <h3 id="step-6-optional-but-recommended">Step 6 (Optional but recommended)</h3>
-
 <p>Now you can choose the way to go. It depends on the size of your strong paper
 and how big the book is. In this step you cut a piece of paper and glue it to
 the side, so that you don&rsquo;t need a piece of paper which is a lot bigger than
@@ -302,22 +282,17 @@ your usual A4 or legal paper. If you have bigger ones to glue onto, you can skip
 this, and just cut a piece that can be glued onto the cover, back-cover and side
 together. If you do, cut it, fold it as in this step, glue it and done. If you
 don&rsquo;t&hellip;</p>
-
 <figure class="fig-wide">
     <img src="HalfCover.JPG"/> 
 </figure>
-
 
 <figure class="fig-wide">
     <img src="BinderHalfCover.JPG"/> 
 </figure>
 
-
 <p>Cut a piece, fold it neatly, put your almost-done book, and fold along the
 sides. This is the spine piece.</p>
-
 <p>Suggestions by a seasoned bookbinder I know:</p>
-
 <ul>
 <li>Forget about making Step 6 optional: Why I say it is optional? For smallish
 books (1-3 signatures), a viable option is to forget the spine piece and go
@@ -326,39 +301,30 @@ as much as with the spine piece (which gives strength and more freedom to
 open it). I have edited this and now is recommended. The book will look a
 lot better, and will (probably) last longer. I have two no-spined books, and
 they are doing ok, although they are harder to spread-open.</li>
-<li>More strength: In Step 6 use a <a href="http://en.wikipedia.org/wiki/Box_cutter" target="_blank">box
+<li>More strength: In Step 6 use a <a href="http://en.wikipedia.org/wiki/Box_cutter">box
 cutter</a> to cut some X from top to
 bottom along the spine (trying to cut all signatures evenly), not very deep,
 and try to fill them with glue while gluing the spine. This will add a lot
 of strength to the whole book (as the signatures will be glued among
 themselves more tightly).</li>
 </ul>
-
 <figure class="fig-wide">
     <img src="IMG_0002.JPG"/> 
 </figure>
 
-
-<p>Cut along the spine, vertically and in crosses.<br />
+<p>Cut along the spine, vertically and in crosses.<br>
 They will soak in white glue, adding strength to the binding</p>
-
 <p>Now glue this to the spine of the book, and rebind or reclamp. Let it dry again.</p>
-
 <h3 id="step-7-also-more-or-less-optional">Step 7 (Also more or less optional)</h3>
-
 <p>Add covers. Cut some half-pages, and glue them thoroughly (without wetting them)
 with the brush, and glue them to what you already have. When it has dried, you
 are done.</p>
-
 <h3 id="step-8-for-purists">Step 8 (For purists)</h3>
-
 <p>You can now cover them with some book plastic
 adhesive wrapper for better results.</p>
-
 <figure class="fig-wide">
     <img src="Whole.JPG"/> 
 </figure>
-
 
 <p>You are done!</p>
 <hr/><ul class="pa0">
@@ -422,8 +388,9 @@ adhesive wrapper for better results.</p>
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;

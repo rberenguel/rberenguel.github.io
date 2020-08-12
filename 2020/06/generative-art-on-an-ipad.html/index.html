@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Writing generative art on an iPad: Why and how</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.63.2" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -26,6 +26,10 @@
     
     <link rel="stylesheet" href="/webfonts/monoid.css">
     
+    <link rel="stylesheet" href="/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="/webfonts/reforma/reforma.css">
+    
 
     
     
@@ -41,8 +45,6 @@
 <meta property="article:modified_time" content="2020-06-05T21:30:33+02:00" />
 <meta itemprop="name" content="Writing generative art on an iPad: Why and how">
 <meta itemprop="description" content="If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.">
-
-
 <meta itemprop="datePublished" content="2020-06-05T21:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-06-05T21:30:33&#43;02:00" />
 <meta itemprop="wordCount" content="1280">
@@ -50,7 +52,6 @@
 
 
 <meta itemprop="keywords" content="Generative,p5js, iPad," />
-
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image:src" content="https://mostlymaths.net/2020/06/generative-art-on-an-ipad.html/pearlQuantized.png"/>
@@ -82,7 +83,7 @@ if (!doNotTrack) {
     
   </head>
 
-  <body class="ma0 helvetica bg-near-white">
+  <body class="ma0 reforma bg-near-white">
 
     
 
@@ -133,7 +134,10 @@ if (!doNotTrack) {
     <main class="pb7" role="main">
       
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+  
     <header class="mt4 w-100">
         <h1 class="fw1 mb1 f1">Writing generative art on an iPad: Why and how</h1>
         
@@ -149,10 +153,11 @@ if (!doNotTrack) {
     
 
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.</p>
-
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap">
+    <p>If you have been paying attention, you may have seen me talk about p5js and generative art lately. Here is a break-down of the why and how.</p>
 <h2 id="why">Why?</h2>
-
 <p><em>I like creating things</em>. This is the fundamental driving force: I have run the
 full gamut of &ldquo;stuff you can do&rdquo;. And I enjoy all of them (sadly?) I have
 knitted, crocheted, bobbin laced, embroidered and tatted. I have done (and
@@ -161,31 +166,28 @@ pop-ups, scissor-cut silhouettes, knife cut paper art. I have drawn watercolor,
 pencil, ballpoint pen, gouache. Broad and fine calligraphy. I have carved
 spoons, made shoes. I will play almost any instrument I lay my hands on (I don&rsquo;t
 care how badly). Generative art is just another medium I can use to enjoy life.</p>
-
 <figure class="fig-wide">
     <img src="night.jpg"
          alt="Crazy, crazy nights"/> <figcaption>
-            <p><a href="https://github.com/rberenguel/sketches#crazy-nights-p5js" target="_blank">Crazy, crazy nights</a></p>
+            <p><a href="https://github.com/rberenguel/sketches#crazy-nights-p5js">Crazy, crazy nights</a></p>
         </figcaption>
 </figure>
-
 
 <p>I have a past with generative art, going back to when I was starting
 programming. I never got <em>very</em> into it, but even before becoming a
 mathematician I was fascinated by
-<a href="https://en.m.wikipedia.org/wiki/Iterated_function_system" target="_blank">IFS</a> (Iterated
+<a href="https://en.m.wikipedia.org/wiki/Iterated_function_system">IFS</a> (Iterated
 Function Systems) and fractals like the Mandelbrot set. Probably my first two
 &ldquo;proper&rdquo; generative pieces were done as part of a long-lost tradition, of
-Christmas postcards I would email friends and colleagues: <a href="https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/" target="_blank">approximating images
+Christmas postcards I would email friends and colleagues: <a href="https://mostlymaths.net/2010/04/approximating-images-with-randomly.html/">approximating images
 with translucent triangles
 (2010)</a>
-and <a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" target="_blank">Postscript Christmas Card
+and <a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/">Postscript Christmas Card
 (2008)</a>
 (the code for the latter is
-<a href="https://gist.github.com/rberenguel/38f5106fee2a795be45d6a33532fd0e4" target="_blank">here</a>).
+<a href="https://gist.github.com/rberenguel/38f5106fee2a795be45d6a33532fd0e4">here</a>).
 But since those two, the only generative items I created were based on my
-<a href="https://arxiv.org/abs/0907.0116" target="_blank">research on complex dynamics</a>.</p>
-
+<a href="https://arxiv.org/abs/0907.0116">research on complex dynamics</a>.</p>
 <p>What has changed? When COVID lockdown started, I got a vague surge of <em>energy</em>
 to finish some personal projects. I wrote a significant amount of free-time-code
 (mostly Python). This required being in front of the computer many hours, after
@@ -193,86 +195,68 @@ work, meaning I was sitting in front of my computer for 14 or 15 hours a day.
 That&rsquo;s not particularly good. I decided to stop being too much in front of it
 (limiting it to around 1 non-work hour), and that left me wondering what I could
 do with the <em>I want to code but don&rsquo;t know how</em> time I had remaining.</p>
-
 <p>This gets us to the <em>how</em> section.</p>
-
 <h2 id="how">How?</h2>
-
 <p>It started on Saint George&rsquo;s day, when I created a generative rose for Laia
-using <a href="http://p5js.org" target="_blank">p5js</a>. I based it on some examples for other types of
+using <a href="http://p5js.org">p5js</a>. I based it on some examples for other types of
 flowers, with a lot of patience tweaking values. This was on my computer, with
 emacs, all as usual development goes for me. I saw how easy p5js is, and how
 impressive the results can be. That was the seed. Those days I was giving some
-final touches to <a href="https://github.com/rberenguel/motllo" target="_blank">some project</a> or
-<a href="https://github.com/rberenguel/bear-note-graph" target="_blank">another</a>, so I left the seed to
+final touches to <a href="https://github.com/rberenguel/motllo">some project</a> or
+<a href="https://github.com/rberenguel/bear-note-graph">another</a>, so I left the seed to
 sprout.</p>
-
 <figure class="fig-wide">
     <img src="pearlQuantized.png"
          alt="Palette sketch, with recently added quantization"/> <figcaption>
-            <p><a href="https://github.com/rberenguel/sketches#palette-p5js" target="_blank">Palette sketch, with recently added quantization</a></p>
+            <p><a href="https://github.com/rberenguel/sketches#palette-p5js">Palette sketch, with recently added quantization</a></p>
         </figcaption>
 </figure>
-
 
 <p>Then, after 5 or 6 days (either late April or just beginning of May), I was
 sitting on the sofa with just my iPad Mini, watching something on TV and I
 cracked open a text editor, trying to use p5js on it. And… it worked.</p>
-
 <p>I was lucky in that the first editor I tried is the excellent
-<a href="https://www.textasticapp.com" target="_blank">Textastic</a>: it not only offers a native webview
+<a href="https://www.textasticapp.com">Textastic</a>: it not only offers a native webview
 with console logging, but also can serve against Safari. From that point on, I
 was hooked: I could do something <em>fun and creative</em> while watching TV, on the
 off-hours, away from my computer.</p>
-
 <h2 id="the-setup">The setup</h2>
-
 <p>The setup is mostly Textastic and Safari for p5js documentation. I have just
-found out about <a href="https://apps.pdyn.net/inspect/home" target="_blank">Inspect Browser</a>, but
+found out about <a href="https://apps.pdyn.net/inspect/home">Inspect Browser</a>, but
 haven&rsquo;t tried it yet. There are some quirks, tips and tricks that may be
 interesting though.</p>
-
 <h3 id="syntax-errors-in-textastic">Syntax errors in Textastic</h3>
-
 <p>Sadly, the console/webkit view provided by Textastic doesn&rsquo;t report on badly
 written Javascript. If you forget a brace, paren or similar you will just get a
 blank screen. It was puzzling at the beginning, now I just have gotten
 terribly good at spotting missing delimiters. And a recent update added marking
 of unbalanced delimiters (in some cases only as far as I have seen) which should
 help tremendously.</p>
-
 <h3 id="too-much-logging-in-textastic">Too much logging in Textastic</h3>
-
 <p>You can&rsquo;t go crazy by logging in every line of a tight <code>for</code> loop. This
 will make Textastic slow to a crawl, and possibly OOM. I recommend you add a
 <code>div</code> where you can write logs regularly if you need to write a lot of them. I
 haven&rsquo;t tried this myself yet, but it&rsquo;s on my plans for some projects where I
 need significant logging output.</p>
-
 <h3 id="p5js-instance-mode">p5js instance mode</h3>
-
-<p>If you are moderately serious, you want to start using <a href="https://p5js.org/examples/instance-mode-instantiation.html" target="_blank">instance
+<p>If you are moderately serious, you want to start using <a href="https://p5js.org/examples/instance-mode-instantiation.html">instance
 mode</a>. All the
-examples (except the first) in my <a href="https://github.com/rberenguel/sketches" target="_blank">sketches
+examples (except the first) in my <a href="https://github.com/rberenguel/sketches">sketches
 repository</a> use instance mode. Why?
 Because of ES6 modules. This way I can have some libraries/common code I can
 import straight from the code with <code>import</code> statements.</p>
-
-<h3 id="parameterise-add-some-gui-controls">Parameterise/add some GUI/controls</h3>
-
+<h3 id="parameteriseadd-some-guicontrols">Parameterise/add some GUI/controls</h3>
 <p>This is something I read
-<a href="https://tylerxhobbs.com/essays/2018/tips-to-improve-your-generative-artwork" target="_blank">here</a>,
+<a href="https://tylerxhobbs.com/essays/2018/tips-to-improve-your-generative-artwork">here</a>,
 at least in having a way to tweak all parameters. I started using
-<a href="https://github.com/dataarts/dat.gui" target="_blank">datgui</a>, but promptly decided I didn&rsquo;t
+<a href="https://github.com/dataarts/dat.gui">datgui</a>, but promptly decided I didn&rsquo;t
 like it and whipped a small div with a few basic controls. This has grown into
 my own personal library of GUI/sketch.</p>
-
 <p>You don&rsquo;t need to go that deep. Use datgui, or
-<a href="https://github.com/bitcraftlab/p5.gui" target="_blank">p5gui</a> or any other option you find. Or
+<a href="https://github.com/bitcraftlab/p5.gui">p5gui</a> or any other option you find. Or
 at least add a handler for <code>s</code> to save the current image, and build from that.
 Being able to tweak values quickly, and save the current canvas pay off
 extremely quick.</p>
-
 <figure class="fig-left">
     <img src="embroidery.jpg"
          alt="Work in progress"/> <figcaption>
@@ -280,42 +264,32 @@ extremely quick.</p>
         </figcaption>
 </figure>
 
-
 <h3 id="testing-linting-etc">Testing, linting, etc</h3>
-
 <p>If you are on an iPad, the amount of tools you have at your disposal is significantly
 reduced. These are some options I have found, you may find others, or just
 ignore them. After all, not everybody is a fan of linters and testing. Note that
 on my code I avoid semicolons as much as I can. This is on purpose.</p>
-
 <h4 id="beautifying-javascript">Beautifying Javascript</h4>
-
-<p>I use the online <a href="http://beautifier.io" target="_blank">beautifier.io</a> with all settings at
+<p>I use the online <a href="http://beautifier.io">beautifier.io</a> with all settings at
 default. I just want something consistent across all my files. I try not to care
 <em>too</em> much about formatting. For Python, I use
-<a href="https://github.com/psf/black" target="_blank">black</a>. For Scala,
-<a href="https://scalameta.org/scalafmt/" target="_blank">scalafmt</a>. I want consistency, even if I
+<a href="https://github.com/psf/black">black</a>. For Scala,
+<a href="https://scalameta.org/scalafmt/">scalafmt</a>. I want consistency, even if I
 dislike some of the choices of any of these tools under defaults, consistency
 eventually pays off.</p>
-
 <h4 id="linting">Linting</h4>
-
 <p>I have rarely used it in my sketches, but when I&rsquo;ve done, I used
-<a href="https://jshint.com" target="_blank">JSHint</a>. It kind of works, although you need to set it up
+<a href="https://jshint.com">JSHint</a>. It kind of works, although you need to set it up
 to ignore missing semis (<code>/*jshint asi*/</code> header comment, see
-<a href="https://github.com/rberenguel/sketches/blob/master/divide/divide.js" target="_blank">divide</a>).</p>
-
+<a href="https://github.com/rberenguel/sketches/blob/master/divide/divide.js">divide</a>).</p>
 <h4 id="testing">Testing</h4>
-
 <p>I was ecstatic to find out you can run
-<a href="https://mochajs.org" target="_blank">mocha</a>/<a href="https://www.chaijs.com" target="_blank">chai</a> tests directly in
-the browser. I have used them to <a href="https://mostlymaths.net/sketches/libraries/gui/tests/tests.html" target="_blank">test parts of the GUI library to avoid
+<a href="https://mochajs.org">mocha</a>/<a href="https://www.chaijs.com">chai</a> tests directly in
+the browser. I have used them to <a href="https://mostlymaths.net/sketches/libraries/gui/tests/tests.html">test parts of the GUI library to avoid
 regressions</a>.
 For now I haven&rsquo;t tested much more, but I plan to keep using it. They are easy
 to write and having tests is useful.</p>
-
 <h4 id="tdd">TDD</h4>
-
 <p>I haven&rsquo;t followed my usual TDD approaches. Since I&rsquo;m exploring areas where I
 don&rsquo;t know either the result or how to get there, TDDing would be too
 painful/wasteful. Also, I do this for fun. If it doesn&rsquo;t work, it&rsquo;s kind of
@@ -323,19 +297,16 @@ fine. When I&rsquo;m done with a sketch and I consider it finished, I want it to
 always work, of course. But the amount of things that are untestable in p5js is
 large (will it look good? will it actually work…?) so I restrict testing to
 where it really shines: small helper methods, mathematical routines, etc.</p>
-
 <h4 id="documentation-publishing-sharing">Documentation, publishing, sharing</h4>
-
 <p>I have shared most of my sketches (and the ones I haven&rsquo;t is because they are
 unfinished). Not only I think these can be useful to somebody else, but the act
 of polishing them knowing they may be seen makes them better. At least
 I get a small jolt of pride at having posted some relatively easy to read code
 that anybody can use in the future. Consider doing the same, you never know what
 may come from your code.</p>
-
 <p>As for sharing, I share my creations in
-<a href="https://www.reddit.com/r/generative/" target="_blank">r/generative</a> and while I&rsquo;m creating
-them, on my <a href="https://www.instagram.com/mostlymaths/" target="_blank">Instagram account</a>.</p><hr/><ul class="pa0">
+<a href="https://www.reddit.com/r/generative/">r/generative</a> and while I&rsquo;m creating
+them, on my <a href="https://www.instagram.com/mostlymaths/">Instagram account</a>.</p><hr/><ul class="pa0">
   
    <li class="list" style="display:inline;">
      <a href="/tags/generative" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Generative</a>
@@ -392,8 +363,9 @@ them, on my <a href="https://www.instagram.com/mostlymaths/" target="_blank">Ins
       <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
   </div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
-
+  
   </article>
+
   
 <script type="application/javascript">
 var doNotTrack = false;
