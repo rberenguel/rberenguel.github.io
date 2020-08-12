@@ -134,7 +134,9 @@ blockquote p {
     width: auto;
   }
   
-  
+  .img.summary {
+    max-height: 300px;
+  }
   
 .dropcap:first-letter { font-size: 8.0rem; line-height: 3.0rem;}
 
