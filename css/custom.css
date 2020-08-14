@@ -21,7 +21,14 @@
 .a:hover {
     color: #222202;
 }
+
 .nested-links a {
+    color: #444405;
+    transition: color .15s ease-in;
+    text-decoration: none;
+}
+
+.nested-links {
     color: #444405;
     transition: color .15s ease-in;
     text-decoration: none;
@@ -146,6 +153,48 @@ h2 {
     margin-bottom: 0.5em;
     padding-top: 0.5em;
     border-top: 1px solid #333311;
+}
+
+h1.about {
+    font-weight: 100;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+h1.about {
+    border-bottom: 1px solid #333311;
+}
+
+h2.talk {
+    font-weight: 100;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-top: 0.3em;
+    border: none;
+}
+
+h3.talk {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+
+h3.talk > a {
+    font-weight: 50;   
+}
+
+.talk-month {
+    font-weight: 50;
+    font-size: 90%;
+    font-style: italic;
+}
+
+p.talk-loc {
+    text-align: center;
+    text-indent: 0 !important;
+    font-style: italic;
+    font-size: 75%;
 }
 
 p {

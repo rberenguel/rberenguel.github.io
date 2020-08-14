@@ -6,42 +6,33 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2020 09:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 15:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Books</title>
-      <link>https://mostlymaths.net/tags/books/</link>
-      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sun, 12 Jul 2020 19:30:33 +0200</pubDate>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Maths</title>
       <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sun, 12 Jul 2020 19:30:33 +0200</pubDate>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
       <description></description>
@@ -50,7 +41,7 @@
     <item>
       <title>Python</title>
       <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 12 Jul 2020 19:30:33 +0200</pubDate>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
@@ -59,9 +50,27 @@
     <item>
       <title>ReadingsOfTheWeek</title>
       <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 12 Jul 2020 19:30:33 +0200</pubDate>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Fri, 14 Aug 2020 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://mostlymaths.net/tags/books/</link>
+      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/books/</guid>
       <description></description>
     </item>
     
@@ -129,15 +138,6 @@
     </item>
     
     <item>
-      <title>Scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ZIO</title>
       <link>https://mostlymaths.net/tags/zio/</link>
       <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
@@ -165,7 +165,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
@@ -431,6 +431,15 @@
       <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Essay</title>
+      <link>https://mostlymaths.net/tags/essay/</link>
+      <pubDate>Sun, 07 Jul 2019 13:34:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/essay/</guid>
       <description></description>
     </item>
     
@@ -890,6 +899,15 @@
       <pubDate>Fri, 17 Jun 2011 00:05:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Essays</title>
+      <link>https://mostlymaths.net/tags/essays/</link>
+      <pubDate>Sun, 27 Mar 2011 21:02:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/essays/</guid>
       <description></description>
     </item>
     

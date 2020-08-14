@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on mostlymaths.net</title>
+    <link>https://mostlymaths.net/pages/</link>
+    <description>Recent content in Pages on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Aug 2020 12:02:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://mostlymaths.net/pages/about/</link>
+      <pubDate>Fri, 14 Aug 2020 12:02:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/pages/about/</guid>
+      <description>Welcome! I&amp;rsquo;m Ruben Berenguel, the mind behind the writing here at mostlymaths.net. I have a PhD in Mathematics and work as a Lead Data Engineer.
+I have a varied set of interests, that range from programming (my current work) to bespoke shoemaking (a previous work). You can imagine how much fits in-between.
+You can reach me via:
+ Twitter LinkedIn At ruben at this domain  You can find code I have written or contributed to, and slides for talks I have given at github.</description>
+    </item>
+    
+  </channel>
+</rss>
