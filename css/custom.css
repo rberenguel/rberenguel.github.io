@@ -183,6 +183,7 @@ h3.talk {
     margin-top: 0.6em;
     margin-bottom: 0.6em;
     padding-top: 0.6em;
+    text-align: center;
 }
 
 h3.talk > a {
