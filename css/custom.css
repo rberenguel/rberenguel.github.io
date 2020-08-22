@@ -141,11 +141,16 @@ blockquote p {
     width: auto;
   }
   
-  .img.summary {
+  img.summary {
     max-height: 300px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;  
   }
   
 .dropcap:first-letter { font-size: 8.0rem; line-height: 3.0rem;}
+
+.dropcap > p:first-of-type {text-indent: 0 !important;}
 
 h2 {
     font-weight: 100;
@@ -261,6 +266,10 @@ article p {
     font-weight: 250;
 }
 
+.nested-copy-line-height > h2 {
+    text-align: left;
+}
+
 .nested-copy-line-height a {
     font-weight: 600;
     border-bottom: 1px solid transparent;
@@ -328,7 +337,17 @@ pre > code {
     float: left;
 }
 
+.fig-right > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
 
+.fig-left > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
 
 figcaption {
     font-size: 0.7em;
@@ -348,6 +367,12 @@ figure {
     margin-block-end: 0em;
     margin-inline-start: 0em;
     margin-inline-end: 0em;
+}
+
+.fig-full > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
 }
 
 .fig-wide img {
