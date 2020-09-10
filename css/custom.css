@@ -310,6 +310,15 @@ code {
     border-radius: 3px;          
 }
 
+.note {
+    background: ivory;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;          
+}
+
 pre > code {
     font-family: "monoidregular", Consolas, monaco, monospace;
     font-size: 0.7em;
@@ -381,12 +390,23 @@ figure {
     object-fit: contain;
 }
 
+.fig-wide > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
+
 .fig-not-so-wide img {
     margin: auto;
     width: 50%;
     object-fit: contain;
 }
 
+.fig-not-so-wide > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
 
 #map {
     position: fixed;
