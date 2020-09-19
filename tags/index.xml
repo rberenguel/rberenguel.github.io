@@ -6,51 +6,51 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Sep 2020 18:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2020 17:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Thu, 10 Sep 2020 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Thu, 10 Sep 2020 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 05 Sep 2020 20:30:33 +0200</pubDate>
+      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Maths</title>
       <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sat, 05 Sep 2020 20:30:33 +0200</pubDate>
+      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ReadingsOfTheWeek</title>
       <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 05 Sep 2020 20:30:33 +0200</pubDate>
+      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
@@ -192,7 +192,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
