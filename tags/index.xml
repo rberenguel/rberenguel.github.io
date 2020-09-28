@@ -6,10 +6,73 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Sep 2020 17:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 17:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal methods</title>
+      <link>https://mostlymaths.net/tags/formal-methods/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -21,47 +84,11 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Maths</title>
       <link>https://mostlymaths.net/tags/maths/</link>
       <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 19 Sep 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Fri, 28 Aug 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
       <description></description>
     </item>
     
@@ -80,15 +107,6 @@
       <pubDate>Fri, 28 Aug 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Fri, 21 Aug 2020 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -192,7 +210,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
@@ -291,15 +309,6 @@
     </item>
     
     <item>
-      <title>Formal methods</title>
-      <link>https://mostlymaths.net/tags/formal-methods/</link>
-      <pubDate>Sun, 23 Feb 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Agile</title>
       <link>https://mostlymaths.net/tags/agile/</link>
       <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
@@ -368,15 +377,6 @@
       <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
