@@ -272,8 +272,8 @@ article p {
 }
 
 .nested-copy-line-height a {
-    font-weight: 600;
-    border-bottom: 1px solid transparent;
+    font-weight: 300;
+    border-bottom: 1px dotted ;
     transition: all ease-in-out 0.1s
 }
 
@@ -284,12 +284,23 @@ article p {
 }
 
 .nested-copy-line-height a:hover {
-    border-color: #333311;
+    border-color: #993311;
+    border-bottom: 2px solid;
     transition: all ease-in-out 0.1s
 }
 
-.fig-left {
+.fig30 {
+    width: 30%;
+}
 
+.fig30 > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
+
+.fig-left {
+    /* legacy */
     width: 30%;
     float: left;
 }
@@ -297,6 +308,10 @@ article p {
 .fig-side {
     display: inline-block;
     width: 40%;
+}
+
+strong {
+    font-weight: 600;
 }
 
 code {
@@ -385,6 +400,29 @@ figure {
     border-radius: 3px; 
 }
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.fig-tall {
+    margin-block-start: 0.9rem;
+    margin-block-end: 0.9rem;
+    margin-inline-start: 0.9rem;
+    margin-inline-end: 0.9rem;
+    max-width: 19%;
+}
+
+.fig-tall > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+    
+}
+
 .fig-wide img {
     width: 100%;
     object-fit: contain;
@@ -410,7 +448,7 @@ figure {
 
 #map {
     position: fixed;
-    top: 5em;
+    top: 2em;
     left: 2em;
     width: 150px;
     height: 100%;

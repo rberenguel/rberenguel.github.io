@@ -3,14 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/</loc>
-    <lastmod>2020-09-28T17:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
+    <loc>https://mostlymaths.net/2020/10/snowflake.html/</loc>
+    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/</loc>
     <lastmod>2020-09-28T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -45,20 +73,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-09-28T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-09-28T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2020-09-28T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -67,13 +81,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-09-28T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-09-28T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

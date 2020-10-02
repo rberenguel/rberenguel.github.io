@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Does Snowflake have a technical moat worth 60 billion?</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.63.2" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+    <link href="https://mostlymaths.net/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/all.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/byrne-caps/stylesheet.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/reforma/reforma.css">
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Does Snowflake have a technical moat worth 60 billion?" />
+<meta property="og:description" content="I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (ACM Special Interest Group on Management of Data) paper and investigate a bit more what special capabilities they offer, and how they compare to others." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2020/10/snowflake.html/" />
+<meta property="article:published_time" content="2020-10-02T23:30:33+02:00" />
+<meta property="article:modified_time" content="2020-10-02T23:30:33+02:00" />
+<meta itemprop="name" content="Does Snowflake have a technical moat worth 60 billion?">
+<meta itemprop="description" content="I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (ACM Special Interest Group on Management of Data) paper and investigate a bit more what special capabilities they offer, and how they compare to others.">
+<meta itemprop="datePublished" content="2020-10-02T23:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-10-02T23:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="2937">
+
+
+
+<meta itemprop="keywords" content="Data," />
+
+    
+    
+        
+    
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide10.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="Does Snowflake have a technical moat worth 60 billion?"/>
+<meta name="twitter:description" content="I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (ACM Special Interest Group on Management of Data) paper and investigate a bit more what special capabilities they offer, and how they compare to others."/>
+
+<meta name="author" content="Ruben Berenguel">
+    
+      
+         
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+      
+    
+  </head>
+
+  <body class="ma0 reforma bg-near-white">
+
+    
+
+
+  
+  
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide10.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/sitemap/" title=" page">
+                  <i class='fas fa-map'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/pages/about/" title="about page">
+                  about
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <header class="mt4 w-100">
+        <h1 class="fw1 mb1 f1">Does Snowflake have a technical moat worth 60 billion?</h1>
+        
+        <time class="f6 mv4 dib tracked" datetime="2020-10-02T23:30:33&#43;02:00">October 2, 2020</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 14 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 2937 words</span>
+      
+      <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
+    </header>
+    
+    <section class="w-60 mb2">
+        <span class="fw2 f3 i ">The SIGMOD Snowflake paper and comparison with other companies in the data space</span>
+    </section>
+    
+
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (<em>ACM Special Interest Group on Management of Data</em>) <a href="http://pages.cs.wisc.edu/~yxy/cs839-s20/papers/snowflake.pdf">paper</a> and investigate a bit more what special capabilities they offer, and how they compare to others.</p>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide10.jpg"/> 
+</figure>
+
+<p><a href="https://www.snowflake.com">Snowflake</a> (<a href="https://www.nyse.com/quote/XNYS:SNOW">New York Stock Exchange: SNOW</a>) has recently gone public, on an IPO (<em>Initial Public Offering</em>) that has valued the company at around 70 billion. It caught me by surprise. I knew Snowflake was well considered, but this valuation looked crazy. Hence, if you are curious about why Snowflake may (or may not) be worth this much, what its technological moat is and this kind of questions, read on.</p>
+<p>This writing is divided in the following sections, loosely following the SIGMOD paper sections with the additions of IPO information and my final commentary.</p>
+<ul>
+<li><a href="#cloud-ready">Cloud ready</a></li>
+<li><a href="#the-query-engine">The Query Engine</a></li>
+<li><a href="#the-query-optimiser">The Query Optimiser</a></li>
+<li><a href="#the-virtual-warehouse">The Virtual Warehouse</a></li>
+<li><a href="#cloud-services-layer">Cloud Services Layer</a></li>
+<li><a href="#ipo-details">IPO details</a></li>
+<li><a href="#so">So?</a></li>
+</ul>
+<h3 id="cloud-ready">Cloud ready</h3>
+<p>The first differentiating factor Snowflake offers is being built <em>cloud ready</em>. I was somewhat confused by this: weren&rsquo;t <a href="https://en.wikipedia.org/wiki/MapReduce">MapReduce</a>, <a href="https://en.wikipedia.org/wiki/Apache_Hadoop">Hadoop</a>, etc built for large datacenters? Yes, but that does not mean cloud ready.  What public clouds offer is (technically)</p>
+<ul>
+<li>infinite compute scalability</li>
+<li>infinite storage</li>
+</ul>
+<p>Snowflake was designed to take advantage of these two properties. It does so by <strong>completely uncoupling compute and storage</strong>. Although Hadoop&rsquo;s <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS">HDFS</a> (Hadoop Distributed File System) is used to uncouple compute and storage, it is not really the case from a &ldquo;cloud&rdquo; point of view: managed Hadoop HDFS clusters are still <em>compute resources</em>. In the Snowflake case, it means that storage is handled by the cloud&rsquo;s own blob/object storage (S3 for AWS). Relying on cheap object storage also allows for several improvements, like easy time-travel (you can just keep more copies of the data at different times).</p>
+<p>Traditional database systems (arguably Snowflake should be considered a distributed compute engine, but they compare themselves to database systems) are in general coupled: the same instances that hold the data also execute the computation. Of course, this makes sense in most cases: the closest the data is to the computation engine, the less network transfer and more optimisation you can pull off from locality.</p>
+<p>Having fully elastic compute means that the system can <strong>easily adapt to varying workloads</strong>. You don&rsquo;t need to have idle instances while your team is not analysing data, and when Black Friday arrives you can have as much compute as you need (or can pay). This is very efficient, even from the point of view of Snowflake, where they recommend you fully shutdown your nodes when finished.</p>
+<figure class="fig-tall right">
+    <img src="https://mostlymaths.net/images/dresser/tall2.jpg"/> 
+</figure>
+
+<p>Most importantly, once you have infinite compute scalability, you can offer a pay as you go model, where storage is a fixed cost and compute expense depends on your use.</p>
+<p>Note that to make <em>cloud ready</em> a reality, Snowflake had to exclusively focus on being a SaaS (<em>Software as a Service</em>) offering and discarding the lucrative on-premise market. This has implications: for some industries (banking would be the most obvious, medical may be another) having your private cloud in the basement is a strong requirement.</p>
+<p>Offering a full SaaS also means that engineering teams no longer need to manually tweak and adapt settings (what was <code>executorMemoryOverhead</code> again?), since this is now deferred to the Snowflake engineers.</p>
+<p>The second differentiating factor for Snowflake is in <strong>being able to handle semi-structured data</strong>. With semi-structured data, I mean (and I assume the paper authors do, too) having JSON objects in what would be a column of your data/table. I will address how this works and its implications when I delve into the technicalities of the paper.</p>
+<p>All these look like strong points, but I already have a question: what is the technical advantage? What is their <a href="https://www.investopedia.com/ask/answers/05/economicmoat.asp">moat</a>? After all, separating compute and storage is already offered by <a href="https://cloud.google.com/bigquery">Google BigQuery</a> and <a href="https://aws.amazon.com/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&amp;whats-new-cards.sort-order=desc">Amazon Athena</a> (or <a href="https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html">Redshift Spectrum</a>, or the <a href="https://aws.amazon.com/blogs/aws/amazon-redshift-update-next-generation-compute-instances-and-managed-analytics-optimized-storage/">new Redshift compute-only instances</a>). <a href="https://databricks.com">Databricks</a> with <a href="https://delta.io">Delta Lake</a> has transient clusters so you can pretty much scale compute infinitely as well, while keeping storage in object storage. Is there any difference?</p>
+<p>Well, the answer is a partial yes, in that the technical details are interesting enough on its own. But, on their own they don&rsquo;t seem to offer a large moat, since many of these competitors can basically upend them given enough time.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="the-query-engine">The Query Engine</h3>
+<p>Snowflake is based on a <strong>custom-built query engine</strong>. Not based on <a href="https://es.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a> or Hadoop based. According to their SIGMOD paper, everything is written from scratch (although there are no details of language or anything else, a check at their <a href="https://careers.snowflake.com/us/en">job openings</a> hints at Java). It is also a <strong>shared-nothing</strong> system, which avoids problematic locks (and even more problematic synchronisation problems) across compute nodes.</p>
+<p>Tables are horizontally partitioned in a compressed, columnar representation. That is, tables are sliced in <code>N</code> rows, and these rows are then stored columnar in your object storage, as <em>immutable files</em>. A bit like how <a href="https://arrow.apache.org">Arrow</a> or <a href="https://pandas.pydata.org">Pandas</a> would <a href="https://mostlymaths.net/pyspark-arrow-pandas/pyspark.html#/how-does-arrow-manage-columnar-data">handle blocks</a>, I imagine. Internal pipelining in the query engine works in batches of rows.</p>
+<p>One interesting point is that the block files have enough <strong>metadata in their headers to allow random access to the file</strong>: this leverages the underlying cloud storage random access to avoid reading more data than needed. Fewer data to read means less access to slow storage and less network transfer. Win-win-win.</p>
+<figure class="fig-tall left">
+    <img src="https://mostlymaths.net/images/dresser/tall1.jpg"/> 
+</figure>
+
+<p>It is fully <a href="https://en.wikipedia.org/wiki/ACID">ACID</a> (Atomicity, Consistency, Isolation and Durability) compliant, using <a href="https://en.wikipedia.org/wiki/Snapshot_isolation">snapshot isolation</a>: <strong>transactions see a consistent database</strong> due to the underlying immutability of the files. This is akin to what Delta Lake offers on Databricks (although Delta can have some ACID issues if my memory serves). Since the storage layer contains immutable files, failed (partial or full) computations can be re-run easily.</p>
+<p>The engine is also vectorised, which is unsurprising given that it is columnar-based. Why would you write anything columnar from scratch if you don&rsquo;t intend to use it as well as possible?</p>
+<p>One interesting fact from the paper is that the engine is not based on the <a href="https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf">Volcano iterator model</a> (what essentially most database systems use, and in particular Apache Spark uses if you ignore the code generation parts) but is based on a <strong>push-based model</strong>. There are not many details on how this works, not even a reference. <a href="https://arxiv.org/pdf/1610.09166.pdf">This paper</a> seems to compare Volcano and push engines (as well as provide additional references) and I intend to give it a look at some point. I love knowing how the database sausage is made.</p>
+<p>The engine handles semi-structured data in a very interesting way. First, by using an <strong>optimistic type inference</strong> approach. That is, if you have a JSON object in a &ldquo;column&rdquo; and the field <code>dat</code> contains <em>what looks like integers</em> statistically, it will extract this column from the object. Then it will store it separately, with this type and compress it appropriately. Oh, and it will also store the original alongside, just in case, to prevent data loss (<code>12345</code> is a fine integer <em>until</em> you find a record <code>00321</code> and it turns out to be a postcode).</p>
+<p>Snowflake added several <strong>SQL extensions</strong> to access semi-structured data. This allows access to inner records either by using specific SQL-like functions or by using path-access style syntax. They also added time-travel extensions (like <code>AT time</code> or <code>BEFORE time</code>, or <code>UNDROP</code>). Of course this is a requirement to be able to handle semi-structured data, which is more or less the kind of data we all ingest day in and day out. Worth noting that flattening is done via lateral views, with no mention of particular optimisations. Lateral views can result in expensive queries.</p>
+<p>Data inference and data loading generate <strong>zone maps</strong> for query optimisation. I can&rsquo;t find a good, canonical reference of what zone maps are, but they are easy to describe quickly. Zone maps are used to pruning queries, and are kind of a cheap index, but for all columns. For instance, for one of the files a table is split into, the zone map would have the maximum and minimum values for each column (and some other &ldquo;interesting&rdquo; extrema). Then, once you are querying you can discard whole files if filter predicates are outside the extremes in the maps. Note that AWS Redshift uses zone maps internally, and so does Databricks Delta Lake (for the files stored in Delta Lake format in a cloud object storage).</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="the-query-optimiser">The Query Optimiser</h3>
+<p>The query optimiser is a <strong>cascades-based optimiser</strong> (see <a href="https://www.cse.iitb.ac.in/infolab/Data/Courses/CS632/Papers/Cascades-graefe.pdf">this</a>). According to <a href="https://15721.courses.cs.cmu.edu/spring2017/slides/15-optimizer2.pdf">this very succinct presentation</a> from Carnegie-Mellon, Cascades is a reimplementation of the Volcano query optimiser which makes it easier to extend and faster. <strong>Cost-based optimisation</strong> is then plugged into the system, to prune the tree of possibilities. The lack of indices (or more precisely, the lack of allowing the user to tweak indices) means that performance is easy to understand, since it basically will either be fast or not.</p>
+<p>Table statistics for the CBO are automatically collected on load and update of the tables, which is also where zone maps are computed. There is also some fancy interval arithmetic at play, where zone maps for relatively complex queries (like <code>WEEKDAY(dt) IN (6, 7)</code>) are also precomputed (or can be deduced from the existing map). Once zone maps are in place, filter and cast operations can be pushed down to the zone map scanning phase.</p>
+<p><strong>Dynamic pruning</strong> of files to process is deferred to the execution phase. For instance, during the build phase of a <code>HashJoin</code> information about the files is collected to be able to avoid loading files in the probe phase. It also tries to use <code>BloomJoin</code> to prevent excessive data transfer.</p>
+<p>Data skew is handled internally via a process called <em>file stealing</em>. Once a computing node is finished scanning its set of files, it will check if other nodes still have full queues and <em>steal</em> files from them. Data will then be read straight from S3, effectively reducing the workload on that node.</p>
+<h3 id="the-virtual-warehouse">The Virtual Warehouse</h3>
+<p>This is the name Snowflake gives computing nodes (as in a cluster) in the system. There is no direct access to these: users (clients) don&rsquo;t interact with the machines or even the cluster, they can only issue queries. There is a <strong>1-1 mapping from user queries to a virtual warehouse</strong>. When a user queries its database a virtual warehouse (VW) will be created for the query.</p>
+<figure class="fig30 right">
+    <img src="https://mostlymaths.net/images/dresser/square2.jpg"/> 
+</figure>
+
+<p>You can only choose the size of VWs abstractly, in T-shirt sizes. This is an advantage, since it means improvements on the underlying hardware in the cloud offerings are transparent to Snowflake users. The instances in the cluster of a VW are called working nodes. Since creation and destruction of VWs has no effect on the data stored (i.e. the database), users are <em>heavily</em> encouraged to adjust the size per query and spin down any resources when there is nothing going on.</p>
+<p><strong>Local disk is used heavily fors caching</strong> (simple LRU, storing full columns when needed), whereas intermediate computations are spilled directly into object storage to allow some optimised re-running of failed queries. Snowflake only uses instances with SSD storage, since this cache is most of the time to be a hot cache.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="cloud-services-layer">Cloud Services Layer</h3>
+<p>This is the core of the Snowflake service. It is a <strong>heavily multi-tenant and high availability set of services</strong>. As expected, services are <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> under a service-oriented architecture (SOA).  These are long-lived services, that serve all users. RBAC (role-based access control), key rotation and many other good security practices are handled at this level as well.</p>
+<p>Many things go on this layer. It is where the <strong>optimiser and transaction manager</strong> run, and where <strong>data catalogue</strong>, file statistics, locks, and <strong>transaction logs</strong> are stored. According to the SIGMOD paper, all the data is stored in an unnamed scalable key-value store (given the age of the paper, that discards <a href="https://redis.io">Redis</a> <code>¯\_(ツ)_/¯ </code>).</p>
+<p>This layer handles metadata updates and <strong>versioning</strong>, for internal schema evolution and service changes. When things change, a translation layer converts from one version to others, and the changes are &ldquo;<a href="https://en.wikipedia.org/wiki/Blue-green_deployment">blue-greened</a>&rdquo; onto users. The underlying virtual warehouse instances only talk to the corresponding version of cloud services, so the update is easy to propagate. Queries running on old nodes are left to finish and eventually all users are on the new system.</p>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide11.jpg"/> 
+</figure>
+
+<h3 id="ipo-details">IPO details</h3>
+<p>This is a small summary of the <a href="https://www.sec.gov/Archives/edgar/data/1640147/000162828020013518/snowflakes-1a2.htm">IPO prospect</a>. Note that the estimate for the addressable market is a whooping 80 billion ($) market.</p>
+<p>Snowflake has 3k customers, and is running more than 500 million queries per day. Of these 3k customers, 50 spend more than 1 million (per year). They have some pretty large customers according to the prospect, like <em>Capital One</em> (a bank) and <em>Sainsbury&rsquo;s</em> (funnily, not mentioned by name in the prospect but I dare you to find another big retail chain in Europe selling clothes, food and financial services).</p>
+<p>Snowflake was heavily tied to AWS in the beginning, but eventually (2018 for Azure and 2020 for GCP) became full multi-cloud. They handle it by defining a <em>Snowflake region</em> as a 1-1 mapping with a public cloud region. This also allows users to have multi-cloud Snowflake set-ups, which is probably useful for somebody.</p>
+<p>But even if its supposedly multi-cloud, most of its clients are in AWS. So much so, that they have around 5 billion in AWS compute reserved for the next years.</p>
+<p>Their revenue is slowly increasing, and I find quite interesting that their services revenue (in-house experts that are billed hard to set up stuff for clients) has significantly increased. They have also increased their expense in research and development. Even with the increase, they are still not profitable.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="so">So?</h3>
+<div class="note">
+<span class='scaps ' style="display: inline-block;">
+  Betteridge&#39;s Law of Headlines
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>We could already answer <strong>no</strong> given the title of this post.</p>
+</span>
+</div>
+<p>Why is Snowflake (possibly) superior to other similar offerings? On the surface, both Databricks Delta Lake, AWS Redshift (or Redshift Spectrum/Athena) and Google BigQuery are relatively close:</p>
+<ul>
+<li>You fully choose cluster size in Databricks, and the underlying storage setup is similar to Snowflake</li>
+<li>The new compute-only nodes for Redshift fully decouple compute and storage. Normal Redshift also uses a similar approach to zone maps.</li>
+<li>BigQuery is as well fully uncoupled.</li>
+</ul>
+<p>What are the differences? The main one is in the level of granularity.</p>
+<p>You can set up your clusters in Databricks as you choose, but you <em>need</em> a cluster to issue queries, at least for now. You can&rsquo;t just query <em>your data</em>, you connect to a running cluster that <em>has</em> access to this data. This may look pretty small, but in terms of usability it is a <em>huge</em> difference. The granularity at Databricks level is at the cluster level, whereas in Snowflake it is at the query level.</p>
+<p>Additionally, the description of the Snowflake metadata seems more advanced than the one in Delta Lake, where you depend on what Parquet offers. Parquet offers random file access, but I can&rsquo;t comment on how good the interaction between Spark and this is. Since Databricks Spark is significantly faster than AWS <a href="https://aws.amazon.com/emr/">EMR</a> Spark (around 2x for the use case I had when I measured), this may be due to random file access being used. Also, Databricks leverages local caching really hard. This seems to show that Snowflake has an edge over Databricks, in terms of cost of usability.</p>
+<p>Redshift has similar internal semantics (zone maps, adds z-indexes as well) but lacks build-side optimisations for pruning in probes, or at least I don&rsquo;t remember reading about these. And it&rsquo;s a huge improvement! Distributed hash joins are the most common operations once you have reasonably sized data, speeding them up compounds quickly.</p>
+<p>The new compute only nodes in Redshift are <em>expensive</em>. As in really <em>costly</em>. The whole point of Snowflake is running small when you do easy things/small data. Compute only Redshift does not offer that: for small-to-medium volumes of data they directly force you to use Spectrum or Athena (the smallest compute-only cluster is 5k$/month for 160 TB of accessible S3 data). This is pretty high, but is not helped by the pricing models of Spectrum or Athena, which charge per <em>data scanned</em>. If your queries are badly written, you are toast. This is because there is no capping to this cost, in Snowflake you cap it (per hour) by the size of your virtual warehouse. This looks like a win for Snowflake.</p>
+<figure class="fig30 left">
+    <img src="https://mostlymaths.net/images/dresser/square1.jpg"/> 
+</figure>
+
+<p>I&rsquo;m not very familiar with any new offerings, but traditionally BigQuery suffers a similar flaw to Redshift Spectrum: it charges per computation, basically auto-spinning machines. If your query is badly written, you are going to (literally) pay for your mistake. This is mostly uncapped (I think there are new options now that may help with this), whereas in Snowflake it is.</p>
+<p>Against these three possible competitors, Snowflake seems to have a clear edge. Worth 60 billion? I wouldn&rsquo;t count on that for a long-term investment. Of course, I&rsquo;m not an investor: <a href="https://en.wikipedia.org/wiki/Berkshire_Hathaway">Berkshire-Hathaway</a> (<a href="https://en.wikipedia.org/wiki/Warren_Buffett">Warren Buffet</a>&lsquo;s investment company) has invested 700 million, and they are famous for being long investors.</p>
+<p>One kicker for me is that they have been called <em>the new Oracle</em>. Where is <a href="https://en.wikipedia.org/wiki/Oracle_Corporation">Oracle</a> now? They are still a large business, they are pretty stable. In general, database systems are sticky: once you choose a vendor you keep it for pretty long. That is good, but traditionally all database system architectures have a relatively short timespan to profit.</p>
+<p>There doesn&rsquo;t seem to be any particular technology moat. The user experience and granularity seem to be excellent, but how hard would it be for any of the other parties to improve their offering to a similar point? It may not be a matter of a few months, but I wouldn&rsquo;t put my money on Snowflake for long.</p>
+<hr>
+<div class="note">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
+        <ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<canvas id='map'></canvas>
+<script src="https://mostlymaths.net/js/pagemap-1.2.0.min.js"></script>
+<script src="https://mostlymaths.net/js/pagemap-settings.js"></script>
+
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/">2020#56 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/">2019#24 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/09/201923-readings-of-the-week.html/">2019#23 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/">2019#20,21,22 Readings of the week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/07/201919-readings-of-week.html/">2019#19 Readings of the week</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div>
+  <div class="bg-light-gray pa3 rounded-6">
+      <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
+  </div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
+    
+    </article>
+    
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2020 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://mostlymaths.net/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
