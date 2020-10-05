@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Using Gephi with Google Analytics to visualize keywords and landing pages</title>
+    <title>mostlymaths.net  | Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.63.2" />
     
@@ -37,28 +37,28 @@
 
     
 
-    <meta property="og:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages" />
-<meta property="og:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs." />
+    <meta property="og:title" content="Running SparkSQL on Databricks via Airflow&#39;s JDBC operator" />
+<meta property="og:description" content="The one where Airflow messes with you." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/" />
-<meta property="article:published_time" content="2011-08-18T18:50:00+02:00" />
-<meta property="article:modified_time" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="name" content="Using Gephi with Google Analytics to visualize keywords and landing pages">
-<meta itemprop="description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs.">
-<meta itemprop="datePublished" content="2011-08-18T18:50:00&#43;02:00" />
-<meta itemprop="dateModified" content="2011-08-18T18:50:00&#43;02:00" />
-<meta itemprop="wordCount" content="1087">
+<meta property="og:url" content="https://mostlymaths.net/2020/10/databricks-jdbc.html/" />
+<meta property="article:published_time" content="2020-10-05T20:30:33+02:00" />
+<meta property="article:modified_time" content="2020-10-05T20:30:33+02:00" />
+<meta itemprop="name" content="Running SparkSQL on Databricks via Airflow&#39;s JDBC operator">
+<meta itemprop="description" content="The one where Airflow messes with you.">
+<meta itemprop="datePublished" content="2020-10-05T20:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-10-05T20:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="568">
 
 
 
-<meta itemprop="keywords" content="Blog,Data,Visualization," />
+<meta itemprop="keywords" content="Data," />
 
     
+    
+        
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -67,9 +67,8 @@ But this post is only mildly related to these books, since it started way before
 
 
 
-<meta name="twitter:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages"/>
-<meta name="twitter:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."/>
+<meta name="twitter:title" content="Running SparkSQL on Databricks via Airflow&#39;s JDBC operator"/>
+<meta name="twitter:description" content="The one where Airflow messes with you."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -97,7 +96,9 @@ if (!doNotTrack) {
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png');">
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide7.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -151,222 +152,122 @@ if (!doNotTrack) {
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Using Gephi with Google Analytics to visualize keywords and landing pages</h1>
+        <h1 class="fw1 mb1 f1">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</h1>
         
-        <time class="f6 mv4 dib tracked" datetime="2011-08-18T18:50:00&#43;02:00">August 18, 2011</time>
+        <time class="f6 mv4 dib tracked" datetime="2020-10-05T20:30:33&#43;02:00">October 5, 2020</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 1087 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 568 words</span>
       
       <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
     
 
     
-    <div id="amzn-assoc-ad-e4bbbdef-c478-4f46-a609-dbb04c453c0d">
-    </div>
-    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=e4bbbdef-c478-4f46-a609-dbb04c453c0d"></script>
-    <section class="w-100">
-                    <span class="fw1 mv4 i" style="font-size: 0.4rem;">Some links are affiliate links</span>
-    </section>
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools.
-Recently I&rsquo;ve read two interesting books (<a href="http://www.amazon.com/gp/product/1849512086/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1849512086">Statistical Analysis with
-R</a>
-and <a href="http://www.amazon.com/gp/product/0470944889/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470944889">Visualize This: The FlowingData Guide to Design, Visualization, and
-Statistics</a>
-and I&rsquo;m on my way to another two to refresh my statistics knowledge.</p>
-<p>But this post is only mildly related to these books, since it started way
-before: the day I read about <a href="http://gephi.org/">Gephi</a>. Gephi is an open source
-graph visualization tool, to work with huge (or at least big) datasets and
-graphs. I&rsquo;ve seen it used to graph the friendship network from Facebook, or to
-graph tweet-retweets from Twitter (these two can be found in the Learn section
-from the Gephi website). In this post I&rsquo;ll guide you step by step to do a
-keyword-landing page directed graph, using data from your Google Analytics
-account.</p>
-<p>A directed graph is a graph with arrows. You have a set of sources (in this case
-keywords) and targets (in this case landing pages), and aggregate sources by
-name. Plot this, and you have a keyword-landing page graph like this one (data
-for the last month in mostlymaths.net restricted to the first 500 keywords).</p>
-<figure class="fig-wide">
-    <img src="Keywords-LandingPages.png"
-         alt="Keywords (arrow) Landing pages"/> <figcaption>
-            <p>Keywords (arrow) Landing pages</p>
-        </figcaption>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>The one where Airflow messes with you.</p>
+<br/>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide7.jpg"/> 
 </figure>
 
-<h2 id="what-interesting-things-you-can-read-from-such-a-graph">What interesting things you can read from such a graph</h2>
+<p>This will be a short one. I want to move some SQL from <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> to <a href="https://databricks.com">Databricks</a> for performance and cost reasons. Currently, all the SQL is running in a pretty dense <a href="https://airflow.apache.org">Airflow</a> DAG (Directed Acyclic Graph), and my cunning plan was:</p>
 <ul>
-<li>
-<p>Clustering: In this particular instance, I can find the &ldquo;clusters&rdquo; of my
-blog. You can see 3 big aggregations of keywords and landing pages
-(left-middle,up-center and right-middle). Each one of these marks pages and
-groups of pages with several landing keywords. The groupings mark like the
-&ldquo;big themes&rdquo; in my blog, at least from search engine traffic (these are
-memory techniques, 9 best programming books I&rsquo;ve read and seed germination
-respectively). Oddly enough, I&rsquo;ve had one visit landing in seed germination
-from the keyword &ldquo;gnus mail&rdquo;, thus the big seed germination cluster includes
-emacs.</p>
-</li>
-<li>
-<p>Big keywords: In gephi you can scale nodes depending on other table
-variables. For example, I can scale the landing page dots depending on the
-number of keywords, or the number of visits. In particular, I can show which
-keywords lead to more of my pages, by using the outDegree (number of arrows
-escaping) of a node.</p>
-</li>
-<li>
-<p>Big pages: Alternatively, I can scale nodes with the inDegree (number of
-arrows entering) to learn which pages have the most different keywords. I can
-also label the arrows with the number of visits (and scale them with this
-metric).</p>
-</li>
-<li>
-<p>Huge pages: with a little more work, I could scale with total visits to see
-which are my biggest pages together with the landing keywords.</p>
-</li>
+<li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a Databricks cluster via JDBC</li>
+<li>Enjoy the savings in execution time and cost.</li>
 </ul>
-<h2 id="step-by-step-guide">Step by step guide</h2>
-<p>I&rsquo;ll assume that you can manage to download and install gephi on your own, and
-have some knowledge of Google Analytics. Of course, the first you need is to
-select the keyword and landing page fields in your Google Analytics page:</p>
-<figure class="fig-wide">
-    <img src="GA-KeywordsLandingPages.png"/> 
+<p>Airflow has this tendency to ruin the best plans by just its own presence in the stack.</p>
+<p>The first step is getting the Databricks JDBC driver from <a href="https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html">here</a>. In the same page you can find all the details to <em>be</em> able to connect from BI tools, although I guess nobody had tried to use Airflow for this before.</p>
+<p>Then, make sure your Airflow installation has the <code>jdbc</code> optional (this is for <code>1.10.X</code>, for <code>2.0</code> the contributed operators change locations) <em>and</em> make sure you install <code>OpenJDK</code>, since the JDBC driver requires Java (the first <em>J</em> should be a hint).</p>
+<p>Then, create a very small DAG:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.operators.jdbc_operator <span style="color:#f92672">import</span> JdbcOperator
+<span style="color:#f92672">from</span> airflow.models <span style="color:#f92672">import</span> DAG
+<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetim
+
+default_args <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">start_date</span><span style="color:#e6db74">&#34;</span>: datetime(<span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>),
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">email_on_failure</span><span style="color:#e6db74">&#34;</span>: False,
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">retries</span><span style="color:#e6db74">&#34;</span>: <span style="color:#ae81ff">0</span>,
+}
+
+dag <span style="color:#f92672">=</span> DAG(
+        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks_test</span><span style="color:#e6db74">&#34;</span>,
+        catchup<span style="color:#f92672">=</span>False,
+        max_active_runs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
+        concurrency<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
+        description<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Run some SQL on Databricks via JDBC</span><span style="color:#e6db74">&#34;</span>,
+        default_args<span style="color:#f92672">=</span>default_args
+    )
+
+sql <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">select count(distinct a_heavy_one) from somewhere </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">join something_very_expensive</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+
+foo <span style="color:#f92672">=</span> JdbcOperator(sql<span style="color:#f92672">=</span>sql, 
+                   autocommit<span style="color:#f92672">=</span>False,
+                   dbc_conn_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks</span><span style="color:#e6db74">&#34;</span>, 
+                   dag<span style="color:#f92672">=</span>dag, 
+                   task_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks_task</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p>In the <code>Connections</code> menu (under <code>Admin</code>) you can configure your <code>JDBC</code> connection according to the Databricks documentation. It is easy as long as you realise <code>token</code> is the word <code>token</code> and not <em>the</em> token, and you add the correct class name, <code>com.simba.spark.jdbc.DataSource</code>. Your connection string should look like this (I have added new lines for readability):</p>
+<pre><code>jdbc:spark://some_code.cloud.databricks.com:443/default; ↵
+transportMode=http;ssl=1; ↵
+httpPath=sql/protocolv1/o/0/some_path; ↵
+AuthMech=3;UID=token;PWD=your_api_token_or_password
+</code></pre><p>Then, you will trigger the DAG and just get:</p>
+<pre><code>SQLFeatureNotSupportedException
+</code></pre><p>And not much more. After 5 minutes of wondering what the issue was (and some mild Googling), I realised:</p>
+<ol>
+<li>The stracktrace from Airflow was actually telling me where but I was <strong>not paying attention</strong>,</li>
+<li>It was related to <a href="https://github.com/OHDSI/DatabaseConnector/issues/86"><strong>this</strong></a> issue in another JDBC driver, but this time, Hive.</li>
+</ol>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide3.jpg"/> 
 </figure>
 
-<p>Then select Show Rows and select 500:</p>
-<figure class="fig-not-so-wide">
-    <img src="GA-Rows.png"/> 
-</figure>
+<br/>
+<p>The issue is with the <code>AutoCommit</code> feature in databases. Databricks (and in general I think Hive and some others) <strong>don&rsquo;t</strong> support autocommit. But of course <strong>Airflow doesn&rsquo;t care</strong>:</p>
+<ul>
+<li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/operators/jdbc_operator.py#L62">JdbcOperator uses JdbcHook</a> (which extends the hook to connect to databases) to execute SQL,</li>
+<li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/hooks/jdbc_hook.py#L38">JdbcHook says all JDBC based databases support autocommit</a>.</li>
+</ul>
+<p>There are <strong>two ways</strong> to address this issue:</p>
+<ol>
+<li>Patch the hook,</li>
+<li>Write our own operator.</li>
+</ol>
+<p>Since the Airflow execution model is pretty weird (it loads the Python code from the DAG bag and interprets it internally), patching could actually not even work, so writing your own operator is probably the recommended approach. You will need a way of deploying Airflow packages to your Airflow installation though.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.hooks.jdbc_hook <span style="color:#f92672">import</span> JdbcHook
+<span style="color:#f92672">from</span> airflow.models <span style="color:#f92672">import</span> BaseOperator
+<span style="color:#f92672">from</span> airflow.utils.decorators <span style="color:#f92672">import</span> apply_defaults
 
-<p>And get a nice CSV file with the export tab on top:</p>
-<figure class="fig-wide">
-    <img src="GA-Export.png"/> 
-</figure>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JdbcDatabricksHook</span>(JdbcHook):
+    supports_autocommit <span style="color:#f92672">=</span> False
 
-<p>Now I don&rsquo;t know if this is because I select CSV and not CSV for Excel, but you
-have to clean the file: there are a lot of table identifiers to remove before
-the real data table. You also need to remove a line at the end of the file. You
-can do all this editing with any plain text editor. I used
-<a href="http://www.mostlymaths.net/search/label/emacs">emacs</a>.</p>
-<figure class="fig-wide">
-    <img src="GA-Clean.png"/> 
-</figure>
 
-<p>Remove all this, below Table you should have the useful data,</p>
-<figure class="fig-wide">
-    <img src="GA-Clean2.png"/> 
-</figure>
-
-<p>Remove the last line with dashes. Now the file is almost ready to be imported…
-You need to rename the Visits column to something else, for some odd reason
-Google Analytics copies the same column twice and Gephi needs unique column
-names. Ready to import. In Gephi, go to the Data Table window from the Window
-menu, and click Import Spreadsheet:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ImportSpreadhsheet.png"/> 
-</figure>
-
-<p>And now you should select edges table and comma-separated:</p>
-<p><figure class="fig-wide">
-    <img src="Gephi-Import.png"/> 
-</figure>
- <figure class="fig-wide">
-    <img src="Gephi-SourcesError.png"/> 
-</figure>
-</p>
-<p>Oops. More tweaking of the CSV file is needed: Change the first two columns to
-Source and Target (and don&rsquo;t forget to mark comma as I did, too) and re-import
-the file:</p>
-<figure class="fig-wide">
-    <img src="GA-ImportOK.png"/> 
-</figure>
-
-<p>After clicking next, Gephi will ask you for the types of the columns. Since I&rsquo;m
-only interested in visits, pages/visit and average time on site, these are the
-only columns I want to be floats. You need them to be float to scale the nodes
-according to these parameters:</p>
-<figure class="fig-not-so-wide">
-    <img src="Gephi-ImportParameters.png"/> 
-</figure>
-
-<p>Next, we&rsquo;ll see a blob of points with no labels. Choose the Force Atlas
-algorithm in the Layout window, run for a while and then click stop:</p>
-<p><figure class="fig-wide">
-    <img src="Gephi-Blob.png"/> 
-</figure>
- <figure class="fig-wide">
-    <img src="Gephi-ForceAtlas.png"/> 
-</figure>
-</p>
-<p>The result from the Force Atlas algorithm to distribute points will look nicer,
-spreading aggregates of arrows all over the place. Now we need to get the
-labels. To do so, you have to click on a somewhat hidden button in the
-bottom-right part of the Graph window, and select the correct names for the
-tags. In this picture I&rsquo;ve also marked the label and edge scaling according to
-parameters:</p>
-<figure class="fig-wide">
-    <img src="Gephi-Labels.png"/> 
-</figure>
-
-<p>Once you have labels, you need to play with the layout to make them more
-visible. Run the algorithm Adjust Labels for a while, then Force Atlas and
-repeat until you are happy with the results:</p>
-<figure class="fig-wide">
-    <img src="Gephi-LabelAdjust.png"/> 
-</figure>
-
-<p>You can also set labels for the edges, if you are interested in seeing visits,
-for example. But I found it messy and unchecked the option. Finally, to scale
-the nodes, use the Ranking window:</p>
-<figure class="fig-wide">
-    <img src="Gephi-Ranking.png"/> 
-</figure>
-
-<p>The arrows mark the different ways to adjust: you can change colour, size, text
-size or text colour. Feel free to play with all these settings!</p>
-<p>You can get a nice PNG file of you graph by pressing the camera-like icon in the
-Graph window (clicking the down-arrow will list the properties), or you can
-export a PDF or SVG with some more work from the Preview window. Both result in
-nice images, but a SVG or PDF can be tweaked extensively using Illustrator or
-Inkscape. But it also needs more work from the Gephi side, so I won&rsquo;t enter the
-details in this tutorial. Well, just a little! Be sure to check &ldquo;show&rdquo; before
-exporting, or you&rsquo;ll see a blank page:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ExportSVG.png"/> 
-</figure>
-
-<p>And with just these steps you can create quite nice (and useful) graphs like
-this one:</p>
-<figure class="fig-wide">
-    <img src="Gephi-FullMap.png"/> 
-</figure>
-
-<p>And here you can find a closer zoom:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ZoomIn.png"/> 
-</figure>
-
-<p>I hope you enjoyed this tutorial, if you did it would be awesome if you share
-it. I&rsquo;ll try to do a few more Gephi tutorials as I find more interesting (for
-me) uses of Gephi. I have also a few post/tutorial ideas about visualizing
-Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
-<hr/>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JdbcDatabricksOperator</span>(BaseOperator):
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">Just override where we use the hook</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">execute</span>(self, context):
+        self<span style="color:#f92672">.</span>log<span style="color:#f92672">.</span>info(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Executing: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span>, self<span style="color:#f92672">.</span>sql)
+        self<span style="color:#f92672">.</span>hook <span style="color:#f92672">=</span> JdbcDatabricksHook(jdbc_conn_id<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>jdbc_conn_id)
+        self<span style="color:#f92672">.</span>hook<span style="color:#f92672">.</span>run(self<span style="color:#f92672">.</span>sql, self<span style="color:#f92672">.</span>autocommit, parameters<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>parameters)
+</code></pre></div><p>And now, the query worked and took 1.1 hours. Which also proved long-running queries don&rsquo;t hit timeouts or connection drops (this was also part of what I wanted to check).</p>
+<p>As you have seen, if you use Airflow you eventually get to know its internals. Probably too much.</p>
+<hr>
+<div class="note">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
         <ul class="pa0">
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/blog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Blog</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/visualization" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Visualization</a>
    </li>
   
 </ul>
@@ -385,23 +286,23 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/">Good Books I have Read in 2011: Perfect Gifts for Geeks!</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
-       </li>
-	     
-	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/snowflake.html/">Does Snowflake have a technical moat worth 60 billion?</a>
        </li>
 	     
 	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/">2020#56 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/">2019#24 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/09/201923-readings-of-the-week.html/">2019#23 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/">2019#20,21,22 Readings of the week</a>
        </li>
 	     
     </ul>
