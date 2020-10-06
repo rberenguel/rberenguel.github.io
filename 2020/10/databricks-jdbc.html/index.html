@@ -211,7 +211,7 @@ foo <span style="color:#f92672">=</span> JdbcOperator(sql<span style="color:#f92
                    dbc_conn_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks</span><span style="color:#e6db74">&#34;</span>, 
                    dag<span style="color:#f92672">=</span>dag, 
                    task_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks_task</span><span style="color:#e6db74">&#34;</span>)
-</code></pre></div><p>In the <code>Connections</code> menu (under <code>Admin</code>) you can configure your <code>JDBC</code> connection according to the Databricks documentation. It is easy as long as you realise <code>token</code> is the word <code>token</code> and not <em>the</em> token, and you add the correct class name, <code>com.simba.spark.jdbc.DataSource</code>. Your connection string should look like this (I have added new lines for readability):</p>
+</code></pre></div><p>In the <code>Connections</code> menu (under <code>Admin</code>) you can configure your <code>JDBC</code> connection according to the Databricks documentation. It is easy as long as you realise <code>token</code> is the word <code>token</code> and not <em>the</em> token, and you add the correct class name, <code>com.simba.spark.jdbc.Driver</code>. Your connection string should look like this (I have added new lines for readability):</p>
 <pre><code>jdbc:spark://some_code.cloud.databricks.com:443/default; ↵
 transportMode=http;ssl=1; ↵
 httpPath=sql/protocolv1/o/0/some_path; ↵
