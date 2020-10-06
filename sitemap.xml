@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2020-10-05T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
     <lastmod>2020-10-05T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -95,13 +102,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2020/09/202055-readings-of-the-week.html/</loc>
-    <lastmod>2020-09-19T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
     <lastmod>2020-09-19T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -193,7 +193,7 @@ if (!doNotTrack) {
 <li>infinite compute scalability</li>
 <li>infinite storage</li>
 </ul>
-<p>Snowflake was designed to take advantage of these two properties. It does so by <strong>completely uncoupling compute and storage</strong>. Although Hadoop&rsquo;s <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS">HDFS</a> (Hadoop Distributed File System) is used to uncouple compute and storage, it is not really the case from a &ldquo;cloud&rdquo; point of view: managed Hadoop HDFS clusters are still <em>compute resources</em>. In the Snowflake case, it means that storage is handled by the cloud&rsquo;s own blob/object storage (S3 for AWS). Relying on cheap object storage also allows for several improvements, like easy time-travel (you can just keep more copies of the data at different times).</p>
+<p>Snowflake was designed to take advantage of these two properties. It does so by <strong>completely decoupling compute and storage</strong>. Although Hadoop&rsquo;s <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS">HDFS</a> (Hadoop Distributed File System) is used to decouple compute and storage, it is not really the case from a &ldquo;cloud&rdquo; point of view: managed Hadoop HDFS clusters are still <em>compute resources</em>. In the Snowflake case, it means that storage is handled by the cloud&rsquo;s own blob/object storage (S3 for AWS). Relying on cheap object storage also allows for several improvements, like easy time-travel (you can just keep more copies of the data at different times).</p>
 <p>Traditional database systems (arguably Snowflake should be considered a distributed compute engine, but they compare themselves to database systems) are in general coupled: the same instances that hold the data also execute the computation. Of course, this makes sense in most cases: the closest the data is to the computation engine, the less network transfer and more optimisation you can pull off from locality.</p>
 <p>Having fully elastic compute means that the system can <strong>easily adapt to varying workloads</strong>. You don&rsquo;t need to have idle instances while your team is not analysing data, and when Black Friday arrives you can have as much compute as you need (or can pay). This is very efficient, even from the point of view of Snowflake, where they recommend you fully shutdown your nodes when finished.</p>
 <figure class="fig-tall right">
@@ -272,7 +272,7 @@ if (!doNotTrack) {
 <ul>
 <li>You fully choose cluster size in Databricks, and the underlying storage setup is similar to Snowflake</li>
 <li>The new compute-only nodes for Redshift fully decouple compute and storage. Normal Redshift also uses a similar approach to zone maps.</li>
-<li>BigQuery is as well fully uncoupled.</li>
+<li>BigQuery is as well fully decoupled.</li>
 </ul>
 <p>What are the differences? The main one is in the level of granularity.</p>
 <p>You can set up your clusters in Databricks as you choose, but you <em>need</em> a cluster to issue queries, at least for now. You can&rsquo;t just query <em>your data</em>, you connect to a running cluster that <em>has</em> access to this data. This may look pretty small, but in terms of usability it is a <em>huge</em> difference. The granularity at Databricks level is at the cluster level, whereas in Snowflake it is at the query level.</p>

@@ -47,11 +47,11 @@
 <meta itemprop="description" content="The one where Airflow messes with you.">
 <meta itemprop="datePublished" content="2020-10-05T20:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-10-05T20:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="568">
+<meta itemprop="wordCount" content="633">
 
 
 
-<meta itemprop="keywords" content="Data," />
+<meta itemprop="keywords" content="Data,Apache Spark," />
 
     
     
@@ -159,7 +159,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 568 words</span>
+      <span class="fw1 mv4 dib tracked i" style="font-size: 0.8rem;"> | 633 words</span>
       
       <span class="f6 mv4 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -175,7 +175,7 @@ if (!doNotTrack) {
 
 <p>This will be a short one. I want to move some SQL from <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> to <a href="https://databricks.com">Databricks</a> for performance and cost reasons. Currently, all the SQL is running in a pretty dense <a href="https://airflow.apache.org">Airflow</a> DAG (Directed Acyclic Graph), and my cunning plan was:</p>
 <ul>
-<li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a Databricks cluster via JDBC</li>
+<li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a running Databricks cluster via JDBC</li>
 <li>Enjoy the savings in execution time and cost.</li>
 </ul>
 <p>Airflow has this tendency to ruin the best plans by just its own presence in the stack.</p>
@@ -233,6 +233,14 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 <li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/operators/jdbc_operator.py#L62">JdbcOperator uses JdbcHook</a> (which extends the hook to connect to databases) to execute SQL,</li>
 <li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/hooks/jdbc_hook.py#L38">JdbcHook says all JDBC based databases support autocommit</a>.</li>
 </ul>
+<div class="note">
+<span class='scaps ' style="display: inline-block;">
+  Why does Airflow have a working Hive operator then?
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>You may be wondering how the Hive operator works. More often than not you connect to a Hive cluster via JDBC and run queries there, right? In the case of Airflow, it uses the <code>hive</code> CLI or the <code>beeline</code> CLI, but defers the process to them, so it&rsquo;s not a JDBC connection. Go figure why.</p>
+</span>
+</div>
 <p>There are <strong>two ways</strong> to address this issue:</p>
 <ol>
 <li>Patch the hook,</li>
@@ -270,6 +278,10 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
      <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
    </li>
   
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
+   </li>
+  
 </ul>
 <div class="mt6">
             
@@ -286,23 +298,23 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/snowflake.html/">Does Snowflake have a technical moat worth 60 billion?</a>
+           <a href="https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/">2020#56 Readings of the Week</a>
+           <a href="https://mostlymaths.net/2019/06/201916-readings-of-week.html/">2019#16 Readings of the week</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2019/09/201924-readings-of-the-week.html/">2019#24 Readings of the Week</a>
+           <a href="https://mostlymaths.net/2019/06/201915-readings-of-week.html/">2019#15 Readings of the week</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2019/09/201923-readings-of-the-week.html/">2019#23 Readings of the Week</a>
+           <a href="https://mostlymaths.net/2019/05/201914-readings-of-week.html/">2019#14 Readings of the week</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2019/07/2019202122-readings-of-week.html/">2019#20,21,22 Readings of the week</a>
+           <a href="https://mostlymaths.net/2019/04/2019-9-readings-of-week-x4.html/">2019#9 Readings of the week (x4)</a>
        </li>
 	     
     </ul>
