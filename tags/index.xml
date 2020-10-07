@@ -6,10 +6,37 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2020 20:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 20:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Books</title>
+      <link>https://mostlymaths.net/tags/books/</link>
+      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strategy</title>
+      <link>https://mostlymaths.net/tags/strategy/</link>
+      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wardley maps</title>
+      <link>https://mostlymaths.net/tags/wardley-maps/</link>
+      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -125,24 +152,6 @@
       <pubDate>Fri, 21 Aug 2020 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Strategy</title>
-      <link>https://mostlymaths.net/tags/strategy/</link>
-      <pubDate>Fri, 21 Aug 2020 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/strategy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://mostlymaths.net/tags/books/</link>
-      <pubDate>Wed, 12 Aug 2020 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/books/</guid>
       <description></description>
     </item>
     
@@ -431,15 +440,6 @@
       <pubDate>Sun, 28 Jul 2019 18:39:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/drawing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wardley maps</title>
-      <link>https://mostlymaths.net/tags/wardley-maps/</link>
-      <pubDate>Mon, 08 Jul 2019 21:52:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
       <description></description>
     </item>
     

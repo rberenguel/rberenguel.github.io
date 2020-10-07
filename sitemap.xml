@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/books/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/strategy/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/10/summary-good-strategy-bad-strategy.html/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/wardley-maps/</loc>
+    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
     <lastmod>2020-10-05T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -17,28 +66,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-10-05T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-10-05T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/10/databricks-jdbc.html/</loc>
-    <lastmod>2020-10-05T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-10-05T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -185,13 +213,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/strategy/</loc>
-    <lastmod>2020-08-21T15:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/</loc>
     <lastmod>2020-08-19T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -208,13 +229,6 @@
   <url>
     <loc>https://mostlymaths.net/pages/about/</loc>
     <lastmod>2020-08-14T12:02:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/books/</loc>
-    <lastmod>2020-08-12T09:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -718,13 +732,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2019/07/201919-readings-of-week.html/</loc>
-    <lastmod>2019-07-08T21:52:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/wardley-maps/</loc>
     <lastmod>2019-07-08T21:52:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -6,10 +6,22 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2020 20:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 20:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Summary of Good Strategy/Bad Strategy</title>
+      <link>https://mostlymaths.net/2020/10/summary-good-strategy-bad-strategy.html/</link>
+      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/10/summary-good-strategy-bad-strategy.html/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;In the midst of chaos, there is also opportunity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;scaps smallText&#34; style=&#34;padding-left: 8rem&#34;&gt;Sun Tzu&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</title>
