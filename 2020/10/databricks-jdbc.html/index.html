@@ -47,7 +47,7 @@
 <meta itemprop="description" content="The one where Airflow messes with you.">
 <meta itemprop="datePublished" content="2020-10-05T20:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-10-05T20:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="633">
+<meta itemprop="wordCount" content="680">
 
 
 
@@ -158,8 +158,8 @@ if (!doNotTrack) {
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 633 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 680 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -175,9 +175,10 @@ if (!doNotTrack) {
 
 <p>This will be a short one. I want to move some SQL from <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> to <a href="https://databricks.com">Databricks</a> for performance and cost reasons. Currently, all the SQL is running in a pretty dense <a href="https://airflow.apache.org">Airflow</a> DAG (Directed Acyclic Graph), and my cunning plan was:</p>
 <ul>
-<li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a running Databricks cluster via JDBC</li>
+<li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a Databricks cluster via JDBC</li>
 <li>Enjoy the savings in execution time and cost.</li>
 </ul>
+<p>The best part of this project is that the cluster does not need to be active, just be valid: Databricks has autostart and autoterminate for their clusters (at least in AWS and Azure). This means you don&rsquo;t need to take care of starting or closing the cluster, jus</p>
 <p>Airflow has this tendency to ruin the best plans by just its own presence in the stack.</p>
 <p>The first step is getting the Databricks JDBC driver from <a href="https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html">here</a>. In the same page you can find all the details to <em>be</em> able to connect from BI tools, although I guess nobody had tried to use Airflow for this before.</p>
 <p>Then, make sure your Airflow installation has the <code>jdbc</code> optional (this is for <code>1.10.X</code>, for <code>2.0</code> the contributed operators change locations) <em>and</em> make sure you install <code>OpenJDK</code>, since the JDBC driver requires Java (the first <em>J</em> should be a hint).</p>
