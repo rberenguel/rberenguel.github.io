@@ -3,21 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2020/10/202057-readings.html/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data-papers/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/10/delta-lake.html/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/</loc>
     <lastmod>2020-10-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -25,20 +60,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
     <lastmod>2020-10-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,13 +88,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-10-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -110,13 +124,6 @@
   <url>
     <loc>https://mostlymaths.net/2020/10/databricks-jdbc.html/</loc>
     <lastmod>2020-10-05T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data-papers/</loc>
-    <lastmod>2020-10-02T23:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

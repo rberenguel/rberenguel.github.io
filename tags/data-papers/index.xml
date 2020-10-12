@@ -6,10 +6,19 @@
     <description>Recent content in Data Papers on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 23:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 18:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/data-papers/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Databricks&#39; Delta Lake: high on ACID</title>
+      <link>https://mostlymaths.net/2020/10/delta-lake.html/</link>
+      <pubDate>Mon, 12 Oct 2020 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/10/delta-lake.html/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;https://mostlymaths.net/2020/10/snowflake.html/&#34;&gt;reading the Snowflake paper&lt;/a&gt;, I got curious about how similar engines work. Also, as I mentioned in that article, I &lt;em&gt;like knowing how the data sausage is made&lt;/em&gt;. So, here I will summarise the &lt;a href=&#34;https://databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf&#34;&gt;Delta Lake paper by Databricks&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Does Snowflake have a technical moat worth 60 billion?</title>
