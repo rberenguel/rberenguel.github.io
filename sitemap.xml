@@ -3,14 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2020/10/202058-readings.html/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/aws/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/generative/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/haskell/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
     <lastmod>2020-10-12T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -31,27 +101,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2020-10-12T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/</loc>
     <lastmod>2020-10-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -59,35 +108,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2020-10-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
     <lastmod>2020-10-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,13 +165,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/formal-methods/</loc>
-    <lastmod>2020-09-28T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/generative/</loc>
     <lastmod>2020-09-28T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
