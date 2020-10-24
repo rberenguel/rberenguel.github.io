@@ -52,6 +52,13 @@
   </url>
   
   <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2020-10-24T12:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2020-10-24T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -88,13 +95,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/aws/</loc>
-    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
     <lastmod>2020-10-18T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

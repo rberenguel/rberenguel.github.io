@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 24 Oct 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ReadingsOfTheWeek</title>
       <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
       <pubDate>Sat, 24 Oct 2020 12:30:33 +0200</pubDate>
@@ -80,15 +89,6 @@
       <pubDate>Sun, 18 Oct 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 18 Oct 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
       <description></description>
     </item>
     
@@ -255,7 +255,7 @@
     </item>
     
     <item>
-      <title>blog</title>
+      <title>Blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
