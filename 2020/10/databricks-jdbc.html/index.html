@@ -234,7 +234,7 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 <li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/operators/jdbc_operator.py#L62">JdbcOperator uses JdbcHook</a> (which extends the hook to connect to databases) to execute SQL,</li>
 <li><a href="https://github.com/apache/airflow/blob/v1-10-stable/airflow/hooks/jdbc_hook.py#L38">JdbcHook says all JDBC based databases support autocommit</a>.</li>
 </ul>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Why does Airflow have a working Hive operator then?
 </span> 
@@ -265,7 +265,7 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 </code></pre></div><p>And now, the query worked and took 1.1 hours. Which also proved long-running queries don&rsquo;t hit timeouts or connection drops (this was also part of what I wanted to check).</p>
 <p>As you have seen, if you use Airflow you eventually get to know its internals. Probably too much.</p>
 <hr>
-<div class="note">
+<div class="note ">
 <span class='scaps smallText' style="display: inline-block;">
   All images in this post are from:
 </span> 
@@ -299,6 +299,10 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
        </li>
 	     
@@ -312,10 +316,6 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 	     
 	     <li  class="mb2">
            <a href="https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2019/06/201916-readings-of-week.html/">2019#16 Readings of the week</a>
        </li>
 	     
     </ul>

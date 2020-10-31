@@ -47,7 +47,7 @@
 <meta itemprop="description" content="After reading the Snowflake paper, I got curious about how similar engines work. Also, as I mentioned in that article, I like knowing how the data sausage is made. So, here I will summarise the Delta Lake paper by Databricks.">
 <meta itemprop="datePublished" content="2020-10-12T18:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-10-12T18:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="2987">
+<meta itemprop="wordCount" content="3024">
 
 
 
@@ -164,7 +164,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 15 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 2987 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 3024 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -199,7 +199,7 @@ if (!doNotTrack) {
   <hr class="section-break-2" />
 </div>
 <h3 id="problems-and-benefits-with-cloud-object-stores">Problems and benefits with cloud object stores</h3>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Notation
 </span> 
@@ -252,6 +252,21 @@ if (!doNotTrack) {
 <p>Since whom changed what is also stored, there is a pretty good level of audit logging built into the system, via the <em>provenance</em> action.</p>
 <p>By storing metadata information in separate files, there is no need to issue any <code>LIST</code> commands for data files (possibly millions), only for transaction record files (dozens). Schema evolution is relatively easy: since the schema is stored in the records, many schema changes can be acted on transactionally and some can even be compacted (column drops for instance). There is no detail about how column additions are handled, although I imagine that the Delta connector is more lenient than the Spark Parquet reader (which would fail for non-existing columns when a query plan demands them). Some form of <em>null if not present</em> needs to be offered in this case.</p>
 <p>Databricks’ own Delta Lake uses <a href="https://en.wikipedia.org/wiki/Z-order_curve">Z-Ordering</a> to optimise the storage (<em>Data layout optimisation</em>). You can even choose the ordering approach and columns via an SQL extension (<code>ZORDER BY</code>). If you use Databricks, you also get auto-optimise. There are no details about what this does, but it is not that hard to check most common query paths and automatically set the Z-Ordering to speed up those queries. There are no details either about how Databricks implements Z-Ordering internally, but from comments in the performance evaluation section of the paper, it’s not “fully” Z-Ordering. But close. For each column in the Z-index, the whole dataset is at least partially ordered, as in, each file contains a chunk of the ordered set. Then, each file will have reasonable min-max metadata field that allows skipping it when querying outside those ranges. Compare this <a href="https://cdn2.hubspot.net/hubfs/392937/Whitepaper/WP/interleaved_keys_v12_1.pdf">with Redshift’s interleaved indices</a> (this PDF from <a href="https://chartio.com">Chartio</a> also talks about zone maps and is an excellent resource).</p>
+<div class="note update">
+  <span class="note-date">
+    added on 2020-10-31
+  </span>
+<span class='scaps ' style="display: inline-block;">
+  Z-Order information
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Thanks to <a href="https://twitter.com/jmartinezvila">Josep Martínez Vilà</a> for giving me two Databricks-related Z-order links:</p>
+<ul>
+<li><a href="https://engineering.salesforce.com/boost-delta-lake-performance-with-data-skipping-and-z-order-75c7e6c59133">Boost Delta Lake Performance with Data Skipping and Z-Order (SalesForce Engineering)</a></li>
+<li><a href="https://databricks.com/blog/2018/07/31/processing-petabytes-of-data-in-seconds-with-databricks-delta.html">Processing Petabytes of Data in Seconds with Databricks Delta</a></li>
+</ul>
+</span>
+</div>
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
@@ -306,7 +321,7 @@ if (!doNotTrack) {
 <p>Databricks argues that this is expensive due to the reading, writing and handling. I agree on the fact that handling this process is a pain, but I still don’t see where we get a particular speed-up in this case when using Delta. Compaction is not free, some worker node that you are paying for will eventually run steps 1-3. Automatically, yes, but still will cost compute power.</p>
 <p>The speed up promises, though, seem realistic. Immutability without needing to issue <code>LIST</code> requests are a big speed up for caching, and zone maps/Z-ordering should be a significant speed up for many work scenarios. After all, the fastest way to scan a file is being aware the data is not there and not even loading it.</p>
 <hr>
-<div class="note">
+<div class="note ">
 <span class='scaps smallText' style="display: inline-block;">
   All images in this post are from:
 </span> 
@@ -348,6 +363,10 @@ if (!doNotTrack) {
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
        </li>
 	     
@@ -361,10 +380,6 @@ if (!doNotTrack) {
 	     
 	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/snowflake.html/">Does Snowflake have a technical moat worth 60 billion?</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
        </li>
 	     
     </ul>

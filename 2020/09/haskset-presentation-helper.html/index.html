@@ -177,7 +177,7 @@ if (!doNotTrack) {
 <p>A year or so ago I wrote a script in AWK that transformed a Markdown presentation formatted for <a href="https://www.deckset.com">Deckset</a> into a Markdown presentation that <a href="https://pandoc.org">Pandoc</a> can convert into a <a href="http://revealjs.com">reveal.js</a> presentation, <a href="https://github.com/rberenguel/awkrdeck">awkrdeck</a>.</p>
 <p>I wrote the script to be able to share my presentations with animated <code>GIF</code>s (which don&rsquo;t show in the <code>PDF</code> export from <code>Deckset</code>). As such, it is very tied to how I format my presentations, and only offers features I use. With it I was able to export the initial versions of my <a href="https://github.com/rberenguel/pyspark-arrow-pandas">PySpark talk</a>.</p>
 <p>The AWK code was not ready to handle variable footers and several features I had to use for my presentation at <a href="https://databricks.com/speaker/ruben-berenguel">Spark+AI summit 2020</a>. After writing a Markdown parser for <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> (using custom parser combinators), it was a no-brainer to rewrite this AWK mess into an extendable system.</p>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Note:
 </span> 
@@ -187,7 +187,7 @@ if (!doNotTrack) {
 </div>
 <hr style="margin-top: 2rem; margin-bottom: 1rem;"/>
 <p>Of course, <code>hticketiser</code> (my previous Haskell project) made me re-think, so instead of reusing my Markdown parser in Python I decided to rewrite everything in Haskell from scratch. As before, it was an interesting problem, involving parsing and evaluation. A good excuse to learn to use parser combinators in Haskell.</p>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Note:
 </span> 
@@ -243,7 +243,7 @@ if (!doNotTrack) {
   <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>char <span style="color:#e6db74">&#39; &#39;</span>
   title <span style="color:#f92672">&lt;-</span> pack <span style="color:#f92672">&lt;$&gt;</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>manyTill <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>anyChar newLineTryParser
   return (<span style="color:#66d9ef">Header</span> header title)
-</code></pre></div><div class="note">
+</code></pre></div><div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Note to self:
 </span> 
@@ -283,7 +283,7 @@ if (!doNotTrack) {
       <span style="color:#66d9ef">Right</span> thing <span style="color:#f92672">-&gt;</span> thing
       <span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">_</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">[Failed parsing inlined formats]</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><p>As you can see in the <code>Left</code> case at the bottom, I&rsquo;m not throwing or emitting errors. I prefer outputting errors directly into the slide. The reason is simple: I&rsquo;d rather have slides with some text errors I can fix by editing the HTML than having to rewrite parts of the code because the error stops the process. Imagine being in a hurry and needing the <code>reveal.js</code> version <em>now</em>.</p>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Note to self:
 </span> 
@@ -328,7 +328,7 @@ if (!doNotTrack) {
 <hr>
 <p>Next Haskell exploration will be about web frameworks and database connectors.</p>
 <hr>
-<div class="note">
+<div class="note ">
 <span class='scaps smallText' style="display: inline-block;">
   All images in this post are from:
 </span> 

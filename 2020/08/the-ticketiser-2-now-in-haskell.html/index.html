@@ -234,7 +234,7 @@ if (!doNotTrack) {
 <p>My first Haskell weekend was spent writing this tracer. I started by using the <a href="https://github.com/snoyberg/yaml"><code>yaml</code> library</a> by <a href="https://mobile.twitter.com/snoyberg">Michael Snoyman</a>. In particular, I copied from the <code>config</code> example <a href="https://github.com/snoyberg/yaml/blob/master/yaml/examples/Config.hs">here</a>. This example is interesting because it serves almost as a test harness about how to go from <em>inlined string</em> to object.</p>
 <p>Thus, the first half of the day was spent writing data types for the YAML objects, and tweaking how they looked.</p>
 <p>Once I had this down, the other half went for CLI parsing. I went for command-line option parsing, and chose <a href="https://hackage.haskell.org/package/optparse-applicative">optparse-applicative</a>. This was trickier to write and understand, but I got a CLI argument parser. For now I didn&rsquo;t have any flags, only a filename.</p>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   First realisation:
 </span> 
@@ -269,7 +269,7 @@ if (!doNotTrack) {
 <li><code>mapM_</code> over IO [Tickets] with [sendOneTicket]</li>
 </ul>
 <p>You can think of <code>mapM_</code>, from <code>Control.Monad</code> as an equivalent to <code>map</code>, but for lists wrapped inside a monad. In this case, I had a <code>IO [Tickets]</code>, the list is <code>[Tickets]</code>, the monad <code>IO</code>. Since I have a function from ticket to <code>IO</code>, I can use <code>mapM</code> to go through the list, preserving the <code>IO</code>. The underscore is because I don&rsquo;t care about the returning results (which were empty at the moment anyway).</p>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Second realisation:
 </span> 
@@ -367,7 +367,7 @@ if (!doNotTrack) {
 <h3 id="addendum">Addendum</h3>
 <p>There were some interesting suggestions for improvement (some I have tried, and some I leave for future projects) in <a href="https://www.reddit.com/r/haskell/comments/iflrw9/observations_after_the_first_time_writing_simple/">this Reddit thread</a>.</p>
 <hr>
-<div class="note">
+<div class="note ">
 <span class='scaps smallText' style="display: inline-block;">
   All images in this post are from:
 </span> 

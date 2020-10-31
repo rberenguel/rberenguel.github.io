@@ -47,7 +47,7 @@
 <meta itemprop="description" content="I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (ACM Special Interest Group on Management of Data) paper and investigate a bit more what special capabilities they offer, and how they compare to others.">
 <meta itemprop="datePublished" content="2020-10-02T23:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-10-02T23:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="2937">
+<meta itemprop="wordCount" content="2982">
 
 
 
@@ -164,7 +164,7 @@ if (!doNotTrack) {
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 14 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 2937 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 2982 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -260,7 +260,7 @@ if (!doNotTrack) {
   <hr class="section-break-2" />
 </div>
 <h3 id="so">So?</h3>
-<div class="note">
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
   Betteridge&#39;s Law of Headlines
 </span> 
@@ -287,8 +287,19 @@ if (!doNotTrack) {
 <p>Against these three possible competitors, Snowflake seems to have a clear edge. Worth 60 billion? I wouldn&rsquo;t count on that for a long-term investment. Of course, I&rsquo;m not an investor: <a href="https://en.wikipedia.org/wiki/Berkshire_Hathaway">Berkshire-Hathaway</a> (<a href="https://en.wikipedia.org/wiki/Warren_Buffett">Warren Buffet</a>&lsquo;s investment company) has invested 700 million, and they are famous for being long investors.</p>
 <p>One kicker for me is that they have been called <em>the new Oracle</em>. Where is <a href="https://en.wikipedia.org/wiki/Oracle_Corporation">Oracle</a> now? They are still a large business, they are pretty stable. In general, database systems are sticky: once you choose a vendor you keep it for pretty long. That is good, but traditionally all database system architectures have a relatively short timespan to profit.</p>
 <p>There doesn&rsquo;t seem to be any particular technology moat. The user experience and granularity seem to be excellent, but how hard would it be for any of the other parties to improve their offering to a similar point? It may not be a matter of a few months, but I wouldn&rsquo;t put my money on Snowflake for long.</p>
+<div class="note update">
+  <span class="note-date">
+    added on 2020-10-31
+  </span>
+<span class='scaps ' style="display: inline-block;">
+  The streaming future
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Although I didn&rsquo;t mention streaming (since it&rsquo;s not covered in the paper), I had streaming as an <em>against</em> for Snowflake. This turns out to be a mistake, <a href="https://www.snowflake.com/blog/snowflake-streaming-now-hiring-help-design-and-build-the-future-of-big-data-and-stream-processing/">Snowflake is working on a streaming solution</a> (also see <a href="https://twitter.com/takidau">Tyler Akidau</a>&lsquo;s <a href="https://docs.google.com/presentation/d/1YtTEnOax5MDA8DazDa1ad-sP4zzM58KQK4HNAcxoONA/mobilepresent?slide=id.g55c98e8831e2511f_1">slides</a>).</p>
+</span>
+</div>
 <hr>
-<div class="note">
+<div class="note ">
 <span class='scaps smallText' style="display: inline-block;">
   All images in this post are from:
 </span> 
@@ -330,6 +341,10 @@ if (!doNotTrack) {
        </li>
 	     
 	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
        </li>
 	     
@@ -339,10 +354,6 @@ if (!doNotTrack) {
 	     
 	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/">2020#57 Readings</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
        </li>
 	     
     </ul>

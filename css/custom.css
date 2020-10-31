@@ -334,6 +334,18 @@ code {
     border-radius: 3px;          
 }
 
+.update {
+    background:seashell;
+}
+
+.note-date {
+    font-size: 60%;
+    font-weight: 100;
+    float: right;
+    padding: 0.3rem;
+    font-style: italic;
+}
+
 pre > code {
     font-family: "monoidregular", Consolas, monaco, monospace;
     font-size: 0.7em;
