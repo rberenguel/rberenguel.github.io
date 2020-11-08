@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2020 17:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 11:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
+      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
@@ -23,9 +23,18 @@
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
+      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Papers</title>
+      <link>https://mostlymaths.net/tags/data-papers/</link>
+      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-papers/</guid>
       <description></description>
     </item>
     
@@ -98,15 +107,6 @@
       <pubDate>Sun, 18 Oct 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Papers</title>
-      <link>https://mostlymaths.net/tags/data-papers/</link>
-      <pubDate>Mon, 12 Oct 2020 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-papers/</guid>
       <description></description>
     </item>
     

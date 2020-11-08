@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | The RDD paper: introducing the Spark general purpose framework</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.63.2" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+    <link href="https://mostlymaths.net/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/all.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/byrne-caps/stylesheet.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/reforma/reforma.css">
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="The RDD paper: introducing the Spark general purpose framework" />
+<meta property="og:description" content="This is the next instalment on my quest to read and help understand interesting papers in the data space." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2020/11/rdd.html/" />
+<meta property="article:published_time" content="2020-11-08T11:30:33+02:00" />
+<meta property="article:modified_time" content="2020-11-08T11:30:33+02:00" />
+<meta itemprop="name" content="The RDD paper: introducing the Spark general purpose framework">
+<meta itemprop="description" content="This is the next instalment on my quest to read and help understand interesting papers in the data space.">
+<meta itemprop="datePublished" content="2020-11-08T11:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-11-08T11:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="1909">
+
+
+
+<meta itemprop="keywords" content="Data,Data Papers,Apache Spark," />
+
+    
+    
+        
+    
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide7.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="The RDD paper: introducing the Spark general purpose framework"/>
+<meta name="twitter:description" content="This is the next instalment on my quest to read and help understand interesting papers in the data space."/>
+
+<meta name="author" content="Ruben Berenguel">
+    
+      
+         
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+      
+    
+  </head>
+
+  <body class="ma0 reforma bg-near-white">
+
+    
+
+
+  
+  
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide7.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/sitemap/" title=" page">
+                  <i class='fas fa-map'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/pages/about/" title="about page">
+                  about
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <header class="mt4 w-100">
+        <h1 class="fw1 mb1 f1">The RDD paper: introducing the Spark general purpose framework</h1>
+        
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Computing</span>
+    </section>
+    
+        
+        <time class="f6 mt4 dib tracked" datetime="2020-11-08T11:30:33&#43;02:00">November 8, 2020</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 9 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1909 words</span>
+      
+      <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
+    </header>
+
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This is the next instalment on my quest to read and help understand <a href="https://mostlymaths.net/tags/data-papers">interesting papers</a> in the data space.</p>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide7.jpg"/> 
+</figure>
+
+<p>The RDD paper (<a href="https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Computing</a>) is foundational: it established <em>Spark</em> as the winner of the big data framework wars of the early 2010s.</p>
+<p>What may be surprising is that the ideas in the paper are completely straightforward to understand, even for non-developers. As part of this writing I will also mention a related paper, <a href="https://dl.acm.org/doi/10.1145/1755913.1755940">Delay Scheduling</a>. Although you can have RDDs without delay scheduling, it is a very large part of what makes Spark fast.</p>
+<ul>
+<li><a href="#manufacturing-data">Manufacturing data</a></li>
+<li><a href="#where-is-the-fairy-dust-that-makes-it-fast">Where is the fairy dust that makes it fast?</a></li>
+<li><a href="#the-magic-of-spark-winning-the-framework-wars">The magic of Spark: winning the framework wars</a></li>
+<li><a href="#not-perfect-though">Not perfect though</a></li>
+</ul>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="manufacturing-data">Manufacturing data</h3>
+<figure class="fig-tall right">
+    <img src="https://mostlymaths.net/images/dresser/tall3.jpg"/> 
+</figure>
+
+<p>Let’s start with an unrelated situation.</p>
+<p>You are the owner of a small and thriving cleaning products factory. Your bestseller is <code>ElephantClean</code>, ideal for cleaning large cages. Production is increasing, and your manufacturing pipeline is at full tilt.</p>
+<p>Getting your product in the hands of consumers involves many steps. It all starts with the raw chemicals, which are bought in bulk in numbered parcels. The chemicals are processed in batches, depending on the size of the vats needed to mix them. When the final mixture is ready, a machine fills the plastic bottles. They are then arranged in boxes ready for shipment to direct clients and distributors.</p>
+<p>The machines that mix the chemicals are as close as possible to the raw material vats. You don’t want to pay for large container trucks, which are expensive to manage. A shorter distance reduces turn-out time, the time from raw material arriving to the factory to a bottle containing its processed materials.</p>
+<p>Sometimes a bottle turns out faulty. This can be detected by your QA team, or more rarely, by a dissatisfied customer. When this happens, your team traces back the failed bottle, finding which mixture went into it, and then all related bottles to fix them for your clients. If a mixture turns out badly in the middle of the process, it is thrown out and prepared again. If some materials are faulty, they are re-ordered from providers. Reasonable, isn’t it?</p>
+<p>In data processing we convert raw data into processed data.</p>
+<p>There is one final parallel I need to establish. Transformations on data are classified between <em>coarse grained</em> and <em>fine-grained</em>.</p>
+<ul>
+<li>A <em>fine-grained transformation</em> affects only a row or data element. That top-notch barista that roasts her coffee.</li>
+<li>A <em>coarse grained transformation</em> affects the whole dataset, in operations like <em>map</em>, <em>filter</em>. A roasting company, going from producers up to home delivery of ground coffee bags.</li>
+</ul>
+<blockquote>
+<p>Resilient Distributed Datasets: fault-tolerant, parallel data structures that…</p>
+</blockquote>
+<p>RDDs are an abstraction built on top of data and operations. The properties of this abstraction are what lets Spark operate as you would in the factory.</p>
+<p>An RDD defines an operation that is applied to another RDD. This chain of operations on RDDs starts with a read from a data source.</p>
+<p>This operation (computation or read) is <em>partitioned</em>. For instance, when reading data from distributed storage, the partitioning can be <em>machine 1 reads all files starting with the letter A</em>. This is what makes distributing the work easy, like sending separate product batches in several trucks. Each RDD knows how to compute an output partition from input partitions. This defines a set of dependencies per partition, and allows us to talk about <em>narrow dependencies</em> and <em>wide dependencies</em>. Narrow means that only one partition per parent goes to an output partition (the quintessential example would be <em>map</em>), and wide is for multiple (where the example would be <em>join</em>).</p>
+<p>The output partitioning can be customised optionally customised, a useful ability when you know the output is best distributed in a certain way.</p>
+<figure class="fig30 left">
+    <img src="https://mostlymaths.net/images/dresser/square2.jpg"/> 
+</figure>
+
+<p>The final fundamental piece of a RDD is a set of <em>preferred locations</em> for the partitions. This allows the RDD to execute <code>compute</code> as close as possible to where the data is. When the RDD is defined as a read, “compute” is essentially a read, and if you are specifically using HDFS, there will be a partition per HDFS block.</p>
+<p>Since RDDs depend on previous RDDs, if computing a partition fails, it can be retried by repeating all the operations up to that point <em>only for the partition</em>.</p>
+<div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  Note
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>The <code>compute</code> method has to be deterministic to allow recomputation. Otherwise, re-running failed paths would result in inconsistent data. This does not necessarily rule out using random number generators, it just means that the seed has to be fixed by the driver.</p>
+</span>
+</div>
+<p>I hope my small cleaning factory story makes sense now.</p>
+<p>Production materials (partitions) are kept close to the machines that have to process (compute) them. Production is traced in batches (partitions) so that when something fails it can be prepared (computed) again from the previous materials (previous RDDs).</p>
+<h3 id="where-is-the-fairy-dust-that-makes-it-fast">Where is the fairy dust that makes it fast?</h3>
+<p><em>Transformations</em> on RDDs are lazy. This is something that used to be a problem for people starting to work with Spark. But it also was one of its initial advantages. The laziness means that you can define a very long chain of transformations <em>instantaneously</em>, and it won’t start processing the data until an <em>action</em> happens. The distinction is pretty intuitive: transformations <em>transform</em> data, actions <em>do something</em> with the data.</p>
+<p>This tiny and seemingly useless part was actually a big difference. You could use an interactive shell (based on the Scala shell) to operate <em>immediately</em> on large datasets.</p>
+<p>The second sprinkle of fairy dust is <em>delay scheduling</em>. This was originally proposed for MapReduce workflows in Hadoop, but it made it directly into Spark from day one. RDDs have a preferred location to compute something, which usually matches the location where the data is (disk or memory). Ideally, you want to compute at <em>that</em> location, but this is not always possible. A similar problem happens with MapReduce workloads: you want to avoid moving data around, but you also want to avoid leaving your machines idle while you wait for only one thing to finish.</p>
+<p>The solution is delay scheduling. It probably sounds more interesting than what it is. Imagine that you go to a big retail store to make a large purchase, a store where one of your friends works. You want to talk to him and maybe help him earn a commission, but you also want to make it home early.  He’s busy. How to solve the problem? Easy. You wait for a while to see if he can process your order, and after a while, you go for another assistant. That’s delay scheduling.</p>
+<figure class="fig-full">
+    <img src="https://mostlymaths.net/images/dresser/wide13.jpg"/> 
+</figure>
+
+<h3 id="the-magic-of-spark-winning-the-framework-wars">The magic of Spark: winning the framework wars</h3>
+<p>Obviously, this is just part of the story. RDDs are fundamental for Spark, but the power of the framework lies in its ergonomics (its ease of use and capabilities). It was the first framework where you could run diverse computational workloads. Users only have to write a high-level program in the <em>driver</em>, and the driver connects to a cluster of workers. These workers are long-lived, which means they can keep data in RAM. The code in the driver is the one that keeps track of lineage and RDD operations.</p>
+<p>The first implementation of Spark (the one in the paper) was written on top of the Mesos cluster manager. Workers and driver are separate Mesos applications, and Mesos handled resource sharing and assignment. Nowadays Spark runs also on YARN and Kubernetes, as well as having a “standalone” mode.</p>
+<p>Arguments to RDD operations are passed around as serialised closures (a <em>closure</em> is a function together with a lexical binding… sorry, won’t explain closures here 😅). To make this work, the Spark developers had to play around Scala issues with serialising closures (using reflection, which in general is pretty evil). The summarised version is that you write functions in Scala and magically they are passed to the workers, where they are used on the data.</p>
+<p>The other advantage is the in-memory capabilities. The RDD abstraction simplifies keeping data in memory, and keeping data in memory makes it easier to re-use. As a user, you had more or less complete control over this (even offering several methods, like deserialised Java objets, serialised Java objects or custom serialisers, like <a href="https://github.com/EsotericSoftware/kryo">Kryo</a>), being able to cache in memory, or persist to disk with an easy command, any RDD, at any time. Coupled with the interactivity you get via laziness and a shell made Spark the first general purpose system where you could process terabytes of data at interactive speeds. You could just type and get an answer, almost instantly.</p>
+<figure class="fig30 left">
+    <img src="https://mostlymaths.net/images/dresser/square5.jpg"/> 
+</figure>
+
+<p>The Spark scheduler (based on the <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2007/03/eurosys07.pdf">Dryad</a> scheduler according to the paper) factors what is in memory/disk in each node, and using the lineage RDDs define builds a DAG of <em>stages</em>. Stages are blocks of operations that can run without needing to move data around (an operation known as a <em>shuffle</em>), or in other words, operations that can be pipelined. For instance, if you are mapping and filtering, these two operations run together in one go, without moving data around. As an additional optimisation, in operations with wide dependencies intermediate records are physically materialised on nodes requiring these partitions.</p>
+<p>This fixation on keeping data in place made easy some workloads that were cumbersome before. For instance, iterative machine learning and graph algorithms run with heavy data re-use. One example would be the PageRank indexing algorithm, which is at its core a repeated matrix computation. When the Spark/RDDs paper was written, the only way you could re-use data was to write to a distributed filesystem, with the large cost of writing to disk.</p>
+<p>The fact that lineage keeps track of the process and allows recomputation means that Spark didn’t need to <em>checkpoint</em>. In a distributed computation a checkpoint is a specific point in the process where all data is stored, and establishes a point where you can pick up if something fails. This does not mean that Spark does not checkpoint: If the lineage is very long Spark will checkpoint.</p>
+<p>Failure recovery and laggards (slow partitions) are handled as well by the scheduler. Missing partitions are recomputed straight from available data, laggards are pre-emptively scheduled in other, available nodes.</p>
+<div class="note more-info">
+<span class='scaps ' style="display: inline-block;">
+  More information
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>If you want to know a bit more about how Spark works internally (with a focus on the Python integration, PySpark) you can have a look at <a href="https://mostlymaths.net/pyspark-arrow-pandas/pyspark.html#/">this presentation</a> (from 2019s Spark+AI Summit). Press <code>s</code> to enter presenter mode, this way you can see the footnotes: they should explain more or less everything I want to  say in any slide (and sometimes more).</p>
+</span>
+</div>
+<h3 id="not-perfect-though">Not perfect though</h3>
+<p>Of course, there is no framework that can do everything. Spark was (and is not) suited for async-heavy computations, or those needing fine-grained updates to shared state. For instance, you would never write a web app or incremental web crawler in Spark. You would totally use it to analyse the logs or output of either, though.</p>
+<p>If you are a Spark user nowadays you may be thinking: RDDs are lame and old! That is only partially true, if the <a href="https://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf">Catalyst optimiser</a> does not kick in, Datasets and Dataframes are implemented on top of the RDD framework.</p>
+<p>In a future post I will cover the paper where dataframes and Catalyst were introduced, <a href="https://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf">Spark SQL: Relational Data Processing in Spark</a>. This will probably tie the loop between this post and <a href="https://mostlymaths.net/2020/10/delta-lake.html/">Databricks&rsquo; Delta Lake: high on ACID</a>.</p>
+<hr>
+<div class="note ">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
+        <ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data-papers" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data Papers</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<canvas id='map'></canvas>
+<script src="https://mostlymaths.net/js/pagemap-1.2.0.min.js"></script>
+<script src="https://mostlymaths.net/js/pagemap-settings.js"></script>
+
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/delta-lake.html/">Databricks&#39; Delta Lake: high on ACID</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/">2020#57 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div>
+  <div class="bg-light-gray pa3 rounded-6">
+      <div id="amzn-assoc-ad-b32c8532-5735-46ba-a593-6ef194979030"></div>
+  </div>
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=b32c8532-5735-46ba-a593-6ef194979030"></script></aside>
+    
+    </article>
+    
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-5407208-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2020 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://mostlymaths.net/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
