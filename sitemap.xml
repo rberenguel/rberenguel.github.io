@@ -3,42 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2020/11/202061-readings.html/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2020-11-08T11:30:33+02:00</lastmod>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/d3js/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2020-11-08T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data-papers/</loc>
-    <lastmod>2020-11-08T11:30:33+02:00</lastmod>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-11-08T11:30:33+02:00</lastmod>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-11-08T11:30:33+02:00</lastmod>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/rust/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data-papers/</loc>
     <lastmod>2020-11-08T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,20 +102,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2020-10-31T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2020-10-31T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2020-10-31T17:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -276,13 +297,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/rust/</loc>
-    <lastmod>2020-08-21T15:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/</loc>
     <lastmod>2020-08-19T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -403,13 +417,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2020/06/d3-sitemap.html/</loc>
-    <lastmod>2020-06-08T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/d3js/</loc>
     <lastmod>2020-06-08T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

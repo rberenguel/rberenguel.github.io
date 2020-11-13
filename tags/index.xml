@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 11:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2020 20:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,18 +14,54 @@
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>d3js</title>
+      <link>https://mostlymaths.net/tags/d3js/</link>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/d3js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://mostlymaths.net/tags/rust/</link>
+      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -53,24 +89,6 @@
       <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -183,15 +201,6 @@
     </item>
     
     <item>
-      <title>Rust</title>
-      <link>https://mostlymaths.net/tags/rust/</link>
-      <pubDate>Fri, 21 Aug 2020 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>D3</title>
       <link>https://mostlymaths.net/tags/d3/</link>
       <pubDate>Fri, 26 Jun 2020 12:30:33 +0200</pubDate>
@@ -260,15 +269,6 @@
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>d3js</title>
-      <link>https://mostlymaths.net/tags/d3js/</link>
-      <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/d3js/</guid>
       <description></description>
     </item>
     
