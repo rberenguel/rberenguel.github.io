@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 20:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2020 00:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWK</title>
+      <link>https://mostlymaths.net/tags/awk/</link>
+      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/awk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Command Line</title>
+      <link>https://mostlymaths.net/tags/command-line/</link>
+      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How-to</title>
+      <link>https://mostlymaths.net/tags/how-to/</link>
+      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -35,15 +71,6 @@
       <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
       <description></description>
     </item>
     
@@ -264,7 +291,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
@@ -503,15 +530,6 @@
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/bizarre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command Line</title>
-      <link>https://mostlymaths.net/tags/command-line/</link>
-      <pubDate>Tue, 04 Jun 2019 20:34:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/command-line/</guid>
       <description></description>
     </item>
     
@@ -899,15 +917,6 @@
       <pubDate>Mon, 04 Jun 2012 21:15:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/iceland/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How-to</title>
-      <link>https://mostlymaths.net/tags/how-to/</link>
-      <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/how-to/</guid>
       <description></description>
     </item>
     

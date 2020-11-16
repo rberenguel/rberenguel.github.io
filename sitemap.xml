@@ -3,6 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/awk/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/command-line/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/how-to/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2020/11/url-pdf-kindle.html/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2020-11-17T00:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2020/11/202061-readings.html/</loc>
     <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -31,27 +87,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -60,13 +95,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/rust/</loc>
-    <lastmod>2020-11-13T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2020-11-13T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -871,13 +899,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/command-line/</loc>
-    <lastmod>2019-06-04T20:34:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2019/05/201914-readings-of-week.html/</loc>
     <lastmod>2019-05-26T11:48:00+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -1593,13 +1614,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</loc>
-    <lastmod>2012-03-27T16:47:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/how-to/</loc>
     <lastmod>2012-03-27T16:47:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
