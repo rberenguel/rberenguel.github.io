@@ -49,7 +49,7 @@
 ">
 <meta itemprop="datePublished" content="2020-11-17T00:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-11-17T00:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="690">
+<meta itemprop="wordCount" content="991">
 
 
 
@@ -147,8 +147,8 @@
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 690 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 5 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 991 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -166,6 +166,19 @@
 
 <div class="sb sb-2">
   <hr class="section-break-2" />
+</div>
+ <br/>
+  <br/>
+<div class="note update">
+  <span class="note-date">
+    added on 2020-11-22
+  </span>
+<span class='scaps ' style="display: inline-block;">
+  Alternative using Pandoc
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>I found an alternative way that can convert directly to ePub (more or less) with <a href="http://pandoc.org">pandoc</a>. You can find it at the end.</p>
+</span>
 </div>
 <p>A few weeks, maybe a month ago I was talking with <a href="https://mobile.twitter.com/jmartinezvila">Josep Martínez</a> about posts, reading and the Kindle, and he told me he reads everything as a PDF on Kindle.</p>
 <p>As an avid reader (and <a href="https://mobile.twitter.com/berenguel/status/1320338201328963585">happy Kindle owner</a>) I thought <em>why don&rsquo;t I do that</em>? One answer is that I add a lot of articles for my reading queue. Another would be that if my queue is very long, I need to cross-reference the Kindle and my reading list in <a href="https://culturedcode.com/things/">Things</a>. And yet another could be that converting webpages to PDF and sending to Kindle doesn&rsquo;t sound awesome. <em>Did I mention I use Safari?</em> No fancy extensions for doing this for me.</p>
@@ -264,7 +277,33 @@
 <li><em>Clean after yourself</em>: Closing the newly opened tab after saving the PDF</li>
 <li><em>Avoid human intervention</em>: Sending an email directly instead of saving to Downloads</li>
 <li><em>Poor man&rsquo;s parallelization</em>: Opening all the URLs first, without waiting (to warm Safari&rsquo;s cache) and then open them &ldquo;again&rdquo;.</li>
-</ul><hr/>
+</ul>
+<h3 id="alternative-using-pandoc">Alternative using pandoc</h3>
+<p>The advantage of this approach is that once you have an ePub, you can convert it to AZW3 via Calibre and then use whatever font you want in your Kindle.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span><span style="color:#e6db74">&#34;SELECT t.notes from TMTask t JOIN TMTask p on p.uuid = t.project WHERE p.title = &#39;📄 Articles&#39; and t.trashed != 1 and t.status = 0;&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>| rg -v <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.*.pdf</span>$<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>| rg <span style="color:#e6db74">&#34;http.*&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>| gawk <span style="color:#e6db74">&#39;{\
+</span><span style="color:#e6db74">gsub(&#34;https&#34;, &#34;http&#34;, $1)
+</span><span style="color:#e6db74">url = $1
+</span><span style="color:#e6db74">ret_val = system(&#34;pandoc -s -r html &#34; url &#34; -t html --self-contained --quiet --log pandoc.log -o &#34; NR &#34;.html &gt; /dev/null 2&gt;&amp;1&#34;);\
+</span><span style="color:#e6db74">printf(NR &#34;.html &#34;);\
+</span><span style="color:#e6db74">if(ret_val!=0){\
+</span><span style="color:#e6db74">    print(&#34;\033[31m &#34;url&#34; \033[0m (fail)&#34;) \
+</span><span style="color:#e6db74">    } else {\
+</span><span style="color:#e6db74">    print(&#34;\033[32m &#34;url&#34; \033[0m (success)&#34;)} \
+</span><span style="color:#e6db74">}&#39;</span>;<span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>pandoc -s -r html --self-contained --quiet -t epub --file-scope -o readings.epub *.html
+</code></pre></div><p>This kind-of-almost-works. Problems:</p>
+<ul>
+<li>Although pandoc can fetch URLs and convert them into different formats, it doesn&rsquo;t like epub as output. Thus, we need to force it to use any format that can take standalone images (otherwise epubs won&rsquo;t have images)</li>
+<li>I found some HTTPS issues, so I replaced all https with http.</li>
+<li>Some relative paths and inlined images make pandoc fail hard (or hard enough, it logs at least) without creating any output</li>
+<li>Medium posts don&rsquo;t embed the real image, but a blurry preview, so that&rsquo;s what you get as output. You should never use medium for your blog.</li>
+<li>The output will look <em>just so</em></li>
+</ul>
+<p>Even as &ldquo;bad&rdquo; as it is, for text-heavy pages this is awesome, you can convert the page to Markdown and then to ePub, and the result will be perfectly readable in your Kindle.</p><hr/>
         <ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -299,6 +338,10 @@
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/11/202062-readings.html/">2020#62 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/11/202061-readings.html/">2020#61 Readings</a>
        </li>
 	     
@@ -312,10 +355,6 @@
 	     
 	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/10/202058-readings.html/">2020#58 Readings</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/">2020#57 Readings</a>
        </li>
 	     
     </ul>

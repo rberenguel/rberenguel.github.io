@@ -6,17 +6,71 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2020 00:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2020 12:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AWK</title>
       <link>https://mostlymaths.net/tags/awk/</link>
-      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/awk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -39,47 +93,11 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Tue, 17 Nov 2020 00:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>d3js</title>
       <link>https://mostlymaths.net/tags/d3js/</link>
       <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/d3js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Fri, 13 Nov 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -107,15 +125,6 @@
       <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sat, 31 Oct 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
       <description></description>
     </item>
     
@@ -215,15 +224,6 @@
       <pubDate>Fri, 28 Aug 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Fri, 21 Aug 2020 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
