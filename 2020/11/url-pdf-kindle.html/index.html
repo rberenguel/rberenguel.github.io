@@ -49,7 +49,7 @@
 ">
 <meta itemprop="datePublished" content="2020-11-17T00:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-11-17T00:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="991">
+<meta itemprop="wordCount" content="1008">
 
 
 
@@ -148,7 +148,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 5 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 991 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1008 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -180,6 +180,22 @@
 <p>I found an alternative way that can convert directly to ePub (more or less) with <a href="http://pandoc.org">pandoc</a>. You can find it at the end.</p>
 </span>
 </div>
+<ul>
+<li><a href="#shell-section">Shell section</a>
+<ul>
+<li><a href="#sqlite3-"><code>sqlite3 …</code></a></li>
+<li><a href="#rg--v-pdf"><code>rg -v &quot;.*.pdf$&quot;*</code></a></li>
+<li><a href="#rg-http"><code>rg &quot;http.*&quot;</code></a></li>
+<li><a href="#gawk-"><code>gawk …</code></a></li>
+</ul>
+</li>
+<li><a href="#applescript">AppleScript</a>
+<ul>
+<li><a href="#possible-improvements">Possible improvements</a></li>
+</ul>
+</li>
+<li><a href="#alternative-using-pandoc">Alternative using pandoc</a></li>
+</ul>
 <p>A few weeks, maybe a month ago I was talking with <a href="https://mobile.twitter.com/jmartinezvila">Josep Martínez</a> about posts, reading and the Kindle, and he told me he reads everything as a PDF on Kindle.</p>
 <p>As an avid reader (and <a href="https://mobile.twitter.com/berenguel/status/1320338201328963585">happy Kindle owner</a>) I thought <em>why don&rsquo;t I do that</em>? One answer is that I add a lot of articles for my reading queue. Another would be that if my queue is very long, I need to cross-reference the Kindle and my reading list in <a href="https://culturedcode.com/things/">Things</a>. And yet another could be that converting webpages to PDF and sending to Kindle doesn&rsquo;t sound awesome. <em>Did I mention I use Safari?</em> No fancy extensions for doing this for me.</p>
 <p>Of course, I always have some crazy, scripty solution to try these things. This time involves:</p>
@@ -278,7 +294,7 @@
 <li><em>Avoid human intervention</em>: Sending an email directly instead of saving to Downloads</li>
 <li><em>Poor man&rsquo;s parallelization</em>: Opening all the URLs first, without waiting (to warm Safari&rsquo;s cache) and then open them &ldquo;again&rdquo;.</li>
 </ul>
-<h3 id="alternative-using-pandoc">Alternative using pandoc</h3>
+<h2 id="alternative-using-pandoc">Alternative using pandoc</h2>
 <p>The advantage of this approach is that once you have an ePub, you can convert it to AZW3 via Calibre and then use whatever font you want in your Kindle.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span><span style="color:#e6db74">&#34;SELECT t.notes from TMTask t JOIN TMTask p on p.uuid = t.project WHERE p.title = &#39;📄 Articles&#39; and t.trashed != 1 and t.status = 0;&#34;</span> <span style="color:#ae81ff">\
