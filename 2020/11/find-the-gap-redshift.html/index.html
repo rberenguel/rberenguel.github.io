@@ -49,7 +49,7 @@
 ">
 <meta itemprop="datePublished" content="2020-11-29T22:15:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-11-29T22:15:33&#43;02:00" />
-<meta itemprop="wordCount" content="576">
+<meta itemprop="wordCount" content="632">
 
 
 
@@ -148,7 +148,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 576 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 632 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -174,7 +174,15 @@
 <p>This type of problem is pretty typical in data engineering, when you want to backfill a table by re-running a job. My recommendation is to always, always do this type of computation in a programming language (in my work case, Python), but this can be done in pure SQL.</p>
 <p>In a generic PostgreSQL database, you would use the function <a href="https://www.postgresql.org/docs/9.1/functions-srf.html"><code>generate_series</code></a> from the minimum to the maximum in tni table, and then just join.</p>
 <p>Sadly, AWS Redshift does not have <code>generate_series</code>.</p>
-<p>You can instead do the following, given a <code>target_table</code> and a <code>a_very_large_table</code> available in your Redshift database that has more rows than elements you want to range on. This will depend on your table, but a lot of <code>stl_</code> (statistical) tables in Redshift are always large. Of course, if you are using Redshift you probably have some large tables without resorting to these. Note that this &ldquo;very&rdquo; is relative, and will depend on the granularity of your frequency.</p>
+<div class="note note">
+<span class='scaps ' style="display: inline-block;">
+  Well, technically it does
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>The function exists, and can be used BUT is a &ldquo;driver-only&rdquo; function. This means the computation is done in the driver. There is then no way to <em>use it</em> in a real query. It can be used for presentation purposes, like in <code>SELECT * FROM generate_series(1, 30, 1)</code> but you won&rsquo;t be able to join this (as a table expression) with a real table, because this cannot be sent to workers.</p>
+</span>
+</div>
+<p>Instead, you can do the following, given a <code>target_table</code> and a <code>a_very_large_table</code> available in your Redshift database. Note that this &ldquo;very&rdquo; is relative, and will depend on the granularity of your frequency. In general, if you are using Redshift you probably have a large enough table somewhere. Otherwise, check the <code>stl_</code> (statistical) system tables, some of these are large-ish.</p>
 <p>I will briefly explain what the code does below.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">WITH</span> _target_table <span style="color:#66d9ef">AS</span> 
 (
