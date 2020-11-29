@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Using Gephi with Google Analytics to visualize keywords and landing pages</title>
+    <title>mostlymaths.net  | Find-the-gap with SQL in AWS Redshift</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.63.2" />
     
@@ -37,28 +37,28 @@
 
     
 
-    <meta property="og:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages" />
-<meta property="og:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs." />
+    <meta property="og:title" content="Find-the-gap with SQL in AWS Redshift" />
+<meta property="og:description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/" />
-<meta property="article:published_time" content="2011-08-18T18:50:00+02:00" />
-<meta property="article:modified_time" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="name" content="Using Gephi with Google Analytics to visualize keywords and landing pages">
-<meta itemprop="description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs.">
-<meta itemprop="datePublished" content="2011-08-18T18:50:00&#43;02:00" />
-<meta itemprop="dateModified" content="2011-08-18T18:50:00&#43;02:00" />
-<meta itemprop="wordCount" content="1087">
+<meta property="og:url" content="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/" />
+<meta property="article:published_time" content="2020-11-29T22:15:33+02:00" />
+<meta property="article:modified_time" content="2020-11-29T22:15:33+02:00" />
+<meta itemprop="name" content="Find-the-gap with SQL in AWS Redshift">
+<meta itemprop="description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+">
+<meta itemprop="datePublished" content="2020-11-29T22:15:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-11-29T22:15:33&#43;02:00" />
+<meta itemprop="wordCount" content="576">
 
 
 
-<meta itemprop="keywords" content="Blog,Data,Visualization," />
+<meta itemprop="keywords" content="AWK,Data,SQL," />
 
     
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png"/>
+<meta name="twitter:image:src" content="/2020/11/find-the-gap-redshift.html//mind-the-gap.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -67,9 +67,9 @@ But this post is only mildly related to these books, since it started way before
 
 
 
-<meta name="twitter:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages"/>
-<meta name="twitter:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."/>
+<meta name="twitter:title" content="Find-the-gap with SQL in AWS Redshift"/>
+<meta name="twitter:description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+"/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -86,7 +86,7 @@ But this post is only mildly related to these books, since it started way before
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png');">
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2020/11/find-the-gap-redshift.html//mind-the-gap.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -140,211 +140,108 @@ But this post is only mildly related to these books, since it started way before
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Using Gephi with Google Analytics to visualize keywords and landing pages</h1>
+        <h1 class="fw1 mb1 f1">Find-the-gap with SQL in AWS Redshift</h1>
         
         
-        <time class="f6 mt4 dib tracked" datetime="2011-08-18T18:50:00&#43;02:00">August 18, 2011</time>
+        <time class="f6 mt4 dib tracked" datetime="2020-11-29T22:15:33&#43;02:00">November 29, 2020</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1087 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 576 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
-    <section class="w-100 mb3">
-      <span class="fw1  i" style="font-size: 0.4rem;">Some links are affiliate links</span>
-    </section>
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools.
-Recently I&rsquo;ve read two interesting books (<a href="http://www.amazon.com/gp/product/1849512086/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1849512086">Statistical Analysis with
-R</a>
-and <a href="http://www.amazon.com/gp/product/0470944889/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470944889">Visualize This: The FlowingData Guide to Design, Visualization, and
-Statistics</a>
-and I&rsquo;m on my way to another two to refresh my statistics knowledge.</p>
-<p>But this post is only mildly related to these books, since it started way
-before: the day I read about <a href="http://gephi.org/">Gephi</a>. Gephi is an open source
-graph visualization tool, to work with huge (or at least big) datasets and
-graphs. I&rsquo;ve seen it used to graph the friendship network from Facebook, or to
-graph tweet-retweets from Twitter (these two can be found in the Learn section
-from the Gephi website). In this post I&rsquo;ll guide you step by step to do a
-keyword-landing page directed graph, using data from your Google Analytics
-account.</p>
-<p>A directed graph is a graph with arrows. You have a set of sources (in this case
-keywords) and targets (in this case landing pages), and aggregate sources by
-name. Plot this, and you have a keyword-landing page graph like this one (data
-for the last month in mostlymaths.net restricted to the first 500 keywords).</p>
-<figure class="fig-wide">
-    <img src="Keywords-LandingPages.png"
-         alt="Keywords (arrow) Landing pages"/> <figcaption>
-            <p>Keywords (arrow) Landing pages</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A relatively common type of query for time-based SQL tables is a <em>find the gap</em> query. How can you do this in AWS Redshift, which does not have the SQL function <code>generate_series</code>?</p>
+<br/>
+<figure class="fig-full">
+    <img src="mind-the-gap.jpg"
+         alt="Photo by Bruno Figueiredo on Unsplash"/> <figcaption>
+            <p><span>Photo by <a href='https://unsplash.com/@bfigas?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Bruno Figueiredo</a> on <a href='https://unsplash.com/s/photos/mind-the-gap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span></p>
         </figcaption>
 </figure>
 
-<h2 id="what-interesting-things-you-can-read-from-such-a-graph">What interesting things you can read from such a graph</h2>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<p>There is a basic scenario where this type of query is used:</p>
+<blockquote>
+<p>A job that had to run periodically may have failed. When?</p>
+</blockquote>
+<p>This type of problem is pretty typical in data engineering, when you want to backfill a table by re-running a job. My recommendation is to always, always do this type of computation in a programming language (in my work case, Python), but this can be done in pure SQL.</p>
+<p>In a generic PostgreSQL database, you would use the function <a href="https://www.postgresql.org/docs/9.1/functions-srf.html"><code>generate_series</code></a> from the minimum to the maximum in tni table, and then just join.</p>
+<p>Sadly, AWS Redshift does not have <code>generate_series</code>.</p>
+<p>You can instead do the following, given a <code>target_table</code> and a <code>a_very_large_table</code> available in your Redshift database that has more rows than elements you want to range on. This will depend on your table, but a lot of <code>stl_</code> (statistical) tables in Redshift are always large. Of course, if you are using Redshift you probably have some large tables without resorting to these. Note that this &ldquo;very&rdquo; is relative, and will depend on the granularity of your frequency.</p>
+<p>I will briefly explain what the code does below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">WITH</span> _target_table <span style="color:#66d9ef">AS</span> 
+(
+  <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+  <span style="color:#66d9ef">FROM</span> target_table
+),
+start_date <span style="color:#66d9ef">AS</span>
+(
+  <span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
+  <span style="color:#66d9ef">FROM</span> _target_table
+  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">ASC</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span>
+),
+end_date <span style="color:#66d9ef">AS</span>
+(
+  <span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
+  <span style="color:#66d9ef">FROM</span> _target_table
+  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">DESC</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span>
+),
+date_span <span style="color:#66d9ef">AS</span>
+(
+  <span style="color:#66d9ef">SELECT</span> datediff(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">day</span><span style="color:#e6db74">&#39;</span>, 
+           (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date), 
+           (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> end_date))
+  <span style="color:#66d9ef">FROM</span> start_date
+),
+date_ranger <span style="color:#66d9ef">AS</span>
+(
+  <span style="color:#66d9ef">SELECT</span> ((<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date) <span style="color:#f92672">+</span> rn)::DATE <span style="color:#66d9ef">AS</span> dt
+  <span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> ROW_NUMBER() OVER (PARTITION <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">AS</span> rn
+        <span style="color:#66d9ef">FROM</span> a_very_large_table)
+  <span style="color:#66d9ef">WHERE</span> rn <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> date_span)
+  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> dt <span style="color:#66d9ef">ASC</span>
+)
+<span style="color:#66d9ef">SELECT</span> date_ranger.dt,
+       <span style="color:#66d9ef">CASE</span>
+         <span style="color:#66d9ef">WHEN</span> b.dt <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">THEN</span> <span style="color:#66d9ef">FALSE</span>
+         <span style="color:#66d9ef">ELSE</span> <span style="color:#66d9ef">TRUE</span>
+       <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">AS</span> available_in_target_table
+<span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
+      <span style="color:#66d9ef">FROM</span> _target_table
+      <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span>
+      <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">DESC</span>) b
+  <span style="color:#66d9ef">RIGHT</span> <span style="color:#66d9ef">JOIN</span> date_ranger <span style="color:#66d9ef">ON</span> b.dt <span style="color:#f92672">=</span> date_ranger.dt
+<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> dt <span style="color:#66d9ef">ASC</span>; 
+</code></pre></div><p>There is nothing fancy going on, even if it may look like there is. I use <a href="https://chartio.com/resources/tutorials/using-common-table-expressions/">common table expressions</a> to simplify the final result and be able to name things.</p>
 <ul>
-<li>
-<p>Clustering: In this particular instance, I can find the &ldquo;clusters&rdquo; of my
-blog. You can see 3 big aggregations of keywords and landing pages
-(left-middle,up-center and right-middle). Each one of these marks pages and
-groups of pages with several landing keywords. The groupings mark like the
-&ldquo;big themes&rdquo; in my blog, at least from search engine traffic (these are
-memory techniques, 9 best programming books I&rsquo;ve read and seed germination
-respectively). Oddly enough, I&rsquo;ve had one visit landing in seed germination
-from the keyword &ldquo;gnus mail&rdquo;, thus the big seed germination cluster includes
-emacs.</p>
-</li>
-<li>
-<p>Big keywords: In gephi you can scale nodes depending on other table
-variables. For example, I can scale the landing page dots depending on the
-number of keywords, or the number of visits. In particular, I can show which
-keywords lead to more of my pages, by using the outDegree (number of arrows
-escaping) of a node.</p>
-</li>
-<li>
-<p>Big pages: Alternatively, I can scale nodes with the inDegree (number of
-arrows entering) to learn which pages have the most different keywords. I can
-also label the arrows with the number of visits (and scale them with this
-metric).</p>
-</li>
-<li>
-<p>Huge pages: with a little more work, I could scale with total visits to see
-which are my biggest pages together with the landing keywords.</p>
-</li>
+<li>Alias the input table as CTE <code>_target_table</code>.</li>
+<li>First get the initial date (CTE <code>start_date</code>).</li>
+<li>Then get the end date (CTE <code>end_date</code>).</li>
+<li>Get the date difference from these two, CTE <code>date_span</code>. If you have different frequency, change the frequency in <code>datediff</code>.</li>
+<li>The meat and potatoes is the CTE <code>date_ranger</code>, which uses <code>a_very_large_table</code>'s row counts to generate a valid span from <code>start_date</code> to <code>end_date</code>.</li>
+<li>Finally, <code>RIGHT</code> (or <code>LEFT</code>, that&rsquo;s up to your preference) join the target table with the <code>date_ranger</code> to find the gaps (<code>NULL</code>s)</li>
 </ul>
-<h2 id="step-by-step-guide">Step by step guide</h2>
-<p>I&rsquo;ll assume that you can manage to download and install gephi on your own, and
-have some knowledge of Google Analytics. Of course, the first you need is to
-select the keyword and landing page fields in your Google Analytics page:</p>
-<figure class="fig-wide">
-    <img src="GA-KeywordsLandingPages.png"/> 
-</figure>
-
-<p>Then select Show Rows and select 500:</p>
-<figure class="fig-not-so-wide">
-    <img src="GA-Rows.png"/> 
-</figure>
-
-<p>And get a nice CSV file with the export tab on top:</p>
-<figure class="fig-wide">
-    <img src="GA-Export.png"/> 
-</figure>
-
-<p>Now I don&rsquo;t know if this is because I select CSV and not CSV for Excel, but you
-have to clean the file: there are a lot of table identifiers to remove before
-the real data table. You also need to remove a line at the end of the file. You
-can do all this editing with any plain text editor. I used
-<a href="http://www.mostlymaths.net/search/label/emacs">emacs</a>.</p>
-<figure class="fig-wide">
-    <img src="GA-Clean.png"/> 
-</figure>
-
-<p>Remove all this, below Table you should have the useful data,</p>
-<figure class="fig-wide">
-    <img src="GA-Clean2.png"/> 
-</figure>
-
-<p>Remove the last line with dashes. Now the file is almost ready to be imported…
-You need to rename the Visits column to something else, for some odd reason
-Google Analytics copies the same column twice and Gephi needs unique column
-names. Ready to import. In Gephi, go to the Data Table window from the Window
-menu, and click Import Spreadsheet:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ImportSpreadhsheet.png"/> 
-</figure>
-
-<p>And now you should select edges table and comma-separated:</p>
-<p><figure class="fig-wide">
-    <img src="Gephi-Import.png"/> 
-</figure>
- <figure class="fig-wide">
-    <img src="Gephi-SourcesError.png"/> 
-</figure>
-</p>
-<p>Oops. More tweaking of the CSV file is needed: Change the first two columns to
-Source and Target (and don&rsquo;t forget to mark comma as I did, too) and re-import
-the file:</p>
-<figure class="fig-wide">
-    <img src="GA-ImportOK.png"/> 
-</figure>
-
-<p>After clicking next, Gephi will ask you for the types of the columns. Since I&rsquo;m
-only interested in visits, pages/visit and average time on site, these are the
-only columns I want to be floats. You need them to be float to scale the nodes
-according to these parameters:</p>
-<figure class="fig-not-so-wide">
-    <img src="Gephi-ImportParameters.png"/> 
-</figure>
-
-<p>Next, we&rsquo;ll see a blob of points with no labels. Choose the Force Atlas
-algorithm in the Layout window, run for a while and then click stop:</p>
-<p><figure class="fig-wide">
-    <img src="Gephi-Blob.png"/> 
-</figure>
- <figure class="fig-wide">
-    <img src="Gephi-ForceAtlas.png"/> 
-</figure>
-</p>
-<p>The result from the Force Atlas algorithm to distribute points will look nicer,
-spreading aggregates of arrows all over the place. Now we need to get the
-labels. To do so, you have to click on a somewhat hidden button in the
-bottom-right part of the Graph window, and select the correct names for the
-tags. In this picture I&rsquo;ve also marked the label and edge scaling according to
-parameters:</p>
-<figure class="fig-wide">
-    <img src="Gephi-Labels.png"/> 
-</figure>
-
-<p>Once you have labels, you need to play with the layout to make them more
-visible. Run the algorithm Adjust Labels for a while, then Force Atlas and
-repeat until you are happy with the results:</p>
-<figure class="fig-wide">
-    <img src="Gephi-LabelAdjust.png"/> 
-</figure>
-
-<p>You can also set labels for the edges, if you are interested in seeing visits,
-for example. But I found it messy and unchecked the option. Finally, to scale
-the nodes, use the Ranking window:</p>
-<figure class="fig-wide">
-    <img src="Gephi-Ranking.png"/> 
-</figure>
-
-<p>The arrows mark the different ways to adjust: you can change colour, size, text
-size or text colour. Feel free to play with all these settings!</p>
-<p>You can get a nice PNG file of you graph by pressing the camera-like icon in the
-Graph window (clicking the down-arrow will list the properties), or you can
-export a PDF or SVG with some more work from the Preview window. Both result in
-nice images, but a SVG or PDF can be tweaked extensively using Illustrator or
-Inkscape. But it also needs more work from the Gephi side, so I won&rsquo;t enter the
-details in this tutorial. Well, just a little! Be sure to check &ldquo;show&rdquo; before
-exporting, or you&rsquo;ll see a blank page:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ExportSVG.png"/> 
-</figure>
-
-<p>And with just these steps you can create quite nice (and useful) graphs like
-this one:</p>
-<figure class="fig-wide">
-    <img src="Gephi-FullMap.png"/> 
-</figure>
-
-<p>And here you can find a closer zoom:</p>
-<figure class="fig-wide">
-    <img src="Gephi-ZoomIn.png"/> 
-</figure>
-
-<p>I hope you enjoyed this tutorial, if you did it would be awesome if you share
-it. I&rsquo;ll try to do a few more Gephi tutorials as I find more interesting (for
-me) uses of Gephi. I have also a few post/tutorial ideas about visualizing
-Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
-<hr/>
+<p>It&rsquo;s not super-hard, but it&rsquo;s kind of good to have it in a good copy-pastable way.</p>
+<div class="note note">
+<span class='scaps ' style="display: inline-block;">
+  Be careful with CTEs in Redshift
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Even though CTEs are very handy to make SQL look readable, I have found some cases where the query planner in Redshift did not optimise a query in a CTE, whereas an embedded query was optimized.</p>
+<p>I recommend you use <code>CREATE TEMP TABLE AS (SELECT …)</code> and compare run times and query plans with the same as a CTE: it is relatively easy to go from one to the other, readability can be similar enough, but runtime could be very different.</p>
+</span>
+</div><hr/>
         <ul class="pa0">
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/blog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Blog</a>
+     <a href="https://mostlymaths.net/tags/awk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">AWK</a>
    </li>
   
    <li class="list" style="display:inline;">
@@ -352,7 +249,7 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/visualization" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Visualization</a>
+     <a href="https://mostlymaths.net/tags/sql" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">SQL</a>
    </li>
   
 </ul>
@@ -371,23 +268,23 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/">Good Books I have Read in 2011: Perfect Gifts for Geeks!</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/">Find-the-gap with SQL in AWS Redshift</a>
-       </li>
-	     
-	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/11/202062-readings.html/">2020#62 Readings</a>
        </li>
 	     
 	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/11/url-pdf-kindle.html/">Send a bunch of URLs as PDF to a Kindle</a>
+       </li>
+	     
+	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/11/202061-readings.html/">2020#61 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/11/rdd.html/">The RDD paper: introducing the Spark general purpose framework</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
        </li>
 	     
     </ul>
