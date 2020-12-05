@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Find-the-gap with SQL in AWS Redshift</title>
+    <title>mostlymaths.net  | 2020#63 Readings</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.63.2" />
     
@@ -37,28 +37,30 @@
 
     
 
-    <meta property="og:title" content="Find-the-gap with SQL in AWS Redshift" />
-<meta property="og:description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+    <meta property="og:title" content="2020#63 Readings" />
+<meta property="og:description" content="This looks like a less hard technical edition than usual.
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/" />
-<meta property="article:published_time" content="2020-11-29T22:15:33+02:00" />
-<meta property="article:modified_time" content="2020-11-29T22:15:33+02:00" />
-<meta itemprop="name" content="Find-the-gap with SQL in AWS Redshift">
-<meta itemprop="description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+<meta property="og:url" content="https://mostlymaths.net/2020/12/202063-readings.html/" />
+<meta property="article:published_time" content="2020-12-05T10:30:33+02:00" />
+<meta property="article:modified_time" content="2020-12-05T10:30:33+02:00" />
+<meta itemprop="name" content="2020#63 Readings">
+<meta itemprop="description" content="This looks like a less hard technical edition than usual.
 ">
-<meta itemprop="datePublished" content="2020-11-29T22:15:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-11-29T22:15:33&#43;02:00" />
-<meta itemprop="wordCount" content="632">
+<meta itemprop="datePublished" content="2020-12-05T10:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2020-12-05T10:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="649">
 
 
 
-<meta itemprop="keywords" content="AWK,Data,SQL," />
+<meta itemprop="keywords" content="Data,Management,SQL,D3js,ReadingsOfTheWeek,Readings," />
 
     
+    
+        
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2020/11/find-the-gap-redshift.html//mind-the-gap.jpg"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide1.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -67,8 +69,8 @@
 
 
 
-<meta name="twitter:title" content="Find-the-gap with SQL in AWS Redshift"/>
-<meta name="twitter:description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
+<meta name="twitter:title" content="2020#63 Readings"/>
+<meta name="twitter:description" content="This looks like a less hard technical edition than usual.
 "/>
 
 <meta name="author" content="Ruben Berenguel">
@@ -86,7 +88,9 @@
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2020/11/find-the-gap-redshift.html//mind-the-gap.jpg');">
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide1.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -140,124 +144,101 @@
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Find-the-gap with SQL in AWS Redshift</h1>
+        <h1 class="fw1 mb1 f1">2020#63 Readings</h1>
         
         
-        <time class="f6 mt4 dib tracked" datetime="2020-11-29T22:15:33&#43;02:00">November 29, 2020</time>
+        <time class="f6 mt4 dib tracked" datetime="2020-12-05T10:30:33&#43;02:00">December 5, 2020</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 632 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 649 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
+    <section class="w-100 mb3">
+      <span class="fw1  i" style="font-size: 0.4rem;">Some links are affiliate links</span>
+    </section>
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A relatively common type of query for time-based SQL tables is a <em>find the gap</em> query. How can you do this in AWS Redshift, which does not have the SQL function <code>generate_series</code>?</p>
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This looks like a less hard technical edition than usual.</p>
 <br/>
 <figure class="fig-full">
-    <img src="mind-the-gap.jpg"
-         alt="Photo by Bruno Figueiredo on Unsplash"/> <figcaption>
-            <p><span>Photo by <a href='https://unsplash.com/@bfigas?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Bruno Figueiredo</a> on <a href='https://unsplash.com/s/photos/mind-the-gap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span></p>
+    <img src="https://mostlymaths.net/images/dresser/wide1.jpg"
+         alt="Christopher Dresser&amp;rsquo;s Studies in Design"/> <figcaption>
+            <p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
         </figcaption>
 </figure>
 
+<h2 id="-find-the-gap-with-sql-in-aws-redshift202011find-the-gap-redshifthtml"><a href="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/">📯 Find-the-gap with SQL in AWS Redshift</a></h2>
+<p>I wrote this a few days ago. Finding gaps in time series is a typical problem in data engineering. Although you can solve it in your programming language of choice, it can be done in pure SQL. Here&rsquo;s how to approach the problem in Redshift.</p>
+<h2 id="metaprogramming-for-madmenhttpsfgiesenwordpresscom20120408metaprogramming-for-madmen"><a href="https://fgiesen.wordpress.com/2012/04/08/metaprogramming-for-madmen/">Metaprogramming for madmen</a></h2>
+<p>Classic crazy demo programming madness.</p>
+<h2 id="playmaker-the-reality-of-10x-engineerhttpsoferkamediumcomplaymaker-the-reality-of-10x-engineer-8af96abce74"><a href="https://oferka.medium.com/playmaker-the-reality-of-10x-engineer-8af96abce74">Playmaker: The Reality of 10x Engineer</a></h2>
+<p>I guess I&rsquo;m wide and shallow. Don&rsquo;t feel that shallow in some areas though.</p>
+<h2 id="leather-balls-and-3000-year-old-pants-hint-at-an-ancient-asian-sporthttpswwwatlasobscuracomarticlesfound-ancient-balls-xinjiang"><a href="https://www.atlasobscura.com/articles/found-ancient-balls-xinjiang">Leather Balls and 3,000-Year-Old Pants Hint at an Ancient Asian Sport</a></h2>
+<p>When I read <em>three leather balls</em> I half-assumed juggling, but given the polo-related paintings that were painted later, a sport seems more likely.</p>
+<h2 id="this-2-acre-vertical-farm-out-produces-720-acre-flat-farmshttpswwwforbescomsitesjohnkoetsier20201120this-2-acre-vertical-farm-out-produces-750-acre-flat-farms"><a href="https://www.forbes.com/sites/johnkoetsier/2020/11/20/this-2-acre-vertical-farm-out-produces-750-acre-flat-farms/">This 2-Acre Vertical Farm Out-Produces 720 Acre ‘Flat Farms’</a></h2>
+<p>It should be clear that if we are to keep eating fruits and vegetables this is one of the few solutions that don’t imply gene editing</p>
+<h2 id="comparing-iphone-os-10-with-ios-14-using-tree-mapshttpsblogtimacorg20201122-comparing-iphone-os-with-ios-14-using-tree-maps"><a href="https://blog.timac.org/2020/1122-comparing-iphone-os-with-ios-14-using-tree-maps/">Comparing iPhone OS 1.0 with iOS 14 using tree maps</a></h2>
+<p>Colouring the visualisation would have been better, but this is great.</p>
+<h2 id="fugging-hell-tired-of-mockery-austrian-village-changes-namehttpswwwtheguardiancomworld2020nov26fugging-hell-tired-of-mockery-austrian-village-changes-name"><a href="https://www.theguardian.com/world/2020/nov/26/fugging-hell-tired-of-mockery-austrian-village-changes-name">Fugging hell: tired of mockery, Austrian village changes name</a></h2>
+<p>Fugg.</p>
+<h2 id="sqlite-as-a-document-databasehttpsdglcx202006sqlite-json-support"><a href="https://dgl.cx/2020/06/sqlite-json-support">SQLite as a document database</a></h2>
+<p>Wow, for local data exploration this is an awesome addition I wasn&rsquo;t aware of.</p>
+<h2 id="what-does-a-tech-lead-dohttpswwwphilgiesecompostresponsibilities-of-a-tech-lead"><a href="https://www.philgiese.com/post/responsibilities-of-a-tech-lead">What does a Tech Lead do?</a></h2>
+<p>This is an excellent post, spot on.</p>
+<h2 id="my-summer-car-wikipediahttpsenmwikipediaorgwikimy_summer_car"><a href="https://en.m.wikipedia.org/wiki/My_Summer_Car">My Summer Car (Wikipedia)</a></h2>
+<p>This feels very Scandinavian.</p>
+<h2 id="personal-data-warehouses-reclaiming-your-datahttpssimonwillisonnet2020nov14personal-data-warehouses"><a href="https://simonwillison.net/2020/Nov/14/personal-data-warehouses/">Personal Data Warehouses: Reclaiming Your Data</a></h2>
+<p>This is a transcript of a talk by the author of <a href="https://github.com/simonw/datasette">Datasette</a>. I have tried Datasette in the past, and is a very convenient tool. I wonder if it can be integrated with <a href="https://www.visidata.org">visidata</a>.</p>
+<h2 id="the-first-turkish-software-export-was-measured-in-meters-httpsnewsycombinatorcomitemid25226722"><a href="https://news.ycombinator.com/item?id=25226722">The first Turkish software export was measured in meters [&hellip;]</a></h2>
+<p>An amusing comment on Hacker News.</p>
+<h2 id="chroot-shenanigans-2-running-a-full-desktop-environment-on-an-amazon-kindlehttpsnnseeblog20190414chroot-shenanigans-2html"><a href="https://nns.ee/blog/2019/04/14/chroot-shenanigans-2.html">chroot shenanigans 2: Running a full desktop environment on an Amazon Kindle</a></h2>
+<p>I&rsquo;d love to have more things I could do on my Kindle, I love this device. But I&rsquo;m still not sure if it&rsquo;s rootable (I suspect no, it&rsquo;s the late 2020 model). Maybe next year I&rsquo;ll check (when a new model appears and I&rsquo;m not so scared of bricking it and needing a replacement).</p>
+<h2 id="how-i-made-a-self-quoting-tweethttpsoisinmorancomquinetweet"><a href="https://oisinmoran.com/quinetweet">How I Made a Self-Quoting Tweet</a></h2>
+<p>A quine tweet. I love crazy tech things, and this is one of the best this year.</p>
+<h2 id="-turn-the-ship-aroundhttpswwwamazoncomturn-ship-around-l-david-marquet-audiobookdpb00ctdyyg2refas_li_ss_tl_encodingutf8qidsrlinkcodell1tagrbersblog-20linkid9532c862d77000430b83da7d452507f6languageen_us"><a href="https://www.amazon.com/Turn-Ship-Around-L-David-Marquet-audiobook/dp/B00CTDYYG2/ref=as_li_ss_tl?_encoding=UTF8&amp;qid=&amp;sr=&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=9532c862d77000430b83da7d452507f6&amp;language=en_US">🔊 Turn the Ship Around</a></h2>
+<p>This was a superb book on leadership and management. Now I understand why it is so highly recommended.</p>
+<h2 id="ive-had-to-relearn-coding-to-get-through-the-new-interviewshttpsnewsefinancialcareerscomuk-en3004947coding-interviews-hackerrank-nightmare"><a href="https://news.efinancialcareers.com/uk-en/3004947/coding-interviews-hackerrank-nightmare">&ldquo;I&rsquo;ve had to relearn coding to get through the new interviews&rdquo;</a></h2>
+<p>I have been in the technical evaluation of candidates, and I try to make it as close to the real work as possible. I don&rsquo;t like requiring bullshit &ldquo;implement a red-black tree on the whiteboard&rdquo; type of problems. We have a very easy take home, talk about it, programming languages, and after a while you get a sense for the candidate and can ask some more probing questions. That at least are close to real work scenarios.</p>
+<h2 id="i-wrote-a-spelling-checker-in-the-1980s-in-my-first-job-i-worked-for-tasman-inhttpsnewsycombinatorcomitemid25301103"><a href="https://news.ycombinator.com/item?id=25301103">I wrote a spelling checker in the 1980&rsquo;s In my first job I worked for Tasman in…</a></h2>
+<p>A comment on old-time optimisation. But these things are still useful, at scale. Old tricks are new again.</p>
+<div style="text-align: center; border-top: 1px solid #333311; padding-top: 0.7em; margin-top: 0.7em;">
+<a href="http://eepurl.com/geFw7P" class="link f4 grow no-underline br-pill ba ph3 pv2 dib black sans-serif">Subscribe to these posts as a newsletter</a>
+</div>
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
-<p>There is a basic scenario where this type of query is used:</p>
-<blockquote>
-<p>A job that had to run periodically may have failed. When?</p>
-</blockquote>
-<p>This type of problem is pretty typical in data engineering, when you want to backfill a table by re-running a job. My recommendation is to always, always do this type of computation in a programming language (in my work case, Python), but this can be done in pure SQL.</p>
-<p>In a generic PostgreSQL database, you would use the function <a href="https://www.postgresql.org/docs/9.1/functions-srf.html"><code>generate_series</code></a> from the minimum to the maximum in tni table, and then just join.</p>
-<p>Sadly, AWS Redshift does not have <code>generate_series</code>.</p>
-<div class="note note">
-<span class='scaps ' style="display: inline-block;">
-  Well, technically it does
-</span> 
-<span class='note-body ' style="display: inline-block;">
-<p>The function exists, and can be used BUT is a &ldquo;driver-only&rdquo; function. This means the computation is done in the driver. There is then no way to <em>use it</em> in a real query. It can be used for presentation purposes, like in <code>SELECT * FROM generate_series(1, 30, 1)</code> but you won&rsquo;t be able to join this (as a table expression) with a real table, because this cannot be sent to workers.</p>
-</span>
-</div>
-<p>Instead, you can do the following, given a <code>target_table</code> and a <code>a_very_large_table</code> available in your Redshift database. Note that this &ldquo;very&rdquo; is relative, and will depend on the granularity of your frequency. In general, if you are using Redshift you probably have a large enough table somewhere. Otherwise, check the <code>stl_</code> (statistical) system tables, some of these are large-ish.</p>
-<p>I will briefly explain what the code does below.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">WITH</span> _target_table <span style="color:#66d9ef">AS</span> 
-(
-  <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
-  <span style="color:#66d9ef">FROM</span> target_table
-),
-start_date <span style="color:#66d9ef">AS</span>
-(
-  <span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
-  <span style="color:#66d9ef">FROM</span> _target_table
-  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">ASC</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span>
-),
-end_date <span style="color:#66d9ef">AS</span>
-(
-  <span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
-  <span style="color:#66d9ef">FROM</span> _target_table
-  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">DESC</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span>
-),
-date_span <span style="color:#66d9ef">AS</span>
-(
-  <span style="color:#66d9ef">SELECT</span> datediff(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">day</span><span style="color:#e6db74">&#39;</span>, 
-           (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date), 
-           (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> end_date))
-  <span style="color:#66d9ef">FROM</span> start_date
-),
-date_ranger <span style="color:#66d9ef">AS</span>
-(
-  <span style="color:#66d9ef">SELECT</span> ((<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date) <span style="color:#f92672">+</span> rn)::DATE <span style="color:#66d9ef">AS</span> dt
-  <span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> ROW_NUMBER() OVER (PARTITION <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">AS</span> rn
-        <span style="color:#66d9ef">FROM</span> a_very_large_table)
-  <span style="color:#66d9ef">WHERE</span> rn <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> date_span)
-  <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> dt <span style="color:#66d9ef">ASC</span>
-)
-<span style="color:#66d9ef">SELECT</span> date_ranger.dt,
-       <span style="color:#66d9ef">CASE</span>
-         <span style="color:#66d9ef">WHEN</span> b.dt <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">THEN</span> <span style="color:#66d9ef">FALSE</span>
-         <span style="color:#66d9ef">ELSE</span> <span style="color:#66d9ef">TRUE</span>
-       <span style="color:#66d9ef">END</span> <span style="color:#66d9ef">AS</span> available_in_target_table
-<span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DAY</span>::DATE <span style="color:#66d9ef">AS</span> dt
-      <span style="color:#66d9ef">FROM</span> _target_table
-      <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span>
-      <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">DESC</span>) b
-  <span style="color:#66d9ef">RIGHT</span> <span style="color:#66d9ef">JOIN</span> date_ranger <span style="color:#66d9ef">ON</span> b.dt <span style="color:#f92672">=</span> date_ranger.dt
-<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> dt <span style="color:#66d9ef">ASC</span>; 
-</code></pre></div><p>There is nothing fancy going on, even if it may look like there is. I use <a href="https://chartio.com/resources/tutorials/using-common-table-expressions/">common table expressions</a> to simplify the final result and be able to name things.</p>
-<ul>
-<li>Alias the input table as CTE <code>_target_table</code>.</li>
-<li>First get the initial date (CTE <code>start_date</code>).</li>
-<li>Then get the end date (CTE <code>end_date</code>).</li>
-<li>Get the date difference from these two, CTE <code>date_span</code>. If you have different frequency, change the frequency in <code>datediff</code>.</li>
-<li>The meat and potatoes is the CTE <code>date_ranger</code>, which uses <code>a_very_large_table</code>'s row counts to generate a valid span from <code>start_date</code> to <code>end_date</code>.</li>
-<li>Finally, <code>RIGHT</code> (or <code>LEFT</code>, that&rsquo;s up to your preference) join the target table with the <code>date_ranger</code> to find the gaps (<code>NULL</code>s)</li>
-</ul>
-<p>It&rsquo;s not super-hard, but it&rsquo;s kind of good to have it in a good copy-pastable way.</p>
-<div class="note note">
-<span class='scaps ' style="display: inline-block;">
-  Be careful with CTEs in Redshift
-</span> 
-<span class='note-body ' style="display: inline-block;">
-<p>Even though CTEs are very handy to make SQL look readable, I have found some cases where the query planner in Redshift did not optimise a query in a CTE, whereas an embedded query was optimized.</p>
-<p>I recommend you use <code>CREATE TEMP TABLE AS (SELECT …)</code> and compare run times and query plans with the same as a CTE: it is relatively easy to go from one to the other, readability can be similar enough, but runtime could be very different.</p>
-</span>
+<div style="text-align: center; margin-left: -0.5rem;">
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>
 </div><hr/>
         <ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/awk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">AWK</a>
-   </li>
   
    <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
    </li>
   
    <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/management" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Management</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/sql" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">SQL</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/d3js" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">D3js</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/readingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ReadingsOfTheWeek</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/readings" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Readings</a>
    </li>
   
 </ul>
@@ -276,15 +257,7 @@ date_ranger <span style="color:#66d9ef">AS</span>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/12/202063-readings.html/">2020#63 Readings</a>
-       </li>
-	     
-	     <li  class="mb2">
            <a href="https://mostlymaths.net/2020/11/202062-readings.html/">2020#62 Readings</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/11/url-pdf-kindle.html/">Send a bunch of URLs as PDF to a Kindle</a>
        </li>
 	     
 	     <li  class="mb2">
@@ -292,7 +265,15 @@ date_ranger <span style="color:#66d9ef">AS</span>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/11/rdd.html/">The RDD paper: introducing the Spark general purpose framework</a>
+           <a href="https://mostlymaths.net/2020/10/202060-readings.html/">2020#60 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202058-readings.html/">2020#58 Readings</a>
        </li>
 	     
     </ul>
