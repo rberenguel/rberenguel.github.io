@@ -456,6 +456,18 @@ figure {
     object-fit: contain;
 }
 
+.fig-so-so-wide > img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
+
+.fig-so-so-wide img {
+    margin: auto;
+    width: 75%;
+    object-fit: contain;
+}
+
 .fig-not-so-wide > img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;

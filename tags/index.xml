@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Dec 2020 19:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Dec 2020 22:15:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Adtech</title>
       <link>https://mostlymaths.net/tags/adtech/</link>
-      <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
+      <pubDate>Mon, 28 Dec 2020 22:15:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/adtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Mon, 28 Dec 2020 22:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -71,15 +80,6 @@
       <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 20 Dec 2020 13:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
