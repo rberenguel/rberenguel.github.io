@@ -6,10 +6,46 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 22:15:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2021 14:50:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://mostlymaths.net/tags/aws/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databricks</title>
+      <link>https://mostlymaths.net/tags/databricks/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/databricks/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Adtech</title>
@@ -17,24 +53,6 @@
       <pubDate>Mon, 28 Dec 2020 22:15:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/adtech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Mon, 28 Dec 2020 22:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
@@ -215,15 +233,6 @@
       <pubDate>Sat, 24 Oct 2020 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/remote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://mostlymaths.net/tags/aws/</link>
-      <pubDate>Sun, 18 Oct 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/aws/</guid>
       <description></description>
     </item>
     

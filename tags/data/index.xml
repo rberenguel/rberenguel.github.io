@@ -6,10 +6,20 @@
     <description>Recent content in Data on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Dec 2020 22:15:33 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2021 14:50:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Configuring log4j properties in Databricks (and EMR)</title>
+      <link>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</guid>
+      <description>&lt;p&gt;Managing logging in Spark ain&amp;rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>Programmatic adtech industry: where to?</title>

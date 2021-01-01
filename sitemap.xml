@@ -3,28 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/tags/adtech/</loc>
-    <lastmod>2020-12-28T22:15:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/aws/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2020-12-28T22:15:33+02:00</lastmod>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/databricks/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2020-12-28T22:15:33+02:00</lastmod>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/adtech/</loc>
     <lastmod>2020-12-28T22:15:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -38,21 +73,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2020-12-28T22:15:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2020/12/202066-readings.html/</loc>
-    <lastmod>2020-12-26T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
     <lastmod>2020-12-26T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -270,13 +291,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2020/10/202058-readings.html/</loc>
-    <lastmod>2020-10-18T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/aws/</loc>
     <lastmod>2020-10-18T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

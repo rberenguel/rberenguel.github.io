@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databricks on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/databricks/</link>
+    <description>Recent content in Databricks on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 14:50:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/databricks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring log4j properties in Databricks (and EMR)</title>
+      <link>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</link>
+      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</guid>
+      <description>&lt;p&gt;Managing logging in Spark ain&amp;rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
+    <item>
+      <title>The RDD paper: introducing the Spark general purpose framework</title>
+      <link>https://mostlymaths.net/2020/11/rdd.html/</link>
+      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/11/rdd.html/</guid>
+      <description>&lt;p&gt;This is the next instalment on my quest to read and help understand &lt;a href=&#34;https://mostlymaths.net/tags/data-papers&#34;&gt;interesting papers&lt;/a&gt; in the data space.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Databricks&#39; Delta Lake: high on ACID</title>
+      <link>https://mostlymaths.net/2020/10/delta-lake.html/</link>
+      <pubDate>Mon, 12 Oct 2020 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/10/delta-lake.html/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;https://mostlymaths.net/2020/10/snowflake.html/&#34;&gt;reading the Snowflake paper&lt;/a&gt;, I got curious about how similar engines work. Also, as I mentioned in that article, I &lt;em&gt;like knowing how the data sausage is made&lt;/em&gt;. So, here I will summarise the &lt;a href=&#34;https://databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf&#34;&gt;Delta Lake paper by Databricks&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</title>
+      <link>https://mostlymaths.net/2020/10/databricks-jdbc.html/</link>
+      <pubDate>Mon, 05 Oct 2020 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/10/databricks-jdbc.html/</guid>
+      <description>&lt;p&gt;The one where Airflow messes with you.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
