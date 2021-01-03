@@ -6,17 +6,80 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 14:50:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 10:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Adtech</title>
+      <link>https://mostlymaths.net/tags/adtech/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/adtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://mostlymaths.net/tags/css/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://mostlymaths.net/tags/rust/</link>
+      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -30,29 +93,11 @@
     </item>
     
     <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Databricks</title>
       <link>https://mostlymaths.net/tags/databricks/</link>
       <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/databricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adtech</title>
-      <link>https://mostlymaths.net/tags/adtech/</link>
-      <pubDate>Mon, 28 Dec 2020 22:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/adtech/</guid>
       <description></description>
     </item>
     
@@ -80,33 +125,6 @@
       <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Sun, 20 Dec 2020 13:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
       <description></description>
     </item>
     
@@ -143,15 +161,6 @@
       <pubDate>Sun, 20 Dec 2020 13:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://mostlymaths.net/tags/rust/</link>
-      <pubDate>Sat, 12 Dec 2020 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
