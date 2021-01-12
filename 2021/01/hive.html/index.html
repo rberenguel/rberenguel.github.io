@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Configuring log4j properties in Databricks (and EMR)</title>
+    <title>mostlymaths.net  | Down memory lane: the Hive paper</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.63.2" />
     
@@ -37,28 +37,28 @@
 
     
 
-    <meta property="og:title" content="Configuring log4j properties in Databricks (and EMR)" />
-<meta property="og:description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-" />
+    <meta property="og:title" content="Down memory lane: the Hive paper" />
+<meta property="og:description" content="Hive is arguably old. It is also undoubtedly useful, even now: 10 years after it was introduced." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/" />
-<meta property="article:published_time" content="2021-01-01T14:50:33+02:00" />
-<meta property="article:modified_time" content="2021-01-01T14:50:33+02:00" />
-<meta itemprop="name" content="Configuring log4j properties in Databricks (and EMR)">
-<meta itemprop="description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-">
-<meta itemprop="datePublished" content="2021-01-01T14:50:33&#43;02:00" />
-<meta itemprop="dateModified" content="2021-01-01T14:50:33&#43;02:00" />
-<meta itemprop="wordCount" content="648">
+<meta property="og:url" content="https://mostlymaths.net/2021/01/hive.html/" />
+<meta property="article:published_time" content="2021-01-12T18:10:33+02:00" />
+<meta property="article:modified_time" content="2021-01-12T18:10:33+02:00" />
+<meta itemprop="name" content="Down memory lane: the Hive paper">
+<meta itemprop="description" content="Hive is arguably old. It is also undoubtedly useful, even now: 10 years after it was introduced.">
+<meta itemprop="datePublished" content="2021-01-12T18:10:33&#43;02:00" />
+<meta itemprop="dateModified" content="2021-01-12T18:10:33&#43;02:00" />
+<meta itemprop="wordCount" content="1124">
 
 
 
-<meta itemprop="keywords" content="Data,Apache Spark,Databricks,AWS," />
+<meta itemprop="keywords" content="Data,Hive,Data Papers,Apache Spark," />
 
     
+    
+        
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2021/01/databricks-log4j-configuration.html//logging.jpg"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide10.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -67,9 +67,8 @@
 
 
 
-<meta name="twitter:title" content="Configuring log4j properties in Databricks (and EMR)"/>
-<meta name="twitter:description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-"/>
+<meta name="twitter:title" content="Down memory lane: the Hive paper"/>
+<meta name="twitter:description" content="Hive is arguably old. It is also undoubtedly useful, even now: 10 years after it was introduced."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -86,7 +85,9 @@
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/01/databricks-log4j-configuration.html//logging.jpg');">
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide10.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -140,76 +141,127 @@
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Configuring log4j properties in Databricks (and EMR)</h1>
+        <h1 class="fw1 mb1 f1">Down memory lane: the Hive paper</h1>
         
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">Hive - a petabyte scale data warehouse using Hadoop</span>
+    </section>
+    
         
-        <time class="f6 mt4 dib tracked" datetime="2021-01-01T14:50:33&#43;02:00">January 1, 2021</time>
+        <time class="f6 mt4 dib tracked" datetime="2021-01-12T18:10:33&#43;02:00">January 12, 2021</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 648 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1124 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.</p>
-<br/>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p><a href="https://hive.apache.org">Hive</a> is arguably old. It is also undoubtedly useful, even now: 10 years after it was introduced.</p>
 <figure class="fig-full">
-    <img src="logging.jpg"
-         alt="Photo by Thomas Peham on Unsplash"/> <figcaption>
-            <p><span>Photo by <a href='https://unsplash.com/@tompeham?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Thomas Peham</a> on <a href='https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span></p>
-        </figcaption>
+    <img src="https://mostlymaths.net/images/dresser/wide10.jpg"/> 
 </figure>
 
+<p>A decade ago things were very different. Petabyte scale was only the subject of few large companies, and you were restricted to store them in Hadoop and analyse them with MapReduce jobs, <a href="https://en.wikipedia.org/wiki/Apache_Pig">Apache Pig</a> scripts and a couple more solutions (like HBase). <code>Hive</code> revolutionised data access by allowing SQL-ish access to big data, sometimes even interactively. Here I&rsquo;ll present a summary of its initial paper:</p>
+<blockquote>
+<p><a href="https://www.semanticscholar.org/paper/Hive-a-petabyte-scale-data-warehouse-using-Hadoop-Thusoo-Sarma/4c7bfa933c11c7a802c2fa9c1dc475dba36a2bd5">Hive - a petabyte scale data warehouse using Hadoop</a>.</p>
+</blockquote>
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
-<p>In this short post I will explain how to use <code>log4j</code> property files in Databricks clusters, particularly when launching JAR jobs. The method (with adequate modifications) also works for Spark jobs in AWS EMR, I will point out the required changes for that situation.</p>
-<p>Why you may want to do this:</p>
+<p>I will use the present tense throughout this article for clarity, even though <code>Hive</code> <em>today</em> has somewhat different abilities. I will point out to some differences as well. For a more recent paper on <code>Hive</code> architecture and details, you can check <a href="https://arxiv.org/abs/1903.10970">this</a>.</p>
+<p><code>Hive</code> is a data warehouse solution on top of Hadoop&rsquo;s MapReduce execution system and HDFS storage. It allows querying data with HiveQL, a subset of SQL with custom extensions. Furthermore, accepts custom MapReduce scripts in queries.</p>
+<h3 id="the-data-model">The data model</h3>
+<p>The <code>Hive</code> data model should be already known by anyone reading this:</p>
 <ul>
-<li>As was my case, to send logs to a <a href="https://www.graylog.org">Graylog</a> instance.</li>
-<li>To be able to adjust the verbosity of Spark logging and your packages, separately.</li>
-<li>To customise how the logs look.</li>
+<li><em>Databases</em>, which contain,</li>
+<li><em>Tables</em>, which internally can be</li>
+<li><em>Partitioned</em>, by distributing data in sub-folders in HDFS, and additionally</li>
+<li><em>Bucketed</em>, by hashing specific columns.</li>
 </ul>
-<p>There are no details on how to do this in Databricks&rsquo; documentation, although the required steps to be able to do it are well documented. It all boils down to using a custom boot script that copies the required files in the correct places, and passing the right arguments to <code>spark-submit</code>.</p>
-<p>In the end, it was the same approach I had used some years ago to use custom <code>log4j</code> in EMR, the only difference is that the destinations are different and how I build the script is also different.</p>
-<p>The operational workflow I have is:</p>
-<ul>
-<li>Airflow triggers a Databricks <a href="https://docs.databricks.com/dev-tools/api/latest/jobs.html#runs-submit">submit-run</a> JAR job, configured via a task in a DAG. The init script and parameters to <code>spark-submit</code> are passed here. In EMR, it was a custom operator creating a transient spot or on-demand cluster. The behaviour was thus the same as in <code>submit-run</code>, but we added a custom <code>EMRSensor</code> to monitor the job/cluster status.</li>
-<li>All artifacts required for this job (JAR, <code>log4j.properties</code>, bootstrap script, additional JARs) are copied to DBFS (with the CLI tool, <code>dbfs</code>) as part of the deployment process. They could also be copied to S3 (or whatever storage you use), but you will see this makes it easier. For the EMR case, it was copied to S3.</li>
-</ul>
-<p>The init script for Databricks looks like this:</p>
-<script src="https://gist.github.com/rberenguel/7925918d6d5b198b5666539f1bbf5174.js"></script>
-<p>The &ldquo;spark conf&rdquo; passed to our Databricks operator is this one, and would be verbatim the same in EMR (the Glue setting has nothing to do with logging, but you better use AWS Glue as metastore if you are on AWS… it will pay off if you ever let go of Databricks).</p>
-<script src="https://gist.github.com/rberenguel/b46c21dda7a2f4acc597031fea0f4c46.js"></script>
-<div class="note note">
+<p>Columns can be of primitive types (<code>INT</code>, <code>STRING</code>…), nestable types (arrays or maps of primitives or nestable types) and can also be custom types defined by the user. This data model is pretty much the one we have in Spark applications (and, just like with Spark, avoid bucketing, too complicated). Partitioning, in particular, is the same format you get when issuing a <code>df.write.partitionBy(..cols)</code>.</p>
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
-  ¯\_(ツ)_/¯ (note)
+  EXTERNAL TABLE
 </span> 
 <span class='note-body ' style="display: inline-block;">
-<p>I&rsquo;m not 100% sure now that we need to pass the executor extra classpath, but I vaguely remember that without it, no dice. You can try removing it.</p>
+<p>The original implementation of <code>Hive</code> already has the concept of <code>EXTERNAL TABLE</code>, which has creeped into other data warehouses, <a href="https://aws.amazon.com/about-aws/whats-new/2020/06/amazon-redshift-now-supports-writing-to-external-tables-in-amazon-s3/">even today</a>.</p>
 </span>
 </div>
-<p>The <code>-D</code> prefixed arguments is how you pass additional parameters that <code>log4j</code> interpolates in properties files. I use that for the environment in the file below, but you could pass anything that can go in a properties value.</p>
-<script src="https://gist.github.com/rberenguel/6e4d9ef6f19e5b652c753efe0e8aac63.js"></script>
-<p>I recommend you additionally make sure additional verbose logs are killed with the following:</p>
-<script src="https://gist.github.com/rberenguel/78d3efe8bbf16e2c2390c6e5ccc078cc.js"></script>
-<div class="note note">
+<h3 id="architecture">Architecture</h3>
+<p><code>Hive</code>'s architecture feels natural, or at least it is not a surprising architecture for a data warehouse (compare with <a href="https://mostlymaths.net/2020/10/snowflake.html/">Snowflake&rsquo;s</a> or even <a href="https://mostlymaths.net/2020/10/delta-lake.html/">Delta Lake&rsquo;s</a>, and squint hard).</p>
+<ul>
+<li>API/interaction layer,</li>
+<li>Metadata layer,</li>
+<li>Driver.</li>
+</ul>
+<h4 id="interaction">Interaction</h4>
+<p>External interaction is covered by CLI access for interactive querying, a web UI and JDBC/ODBC connectors for database oriented clients. Internally, all these pieces connect with the <em>driver</em> via an <a href="https://thrift.apache.org">Apache Thrift</a> server. The driver is where queries are processed and prepared to be run as MapReduce tasks.</p>
+<h4 id="metastore">Metastore</h4>
+<figure class="fig30 right">
+    <img src="https://mostlymaths.net/images/dresser/square5.jpg"/> 
+</figure>
+
+<p>An internal metastore handles the catalog of metadata for tables stored in <code>Hive</code>. This metadata is written when creating tables, and is reused every time queries are executed or prepared.</p>
+<p>Such a metastore can&rsquo;t reside in HDFS: it needs random access and sequential scanning to work properly. Thus, it will be either stored in the local filesystem of the driver, or use a traditional relational database. Ideally, you&rsquo;d add replication as well: this is the most important <em>durable</em> part.</p>
+<h4 id="the-driver">The driver</h4>
+<p>Finally, the driver manages converting HiveQL queries into directed acyclic graphs (DAGs) of MapReduce jobs. In other words, this is where most of the magic happens.</p>
+<h3 id="hiveql-the-query-language">HiveQL: The query language</h3>
+<p>As mentioned above, HiveQL is a subset of SQL with extensions (a <em>sideset</em>?). These extensions are roughly the following.</p>
+<p><span class="paratitle">DDL (data definition language):</span> extends SQL with information about <code>SerDe</code> (serialisation/deserialisation) information for columns, as well as information about partitioning, bucketing and storage format. It also extends creation with arbitrary key:value expressions, which I only ever remember using for column comments.</p>
+<p><span class="paratitle">Multi-table inserts:</span> This allows scanning once, writing many times. A kind of operation that doesn&rsquo;t seem that common in normal databases, but is useful in big data cases. Or at least, it was deemed useful enough to be added as a special case by Hive.</p>
+<p><span class="paratitle">UDFs/UDAFs (User Defined [Aggregate] Functions):</span> These can be written in Java.</p>
+<p><span class="paratitle">Embed MapReduce scripts:</span> a basic row-by-row string interface can be passed to arbitrary MapReduce scripts. For people who have used <code>Pig Latin</code>, this is similar to the <code>STREAM</code> functionality. Horrible overhead though because you need to serialise rows to strings and back.</p>
+<p><span class="paratitle">External tables:</span> you can define and access external tables, which cannot be dropped. This allows accessing data that may be stored in HDFS, even in different formats, but querying via HiveQL.</p>
+<h3 id="the-query-compiler">The query compiler</h3>
+<p>This is the part I find more interesting, I like query analysers, optimisers and compilers.</p>
+<p>As a starter, this converts <code>strings</code> into <code>plans</code>. Plans are not made equal, though:</p>
+<ul>
+<li>In pure DDL string queries, plans are formed of only metadata operations.</li>
+<li>When handling <code>LOAD</code> statements, plans are formed of only HDFS operations.</li>
+<li>For inserts, or in general, queries, plans are formed by DAGs of MapReduce tasks. This is of course the fun part.</li>
+</ul>
+<figure class="fig-tall left">
+    <img src="https://mostlymaths.net/images/dresser/tall1.jpg"/> 
+</figure>
+
+<p>As expected, it all starts with a <code>parser</code> converting a query string to a parse tree.</p>
+<p>The parse tree is picked by a <code>semantic analyser</code>. The SA converts the tree into an internal query representation, with entities resolved. That is, columns are confirmed to exist in tables, all typing checks, any automated casting is added. Also, <code>*</code> expressions are expanded.</p>
+<p>A <code>logical plan generator</code> takes the internal query and creates a logical plan, which is just a tree of logical operations.</p>
+<p>The logical tree is where we optimise queries. The original query optimiser is a multi-pass optimiser, with several typical optimisations and some MapReduce specific optimisations:</p>
+<ul>
+<li>Combines multiple joins with the same key, which can be converted into 1 MapReduce task.</li>
+<li>Adds repartition operators for <code>JOIN</code>, <code>GROUP BY</code> and custom MapReduce operators: these are markers for the boundaries between Map and Reduce when creating a physical plan.</li>
+<li>Early pruning of columns, predicate pushdown and partition pruning.</li>
+<li>Under certain kinds of sampling, bucket pruning.</li>
+</ul>
+<p>The optimiser can take additional hints by the user, for instance, to trigger a map-side join (this is what a broadcast join looks like in MapReduce), or to repartition to prevent skewness.</p>
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
-  Graylog, gelfj and keepalive connections in AWS ELB
+  Apache Calcite
 </span> 
 <span class='note-body ' style="display: inline-block;">
-<p>For the specific case of using Graylog, we copy the <a href="https://github.com/t0xa/gelfj"><code>gelfj</code></a> JAR to the classpath, and additionally fetch directly the JAR for <code>json-simple</code> from <a href="https://mvnrepository.com">maven</a>, for some reason it is not bundled with our packaging of <code>gelfj</code>. We use a custom <code>gelfj</code> connector that makes sure the connection is closed and re-opened every time logs are sent (this <em>could</em> be inefficent, yes).</p>
-<p>Why, we do this then? In AWS, ELB (Elastic Load Balancer) TCP/UDP connections there is a timeout for persistent connections without transmission, and some of our Spark jobs may not log for a long while (since we silence verbose logs and only log at the &ldquo;right level&rdquo; to Graylog, so we may not log while a task is running at all). If the connection is closed, the default <code>gelfj</code> (at least the version we started to work with) would not reconnect and we&rsquo;d stop logging after a while. So we forked and added this, has worked well since.</p>
+<p>Modern versions of <code>Hive</code> use <a href="https://calcite.apache.org">Apache Calcite</a> as a query optimiser. Calcite adds <em>cost-based optimisation</em>.</p>
 </span>
 </div>
+<p>Finally, the <code>physical plan generator</code> converts the logical plan into a physical plan. A MapReduce task is created per marker operator in the logical plan, where a marker operator is either a repartition or a <code>UNION ALL</code>. Between markers, the queries will be assigned to mappers or reducers depending on what the operations are.</p>
+<p>These MapReduce tasks form a DAG, and are sent in <a href="https://en.m.wikipedia.org/wiki/Topological_sorting">topological order</a> (fancy way of saying: in the order required for everything to finish) to the <em>execution engine</em>. In the initial paper, the only execution engine is Hadoop, but later <a href="https://tez.apache.org">Tez</a> was added as well, along with others. Nowadays, you would run <a href="https://github.com/apache/hive/tree/master/ql/src/java/org/apache/hadoop/hive/ql/exec/spark">Hive on Spark</a>. Or maybe just use directly Spark.</p>
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
-<p>I hope you find this post helpful in setting up your logging. Don&rsquo;t neglect having good logs: they will save your 🥓 very often.</p><hr/>
+<p><code>Hive</code> revolutionised big data, not only by allowing interactive querying but also by using a language that was in wide use, SQL. The alternative was Apache Pig and its query language, <a href="https://en.wikipedia.org/wiki/Apache_Pig#Example">Pig Latin</a>.</p>
+<hr>
+<div class="note ">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
         <ul class="pa0">
   
    <li class="list" style="display:inline;">
@@ -217,15 +269,15 @@
    </li>
   
    <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/hive" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hive</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data-papers" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data Papers</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/databricks" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Databricks</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/aws" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">AWS</a>
    </li>
   
 </ul>
@@ -234,6 +286,10 @@
             
         </div>
     </section>
+<canvas id='map'></canvas>
+<script src="https://mostlymaths.net/js/pagemap-1.2.0.min.js"></script>
+<script src="https://mostlymaths.net/js/pagemap-settings.js"></script>
+
 <aside class="w-30-l">
 
 
@@ -252,15 +308,15 @@
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/01/hive.html/">Down memory lane: the Hive paper</a>
-       </li>
-	     
-	     <li  class="mb2">
            <a href="https://mostlymaths.net/2021/01/202102-readings.html/">2021#02 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/01/202101-readings.html/">2021#01 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/">Configuring log4j properties in Databricks (and EMR)</a>
        </li>
 	     
     </ul>

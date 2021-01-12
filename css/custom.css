@@ -34,16 +34,37 @@
     text-decoration: none;
 }
 
-.dropcap:first-letter, .gr-dropcap:before {
+.dropcap:first-letter,
+.gr-dropcap:before {
     font-family: 'Euclid Initials';
     font-weight: normal;
     font-style: normal;
 }
 
-.dropcap:after { clear: left; content: " "; display: block; }
-.dropcap:first-letter, .gr-dropcap:before { font-family: 'Euclid Initials'; float: left; font-size: 8.0rem; font-style: normal;  margin-right: 3px; }
-.first-word { font-style: normal; text-transform: uppercase; }
-.scaps { font-variant: small-caps; }
+.dropcap:after {
+    clear: left;
+    content: " ";
+    display: block;
+}
+
+.dropcap:first-letter,
+.gr-dropcap:before {
+    font-family: 'Euclid Initials';
+    float: left;
+    font-size: 8.0rem;
+    font-style: normal;
+    margin-right: 3px;
+}
+
+.first-word {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.scaps {
+    font-variant: small-caps;
+}
+
 .smallText {
     line-height: unset;
     font-size: 0.8rem;
@@ -84,8 +105,9 @@ blockquote p {
     margin-bottom: .5rem;
     position: relative;
     width: 100%;
-  }
-  .sb small {
+}
+
+.sb small {
     background: slategray;
     color: white;
     border-radius: .5rem;
@@ -96,35 +118,38 @@ blockquote p {
     padding: 1rem;
     position: absolute;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     -webkit-transition: opacity 1s ease-out, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 1s ease-out, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 1s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 1s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 5;
-  }
-  .sb:hover {
+}
+
+.sb:hover {
     cursor: help;
-  }
-  .sb:hover > small {
+}
+
+.sb:hover>small {
     opacity: 1;
     -webkit-transform: translate(-50%, -75%);
-            transform: translate(-50%, -75%);
-  }
-  
-  .section-break-2 {
+    transform: translate(-50%, -75%);
+}
+
+.section-break-2 {
     font-family: 'Nymphette';
-    background-color: rgba(244,244,244, 255);
+    background-color: rgba(244, 244, 244, 255);
     border: 0;
     border-top: 1px solid #c8c8c8;
     height: 1px;
     margin: 2rem auto;
     text-align: center;
     width: 80%;
-  }
-  .section-break-2:before {
+}
+
+.section-break-2:before {
     font-family: 'Nymphette';
-    background-color: rgba(244,244,244, 255);
+    background-color: rgba(244, 244, 244, 255);
     color: #959595;
     content: 'E F';
     display: inline-block;
@@ -137,20 +162,25 @@ blockquote p {
     text-indent: -1px;
     text-rendering: geometricPrecision;
     -webkit-transform: translateY(-53%);
-            transform: translateY(-53%);
+    transform: translateY(-53%);
     width: auto;
-  }
-  
-  img.summary {
+}
+
+img.summary {
     max-height: 300px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;  
-  }
-  
-.dropcap:first-letter { font-size: 8.0rem; line-height: 3.0rem;}
+    border-radius: 3px;
+}
 
-.dropcap > p:first-of-type {text-indent: 0 !important;}
+.dropcap:first-letter {
+    font-size: 8.0rem;
+    line-height: 3.0rem;
+}
+
+.dropcap>p:first-of-type {
+    text-indent: 0 !important;
+}
 
 h2 {
     font-weight: 100;
@@ -186,13 +216,19 @@ h3.talk {
     text-align: center;
 }
 
-h3.talk > a {
+h3.talk>a {
     font-size: 2.0rem;
-    font-weight: 50;   
+    font-weight: 50;
 }
 
 h6 {
     display: inline-block;
+}
+
+.paratitle {
+    font-weight: 900;
+    display: inline-block;
+    text-indent: 0;
 }
 
 .talk-month {
@@ -213,13 +249,13 @@ img.talk-img {
     max-width: 11rem;
     width: auto;
     float: left;
-    margin: 1rem; 
+    margin: 1rem;
 }
 
-figure.rounded-3 > img {
+figure.rounded-3>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;    
+    border-radius: 3px;
 }
 
 p {
@@ -267,13 +303,13 @@ article p {
     font-weight: 250;
 }
 
-.nested-copy-line-height > h2 {
+.nested-copy-line-height>h2 {
     text-align: left;
 }
 
 .nested-copy-line-height a {
     font-weight: 300;
-    border-bottom: 1px dotted ;
+    border-bottom: 1px dotted;
     transition: all ease-in-out 0.1s
 }
 
@@ -293,10 +329,10 @@ article p {
     width: 30%;
 }
 
-.fig30 > img {
+.fig30>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .fig-left {
@@ -322,7 +358,7 @@ code {
     padding-right: 0.2em;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;          
+    border-radius: 3px;
 }
 
 .note {
@@ -331,15 +367,15 @@ code {
     padding-right: 0.4rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;          
+    border-radius: 3px;
 }
 
 .update {
-    background:seashell;
+    background: seashell;
 }
 
 .more-info {
-    background:azure;
+    background: azure;
 }
 
 .note-date {
@@ -350,7 +386,7 @@ code {
     font-style: italic;
 }
 
-pre > code {
+pre>code {
     font-family: "monoidregular", Consolas, monaco, monospace;
     font-size: 0.7em;
     background: rgb(41, 41, 41);
@@ -358,7 +394,7 @@ pre > code {
     margin-right: 0.0em;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;       
+    border-radius: 3px;
 }
 
 .fig-40 {
@@ -378,16 +414,16 @@ pre > code {
     float: left;
 }
 
-.fig-right > img {
+.fig-right>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
-.fig-left > img {
+.fig-left>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 figcaption {
@@ -410,10 +446,10 @@ figure {
     margin-inline-end: 0em;
 }
 
-.fig-full > img {
+.fig-full>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .right {
@@ -432,11 +468,11 @@ figure {
     max-width: 19%;
 }
 
-.fig-tall > img {
+.fig-tall>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
-    
+    border-radius: 3px;
+
 }
 
 .fig-wide img {
@@ -444,10 +480,10 @@ figure {
     object-fit: contain;
 }
 
-.fig-wide > img {
+.fig-wide>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .fig-not-so-wide img {
@@ -456,10 +492,10 @@ figure {
     object-fit: contain;
 }
 
-.fig-so-so-wide > img {
+.fig-so-so-wide>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .fig-so-so-wide img {
@@ -468,10 +504,10 @@ figure {
     object-fit: contain;
 }
 
-.fig-not-so-wide > img {
+.fig-not-so-wide>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 #map {
@@ -484,8 +520,8 @@ figure {
     transition: opacity .5s ease-in;
 }
 
-.mapfade{
-    opacity:0;
+.mapfade {
+    opacity: 0;
 }
 
 .summary-2-image {

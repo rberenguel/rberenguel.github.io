@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Jan 2021 10:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jan 2021 18:10:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 09 Jan 2021 10:30:33 +0200</pubDate>
+      <pubDate>Tue, 12 Jan 2021 18:10:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
@@ -23,9 +23,27 @@
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 09 Jan 2021 10:30:33 +0200</pubDate>
+      <pubDate>Tue, 12 Jan 2021 18:10:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Papers</title>
+      <link>https://mostlymaths.net/tags/data-papers/</link>
+      <pubDate>Tue, 12 Jan 2021 18:10:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-papers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hive</title>
+      <link>https://mostlymaths.net/tags/hive/</link>
+      <pubDate>Tue, 12 Jan 2021 18:10:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/hive/</guid>
       <description></description>
     </item>
     
@@ -228,15 +246,6 @@
     </item>
     
     <item>
-      <title>Data Papers</title>
-      <link>https://mostlymaths.net/tags/data-papers/</link>
-      <pubDate>Sun, 08 Nov 2020 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-papers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Remote</title>
       <link>https://mostlymaths.net/tags/remote/</link>
       <pubDate>Sat, 24 Oct 2020 12:30:33 +0200</pubDate>
@@ -345,7 +354,7 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>blog</title>
       <link>https://mostlymaths.net/tags/blog/</link>
       <pubDate>Mon, 08 Jun 2020 19:30:33 +0200</pubDate>
       
@@ -638,15 +647,6 @@
       <pubDate>Mon, 04 Mar 2019 21:11:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/iphone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hive</title>
-      <link>https://mostlymaths.net/tags/hive/</link>
-      <pubDate>Tue, 19 Feb 2019 23:47:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/hive/</guid>
       <description></description>
     </item>
     
