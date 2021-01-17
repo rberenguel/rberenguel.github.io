@@ -6,10 +6,20 @@
     <description>Recent content in Apache Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jan 2021 18:10:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 17 Jan 2021 18:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021#03 Readings</title>
+      <link>https://mostlymaths.net/2021/01/202103-readings.html/</link>
+      <pubDate>Sun, 17 Jan 2021 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/01/202103-readings.html/</guid>
+      <description>&lt;p&gt;This is also a video-heavy edition, I keep chugging along my watch list with &lt;a href=&#34;https://github.com/rberenguel/glancer&#34;&gt;Glancer&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>Down memory lane: the Hive paper</title>
