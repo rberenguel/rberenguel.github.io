@@ -6,10 +6,19 @@
     <description>Recent content in Apache Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jan 2021 18:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 14:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lakehouse: It&#39;s like Delta Lake, but not really</title>
+      <link>https://mostlymaths.net/2021/01/lakehouse.html/</link>
+      <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/01/lakehouse.html/</guid>
+      <description>&lt;p&gt;Lakehouse is the brand name for the underlying architecture of Databricks&amp;rsquo; Delta Lake: A data lake that is as performant as a data warehouse.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2021#03 Readings</title>

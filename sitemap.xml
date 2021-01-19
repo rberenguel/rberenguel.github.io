@@ -3,21 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2021/01/202103-readings.html/</loc>
-    <lastmod>2021-01-17T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2021-01-17T18:30:33+02:00</lastmod>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data-papers/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/databricks/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/hive/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2021/01/lakehouse.html/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2021-01-19T14:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2021/01/202103-readings.html/</loc>
     <lastmod>2021-01-17T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -45,20 +94,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2021-01-17T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2021-01-17T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2021-01-17T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -80,28 +115,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2021-01-17T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data-papers/</loc>
-    <lastmod>2021-01-12T18:10:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/01/hive.html/</loc>
-    <lastmod>2021-01-12T18:10:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/hive/</loc>
     <lastmod>2021-01-12T18:10:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -151,13 +165,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</loc>
-    <lastmod>2021-01-01T14:50:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/databricks/</loc>
     <lastmod>2021-01-01T14:50:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

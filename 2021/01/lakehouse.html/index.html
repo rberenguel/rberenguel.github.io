@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Configuring log4j properties in Databricks (and EMR)</title>
+    <title>mostlymaths.net  | Lakehouse: It&#39;s like Delta Lake, but not really</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.63.2" />
     
@@ -37,28 +37,28 @@
 
     
 
-    <meta property="og:title" content="Configuring log4j properties in Databricks (and EMR)" />
-<meta property="og:description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-" />
+    <meta property="og:title" content="Lakehouse: It&#39;s like Delta Lake, but not really" />
+<meta property="og:description" content="Lakehouse is the brand name for the underlying architecture of Databricks&rsquo; Delta Lake: A data lake that is as performant as a data warehouse." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/" />
-<meta property="article:published_time" content="2021-01-01T14:50:33+02:00" />
-<meta property="article:modified_time" content="2021-01-01T14:50:33+02:00" />
-<meta itemprop="name" content="Configuring log4j properties in Databricks (and EMR)">
-<meta itemprop="description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-">
-<meta itemprop="datePublished" content="2021-01-01T14:50:33&#43;02:00" />
-<meta itemprop="dateModified" content="2021-01-01T14:50:33&#43;02:00" />
-<meta itemprop="wordCount" content="648">
+<meta property="og:url" content="https://mostlymaths.net/2021/01/lakehouse.html/" />
+<meta property="article:published_time" content="2021-01-19T14:30:33+02:00" />
+<meta property="article:modified_time" content="2021-01-19T14:30:33+02:00" />
+<meta itemprop="name" content="Lakehouse: It&#39;s like Delta Lake, but not really">
+<meta itemprop="description" content="Lakehouse is the brand name for the underlying architecture of Databricks&rsquo; Delta Lake: A data lake that is as performant as a data warehouse.">
+<meta itemprop="datePublished" content="2021-01-19T14:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2021-01-19T14:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="1041">
 
 
 
-<meta itemprop="keywords" content="Data,Apache Spark,Databricks,AWS," />
+<meta itemprop="keywords" content="Databricks,Data,Hive,Data Papers,Apache Spark," />
 
     
+    
+        
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2021/01/databricks-log4j-configuration.html//logging.jpg"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -67,9 +67,8 @@
 
 
 
-<meta name="twitter:title" content="Configuring log4j properties in Databricks (and EMR)"/>
-<meta name="twitter:description" content="Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.
-"/>
+<meta name="twitter:title" content="Lakehouse: It&#39;s like Delta Lake, but not really"/>
+<meta name="twitter:description" content="Lakehouse is the brand name for the underlying architecture of Databricks&rsquo; Delta Lake: A data lake that is as performant as a data warehouse."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -86,7 +85,9 @@
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/01/databricks-log4j-configuration.html//logging.jpg');">
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide7.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -140,92 +141,117 @@
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Configuring log4j properties in Databricks (and EMR)</h1>
+        <h1 class="fw1 mb1 f1">Lakehouse: It&#39;s like Delta Lake, but not really</h1>
         
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics</span>
+    </section>
+    
         
-        <time class="f6 mt4 dib tracked" datetime="2021-01-01T14:50:33&#43;02:00">January 1, 2021</time>
+        <time class="f6 mt4 dib tracked" datetime="2021-01-19T14:30:33&#43;02:00">January 19, 2021</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 648 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 5 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1041 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Managing logging in Spark ain&rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.</p>
-<br/>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Lakehouse is the brand name for the underlying architecture of Databricks&rsquo; Delta Lake: A data lake that is as performant as a data warehouse.</p>
 <figure class="fig-full">
-    <img src="logging.jpg"
-         alt="Photo by Thomas Peham on Unsplash"/> <figcaption>
-            <p><span>Photo by <a href='https://unsplash.com/@tompeham?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Thomas Peham</a> on <a href='https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span></p>
-        </figcaption>
+    <img src="https://mostlymaths.net/images/dresser/wide7.jpg"/> 
 </figure>
 
+<p>This summary is based on reading <a href="http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf"><em>Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics</em></a>, a very recent paper by the Databricks gang (Armbrust, Ghodsi, Xin, Zaharia).</p>
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
-<p>In this short post I will explain how to use <code>log4j</code> property files in Databricks clusters, particularly when launching JAR jobs. The method (with adequate modifications) also works for Spark jobs in AWS EMR, I will point out the required changes for that situation.</p>
-<p>Why you may want to do this:</p>
+<p>The lakehouse architecture is the newest iteration in data warehousing. The goals of this architecture are:</p>
 <ul>
-<li>As was my case, to send logs to a <a href="https://www.graylog.org">Graylog</a> instance.</li>
-<li>To be able to adjust the verbosity of Spark logging and your packages, separately.</li>
-<li>To customise how the logs look.</li>
+<li>To be based on open data formats (like Parquet or ORC), and allow direct access to the underlying data.</li>
+<li>Offer first-class support for machine learning and data science workloads.</li>
+<li>Have state-of-the-art performance.</li>
 </ul>
-<p>There are no details on how to do this in Databricks&rsquo; documentation, although the required steps to be able to do it are well documented. It all boils down to using a custom boot script that copies the required files in the correct places, and passing the right arguments to <code>spark-submit</code>.</p>
-<p>In the end, it was the same approach I had used some years ago to use custom <code>log4j</code> in EMR, the only difference is that the destinations are different and how I build the script is also different.</p>
-<p>The operational workflow I have is:</p>
-<ul>
-<li>Airflow triggers a Databricks <a href="https://docs.databricks.com/dev-tools/api/latest/jobs.html#runs-submit">submit-run</a> JAR job, configured via a task in a DAG. The init script and parameters to <code>spark-submit</code> are passed here. In EMR, it was a custom operator creating a transient spot or on-demand cluster. The behaviour was thus the same as in <code>submit-run</code>, but we added a custom <code>EMRSensor</code> to monitor the job/cluster status.</li>
-<li>All artifacts required for this job (JAR, <code>log4j.properties</code>, bootstrap script, additional JARs) are copied to DBFS (with the CLI tool, <code>dbfs</code>) as part of the deployment process. They could also be copied to S3 (or whatever storage you use), but you will see this makes it easier. For the EMR case, it was copied to S3.</li>
-</ul>
-<p>The init script for Databricks looks like this:</p>
-<script src="https://gist.github.com/rberenguel/7925918d6d5b198b5666539f1bbf5174.js"></script>
-<p>The &ldquo;spark conf&rdquo; passed to our Databricks operator is this one, and would be verbatim the same in EMR (the Glue setting has nothing to do with logging, but you better use AWS Glue as metastore if you are on AWS… it will pay off if you ever let go of Databricks).</p>
-<script src="https://gist.github.com/rberenguel/b46c21dda7a2f4acc597031fea0f4c46.js"></script>
-<div class="note note">
+<p>As you can see, these range from <em>I could do that</em> to <em>state-of-the-art performance</em>. The key lens to see these goals is <em>existing industry trends</em>.</p>
+<figure class="fig30 right">
+    <img src="https://mostlymaths.net/images/dresser/square3.jpg"/> 
+</figure>
+
+<p>First generation data warehouses were used to dump data from operational databases to support decisions and BI (Business Intelligence). Data would be written with <em>schema on write</em>, to speed up BI processes. These were usually some forms of (distributed or just large) RDBMS (relational database management system).</p>
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
-  ¯\_(ツ)_/¯ (note)
+  Schema on write
 </span> 
 <span class='note-body ' style="display: inline-block;">
-<p>I&rsquo;m not 100% sure now that we need to pass the executor extra classpath, but I vaguely remember that without it, no dice. You can try removing it.</p>
+<p>Schema on write means that the data is saved according to a specified schema. The basic example would be inserting data into a table: the data needs to conform with the table schema. This is in contrast with <em>schema on read</em>, where you just save data and specify what you want to load from it when reading.</p>
 </span>
 </div>
-<p>The <code>-D</code> prefixed arguments is how you pass additional parameters that <code>log4j</code> interpolates in properties files. I use that for the environment in the file below, but you could pass anything that can go in a properties value.</p>
-<script src="https://gist.github.com/rberenguel/6e4d9ef6f19e5b652c753efe0e8aac63.js"></script>
-<p>I recommend you additionally make sure additional verbose logs are killed with the following:</p>
-<script src="https://gist.github.com/rberenguel/78d3efe8bbf16e2c2390c6e5ccc078cc.js"></script>
-<div class="note note">
+<p>Next, focus moved to <em>data lakes</em>. A data lake is a high-volume storage layer, using low-cost storage and a file API with files stored using an open format. The quintessential and initial example would be HDFS (<a href="https://en.m.wikipedia.org/wiki/Apache_Hadoop">Hadoop</a> Distributed Filesystem). Data would be dumped in the lake, and copied via ETL (<em>extract-transform-load</em>) or ELT (just swap letters).</p>
+<p>After some time, cloud-based systems (Amazon&rsquo;s <a href="https://aws.amazon.com/s3/">S3</a>, Azure&rsquo;s <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Blob Storage</a>, Google&rsquo;s <a href="https://cloud.google.com/storage">Cloud Storage</a>) replaced HDFS as storage layer in the data lake. This change increased durability, reduced cost and offered archival layers, like <a href="https://aws.amazon.com/glacier/">S3 Glacier</a>. The data warehouse layer likewise changed to cloud offerings like <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> or <a href="https://mostlymaths.net/2020/10/snowflake.html/">Snowflake</a>. The datalake+data warehouse architecture became dominant.</p>
+<p>The problem with this organisational layout, and a persistent headache most data engineers share, is that you have two systems that need to be kept in sync. This means that you have to keep reliability of your ETL system up, and prevent the warehouse from becoming stale. There would be limited support for machine learning. Warehouses were ready for BI, lakes for bulk access. And the final straw is the total cost of ownership: you pay for storage twice, once for the data lake and again for the warehouse.</p>
+<hr>
+<p>An obvious solution would be <em>what if we could use the lake as if it was a data warehouse</em>?</p>
+<figure class="fig-tall left">
+    <img src="https://mostlymaths.net/images/dresser/tall2.jpg"/> 
+</figure>
+
+<p>Some trends are already converging to similar solutions. Data warehouses were adding support for <em>external tables</em>, to be able to access data stored in a data lake in <a href="https://parquet.apache.org">Parquet</a> or <a href="https://orc.apache.org">ORC</a>. Also, a surge of investment in SQL engines against data lakes, like <a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">SparkSQL</a>, <a href="https://prestodb.io">Presto</a> (now known as <a href="https://trino.io">Trino</a>), <a href="https://mostlymaths.net/2021/01/hive.html/">Apache Hive</a> and <a href="https://aws.amazon.com/athena/">AWS Athena</a>. One issue with them: these engines lack full ACID guarantees (<em>Atomicity-Consistency-Isolation-Durability</em>).</p>
+<p>A lakehouse combines these ideas. Using low cost and directly accessible cloud storage, while offering DBMS features. Features like ACID, versioning, indexing, caching and <em>query optimisation</em>. Of course, sounds good.</p>
+<p>Databricks&rsquo; <a href="https://delta.io">Delta Lake</a> (which is open source, although Databricks has some internal extensions) is one possible lakehouse implementation. It uses S3 (or some other cloud storage) as a cheap storage layer, Parquet as the open storage format and a transactional metadata layer. If you are curious, I summarised the Delta Lake paper <a href="https://mostlymaths.net/2020/10/delta-lake.html/">here</a>. Some similar projects, <a href="https://iceberg.apache.org">Apache Iceberg</a> and <a href="https://hudi.apache.org">Apache Hudi</a> can also be considered lakehouse implementations, the ideas behind them are similar to Delta Lake.</p>
+<p>All these systems are based on adding a <em>metadata layer</em> on top of cloud storage. This layer is good to keep track of transactions (a good step to build ACID features), and allow time travel, data quality enforcement, and auditing. Also, a metadata layer should have no significant performance impact. Note that in general this metadata layer will allow zero-copy: if the format you have stored already in the cloud is the same as that of the lakehouse, adding data is just adding a line to the metadata with &ldquo;the data is these files&rdquo;, hence zero copy.</p>
+<p>Metadata is not good enough on its own for good performance (although it can help for some things, like the &ldquo;many small files&rdquo; issue). To get high performance, you need to treat the data lake as a database engine would. Things like keeping hot data in SSD (solid-state drives). Or having indexes and auxiliary data structures like column maximum and minimum (per file! To have early pruning). At the state-of-the-art level, data layout and record reordering optimisations (like <a href="https://mostlymaths.net/2020/10/delta-lake.html/#z-order-information">Z-ordering</a>).</p>
+<div class="note ">
 <span class='scaps ' style="display: inline-block;">
-  Graylog, gelfj and keepalive connections in AWS ELB
+  New execution engine
 </span> 
 <span class='note-body ' style="display: inline-block;">
-<p>For the specific case of using Graylog, we copy the <a href="https://github.com/t0xa/gelfj"><code>gelfj</code></a> JAR to the classpath, and additionally fetch directly the JAR for <code>json-simple</code> from <a href="https://mvnrepository.com">maven</a>, for some reason it is not bundled with our packaging of <code>gelfj</code>. We use a custom <code>gelfj</code> connector that makes sure the connection is closed and re-opened every time logs are sent (this <em>could</em> be inefficent, yes).</p>
-<p>Why, we do this then? In AWS, ELB (Elastic Load Balancer) TCP/UDP connections there is a timeout for persistent connections without transmission, and some of our Spark jobs may not log for a long while (since we silence verbose logs and only log at the &ldquo;right level&rdquo; to Graylog, so we may not log while a task is running at all). If the connection is closed, the default <code>gelfj</code> (at least the version we started to work with) would not reconnect and we&rsquo;d stop logging after a while. So we forked and added this, has worked well since.</p>
+<p>Databricks has a new C++ execution engine, which has either similar or better performance on smaller machines compared with the Spark DataFrame/RDD execution engine and competitors.</p>
 </span>
 </div>
-<div class="sb sb-2">
-  <hr class="section-break-2" />
-</div>
-<p>I hope you find this post helpful in setting up your logging. Don&rsquo;t neglect having good logs: they will save your 🥓 very often.</p><hr/>
+<p>These optimisations work across storage layers, meaning a lakehouse with these can use anything as storage <em>as long as the execution engine has these optimisations</em>.</p>
+<p>Delta Lake (or Iceberg, Hudi) are not the only possible lakehouse designs.</p>
+<ul>
+<li>Different options for metadata layers.</li>
+<li>Adding support for cross-table transactions (which Delta Lake does not offer at the moment).</li>
+<li>Different caching backends.</li>
+<li>Creating new storage formats that are optimised for a lakehouse or machine learning situation.</li>
+<li>Leverage serverless <em>somehow</em>.</li>
+<li>Query pushdown for machine learning processes.</li>
+</ul>
+<p>Some are more far-fetched than others. Creating new storage formats is not easy, and specially optimised for such a wide range of options. Leveraging serverless is slightly more interesting, although <em>how</em>. One idea could be having cached data on the edge, for extremely high speed for common queries. The idea of having query pushdown seems a bit more far-fetched, but if the concept of <a href="https://www.logicalclocks.com/blog/feature-store-the-missing-data-layer-in-ml-pipelines">feature store</a> gets mainstream, features could then be pushed down to the storage/reading layer.</p>
+<p>All in all, the ideas in the Lakehouse paper are worthwhile, although I find the details in the <a href="https://mostlymaths.net/2020/10/delta-lake.html/">Delta Lake</a> paper more useful. In other words, <strong>if I had to implement a lakehouse, I&rsquo;d check that paper instead</strong>.</p>
+<hr>
+<div class="note ">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
         <ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
-   </li>
   
    <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/databricks" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Databricks</a>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/aws" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">AWS</a>
+     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/hive" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hive</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data-papers" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data Papers</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
    </li>
   
 </ul>
@@ -234,6 +260,10 @@
             
         </div>
     </section>
+<canvas id='map'></canvas>
+<script src="https://mostlymaths.net/js/pagemap-1.2.0.min.js"></script>
+<script src="https://mostlymaths.net/js/pagemap-settings.js"></script>
+
 <aside class="w-30-l">
 
 
@@ -244,7 +274,7 @@
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/01/lakehouse.html/">Lakehouse: It&#39;s like Delta Lake, but not really</a>
+           <a href="https://mostlymaths.net/2021/01/hive.html/">Down memory lane: the Hive paper</a>
        </li>
 	     
 	     <li  class="mb2">
@@ -256,11 +286,11 @@
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
+           <a href="https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/">Configuring log4j properties in Databricks (and EMR)</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/01/202103-readings.html/">2021#03 Readings</a>
+           <a href="https://mostlymaths.net/2020/10/databricks-jdbc.html/">Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</a>
        </li>
 	     
     </ul>
