@@ -341,6 +341,10 @@ article p {
     float: left;
 }
 
+.fig-center {
+    margin: auto;
+}
+
 .fig-side {
     display: inline-block;
     width: 40%;
