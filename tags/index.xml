@@ -6,7 +6,7 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Jan 2021 20:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Feb 2021 07:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,63 @@
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Mon, 25 Jan 2021 20:30:33 +0200</pubDate>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>https://mostlymaths.net/tags/machine-learning/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://mostlymaths.net/tags/rust/</link>
+      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -35,33 +89,6 @@
       <pubDate>Mon, 25 Jan 2021 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Mon, 25 Jan 2021 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Mon, 25 Jan 2021 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Mon, 25 Jan 2021 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -102,24 +129,6 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sun, 17 Jan 2021 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine learning</title>
-      <link>https://mostlymaths.net/tags/machine-learning/</link>
-      <pubDate>Sun, 17 Jan 2021 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://mostlymaths.net/tags/python/</link>
       <pubDate>Sun, 17 Jan 2021 18:30:33 +0200</pubDate>
@@ -143,15 +152,6 @@
       <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://mostlymaths.net/tags/rust/</link>
-      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -885,7 +885,7 @@
     </item>
     
     <item>
-      <title>Acme</title>
+      <title>acme</title>
       <link>https://mostlymaths.net/tags/acme/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
