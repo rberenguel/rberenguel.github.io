@@ -6,26 +6,89 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Feb 2021 07:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 15 Feb 2021 17:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Adtech</title>
+      <link>https://mostlymaths.net/tags/adtech/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/adtech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Haskell</title>
       <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://mostlymaths.net/tags/music/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Piano</title>
+      <link>https://mostlymaths.net/tags/piano/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/piano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -44,24 +107,6 @@
       <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -129,24 +174,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 17 Jan 2021 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adtech</title>
-      <link>https://mostlymaths.net/tags/adtech/</link>
-      <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/adtech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CSS</title>
       <link>https://mostlymaths.net/tags/css/</link>
       <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
@@ -210,7 +237,7 @@
     </item>
     
     <item>
-      <title>d3js</title>
+      <title>D3js</title>
       <link>https://mostlymaths.net/tags/d3js/</link>
       <pubDate>Sat, 05 Dec 2020 10:30:33 +0200</pubDate>
       
@@ -296,15 +323,6 @@
       <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Mon, 28 Sep 2020 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -521,15 +539,6 @@
       <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://mostlymaths.net/tags/music/</link>
-      <pubDate>Sun, 01 Sep 2019 13:03:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/music/</guid>
       <description></description>
     </item>
     
