@@ -6,10 +6,19 @@
     <description>Recent content in SQL on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 10:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 31 Mar 2021 20:15:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
+      <link>https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/</guid>
+      <description>&lt;p&gt;Timezones and UTF are rocks you repeatedly hit in your data journey.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2021#09 Readings</title>

@@ -6,10 +6,55 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 10:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 31 Mar 2021 20:15:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://mostlymaths.net/tags/aws/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databricks</title>
+      <link>https://mostlymaths.net/tags/databricks/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/databricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://mostlymaths.net/tags/sql/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/sql/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Adtech</title>
@@ -17,15 +62,6 @@
       <pubDate>Sun, 14 Mar 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/adtech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 14 Mar 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -75,15 +111,6 @@
     </item>
     
     <item>
-      <title>SQL</title>
-      <link>https://mostlymaths.net/tags/sql/</link>
-      <pubDate>Sun, 14 Mar 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Generative</title>
       <link>https://mostlymaths.net/tags/generative/</link>
       <pubDate>Sun, 07 Mar 2021 16:30:33 +0200</pubDate>
@@ -98,15 +125,6 @@
       <pubDate>Sun, 07 Mar 2021 16:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sun, 28 Feb 2021 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
@@ -183,15 +201,6 @@
     </item>
     
     <item>
-      <title>Databricks</title>
-      <link>https://mostlymaths.net/tags/databricks/</link>
-      <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/databricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hive</title>
       <link>https://mostlymaths.net/tags/hive/</link>
       <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
@@ -206,15 +215,6 @@
       <pubDate>Sun, 03 Jan 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://mostlymaths.net/tags/aws/</link>
-      <pubDate>Fri, 01 Jan 2021 14:50:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/aws/</guid>
       <description></description>
     </item>
     
@@ -248,7 +248,7 @@
     <item>
       <title>AWK</title>
       <link>https://mostlymaths.net/tags/awk/</link>
-      <pubDate>Sun, 29 Nov 2020 22:15:33 +0200</pubDate>
+      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/awk/</guid>
       <description></description>

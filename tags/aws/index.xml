@@ -6,10 +6,19 @@
     <description>Recent content in AWS on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 14:50:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 31 Mar 2021 20:15:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
+      <link>https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/</link>
+      <pubDate>Wed, 31 Mar 2021 20:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/</guid>
+      <description>&lt;p&gt;Timezones and UTF are rocks you repeatedly hit in your data journey.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Configuring log4j properties in Databricks (and EMR)</title>
@@ -18,6 +27,16 @@
       
       <guid>https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/</guid>
       <description>&lt;p&gt;Managing logging in Spark ain&amp;rsquo;t easy, and is even harder in managed clouds like Databricks or EMR.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
+    <item>
+      <title>Find-the-gap with SQL in AWS Redshift</title>
+      <link>https://mostlymaths.net/2020/11/find-the-gap-redshift.html/</link>
+      <pubDate>Sun, 29 Nov 2020 22:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2020/11/find-the-gap-redshift.html/</guid>
+      <description>&lt;p&gt;A relatively common type of query for time-based SQL tables is a &lt;em&gt;find the gap&lt;/em&gt; query. How can you do this in AWS Redshift, which does not have the SQL function &lt;code&gt;generate_series&lt;/code&gt;?&lt;/p&gt;
 &lt;br/&gt;</description>
     </item>
     
