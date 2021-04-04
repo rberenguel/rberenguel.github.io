@@ -6,10 +6,20 @@
     <description>Recent content in Data on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Mar 2021 20:15:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 04 Apr 2021 13:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021#10 Readings</title>
+      <link>https://mostlymaths.net/2021/04/202110-readings.html/</link>
+      <pubDate>Sun, 04 Apr 2021 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/04/202110-readings.html/</guid>
+      <description>&lt;p&gt;I have spent a big deal of these weeks moving my notes from Bear to &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;. I may write the reasons at some point, stay 🐟.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
