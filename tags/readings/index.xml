@@ -6,10 +6,20 @@
     <description>Recent content in Readings on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Apr 2021 13:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 11:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/readings/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021#11 Readings</title>
+      <link>https://mostlymaths.net/2021/05/202111-readings.html/</link>
+      <pubDate>Sun, 02 May 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/05/202111-readings.html/</guid>
+      <description>&lt;p&gt;Having to tweak a presentation for the &lt;a href=&#34;https://databricks.com/session_na21/keeping-identity-graphs-in-sync-with-apache-spark&#34;&gt;Data+AI Summit&lt;/a&gt; time constraints has eaten all my disposable free time, hence the posting hiatus and this being relatively short.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>2021#10 Readings</title>
