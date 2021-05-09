@@ -6,10 +6,20 @@
     <description>Recent content in Apache Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Mar 2021 20:15:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 09 May 2021 14:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2021#12 Readings</title>
+      <link>https://mostlymaths.net/2021/05/202112-readings.html/</link>
+      <pubDate>Sun, 09 May 2021 14:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/05/202112-readings.html/</guid>
+      <description>&lt;p&gt;Not much to report. I&amp;rsquo;m still in kind of an article reading slump (my backlog is larger than 50 right now).&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
