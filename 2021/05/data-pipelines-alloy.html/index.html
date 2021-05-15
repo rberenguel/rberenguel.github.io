@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Modelling data pipelines with Alloy</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.63.2" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+    <link href="https://mostlymaths.net/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/all.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/byrne-caps/stylesheet.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/reforma/reforma.css">
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Modelling data pipelines with Alloy" />
+<meta property="og:description" content="In which I write some easy Alloy code for a data model.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2021/05/data-pipelines-alloy.html/" />
+<meta property="article:published_time" content="2021-05-15T20:30:33+02:00" />
+<meta property="article:modified_time" content="2021-05-15T20:30:33+02:00" />
+<meta itemprop="name" content="Modelling data pipelines with Alloy">
+<meta itemprop="description" content="In which I write some easy Alloy code for a data model.
+">
+<meta itemprop="datePublished" content="2021-05-15T20:30:33&#43;02:00" />
+<meta itemprop="dateModified" content="2021-05-15T20:30:33&#43;02:00" />
+<meta itemprop="wordCount" content="1783">
+
+
+
+<meta itemprop="keywords" content="Data,Formal Methods,Airflow," />
+
+    
+    
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="/2021/05/data-pipelines-alloy.html//pipeline.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="Modelling data pipelines with Alloy"/>
+<meta name="twitter:description" content="In which I write some easy Alloy code for a data model.
+"/>
+
+<meta name="author" content="Ruben Berenguel">
+    
+      
+         
+         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+      
+    
+  </head>
+
+  <body class="ma0 reforma bg-near-white">
+
+    
+
+
+  
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/05/data-pipelines-alloy.html//pipeline.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/sitemap/" title=" page">
+                  <i class='fas fa-map'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/pages/about/" title="about page">
+                  about
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <header class="mt4 w-100">
+        <h1 class="fw1 mb1 f1">Modelling data pipelines with Alloy</h1>
+        
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">Finding test cases without actually implementing <strong>the thing</strong></span>
+    </section>
+    
+        
+        <time class="f6 mt4 dib tracked" datetime="2021-05-15T20:30:33&#43;02:00">May 15, 2021</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 9 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1783 words</span>
+      
+      <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
+    </header>
+
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>In which I write some easy Alloy code for a data model.</p>
+<br/>
+<figure class="fig-full">
+    <img src="pipeline.jpg"
+         alt="Photo by JJ Ying on Unsplash"/> <figcaption>
+            <p>Photo by <a href='https://unsplash.com/@jjying'>JJ Ying</a> on <a href='https://unsplash.com/s/photos/pipeline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
+        </figcaption>
+</figure>
+
+<p><a href="http://alloytools.org">Alloy</a> is a programming language and analysis tool for software modeling. I learnt of it 3 years ago, when I was starting with <a href="https://github.com/tlaplus">TLA+</a> (a language focused on how systems evolve over time). Alloy has a particularly clean syntax (see for instance <a href="https://www.hillelwayne.com/post/knights-knaves/">this blog post</a>) which I liked way more than TLA+, but I couldn&rsquo;t find any interesting use cases.</p>
+<p>A few days ago I was watching <a href="https://www.youtube.com/watch?v=XaCNBpCSQVk&amp;app=desktop">this pair programming</a> between <a href="https://twitter.com/HeyChelseaTroy">Chelsea Troy</a> and <a href="https://twitter.com/hillelogram">Hillel Wayne</a>, where they apply structural (formal) verification to <a href="https://chelseatroy.com/2020/10/15/clean-structural-verification-with-alloy/">a problem she had</a>. A lightbulb moment later I realised I could use Alloy for far more than I thought (which was close to nothing at the moment).</p>
+<blockquote>
+<p>I can write a model and see what properties I need to make sure my implementation satisfies. These properties will then become (possibly unit) tests.</p>
+</blockquote>
+<p>This may sound <em>duh</em> to you. To be fair, it sounds <em>duh</em> to me as well, but I think it is worth exploring.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="the-problem">The problem</h3>
+<p>At work we have a pattern repeated over several pipelines:</p>
+<ol>
+<li>Process some data in an &ldquo;engine&rdquo; (EMR, Databricks, Redshift…),</li>
+<li>Dump the resulting data in S3,</li>
+<li>Load this data in our analytics warehouse (a different Redshift).</li>
+</ol>
+<div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  Note:
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Yes, I know about <a href="https://www.getdbt.com">dbt</a>. Every time I have checked (and tried to implement something similar to the above) it doesn&rsquo;t fit our use case well enough without passing through too many strange hoops. Someday, maybe.</p>
+</span>
+</div>
+<p>Over time, as we have written some of these pipelines we have hit several facepalm moments that should have been detected by automated tests but weren&rsquo;t. Most we detected in our alpha environment (I think one didn&rsquo;t because of some obscure reason), but these should be rules we check every time we write one of these pipelines. Ideally, these problems should be unit-testable. On purpose I&rsquo;m not mentioning <em>what</em> the problems were. I&rsquo;ll reveal them at the end.</p>
+<p>Writing one of these is relatively time consuming (a few days), and the bulk of the complexity is in the first step, where the process has some &ldquo;meat&rdquo;. The rest is just plumbing, and is where most of this model work can help.</p>
+<div class="note greenish">
+<span class='scaps ' style="display: inline-block;">
+  The question
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Could we create a model in Alloy in a small fraction of the time and find possible pitfalls we should test for?</p>
+</span>
+</div>
+<figure class="fig-wide">
+    <img src="exploring.png"
+         alt="Calvin &amp;amp; Hobbes, by Bill Waterson"/> <figcaption>
+            <p>Calvin &amp; Hobbes, by Bill Waterson</p>
+        </figcaption>
+</figure>
+
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="building-and-exploring-a-model">Building and exploring a model</h3>
+<p>You can get Alloy from <a href="https://alloytools.org/download.html">here</a> and the best documentation is available <a href="https://alloy.readthedocs.io/en/latest/intro.html">here</a>. Start it up and then you can paste as we explore the model space.</p>
+<div class="note update">
+<span class='scaps ' style="display: inline-block;">
+  Meh
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>The syntax highlighter in Hugo (<a href="https://github.com/alecthomas/chroma">chroma</a>) does not have Alloy support, so the code boxes won&rsquo;t have syntax highlighting active.</p>
+</span>
+</div>
+<pre><code class="language-alloy" data-lang="alloy">sig Pipeline {}
+</code></pre><p>This is the first Alloy snippet. With <code>sig</code> you declare <em>something</em>, which in this case is empty. You can press <em>execute</em> (or <em>show</em>) to explore the universe satysfing these definitions, and while in the visualizer window, you can press <em>next</em> to keep exploring the universe (by default it will have 4 of each maximum). This universe will start with no pipeline and have up to 4 pipelines:</p>
+<figure class="fig-not-so-wide">
+    <img src="pipeline1.png"/> 
+</figure>
+
+<p>Since we are not concerned with having multiple pipelines, we can actually do</p>
+<pre><code class="language-alloy" data-lang="alloy">one sig Pipeline {}
+</code></pre><p>Now the universe contains one and exactly <em>one</em> <code>Pipeline</code>. Other <em>quantifiers</em> would be <code>some</code> (at least one), <code>lone</code> (at most one).</p>
+<p>This is not particularly useful: we need pipelines to contain the stages mentioned above. We can create them as additional signatures. Again, since we are only concerned with <em>one</em> pipeline and its stages (and there is only one stage of each) we can add the <em>one</em> quantifier to the signatures.</p>
+<pre><code>one sig Pipeline {}
+
+one sig Process {}
+
+one sig Dump {}
+
+one sig Load {}
+</code></pre><div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  Note:
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>For empty signatures you can actually arrange them all together, like</p>
+<pre><code class="language-alloy" data-lang="alloy">one sig foo, bar {}
+</code></pre><p>but here I want to add stuff eventually to each.</p>
+</span>
+</div>
+<p>We can now add the steps to the pipeline as attributes:</p>
+<pre><code class="language-alloy" data-lang="alloy">one sig Pipeline {
+  process: Process,
+  dump: Dump,
+  load: Load,
+}
+
+one sig Process {}
+one sig Dump {}
+one sig Load {}
+</code></pre><p>It is not <em>very</em> interesting now, but it has some structure.</p>
+<figure class="fig-not-so-wide">
+    <img src="pipeline2.png"/> 
+</figure>
+
+<p>We could stop here and say: <em>implement this</em>. And this is basically what happens when you defined it as a set of user stories, you go straight to implement the <em>trees</em> while you are missing the <em>forest</em>.</p>
+<p>Let&rsquo;s enrich the model a bit and see where this leads us. Let&rsquo;s go in order, and write the first things that are pretty obvious:</p>
+<ol>
+<li><strong>Process</strong>: this uses an <em>engine</em> and generates an <em>output</em>.</li>
+<li><strong>Dump</strong>: this takes some <em>input</em> and writes an <em>output</em> (from <em>somewhere</em>) in <em>some format</em>.</li>
+<li><strong>Load</strong>: this takes some <em>input</em> (from <em>somewhere</em>) with <em>some format</em>.</li>
+</ol>
+<p>Okay, let&rsquo;s add all these <em>things</em> to the model. It&rsquo;s not clear what <em>output</em> may mean in the <strong>process</strong> step: I&rsquo;ll assume it&rsquo;s a <code>Location</code>, like what defines all those <em>somewhere</em>. This sounds generic enough, we can use <code>Location</code> then as <em>inputs</em> and <em>outputs</em>.</p>
+<pre><code class="language-alloy" data-lang="alloy">one sig Pipeline {
+  process: Process,
+  dump: Dump,
+  load: Load,
+}
+
+sig Engine, FileFormat {}
+sig Location {}
+
+one sig Process {
+  engine: one Engine,
+  output: one Location,
+}
+
+one sig Dump {
+  input: one Location,
+  outputFormat: one FileFormat,
+  output: one Location,
+}
+
+one sig Load {
+  input: one Location,
+  inputFormat: one FileFormat,
+}
+</code></pre><p>A first pass looks like this, and one execution of the model gives this diagram:</p>
+<figure class="fig-full">
+    <img src="pipeline3.png"/> 
+</figure>
+
+<figure class="fig-wide">
+    <img src="facepalm.jpg"/> 
+</figure>
+
+<p>Of course when writing the above you may have thought <em><strong>the inputs and outputs need to match, you moron</strong></em>. And indeed, it&rsquo;s obvious seeing the diagram above as well… but we actually missed testing for it, and it failed in a real run. DUH!</p>
+<p>We can restrict our world to have this <em>predicate</em>: this predicate would be a test we need to add to our real implementation. The test is for input-output consistency.</p>
+<pre><code class="language-alloy" data-lang="alloy">/* [no changes from previous] */
+
+pred ConsistentProcessDump[p: Pipeline]{
+  p.process.output = p.dump.input
+}
+
+pred ConsistentDumpLoad[p: Pipeline]{
+  p.dump.output = p.load.input
+  p.dump.outputFormat = p.load.inputFormat
+}
+
+run {
+  all p: Pipeline {
+    ConsistentProcessDump[p] 
+    ConsistentDumpLoad[p]
+  }
+} for 4
+</code></pre><p>A <em>predicate</em> is some property you establish, and in the <em>run</em> statement you request your universe to contain only pipelines satisfying these. When you pressed <em>execute</em> without an explicit run statement Alloy was actually running a <em>default</em> one.</p>
+<figure class="fig-full">
+    <img src="pipeline4.png"/> 
+</figure>
+
+<p>Okay, this looks better, except that <strong>Dump</strong> is reading and writing from the same location!</p>
+<pre><code class="language-alloy" data-lang="alloy">pred ConsistentDump[p: Pipeline]{
+  p.dump.input != p.dump.output
+}
+</code></pre><figure class="fig-full">
+    <img src="pipeline5.png"/> 
+</figure>
+
+<p>This looks better. You can tweak the settings in the theme to make it look better, since the file format can be an attribute instead of an arc (click Theme and press on the relevant relations, then uncheck <em>show as arcs</em> and check instead <em>show as attribute</em>, then in the type <code>FileFormat</code> select <em>Hide unconnected nodes</em>).</p>
+<figure class="fig-full">
+    <img src="pipeline6.png"/> 
+</figure>
+
+<p>With this model we have avoided the facepalm of forgetting to <em>test</em> that the input and output formats match, and that the locations match. In other words, in your tests you should check this. In our case, this pipeline lives in Airflow and has a test suite that confirms that the Jinja variables used for all these match.</p>
+<h3 id="is-our-job-finished">Is our job finished?</h3>
+<blockquote>
+<p>No.</p>
+</blockquote>
+<p>A model is not a full pipeline, and can always be extended a bit more. If you dig down a bit into what each step does, you can find things that are easy to add to the model and raise issues. For example, the <strong>Load</strong> step is loading a file into/as a table in Redshift. What happens with the schema? We can enrich the model thus with</p>
+<pre><code class="language-alloy" data-lang="alloy">sig Name, Type {}
+
+sig Column {
+  name: one Name,
+  type: one Type,
+}
+
+sig Schema {
+  // We could have avoided defining Schema and just
+  // have set Column for the schema attributes, but
+  // having it as a sig makes the fact simpler.
+  def: set Column,
+}
+
+one sig Dump {
+  input: one Location,
+  outputFormat: one FileFormat,
+  output: one Location,
+  outputSchema: one Schema,
+}
+
+one sig Load {
+  schema: one Schema,
+  input: one Location,
+  inputFormat: one FileFormat,
+}
+
+fact InterestingSchemasOnly {
+  all s: Schema | # s.def &gt; 1
+}
+</code></pre><p><em>Facts</em> are properties that are true regardless of any other consideration or needing any tweaks. In this case, I want to force the universe to have no empty tables, or tables with just one column, and this is just because it makes the model richer to explore.</p>
+<figure class="fig-full">
+    <img src="pipeline7.png"/> 
+</figure>
+
+<p>And it&rsquo;s obvious you want schemas to be the same.</p>
+<pre><code class="language-alloy" data-lang="alloy">pred ConsistentSchemas[p: Pipeline]{
+  p.dump.outputSchema.def = p.load.schema.def
+}
+</code></pre><p>With this predicate, a model instance looks like this:</p>
+<figure class="fig-full">
+    <img src="pipeline8.png"/> 
+</figure>
+
+<p>You can keep enriching the model until you are confident it covers your problem well enough. Right now I think there is only one area I&rsquo;d like to explore… but it&rsquo;s the matter of the info box below.</p>
+<div class="note update">
+<span class='scaps ' style="display: inline-block;">
+  Pipelines and global state: idempotency
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Taking into account that a <em>pipeline</em> after having run modifies the <em>global state</em> of the world (like the intermediate storage, or the destination tables) will be the subject of another post. Handling stuff that changes over time in Alloy is a bit tricky.</p>
+<p>The next version (Alloy 6) will have enhanced capabilities for time-based models. I&rsquo;m still not sure if the next post will be using the development version of Alloy (which you can easily build locally), or the standard way of modelling time-based problems before version 6.</p>
+</span>
+</div>
+<div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  How many models must a person walk down?
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>I have written a model for &ldquo;this&rdquo; pipeline 3 times from scratch already:</p>
+<ol>
+<li>To see how interesting it was as a problem,</li>
+<li>Explaining it to a coworker to bounce back ideas,</li>
+<li>The one here.</li>
+</ol>
+<p>Each time the model has turned out slightly different and interesting in its own way.</p>
+</span>
+</div>
+<h3 id="in-summary">In summary</h3>
+<p>Writing a model like the one above takes significant less time than writing a full pipeline (for context, this whole post has been less than 3 hours, and includes fighting with GraphViz to generate the graphs, as well as editing images and checking some documentation). Finding the interesting areas to test to avoid stupid mistakes seems to be well worth it for the small time investment. Also, depending on the problem it&rsquo;s clearly a <em>do once and benefit forever situation</em>.</p>
+<p>By the way, the problems that we have faced (and that I collected as a list of <em>you should test this</em>) are:</p>
+<ul>
+<li>Dumping via <code>SELECT *</code>, which causes schema violations on <code>COPY</code> when there are schema changes on one side,</li>
+<li>Different formats or locations between dump and load,</li>
+<li>Properties that require sequences of events and will be the topic of another post 😎.</li>
+</ul>
+<p>You can get the full model from <a href="https://gist.github.com/rberenguel/22de343b7d445bdd8bfb42a37e4ea46e">here</a>.</p>
+<hr>
+<div class="note ">
+<span class='scaps smallText' style="display: inline-block;">
+  Thanks
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://ber2.github.io">Alberto Cámara</a> for rubber ducking and challenging this model approach for data problems.</p>
+</span>
+</div><hr/>
+        <ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/formal-methods" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Formal Methods</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/airflow" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Airflow</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/09/202056-readings-of-the-week.html/">2020#56 Readings of the Week</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/04/202110-readings.html/">2021#10 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/">UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/03/202108-readings.html/">2021#08 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2021/01/202104-readings.html/">2020#04 Readings</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div></aside>
+    
+    </article>
+    
+    
+    
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+    
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2021 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://mostlymaths.net/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

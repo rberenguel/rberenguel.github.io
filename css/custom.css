@@ -385,6 +385,8 @@ code {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .update {
@@ -395,6 +397,10 @@ code {
     background: azure;
 }
 
+.greenish {
+    background: honeydew;
+}
+
 .note-date {
     font-size: 60%;
     font-weight: 100;
@@ -403,15 +409,23 @@ code {
     font-style: italic;
 }
 
+pre {
+    display: initial;
+    margin-bottom: 1em;
+}
+
 pre>code {
     font-family: "monoidregular", Consolas, monaco, monospace;
     font-size: 0.7em;
     background: rgb(41, 41, 41);
     margin-left: 0.0em;
     margin-right: 0.0em;
+    margin-bottom: 0em;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    display: block;
+    width: 100%;
 }
 
 .fig-40 {
