@@ -3,6 +3,90 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2021/05/202114-readings.html/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/aws/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/generative/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/sql/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2021-05-30T10:20:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2021/05/202113-readings.html/</loc>
     <lastmod>2021-05-24T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,13 +95,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/alloy/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/apache-spark/</loc>
     <lastmod>2021-05-24T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,13 +136,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/music/</loc>
     <lastmod>2021-05-24T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -73,49 +143,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/airflow/</loc>
-    <lastmod>2021-05-15T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
     <lastmod>2021-05-15T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -130,13 +158,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2021/05/202112-readings.html/</loc>
-    <lastmod>2021-05-09T14:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/generative/</loc>
     <lastmod>2021-05-09T14:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -159,20 +180,6 @@
   <url>
     <loc>https://mostlymaths.net/2021/04/202110-readings.html/</loc>
     <lastmod>2021-04-04T13:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/sql/</loc>
-    <lastmod>2021-04-04T13:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/aws/</loc>
-    <lastmod>2021-03-31T20:15:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
