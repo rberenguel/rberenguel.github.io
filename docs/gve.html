@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <body>
-  <link rel='stylesheet' href='https://mostlymaths.net/webfonts/monoid.css'>
+  <link rel='stylesheet' href='//mostlymaths.net/webfonts/monoid.css'>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="application/javascript/"></script>
 <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
 <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
-<script src="prism.js"></script> <!-- needs to be after codeflask -->
+<script src="./prism.js"></script> <!-- needs to be after codeflask -->
   
 <style>
 #container {
@@ -42,25 +42,46 @@
   const flask = new CodeFlask('#editor', { language: 'dot' });
     flask.addLanguage('dot', Prism.languages['dot']);
     
-  flask.updateCode(`
-  digraph G {
-  bgcolor="#ffffff00"
-  rankdir=LR;
+  flask.updateCode(`digraph G {
+  margin=0.5; // either one (all) or two (hor,vert) numbers, in inches
+  bgcolor="#ffffff00" // rgba in hex format
+  rankdir=LR // other options would be RL, TB, BT
+  compound=true // this enables logical arrow heads
   node [
-    fontname = "monoidregular",
-    style=rounded,
-    labelloc=c,
+    fontname = "monoidregular" // should be a valid webfont, monoid is added
+    style=rounded
+    labelloc=c // centered labels
+    margin="0.3,0.15" // side and top margin for text in nodes
+    splines=true // allows curved arrows
+    shape=rect
   ];
   edge [
-    arrowhead="vee"
-    ];
-	A -> C [minlen=2];
-	B -> C [minlen=2];
-	A [shape=rect];
-	B [shape=rect];
-  C [shape=rect];
-}
-  `);
+    minlen=2
+  ];
+  subgraph cluster_storage { // if it starts with cluster, it will have a box
+    margin="" // subgraph inherits margin from graph
+    style="filled,rounded,dotted"; // example of styles
+    fillcolor="#00000012"
+    red[ // if you define nodes ahead of time you can add properties
+      label="Redshift",
+      shape=cylinder, // https://graphviz.org/doc/info/shapes.html#polygon
+      style=filled,
+      fillcolor="#00ff0050",
+    ]
+    dat[label="Databricks",
+      shape="cylinder",
+      style=filled,
+      fillcolor="#00ff0050",
+      group=g
+      // nodes in a group are aligned (direction depending on rankdir)
+    ]
+  }
+  
+  air[label="Airflow",style="",shape=note,group=g]
+    
+  air -> red [lhead=cluster_storage] // logical head of the arrow is outside;
+  air -> dat [lhead=cluster_storage];
+}`);
     var graph = d3.select("#graph")
     const graphBb = graph.node().getBoundingClientRect()
     const width = graphBb.width
