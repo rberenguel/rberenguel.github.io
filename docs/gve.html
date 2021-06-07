@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <link rel='stylesheet' href='https://mostlymaths.net/webfonts/monoid.css'>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="application/javascript/"></script>
+<script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+<script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+<script src="prism.js"></script> <!-- needs to be after codeflask -->
+  
+<style>
+#container {
+  width: 50%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+#editor {
+  position: relative;
+  width: 100%;
+  height: calc(90vh - 100px);
+}
+#graph {
+  top: 10px;
+  position: absolute;
+  height: calc(90vh - 100px);
+  right: 10px;
+  width: 48%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  border-radius: 0.8rem;
+  text-align: center;
+}
+</style>
+<div id="container">
+<div id="editor">
+</div>
+</div>
+<div id="graph"></div>
+<script>
+  const flask = new CodeFlask('#editor', { language: 'dot' });
+    flask.addLanguage('dot', Prism.languages['dot']);
+    
+  flask.updateCode(`
+  digraph G {
+  bgcolor="#ffffff00"
+  rankdir=LR;
+  node [
+    fontname = "monoidregular",
+    style=rounded,
+    labelloc=c,
+  ];
+  edge [
+    arrowhead="vee"
+    ];
+	A -> C [minlen=2];
+	B -> C [minlen=2];
+	A [shape=rect];
+	B [shape=rect];
+  C [shape=rect];
+}
+  `);
+    var graph = d3.select("#graph")
+    const graphBb = graph.node().getBoundingClientRect()
+    const width = graphBb.width
+    const height = graphBb.height
+    var gv = graph.graphviz()
+    flask.addLanguage('dot', Prism.languages['dot']);
+    console.log(width, height)
+  flask.onUpdate((code) => {
+    gv.width(width)
+    gv.height(height)
+    //gv.fit() 
+    try {
+      gv.renderDot(code);
+    } finally {}
+  });
+</script>
+</body>
