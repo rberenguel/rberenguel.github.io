@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<link rel='stylesheet' href='//mostlymaths.net/webfonts/monoid.css'>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/@hpcc-js/wasm@1.5.3/dist/index.min.js" type="application/javascript/"></script>
+<script src="https://unpkg.com/d3-graphviz@3.2.0/build/d3-graphviz.js"></script>
+<script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+<script src="./prism.js"></script> <!-- needs to be after codeflask -->
+
+<script src="https://unpkg.com/canvg@3.0.1/lib/umd.js"></script>
+<!-- svg-exportJS prerequisite: canvg -->
+<script src="https://unpkg.com/canvg@3.0.1/lib/umd.js"></script>
+<!-- svg-exportJS plugin -->
+<script src="https://sharonchoong.github.io/svg-exportJS/svg-export.min.js"></script>
+<style>
+#container {
+  width: 50%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+#editor {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+#graph {
+  top: 10px;
+  position: absolute;
+  height: calc(100vh - 100px);
+  right: 10px;
+  width: 48%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  border-radius: 0.8rem;
+  text-align: center;
+}
+</style>
+<div id="container">
+<div id="editor">
+</div>
+</div>
+<div id="graph"></div>
+<script>
+  const flask = new CodeFlask('#editor', { language: 'dot' });
+    flask.addLanguage('dot', Prism.languages['dot']);
+    
+  flask.updateCode(`digraph G {
+  margin=0.5; // either one (all) or two (hor,vert) numbers, in inches
+  bgcolor="#ffffff00" // rgba in hex format
+  rankdir=LR // other options would be RL, TB, BT
+  compound=true // this enables logical arrow heads
+  fontname="monoidregular" // should be a valid webfont
+  node [
+    // General rules for _all_ nodes
+    label=""
+    fontname = "monoidregular"
+    style=rounded
+    labelloc=c // centered labels
+    margin="0.3,0.15" // side and top margin for text in nodes
+    splines=true // allows curved arrows
+    shape=rect
+  ];
+  edge [
+    minlen=2
+  ];
+  
+  air[ // if you define nodes ahead of time you can add properties
+      label="Airflow"
+      group=g  
+      // nodes in a group are aligned (direction depending on rank
+    ]
+  
+  subgraph cluster_storage { 
+    // if the id starts with cluster, it will have a box and label
+    margin="" // subgraph inherits margin from graph, bad
+    style="filled,rounded,dotted"; // example of styles
+    fillcolor="#00000012" // transparency stacks
+    subgraph cluster_redshift {
+     // Layout for nodes with images does not match when running
+     // using the dot CLI, so wrap in a cluster
+     label="Redshift"
+     red[
+      label=""
+      // Images need to be made available to the graphviz object
+      // I have provided a few
+      image="i/redshift.png"
+      style=""
+     ]
+    }
+    dat[label="Databricks"
+      shape="cylinder"
+      // https://graphviz.org/doc/info/shapes.html#polygon
+      style=filled,
+      fillcolor="#00ff0050"
+      group=g
+    ]
+  }
+  subgraph cluster_S3 {
+    margin="" label=S3 style="filled,rounded,dotted" 
+    fillcolor="#00000012"
+    S3[style="" image="i/s3.png"]
+  } 
+  // could be a oneliner
+  mail[label="email",style="",shape=note]
+  air -> mail
+  air -> red [lhead=cluster_redshift] 
+  // logical head of the arrow is outside the cluster
+  air -> dat [lhead=cluster_storage]
+  dat -> S3 [lhead=cluster_S3]
+}`);
+    var graph = d3.select("#graph")
+    const graphBb = graph.node().getBoundingClientRect()
+    const width = graphBb.width
+    const height = graphBb.height
+    var gv = graph.graphviz()
+    gv.addImage("./i/airflow.png","150px", "150px")
+    gv.addImage("./i/databricks.png","150px", "150px")
+    gv.addImage("./i/redshift.png","150px", "150px")
+    gv.addImage("./i/s3.png","150px", "150px")
+    gv.addImage("./i/spark.png","150px", "150px")
+    flask.addLanguage('dot', Prism.languages['dot']);
+    console.log(width, height)
+  flask.onUpdate((code) => {
+    try {
+      gv
+      .width(width)
+      .height(height)
+      .fit(true)
+      .zoom(true)
+      .scale(.5)
+      .renderDot(code);
+    } finally {}
+  });
+</script>
+</body>
+
+<!-- <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="application/javascript/"></script>
+<script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script> -->
