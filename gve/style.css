@@ -1,0 +1,34 @@
+html, body {background-color: black; position: fixed; height: 100%;}
+
+.CodeMirror * {
+  font-family: "Ubuntu Mono", "monoidregular", monospace;
+  font-size: 20px;
+}
+
+#container {
+  width: 49%;
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  border-radius: 0.8rem;
+  height: calc(90vh);  
+}
+#editor {
+  margin: 1rem;
+  position: relative;
+  width: 100%;
+}
+#graph {
+  top: 10px;
+  position: fixed;
+  height: calc(90vh);
+  right: 10px;
+  width: 49%;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+  border-radius: 0.8rem;
+  text-align: center;
+}
