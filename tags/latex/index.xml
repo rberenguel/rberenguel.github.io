@@ -6,10 +6,20 @@
     <description>Recent content in LaTeX on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2015 23:33:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Centering and resizing figures in PDF export with pandoc</title>
+      <link>https://mostlymaths.net/2021/06/centering.html/</link>
+      <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/06/centering.html/</guid>
+      <description>&lt;p&gt;Not sure if bug or feature, but this is hard to pull off.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>SyncTeX and pdf-view-mode for emacs</title>

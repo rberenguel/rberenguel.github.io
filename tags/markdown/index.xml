@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/markdown/</link>
+    <description>Recent content in Markdown on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://mostlymaths.net/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centering and resizing figures in PDF export with pandoc</title>
+      <link>https://mostlymaths.net/2021/06/centering.html/</link>
+      <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/06/centering.html/</guid>
+      <description>&lt;p&gt;Not sure if bug or feature, but this is hard to pull off.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

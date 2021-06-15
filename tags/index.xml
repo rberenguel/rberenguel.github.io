@@ -6,10 +6,28 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 May 2021 10:20:33 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LaTeX</title>
+      <link>https://mostlymaths.net/tags/latex/</link>
+      <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://mostlymaths.net/tags/markdown/</link>
+      <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/markdown/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache Spark</title>
@@ -827,15 +845,6 @@
       <pubDate>Sun, 07 Aug 2016 22:42:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LaTeX</title>
-      <link>https://mostlymaths.net/tags/latex/</link>
-      <pubDate>Mon, 02 Nov 2015 23:33:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/latex/</guid>
       <description></description>
     </item>
     
