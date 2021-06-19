@@ -6,10 +6,82 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jun 2021 12:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alloy</title>
+      <link>https://mostlymaths.net/tags/alloy/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/alloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>LaTeX</title>
@@ -26,15 +98,6 @@
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
@@ -57,56 +120,11 @@
     </item>
     
     <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL</title>
       <link>https://mostlymaths.net/tags/sql/</link>
       <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alloy</title>
-      <link>https://mostlymaths.net/tags/alloy/</link>
-      <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/alloy/</guid>
       <description></description>
     </item>
     
@@ -143,15 +161,6 @@
       <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
       <description></description>
     </item>
     
@@ -224,15 +233,6 @@
       <pubDate>Sun, 28 Feb 2021 18:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/piano/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Mon, 15 Feb 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -912,7 +912,7 @@
     </item>
     
     <item>
-      <title>Acme</title>
+      <title>acme</title>
       <link>https://mostlymaths.net/tags/acme/</link>
       <pubDate>Thu, 02 Jan 2014 20:37:00 +0100</pubDate>
       
