@@ -47,7 +47,7 @@
 <meta itemprop="description" content="I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (ACM Special Interest Group on Management of Data) paper and investigate a bit more what special capabilities they offer, and how they compare to others.">
 <meta itemprop="datePublished" content="2020-10-02T23:30:33&#43;02:00" />
 <meta itemprop="dateModified" content="2020-10-02T23:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="2982">
+<meta itemprop="wordCount" content="3032">
 
 
 
@@ -153,8 +153,8 @@
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 14 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 2982 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 15 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 3032 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -210,6 +210,17 @@
 <p>It is fully <a href="https://en.wikipedia.org/wiki/ACID">ACID</a> (Atomicity, Consistency, Isolation and Durability) compliant, using <a href="https://en.wikipedia.org/wiki/Snapshot_isolation">snapshot isolation</a>: <strong>transactions see a consistent database</strong> due to the underlying immutability of the files. This is akin to what Delta Lake offers on Databricks (although Delta can have some ACID issues if my memory serves). Since the storage layer contains immutable files, failed (partial or full) computations can be re-run easily.</p>
 <p>The engine is also vectorised, which is unsurprising given that it is columnar-based. Why would you write anything columnar from scratch if you don&rsquo;t intend to use it as well as possible?</p>
 <p>One interesting fact from the paper is that the engine is not based on the <a href="https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf">Volcano iterator model</a> (what essentially most database systems use, and in particular Apache Spark uses if you ignore the code generation parts) but is based on a <strong>push-based model</strong>. There are not many details on how this works, not even a reference. <a href="https://arxiv.org/pdf/1610.09166.pdf">This paper</a> seems to compare Volcano and push engines (as well as provide additional references) and I intend to give it a look at some point. I love knowing how the database sausage is made.</p>
+<div class="note update">
+  <span class="note-date">
+    added on 2021-06-21
+  </span>
+<span class='scaps ' style="display: inline-block;">
+  Push/pull reference
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p><a href="http://justinjaffray.com/query-engines-push-vs.-pull/">This blog post</a> does a very good work of explaining push and pull database engines, with examples.</p>
+</span>
+</div>
 <p>The engine handles semi-structured data in a very interesting way. First, by using an <strong>optimistic type inference</strong> approach. That is, if you have a JSON object in a &ldquo;column&rdquo; and the field <code>dat</code> contains <em>what looks like integers</em> statistically, it will extract this column from the object. Then it will store it separately, with this type and compress it appropriately. Oh, and it will also store the original alongside, just in case, to prevent data loss (<code>12345</code> is a fine integer <em>until</em> you find a record <code>00321</code> and it turns out to be a postcode).</p>
 <p>Snowflake added several <strong>SQL extensions</strong> to access semi-structured data. This allows access to inner records either by using specific SQL-like functions or by using path-access style syntax. They also added time-travel extensions (like <code>AT time</code> or <code>BEFORE time</code>, or <code>UNDROP</code>). Of course this is a requirement to be able to handle semi-structured data, which is more or less the kind of data we all ingest day in and day out. Worth noting that flattening is done via lateral views, with no mention of particular optimisations. Lateral views can result in expensive queries.</p>
 <p>Data inference and data loading generate <strong>zone maps</strong> for query optimisation. I can&rsquo;t find a good, canonical reference of what zone maps are, but they are easy to describe quickly. Zone maps are used to pruning queries, and are kind of a cheap index, but for all columns. For instance, for one of the files a table is split into, the zone map would have the maximum and minimum values for each column (and some other &ldquo;interesting&rdquo; extrema). Then, once you are querying you can discard whole files if filter predicates are outside the extremes in the maps. Note that AWS Redshift uses zone maps internally, and so does Databricks Delta Lake (for the files stored in Delta Lake format in a cloud object storage).</p>
@@ -236,6 +247,17 @@
 <p>This is the core of the Snowflake service. It is a <strong>heavily multi-tenant and high availability set of services</strong>. As expected, services are <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> under a service-oriented architecture (SOA).  These are long-lived services, that serve all users. RBAC (role-based access control), key rotation and many other good security practices are handled at this level as well.</p>
 <p>Many things go on this layer. It is where the <strong>optimiser and transaction manager</strong> run, and where <strong>data catalogue</strong>, file statistics, locks, and <strong>transaction logs</strong> are stored. According to the SIGMOD paper, all the data is stored in an unnamed scalable key-value store (given the age of the paper, that discards <a href="https://redis.io">Redis</a> <code>¯\_(ツ)_/¯ </code>).</p>
 <p>This layer handles metadata updates and <strong>versioning</strong>, for internal schema evolution and service changes. When things change, a translation layer converts from one version to others, and the changes are &ldquo;<a href="https://en.wikipedia.org/wiki/Blue-green_deployment">blue-greened</a>&rdquo; onto users. The underlying virtual warehouse instances only talk to the corresponding version of cloud services, so the update is easy to propagate. Queries running on old nodes are left to finish and eventually all users are on the new system.</p>
+<div class="note update">
+  <span class="note-date">
+    added on 2021-06-21
+  </span>
+<span class='scaps ' style="display: inline-block;">
+  FoundationDB powers the Cloud Services layer
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>I missed <a href="https://www.snowflake.com/blog/how-foundationdb-powers-snowflake-metadata-forward/">this reference</a> from Snowflake themselves about how FoundationDB is used behind the scenes in the metadata layer.</p>
+</span>
+</div>
 <figure class="fig-full">
     <img src="https://mostlymaths.net/images/dresser/wide11.jpg"/> 
 </figure>
