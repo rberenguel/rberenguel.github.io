@@ -6,10 +6,82 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jun 2021 12:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jul 2021 11:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>https://mostlymaths.net/tags/databases/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://mostlymaths.net/tags/javascript/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://mostlymaths.net/tags/rust/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://mostlymaths.net/tags/statistics/</link>
+      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/statistics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Alloy</title>
@@ -26,15 +98,6 @@
       <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
       <description></description>
     </item>
     
@@ -66,24 +129,6 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>LaTeX</title>
       <link>https://mostlymaths.net/tags/latex/</link>
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
@@ -107,15 +152,6 @@
       <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -242,15 +278,6 @@
       <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://mostlymaths.net/tags/rust/</link>
-      <pubDate>Mon, 08 Feb 2021 07:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -404,15 +431,6 @@
       <pubDate>Sat, 13 Jun 2020 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/zio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>https://mostlymaths.net/tags/javascript/</link>
-      <pubDate>Fri, 12 Jun 2020 08:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/javascript/</guid>
       <description></description>
     </item>
     
