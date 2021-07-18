@@ -6,10 +6,64 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jul 2021 11:30:33 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jul 2021 11:30:33 +0200</lastBuildDate>
     
 	<atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://mostlymaths.net/tags/javascript/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://mostlymaths.net/tags/kafka/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://mostlymaths.net/tags/kubernetes/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data</title>
@@ -35,33 +89,6 @@
       <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/generative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>https://mostlymaths.net/tags/javascript/</link>
-      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -107,15 +134,6 @@
       <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
       <description></description>
     </item>
     
@@ -809,15 +827,6 @@
       <pubDate>Wed, 07 Feb 2018 23:27:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/london/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kafka</title>
-      <link>https://mostlymaths.net/tags/kafka/</link>
-      <pubDate>Sat, 06 Jan 2018 15:31:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/kafka/</guid>
       <description></description>
     </item>
     
