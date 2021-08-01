@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Databricks&#39; Delta Lake: high on ACID</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Databricks&#39; Delta Lake: high on ACID" />
 <meta property="og:description" content="After reading the Snowflake paper, I got curious about how similar engines work. Also, as I mentioned in that article, I like knowing how the data sausage is made. So, here I will summarise the Delta Lake paper by Databricks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/10/delta-lake.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/10/delta-lake.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-10-12T18:30:33+02:00" />
 <meta property="article:modified_time" content="2020-10-12T18:30:33+02:00" />
+
 <meta itemprop="name" content="Databricks&#39; Delta Lake: high on ACID">
-<meta itemprop="description" content="After reading the Snowflake paper, I got curious about how similar engines work. Also, as I mentioned in that article, I like knowing how the data sausage is made. So, here I will summarise the Delta Lake paper by Databricks.">
-<meta itemprop="datePublished" content="2020-10-12T18:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-10-12T18:30:33&#43;02:00" />
+<meta itemprop="description" content="After reading the Snowflake paper, I got curious about how similar engines work. Also, as I mentioned in that article, I like knowing how the data sausage is made. So, here I will summarise the Delta Lake paper by Databricks."><meta itemprop="datePublished" content="2020-10-12T18:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-10-12T18:30:33+02:00" />
 <meta itemprop="wordCount" content="3024">
-
-
-
 <meta itemprop="keywords" content="Data,Databricks,Data Papers,Apache Spark," />
 
     
@@ -162,8 +159,7 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>After <a href="https://mostlymaths.net/2020/10/snowflake.html/">reading the Snowflake paper</a>, I got curious about how similar engines work. Also, as I mentioned in that article, I <em>like knowing how the data sausage is made</em>. So, here I will summarise the <a href="https://databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf">Delta Lake paper by Databricks</a>.</p>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide13.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide13.jpg"/>
 </figure>
 
 <ul>
@@ -199,8 +195,7 @@
 </div>
 <p>Why would anyone want to use cloud <code>OS</code>s to store their data? Obviously, for cost reasons. <code>OS</code>s are the cheapest storage available, and at scale. Imagine the alternative, having your own <a href="https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html">HDFS</a> cluster, with its <code>NameNode</code> and all the <code>DataNodes</code> required to store this data. If you run the numbers, you’ll see how large the difference in cost is, as well as the difference in management required. There are some catches, especially when comparing against HDFS. Latency in HDFS is pretty low, (at least for a decently configured cluster against any <code>OS</code>) which makes querying <code>OS</code>s slower than querying HDFS or using a proper database system. Overcoming this latency is one of the fundamental goals of Delta Lake (and of Snowflake, but that was the subject of another post).</p>
 <p>Using <code>OS</code> has several tradeoffs to balance. Parallelism, sequential I/O, network bandwidth, all need to be considered to optimise usage. A simple example is full utilisation of network bandwidth: peak throughput in <code>OS</code> is around 50/100 MB/s, but most compute instances (the ones reading this data from the network) have 10 GB network cards or virtual cards. Without adequate parallelisation of reads you have a lot of bandwidth idle.</p>
-<figure class="fig-tall right">
-    <img src="https://mostlymaths.net/images/dresser/tall5.jpg"/> 
+<figure class="fig-tall right"><img src="https://mostlymaths.net/images/dresser/tall5.jpg"/>
 </figure>
 
 <p><code>OS</code>s don’t work as real filesystems, even if they look like they do. They actually work as key-value stores, where a key looks like a path. For example, if you have ever used <a href="https://redis.io">Redis</a> (or <a href="https://www.aerospike.com">Aerospike</a>), they follow more or less the same approach. Note that this is not the case for HDFS, which actually works like a real filesystem: this is what the FS part of HDFS stands for. This key-centeredness of <code>OS</code>s explains one of the main issues with using them: <code>LIST</code> operations, where you request a set or range of keys, are costly (unless you request things in a very specific way).</p>
@@ -208,8 +203,7 @@
 <p>Another issue, there are no generic cheap rename operation in <code>OS</code>s, neither are updates to object content available. If you need to update a line in the middle of a file, you need to rewrite the whole file. This makes mutability really hard to handle.</p>
 <p>Each <code>OS</code> has its consistency model, and they get complex. All of them are eventually consistent, but the details of what happens right after a write operation can vary wildly (read-after-write is basically where many concurrency issues appear, think of the classic bank account deposit/withdrawal situation). No <code>OS</code> is consistent across several keys, though.</p>
 <p>There are some obvious approaches when storing relational data in an <code>OS</code>. You want to be able to load data sequentially and with good compression. Why good compression? This needs further explanation.</p>
-<figure class="fig30 left">
-    <img src="https://mostlymaths.net/images/dresser/square6.jpg"/> 
+<figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square6.jpg"/>
 </figure>
 
 <p>Due to the speed of network vs speed of compression, you’d rather spend CPU time decompressing: see <a href="https://www.blosc.org/docs/StarvingCPUs-CISE-2010.pdf">this article about Blosc</a> for some details. To maximise compression while enabling sequentiality, you need to choose a columnar format, like <a href="https://parquet.apache.org">Parquet</a> or <a href="https://orc.apache.org">ORC</a>. This has the additional advantage of using two formats with headers and footers with additional metadata, which act like partial zone maps (although you’d have to request them for each file, adding latency).</p>
@@ -218,8 +212,7 @@
 <p>There are several existing (if you count Delta) approaches to using <code>OS</code>s to store relational data. The most common is the <em>directory of files</em>, something similar to Hive or <a href="https://hbase.apache.org">HBase</a>. On its own, there will be no atomicity and only eventual consistency. Given the slow metadata and listing capabilities, you end up with poor performance. You also lose any management (and auditing) capabilities unless you add them somehow.</p>
 <p>Alternatively, you can have a <em>custom storage</em> based on <code>OS</code>. This is what Snowflake does. In this case, all I/O needs to pass through a metadata service (that is the <a href="https://mostlymaths.net/2020/10/snowflake.html/#cloud-services-layer">Cloud Layer in Snowflake</a>), adding latency to each query. Since the engine is custom, you’d need engineering work to connect to other systems, unless the storage and engine were open source based or the company offered them already. And you are tied to this particular vendor for a long, long time. Note that Hive is an open-source implementation of this approach, although it comes with its issues.</p>
 <p>Finally, you can use the Delta approach: <em>metadata stored in <code>OS</code>s</em>. <a href="https://hudi.apache.org">Apache Hudi</a> and <a href="https://iceberg.apache.org">Apache Iceberg</a> are two open-source implementations that were concurrently tackling this problem while Delta Lake was being developed. They don’t necessarily benefit from the advantages of Delta Lake, some of which will be detailed later.</p>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide11.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide11.jpg"/>
 </figure>
 
 <h3 id="storage-format-and-performance-implications">Storage format and performance implications</h3>
@@ -233,8 +226,7 @@
 <li><strong>Adding provenance</strong>: To store information about who made the changes to the file. For auditing.</li>
 <li><strong>Update application transaction ID</strong>: Stores information about which application has written this. Especially useful for streaming, to enable exactly once for user applications (and used internally for Spark Streaming). This goes into the field <code>txn</code> (I will mention this field again later).</li>
 </ul>
-<figure class="fig30 left">
-    <img src="https://mostlymaths.net/images/dresser/square3.jpg"/> 
+<figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square3.jpg"/>
 </figure>
 
 <p>During checkpointing log files are squashed together, writing new files on the <code>OS</code>. This acts like a form of materialization, where the records define a set of operations forming a view (an isolated one) based on several files, and the checkpoint materializes it in a new set of files. The only records left in the checkpoint are the transaction information, protocol change and metadata changes. All add/remove get lost, like in a squash commit in Git. By default, Delta checkpoints every 10 transactions, but the user can either configure or trigger checkpointing manually (with the <code>OPTIMIZE</code> SQL extension).</p>
@@ -263,8 +255,7 @@
 <h3 id="storage-access-protocols">Storage Access Protocols</h3>
 <p>The access protocol is the foundation to enable ACID transactions. Reads and writes are handled differently, since the problems presented are also of different kinds. It is important to keep in mind that transaction records (the JSON file names) are serial.</p>
 <h4 id="read-protocol">Read protocol</h4>
-<figure class="fig30 right">
-    <img src="https://mostlymaths.net/images/dresser/square5.jpg"/> 
+<figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square5.jpg"/>
 </figure>
 
 <p>Reads are isolated either via snapshot isolation or due to the serializability of the record logs. Transaction isolation is at the table level. Given that files are immutable, once files are read they can be efficiently cached locally in worker nodes until there are metadata changes. The protocol for a read is as follows:</p>
@@ -296,8 +287,7 @@
 <li>For streaming, the limiting factor is the latency of the underlying <code>OS</code>. There is not a lot to be handled here.</li>
 <li>Except the min/max per column added to metadata, there are no other secondary indexes. There is a working prototype according to the paper of <a href="https://www.postgresql.org/docs/9.6/bloom.html">Bloom indices</a>, <a href="https://mostlymaths.net/2020/10/snowflake.html/">something you can find also in Snowflake</a>.</li>
 </ul>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide1.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide1.jpg"/>
 </figure>
 
 <h3 id="wrap-up">Wrap-up</h3>

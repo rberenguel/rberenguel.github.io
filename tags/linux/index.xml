@@ -6,11 +6,7 @@
     <description>Recent content in Linux on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiline shebang with zsh and running pyenv under cron</title>
       <link>https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/</link>
@@ -258,7 +254,7 @@ Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, j
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&#39; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -366,7 +362,7 @@ Mutlu Noeller!</description>
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -417,7 +413,7 @@ I am supposed to present a poster in a conference, about some work I am doing. I
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
-      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
@@ -438,7 +434,7 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
       
       <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
-For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&#39;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
@@ -460,7 +456,7 @@ I have a Lisp program running inside Slime (The Superior Lisp Interaction Mode f
       <description>Here are some pictures and images which look pretty good together with my Fluxbox configuration, in my Netbook. Here they are for your enjoyment. They are supposed to be small, not to drain too many system resources. I will upload later the butterfly in higher resolution.
      
 You may also be interested in
- Two weeks, still loving Fluxbox Three dee Acer Aspire One 8.9&amp;rsquo; + Ubuntu + Fluxbox Whistle control your computer (Linux&amp;amp;Mac)  </description>
+ Two weeks, still loving Fluxbox Three dee Acer Aspire One 8.9&#39; + Ubuntu + Fluxbox Whistle control your computer (Linux&amp;amp;Mac)  </description>
     </item>
     
     <item>
@@ -488,7 +484,7 @@ You may also be interested in
       <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
-      <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
+      <description>Last monday I bought an Acer Aspire One, 8.9&#39;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
 
 
 Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdquo;</description>

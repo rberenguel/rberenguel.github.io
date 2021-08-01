@@ -6,11 +6,7 @@
     <description>Recent content in Time Management on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 15:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/time-management/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Jan 2019 15:00:00 +0100</lastBuildDate><atom:link href="https://mostlymaths.net/tags/time-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2018: Year in Review</title>
       <link>https://mostlymaths.net/2019/01/2018-year-in-review.html/</link>
@@ -77,8 +73,7 @@ I read a very good post about going the analog way (How analog rituals can amp y
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
 little.&lt;/p&gt;
-&lt;figure class=&#34;fig-left&#34;&gt;
-    &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
+&lt;figure class=&#34;fig-left&#34;&gt;&lt;img src=&#34;Dragon.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     

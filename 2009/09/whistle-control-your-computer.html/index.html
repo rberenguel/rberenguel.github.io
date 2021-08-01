@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Whistle control your computer (Linux&amp;Mac)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="From flickr
   Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2009/09/whistle-control-your-computer.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2009/09/whistle-control-your-computer.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-09-23T08:59:00+02:00" />
 <meta property="article:modified_time" content="2009-09-23T08:59:00+02:00" />
+
 <meta itemprop="name" content="Whistle control your computer (Linux&amp;Mac)">
 <meta itemprop="description" content="From flickr
-  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details.">
-<meta itemprop="datePublished" content="2009-09-23T08:59:00&#43;02:00" />
-<meta itemprop="dateModified" content="2009-09-23T08:59:00&#43;02:00" />
+  Around a year ago, I stumbled into this lifehacker page, suggesting an IBM-developerWorks tutorial on how to install a just 3 things to your system to be able to&hellip; whistle control your computer. Whistle a tune, open Firefox. Things like these. You know how geeky I am, I had to try it. Smaller problem: the tutorial is for Linux/Windows and I was on a Mac. Bigger problem: it is slightly outdated and short on some details."><meta itemprop="datePublished" content="2009-09-23T08:59:00+02:00" />
+<meta itemprop="dateModified" content="2009-09-23T08:59:00+02:00" />
 <meta itemprop="wordCount" content="994">
-
-
-
 <meta itemprop="keywords" content="Programming,emacs,Linux, Mac,How-to,Bizarre,Productivity," />
 
 <meta name="twitter:card" content="summary" />
@@ -144,9 +141,8 @@
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><figure class="fig-left">
-    <img src="whistle.jpg"
-         alt="From flickr"/> <figcaption>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><figure class="fig-left"><img src="whistle.jpg"
+         alt="From flickr"/><figcaption>
             <p>From <a href="http://www.flickr.com/photos/stevendepolo/3830812620/">flickr</a></p>
         </figcaption>
 </figure>
@@ -174,12 +170,12 @@ needed), you&rsquo;ll need to download:</p>
 </li>
 </ul>
 <p>After you have the source code, go to your editor of choice, open src/sndpeek/sndkpeek.cpp and add the following line</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">fflush(stdout);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">fflush(stdout);
 
 </code></pre></div><p>just after (yes, I know the following line is damn long!)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">fprintf( stdout, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f </span><span style="color:#e6db74">&#34;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">fprintf( stdout, <span style="color:#e6db74">&#34;%.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f &#34;</span>,
 mfcc(<span style="color:#ae81ff">0</span>), mfcc(<span style="color:#ae81ff">1</span>), mfcc(<span style="color:#ae81ff">2</span>), mfcc(<span style="color:#ae81ff">3</span>), mfcc(<span style="color:#ae81ff">4</span>), mfcc(<span style="color:#ae81ff">5</span>), mfcc(<span style="color:#ae81ff">6</span>), mfcc(<span style="color:#ae81ff">7</span>), mfcc(<span style="color:#ae81ff">8</span>), mfcc(<span style="color:#ae81ff">9</span>), mfcc(<span style="color:#ae81ff">10</span>), mfcc(<span style="color:#ae81ff">11</span>), mfcc(<span style="color:#ae81ff">12</span>) );  
-fprintf( stdout, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">n</span><span style="color:#e6db74">&#34;</span> );
+fprintf( stdout, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">n&#34;</span> );
 </code></pre></div><p>This refreshes the printout every so often to the terminal window, to interact
 with the script. Now open a terminal window, navigate to src/sndpeek and type
 make osx. It worked for me just out of the box&hellip; if you run into some
@@ -187,9 +183,8 @@ problem&hellip; ask Google, then ask me, although Google is a best bet. Then, su
 make install, so you can execute it. Now go to a terminal and try to execute
 sndpeek. It should give you some nice output like the following image, if your
 microphone works and you are whistling.</p>
-<figure class="fig-wide">
-    <img src="Picture5.png"
-         alt="Whistle!"/> <figcaption>
+<figure class="fig-wide"><img src="Picture5.png"
+         alt="Whistle!"/><figcaption>
             <p>Whistle!</p>
         </figcaption>
 </figure>
@@ -198,11 +193,11 @@ microphone works and you are whistling.</p>
 headers&hellip; Because cmdWhistle complained about them. I found the info
 <a href="http://docstore.mik.ua/orelly/perl/cookbook/ch12_15.htm">here</a>. You just have
 to (corrected a typo: thanks Rhettigan!)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo cd /usr/include
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo cd /usr/include
 sudo h2ph <span style="color:#ae81ff">\*</span>.h <span style="color:#ae81ff">\*</span>/<span style="color:#ae81ff">\*</span>.h
 </code></pre></div><p>from a terminal window.</p>
 <p>After this you can try to get some whistles in, but in my case, the script didn&rsquo;t work: it wasn&rsquo;t able to get correctly the time of day (via <code>gettimeofday()</code> in the <code>C</code> headers). To test it, go to the folder where you have <code>cmdWhistle</code>, and write</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sndpeek --nodisplay --print | perl cmdWhistle.pl -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sndpeek --nodisplay --print | perl cmdWhistle.pl -c
 </code></pre></div><p>and whistle a couple of times (a simple whistle, repeated two times with a small delay from one to the other, then remain silent for a couple seconds). You should get something like this output:</p>
 <blockquote>
 <p>enter a tone sequence:
@@ -212,9 +207,9 @@ place the following line in /Users/ruben/.toneFile</p>
 <p>77.00 81.00 _#_ 0 585 _#_ (command here) _#_</p>
 </blockquote>
 <p>If you don&rsquo;t, probably means your time-getting code also don&rsquo;t work. Go and edit cmdWhistle by adding the following</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> Time::HiRes;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> Time::HiRes;
 </code></pre></div><p>after <code>use strict;</code> and replace subs <code>getEpochSeconds</code> and <code>getEpochMicroSeconds</code> by</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">getEpochMicroSeconds</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">getEpochMicroSeconds</span> {
   <span style="color:#66d9ef">my</span> ($seconds, $microseconds) <span style="color:#f92672">=</span> Time::HiRes::gettimeofday;
   <span style="color:#66d9ef">return</span>($microseconds);
 }<span style="color:#75715e">#getEpochMicroSeconds</span>
@@ -244,7 +239,7 @@ one&hellip; The microphone is not that accurate, and <code>sndpeek+cmdWhistle</c
 command. For example, you whistle a part of a tune you like&hellip; this opens
 Firefox. The first part, is to turn this tune into a set of tones and times. To
 do so,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sndpeek --nodisplay --print | perl cmdWhistle.pl -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sndpeek --nodisplay --print | perl cmdWhistle.pl -c
 </code></pre></div><p>and just whistle to it. Then wait for a few seconds. The output should be as above,
 the important information is the last line:</p>
 <blockquote>

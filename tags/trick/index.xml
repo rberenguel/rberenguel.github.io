@@ -6,11 +6,7 @@
     <description>Recent content in Trick on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Aug 2017 19:30:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/trick/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 Aug 2017 19:30:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/trick/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change the parameters of a docker container without knowing the docker run command used</title>
       <link>https://mostlymaths.net/2017/08/change-parameters-of-docker-container-docker-run.html/</link>

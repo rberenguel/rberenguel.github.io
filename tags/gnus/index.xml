@@ -6,11 +6,7 @@
     <description>Recent content in gnus on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Feb 2013 18:28:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/gnus/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Feb 2013 18:28:00 +0100</lastBuildDate><atom:link href="https://mostlymaths.net/tags/gnus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating New Text Objects in Evil-Mode (Vim emulation layer in emacs)</title>
       <link>https://mostlymaths.net/2013/02/creating-new-text-objects-in-evil-mode.html/</link>
@@ -41,7 +37,7 @@ Last month I switched email clients (for the 4th time in the past year.) I&amp;r
       <guid>https://mostlymaths.net/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
-I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
+I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;quot; Air or a 15&amp;quot; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
     </item>
     
   </channel>

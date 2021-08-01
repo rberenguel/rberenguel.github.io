@@ -6,11 +6,7 @@
     <description>Recent content in  Mac on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/mac/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 03 Jun 2020 22:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiline shebang with zsh and running pyenv under cron</title>
       <link>https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/</link>
@@ -84,7 +80,7 @@ Well, after this scary paragraph, lets get to the real meat. Which boils down to
       <guid>https://mostlymaths.net/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
-I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
+I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;quot; Air or a 15&amp;quot; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
     </item>
     
     <item>
@@ -231,7 +227,7 @@ I am supposed to present a poster in a conference, about some work I am doing. I
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
-      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
@@ -242,7 +238,7 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
       
       <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
-For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&#39;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>

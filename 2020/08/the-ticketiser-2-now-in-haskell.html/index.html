@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | The Ticketiser 2: Now in Haskell</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="The Ticketiser 2: Now in Haskell" />
 <meta property="og:description" content="This is a project recap on writing some non-super-trivial Haskell for the first time." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-08-19T18:30:33+02:00" />
 <meta property="article:modified_time" content="2020-08-19T18:30:33+02:00" />
+
 <meta itemprop="name" content="The Ticketiser 2: Now in Haskell">
-<meta itemprop="description" content="This is a project recap on writing some non-super-trivial Haskell for the first time.">
-<meta itemprop="datePublished" content="2020-08-19T18:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-08-19T18:30:33&#43;02:00" />
+<meta itemprop="description" content="This is a project recap on writing some non-super-trivial Haskell for the first time."><meta itemprop="datePublished" content="2020-08-19T18:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-08-19T18:30:33+02:00" />
 <meta itemprop="wordCount" content="2291">
-
-
-
 <meta itemprop="keywords" content="Python,Haskell,Scala," />
 
     
@@ -158,8 +155,7 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This is a project recap on writing some non-super-trivial Haskell for the first time.</p>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide2.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide2.jpg"/>
 </figure>
 
 <p>After reading <a href="https://mostlymaths.net/2020/08/review-success-haskell.html/">Finding Success (and Failure) in Haskell</a>, I decided I needed a non-trivial project to write on my own. I have heard from smart people that Haskell is pretty quick to write once you get your groove, and I was curious to see if I could at least glimpse that.</p>
@@ -186,8 +182,7 @@
 </li>
 </ol>
 <p>It was then an easy choice, and I want to explain the process I followed.</p>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide3.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide3.jpg"/>
 </figure>
 
 <p>My development process is pretty straightforward in cases like this. First, I consider the questions this program <em>has</em>:</p>
@@ -217,8 +212,7 @@
   <hr class="section-break-2" />
 </div>
 <h3 id="days-1-and-2-first-steps-and-poc">Days 1 and 2: First steps and PoC</h3>
-<figure class="fig-right">
-    <img src="https://mostlymaths.net/images/dresser/square1.jpg"/> 
+<figure class="fig-right"><img src="https://mostlymaths.net/images/dresser/square1.jpg"/>
 </figure>
 
 <p>My first Haskell weekend was spent writing this tracer. I started by using the <a href="https://github.com/snoyberg/yaml"><code>yaml</code> library</a> by <a href="https://mobile.twitter.com/snoyberg">Michael Snoyman</a>. In particular, I copied from the <code>config</code> example <a href="https://github.com/snoyberg/yaml/blob/master/yaml/examples/Config.hs">here</a>. This example is interesting because it serves almost as a test harness about how to go from <em>inlined string</em> to object.</p>
@@ -246,8 +240,7 @@
 <li>A test for the serialisation <code>FromJSON</code>
 <br/></li>
 </ul>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide1.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide1.jpg"/>
 </figure>
 
 <h3 id="day-3-it-works">Day 3: It works!</h3>
@@ -268,17 +261,17 @@
 </span>
 </div>
 <p>The implementation at this point was usable. You could create a file with:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#66d9ef">epic</span>: Foo1
-  <span style="color:#66d9ef">us</span>: As a foo1, I want to  so that 
-  <span style="color:#66d9ef">ac</span>: Bar
-- <span style="color:#66d9ef">story</span>: Ticket1
-  <span style="color:#66d9ef">us</span>: As a ticket, I want to ticket so that I ticket
-  <span style="color:#66d9ef">ac</span>: ticket
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">epic</span>: <span style="color:#ae81ff">Foo1</span>
+  <span style="color:#f92672">us</span>: <span style="color:#ae81ff">As a foo1, I want to  so that </span>
+  <span style="color:#f92672">ac</span>: <span style="color:#ae81ff">Bar</span>
+- <span style="color:#f92672">story</span>: <span style="color:#ae81ff">Ticket1</span>
+  <span style="color:#f92672">us</span>: <span style="color:#ae81ff">As a ticket, I want to ticket so that I ticket</span>
+  <span style="color:#f92672">ac</span>: <span style="color:#ae81ff">ticket</span>
 </code></pre></div><p>and it would be processed by sending this as tickets created in Jira.</p>
 <p>It had an issue, though. The goal of this tool is to prevent you from having to click anything in Jira as much as possible. Imagine that you create an epic, and this epic contains 15 tickets. As the program was right now, you&rsquo;d need to open Jira, find all these tickets, bulk update (if you have permissions) and assign them to the epic. If you have ever used bulk update I see you cringing as you read this.</p>
 <p>The Python implementation had this as a feature: if a ticket was an epic, it would keep the created epic id and add it as the related epic to all following stories. In the example above, <em>Ticket1</em> would then belong to epic <em>Foo1</em>. If there were subsequent epics, the epic for tickets after would change to the most recent one.</p>
 <p>Solving this in Haskell was stumping me. I was thinking <em>isn&rsquo;t this just a kind of <code>State</code> I can handle with a <code>State monad</code>?</em> I can barely use a state monad in Scala, the prospect of using it in Haskell was not exciting. If you squint, this looks like folding. If we modify <code>sendOneTicket</code> to be:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">sendOneTicket</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Ticket</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> (<span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">String</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">sendOneTicket</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Ticket</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> (<span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">String</span>)
 </code></pre></div><p>Then:</p>
 <ul>
 <li>We expect <em>maybe</em> an epic identifier for the ticket</li>
@@ -298,8 +291,7 @@
 <li><code>fwarn-unused-imports</code>: I don&rsquo;t like having more imports than I need</li>
 <li><code>Werror=incomplete-patterns</code>: I like <code>case</code>s to be exhaustive. How come this is not the default?</li>
 </ul>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide4.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide4.jpg"/>
 </figure>
 
 <h3 id="day-4-refactor-cleanup">Day 4: Refactor, cleanup</h3>
@@ -338,8 +330,7 @@
 <li>Try to send a new ticket</li>
 <li>Check what the error message says and modify accordingly (in general the errors will be <code>field so and so required</code> or <code>field so and so is not available in this view</code>)</li>
 </ul>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide5.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide5.jpg"/>
 </figure>
 
 <h3 id="day-5-wrap-it-up-and-push-to-github">Day 5: Wrap it up and push to Github</h3>

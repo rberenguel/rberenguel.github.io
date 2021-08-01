@@ -6,11 +6,7 @@
     <description>Recent content in Thoughts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2015 12:30:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 08 Mar 2015 12:30:00 +0100</lastBuildDate><atom:link href="https://mostlymaths.net/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Picking up Backgammon</title>
       <link>https://mostlymaths.net/2015/03/picking-up-backgammon.html/</link>
@@ -254,7 +250,7 @@ Or a more usual situation. If some litter gets accumulated in a sidewalk or a lo
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&#39; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -348,7 +344,7 @@ The concepts of &amp;ldquo;future&amp;rdquo;, &amp;ldquo;job stability&amp;rdquo
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
-      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;quot;.
+      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
@@ -368,7 +364,7 @@ Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
       
       <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
-For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&#39;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>

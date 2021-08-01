@@ -6,11 +6,7 @@
     <description>Recent content in blog on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 19:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 08 Jun 2020 19:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>D3 sitemap using a force layout and web workers</title>
       <link>https://mostlymaths.net/2020/06/d3-sitemap.html/</link>
@@ -216,7 +212,7 @@ Source code:
       <pubDate>Sat, 27 Sep 2008 17:12:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2008/09/social-bookmarking-in-blogger.html/</guid>
-      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;lsquo;s approach is the best.
+      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;rsquo;s approach is the best.
 
 This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.
 To add this code to your blogger blog:

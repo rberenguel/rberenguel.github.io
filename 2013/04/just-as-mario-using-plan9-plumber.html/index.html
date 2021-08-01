@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Just as Mario: Using the Plan9 plumber utility</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="Note: It&rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&rsquo;s not hard to find where they are, if you run into any problems let me know.
 If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2013/04/just-as-mario-using-plan9-plumber.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-04-21T21:30:00+02:00" />
 <meta property="article:modified_time" content="2013-04-21T21:30:00+02:00" />
+
 <meta itemprop="name" content="Just as Mario: Using the Plan9 plumber utility">
 <meta itemprop="description" content="Note: It&rsquo;s best to open the videos in full screen. Also I have added a few line breaks or readability in the code snippets that will make them not work correctly. It&rsquo;s not hard to find where they are, if you run into any problems let me know.
-If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber.">
-<meta itemprop="datePublished" content="2013-04-21T21:30:00&#43;02:00" />
-<meta itemprop="dateModified" content="2013-04-21T21:30:00&#43;02:00" />
+If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been using Acme and related Plan 9 from User Space utilities lately. One of its pieces is the plumber."><meta itemprop="datePublished" content="2013-04-21T21:30:00+02:00" />
+<meta itemprop="dateModified" content="2013-04-21T21:30:00+02:00" />
 <meta itemprop="wordCount" content="1201">
-
-
-
 <meta itemprop="keywords" content="Plan9,Command Line,Acme,Github," />
 
 <meta name="twitter:card" content="summary" />
@@ -174,7 +171,7 @@ If you&rsquo;ve been following this blog, you&rsquo;ll know I&rsquo;ve been usin
 <pre><code>type  is  text  
 data matches '\[a−zA−Z0−9\_–./\]+'  
 data  matches  '(\[a-zA-Z¡-�0-9\_\\-./\]+)
-</code></pre><p>\.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)&rsquo;<br>
+</code></pre><p>\.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)'<br>
 arg  isfile  $0<br>
 plumb  start  open $file</p>
 <pre><code>
@@ -226,7 +223,7 @@ type is text
 data matches 'ag:&quot;?(\[a-zA-Z¡-�0-9\_\\-./\]+)&quot;?'  
 arg isdir .  
 plumb start zsh -c 'ag --nogroup --nocolor --search-files &quot;'$1'&quot; '$dir' 
-</code></pre><p>| plumb -i -d edit -a &lsquo;&lsquo;action=showdata filename='$dir&rsquo;/ag/&lsquo;$1&rsquo; '&rsquo;&rsquo;</p>
+</code></pre><p>| plumb -i -d edit -a &lsquo;&lsquo;action=showdata filename='$dir&rsquo;/ag/'$1&rsquo; '&rsquo;'</p>
 <pre><code>
   
   

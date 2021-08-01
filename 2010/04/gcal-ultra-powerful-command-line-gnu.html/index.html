@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Gcal the ultra-powerful command line GNU calendar</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
 The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2010/04/gcal-ultra-powerful-command-line-gnu.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-04-15T16:00:00+02:00" />
 <meta property="article:modified_time" content="2010-04-15T16:00:00+02:00" />
+
 <meta itemprop="name" content="Gcal the ultra-powerful command line GNU calendar">
 <meta itemprop="description" content="The Ben NanoNote has very few applications, as of now. And one it has (among a few nice others), is Gcal. I didn&rsquo;t know what Gcal was, and the Qi hardware wiki page on Gcal pointed me to this quite nice tutorial: The many uses of Gcal.
-The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that.">
-<meta itemprop="datePublished" content="2010-04-15T16:00:00&#43;02:00" />
-<meta itemprop="dateModified" content="2010-04-15T16:00:00&#43;02:00" />
+The tutorial is quite good, but somewhat long, and lacks a few specific examples, so I decided to write just what I read in that tutorial, mixed with the uses I am putting it to, so it is more a Gcal use cases than a full blown tutorial like that."><meta itemprop="datePublished" content="2010-04-15T16:00:00+02:00" />
+<meta itemprop="dateModified" content="2010-04-15T16:00:00+02:00" />
 <meta itemprop="wordCount" content="1244">
-
-
-
 <meta itemprop="keywords" content="Linux,Command Line,NanoNote," />
 
 <meta name="twitter:card" content="summary" />
@@ -174,7 +171,7 @@ Click to enlarge</p>
 <p>You can also see how to call Gcal to open a resource file: with either --resource-file or the -f commands. To display the fixed date list (i.e. what there is in the resource file) you need the -c command, and -cd or -ct would only list today and tomorrow, respectively. The command shown is -cdl@t55 which stands for show today and 55 days ahead starting from tomorrow.</p>
 <p>You can find all range modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_25.html">here</a>.</p>
 <p>Change of the date format. If you are a tinkerer, you probably don&rsquo;t like the default time representation. I don&rsquo;t I prefer to get output as YYYYMMDD without any separation. It can be easily pasted into file names to have them quickly sorted by date.</p>
-<p>How to change it? As usual, you can invoke gcal with a change for that. An example could be --date-format=&rsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; I can hear you saying d&rsquo;oh! But it is not as bad as it seems. It breaks down as</p>
+<p>How to change it? As usual, you can invoke gcal with a change for that. An example could be --date-format='%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; I can hear you saying d&rsquo;oh! But it is not as bad as it seems. It breaks down as</p>
 <blockquote>
 <p>%&gt;3w#K 3 letters of the weekday<br>
 %1 Start highlighting<br>
@@ -186,7 +183,7 @@ Click to enlarge</p>
 <p>Not as bad as it looked like? You can find all descriptions for this <a href="http://www.delorie.com/gnu/docs/gcal/gcal_8.html">here</a> (bottom).</p>
 <p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s1600/Selection_002.png"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S8CaqYzD-VI/AAAAAAAACF8/pyVY9Txtedk/s400/Selection_002.png" alt=""></a><br>
 Click to enlarge</p>
-<p>Change fixed date header list. That fixed date list heading is pretty ugly, don&rsquo;t you think? What happens when you call Gcal with --heading-text=&rdquo;%3 %Y %U %4&rdquo;? You can see the output below. It makes for a more appealing view of events. To learn about heading modifiers, look <a href="http://www.delorie.com/gnu/docs/gcal/gcal_9.html">here</a> (and search for heading).</p>
+<p>Change fixed date header list. That fixed date list heading is pretty ugly, don&rsquo;t you think? What happens when you call Gcal with --heading-text=&quot;%3 %Y %U %4&quot;? You can see the output below. It makes for a more appealing view of events. To learn about heading modifiers, look <a href="http://www.delorie.com/gnu/docs/gcal/gcal_9.html">here</a> (and search for heading).</p>
 <p><a href="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s1600/Selection_003.png"><img src="http://1.bp.blogspot.com/_f3d3llNlZKQ/S8CaqZgpXMI/AAAAAAAACGE/WqFSWgzP6m4/s400/Selection_003.png" alt=""></a><br>
 Click to enlarge</p>
 <p>Sample script: sunset and sunrise times. You can save this in astronomical.gcal, and open when you want to know at which time the sun sets or shines. There are a lot of related options, learn more about sun/moon modifiers <a href="http://www.delorie.com/gnu/docs/gcal/gcal_72.html">here</a>. You will need to know your latitude/longitude.</p>
@@ -212,7 +209,7 @@ a=03sun9</p>
 $p $a $x<br>
 $p $b $y</p>
 </blockquote>
-<p>And the output of gcal &ndash;resource-file=./astronomical &ndash;heading-text=&rdquo;%3 %Y %U %4&rdquo; &ndash;date-format=&rsquo;%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2&rsquo; -cdl@t4 is shown in the following screenshot.</p>
+<p>And the output of gcal &ndash;resource-file=./astronomical &ndash;heading-text=&quot;%3 %Y %U %4&quot; &ndash;date-format='%&gt;3w#K%1%Y%&gt;02*M%&gt;02*D%2' -cdl@t4 is shown in the following screenshot.</p>
 <p><a href="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s1600/Selection_005.png"><img src="http://4.bp.blogspot.com/_f3d3llNlZKQ/S8CarRP4KpI/AAAAAAAACGU/k7VgtDGLbqw/s400/Selection_005.png" alt=""></a><br>
 Click to enlarge</p>
 <p>This is getting hard&hellip; I know, all these commands together are getting increasingly harder to write or comment. If you happen to use or call a specific command really often, you can call gcal -list-of-commands-really-long -S name and it will output that call into a executable shell script that when invoked calls Gcal with said options. This one is great!</p>

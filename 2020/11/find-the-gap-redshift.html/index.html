@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Find-the-gap with SQL in AWS Redshift</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/11/find-the-gap-redshift.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-11-29T22:15:33+02:00" />
 <meta property="article:modified_time" content="2020-11-29T22:15:33+02:00" />
+
 <meta itemprop="name" content="Find-the-gap with SQL in AWS Redshift">
 <meta itemprop="description" content="A relatively common type of query for time-based SQL tables is a find the gap query. How can you do this in AWS Redshift, which does not have the SQL function generate_series?
-">
-<meta itemprop="datePublished" content="2020-11-29T22:15:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-11-29T22:15:33&#43;02:00" />
+"><meta itemprop="datePublished" content="2020-11-29T22:15:33+02:00" />
+<meta itemprop="dateModified" content="2020-11-29T22:15:33+02:00" />
 <meta itemprop="wordCount" content="632">
-
-
-
 <meta itemprop="keywords" content="AWS,Data,SQL," />
 
     
@@ -158,9 +155,8 @@
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A relatively common type of query for time-based SQL tables is a <em>find the gap</em> query. How can you do this in AWS Redshift, which does not have the SQL function <code>generate_series</code>?</p>
 <br/>
-<figure class="fig-full">
-    <img src="mind-the-gap.jpg"
-         alt="Photo by Bruno Figueiredo on Unsplash"/> <figcaption>
+<figure class="fig-full"><img src="mind-the-gap.jpg"
+         alt="Photo by Bruno Figueiredo on Unsplash"/><figcaption>
             <p><span>Photo by <a href='https://unsplash.com/@bfigas?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Bruno Figueiredo</a> on <a href='https://unsplash.com/s/photos/mind-the-gap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a></span></p>
         </figcaption>
 </figure>
@@ -185,7 +181,7 @@
 </div>
 <p>Instead, you can do the following, given a <code>target_table</code> and a <code>a_very_large_table</code> available in your Redshift database. Note that this &ldquo;very&rdquo; is relative, and will depend on the granularity of your frequency. In general, if you are using Redshift you probably have a large enough table somewhere. Otherwise, check the <code>stl_</code> (statistical) system tables, some of these are large-ish.</p>
 <p>I will briefly explain what the code does below.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">WITH</span> _target_table <span style="color:#66d9ef">AS</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">WITH</span> _target_table <span style="color:#66d9ef">AS</span> 
 (
   <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
   <span style="color:#66d9ef">FROM</span> target_table
@@ -204,7 +200,7 @@ end_date <span style="color:#66d9ef">AS</span>
 ),
 date_span <span style="color:#66d9ef">AS</span>
 (
-  <span style="color:#66d9ef">SELECT</span> datediff(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">day</span><span style="color:#e6db74">&#39;</span>, 
+  <span style="color:#66d9ef">SELECT</span> datediff(<span style="color:#e6db74">&#39;day&#39;</span>, 
            (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date), 
            (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> end_date))
   <span style="color:#66d9ef">FROM</span> start_date
@@ -214,7 +210,7 @@ date_ranger <span style="color:#66d9ef">AS</span>
   <span style="color:#66d9ef">SELECT</span> ((<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> start_date) <span style="color:#f92672">+</span> rn)::DATE <span style="color:#66d9ef">AS</span> dt
   <span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> ROW_NUMBER() OVER (PARTITION <span style="color:#66d9ef">BY</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">AS</span> rn
         <span style="color:#66d9ef">FROM</span> a_very_large_table)
-  <span style="color:#66d9ef">WHERE</span> rn <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> date_span)
+  <span style="color:#66d9ef">WHERE</span> rn <span style="color:#f92672">&lt;=</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> date_span)
   <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> dt <span style="color:#66d9ef">ASC</span>
 )
 <span style="color:#66d9ef">SELECT</span> date_ranger.dt,
@@ -234,7 +230,7 @@ date_ranger <span style="color:#66d9ef">AS</span>
 <li>First get the initial date (CTE <code>start_date</code>).</li>
 <li>Then get the end date (CTE <code>end_date</code>).</li>
 <li>Get the date difference from these two, CTE <code>date_span</code>. If you have different frequency, change the frequency in <code>datediff</code>.</li>
-<li>The meat and potatoes is the CTE <code>date_ranger</code>, which uses <code>a_very_large_table</code>'s row counts to generate a valid span from <code>start_date</code> to <code>end_date</code>.</li>
+<li>The meat and potatoes is the CTE <code>date_ranger</code>, which uses <code>a_very_large_table</code>&rsquo;s row counts to generate a valid span from <code>start_date</code> to <code>end_date</code>.</li>
 <li>Finally, <code>RIGHT</code> (or <code>LEFT</code>, that&rsquo;s up to your preference) join the target table with the <code>date_ranger</code> to find the gaps (<code>NULL</code>s)</li>
 </ul>
 <p>It&rsquo;s not super-hard, but it&rsquo;s kind of good to have it in a good copy-pastable way.</p>

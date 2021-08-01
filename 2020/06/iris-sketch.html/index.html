@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Generative iris</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Generative iris" />
 <meta property="og:description" content="Here are the details about how my procedural sketch Iris works. This has been one of the fastest and most enjoyable sketches I have created lately" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/06/iris-sketch.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/06/iris-sketch.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-06-12T08:30:33+02:00" />
 <meta property="article:modified_time" content="2020-06-12T08:30:33+02:00" />
+
 <meta itemprop="name" content="Generative iris">
-<meta itemprop="description" content="Here are the details about how my procedural sketch Iris works. This has been one of the fastest and most enjoyable sketches I have created lately">
-<meta itemprop="datePublished" content="2020-06-12T08:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-06-12T08:30:33&#43;02:00" />
+<meta itemprop="description" content="Here are the details about how my procedural sketch Iris works. This has been one of the fastest and most enjoyable sketches I have created lately"><meta itemprop="datePublished" content="2020-06-12T08:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-06-12T08:30:33+02:00" />
 <meta itemprop="wordCount" content="804">
-
-
-
 <meta itemprop="keywords" content="Generative,p5js,Javascript," />
 
     
@@ -154,17 +151,15 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Here are the details about how my procedural sketch <a href="https://github.com/rberenguel/sketches#iris-p5js">Iris</a> works. This has been one of the fastest and most enjoyable sketches I have created lately</p>
-<figure class="fig-wide">
-    <img src="withUI.png"
-         alt="This is what the sketch looks like"/> <figcaption>
+<figure class="fig-wide"><img src="withUI.png"
+         alt="This is what the sketch looks like"/><figcaption>
             <p>This is what the sketch looks like</p>
         </figcaption>
 </figure>
 
 <p>One day I woke up and thought to myself: <em>I should do a generative iris sketch</em>. I don&rsquo;t remember why.</p>
-<figure class="fig-not-so-wide">
-    <img src="sheldon.gif"
-         alt="I was working with luminous fish, and I thought, &amp;lsquo;Hey… loom&amp;rsquo;."/> <figcaption>
+<figure class="fig-not-so-wide"><img src="sheldon.gif"
+         alt="I was working with luminous fish, and I thought, &amp;lsquo;Hey… loom&amp;rsquo;."/><figcaption>
             <p>I was working with luminous fish, and I thought, &lsquo;Hey… loom&rsquo;.</p>
         </figcaption>
 </figure>
@@ -175,43 +170,38 @@
 <p>I started by implementing a solid circle with a blurred border. Pretty much the same I did for the moonlight and halo in <a href="https://github.com/rberenguel/sketches#crazy-nights-p5js">Crazy Nights</a>.</p>
 <p>With this, I could have an iris (although flat) and a pupil (with not a lot of interest).</p>
 <p>The next would be adding some pattern to the iris. Irises have a linear (muscular fibres, if I&rsquo;m not mistaken) pattern flowing from the pupil outside. For my first implementation, I wrote a generator of lines between the pupil and the outer iris. This method would generate <code>N</code> (for a large <code>N</code>) lines of length adjusted by Perlin noise in a radiating shape. I used a similar approach for the pupil. This is because the pupil is not perfectly circular, but has a ragged contour (because the iris is a muscle).</p>
-<figure class="fig-wide">
-    <img src="firstIris.png"
-         alt="Not so bad for the first. It&amp;rsquo;s watching"/> <figcaption>
+<figure class="fig-wide"><img src="firstIris.png"
+         alt="Not so bad for the first. It&amp;rsquo;s watching"/><figcaption>
             <p>Not so bad for the first. It&rsquo;s watching</p>
         </figcaption>
 </figure>
 
 <p>The generation of lines is parameterized by a random position (as a percentage) between the outer pupil and the outer iris and a percentage of size to fill for whatever is available until the borders. So, for example, if the initial position is at 0.5 (50%, or middle), a 1 of size (100%) would generate lines that would go up to a maximum of full span of the coloured area of the iris. If initial position is at 0.9 (so, almost at the outer border), 100% size would just fill a band of width from 80% of the iris to 100% of the iris.</p>
 <p>This was a good start, looked pretty decent for a quick coding session. I added some highlights: primary, secondary and pupil. The pupil one is fake: real pupils don&rsquo;t shine, the pupil is a hole. But the image looks so much better with it I don&rsquo;t care that much. The highlights are just a radial set of lines with very low opacity. In this first model, opacity decreases to the borders, but is constant along the radii.</p>
-<figure class="fig-wide">
-    <img src="highlight.png"
-         alt="Better with a highlight"/> <figcaption>
+<figure class="fig-wide"><img src="highlight.png"
+         alt="Better with a highlight"/><figcaption>
             <p>Better with a highlight</p>
         </figcaption>
 </figure>
 
 <p>This muscle fiber model looks decent for relatively low resolutions, but on zooming in, it is clear it is just <em>meh</em>. Better solution: with the same approach, construct  polygons and contours. The difference in code is small, the different in results is significant. You can zoom in on this with no issues, it just looks good. The old code with lines is still present, though: combining both gives the best results. I also looked for a good set of colours for irises. Still would need a bit of tweaking, some of the greens feel <em>too</em> green.</p>
-<figure class="fig-wide">
-    <img src="polygonal.png"
-         alt="Polygonal disc is way better"/> <figcaption>
+<figure class="fig-wide"><img src="polygonal.png"
+         alt="Polygonal disc is way better"/><figcaption>
             <p>Polygonal disc is <em>way</em> better</p>
         </figcaption>
 </figure>
 
 <p>After this change (and a similar one in the pupil) I tweaked the highlights to be smoother. It&rsquo;s hard to get really smooth &ldquo;weird&rdquo; shapes in <code>p5js</code>. In the end I tweaked the sizes and numbers manually until it looked good enough. Alpha jagging is unavoidable with this approach. An idea I&rsquo;ve been floating is using polygonal shapes similar to these arcs but slightly wobbly: then you&rsquo;d think the alpha jagging combined with the uneven borders were just an artifact of the iris itself. It&rsquo;s an idea to explore, but I consider the sketch finished as is.</p>
 <p>I randomised the start angle of the discs for the fibers, and added some seed to perlin noise. Finally, added random, small, ellipses strewn over the iris. Irises have this kind of randomness.</p>
-<figure class="fig-wide">
-    <img src="final.png"
-         alt="Final iteration"/> <figcaption>
+<figure class="fig-wide"><img src="final.png"
+         alt="Final iteration"/><figcaption>
             <p>Final iteration</p>
         </figcaption>
 </figure>
 
 <p>A happy coincidence with the closing of the polygons (using <code>curveVertex</code> means you need at least 4 vertices, and repeating the last vertex to make sure it closes… I forgot <code>¯\_(ツ)_/¯</code>) makes it look more jagged than it should if the code worked, but the result turns out better by it.</p>
-<figure class="fig-wide">
-    <img src="withUI.png"
-         alt="And the usual UI"/> <figcaption>
+<figure class="fig-wide"><img src="withUI.png"
+         alt="And the usual UI"/><figcaption>
             <p>And the usual UI</p>
         </figcaption>
 </figure><hr/>

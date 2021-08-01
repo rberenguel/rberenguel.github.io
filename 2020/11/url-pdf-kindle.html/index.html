@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Send a bunch of URLs as PDF to a Kindle</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="Adventures with Applescript, AWK and Things
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/11/url-pdf-kindle.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/11/url-pdf-kindle.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-11-17T00:30:33+02:00" />
 <meta property="article:modified_time" content="2020-11-17T00:30:33+02:00" />
+
 <meta itemprop="name" content="Send a bunch of URLs as PDF to a Kindle">
 <meta itemprop="description" content="Adventures with Applescript, AWK and Things
-">
-<meta itemprop="datePublished" content="2020-11-17T00:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-11-17T00:30:33&#43;02:00" />
+"><meta itemprop="datePublished" content="2020-11-17T00:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-11-17T00:30:33+02:00" />
 <meta itemprop="wordCount" content="1008">
-
-
-
 <meta itemprop="keywords" content="AWK,Readings,how-to,command line," />
 
     
@@ -158,9 +155,8 @@
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Adventures with Applescript, AWK and Things</p>
 <br/>
-<figure class="fig-full">
-    <img src="url-pdf-kindle.jpg"
-         alt="An example"/> <figcaption>
+<figure class="fig-full"><img src="url-pdf-kindle.jpg"
+         alt="An example"/><figcaption>
             <p>An example</p>
         </figcaption>
 </figure>
@@ -206,9 +202,9 @@
 </ul>
 <h2 id="shell-section">Shell section</h2>
 <p>The first part, is extracting the URLs from the articles I have on my reading list on Things, with a bit of SQL and <a href="https://mostlymaths.net/tags/awk/">AWK</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span><span style="color:#e6db74">&#34;SELECT t.notes from TMTask t JOIN TMTask p on p.uuid = t.project WHERE p.title = &#39;📄 Articles&#39; and t.trashed != 1 and t.status = 0;&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>| rg -v <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.*.pdf</span>$<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>| rg -v <span style="color:#e6db74">&#34;.*.pdf</span>$<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>| rg <span style="color:#e6db74">&#34;http.*&#34;</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>| gawk <span style="color:#e6db74">&#39;BEGIN {acum=&#34;&#34;} NR==1{acum=&#34;\&#34;&#34;$1&#34;\&#34;&#34;}NR&gt;1{acum = acum &#34;, \&#34;&#34; $1 &#34;\&#34;&#34;} END {print acum}&#39;</span>
 </code></pre></div><p>This is a set of several chained commands, with the following breakdown.</p>
@@ -234,7 +230,7 @@
 </ul>
 <h2 id="applescript">AppleScript</h2>
 <p>I hate writing <a href="https://en.m.wikipedia.org/wiki/AppleScript">AppleScript</a> (AS), but when it works it is surprisingly effective. As any other AS script ever (I suspect) it is a mash-up of many StackOverflow answers.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#66d9ef">set</span> urlList <span style="color:#66d9ef">to</span> {<span style="color:#960050;background-color:#1e0010">…</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#66d9ef">set</span> urlList <span style="color:#66d9ef">to</span> {<span style="color:#960050;background-color:#1e0010">…</span>}
 
 <span style="color:#66d9ef">repeat</span> <span style="color:#66d9ef">with</span> theURL <span style="color:#66d9ef">in</span> urlList
 	
@@ -297,9 +293,9 @@
 </ul>
 <h2 id="alternative-using-pandoc">Alternative using pandoc</h2>
 <p>The advantage of this approach is that once you have an ePub, you can convert it to AZW3 via Calibre and then use whatever font you want in your Kindle.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sqlite3 /Users/ruben/Library/Group<span style="color:#ae81ff">\ </span>Containers/JLMPQHK86H.com.culturedcode.ThingsMac/Things<span style="color:#ae81ff">\ </span>Database.thingsdatabase/main.sqlite <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span><span style="color:#e6db74">&#34;SELECT t.notes from TMTask t JOIN TMTask p on p.uuid = t.project WHERE p.title = &#39;📄 Articles&#39; and t.trashed != 1 and t.status = 0;&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>| rg -v <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.*.pdf</span>$<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>| rg -v <span style="color:#e6db74">&#34;.*.pdf</span>$<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>| rg <span style="color:#e6db74">&#34;http.*&#34;</span> <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>| gawk <span style="color:#e6db74">&#39;{\
 </span><span style="color:#e6db74">gsub(&#34;https&#34;, &#34;http&#34;, $1)

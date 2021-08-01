@@ -6,11 +6,7 @@
     <description>Recent content in Research on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2015 23:33:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/research/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 02 Nov 2015 23:33:00 +0100</lastBuildDate><atom:link href="https://mostlymaths.net/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SyncTeX and pdf-view-mode for emacs</title>
       <link>https://mostlymaths.net/2015/11/synctex-and-pdf-view-mode-for-emacs.html/</link>

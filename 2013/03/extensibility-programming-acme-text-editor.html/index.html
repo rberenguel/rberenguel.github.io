@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Extensibility in the Acme text editor</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="Text editors. You hate them or love them. Praise them with religious zeal, and attack them with the same power. I&rsquo;ve been an emacs user for the last 8 years, getting as deep as I could without checking the source. And the past few months I have started using evil-mode in emacs, to get some taste of vim in my daily editing (mostly text objects.)
 There&rsquo;s still a third contestant in editor-land, for me." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2013/03/extensibility-programming-acme-text-editor.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-03-09T18:31:00+01:00" />
 <meta property="article:modified_time" content="2013-03-09T18:31:00+01:00" />
+
 <meta itemprop="name" content="Extensibility in the Acme text editor">
 <meta itemprop="description" content="Text editors. You hate them or love them. Praise them with religious zeal, and attack them with the same power. I&rsquo;ve been an emacs user for the last 8 years, getting as deep as I could without checking the source. And the past few months I have started using evil-mode in emacs, to get some taste of vim in my daily editing (mostly text objects.)
-There&rsquo;s still a third contestant in editor-land, for me.">
-<meta itemprop="datePublished" content="2013-03-09T18:31:00&#43;01:00" />
-<meta itemprop="dateModified" content="2013-03-09T18:31:00&#43;01:00" />
+There&rsquo;s still a third contestant in editor-land, for me."><meta itemprop="datePublished" content="2013-03-09T18:31:00+01:00" />
+<meta itemprop="dateModified" content="2013-03-09T18:31:00+01:00" />
 <meta itemprop="wordCount" content="2380">
-
-
-
 <meta itemprop="keywords" content="Programming,emacs,vim,acme," />
 
 <meta name="twitter:card" content="summary" />
@@ -153,7 +150,7 @@ There&rsquo;s still a third contestant in editor-land, for me."/>
 <p>Once you are used to it, you have to face something &ldquo;worse.&rdquo; If you come from emacs or vim this will sound just horrible. Wait for it. Everything is done with the mouse. Yes, you read that well. No keyboard shortcuts (well, there are a few, I&rsquo;ll get into these in a short while.) Mouse clicking, moving and chording. The likes. I know this will sound stupid, a waste of time, prone to carpal tunnel syndrome. Let me go on for a while.</p>
 <p>Emacs and vim users alike like to bash any other editor in the grounds of speed. I can refactor faster than you can, is almost the motto. Watch how fast I type, thus how fast I change code. I&rsquo;m one of these, I usually don&rsquo;t even have to think when I&rsquo;m doing &ldquo;something&rdquo; in emacs or vim and changing stuff. But then again, how often I&rsquo;m changing stuff?</p>
 <p>Emacs and vim make easy changing what&rsquo;s there. Multiple-marks, text objects, quick jumps. All this is there just to make changing stuff fast. Agree? Ok, go on. If you don&rsquo;t, no problem. Go on anyway.</p>
-<p>Now the revelation: most of the time I&rsquo;m writing, I&rsquo;m creating new stuff, not rewriting or moving old stuff. Shocking? Watch your own coding/writing habits. Yes, I change what&rsquo;s in text strings (ci&rdquo;, in vim) and is incredibly fast. In Acme, you can double-click after the first quotation mark (or just before the last) to select everything inside a pair of delimiters (a pity it is not smart enough to understand dollar-delimiters as used by LaTeX.) But the point is not that speed. What are you changing this string for? Did you wait to think about it or you just changed it, compiled it, checked it and went back to square one?</p>
+<p>Now the revelation: most of the time I&rsquo;m writing, I&rsquo;m creating new stuff, not rewriting or moving old stuff. Shocking? Watch your own coding/writing habits. Yes, I change what&rsquo;s in text strings (ci&quot;, in vim) and is incredibly fast. In Acme, you can double-click after the first quotation mark (or just before the last) to select everything inside a pair of delimiters (a pity it is not smart enough to understand dollar-delimiters as used by LaTeX.) But the point is not that speed. What are you changing this string for? Did you wait to think about it or you just changed it, compiled it, checked it and went back to square one?</p>
 <h2 id="pause-the-file-servers">Pause: the file servers</h2>
 <p>Acme and Plan9 follow a special philosophy: in some sense, everything is a file. And most programs (I could say all, but I&rsquo;m not that into Plan9 to be sure) act as file servers. Acme is just one of these: everything you can see in an Acme session is a file. For example, this text I&rsquo;m writing (you saw it in the previous screenshot) has window ID 10. So&hellip;</p>
 <pre><code>acme/10/        is the directory associated to this text  

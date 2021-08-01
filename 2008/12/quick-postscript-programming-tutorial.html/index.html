@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Quick PostScript Programming Tutorial</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Quick PostScript Programming Tutorial" />
 <meta property="og:description" content="For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2008-12-11T15:27:00+01:00" />
 <meta property="article:modified_time" content="2008-12-11T15:27:00+01:00" />
+
 <meta itemprop="name" content="Quick PostScript Programming Tutorial">
-<meta itemprop="description" content="For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it.">
-<meta itemprop="datePublished" content="2008-12-11T15:27:00&#43;01:00" />
-<meta itemprop="dateModified" content="2008-12-11T15:27:00&#43;01:00" />
+<meta itemprop="description" content="For those of you who don&rsquo;t know, PostScript is a programming language (and also the name of the type of files you write in this language) used as a way to define what a page looks like. A PostScript file contains instructions which create text, or draw images, and these instructions can do quite a lot of work. PostScript is directly processed by almost all laser printers, and if you are a Linux or MacOs user you already have some mean to process and open it."><meta itemprop="datePublished" content="2008-12-11T15:27:00+01:00" />
+<meta itemprop="dateModified" content="2008-12-11T15:27:00+01:00" />
 <meta itemprop="wordCount" content="1819">
-
-
-
 <meta itemprop="keywords" content="Programming,PostScript," />
 
     
@@ -164,24 +161,21 @@ process and open it. In Windows you can download an install <a href="http://page
 GhostScript</a>, or visit <a href="http://www.ps2pdf.com/convert.htm">this
 page to convert a PS to PDF</a>.</p>
 <div style="text-align: center;">
-<figure class="fig-40">
-    <img src="Koch.png"
-         alt="Koch curve"/> <figcaption>
+<figure class="fig-40"><img src="Koch.png"
+         alt="Koch curve"/><figcaption>
             <p>Koch curve</p>
         </figcaption>
 </figure>
  
-<figure class="fig-40">
-    <img src="Mand.png"
-         alt="Mandelbrot set"/> <figcaption>
+<figure class="fig-40"><img src="Mand.png"
+         alt="Mandelbrot set"/><figcaption>
             <p>Mandelbrot set</p>
         </figcaption>
 </figure>
 
 </div>
-<figure class="fig-wide">
-    <img src="Postal2008.jpg"
-         alt="Christmas card"/> <figcaption>
+<figure class="fig-wide"><img src="Postal2008.jpg"
+         alt="Christmas card"/><figcaption>
             <p>Christmas card</p>
         </figcaption>
 </figure>
@@ -250,16 +244,15 @@ distinction).</p>
 </ol>
 <p>As a starting point, a square 200 points per side in the bottom left of
 the page:</p>
-<figure class="fig-not-so-wide">
-    <img src="Picture2.png"/> 
+<figure class="fig-not-so-wide"><img src="Picture2.png"/>
 </figure>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">newpath</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">newpath</span> 
 <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">moveto</span> <span style="color:#75715e">% as the name says, move the cursor to x y 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% line from actual point toward the right 
-</span><span style="color:#75715e"></span><span style="color:#75715e">% side 
+</span><span style="color:#75715e">% side 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% the actual point is now in the right side, 
-</span><span style="color:#75715e"></span><span style="color:#75715e">% go up 
+</span><span style="color:#75715e">% go up 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
@@ -280,11 +273,10 @@ certain number of points, finally <code>setfont</code>. And how do you write?
 <code>newpath</code>, <code>move</code> to wherever you want and <code>(Text) show</code>. Show acts as
 both a <code>stroke</code> and <code>closepath</code> for text, so if you want to change colors or something, do so
 before writing.</p>
-<figure class="fig-not-so-wide">
-    <img src="Picture3.png"/> 
+<figure class="fig-not-so-wide"><img src="Picture3.png"/>
 </figure>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/Times-Roman <span style="color:#a6e22e">findfont</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/Times-Roman <span style="color:#a6e22e">findfont</span> 
 <span style="color:#ae81ff">20</span> <span style="color:#a6e22e">scalefont</span> 
 <span style="color:#a6e22e">setfont</span> 
 <span style="color:#a6e22e">newpath</span> 
@@ -294,7 +286,7 @@ before writing.</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">235</span> <span style="color:#ae81ff">295</span> <span style="color:#a6e22e">moveto</span> 
-<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
+<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">showpage</span> 
@@ -305,11 +297,10 @@ same). To <code>rotate</code> by 60 degrees our friend <em>A Square</em>, put a 
 after the first <code>moveto</code>. Also, if you pretended to draw something in the usual
 orientation, you should issue a <code>gsave</code> before rotating, and a <code>grestore</code> after
 stroking. This is important!</p>
-<figure class="fig-not-so-wide">
-    <img src="Picture4.png"/> 
+<figure class="fig-not-so-wide"><img src="Picture4.png"/>
 </figure>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/Times-Roman <span style="color:#a6e22e">findfont</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/Times-Roman <span style="color:#a6e22e">findfont</span> 
 <span style="color:#ae81ff">20</span> <span style="color:#a6e22e">scalefont</span> 
 <span style="color:#a6e22e">setfont</span> 
 <span style="color:#a6e22e">gsave</span> 
@@ -321,7 +312,7 @@ stroking. This is important!</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% go left 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
+<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> <span style="color:#75715e">% ta daa A Square 
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">grestore</span> 
@@ -335,7 +326,7 @@ stroking. This is important!</p>
 <span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">grestore</span> 
@@ -347,14 +338,14 @@ stroking. This is important!</p>
 <span style="color:#a6e22e">\-200</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-200</span> <span style="color:#a6e22e">rlineto</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">showpage</span>
 </code></pre></div><p>This starts to get annoying, so let&rsquo;s define a square function, which assumes we
 are already at a point where we will draw a square of a certain side (the side value will be in the
 stack).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/box { 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript">/box { 
 <span style="color:#a6e22e">dup</span> <span style="color:#a6e22e">dup</span> <span style="color:#a6e22e">dup</span> <span style="color:#75715e">% this places 4 instances of the side in the stack 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% just one argument, as below we have side x 4 
 </span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#a6e22e">exch</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% exch swaps the first and second argument 
@@ -362,14 +353,14 @@ stack).</p>
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">neg</span> <span style="color:#ae81ff">0</span> <span style="color:#a6e22e">exch</span> <span style="color:#a6e22e">rlineto</span> <span style="color:#75715e">% you guess? 
 </span><span style="color:#75715e"></span>} <span style="color:#a6e22e">def</span>
 </code></pre></div><p>and this simplifies the <code>gsave-grestore</code> blocks as</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">gsave</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-postscript" data-lang="postscript"><span style="color:#a6e22e">gsave</span> 
 <span style="color:#a6e22e">newpath</span> 
 <span style="color:#ae81ff">0.6</span> <span style="color:#a6e22e">setgray</span> 
 <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">moveto</span> 
 <span style="color:#a6e22e">x</span> <span style="color:#a6e22e">rotate</span> 
 <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">box</span> 
 <span style="color:#ae81ff">35</span> <span style="color:#ae81ff">95</span> <span style="color:#a6e22e">rmoveto</span> 
-<span style="color:#e6db74">(</span><span style="color:#e6db74">Hi, I&#39;m A Square</span><span style="color:#e6db74">)</span> <span style="color:#a6e22e">show</span> 
+<span style="color:#e6db74">(Hi, I&#39;m A Square)</span> <span style="color:#a6e22e">show</span> 
 <span style="color:#a6e22e">closepath</span> 
 <span style="color:#a6e22e">stroke</span> 
 <span style="color:#a6e22e">grestore</span>
@@ -396,16 +387,14 @@ for more entertainment value.</p>
 write a <em>false</em> procedure.</p>
 <p><em>I think that this is almost all needed to start with PostScript.</em></p>
 <p>Now, the &ldquo;hard&rdquo; examples. Click to go to a gist with the code!</p>
-<figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">
-    <img src="Mand.png"
-         alt="Mandelbrot set"/> </a><figcaption>
+<figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254"><img src="Mand.png"
+         alt="Mandelbrot set"/></a><figcaption>
             <p><a href="https://gist.github.com/rberenguel/9a5239034cafdeaabdf6654446521254">Mandelbrot set</a></p>
         </figcaption>
 </figure>
 
-<figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">
-    <img src="Koch.png"
-         alt="Koch&amp;rsquo;s island."/> </a><figcaption>
+<figure class="fig-not-so-wide"><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033"><img src="Koch.png"
+         alt="Koch&amp;rsquo;s island."/></a><figcaption>
             <p><a href="https://gist.github.com/rberenguel/d565f7efbcf6046ba57b6d9f68131033">Koch&rsquo;s island.</a></p>
         </figcaption>
 </figure>

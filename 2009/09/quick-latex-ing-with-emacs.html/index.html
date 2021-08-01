@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Quick latex-ing with emacs: dabbrev and skeletons</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -38,21 +38,18 @@
     
 
     <meta property="og:title" content="Quick latex-ing with emacs: dabbrev and skeletons" />
-<meta property="og:description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+<meta property="og:description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-09-17T01:00:00+02:00" />
 <meta property="article:modified_time" content="2009-09-17T01:00:00+02:00" />
+
 <meta itemprop="name" content="Quick latex-ing with emacs: dabbrev and skeletons">
-<meta itemprop="description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
-Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed.">
-<meta itemprop="datePublished" content="2009-09-17T01:00:00&#43;02:00" />
-<meta itemprop="dateModified" content="2009-09-17T01:00:00&#43;02:00" />
+<meta itemprop="description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed."><meta itemprop="datePublished" content="2009-09-17T01:00:00+02:00" />
+<meta itemprop="dateModified" content="2009-09-17T01:00:00+02:00" />
 <meta itemprop="wordCount" content="305">
-
-
-
 <meta itemprop="keywords" content="Programming,emacs,Linux, Mac,LaTeX,Maths,Productivity," />
 
 <meta name="twitter:card" content="summary" />
@@ -64,7 +61,7 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
 
 
 <meta name="twitter:title" content="Quick latex-ing with emacs: dabbrev and skeletons"/>
-<meta name="twitter:description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+<meta name="twitter:description" content="Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed."/>
 
 <meta name="author" content="Ruben Berenguel">
@@ -144,13 +141,13 @@ Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to 
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs' abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.</p>
 <p>Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&hellip; so I have \mathbb{ as needed. The other example, I write \bth, press space and get a nice \begin{theorem} \end{theorem} delimiters with the cursor positioned between them.</p>
 <p>This should be in ~/Abbrev.el</p>
 <blockquote>
 <p>(define-abbrev-table &lsquo;text-mode-abbrev-table &lsquo;(<br>
 (&ldquo;mbb&rdquo; &ldquo;mathbb&rdquo; nil 0)<br>
-(&ldquo;bth&rdquo; &quot;&rdquo; latex-skel-thm 0)<br>
+(&ldquo;bth&rdquo; &quot;&quot; latex-skel-thm 0)<br>
 &hellip;<br>
 ))</p>
 </blockquote>

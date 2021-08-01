@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | D3 sitemap using a force layout and web workers</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="D3 sitemap using a force layout and web workers" />
 <meta property="og:description" content="A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/06/d3-sitemap.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/06/d3-sitemap.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-06-08T19:30:33+02:00" />
 <meta property="article:modified_time" content="2020-06-08T19:30:33+02:00" />
+
 <meta itemprop="name" content="D3 sitemap using a force layout and web workers">
-<meta itemprop="description" content="A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)">
-<meta itemprop="datePublished" content="2020-06-08T19:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-06-08T19:30:33&#43;02:00" />
+<meta itemprop="description" content="A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)"><meta itemprop="datePublished" content="2020-06-08T19:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-06-08T19:30:33+02:00" />
 <meta itemprop="wordCount" content="506">
-
-
-
 <meta itemprop="keywords" content="Generative,d3js,Python,Blog," />
 
     
@@ -154,18 +151,16 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A D3 sitemap using force layout and a web worker. This will come to bear-note-graph at some point (and other projects)</p>
-<figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank">
-    <img src="sitemap.png"
-         alt="Screenshot of the sitemap"/> </a><figcaption>
+<figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank"><img src="sitemap.png"
+         alt="Screenshot of the sitemap"/></a><figcaption>
             <p>Screenshot of the sitemap</p>
         </figcaption>
 </figure>
 
 <p>I&rsquo;ll keep this post short. You may have seen my project, <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> mentioned around here. Its goal is to convert your <a href="https://bear.app">Bear</a> notes into a graph you can explore (with links across notes and links from tags to notes).</p>
 <p>Its core processes the markdown documents from the Bear SQLite database, parsing it with a custom markdown parser I wrote. Then, it uses <a href="https://www.graphviz.org/doc/info/attrs.html">Graphviz</a> as the graph engine: it&rsquo;s convenient, but not the prettiest. Also it has some drawbacks in output formats, and the interactivity could be better. As a result, I&rsquo;ve had a card to improve bear-note-graph to optionally use a <a href="https://d3js.org">D3</a> force directed layout for some time.</p>
-<figure class="fig-wide">
-    <img src="bear_graph.png"
-         alt="bear-note-graph"/> <figcaption>
+<figure class="fig-wide"><img src="bear_graph.png"
+         alt="bear-note-graph"/><figcaption>
             <p><a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a></p>
         </figcaption>
 </figure>
@@ -173,9 +168,8 @@
 <p>A few weeks ago I started work on this feature, by rewriting a D3 force layout I had written for a half personal, half work project (unpublished): <strong>using YAML descriptions to create system diagrams for your (data) architecture</strong>. Those diagrams have 30-50 nodes, and as such are pretty fast to render on the browser, live, with draggable nodes. My note database though, has around 1000 notes, with <em>many</em> links. This made waiting for the force layout to converge painful. It took a significant time to render, and dragging nodes was super slow.</p>
 <p>I found a fix (as always with D3) in a sketch by <a href="https://en.m.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>: <a href="https://bl.ocks.org/mbostock/01ab2e85e8727d6529d20391c0fd9a16">using a web worker</a>. With this, I could calculate the force layout on the background.</p>
 <p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing now either. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
-<figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank">
-    <img src="zoomed.png"
-         alt="Filtered and zoomed with search term spark"/> </a><figcaption>
+<figure class="fig-wide"><a href="https://mostlymaths.net/sitemap/" target="_blank"><img src="zoomed.png"
+         alt="Filtered and zoomed with search term spark"/></a><figcaption>
             <p>Filtered and zoomed with search term <code>spark</code></p>
         </figcaption>
 </figure>

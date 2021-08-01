@@ -6,11 +6,7 @@
     <description>Recent content in Markdown on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Jun 2021 08:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centering and resizing figures in PDF export with pandoc</title>
       <link>https://mostlymaths.net/2021/06/centering.html/</link>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Scratching my own itches: templating with motllo</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -42,19 +42,16 @@
 projects itching on my to do lists for several months. This is the first write
 up from them: templating without base repositories." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/05/scratching-my-own-itch-templating-motllo.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/05/scratching-my-own-itch-templating-motllo.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-05-03T21:30:33+02:00" />
 <meta property="article:modified_time" content="2020-05-03T21:30:33+02:00" />
+
 <meta itemprop="name" content="Scratching my own itches: templating with motllo">
 <meta itemprop="description" content="I have been working on several personal projects lately. Basically scratching
 projects itching on my to do lists for several months. This is the first write
-up from them: templating without base repositories.">
-<meta itemprop="datePublished" content="2020-05-03T21:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-05-03T21:30:33&#43;02:00" />
+up from them: templating without base repositories."><meta itemprop="datePublished" content="2020-05-03T21:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-05-03T21:30:33+02:00" />
 <meta itemprop="wordCount" content="860">
-
-
-
 <meta itemprop="keywords" content="Open source,Python,Data engineering," />
 
     
@@ -192,9 +189,8 @@ stable for the foreseeable future.</p>
 <a href="https://github.com/rberenguel/motllo/blob/master/examples/python_cli.md">here</a>).
 This is because I can&rsquo;t embed the template, my blog engine would render the
 Markdown and it would look weird.</p>
-<figure class="fig-wide">
-    <img src="python_cli_motllo.png"
-         alt="Template for a basic Python CLI tool"/> <figcaption>
+<figure class="fig-wide"><img src="python_cli_motllo.png"
+         alt="Template for a basic Python CLI tool"/><figcaption>
             <p><a href="https://github.com/rberenguel/motllo/blob/master/examples/python_cli.md">Template for a basic Python CLI tool</a></p>
         </figcaption>
 </figure>
@@ -205,15 +201,14 @@ how you can use replacements to modify the final tree, and one interesting pot;
 that you can annotate the code: anything which is not code in a block is
 ignored.</p>
 <p>You would convert this into the corresponding folder by running</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">motllo build PATH_TO/python_cli.md -o SOME_COOL_PATH -r <span style="color:#e6db74">&#34;project_name:awesome-new-project&#34;</span> --commit
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">motllo build PATH_TO/python_cli.md -o SOME_COOL_PATH -r <span style="color:#e6db74">&#34;project_name:awesome-new-project&#34;</span> --commit
 </code></pre></div><p>Without <code>--commit</code> you would only get a dry-run version, explaining what and
 where would be created.</p>
 <p>The reverse process, generates such a file from a folder and can be done with</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">motllo markdown . -o some_markdown.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">motllo markdown . -o some_markdown.md
 </code></pre></div><p>Here you can see an animated gif (from the repository)</p>
-<figure class="fig-wide"><a href="motllo.gif">
-    <img src="motllo.gif"
-         alt="Animated gif with a simple template (click to open)"/> </a><figcaption>
+<figure class="fig-wide"><a href="motllo.gif"><img src="motllo.gif"
+         alt="Animated gif with a simple template (click to open)"/></a><figcaption>
             <p>Animated gif with a simple template (click to open)</p>
         </figcaption>
 </figure>

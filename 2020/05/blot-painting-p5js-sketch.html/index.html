@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Blot/Painting p5js sketch</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Blot/Painting p5js sketch" />
 <meta property="og:description" content="Some details of my p5js sketch Blot/Painting" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/05/blot-painting-p5js-sketch.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-05-26T19:00:33+02:00" />
 <meta property="article:modified_time" content="2020-05-26T19:00:33+02:00" />
+
 <meta itemprop="name" content="Blot/Painting p5js sketch">
-<meta itemprop="description" content="Some details of my p5js sketch Blot/Painting">
-<meta itemprop="datePublished" content="2020-05-26T19:00:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-05-26T19:00:33&#43;02:00" />
+<meta itemprop="description" content="Some details of my p5js sketch Blot/Painting"><meta itemprop="datePublished" content="2020-05-26T19:00:33+02:00" />
+<meta itemprop="dateModified" content="2020-05-26T19:00:33+02:00" />
 <meta itemprop="wordCount" content="1957">
-
-
-
 <meta itemprop="keywords" content="processing,javascript,generative,p5js," />
 
     
@@ -165,9 +162,8 @@
 sketches in <a href="https://p5js.org">p5js</a>. I have been coding them on my iPad Mini,
 on the sofa (more details in a separate blog post), and they have been the
 source of a lot of enjoyment.</p>
-<figure class="fig-wide">
-    <img src="blot.png"
-         alt="Blot"/> <figcaption>
+<figure class="fig-wide"><img src="blot.png"
+         alt="Blot"/><figcaption>
             <p>Blot</p>
         </figcaption>
 </figure>
@@ -178,9 +174,8 @@ source of a lot of enjoyment.</p>
 I had done in the past), but I have been avoiding sitting on a computer after
 work hours, except for open source stuff. I stumbled upon <a href="https://p5js.org">p5js</a> around the end of
 last month, and thus found a way to have coding fun without needing a computer.</p>
-<figure class="fig-wide">
-    <img src="painting.jpg"
-         alt="Painting"/> <figcaption>
+<figure class="fig-wide"><img src="painting.jpg"
+         alt="Painting"/><figcaption>
             <p>Painting</p>
         </figcaption>
 </figure>
@@ -191,9 +186,8 @@ references (well, I still remember reading <a href="https://en.m.wikipedia.org/w
 algorithm</a> when I
 was 9 or 10), but one of the first sketches I wrote recently was <a href="https://github.com/rberenguel/sketches#watercolour-p5js">this
 one</a>:</p>
-<figure class="fig-not-so-wide">
-    <img src="watercolor.png"
-         alt="Watercolour"/> <figcaption>
+<figure class="fig-not-so-wide"><img src="watercolor.png"
+         alt="Watercolour"/><figcaption>
             <p>Watercolour</p>
         </figcaption>
 </figure>
@@ -202,7 +196,7 @@ one</a>:</p>
 2017</a>, although I found ot recently <a href="https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/creating-realtime-watercolour-simulation-for-the-mobile-game-tint-on-apple-arcade-r5372/">the way it&rsquo;s done in
 Tint</a>,
 and I <em>need</em> to implement that one as well. Soon after implementing this, I landed on <a href="https://estebanhufstedler.com/">Esteban
-Hufstedler</a>&lsquo;s webpage, after he posted <a href="https://estebanhufstedler.com/2020/05/04/pulled-string-art/">pulled
+Hufstedler</a>&rsquo;s webpage, after he posted <a href="https://estebanhufstedler.com/2020/05/04/pulled-string-art/">pulled
 string art</a>. There
 I found his <a href="https://estebanhufstedler.com/2018/10/02/splash/">ink splashes</a> and
 I knew what I wanted to implement next. Diving on.</p>
@@ -217,17 +211,15 @@ I knew what I wanted to implement next. Diving on.</p>
 <p>Now, <em>what the heck is a metaball?</em></p>
 <h3 id="what-is-a-metaball">What is a metaball?</h3>
 <p>They are basically blobby spheres that merge together in an elegant and smooth way. Think drops in a glass, for instance.</p>
-<figure class="fig-wide">
-    <img src="metaballWikipedia.png"
-         alt="From Wikipedia"/> <figcaption>
+<figure class="fig-wide"><img src="metaballWikipedia.png"
+         alt="From Wikipedia"/><figcaption>
             <p><a href="https://en.wikipedia.org/wiki/Metaballs#/media/File:Metaball_contact_sheet.png">From Wikipedia</a></p>
         </figcaption>
 </figure>
 
 <p>They were first described by James Blinn while at JPL <a href="https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/blinn-blobby.pdf">on this paper</a>, as a way to describe electron density maps… and other artistically interesting structures.</p>
-<figure class="fig-not-so-wide">
-    <img src="metaballBlinn.png"
-         alt="From the paper above."/> <figcaption>
+<figure class="fig-not-so-wide"><img src="metaballBlinn.png"
+         alt="From the paper above."/><figcaption>
             <p>From the paper above.</p>
         </figcaption>
 </figure>
@@ -236,8 +228,7 @@ I knew what I wanted to implement next. Diving on.</p>
 <h2 id="implementation-details">Implementation details</h2>
 <p>So, I just set out to write that field estimation. I settled for a field given by $1/r^2$, which is relatively easy to calculate and to reason about: it&rsquo;s either charge or gravitational, depending on what you want to think it is.</p>
 <p>Next there was <em>a lot</em> of tuning of the parameters. I eventually settled my threshold around 0.5 field strength, and I got this</p>
-<figure class="fig-not-so-wide">
-    <img src="inkBlot.png"/> 
+<figure class="fig-not-so-wide"><img src="inkBlot.png"/>
 </figure>
 
 <p>Yeah! An ink blot! But… <strong>It&rsquo;s pretty jaggy</strong>. Obviously, since it&rsquo;s a hard cutoff at 0.5: this gives no room for antialiasing or anything that can make it smoother.</p>
@@ -283,15 +274,13 @@ I knew what I wanted to implement next. Diving on.</p>
 <h3 id="use-the-damn-potential">Use the damn potential</h3>
 <p>It was as easy as that. The potential <em>itself</em> is a bump function around the metaball, so I just tweaked the parameters. Instead of using 0.5 as a hard-cutoff, I would use 0.4 and <a href="https://en.wikipedia.org/wiki/Linear_interpolation">lerp</a> from ink colour to transparency until 0.5. And just like that, you get pretty smooth ink blots.</p>
 <div style="clear: both;">
-<figure class="fig-side">
-    <img src="field1.png"
-         alt="Ink over potential"/> <figcaption>
+<figure class="fig-side"><img src="field1.png"
+         alt="Ink over potential"/><figcaption>
             <p>Ink over potential</p>
         </figcaption>
 </figure>
- <figure class="fig-side">
-    <img src="field2.png"
-         alt="Ink on low alpha over potential"/> <figcaption>
+ <figure class="fig-side"><img src="field2.png"
+         alt="Ink on low alpha over potential"/><figcaption>
             <p>Ink on low alpha over potential</p>
         </figcaption>
 </figure>
@@ -300,9 +289,8 @@ I knew what I wanted to implement next. Diving on.</p>
 <p>This is how the potential looks like, by the way. I added a way to see the potential (press <code>F</code> to generate the force potential and <code>T</code> to toggle its display):</p>
 <p>You will see it is a circle around the blot: This is to reduce computations as much as possible. Since the blot is mostly circular due to the gaussian, this way we need to compute the potential in less pixels.</p>
 <h2 id="the-sketch">The sketch</h2>
-<figure class="fig-wide"><a href="https://mostlymaths.net/sketches/blot-painting/" target="_blank">
-    <img src="BlotPainting.png"
-         alt="Blot/Painting"/> </a><figcaption>
+<figure class="fig-wide"><a href="https://mostlymaths.net/sketches/blot-painting/" target="_blank"><img src="BlotPainting.png"
+         alt="Blot/Painting"/></a><figcaption>
             <p>Blot/Painting</p>
         </figcaption>
 </figure>
@@ -315,9 +303,8 @@ I knew what I wanted to implement next. Diving on.</p>
 <p>One interesting issue I had here was that <code>blot</code> didn&rsquo;t run at first on my iPhone: the canvas was too large. By default I was creating full-screen canvases, and the high DPI screen is too large (for either Safari or p5js, not sure). I have limited my canvases at 1600 pixels wide, and I have a few helper functions to ensure images are fitting inside.</p>
 <p>Another one (and one I haven&rsquo;t found a solution yet) is using accelerometer information: I can&rsquo;t access it (even after requesting permissions to the user) from p5js, and I&rsquo;d love to control the GUI via shake events. If anyone has any suggestions, I&rsquo;d love to hear.</p>
 <h2 id="the-gui">The GUI</h2>
-<figure class="fig-not-so-wide">
-    <img src="gui.png"
-         alt="GUI for Blot"/> <figcaption>
+<figure class="fig-not-so-wide"><img src="gui.png"
+         alt="GUI for Blot"/><figcaption>
             <p>GUI for Blot</p>
         </figcaption>
 </figure>
@@ -356,9 +343,8 @@ I knew what I wanted to implement next. Diving on.</p>
 <li>&ldquo;Painting web app&rdquo;, with buttons with the sizes suggested above as controls</li>
 <li><del>Add a way to add your own images to <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">Painting</a></del> I actually added this yesterday:</li>
 </ul>
-<figure class="fig-wide">
-    <img src="pearl.png"
-         alt="Girl with a pearl earring, using an iPad, Apple Pencil and painting"/> <figcaption>
+<figure class="fig-wide"><img src="pearl.png"
+         alt="Girl with a pearl earring, using an iPad, Apple Pencil and painting"/><figcaption>
             <p>Girl with a pearl earring, using an iPad, Apple Pencil and <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">painting</a></p>
         </figcaption>
 </figure>

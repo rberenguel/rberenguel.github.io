@@ -6,11 +6,7 @@
     <description>Recent content in Programming on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 11:39:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 18 Apr 2019 11:39:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2019#10 Readings of the week</title>
       <link>https://mostlymaths.net/2019/04/2019-10-readings-of-week.html/</link>
@@ -173,7 +169,7 @@ In the last few months have been writing and thinking about several ideas to pro
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
-      <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&amp;rsquo; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
+      <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&#39; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
     </item>
     
     <item>
@@ -364,7 +360,7 @@ Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, j
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&#39; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -465,7 +461,7 @@ Mutlu Noeller!</description>
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -507,7 +503,7 @@ It is something like an execution tree, with function calls squared, and differe
       
       <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
- KISS - know=&amp;quot;you cry&amp;rdquo;;know++=&amp;quot;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
     </item>
     
@@ -591,7 +587,7 @@ Source code:
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
-      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
@@ -625,7 +621,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
-      <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
+      <description>Last monday I bought an Acer Aspire One, 8.9&#39;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
 
 
 Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdquo;</description>

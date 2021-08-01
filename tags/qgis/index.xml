@@ -6,11 +6,7 @@
     <description>Recent content in QGIS on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2015 20:12:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Jun 2015 20:12:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using QGIS to create a custom map</title>
       <link>https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/</link>

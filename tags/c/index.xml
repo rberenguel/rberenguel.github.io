@@ -6,11 +6,7 @@
     <description>Recent content in C on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Apr 2018 22:11:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/c/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 15 Apr 2018 22:11:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How does the &#39;in&#39; keyword work in Python?</title>
       <link>https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/</link>

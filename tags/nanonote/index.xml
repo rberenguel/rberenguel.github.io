@@ -6,11 +6,7 @@
     <description>Recent content in NanoNote on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Mar 2011 13:50:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/nanonote/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Mar 2011 13:50:00 +0100</lastBuildDate><atom:link href="https://mostlymaths.net/tags/nanonote/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Taskwarrior Instead Of Emacs&#43;Org Mode For To-Do And Appointment Tracking</title>
       <link>https://mostlymaths.net/2011/03/using-taskwarrior-instead-of-emacsorg.html/</link>

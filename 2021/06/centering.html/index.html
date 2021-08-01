@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Centering and resizing figures in PDF export with pandoc</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="Not sure if bug or feature, but this is hard to pull off.
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2021/06/centering.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2021/06/centering.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-15T08:30:33+02:00" />
 <meta property="article:modified_time" content="2021-06-15T08:30:33+02:00" />
+
 <meta itemprop="name" content="Centering and resizing figures in PDF export with pandoc">
 <meta itemprop="description" content="Not sure if bug or feature, but this is hard to pull off.
-">
-<meta itemprop="datePublished" content="2021-06-15T08:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2021-06-15T08:30:33&#43;02:00" />
+"><meta itemprop="datePublished" content="2021-06-15T08:30:33+02:00" />
+<meta itemprop="dateModified" content="2021-06-15T08:30:33+02:00" />
 <meta itemprop="wordCount" content="312">
-
-
-
 <meta itemprop="keywords" content="LaTeX,Markdown," />
 
     
@@ -162,9 +159,8 @@
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Not sure if bug or feature, but this is hard to pull off.</p>
 <br/>
-<figure class="fig-full">
-    <img src="centering.jpg"
-         alt="Photo by Alex wong on Unsplash"/> <figcaption>
+<figure class="fig-full"><img src="centering.jpg"
+         alt="Photo by Alex wong on Unsplash"/><figcaption>
             <p>Photo by <a href='https://unsplash.com/@killerfvith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Alex wong</a> on <a href='https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
@@ -176,17 +172,17 @@
 </ul>
 <p>Totally unexpected! In the end, I found a way by modifying the injected LaTeX headers. This requires your local TeX tree to have some packages, but if you can use Pandoc to export from Markdown to PDF you probably have these already in place.</p>
 <p>This should go in your YAML preamble:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">header-includes: |
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">header-includes: |
 	\usepackage{caption}
 	\captionsetup[figure]{
       name=,
       labelsep=none,
       labelformat=empty}
 </code></pre></div><p>And then the image can be centred and resized like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">&amp;nbsp;</span>](<span style="color:#a6e22e">some-image-file.png</span>){ width=150 margin=auto }
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">&amp;nbsp;</span>](<span style="color:#a6e22e">some-image-file.png</span>){ width=150 margin=auto }
 </code></pre></div><p>The <code>&amp;nbsp;</code> is to force Pandoc to generate a figure label, this makes it parse the additional sizing/margin arguments. You could also use the CLI argument <code>-f markdown-implicit_figures</code> but I prefer not having to.</p>
 <p>The full document, with some tweaks so you can customise headers and footers, could look like the following.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
 author: Your cool-looking name
 fontfamily: helvet
 geometry: margin=2cm

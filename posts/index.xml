@@ -6,10 +6,16 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jul 2021 11:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 01 Aug 2021 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021#18 Readings</title>
+      <link>https://mostlymaths.net/2021/08/202118-readings.html/</link>
+      <pubDate>Sun, 01 Aug 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/08/202118-readings.html/</guid>
+      <description>&lt;p&gt;Next week (9th of August, not 2nd of August) I start a new job 😮&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>2021#17 Readings</title>
@@ -195,7 +201,7 @@
       <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2021/01/lakehouse.html/</guid>
-      <description>&lt;p&gt;Lakehouse is the brand name for the underlying architecture of Databricks&amp;rsquo; Delta Lake: A data lake that is as performant as a data warehouse.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Lakehouse is the brand name for the underlying architecture of Databricks&#39; Delta Lake: A data lake that is as performant as a data warehouse.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1502,7 +1508,7 @@ I&amp;rsquo;ve always been fascinated by juggling, and every time I wanted to ea
       <guid>https://mostlymaths.net/2012/07/back-to-gnus-emacs-mail-reader.html/</guid>
       <description>From
 The Design of the Emacs Logo
-I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;rdquo; Air or a 15&amp;rdquo; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
+I&amp;rsquo;ve been thinking about getting a new Macbook lately (my heart and wallet were divided among a 11&amp;quot; Air or a 15&amp;quot; Retina Pro). My 4-year old Macbook (Early 2008 I think, 2 GB Ram, Intel Core Duo 2.4 GHz) was showing its age. Mainly when I had the RAM and cache hungry inhabitants of my dock active: Yorufukurou (the best twitter client for managing multiple accounts in a Mac I&amp;rsquo;ve seen) and Sparrow (mail client).</description>
     </item>
     
     <item>
@@ -1562,7 +1568,7 @@ Lately I&amp;rsquo;ve been watching an interesting TV series. Sherlock, the mode
       <pubDate>Thu, 26 Jan 2012 15:11:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2012/01/learning-to-use-vim-in-my-ipad-even-if.html/</guid>
-      <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&amp;rsquo; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
+      <description>Just in case you don&amp;rsquo;t know, vi is an advanced text editor, drting back from the same era as emacs was developed (emacs started slightly earlier). Sort of the Jekyll to emacs&#39; Dr Hyde. Emacs users despise vi users, and vi users mock emacs users. This is what the editor wars are all about: &amp;ldquo;Eight Megabytes And Constantly Swapping&amp;rdquo; versus &amp;ldquo;vi has two modes: writing and beeping&amp;rdquo;. If you have been long enough in this blog, you know I&amp;rsquo;m in the emacs side, but you also know I&amp;rsquo;m curious enough to delve into the other side.</description>
     </item>
     
     <item>
@@ -1632,7 +1638,7 @@ But this post is only mildly related to these books, since it started way before
       <guid>https://mostlymaths.net/2011/06/road-trip-through-iceland-day-10-fjord.html/</guid>
       <description>In Back to the Future, Doc sets the clock in the DeLorean to a day 25 years in the future. Today (2010, 6th July) is that day.
  Today was a really amazing day. It was very sunny, and we visited Ísafjörður, a city that stole our hearts.
-Holmavík&amp;rsquo;s Witchcraft Museum, Reykjanes We started our day with breakfast and taking a quick picture of Drangsnes&amp;rsquo; Rock troll. It does not look like a troll for us, but anyway.</description>
+Holmavík&amp;rsquo;s Witchcraft Museum, Reykjanes We started our day with breakfast and taking a quick picture of Drangsnes&#39; Rock troll. It does not look like a troll for us, but anyway.</description>
     </item>
     
     <item>
@@ -2058,8 +2064,7 @@ For those of you who don&amp;rsquo;t know, Leo Babauta is the creator of Zen Hab
       <guid>https://mostlymaths.net/2010/11/creating-pdf-ebooks-with-latex-with-two.html/</guid>
       <description>&lt;p&gt;If you are looking for the sample ebooks, open the post and scroll down a
 little.&lt;/p&gt;
-&lt;figure class=&#34;fig-left&#34;&gt;
-    &lt;img src=&#34;Dragon.jpg&#34;/&gt; 
+&lt;figure class=&#34;fig-left&#34;&gt;&lt;img src=&#34;Dragon.jpg&#34;/&gt;
 &lt;/figure&gt;</description>
     </item>
     
@@ -2460,8 +2465,7 @@ I have a few scheduled posts for this few weeks (I&amp;rsquo;ll be back around 1
       <pubDate>Thu, 17 Jun 2010 14:10:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2010/06/origami-a5-booklet-size-paper-inbox.html/</guid>
-      <description>[](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s1600/IMG_0193.JPG)[](http://4.bp.blogspot.com/_f3d3llNlZKQ/TBn_lAEoOuI/AAAAAAAACaI/cbTo8mFgkDU/s1600/IMG_0188.JPG)[![](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s400/IMG_0193.JPG)](http://3.bp.blogspot.com/_f3d3llNlZKQ/TBn_-WQeyvI/AAAAAAAACaw/-yEzFJadcjQ/s1600/IMG_0193.JPG)
-One inbox to rule them all Since I started printing everything in A5 booklet format, more and more articles and printed stuff gets scattered over my desk, in this format. Which is really handy for reading and travelling, but not so much for piling over the desk.
+      <description>One inbox to rule them all Since I started printing everything in A5 booklet format, more and more articles and printed stuff gets scattered over my desk, in this format. Which is really handy for reading and travelling, but not so much for piling over the desk.
 A pile of inner stapled A5 is slightly womb&amp;hellip; when there are more than 5 big documents stacked, it can easily fall. And I had several piles over my desktop: To read someday (better sooner than later), current references (papers I am using more than twice a week or so) and past references (the ones that were in the previous category but have not used in a while).</description>
     </item>
     
@@ -2749,7 +2753,7 @@ Of course, I want to port big things, but I&amp;rsquo;m not a great Linux guy, j
       <pubDate>Fri, 26 Mar 2010 20:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2010/03/8-reasons-for-re-inventing-wheel-as.html/</guid>
-      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;quot;? Again and again I read somewhere around the net that &amp;lsquo;re-inventing the wheel&amp;rsquo; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
+      <description>Has someone ever told you &amp;ldquo;Don&amp;rsquo;t re-invent the wheel&amp;rdquo;? Again and again I read somewhere around the net that &amp;rsquo;re-inventing the wheel&#39; is one of the worse errors a programmer can fall into. In fact, I&amp;rsquo;ve read it so often that the only thought of doing it makes me re-think over and over other ways of solving (or ignoring) the problem.
 But here, I advocate my pro&amp;rsquo;s (the cons can be found elsewhere) for re-inventing the wheel, or at least not being frightened of it.</description>
     </item>
     
@@ -2966,7 +2970,7 @@ Mutlu Noeller!</description>
       
       <guid>https://mostlymaths.net/2009/12/rcs-svn-version-control.html/</guid>
       <description>With GIMP&amp;rsquo;s &amp;ldquo;Map to sphere&amp;rdquo;
-A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&#39;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
+A few years ago, while I was still mainly a Windows user, I read &amp;lsquo;Pragmatic programmer: From journeyman to master&amp;rsquo;, and learnt about Version Control Systems. You know, SVN, CVS, Git, Darcs. As I was just a single user working locally (just wanted the incremental and logged backups), I installed RCS. Almost the oldest, and in some sense the most simple. It can work locally, just with a file of delta (text added from one revision to the next) which is a plain text, human readable file.</description>
     </item>
     
     <item>
@@ -3046,7 +3050,7 @@ Here is what you will need:
       
       <guid>https://mostlymaths.net/2009/11/more-songsincode.html/</guid>
       <description>Last Friday, 20, all SongsInCode&amp;rsquo;rs were asked to try to get #songsincode trending again to commemorate the 3 months anniversary of the idea. I submitted 3 songs (far less than my first outburst)&amp;hellip; and almost no-one else tried to overwhelm twitter with his songs (a few did, and with great ideas ;)
- KISS - know=&amp;quot;you cry&amp;rdquo;;know++=&amp;quot;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
+ KISS - know=&amp;ldquo;you cry&amp;rdquo;;know++=&amp;ldquo;Walk street beside her&amp;rdquo;; PassBy(); everybody: puts(&amp;ldquo;Looks good&amp;rdquo;); you: puts(&amp;ldquo;Strutter&amp;rdquo;); goto everybody;
 Duran Duran - if(!</description>
     </item>
     
@@ -3159,7 +3163,7 @@ ParseList(ScrambleList(Relateds(Maths)),5)</description>
       <pubDate>Thu, 29 Oct 2009 01:00:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2009/10/back-from-denmark.html/</guid>
-      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;quot;.
+      <description>Last weekend I attended a conference in Denmark, and a colleague I met there showed me the logo of his University. It is supposed to be a coral&amp;hellip; but he said in every party they turn it 270º, so it is the &amp;ldquo;angry elk&amp;rdquo;.
 Related postsParseList(ScrambleList(Relateds(Maths)),5)</description>
     </item>
     
@@ -3279,7 +3283,7 @@ I am supposed to present a poster in a conference, about some work I am doing. I
       <pubDate>Thu, 17 Sep 2009 01:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/09/quick-latex-ing-with-emacs.html/</guid>
-      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&amp;rsquo; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
+      <description>Althouh I use AucTeX, which already has nice quick-writing techniques, I have found emacs&#39; abbrev-mode together with skeletons are a nice addition to it, allowing me to be really quick at writing LaTeX. The included examples to use dabbrev and skeletons are for the mathbb and theorem environments.
 Sample usage: When I write \mbb, and then open the left {, mbb gets expanded to mathbb&amp;hellip; so I have \mathbb{ as needed.</description>
     </item>
     
@@ -3313,7 +3317,7 @@ And this doesn&amp;rsquo;t work well with my way to print booklets, so a working
       
       <guid>https://mostlymaths.net/2009/09/calendars-emacs.html/</guid>
       <description>My month, starting
-For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&amp;rsquo;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
+For the last two years, I have been really happy, living without a definite calendar. I just knew I had a meeting with my boss &amp;ldquo;next Monday&amp;rdquo;, or had a workshop somewhere &amp;ldquo;in the last weeks of January&amp;rdquo;. But these days I&amp;rsquo;ve come to realize I just need a calendar now&amp;hellip; And finally managed to mix org-mode&#39;s events with standard emacs calendar+diary views. This calendar is emacs calendar&amp;rsquo;s mode standard one (I love its looks) but harvests information from org-mode&amp;rsquo;s headlines and timestamps.</description>
     </item>
     
     <item>
@@ -3396,7 +3400,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <pubDate>Mon, 03 Aug 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/08/old-books-scent.html/</guid>
-      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;lsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
+      <description>I love the smell of old (really old, but not dusty) books. It reminds me of some kind of vanilla scent, that is only to be found in them. I smelled it a few weeks ago, when I bought Conrad&amp;rsquo;s Heart of Darkness, second hand 1972 Penguin Modern Classics edition (3€) in a second hand bookstore in Göttingen (Germany).</description>
     </item>
     
     <item>
@@ -3408,7 +3412,7 @@ Yesterday I wasted my morning: bought my orange belt, set up the external monito
       <description>Here are some pictures and images which look pretty good together with my Fluxbox configuration, in my Netbook. Here they are for your enjoyment. They are supposed to be small, not to drain too many system resources. I will upload later the butterfly in higher resolution.
      
 You may also be interested in
- Two weeks, still loving Fluxbox Three dee Acer Aspire One 8.9&amp;rsquo; + Ubuntu + Fluxbox Whistle control your computer (Linux&amp;amp;Mac)  </description>
+ Two weeks, still loving Fluxbox Three dee Acer Aspire One 8.9&#39; + Ubuntu + Fluxbox Whistle control your computer (Linux&amp;amp;Mac)  </description>
     </item>
     
     <item>
@@ -3447,7 +3451,7 @@ Old 10 Deutsche Mark banknote. Gauss depicted along with a normal distribution a
       <pubDate>Sat, 11 Jul 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/07/acer-aspire-one-89-ubuntu-fluxbox.html/</guid>
-      <description>Last monday I bought an Acer Aspire One, 8.9&amp;rsquo;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
+      <description>Last monday I bought an Acer Aspire One, 8.9&#39;, with an extra 6-cell battery and 15 minutes later I installed Ubuntu (Netbook Remix version) on it, and after realizing everything was working smoothly (except for the SD card reader&amp;hellip; anyway, I have an external device for doing so) I installed the Fluxbox window manager. New: You may also be interested in Two weeks: still loving Fluxbox.
 
 
 Here you can see the FluxBox Root menu, Conky in the &amp;ldquo;desktop&amp;rdquo;</description>
@@ -3628,7 +3632,7 @@ It will look like this when finished, closed and opened.</description>
       <pubDate>Thu, 07 May 2009 11:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2009/05/how-to-do-easy-origami-cd-case.html/</guid>
-      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;lsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
+      <description>A few years ago I was looking for an origami CD case. I found this site (which uses Tom Hull&amp;rsquo;s design). Although it is a quick and neat design for an origami case, I don&amp;rsquo;t like it, it feels like the CD is about to fall. So I tweaked for a while, and came up with this design. It takes a little longer to fold, but holds really firm, and looks nicer after.</description>
     </item>
     
     <item>
@@ -3762,7 +3766,7 @@ Clean more often!</description>
       <pubDate>Sat, 27 Sep 2008 17:12:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2008/09/social-bookmarking-in-blogger.html/</guid>
-      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;lsquo;s approach is the best.
+      <description>After trying different methods to add &amp;ldquo;Digg this&amp;rdquo;, &amp;ldquo;Stumble this!&amp;rdquo; and similar buttons, I&amp;rsquo;ve decided that MyFolia&amp;rsquo;s approach is the best.
 
 This neat bookmarks appear in the far bottom of every post, and allow to bookmark the current post in any of these websites (Digg, Reddit, del.icio.us, Facebook, technorati, Google and StumbleUpon). With autocompletion of the url and title, sure.
 To add this code to your blogger blog:
@@ -3819,7 +3823,7 @@ This made me think of a former article I read there, talking about student-advis
       <pubDate>Tue, 18 Mar 2008 14:53:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/03/origami-masks.html/</guid>
-      <description>Browsing old posts in Origami Tessellations, I found out about Joel Cooper&amp;lsquo;s origami masks. Here are a few examples taken from these two web pages.
+      <description>Browsing old posts in Origami Tessellations, I found out about Joel Cooper&amp;rsquo;s origami masks. Here are a few examples taken from these two web pages.
  
 They are really amazing&amp;hellip; I hope I can learn how to do that. I&amp;rsquo;ll have to start learning something about origami tessellations, which is a thing I&amp;rsquo;ve always skipped.</description>
     </item>
@@ -3860,7 +3864,7 @@ so late into the night</description>
       <pubDate>Wed, 27 Feb 2008 15:55:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/2008/02/satoshis-pegasus.html/</guid>
-      <description>Kamiya Satoshi&amp;lsquo;s Pegasus, folded from a square from A4 standard paper (21x21 cm square). The model is about 8 cm long. Satoshi suggests 25x25 paper, which obviously must be thinner than 80g/m^2. But the model itself is wonderful, although my rendition of may not be worth of it.
+      <description>Kamiya Satoshi&amp;rsquo;s Pegasus, folded from a square from A4 standard paper (21x21 cm square). The model is about 8 cm long. Satoshi suggests 25x25 paper, which obviously must be thinner than 80g/m^2. But the model itself is wonderful, although my rendition of may not be worth of it.
 PS: Shame on me, for not rendering the head as it must be done (à la Dave Brill&amp;rsquo;s horse). Well, next time, with bigger paper :)</description>
     </item>
     

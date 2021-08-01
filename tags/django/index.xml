@@ -6,11 +6,7 @@
     <description>Recent content in Django on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jun 2012 15:10:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/django/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Jun 2012 15:10:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Timeline of whatlanguageis.com: first Django project</title>
       <link>https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/</link>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Handling of exponent overflow in GNU APL and Dyalog APL (on Mac)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,18 +41,15 @@
 <meta property="og:description" content="A few weeks ago I started trying a pre-beta release of Dyalog APL (now available as &ldquo;full beta&rdquo;) for Mac. Fellow Mac users, looks like we are in for a treat after so much time of only having GNU APL and the pretty expensive APLX. Now Mac APL lovers, users and aficionados will have a competitive, commercial option. At last!
 I started with the usual 1&#43;1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2015/04/handling-of-exponent-overflow-in-gnu.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2015/04/handling-of-exponent-overflow-in-gnu.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-04-13T11:29:00+02:00" />
 <meta property="article:modified_time" content="2015-04-13T11:29:00+02:00" />
+
 <meta itemprop="name" content="Handling of exponent overflow in GNU APL and Dyalog APL (on Mac)">
 <meta itemprop="description" content="A few weeks ago I started trying a pre-beta release of Dyalog APL (now available as &ldquo;full beta&rdquo;) for Mac. Fellow Mac users, looks like we are in for a treat after so much time of only having GNU APL and the pretty expensive APLX. Now Mac APL lovers, users and aficionados will have a competitive, commercial option. At last!
-I started with the usual 1&#43;1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected.">
-<meta itemprop="datePublished" content="2015-04-13T11:29:00&#43;02:00" />
-<meta itemprop="dateModified" content="2015-04-13T11:29:00&#43;02:00" />
+I started with the usual 1&#43;1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expected."><meta itemprop="datePublished" content="2015-04-13T11:29:00+02:00" />
+<meta itemprop="dateModified" content="2015-04-13T11:29:00+02:00" />
 <meta itemprop="wordCount" content="337">
-
-
-
 <meta itemprop="keywords" content="Programming,Fractals,apl," />
 
 <meta name="twitter:card" content="summary" />
@@ -150,12 +147,12 @@ I started with the usual 1&#43;1, ⍳ 10 , ⍴ ⍳ 10 to check it worked as expe
 <p>Case in point, GNU APL returns <strong>infinity</strong> on overflow (for instance, you can try 3*1000 to see the difference) whereas Dyalog APL returns <strong>Domain error</strong>. Of course, both are valid and depending on your code and computation one can be much handier than the other.</p>
 <p>My code initially was (copy-pasting it should work, but it is showing more spaces than needed):</p>
 <blockquote>
-<p>⍉&rsquo; *'[⍎'1+0&lt;|z&rsquo;,(∊150⍴⊂'←c+m×m&rsquo;),&lsquo;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))']</p>
+<p>⍉' *'[⍎'1+0&lt;|z',(∊150⍴⊂'←c+m×m'),&lsquo;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))']</p>
 </blockquote>
 <p>The right-most area assumes GNU style, i.e. <strong>infinity</strong>. Which in a sense behaves like <strong>NaN</strong> in C: since it is not really a number, the comparison works and I get a nice image after indexing and rotating.</p>
 <p>To make it work on Dyalog, the simplest way is adding an intermediate matrix, fixing points that diverge (copy-pasting it should work, but it is showing more spaces than needed)</p>
 <blockquote>
-<p>⍉&rsquo; *'[⍎'1+2&lt;|z&rsquo;,(∊130⍴⊂'←(d×4&gt;|d)+4×4&lt;|d←c+m×m&rsquo;),&lsquo;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))']</p>
+<p>⍉&rsquo; *'[⍎'1+2&lt;|z',(∊130⍴⊂'←(d×4&gt;|d)+4×4&lt;|d←c+m×m'),&lsquo;←c←(¯2.1J¯1.3+(((2.6÷b-1)×(¯1+⍳b))∘.+(0J1×(2.6÷b-1)×(¯1+⍳b←51))))']</p>
 </blockquote>
 <p>And this did the trick, and I leaned some more about how APLs work.</p>
 <hr/>

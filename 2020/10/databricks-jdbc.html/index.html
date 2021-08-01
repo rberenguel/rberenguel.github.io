@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Running SparkSQL on Databricks via Airflow&#39;s JDBC operator</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Running SparkSQL on Databricks via Airflow&#39;s JDBC operator" />
 <meta property="og:description" content="The one where Airflow messes with you." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/10/databricks-jdbc.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/10/databricks-jdbc.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-10-05T20:30:33+02:00" />
 <meta property="article:modified_time" content="2020-10-05T20:30:33+02:00" />
+
 <meta itemprop="name" content="Running SparkSQL on Databricks via Airflow&#39;s JDBC operator">
-<meta itemprop="description" content="The one where Airflow messes with you.">
-<meta itemprop="datePublished" content="2020-10-05T20:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-10-05T20:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="680">
-
-
-
+<meta itemprop="description" content="The one where Airflow messes with you."><meta itemprop="datePublished" content="2020-10-05T20:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-10-05T20:30:33+02:00" />
+<meta itemprop="wordCount" content="682">
 <meta itemprop="keywords" content="Data,Apache Spark,Databricks," />
 
     
@@ -150,7 +147,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 680 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 682 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -159,8 +156,7 @@
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>The one where Airflow messes with you.</p>
 <br/>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide7.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 </figure>
 
 <p>This will be a short one. I want to move some SQL from <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> to <a href="https://databricks.com">Databricks</a> for performance and cost reasons. Currently, all the SQL is running in a pretty dense <a href="https://airflow.apache.org">Airflow</a> DAG (Directed Acyclic Graph), and my cunning plan was:</p>
@@ -173,35 +169,35 @@
 <p>The first step is getting the Databricks JDBC driver from <a href="https://docs.databricks.com/integrations/bi/jdbc-odbc-bi.html">here</a>. In the same page you can find all the details to <em>be</em> able to connect from BI tools, although I guess nobody had tried to use Airflow for this before.</p>
 <p>Then, make sure your Airflow installation has the <code>jdbc</code> optional (this is for <code>1.10.X</code>, for <code>2.0</code> the contributed operators change locations) <em>and</em> make sure you install <code>OpenJDK</code>, since the JDBC driver requires Java (the first <em>J</em> should be a hint).</p>
 <p>Then, create a very small DAG:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.operators.jdbc_operator <span style="color:#f92672">import</span> JdbcOperator
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.operators.jdbc_operator <span style="color:#f92672">import</span> JdbcOperator
 <span style="color:#f92672">from</span> airflow.models <span style="color:#f92672">import</span> DAG
 <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetim
 
 default_args <span style="color:#f92672">=</span> {
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">start_date</span><span style="color:#e6db74">&#34;</span>: datetime(<span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>),
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">email_on_failure</span><span style="color:#e6db74">&#34;</span>: False,
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">retries</span><span style="color:#e6db74">&#34;</span>: <span style="color:#ae81ff">0</span>,
+    <span style="color:#e6db74">&#34;start_date&#34;</span>: datetime(<span style="color:#ae81ff">2020</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>),
+    <span style="color:#e6db74">&#34;email_on_failure&#34;</span>: <span style="color:#66d9ef">False</span>,
+    <span style="color:#e6db74">&#34;retries&#34;</span>: <span style="color:#ae81ff">0</span>,
 }
 
 dag <span style="color:#f92672">=</span> DAG(
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks_test</span><span style="color:#e6db74">&#34;</span>,
-        catchup<span style="color:#f92672">=</span>False,
+        <span style="color:#e6db74">&#34;databricks_test&#34;</span>,
+        catchup<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
         max_active_runs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
         concurrency<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
-        description<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Run some SQL on Databricks via JDBC</span><span style="color:#e6db74">&#34;</span>,
+        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Run some SQL on Databricks via JDBC&#34;</span>,
         default_args<span style="color:#f92672">=</span>default_args
     )
 
-sql <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">select count(distinct a_heavy_one) from somewhere </span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">join something_very_expensive</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">select count(distinct a_heavy_one) from somewhere 
+</span><span style="color:#e6db74">join something_very_expensive
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
 foo <span style="color:#f92672">=</span> JdbcOperator(sql<span style="color:#f92672">=</span>sql, 
-                   autocommit<span style="color:#f92672">=</span>False,
-                   dbc_conn_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks</span><span style="color:#e6db74">&#34;</span>, 
+                   autocommit<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+                   dbc_conn_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;databricks&#34;</span>, 
                    dag<span style="color:#f92672">=</span>dag, 
-                   task_id<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">databricks_task</span><span style="color:#e6db74">&#34;</span>)
+                   task_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;databricks_task&#34;</span>)
 </code></pre></div><p>In the <code>Connections</code> menu (under <code>Admin</code>) you can configure your <code>JDBC</code> connection according to the Databricks documentation. It is easy as long as you realise <code>token</code> is the word <code>token</code> and not <em>the</em> token, and you add the correct class name, <code>com.simba.spark.jdbc.Driver</code>. Your connection string should look like this (I have added new lines for readability):</p>
 <pre><code>jdbc:spark://some_code.cloud.databricks.com:443/default; ↵
 transportMode=http;ssl=1; ↵
@@ -214,8 +210,7 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 <li>The stracktrace from Airflow was actually telling me where but I was <strong>not paying attention</strong>,</li>
 <li>It was related to <a href="https://github.com/OHDSI/DatabaseConnector/issues/86"><strong>this</strong></a> issue in another JDBC driver, but this time, Hive.</li>
 </ol>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide3.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide3.jpg"/>
 </figure>
 
 <br/>
@@ -238,18 +233,18 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 <li>Write our own operator.</li>
 </ol>
 <p>Since the Airflow execution model is pretty weird (it loads the Python code from the DAG bag and interprets it internally), patching could actually not even work, so writing your own operator is probably the recommended approach. You will need a way of deploying Airflow packages to your Airflow installation though.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.hooks.jdbc_hook <span style="color:#f92672">import</span> JdbcHook
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> airflow.hooks.jdbc_hook <span style="color:#f92672">import</span> JdbcHook
 <span style="color:#f92672">from</span> airflow.models <span style="color:#f92672">import</span> BaseOperator
 <span style="color:#f92672">from</span> airflow.utils.decorators <span style="color:#f92672">import</span> apply_defaults
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JdbcDatabricksHook</span>(JdbcHook):
-    supports_autocommit <span style="color:#f92672">=</span> False
+    supports_autocommit <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
 
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JdbcDatabricksOperator</span>(BaseOperator):
-    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">Just override where we use the hook</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    <span style="color:#e6db74">&#34;&#34;&#34;Just override where we use the hook&#34;&#34;&#34;</span>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">execute</span>(self, context):
-        self<span style="color:#f92672">.</span>log<span style="color:#f92672">.</span>info(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Executing: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span>, self<span style="color:#f92672">.</span>sql)
+        self<span style="color:#f92672">.</span>log<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#39;Executing: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span>, self<span style="color:#f92672">.</span>sql)
         self<span style="color:#f92672">.</span>hook <span style="color:#f92672">=</span> JdbcDatabricksHook(jdbc_conn_id<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>jdbc_conn_id)
         self<span style="color:#f92672">.</span>hook<span style="color:#f92672">.</span>run(self<span style="color:#f92672">.</span>sql, self<span style="color:#f92672">.</span>autocommit, parameters<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>parameters)
 </code></pre></div><p>And now, the query worked and took 1.1 hours. Which also proved long-running queries don&rsquo;t hit timeouts or connection drops (this was also part of what I wanted to check).</p>

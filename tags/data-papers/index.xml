@@ -6,18 +6,14 @@
     <description>Recent content in Data Papers on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 14:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/data-papers/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Jan 2021 14:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/data-papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lakehouse: It&#39;s like Delta Lake, but not really</title>
       <link>https://mostlymaths.net/2021/01/lakehouse.html/</link>
       <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/2021/01/lakehouse.html/</guid>
-      <description>&lt;p&gt;Lakehouse is the brand name for the underlying architecture of Databricks&amp;rsquo; Delta Lake: A data lake that is as performant as a data warehouse.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Lakehouse is the brand name for the underlying architecture of Databricks&#39; Delta Lake: A data lake that is as performant as a data warehouse.&lt;/p&gt;</description>
     </item>
     
     <item>

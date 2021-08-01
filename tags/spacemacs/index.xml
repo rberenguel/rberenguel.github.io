@@ -6,11 +6,7 @@
     <description>Recent content in spacemacs on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2019 23:41:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 May 2019 23:41:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LSP for Python and Scala</title>
       <link>https://mostlymaths.net/2019/05/lsp-for-python-and-scala.html/</link>

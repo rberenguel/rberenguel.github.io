@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Using QGIS to create a custom map</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Using QGIS to create a custom map" />
 <meta property="og:description" content="I have ve always loved maps. I guess it goes well with liking drawing and maths, there’s a deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2015/06/using-qgis-to-create-custom-map.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-06-14T20:12:00+02:00" />
 <meta property="article:modified_time" content="2015-06-14T20:12:00+02:00" />
+
 <meta itemprop="name" content="Using QGIS to create a custom map">
-<meta itemprop="description" content="I have ve always loved maps. I guess it goes well with liking drawing and maths, there’s a deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps.">
-<meta itemprop="datePublished" content="2015-06-14T20:12:00&#43;02:00" />
-<meta itemprop="dateModified" content="2015-06-14T20:12:00&#43;02:00" />
+<meta itemprop="description" content="I have ve always loved maps. I guess it goes well with liking drawing and maths, there’s a deep connection (the pun is intended) between the subjects. As a map lover, when we decided to relocate to a somewhat more countryside town, I wanted better-looking maps to wander around the area. I checked government-issued maps, but they were either too large (scale 1:25000) or didn’t show the area I was interested (for the 1:10000 maps."><meta itemprop="datePublished" content="2015-06-14T20:12:00+02:00" />
+<meta itemprop="dateModified" content="2015-06-14T20:12:00+02:00" />
 <meta itemprop="wordCount" content="2311">
-
-
-
 <meta itemprop="keywords" content="emacs,QGIS,L&#39;Arboç, iPad, Mac,DIY,Maps," />
 
     
@@ -162,8 +159,7 @@ checked government-issued maps, but they were either too large (scale 1:25000)
 or didn’t show the area I was interested (for the 1:10000 maps.) Thus I did what
 any other nerd would do: roll my own map as I wanted it.</p>
 <p>The end result looks like this (downscaled to 20%)</p>
-<figure class="fig-wide"><a href="MapWithSymbols_20.jpg">
-    <img src="MapWithSymbols_20.jpg"/> </a>
+<figure class="fig-wide"><a href="MapWithSymbols_20.jpg"><img src="MapWithSymbols_20.jpg"/></a>
 </figure>
 
 <p>The real map is 1.4 × 1.2 metres</p>
@@ -177,9 +173,8 @@ at least not everything. Specially among vines or forests. What’s the point of
 living close to the <a href="http://ca.wikipedia.org/wiki/Pant%C3%A0_de_Foix">Pantà de
 Foix</a> (the Foix Dam) and not
 being able to walk there?</p>
-<figure class="fig-wide">
-    <img src="Castellet.jpg"
-         alt="Castellet, just beside Pantà de Foix"/> <figcaption>
+<figure class="fig-wide"><img src="Castellet.jpg"
+         alt="Castellet, just beside Pantà de Foix"/><figcaption>
             <p>Castellet, just beside Pantà de Foix</p>
         </figcaption>
 </figure>
@@ -252,11 +247,11 @@ could set the size of the font to the one defined in the datafile. And I could
 even choose the font according to the feature type (or in my case, the font
 defined in the data file: the data provided by the ICC had font size and font
 family for the features) with a function.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>   
-  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FONTNAME</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Times New Roman</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Georgia</span><span style="color:#e6db74">&#39;</span>  
-  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FONTNAME</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Arial</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Futura</span><span style="color:#e6db74">&#39;</span>  
-  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FONTNAME</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Arial Narrow</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Futura</span><span style="color:#e6db74">&#39;</span>  
-  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FONTNAME</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Courier New</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Inconsolata</span><span style="color:#e6db74">&#39;</span>  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>   
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Times New Roman&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Georgia&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span><span style="color:#e6db74">&#39;Arial&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Futura&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Arial Narrow&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Futura&#39;</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;FONTNAME&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Courier New&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Inconsolata&#39;</span>  
 <span style="color:#66d9ef">END</span>  
 </code></pre></div><p>The language seems to be QGIS specific, but has SQL-like <code>LIKE</code>. Single quotes
 denote strings, double quotes denote fields, just like in SQL. Important to
@@ -283,9 +278,8 @@ just added) and selecting as join field the type code (in this case,
 <li>I disabled caching and added a custom name to the newly created column, the
 join</li>
 </ul>
-<figure class="fig-not-so-wide">
-    <img src="Joins.jpg"
-         alt="A join"/> <figcaption>
+<figure class="fig-not-so-wide"><img src="Joins.jpg"
+         alt="A join"/><figcaption>
             <p>A join</p>
         </figcaption>
 </figure>
@@ -294,42 +288,40 @@ join</li>
 didn’t know how to add icons, but I could edit the name and add a letter to
 denote what it is (or I could even add some text.) The labelling function is
 then</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>   
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%capella%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%monestir%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%monestir%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%tedral%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Església</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Convent</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Temple</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">† </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Arc</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ﬂ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%ducte</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ﬂ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Font, bullidor, deu</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ƒ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%toll,%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">≈ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%astell,%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Ħ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span>   <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Talaia, torre de defensa, torre de guaita</span><span style="color:#e6db74">&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Ħ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%rica (en%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Ħ </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span>  <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Muralla</span><span style="color:#e6db74">&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">= </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">GR (Sender de Gran Recorregut)</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">GR: </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span>   <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">PR (Sender de Petit Recorregut)</span><span style="color:#e6db74">&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">PR: </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Pou%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ů </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%pont%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">π </span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span> )  
-  <span style="color:#66d9ef">ELSE</span>  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TEXT_TOP</span><span style="color:#e6db74">&#34;</span>  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>   
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%capella%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%monestir%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%monestir%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%tedral%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Església&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Convent&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Temple&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;† &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Arc&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;ﬂ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%ducte&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;ﬂ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Font, bullidor, deu&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;ƒ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%toll,%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;≈ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%astell,%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;Ħ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span>   <span style="color:#e6db74">&#39;Talaia, torre de defensa, torre de guaita&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;Ħ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%rica (en%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;Ħ &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span>  <span style="color:#e6db74">&#39;Muralla&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;= &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;GR (Sender de Gran Recorregut)&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;GR: &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span>   <span style="color:#e6db74">&#39;PR (Sender de Petit Recorregut)&#39;</span>  <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;PR: &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Pou%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;ů &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">WHEN</span>  <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span>  <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;%pont%&#39;</span> <span style="color:#66d9ef">THEN</span> CONCAT( <span style="color:#e6db74">&#39;π &#39;</span>, <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span> )  
+  <span style="color:#66d9ef">ELSE</span>  <span style="color:#e6db74">&#34;TEXT_TOP&#34;</span>  
 <span style="color:#66d9ef">END</span>  
 </code></pre></div><p>This, basically adds a weird symbol to the text, so, for instance, bridges have
 a <code>π</code> symbol in front. Not great, but I actually printed it like this for a
 starter and it looks pretty decent. Here you can see a zoom in and the general
 view:</p>
-<figure class="fig-wide">
-    <img src="Shot-FullForPrint.jpg"
-         alt="The general view"/> <figcaption>
+<figure class="fig-wide"><img src="Shot-FullForPrint.jpg"
+         alt="The general view"/><figcaption>
             <p>The general view</p>
         </figcaption>
 </figure>
 
-<figure class="fig-wide">
-    <img src="Shot-WGlyphs.jpg"
-         alt="A zoom"/> <figcaption>
+<figure class="fig-wide"><img src="Shot-WGlyphs.jpg"
+         alt="A zoom"/><figcaption>
             <p>A zoom</p>
         </figcaption>
 </figure>
@@ -343,17 +335,17 @@ have a separate layer for the labels and a layer for the icons.</p>
 <p>Once you have duplicated the layer, change its style to rule-based, and add
 marks following rules with the add sign. For instance, this is the rule I use
 for <em>Castell</em> (castle):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>  
-  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Castell,%</span><span style="color:#e6db74">&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#66d9ef">CASE</span>  
+  <span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Castell,%&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>  
   <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span>  
 <span style="color:#66d9ef">END</span>  
 </code></pre></div><p>with SVG marker <code>svg/fortress2.svg</code></p>
 <p><strong>NOTE:</strong> if you are using only one condition, for rule-based markers you can just keep it at</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">coditopo_03ca_CONCEPTE</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Castell,%</span><span style="color:#e6db74">&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#e6db74">&#34;coditopo_03ca_CONCEPTE&#34;</span> <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#39;Castell,%&#39;</span>
 </code></pre></div><p>since it will just return 0 or 1 as needed. You&rsquo;ll only need CASE when you have
 several types going to the same marker. Since I just copy-pasted most of my code
 I didn&rsquo;t mind the extra cruft. Thanks to <a href="https://twitter.com/madmanwoo">Nathan
-Woodrow</a>, one of QGIS&rsquo; developers for pointing it
+Woodrow</a>, one of QGIS' developers for pointing it
 out on twitter.</p>
 <p>To add this as image you need to select <code>Marker</code>, then <code>SVG marker</code>. I found
 very nice SVG icons <a href="http://www.flaticon.com/">here</a>, so I use this opportunity
@@ -365,16 +357,14 @@ business would have been easier merging all vector layers before doing anything
 else, but since I didn’t do it from the beginning it was hard to do it now. You
 can find how to merge vector layers in this <a href="http://gis.stackexchange.com/questions/25061/how-to-merge-multiple-layers-to-one-layer-using-qgis">StackOverflow
 question</a>.</p>
-<figure class="fig-wide">
-    <img src="RuleBaseds.jpg"
-         alt="This is how Style should look like with rule-based"/> <figcaption>
+<figure class="fig-wide"><img src="RuleBaseds.jpg"
+         alt="This is how Style should look like with rule-based"/><figcaption>
             <p>This is how <em>Style</em> should look like with rule-based</p>
         </figcaption>
 </figure>
 
-<figure class="fig-wide">
-    <img src="Markers.jpg"
-         alt="And this is what a specific rule looks like"/> <figcaption>
+<figure class="fig-wide"><img src="Markers.jpg"
+         alt="And this is what a specific rule looks like"/><figcaption>
             <p>And this is what a specific rule looks like</p>
         </figcaption>
 </figure>
@@ -386,9 +376,8 @@ changing size and baseline of the icon.) I also did some changes editing the
 file directly in Emacs, since QGIS files are just XML and replacing is much
 faster without clicking anything, once you know how the fields are named. The
 end result? Here you can see the same area as above with icons.</p>
-<figure class="fig-wide">
-    <img src="Shot-WSymbols.jpg"
-         alt="A zoom in with markers in place"/> <figcaption>
+<figure class="fig-wide"><img src="Shot-WSymbols.jpg"
+         alt="A zoom in with markers in place"/><figcaption>
             <p>A zoom in with markers in place</p>
         </figcaption>
 </figure>
@@ -408,20 +397,19 @@ iPad (even if it is an Air.) It won’t zoom. On the other hand, for my Mac it w
 much easier to open and zoom/navigate a huge JPG rather than a huge PDF file.
 Also keep in mind large maps take a long time to export: if you are making tests
 disable as many layers as you can really manage.</p>
-<figure class="fig-wide">
-    <img src="MapComposer.jpg"
-         alt="The map composer reminds me of Scribus"/> <figcaption>
+<figure class="fig-wide"><img src="MapComposer.jpg"
+         alt="The map composer reminds me of Scribus"/><figcaption>
             <p>The map composer reminds me of Scribus</p>
         </figcaption>
 </figure>
 
 <p>Since I wanted a portable version of the map to have on my iPad Air, I decided to split it using ImageMagick in 9 tiles I could easily zoom in any app. IM has the nice “crop” feature that can generate tiles, like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">convert -crop 4x3 MEGAMAP.jpg megamap/tiles%03d.jpg  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">convert -crop 4x3 MEGAMAP.jpg megamap/tiles%03d.jpg  
 
 </code></pre></div><p>The problem is that this takes way, way longer than expected, because the image
 is too big. The fastest way is instead to use the <code>stream</code> command to generate
 raw RGB data and convert that to JPG. So, repeating 9 times stuff like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">stream -extract 5566x3937+11132+7874 MEGAMAP.jpg t9.rgb  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">stream -extract 5566x3937+11132+7874 MEGAMAP.jpg t9.rgb  
 convert -depth <span style="color:#ae81ff">8</span> -size 5566x3937 rgb:t9.rgb t9.jpeg  
 
 </code></pre></div><p>Since I only needed to do it this time I didn’t bother to code it as a bash for

@@ -6,10 +6,16 @@
     <description>Recent content in Airflow on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 May 2021 20:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/airflow/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 01 Aug 2021 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/airflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021#18 Readings</title>
+      <link>https://mostlymaths.net/2021/08/202118-readings.html/</link>
+      <pubDate>Sun, 01 Aug 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/08/202118-readings.html/</guid>
+      <description>&lt;p&gt;Next week (9th of August, not 2nd of August) I start a new job 😮&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
     
     <item>
       <title>Modelling data pipelines with Alloy</title>

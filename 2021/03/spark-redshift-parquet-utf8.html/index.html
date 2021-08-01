@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET" />
 <meta property="og:description" content="Timezones and UTF are rocks you repeatedly hit in your data journey." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-31T20:15:33+02:00" />
 <meta property="article:modified_time" content="2021-03-31T20:15:33+02:00" />
+
 <meta itemprop="name" content="UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET">
-<meta itemprop="description" content="Timezones and UTF are rocks you repeatedly hit in your data journey.">
-<meta itemprop="datePublished" content="2021-03-31T20:15:33&#43;02:00" />
-<meta itemprop="dateModified" content="2021-03-31T20:15:33&#43;02:00" />
+<meta itemprop="description" content="Timezones and UTF are rocks you repeatedly hit in your data journey."><meta itemprop="datePublished" content="2021-03-31T20:15:33+02:00" />
+<meta itemprop="dateModified" content="2021-03-31T20:15:33+02:00" />
 <meta itemprop="wordCount" content="343">
-
-
-
 <meta itemprop="keywords" content="Data,Databricks,Apache Spark,AWS,SQL," />
 
     
@@ -161,9 +158,8 @@
 <li>Profit.</li>
 </ul>
 <p>This <em>profit</em> can be in terms of pure data engineering work, which would involve additional transformations or as a finished product: a report ready for BI consumption.</p>
-<figure class="fig-wide">
-    <img src="parquet.jpg"
-         alt="Photo by DDP on Unsplash"/> <figcaption>
+<figure class="fig-wide"><img src="parquet.jpg"
+         alt="Photo by DDP on Unsplash"/><figcaption>
             <p>Photo by <a href='https://unsplash.com/@moino007?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>DDP</a> on <a href='https://unsplash.com/s/photos/parquet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
@@ -179,10 +175,10 @@
 </blockquote>
 <p>When confronted with a problematic row, in Redshift you can either use <code>ACCEPTINVCHARS</code> or a reasonable number in the <code>MAXERRORS</code> parameter in your <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_COPY-parameters.html"><code>COPY</code></a> command. <strong>Except that these parameters are not available when dealing with Parquet</strong>. In other words, if you have a Parquet file with <em>one</em> row with <em>one</em> field with <em>one</em> invalid UTF-8 your whole load will fail. And it fails very noisily.</p>
 <p>Luckily, you can replace the problematic character in Spark:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> 
   <span style="color:#66d9ef">translate</span>(
    encode(
-    decode(col, <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">UTF-8</span><span style="color:#e6db74">&#39;</span>), <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">UTF-8</span><span style="color:#e6db74">&#39;</span>), <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">\uFFFF</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">\uFFFD</span><span style="color:#e6db74">&#39;</span>) 
+    decode(col, <span style="color:#e6db74">&#39;UTF-8&#39;</span>), <span style="color:#e6db74">&#39;UTF-8&#39;</span>), <span style="color:#e6db74">&#39;\uFFFF&#39;</span>, <span style="color:#e6db74">&#39;\uFFFD&#39;</span>) 
   <span style="color:#66d9ef">AS</span> col 
   <span style="color:#66d9ef">FROM</span> problematic_table;
 </code></pre></div><div class="note ">

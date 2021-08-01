@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Timeline of whatlanguageis.com: first Django project</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -42,19 +42,16 @@
 Last week I wrote about ~whatlanguageis.com~, my first simple try at creating a Django powered site. How did it came to be?
 In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2012/06/timeline-of-whatlanguageiscom-first.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-06-12T15:10:00+02:00" />
 <meta property="article:modified_time" content="2012-06-12T15:10:00+02:00" />
+
 <meta itemprop="name" content="Timeline of whatlanguageis.com: first Django project">
 <meta itemprop="description" content="Note from 2020: The domain mentioned in the post is no longer active (or mine at least), I cancelled this project some time ago
 Last week I wrote about ~whatlanguageis.com~, my first simple try at creating a Django powered site. How did it came to be?
-In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web.">
-<meta itemprop="datePublished" content="2012-06-12T15:10:00&#43;02:00" />
-<meta itemprop="dateModified" content="2012-06-12T15:10:00&#43;02:00" />
+In the last few months have been writing and thinking about several ideas to process social data with Python, undoubtedly motivated by the great book Mining the Social Web."><meta itemprop="datePublished" content="2012-06-12T15:10:00+02:00" />
+<meta itemprop="dateModified" content="2012-06-12T15:10:00+02:00" />
 <meta itemprop="wordCount" content="1051">
-
-
-
 <meta itemprop="keywords" content="Programming,Python,Languages,Django," />
 
 <meta name="twitter:card" content="summary" />
@@ -154,7 +151,7 @@ In the last few months have been writing and thinking about several ideas to pro
 <p>This suggests the next question: why <em>me</em>, PHP? Well, where I work the <em>de facto</em> language for web development is PHP. I&rsquo;m not a developer there, I just do the data analytics and whatever else that needs to be done using the tools I need and just report back. I thought that PHP-ing would help me get it in the workflow. But, even if my mother programming language may be C (although my first words were in GW-Basic,) my languages of choice are <em>Python</em> and <em>Lisp</em> (and I have a great fondness for <em>Forth</em>.) I guess you realise how ugly I feel PHP is.</p>
 <p>On <strong>29th May</strong> I decided enough was enough: if it is something that should almost work as a black box, to automate the part I was already doing with Python code and R data churning, why bother? <em>Just make it work</em>. I started reading the free, <a href="http://djangobook.com/">online Django Book</a>, and I was hooked (you can <a href="http://www.amazon.com/The-Definitive-Guide-Django-Development/dp/143021936X/?ie=UTF8&amp;tag=rbersblog-20">buy a printed copy in Amazon</a>). It is an awesomely readable book. I had just finished reading Zed Shaw&rsquo;s <a href="http://learnpythonthehardway.org/book/">Learn Python the Hard Way</a> to find things I may not know yet (for example, unit testing&hellip; silly me) and Django felt just like an extension of what I usually write and what I had read. Views, urls, models, all have this Python feeling. For me, of course, I&rsquo;m not a seasoned Python developer at all. I don&rsquo;t even consider myself as seasoned in any programming language, I just know <em>I can write code as I need</em>. But no expert.</p>
 <p>I read the first 2 chapters very quickly, and on <strong>Wednesday 30</strong> I started testing how Django worked, basic view-url combinations and a test on templating. Just the <em>hello world</em> tests, so to say. I set aside the book while I was thinking what would made a good initial project.</p>
-<p>Related to my social media endavours I had a tickling question: <strong>How do I decide if a twitter user data is valid or not?</strong> I.e. if I want to do some kind of language analysis, <strong>I need to know the user &lsquo;s language</strong>. I had a simple <em>idea</em> around that week (I think it was Monday 28,) but didn&rsquo;t get to code it until the <strong>4th of June</strong> (Monday): you can read about it in <a href="http://www.mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html">Language detection in Python with NLTK and Stopwords</a>.</p>
+<p>Related to my social media endavours I had a tickling question: <strong>How do I decide if a twitter user data is valid or not?</strong> I.e. if I want to do some kind of language analysis, <strong>I need to know the user &rsquo;s language</strong>. I had a simple <em>idea</em> around that week (I think it was Monday 28,) but didn&rsquo;t get to code it until the <strong>4th of June</strong> (Monday): you can read about it in <a href="http://www.mostlymaths.net/2012/06/language-detection-in-python-with-nltk.html">Language detection in Python with NLTK and Stopwords</a>.</p>
 <p>On <strong>Tuesday 5</strong>, after work I created the Django project <em>whatlanguageis</em> in my computer, and read the chapter on <em>Forms</em>. Created a very basic stripped HTML (I think I didn&rsquo;t even add a head section&hellip;) page where I could enter some text and get a language as a reply from the Django test server. Yay! It was very easy to do: Django does a lot of heavy lifting and this was straightforward to code.</p>
 <p><a href="http://2.bp.blogspot.com/-k5MB05tDRPc/T9c404JWOLI/AAAAAAAADfI/vGDJY-zjiVY/s1600/Django.jpg"><img src="http://2.bp.blogspot.com/-k5MB05tDRPc/T9c404JWOLI/AAAAAAAADfI/vGDJY-zjiVY/s200/Django.jpg" alt=""></a></p>
 <p>Then on <strong>Wednesday 6</strong> I took the day slightly off (only answering to urgent emails and sales enquiries) and wrote the whole site <a href="">~whatlanguageis.com~</a>, which involved:</p>

@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Find Search Engine Rankings... via the Command Line</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -42,19 +42,16 @@
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
 Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2013/05/find-search-engine-rankings-via-command.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2013-05-22T18:33:00+02:00" />
 <meta property="article:modified_time" content="2013-05-22T18:33:00+02:00" />
+
 <meta itemprop="name" content="Find Search Engine Rankings... via the Command Line">
 <meta itemprop="description" content="Via pixelfrenzy@flickr
 Beware! The software described here is just for personal and very light use. Its use beyond purely recreational value is against Google Search terms of service, and I don&rsquo;t want you or anyone to step that line. Any use of this code is at your own risk.
-Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash.">
-<meta itemprop="datePublished" content="2013-05-22T18:33:00&#43;02:00" />
-<meta itemprop="dateModified" content="2013-05-22T18:33:00&#43;02:00" />
+Well, after this scary paragraph, lets get to the real meat. Which boils down to just a few lines of bash."><meta itemprop="datePublished" content="2013-05-22T18:33:00+02:00" />
+<meta itemprop="dateModified" content="2013-05-22T18:33:00+02:00" />
 <meta itemprop="wordCount" content="523">
-
-
-
 <meta itemprop="keywords" content="Command Line,Linux,Data,SEO, Mac,DIY,acme," />
 
 <meta name="twitter:card" content="summary" />
@@ -170,15 +167,15 @@ do  iter\=$((num\*100))
 </code></pre><p># This sets the user agent to Lynx, a command-line web browser to<br>
 # let google know it&rsquo;s better if there is no javascript and fluff<br>
 # laying around.<br>
-wget &ndash;header=&quot;User-Agent: Lynx/2.6 libwww-FM/2.14&rdquo;  &ldquo;<a href="http://www.google">http://www.google</a>.$domain/search?q=$1&amp;start=$iter&amp;num=100&rdquo; -O search$num -q # Comments about this piping:  # The sed &lsquo;E&rsquo;xtended command looks for patterns like<br>
-# href=&rdquo;/url=something&rdquo;, with the goal of grabbing that something:<br>
+wget &ndash;header=&ldquo;User-Agent: Lynx/2.6 libwww-FM/2.14&rdquo;  &ldquo;<a href="http://www.google">http://www.google</a>.$domain/search?q=$1&amp;start=$iter&amp;num=100&rdquo; -O search$num -q # Comments about this piping:  # The sed &lsquo;E&rsquo;xtended command looks for patterns like<br>
+# href=&quot;/url=something&quot;, with the goal of grabbing that something:<br>
 # that&rsquo;s the result URL from the search. It captures this group<br>
 # and rewrites it as &ldquo;SearchData, something&rdquo; with several new lines<br>
 # for readability (in case you remove the grep pipe.)<br>
 # The grep is just used to prune all lines that are not search<br>
 # results, and then awk is used to print the search result number<br>
 # and the URL<br>
-sed -E &ldquo;s/&lt;[^h]*href=\&quot;\/url[^=]*=([^&amp;]*)&amp;[^\&quot;]*\&ldquo;&gt;/\n SearchData, \1    \n\n/g&rdquo; search$num | grep &ldquo;SearchData&rdquo; | awk &ldquo;{print $iter+NR \&rdquo; \&rdquo; \$2}&rdquo;  done</p>
+sed -E &ldquo;s/&lt;[^h]*href=\&quot;\/url[^=]*=([^&amp;]*)&amp;[^\&quot;]*\&quot;&gt;/\n SearchData, \1    \n\n/g&rdquo; search$num | grep &ldquo;SearchData&rdquo; | awk &ldquo;{print $iter+NR \&rdquo; \&quot; \$2}&quot;  done</p>
 <pre><code>  
 \# The script leaves a lot of files named &quot;search??&quot; laying in the directory it  
 \# is executed. In some sense this is a feature, not a bug. You can  

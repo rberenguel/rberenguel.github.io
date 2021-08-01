@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Multiline shebang with zsh and running pyenv under cron</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Multiline shebang with zsh and running pyenv under cron" />
 <meta property="og:description" content="These probably qualify as the most one weird trick I have figured out this year." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/06/multiline-shebang-and-pyenv-in-cron.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-06-03T22:30:33+02:00" />
 <meta property="article:modified_time" content="2020-06-03T22:30:33+02:00" />
+
 <meta itemprop="name" content="Multiline shebang with zsh and running pyenv under cron">
-<meta itemprop="description" content="These probably qualify as the most one weird trick I have figured out this year.">
-<meta itemprop="datePublished" content="2020-06-03T22:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-06-03T22:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="499">
-
-
-
+<meta itemprop="description" content="These probably qualify as the most one weird trick I have figured out this year."><meta itemprop="datePublished" content="2020-06-03T22:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-06-03T22:30:33+02:00" />
+<meta itemprop="wordCount" content="500">
 <meta itemprop="keywords" content="Linux, Mac,Python," />
 
     
@@ -146,7 +143,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 499 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 500 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -156,25 +153,24 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>These probably qualify as the most <em>one weird trick</em> I have figured out this year.</p>
 <h2 id="multiline-shebang">Multiline shebang</h2>
 <p>Basically this is an answer to <em>how can I configure configure the Python environment in the shebang</em>? Like, say, to start a virtual environment. You can find many examples with <a href="https://rosettacode.org/wiki/Multiline_shebang#Python">bash</a> here. But, how do you use it with zsh? And what it is?</p>
-<figure class="fig-wide">
-    <img src="hashsign.jpg"
-         alt="Photo by Jan Baborák on Unsplash"/> <figcaption>
+<figure class="fig-wide"><img src="hashsign.jpg"
+         alt="Photo by Jan Baborák on Unsplash"/><figcaption>
             <p>Photo by Jan Baborák on Unsplash</p>
         </figcaption>
 </figure>
 
 <p>It is text after a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> expression in a script that is run by zsh, while eventually running the rest of the code. It feels a bit like a <a href="https://en.m.wikipedia.org/wiki/Quine_(computing)">quine</a>.</p>
 <p>I faced this when writing my own provider script for <a href="https://github.com/tanin47/tip">Tip</a> (a very recommended small app for Mac). Although it may not be required, but was fun as a problem to crack. The issue was twofold: I needed to run it under <code>zsh</code> <em>and</em> I wanted to run my script under a virtual environment.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
-</span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#e6db74">&#34;true&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
+</span><span style="color:#75715e"></span><span style="color:#e6db74">&#34;&#34;&#34;true&#34;</span>
 source /Users/ruben/.pyenvzshrc
 export PYENV_VIRTUALENV_DISABLE_PROMPT<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
 pyenv activate tip-provider
 exec python <span style="color:#e6db74">&#34;</span>$0<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
 exit <span style="color:#ae81ff">127</span>
-<span style="color:#e6db74">&#34;&#34;</span><span style="color:#e6db74">&#34;
+<span style="color:#e6db74">&#34;&#34;&#34;
 </span><span style="color:#e6db74">
-</span><span style="color:#e6db74">__doc__ = &#34;</span>Script <span style="color:#66d9ef">for</span> https://github.com/tanin47/tip<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">__doc__ = &#34;</span>Script <span style="color:#66d9ef">for</span> https://github.com/tanin47/tip<span style="color:#e6db74">&#34;
 </span><span style="color:#e6db74">
 </span><span style="color:#e6db74">[…python code in here…]
 </span></code></pre></div><p>What is this? First, this is going to be executed as a <code>zsh</code> script. So, we have</p>
@@ -198,7 +194,7 @@ exit <span style="color:#ae81ff">127</span>
 <h2 id="running-pyenv-in-cron">Running <code>pyenv</code> in cron</h2>
 <p>This is a repeated issue I have faced: running things under cron fails for… shell reasons. I wanted to run <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> regularly, to always have my note graph fresh on iCloud. The goal is similar to the previous: running Python in a specific virtual environment.</p>
 <p>Luckily, this is easier (although a bit slower):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/local/bin/zsh
 </span><span style="color:#75715e"></span>source /Users/ruben/.zshrc
 pyenv activate bear-note-graph <span style="color:#f92672">||</span> true &gt;/tmp/bear_graph_tmp_stdout.log 2&gt;/tmp/bear_graph_tmp_stderr.log
 bear-note-graph &gt;&gt;/tmp/bear_graph_tmp_stdout.log 2&gt;&gt;/tmp/bear_graph_tmp_stderr.log

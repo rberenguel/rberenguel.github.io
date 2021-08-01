@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Scribus for mathematical posters</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -43,20 +43,17 @@
   Note from 2019: I can&rsquo;t find the final version of that poster, only a modified version from a few months later for another conference.
 The first piece of advise, is to set page guides where needed (in the Page menu, you can put them at a certain numerical place, and then move them along) and then Snap to guides in the same menu." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2009/11/scribus-for-mathematical-posters.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-11-02T01:00:00+01:00" />
 <meta property="article:modified_time" content="2009-11-02T01:00:00+01:00" />
+
 <meta itemprop="name" content="Scribus for mathematical posters">
 <meta itemprop="description" content="As you may already know, I presented a poster at a conference recently, and did the set up with Scribus, the texts with LaTeX with the Beamer and Beamerposter packages.
  Setting up
   Note from 2019: I can&rsquo;t find the final version of that poster, only a modified version from a few months later for another conference.
-The first piece of advise, is to set page guides where needed (in the Page menu, you can put them at a certain numerical place, and then move them along) and then Snap to guides in the same menu.">
-<meta itemprop="datePublished" content="2009-11-02T01:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2009-11-02T01:00:00&#43;01:00" />
+The first piece of advise, is to set page guides where needed (in the Page menu, you can put them at a certain numerical place, and then move them along) and then Snap to guides in the same menu."><meta itemprop="datePublished" content="2009-11-02T01:00:00+01:00" />
+<meta itemprop="dateModified" content="2009-11-02T01:00:00+01:00" />
 <meta itemprop="wordCount" content="280">
-
-
-
 <meta itemprop="keywords" content="Fractals,Maths," />
 
     
@@ -165,9 +162,8 @@ The first piece of advise, is to set page guides where needed (in the Page menu,
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As you may already know, I presented a <a href="https://mostlymaths.net/docs/20101009-PosterWarsaw.jpg">poster</a>
 at a conference recently, and did the set up with <a href="https://www.scribus.net">Scribus</a>, the texts with LaTeX
 with the Beamer and <a href="https://ctan.org/pkg/beamerposter?lang=en">Beamerposter</a> packages.</p>
-<figure class="fig-wide">
-    <img src="scribus.jpg"
-         alt="Setting up"/> <figcaption>
+<figure class="fig-wide"><img src="scribus.jpg"
+         alt="Setting up"/><figcaption>
             <p>Setting up</p>
         </figcaption>
 </figure>
@@ -183,7 +179,7 @@ except the main title were embedded images (<code>PS</code> for the <code>LaTeX<
 images), thus the draw time was really long. I also sett the DPI of all non-PS
 images at at least 400. I wanted a nice print.</p>
 <p>The code for the slide-like blocks is the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>slidestop,compress<span style="color:#e6db74">\]</span>{beamer} 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#66d9ef">\\</span>documentclass<span style="color:#e6db74">\[</span>slidestop,compress<span style="color:#e6db74">\]</span>{beamer} 
 <span style="color:#66d9ef">\\</span>usepackage<span style="color:#e6db74">\[</span>orientation<span style="color:#f92672">=</span>portrait,size<span style="color:#f92672">=</span>custom, width<span style="color:#f92672">=</span><span style="color:#ae81ff">25</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, debug<span style="color:#e6db74">\]</span>{beamerposter} 
 <span style="color:#66d9ef">\\</span>usepackage{beamerthemeshadow} 
 <span style="color:#66d9ef">\\</span>usepackage{beamerouterthemedefault} 

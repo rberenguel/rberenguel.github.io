@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | A context manager to measure elapsed time?</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="A context manager to measure elapsed time?" />
 <meta property="og:description" content="Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project Timing Context Manager, which I actively ignored for many months. New year, new me, and a conversation with Marc Ramírez moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/01/context-managing-time.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/01/context-managing-time.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-01-13T18:15:52+01:00" />
 <meta property="article:modified_time" content="2020-01-13T18:15:52+01:00" />
+
 <meta itemprop="name" content="A context manager to measure elapsed time?">
-<meta itemprop="description" content="Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project Timing Context Manager, which I actively ignored for many months. New year, new me, and a conversation with Marc Ramírez moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.">
-<meta itemprop="datePublished" content="2020-01-13T18:15:52&#43;01:00" />
-<meta itemprop="dateModified" content="2020-01-13T18:15:52&#43;01:00" />
-<meta itemprop="wordCount" content="1070">
-
-
-
+<meta itemprop="description" content="Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project Timing Context Manager, which I actively ignored for many months. New year, new me, and a conversation with Marc Ramírez moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active."><meta itemprop="datePublished" content="2020-01-13T18:15:52+01:00" />
+<meta itemprop="dateModified" content="2020-01-13T18:15:52+01:00" />
+<meta itemprop="wordCount" content="1073">
 <meta itemprop="keywords" content="Python," />
 
     
@@ -146,7 +143,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1070 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1073 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -154,9 +151,8 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Around a year ago (give or take a few months), I was talking with a coworker about context managers, and a question arose: could you use a context manager to measure elapsed time? I stashed the question away, and created a project <em>Timing Context Manager</em>, which I actively ignored for many months. New year, new me, and a conversation with <a href="https://twitter.com/marcraminv">Marc Ramírez</a> moved me to unblock some of my old projects. This was the easiest project I had in Python, so I moved it to active.</p>
-<figure class="fig-wide">
-    <img src="hourglass.jpg"
-         alt="Photo by Nathan Dumlao on Unsplash"/> <figcaption>
+<figure class="fig-wide"><img src="hourglass.jpg"
+         alt="Photo by Nathan Dumlao on Unsplash"/><figcaption>
             <p>Photo by  <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nathan Dumlao</a>  on  <a href="https://unsplash.com/s/photos/hourglass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
         </figcaption>
 </figure>
@@ -171,64 +167,63 @@
 <li>There is a handy module in the standard library for working with simple context managers, <code>contextlib</code>. For easy cases, you can just decorate a block of code using <code>yield</code> (coincidence?) and it creates a context manager from it.</li>
 </ul>
 <p>The most famous manager is probably the file manager:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">filename</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">w</span><span style="color:#e6db74">&#39;</span>) <span style="color:#66d9ef">as</span> f:
-    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Hello file</span><span style="color:#e6db74">&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;filename&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> f:
+    f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;Hello file&#39;</span>)
 </code></pre></div><h2 id="a-bare-bones-implementation">A bare-bones implementation</h2>
 <p>Once we know how a context manager works, we can implement a very simple version pretty quickly. Just use time difference to compute timing spans between entering and exiting. No need to go fancy.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
 <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FirstManager</span>:
     _durations <span style="color:#f92672">=</span> {}
-    <span style="color:#66d9ef">def</span> __init__(self, name<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">unknown</span><span style="color:#e6db74">&#39;</span>):
+    <span style="color:#66d9ef">def</span> __init__(self, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;unknown&#39;</span>):
         self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
 
     <span style="color:#66d9ef">def</span> __enter__(self):
         self<span style="color:#f92672">.</span>start <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
 
     <span style="color:#66d9ef">def</span> __exit__(self, <span style="color:#f92672">*</span>args):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        Exceptions are captured in *args, we’ll handle none, since failing can be timed anyway</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Exceptions are captured in *args, we’ll handle none, since failing can be timed anyway
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         self<span style="color:#f92672">.</span>_durations[self<span style="color:#f92672">.</span>_name] <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">-</span> self<span style="color:#f92672">.</span>start
 
-<span style="color:#66d9ef">with</span> FirstManager(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">foo</span><span style="color:#e6db74">&#39;</span>) <span style="color:#66d9ef">as</span> _:
+<span style="color:#66d9ef">with</span> FirstManager(<span style="color:#e6db74">&#39;foo&#39;</span>) <span style="color:#66d9ef">as</span> _:
     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
 
-<span style="color:#66d9ef">print</span>(FirstManager<span style="color:#f92672">.</span>_durations[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">foo</span><span style="color:#e6db74">&#39;</span>])
+print(FirstManager<span style="color:#f92672">.</span>_durations[<span style="color:#e6db74">&#39;foo&#39;</span>])
 <span style="color:#75715e"># &gt; 0:00:01.005079</span>
 </code></pre></div><p>Yay, works.</p>
 <h2 id="decorator-goodness">Decorator goodness</h2>
 <p>You can go a step ahead in usability and Pythonity by creating a decorator to wrap functions and methods. This is offered in <code>contextlib</code>, and is a very minor modification away from the code above.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
 <span style="color:#f92672">from</span> contextlib <span style="color:#f92672">import</span> ContextDecorator
 <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SecondManager</span>(ContextDecorator):
     _durations <span style="color:#f92672">=</span> {}
-    <span style="color:#66d9ef">def</span> __init__(self, name<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">unknown</span><span style="color:#e6db74">&#39;</span>):
+    <span style="color:#66d9ef">def</span> __init__(self, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;unknown&#39;</span>):
         self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
 
     <span style="color:#66d9ef">def</span> __enter__(self):
         self<span style="color:#f92672">.</span>start <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
 
     <span style="color:#66d9ef">def</span> __exit__(self, <span style="color:#f92672">*</span>args):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        Exceptions are captured in *args, we’ll handle none</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Exceptions are captured in *args, we’ll handle none
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         self<span style="color:#f92672">.</span>_durations[self<span style="color:#f92672">.</span>_name] <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">-</span> self<span style="color:#f92672">.</span>start
 
-<span style="color:#a6e22e">@SecondManager</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">nap</span><span style="color:#e6db74">&#34;</span>)
+<span style="color:#a6e22e">@SecondManager</span>(<span style="color:#e6db74">&#34;nap&#34;</span>)
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nap</span>(length: int):
     time<span style="color:#f92672">.</span>sleep(length)
 
 nap(<span style="color:#ae81ff">2</span>)
 
-<span style="color:#66d9ef">print</span>(SecondManager<span style="color:#f92672">.</span>_durations[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">nap</span><span style="color:#e6db74">&#39;</span>])
+print(SecondManager<span style="color:#f92672">.</span>_durations[<span style="color:#e6db74">&#39;nap&#39;</span>])
 <span style="color:#75715e"># &gt; 0:00:02.005103</span>
-</code></pre></div><figure class="fig-left">
-    <img src="GIL.gif"
-         alt="Dancing GIL"/> <figcaption>
+</code></pre></div><figure class="fig-left"><img src="GIL.gif"
+         alt="Dancing GIL"/><figcaption>
             <p>Dancing GIL</p>
         </figcaption>
 </figure>
@@ -238,7 +233,7 @@ nap(<span style="color:#ae81ff">2</span>)
 <h2 id="unholy-metaclass-tweaking">Unholy metaclass tweaking</h2>
 <p>Python is a fully object oriented language. So, everything is an instance of a class… even <em>a</em> <code>class</code>. What class is a <code>class</code>? It&rsquo;s of class <code>type</code> (you can find out yourself by asking for the type of any class)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Since Python is a pretty powerful language, you can modify what is the class of any… class. Enough beating around the bushes, the class of a class is known as a metaclass, hence the heading above. And this is what I&rsquo;ll do here, and this is what I really, really encourage you <em>not</em> to do, ever. Metaclass hacking is not recommended. This is for fun. Please, don&rsquo;t @ me.</p>
 <p>What does this mean exactly? Well, when you define a class:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>:
     <span style="color:#66d9ef">def</span> __init__(self):
         <span style="color:#66d9ef">pass</span>
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">method</span>(self):
@@ -254,7 +249,7 @@ nap(<span style="color:#ae81ff">2</span>)
 <li>You can do pretty crazy stuff with Python as well if you try. That is fun, but not in production</li>
 </ul>
 <h2 id="for-the-curious">For the curious</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Foo</span>:
 	<span style="color:#66d9ef">def</span> __init__(self):
 		<span style="color:#66d9ef">pass</span>
 
@@ -271,14 +266,14 @@ nap(<span style="color:#ae81ff">2</span>)
 		<span style="color:#66d9ef">pass</span>
 
 	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_getitem</span>(self, key):
-		<span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Trying to get {}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(key))
+		print(<span style="color:#e6db74">&#34;Trying to get </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(key))
 		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>
 </code></pre></div><p>You can try for yourself, <code>Foo</code> won&rsquo;t offer dictionary access but <code>Bar</code> will. This is because class method lookup will hook itself into <code>type</code> (the class of <code>Foo</code>), won&rsquo;t find <code>__getitem__</code> on <code>type</code> and will look no further because it&rsquo;s a magic method. If I remember correctly I may have written the details about why <em>somewhere</em> when I wrote about how the <code>in</code> keyword works internally in Python <a href="https://mostlymaths.net/2018/04/how-does-in-keyword-work-in-python.html/">here</a>.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Try to read the previous sentence really fast if you dare <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Try to read the previous sentence really fast if you dare&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section><hr/>

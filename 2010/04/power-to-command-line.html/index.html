@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Power to the command line</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -42,19 +42,16 @@
 I discovered commandlinefu.com a few years ago, while looking for a way to do&hellip; something. I don&rsquo;t even enter that often, although it is a brilliant place to discover how to do X in Linux/UNIX.
 Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2010/04/power-to-command-line.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2010/04/power-to-command-line.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-04-08T00:01:00+02:00" />
 <meta property="article:modified_time" content="2010-04-08T00:01:00+02:00" />
+
 <meta itemprop="name" content="Power to the command line">
 <meta itemprop="description" content="The command line. That small place, where a lot can happen. And more so if you are a Linux user… How to maximize it? Where to harness its power?
 I discovered commandlinefu.com a few years ago, while looking for a way to do&hellip; something. I don&rsquo;t even enter that often, although it is a brilliant place to discover how to do X in Linux/UNIX.
-Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up.">
-<meta itemprop="datePublished" content="2010-04-08T00:01:00&#43;02:00" />
-<meta itemprop="dateModified" content="2010-04-08T00:01:00&#43;02:00" />
+Among its all time greats I found some gems, and some others I discovered elsewhere, or even I made up."><meta itemprop="datePublished" content="2010-04-08T00:01:00+02:00" />
+<meta itemprop="dateModified" content="2010-04-08T00:01:00+02:00" />
 <meta itemprop="wordCount" content="464">
-
-
-
 <meta itemprop="keywords" content="Linux," />
 
 <meta name="twitter:card" content="summary" />
@@ -165,16 +162,16 @@ Linux/UNIX.</p>
 elsewhere, or even I made up.</p>
 <h2 id="command-line-gems">Command line gems</h2>
 <p>Run the last command as root: <code>sudo !!</code> as in</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install something -&gt; error, you have to be root 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install something -&gt; error, you have to be root 
 sudo !!
 </code></pre></div><p>The double exclamation mark recovers the last command in the history.</p>
 <p>Use the last argument for the last command: <code>!$</code> as in</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /path/to/somewhere
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /path/to/somewhere
 cd !$
 </code></pre></div><p>Change to the previous directory: <code>cd -</code> as in (after the previous example to
 get back to where you started). Good paired with <code>popd</code> (bash keeps a stack of
 visited directories)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd -
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd -
 </code></pre></div><p>Backward history incremental search: <code>C-r</code> in the terminal prompt, start writing
 the command you want to backward-search. Press <code>C-r</code> to keep on searching for that
 term. Best combined with <a href="https://mostlymaths.net/2018/04/modifying-agnoster-theme-for-zsh/"><code>fzf</code></a></p>

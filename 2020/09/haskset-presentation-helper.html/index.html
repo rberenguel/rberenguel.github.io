@@ -6,7 +6,7 @@
     
     <title>mostlymaths.net  | Haskset: Deckset presentations in reveal.js</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.2" />
+    <meta name="generator" content="Hugo 0.86.0" />
     
     
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,17 +40,14 @@
     <meta property="og:title" content="Haskset: Deckset presentations in reveal.js" />
 <meta property="og:description" content="After my happy experience with Haskell rewriting the ticketiser from Python to Haskell, I moved next on my list of rewrites." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2020/09/haskset-presentation-helper.html/" />
+<meta property="og:url" content="https://mostlymaths.net/2020/09/haskset-presentation-helper.html/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-09-10T18:30:33+02:00" />
 <meta property="article:modified_time" content="2020-09-10T18:30:33+02:00" />
+
 <meta itemprop="name" content="Haskset: Deckset presentations in reveal.js">
-<meta itemprop="description" content="After my happy experience with Haskell rewriting the ticketiser from Python to Haskell, I moved next on my list of rewrites.">
-<meta itemprop="datePublished" content="2020-09-10T18:30:33&#43;02:00" />
-<meta itemprop="dateModified" content="2020-09-10T18:30:33&#43;02:00" />
-<meta itemprop="wordCount" content="1281">
-
-
-
+<meta itemprop="description" content="After my happy experience with Haskell rewriting the ticketiser from Python to Haskell, I moved next on my list of rewrites."><meta itemprop="datePublished" content="2020-09-10T18:30:33+02:00" />
+<meta itemprop="dateModified" content="2020-09-10T18:30:33+02:00" />
+<meta itemprop="wordCount" content="1286">
 <meta itemprop="keywords" content="Python,Haskell," />
 
     
@@ -152,7 +149,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 7 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1281 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1286 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -160,8 +157,7 @@
     
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>After my happy experience with Haskell rewriting <em><a href="https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/">the ticketiser</a></em> from Python to Haskell, I moved next on my list of rewrites.</p>
-<figure class="fig-full">
-    <img src="https://mostlymaths.net/images/dresser/wide5.jpg"/> 
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide5.jpg"/>
 </figure>
 
 <p>A year or so ago I wrote a script in AWK that transformed a Markdown presentation formatted for <a href="https://www.deckset.com">Deckset</a> into a Markdown presentation that <a href="https://pandoc.org">Pandoc</a> can convert into a <a href="http://revealjs.com">reveal.js</a> presentation, <a href="https://github.com/rberenguel/awkrdeck">awkrdeck</a>.</p>
@@ -195,15 +191,13 @@
 <ul>
 <li><strong>Split-images</strong>: If you add $N$ images in a slide, they will automatically split vertically. It works great for mixing concepts, or for the introductory slide</li>
 </ul>
-<figure class="fig-wide">
-    <img src="split.jpg"/> 
+<figure class="fig-wide"><img src="split.jpg"/>
 </figure>
 
 <ul>
 <li><strong>Half-images</strong>: You can choose an image to have at the left or right, with text on the other. Makes slides more fluid, preventing too-much-text syndrome.</li>
 </ul>
-<figure class="fig-wide">
-    <img src="half.jpg"/> 
+<figure class="fig-wide"><img src="half.jpg"/>
 </figure>
 
 <div class="sb sb-2">
@@ -226,7 +220,7 @@
 <p>The Haskell implementation is a more proper parser-compiler. It still needs improvement, but the parser is built using parser combinators, that emit <code>Object</code> instances. A <code>Slide</code> is formed by a list of <code>Object</code>s. An object can be a Markdown header, a text block, a list…</p>
 <p>You can find the parser <a href="https://github.com/rberenguel/haskset/blob/master/src/SlideParser.hs">here</a> and the &ldquo;compiler&rdquo; <a href="https://github.com/rberenguel/haskset/blob/master/src/SlideConverter.hs">here</a>.</p>
 <p>Here&rsquo;s one of the parsers for clarity:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">headerParser</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span><span style="color:#66d9ef">ParsecT</span> <span style="color:#66d9ef">String</span> () <span style="color:#66d9ef">Identity</span> <span style="color:#66d9ef">Object</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">headerParser</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span><span style="color:#66d9ef">ParsecT</span> <span style="color:#66d9ef">String</span> () <span style="color:#66d9ef">Identity</span> <span style="color:#66d9ef">Object</span>
 <span style="color:#a6e22e">headerParser</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
   <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>spaces
   header <span style="color:#f92672">&lt;-</span> pack <span style="color:#f92672">&lt;$&gt;</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>many1 (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>char <span style="color:#e6db74">&#39;#&#39;</span>)
@@ -243,19 +237,19 @@
 </div>
 <p>In the &ldquo;compiler&rdquo;, a function <code>format</code> takes an <code>Object</code> (and some formatting directives, needed for some cases) and emits <code>Text</code> with the correct formatting for <code>Pandoc</code>. As easy as that.</p>
 <p>Here&rsquo;s part of this function. Now that I have a clearer idea, I should rewrite this area, though.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">format</span> <span style="color:#f92672">::</span> [<span style="color:#66d9ef">Directive</span>] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Object</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Text</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">format</span> <span style="color:#f92672">::</span> [<span style="color:#66d9ef">Directive</span>] <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Object</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Text</span>
 <span style="color:#a6e22e">format</span> <span style="color:#66d9ef">_</span> (<span style="color:#66d9ef">Header</span> level text) <span style="color:#f92672">=</span> 
-  <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span>concat [level <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#</span><span style="color:#e6db74">&#34;</span>, 
-            <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span>, 
+  <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span>concat [level <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#34;#&#34;</span>, 
+            <span style="color:#e6db74">&#34; &#34;</span>, 
             reformatFootnote 
             (reformatInlinedEmph text)]
-<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">_</span> <span style="color:#66d9ef">Blank</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\</span><span style="color:#ae81ff">n</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">_</span> <span style="color:#66d9ef">Blank</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
 <span style="color:#75715e">-- continues…</span>
 </code></pre></div><p>Here you can see already a couple of the &ldquo;special stuff&rdquo; that needs to be handled. <em>Footnotes</em> are not objects (due to how slides are created in the final formatting, they can&rsquo;t be, at least not yet), thus need to be processed separately. Additionally, Markdown emphasis markers in headers are not (properly?) handled by <code>Pandoc</code>, thus need to be wrapped in spaces for them to be rendered. This is <code>reformatInlinedEmph</code>. Both this and footnotes are handled by parsers-rewriters, in one go.</p>
 <p>This is what one of them looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">emphParser</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span><span style="color:#66d9ef">ParsecT</span> <span style="color:#66d9ef">String</span> () <span style="color:#66d9ef">Identity</span> <span style="color:#66d9ef">String</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#a6e22e">emphParser</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span><span style="color:#66d9ef">ParsecT</span> <span style="color:#66d9ef">String</span> () <span style="color:#66d9ef">Identity</span> <span style="color:#66d9ef">String</span>
 <span style="color:#a6e22e">emphParser</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
-  <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>choice [<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>string <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">__</span><span style="color:#e6db74">&#34;</span>), <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>string <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_</span><span style="color:#e6db74">&#34;</span>)]
+  <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>choice [<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>string <span style="color:#e6db74">&#34;__&#34;</span>), <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>string <span style="color:#e6db74">&#34;_&#34;</span>)]
 
 <span style="color:#a6e22e">headerInlinedEmph</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span><span style="color:#66d9ef">ParsecT</span> <span style="color:#66d9ef">String</span> () <span style="color:#66d9ef">Identity</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Text</span>
 <span style="color:#a6e22e">headerInlinedEmph</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
@@ -264,14 +258,14 @@
   middle <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>many <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>alphaNum
   emph2 <span style="color:#f92672">&lt;-</span> emphParser
   end <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>manyTill <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>alphaNum <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>eof
-  return (pack (start <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">++</span> emph1 <span style="color:#f92672">++</span> middle <span style="color:#f92672">++</span> emph2 <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">++</span> end))
+  return (pack (start <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">++</span> emph1 <span style="color:#f92672">++</span> middle <span style="color:#f92672">++</span> emph2 <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">++</span> end))
 
 <span style="color:#a6e22e">reformatInlinedEmph</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Text</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span><span style="color:#66d9ef">Text</span>
-<span style="color:#a6e22e">reformatInlinedEmph</span> text <span style="color:#f92672">=</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span>intercalate <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span> (map rightParse (splitOn <span style="color:#e6db74">&#34;</span><span style="color:#e6db74"> </span><span style="color:#e6db74">&#34;</span> text))
+<span style="color:#a6e22e">reformatInlinedEmph</span> text <span style="color:#f92672">=</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">.</span>intercalate <span style="color:#e6db74">&#34; &#34;</span> (map rightParse (splitOn <span style="color:#e6db74">&#34; &#34;</span> text))
   <span style="color:#66d9ef">where</span>
-    rightParse text <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>parse (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>choice [<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try headerInlinedEmph, <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try anyUntilEof]) <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span> (unpack text)) <span style="color:#66d9ef">of</span>
+    rightParse text <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>parse (<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>choice [<span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try headerInlinedEmph, <span style="color:#66d9ef">Parsec</span><span style="color:#f92672">.</span>try anyUntilEof]) <span style="color:#e6db74">&#34;&#34;</span> (unpack text)) <span style="color:#66d9ef">of</span>
       <span style="color:#66d9ef">Right</span> thing <span style="color:#f92672">-&gt;</span> thing
-      <span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">_</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">[Failed parsing inlined formats]</span><span style="color:#e6db74">&#34;</span>
+      <span style="color:#66d9ef">Left</span> <span style="color:#66d9ef">_</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;[Failed parsing inlined formats]&#34;</span>
 </code></pre></div><p>As you can see in the <code>Left</code> case at the bottom, I&rsquo;m not throwing or emitting errors. I prefer outputting errors directly into the slide. The reason is simple: I&rsquo;d rather have slides with some text errors I can fix by editing the HTML than having to rewrite parts of the code because the error stops the process. Imagine being in a hurry and needing the <code>reveal.js</code> version <em>now</em>.</p>
 <div class="note ">
 <span class='scaps ' style="display: inline-block;">
@@ -288,8 +282,7 @@
 <br/>   
 <p>Maybe half-jokingly, but the <code>do</code> block in <code>headerInlinedEmph</code> looks very clear, step-wise imperative. Readable.</p>
 <p>Also, for a <em>very typed</em>, supposedly <em>painful</em> programming language, there is a surprisingly small amount of type annotations. Only the function headers. That doesn&rsquo;t sound so bad, doesn&rsquo;t it? Usually I don&rsquo;t even type those, but just write the body of the function and the Haskell language server infers some options for them, you can choose any and they are automatically added:</p>
-<figure class="fig-full">
-    <img src="FooParser.gif"/> 
+<figure class="fig-full"><img src="FooParser.gif"/>
 </figure>
 
 <div class="sb sb-2">
@@ -297,17 +290,15 @@
 </div>
 <h3 id="does-it-work">Does it work?</h3>
 <p>Check for yourself:</p>
-<figure class="fig-full">
-    <img src="deckset.jpg"
-         alt="Deckset original"/> <figcaption>
+<figure class="fig-full"><img src="deckset.jpg"
+         alt="Deckset original"/><figcaption>
             <p>Deckset original</p>
         </figcaption>
 </figure>
 
 <br/>
-<figure class="fig-full">
-    <img src="haskset.jpg"
-         alt="Haskset&#43;Pandoc&#43;reveal.js"/> <figcaption>
+<figure class="fig-full"><img src="haskset.jpg"
+         alt="Haskset&#43;Pandoc&#43;reveal.js"/><figcaption>
             <p><code>Haskset</code>+<code>Pandoc</code>+<code>reveal.js</code></p>
         </figcaption>
 </figure>

@@ -6,11 +6,7 @@
     <description>Recent content in Command Line on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2020 00:30:33 +0200</lastBuildDate>
-    
-	<atom:link href="https://mostlymaths.net/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 17 Nov 2020 00:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Send a bunch of URLs as PDF to a Kindle</title>
       <link>https://mostlymaths.net/2020/11/url-pdf-kindle.html/</link>
