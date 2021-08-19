@@ -6,7 +6,34 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Aug 2021 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Aug 2021 18:02:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hive</title>
+      <link>https://mostlymaths.net/tags/hive/</link>
+      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/hive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VS Code</title>
+      <link>https://mostlymaths.net/tags/vs-code/</link>
+      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/vs-code/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
@@ -179,15 +206,6 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>LaTeX</title>
       <link>https://mostlymaths.net/tags/latex/</link>
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
@@ -328,15 +346,6 @@
       <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-papers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hive</title>
-      <link>https://mostlymaths.net/tags/hive/</link>
-      <pubDate>Tue, 19 Jan 2021 14:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/hive/</guid>
       <description></description>
     </item>
     

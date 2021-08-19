@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VS Code on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/vs-code/</link>
+    <description>Recent content in VS Code on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Aug 2021 18:02:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debug Go in VS Code</title>
+      <link>https://mostlymaths.net/2021/08/golang-debugging-vs-code.html/</link>
+      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/08/golang-debugging-vs-code.html/</guid>
+      <description>&lt;p&gt;So, you want to debug some Go in VS Code. And maybe setup some Docker containers with services before? How the hell do you configure that?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

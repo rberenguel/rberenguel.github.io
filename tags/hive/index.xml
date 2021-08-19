@@ -6,7 +6,16 @@
     <description>Recent content in Hive on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 14:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Aug 2021 18:02:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debug Go in VS Code</title>
+      <link>https://mostlymaths.net/2021/08/golang-debugging-vs-code.html/</link>
+      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/08/golang-debugging-vs-code.html/</guid>
+      <description>&lt;p&gt;So, you want to debug some Go in VS Code. And maybe setup some Docker containers with services before? How the hell do you configure that?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Lakehouse: It&#39;s like Delta Lake, but not really</title>
       <link>https://mostlymaths.net/2021/01/lakehouse.html/</link>
