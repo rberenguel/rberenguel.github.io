@@ -6,13 +6,85 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Aug 2021 18:02:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 16:15:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://mostlymaths.net/tags/aws/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Golang</title>
       <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://mostlymaths.net/tags/sql/</link>
+      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/sql/</guid>
       <description></description>
     </item>
     
@@ -31,15 +103,6 @@
       <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/vs-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -67,42 +130,6 @@
       <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/product/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -197,15 +224,6 @@
     </item>
     
     <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>LaTeX</title>
       <link>https://mostlymaths.net/tags/latex/</link>
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
@@ -220,24 +238,6 @@
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://mostlymaths.net/tags/aws/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>https://mostlymaths.net/tags/sql/</link>
-      <pubDate>Sun, 30 May 2021 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/sql/</guid>
       <description></description>
     </item>
     
