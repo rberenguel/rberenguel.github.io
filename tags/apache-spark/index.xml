@@ -6,7 +6,16 @@
     <description>Recent content in Apache Spark on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 21:02:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 08:23:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Kafka with SSL and accessing it with Go</title>
+      <link>https://mostlymaths.net/2021/09/kafka-ssl-go.html/</link>
+      <pubDate>Fri, 03 Sep 2021 08:23:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/09/kafka-ssl-go.html/</guid>
+      <description>&lt;p&gt;Days of &lt;del&gt;fire&lt;/del&gt; Kafka and &lt;del&gt;thunder&lt;/del&gt; SSL.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>JSON woes in Apache Spark</title>
       <link>https://mostlymaths.net/2021/08/spark-json-woes.html/</link>

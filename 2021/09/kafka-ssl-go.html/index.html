@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Using Gephi with Google Analytics to visualize keywords and landing pages</title>
+    <title>mostlymaths.net  | Setting up Kafka with SSL and accessing it with Go</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.86.0" />
     
@@ -37,25 +37,23 @@
 
     
 
-    <meta property="og:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages" />
-<meta property="og:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs." />
+    <meta property="og:title" content="Setting up Kafka with SSL and accessing it with Go" />
+<meta property="og:description" content="Days of fire Kafka and thunder SSL." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2011-08-18T18:50:00+02:00" />
-<meta property="article:modified_time" content="2011-08-18T18:50:00+02:00" />
+<meta property="og:url" content="https://mostlymaths.net/2021/09/kafka-ssl-go.html/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-03T08:23:33+02:00" />
+<meta property="article:modified_time" content="2021-09-03T08:23:33+02:00" />
 
-<meta itemprop="name" content="Using Gephi with Google Analytics to visualize keywords and landing pages">
-<meta itemprop="description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."><meta itemprop="datePublished" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="dateModified" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="wordCount" content="1087">
-<meta itemprop="keywords" content="Blog,Data,Visualization," />
+<meta itemprop="name" content="Setting up Kafka with SSL and accessing it with Go">
+<meta itemprop="description" content="Days of fire Kafka and thunder SSL."><meta itemprop="datePublished" content="2021-09-03T08:23:33+02:00" />
+<meta itemprop="dateModified" content="2021-09-03T08:23:33+02:00" />
+<meta itemprop="wordCount" content="948">
+<meta itemprop="keywords" content="Apache Spark,Data,Scala," />
 
     
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png"/>
+<meta name="twitter:image:src" content="/2021/09/kafka-ssl-go.html//beetle.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -64,9 +62,8 @@ But this post is only mildly related to these books, since it started way before
 
 
 
-<meta name="twitter:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages"/>
-<meta name="twitter:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."/>
+<meta name="twitter:title" content="Setting up Kafka with SSL and accessing it with Go"/>
+<meta name="twitter:description" content="Days of fire Kafka and thunder SSL."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -84,7 +81,7 @@ But this post is only mildly related to these books, since it started way before
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png');">
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/09/kafka-ssl-go.html//beetle.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -138,192 +135,110 @@ But this post is only mildly related to these books, since it started way before
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Using Gephi with Google Analytics to visualize keywords and landing pages</h1>
+        <h1 class="fw1 mb1 f1">Setting up Kafka with SSL and accessing it with Go</h1>
         
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">(without using InsecureSkipVerify)</span>
+    </section>
+    
         
-        <time class="f6 mt4 dib tracked" datetime="2011-08-18T18:50:00&#43;02:00">August 18, 2011</time>
+        <time class="f6 mt4 dib tracked" datetime="2021-09-03T08:23:33&#43;02:00">September 3, 2021</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1087 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 5 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 948 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
-    <section class="w-100 mb3">
-      <span class="fw1  i" style="font-size: 0.4rem;">Some links are affiliate links</span>
-    </section>
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools.
-Recently I&rsquo;ve read two interesting books (<a href="http://www.amazon.com/gp/product/1849512086/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1849512086">Statistical Analysis with
-R</a>
-and <a href="http://www.amazon.com/gp/product/0470944889/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470944889">Visualize This: The FlowingData Guide to Design, Visualization, and
-Statistics</a>
-and I&rsquo;m on my way to another two to refresh my statistics knowledge.</p>
-<p>But this post is only mildly related to these books, since it started way
-before: the day I read about <a href="http://gephi.org/">Gephi</a>. Gephi is an open source
-graph visualization tool, to work with huge (or at least big) datasets and
-graphs. I&rsquo;ve seen it used to graph the friendship network from Facebook, or to
-graph tweet-retweets from Twitter (these two can be found in the Learn section
-from the Gephi website). In this post I&rsquo;ll guide you step by step to do a
-keyword-landing page directed graph, using data from your Google Analytics
-account.</p>
-<p>A directed graph is a graph with arrows. You have a set of sources (in this case
-keywords) and targets (in this case landing pages), and aggregate sources by
-name. Plot this, and you have a keyword-landing page graph like this one (data
-for the last month in mostlymaths.net restricted to the first 500 keywords).</p>
-<figure class="fig-wide"><img src="Keywords-LandingPages.png"
-         alt="Keywords (arrow) Landing pages"/><figcaption>
-            <p>Keywords (arrow) Landing pages</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Days of <del>fire</del> Kafka and <del>thunder</del> SSL.</p>
+<p>The issue has been some null fields where no nulls should appear, and then not being able to count them. It was very puzzling.</p>
+<figure class="fig-full"><img src="beetle.jpg"
+         alt="Photo by Weronika Marcińczyk on Unsplash"/><figcaption>
+            <p>Photo by <a href='https://unsplash.com/@weronikam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Weronika Marcińczyk</a> on <a href='https://unsplash.com/s/photos/beetle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
 
-<h2 id="what-interesting-things-you-can-read-from-such-a-graph">What interesting things you can read from such a graph</h2>
+<p>I have been setting up a personal project with Kubeless and Kafka (I saw something similar but way more elaborate at work and found it cool to play with), and I wanted to eventually plug SSL correctly between Kafka and a Go producer (with <a href="https://github.com/Shopify/sarama">Sarama</a>). But as it sometimes happen, stars (well…) aligned. I have been helping an adjacent team configuring exactly this for a local testing setup.</p>
+<p>This post is better read together with <a href="https://github.com/rberenguel/kafka-ssl-go">this repository</a>.</p>
+<p><figure class="fig-wide"><img src="go-up.png"/>
+</figure>
+
+<figure class="fig-wide"><img src="docker-up.png"
+         alt="It indeed works"/><figcaption>
+            <p>It indeed works</p>
+        </figcaption>
+</figure>
+</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<p>There are many tutorials and scripts to generate certificats for Kafka (or Java). In some kind of nutshell, they all involve in some form or another:</p>
+<ol>
+<li>Creating a signing key and certificate, for your fake <a href="https://en.wikipedia.org/wiki/Certificate_authority">Certificate Authority</a> (CA).</li>
+<li>Creating a <a href="https://en.wikipedia.org/wiki/Java_KeyStore">keystore</a> for Kafka.</li>
+<li>Creating a <a href="https://en.wikipedia.org/wiki/Certificate_signing_request">Certificate Signing Request</a> (CSR) into this keystore.</li>
+<li>Signing the request with the certificate from your CA.</li>
+<li>Import the certificate from the CA into the keystore (that seems to be necessary for JVM clients, maybe related to certificate chaining?)</li>
+<li>Import the signed certificate in the keystore.</li>
+<li>Import the CA certificate in the truststore (trust stores contain the certificates from CAs, to validate signed stuff).</li>
+</ol>
+<p>This is what the Dockerfile <a href="https://github.com/rberenguel/kafka-ssl-go/blob/main/certificate-creator/Dockerfile">here</a> and the script <a href="https://github.com/rberenguel/kafka-ssl-go/blob/main/certificate-creator/create-certs.sh">here</a> are prepared to do.</p>
+<div class="note reddish">
+<span class='scaps ' style="display: inline-block;">
+  Creating certs inside a Dockerfile?
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>Both at work and at home I have Mac M1s, and I have found so far that JVM-based Docker images have a tendency to misbehave randomly. Sometimes, they <em>hang</em>. Sometimes they look ok and <em>then hang</em>. Sometimes they <em>segfault</em>. Also, I couldn&rsquo;t get <code>keytool</code> to work locally. Combining all these:</p>
 <ul>
-<li>
-<p>Clustering: In this particular instance, I can find the &ldquo;clusters&rdquo; of my
-blog. You can see 3 big aggregations of keywords and landing pages
-(left-middle,up-center and right-middle). Each one of these marks pages and
-groups of pages with several landing keywords. The groupings mark like the
-&ldquo;big themes&rdquo; in my blog, at least from search engine traffic (these are
-memory techniques, 9 best programming books I&rsquo;ve read and seed germination
-respectively). Oddly enough, I&rsquo;ve had one visit landing in seed germination
-from the keyword &ldquo;gnus mail&rdquo;, thus the big seed germination cluster includes
-emacs.</p>
-</li>
-<li>
-<p>Big keywords: In gephi you can scale nodes depending on other table
-variables. For example, I can scale the landing page dots depending on the
-number of keywords, or the number of visits. In particular, I can show which
-keywords lead to more of my pages, by using the outDegree (number of arrows
-escaping) of a node.</p>
-</li>
-<li>
-<p>Big pages: Alternatively, I can scale nodes with the inDegree (number of
-arrows entering) to learn which pages have the most different keywords. I can
-also label the arrows with the number of visits (and scale them with this
-metric).</p>
-</li>
-<li>
-<p>Huge pages: with a little more work, I could scale with total visits to see
-which are my biggest pages together with the landing keywords.</p>
-</li>
+<li>The dockerfile has separate steps per key area, so in case any step hangs/dumps the other keys are cached and you don&rsquo;t need to repeat.</li>
+<li>The setup may <em>fail</em> locally, repeatedly with M1s: make sure your Kafka is reachable with <a href="https://github.com/edenhill/kcat">kcat</a> (née kafkacat) and that its logs are moving. If they don&rsquo;t, <code>docker compose down</code> and bring it up again. Once it&rsquo;s up it will work.</li>
 </ul>
-<h2 id="step-by-step-guide">Step by step guide</h2>
-<p>I&rsquo;ll assume that you can manage to download and install gephi on your own, and
-have some knowledge of Google Analytics. Of course, the first you need is to
-select the keyword and landing page fields in your Google Analytics page:</p>
-<figure class="fig-wide"><img src="GA-KeywordsLandingPages.png"/>
-</figure>
+</span>
+</div>
+<p>There&rsquo;s one crucial part I have omitted: certificates are associated with entities. That&rsquo;s organisations and servers. In most tutorials you can find around this is set up using the <code>CN</code> &ldquo;subject&rdquo; in keys. This is <em>Common Name</em>, which identifies the server (by server name) where the certificate applies, be it a signing or a client certificate. When a client connects to a server, it will check that the server name matches the name in the certificate offered. In most cases of how to connect Go with Kafka (in particular <a href="https://github.com/Shopify/sarama">Sarama</a>) the flag <code>InsecureSkipVerify</code> is used. With this, the server name is not checked when handshaking, opening the door to <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle</a> attacks.</p>
+<p>My first head-banging issue was with having used the same Common Name for the CA and the client. So, I used <code>kafka</code> everywhere. What is the problem? Well, think it in terms of a notary who certifies something.</p>
+<ul>
+<li>Notary: Hi, I&rsquo;m the notary and my name is <em>Kafka</em>, what do you want?</li>
+<li>Client: I want this certificate saying my name is <em>Kafka</em>.</li>
+<li>Notary: Cool, I&rsquo;ll sign here with my name, <em>Kafka</em>.</li>
+</ul>
+<p>Then, the client takes this to town hall, they see that <em>Kafka says that Kafka is named Kafka</em> and the paper is not accepted.</p>
+<p>This was the first problem I encountered with the certificates I was using, and neither Kafka nor Go were verbose enough. They just kept failing the SSL handshake, silently except for the final error. It wasn&rsquo;t until I verified the client certificate with the CA certificate that <code>openssl</code> told me.</p>
+<pre><code>openssl verify -CAfile our_ca.crt producer-ca-signed.crt
+</code></pre><p>Having signed with the same <code>CN</code> the command above will tell you that the certificate is invalid because it is self-signed. So, remember: <em>never use the same Common Name for a Certificate Authority and a signed client certificate.</em></p>
+<p>The next issue also took me pretty long, because it was extremely unexpected. Basically because I don&rsquo;t know much about SSL and I was just trying to get it working via snippets of documentation.</p>
+<p>After fixing the certificate with proper, different names, I kept having connectivity issues, Kafka and my Go producer were not shaking hands as they should. I couldn&rsquo;t figure out any way to debug SSL handshakes &ldquo;globally&rdquo; in Go (like you can do with <code>ssh</code>), so I pinged Kafka from Go with this snippet, just after creating a TLS configuration (I <a href="https://github.com/rberenguel/kafka-ssl-go/blob/main/go-producer/producer.go#L81">added it to the test producer</a> so it&rsquo;s somewhere I can copy-paste myself):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">dialer</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">net</span>.<span style="color:#a6e22e">Dialer</span>{
+		<span style="color:#a6e22e">Timeout</span>: <span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>,
+	}
 
-<p>Then select Show Rows and select 500:</p>
-<figure class="fig-not-so-wide"><img src="GA-Rows.png"/>
-</figure>
-
-<p>And get a nice CSV file with the export tab on top:</p>
-<figure class="fig-wide"><img src="GA-Export.png"/>
-</figure>
-
-<p>Now I don&rsquo;t know if this is because I select CSV and not CSV for Excel, but you
-have to clean the file: there are a lot of table identifiers to remove before
-the real data table. You also need to remove a line at the end of the file. You
-can do all this editing with any plain text editor. I used
-<a href="http://www.mostlymaths.net/search/label/emacs">emacs</a>.</p>
-<figure class="fig-wide"><img src="GA-Clean.png"/>
-</figure>
-
-<p>Remove all this, below Table you should have the useful data,</p>
-<figure class="fig-wide"><img src="GA-Clean2.png"/>
-</figure>
-
-<p>Remove the last line with dashes. Now the file is almost ready to be imported…
-You need to rename the Visits column to something else, for some odd reason
-Google Analytics copies the same column twice and Gephi needs unique column
-names. Ready to import. In Gephi, go to the Data Table window from the Window
-menu, and click Import Spreadsheet:</p>
-<figure class="fig-wide"><img src="Gephi-ImportSpreadhsheet.png"/>
-</figure>
-
-<p>And now you should select edges table and comma-separated:</p>
-<p><figure class="fig-wide"><img src="Gephi-Import.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-SourcesError.png"/>
-</figure>
-</p>
-<p>Oops. More tweaking of the CSV file is needed: Change the first two columns to
-Source and Target (and don&rsquo;t forget to mark comma as I did, too) and re-import
-the file:</p>
-<figure class="fig-wide"><img src="GA-ImportOK.png"/>
-</figure>
-
-<p>After clicking next, Gephi will ask you for the types of the columns. Since I&rsquo;m
-only interested in visits, pages/visit and average time on site, these are the
-only columns I want to be floats. You need them to be float to scale the nodes
-according to these parameters:</p>
-<figure class="fig-not-so-wide"><img src="Gephi-ImportParameters.png"/>
-</figure>
-
-<p>Next, we&rsquo;ll see a blob of points with no labels. Choose the Force Atlas
-algorithm in the Layout window, run for a while and then click stop:</p>
-<p><figure class="fig-wide"><img src="Gephi-Blob.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-ForceAtlas.png"/>
-</figure>
-</p>
-<p>The result from the Force Atlas algorithm to distribute points will look nicer,
-spreading aggregates of arrows all over the place. Now we need to get the
-labels. To do so, you have to click on a somewhat hidden button in the
-bottom-right part of the Graph window, and select the correct names for the
-tags. In this picture I&rsquo;ve also marked the label and edge scaling according to
-parameters:</p>
-<figure class="fig-wide"><img src="Gephi-Labels.png"/>
-</figure>
-
-<p>Once you have labels, you need to play with the layout to make them more
-visible. Run the algorithm Adjust Labels for a while, then Force Atlas and
-repeat until you are happy with the results:</p>
-<figure class="fig-wide"><img src="Gephi-LabelAdjust.png"/>
-</figure>
-
-<p>You can also set labels for the edges, if you are interested in seeing visits,
-for example. But I found it messy and unchecked the option. Finally, to scale
-the nodes, use the Ranking window:</p>
-<figure class="fig-wide"><img src="Gephi-Ranking.png"/>
-</figure>
-
-<p>The arrows mark the different ways to adjust: you can change colour, size, text
-size or text colour. Feel free to play with all these settings!</p>
-<p>You can get a nice PNG file of you graph by pressing the camera-like icon in the
-Graph window (clicking the down-arrow will list the properties), or you can
-export a PDF or SVG with some more work from the Preview window. Both result in
-nice images, but a SVG or PDF can be tweaked extensively using Illustrator or
-Inkscape. But it also needs more work from the Gephi side, so I won&rsquo;t enter the
-details in this tutorial. Well, just a little! Be sure to check &ldquo;show&rdquo; before
-exporting, or you&rsquo;ll see a blank page:</p>
-<figure class="fig-wide"><img src="Gephi-ExportSVG.png"/>
-</figure>
-
-<p>And with just these steps you can create quite nice (and useful) graphs like
-this one:</p>
-<figure class="fig-wide"><img src="Gephi-FullMap.png"/>
-</figure>
-
-<p>And here you can find a closer zoom:</p>
-<figure class="fig-wide"><img src="Gephi-ZoomIn.png"/>
-</figure>
-
-<p>I hope you enjoyed this tutorial, if you did it would be awesome if you share
-it. I&rsquo;ll try to do a few more Gephi tutorials as I find more interesting (for
-me) uses of Gephi. I have also a few post/tutorial ideas about visualizing
-Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
-<hr/>
+<span style="color:#a6e22e">rawConn</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">dialer</span>.<span style="color:#a6e22e">Dial</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">tcp</span><span style="color:#960050;background-color:#1e0010">”</span>, <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">kafka</span>:<span style="color:#ae81ff">9094</span><span style="color:#960050;background-color:#1e0010">&#34;</span>)
+	<span style="color:#a6e22e">conn</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">tls</span>.<span style="color:#a6e22e">Client</span>(<span style="color:#a6e22e">rawConn</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">tlsConfig</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">conn</span>.<span style="color:#a6e22e">RemoteAddr</span>())
+	<span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">conn</span>.<span style="color:#a6e22e">Handshake</span>()
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">conn</span>.<span style="color:#a6e22e">VerifyHostname</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">kafka</span><span style="color:#960050;background-color:#1e0010">”</span>))
+</code></pre></div><p>And I got a <em>detailed</em> handshake error…</p>
+<p>Turns out Common Name is actually a deprecated section. The correct to use (for many years) should be a <a href="https://en.wikipedia.org/wiki/Subject_Alternative_Name">Subject Alternative Name</a>(SAN). Most &ldquo;<a href="https://xenit.se/tech-blog/chrome-certificate-warning-invalid-common-name/">things</a>&rdquo; have started deprecating the use of CN, and <a href="https://github.com/rancher/rke2/issues/775">Go has been pretty strong at this</a>. But all tutorials on configuring Kafka SSL settings use <code>CN</code>s, if they even care about host name verification.</p>
+<p>Then, it took me another pretty long while to convince the <code>openssl</code> commands I had that they should have <code>SAN</code>s and not <code>CN</code>s. The trick is to use an <em>extensions file</em> containing the configuration for the <code>SAN</code> <em>extension</em>. You can find the file I used <a href="https://github.com/rberenguel/kafka-ssl-go/blob/main/certificate-creator/ssl.conf">here</a>.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<p>The code in the repository has a simplified example of all the pieces needed:</p>
+<ul>
+<li>Creation of certificates.</li>
+<li>Docker compose with Kafka and Zookeeper</li>
+<li>Small producer in Go sending a row</li>
+</ul>
+<p>With all the plumbing needed. Next time I fail badly at Kafka and SSL I&rsquo;ll come back to this.</p><hr/>
         <ul class="pa0">
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/blog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Blog</a>
+     <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
    </li>
   
    <li class="list" style="display:inline;">
@@ -331,7 +246,7 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/visualization" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Visualization</a>
+     <a href="https://mostlymaths.net/tags/scala" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Scala</a>
    </li>
   
 </ul>
@@ -350,23 +265,23 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/">Good Books I have Read in 2011: Perfect Gifts for Geeks!</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
-       </li>
-	     
-	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/09/kafka-ssl-go.html/">Setting up Kafka with SSL and accessing it with Go</a>
-       </li>
-	     
-	     <li  class="mb2">
            <a href="https://mostlymaths.net/2021/08/spark-json-woes.html/">JSON woes in Apache Spark</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/08/202120-readings.html/">2021#20 Readings</a>
+           <a href="https://mostlymaths.net/2020/12/202064-readings.html/">2020#64 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202059-readings.html/">2020#59 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2020/10/202057-readings-of-the-week.html/">2020#57 Readings</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2019/07/a-section-of-map-of-data-engineering.html/">A (section) of a map of the data engineering space</a>
        </li>
 	     
     </ul>
