@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</title>
+    <title>mostlymaths.net  | 2021#21 Readings</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.86.0" />
     
@@ -37,23 +37,27 @@
 
     
 
-    <meta property="og:title" content="UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET" />
-<meta property="og:description" content="Timezones and UTF are rocks you repeatedly hit in your data journey." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2021/03/spark-redshift-parquet-utf8.html/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-31T20:15:33+02:00" />
-<meta property="article:modified_time" content="2021-03-31T20:15:33+02:00" />
+    <meta property="og:title" content="2021#21 Readings" />
+<meta property="og:description" content="This past week we were on holidays 🎉.
 
-<meta itemprop="name" content="UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET">
-<meta itemprop="description" content="Timezones and UTF are rocks you repeatedly hit in your data journey."><meta itemprop="datePublished" content="2021-03-31T20:15:33+02:00" />
-<meta itemprop="dateModified" content="2021-03-31T20:15:33+02:00" />
-<meta itemprop="wordCount" content="343">
-<meta itemprop="keywords" content="Data,Databricks,Apache Spark,AWS,SQL," />
+We spent a few days in Cadaqués, a small coastal town in the north of Catalonia. We ate extremely well." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2021/09/202121-readings.html/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-11T12:30:33+02:00" />
+<meta property="article:modified_time" content="2021-09-11T12:30:33+02:00" />
+
+<meta itemprop="name" content="2021#21 Readings">
+<meta itemprop="description" content="This past week we were on holidays 🎉.
+
+We spent a few days in Cadaqués, a small coastal town in the north of Catalonia. We ate extremely well."><meta itemprop="datePublished" content="2021-09-11T12:30:33+02:00" />
+<meta itemprop="dateModified" content="2021-09-11T12:30:33+02:00" />
+<meta itemprop="wordCount" content="772">
+<meta itemprop="keywords" content="Apache Spark,Kafka,Management,Cassandra,SQL,Database Internals,Data,ReadingsOfTheWeek,Readings," />
 
     
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2021/03/spark-redshift-parquet-utf8.html//parquet.jpg"/>
+<meta name="twitter:image:src" content="/2021/09/202121-readings.html//cadaques.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -62,8 +66,10 @@
 
 
 
-<meta name="twitter:title" content="UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET"/>
-<meta name="twitter:description" content="Timezones and UTF are rocks you repeatedly hit in your data journey."/>
+<meta name="twitter:title" content="2021#21 Readings"/>
+<meta name="twitter:description" content="This past week we were on holidays 🎉.
+
+We spent a few days in Cadaqués, a small coastal town in the north of Catalonia. We ate extremely well."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -81,7 +87,7 @@
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/03/spark-redshift-parquet-utf8.html//parquet.jpg');">
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2021/09/202121-readings.html//cadaques.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -135,82 +141,118 @@
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">UTF-8 Issues between AWS Redshift and Apache Spark when COPY PARQUET</h1>
+        <h1 class="fw1 mb1 f1">2021#21 Readings</h1>
         
         
-        <time class="f6 mt4 dib tracked" datetime="2021-03-31T20:15:33&#43;02:00">March 31, 2021</time>
+        <time class="f6 mt4 dib tracked" datetime="2021-09-11T12:30:33&#43;02:00">September 11, 2021</time>
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 2 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 343 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 772 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Timezones and UTF are rocks you repeatedly hit in your data journey.</p>
-<p>A common ETL (or even ELT) approach when using AWS Redshift is</p>
-<ul>
-<li>You have some data in S3,</li>
-<li>Load it into Redshift,</li>
-<li>Profit.</li>
-</ul>
-<p>This <em>profit</em> can be in terms of pure data engineering work, which would involve additional transformations or as a finished product: a report ready for BI consumption.</p>
-<figure class="fig-wide"><img src="parquet.jpg"
-         alt="Photo by DDP on Unsplash"/><figcaption>
-            <p>Photo by <a href='https://unsplash.com/@moino007?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>DDP</a> on <a href='https://unsplash.com/s/photos/parquet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This past week we were on holidays 🎉.</p>
+<br/>
+<p>We spent a few days in <a href="https://en.wikipedia.org/wiki/Cadaqu%C3%A9s">Cadaqués</a>, a small coastal town in the north of Catalonia. We ate extremely well.</p>
+<figure class="fig-full"><img src="cadaques.jpg"
+         alt="View from Cadaqués"/><figcaption>
+            <p>View from Cadaqués</p>
         </figcaption>
 </figure>
 
-<p>Redshift is less flexible than Apache Spark when handling UTF-8 codepoints, that is relatively well known, as you can see in these doc pages:</p>
-<ul>
-<li><a href="https://docs.aws.amazon.com/redshift/latest/dg/multi-byte-character-load-errors.html">Multibyte character load errors</a></li>
-<li><a href="https://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-conversion.html#acceptinvchars">ACCEPTINVCHARS</a></li>
-</ul>
-<p>Redshift will accept UTF-8 &ldquo;fine&rdquo; in <code>VARCHAR</code> columns, although will have issues with UTF-8 longer than 4 bytes, and outside the valid range. I haven&rsquo;t tested the <em>length</em> issue with Apache Spark, but hit head on the other issue.</p>
+<h2 id="-setting-up-kafka-with-ssl-and-accessing-it-with-go202109kafka-ssl-gohtml"><a href="https://mostlymaths.net/2021/09/kafka-ssl-go.html/">📯 Setting up Kafka with SSL and accessing it with Go</a></h2>
+<p>It shouldn&rsquo;t be hard, but setting up a local instance of Kafka with custom/local SSL certificates and getting it to work <em>without hostname validation</em> turns out very tricky. At least now I can go back to this post to look up the steps needed.</p>
+<h2 id="-json-woes-in-apache-spark202108spark-json-woeshtml"><a href="https://mostlymaths.net/2021/08/spark-json-woes.html/">📯 JSON woes in Apache Spark</a></h2>
+<p>Sometimes Spark features become <em>antifeatures</em>.</p>
+<h2 id="sleep-is-venture-capital-employers-wake-up-to-benefits-of-a-naphttpswwwtheguardiancomlifeandstyle2021aug27sleep-is-venture-capital-employers-wake-up-to-benefits-of-a-nap"><a href="https://www.theguardian.com/lifeandstyle/2021/aug/27/sleep-is-venture-capital-employers-wake-up-to-benefits-of-a-nap">‘Sleep is venture capital’: employers wake up to benefits of a nap</a></h2>
+<p>Did they get the Spanish data from “Topics and prejudices, UK edition”?</p>
+<h2 id="what-makes-a-unicorn-ctohttpsbuiltincomcorpoate-innovationunicorn-cto"><a href="https://builtin.com/corpoate-innovation/unicorn-cto">What Makes a Unicorn CTO?</a></h2>
+<p>Many (sometimes conflicting) priorities pull CTOs around, making it a complex job.</p>
+<h2 id="-last-weekhttpstwittercommattklein123status1130206773078421504s12"><a href="https://twitter.com/mattklein123/status/1130206773078421504?s=12">🐦 Last week…&quot;</a></h2>
 <blockquote>
-<p>Apache Spark happily accepts <code>EF BF BF</code> (also known as <code>\uFFFF</code>) as a <em>valid</em> UTF-8 codepoint when storing data in Parquet. Redshift can&rsquo;t load this character.</p>
+<p>… I sat for an internal interview about my career progression to high level IC engineer, with a focus on how I&rsquo;ve never felt I needed to become a manager to gain influence. I thought I would share some of my career advice for aspiring IC &ldquo;lifers.</p>
 </blockquote>
-<p>When confronted with a problematic row, in Redshift you can either use <code>ACCEPTINVCHARS</code> or a reasonable number in the <code>MAXERRORS</code> parameter in your <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_COPY-parameters.html"><code>COPY</code></a> command. <strong>Except that these parameters are not available when dealing with Parquet</strong>. In other words, if you have a Parquet file with <em>one</em> row with <em>one</em> field with <em>one</em> invalid UTF-8 your whole load will fail. And it fails very noisily.</p>
-<p>Luckily, you can replace the problematic character in Spark:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> 
-  <span style="color:#66d9ef">translate</span>(
-   encode(
-    decode(col, <span style="color:#e6db74">&#39;UTF-8&#39;</span>), <span style="color:#e6db74">&#39;UTF-8&#39;</span>), <span style="color:#e6db74">&#39;\uFFFF&#39;</span>, <span style="color:#e6db74">&#39;\uFFFD&#39;</span>) 
-  <span style="color:#66d9ef">AS</span> col 
-  <span style="color:#66d9ef">FROM</span> problematic_table;
-</code></pre></div><div class="note ">
-<span class='scaps ' style="display: inline-block;">
-  Note:
-</span> 
-<span class='note-body ' style="display: inline-block;">
-<p>You <em>may</em> not need the combo of decode and encode but every time I have issues with UTF-8 I prefer playing it one additional layer of safety.</p>
-</span>
+<p>If your growth has stalled, consider switching jobs. You will very likely get a promotion and more money, with less political heartache.</p>
+<h2 id="how-discord-stores-billions-of-messageshttpsblogdiscordcomhow-discord-stores-billions-of-messages-7fa6ec7ee4c7"><a href="https://blog.discord.com/how-discord-stores-billions-of-messages-7fa6ec7ee4c7">How Discord Stores Billions of Messages</a></h2>
+<p>I have worked very little with Cassandra, and found it delicate to handle. You need to know <em>a lot</em> about how it works to leverage it at scale. That&rsquo;s not bad, but can be inconvenient.</p>
+<h2 id="data-lineage-at-slackhttpsslackengineeringdata-lineage-at-slack"><a href="https://slack.engineering/data-lineage-at-slack/">Data Lineage at Slack</a></h2>
+<p>Going to the level of parsing SQL, that sounds the right level for lineage to me.</p>
+<h2 id="fastest-table-sort-in-the-west---redesigning-duckdbs-sorthttpsduckdborg20210827external-sortinghtml"><a href="https://duckdb.org/2021/08/27/external-sorting.html">Fastest table sort in the West - Redesigning DuckDB&rsquo;s sort</a></h2>
+<p>These are some brilliant results. I have used DuckDB as a local replacement for wrangling CSV/Parquet and it performs beautifully.</p>
+<h2 id="-thread-by-incunabulahttpsthreadreaderappcomthread1434803410902167552html"><a href="https://threadreaderapp.com/thread/1434803410902167552.html">🐦 Thread by @incunabula</a></h2>
+<p>It&rsquo;s a bit cheesy, but talks about books and sandwiches.</p>
+<h2 id="teaching-smart-people-how-to-learnhttpshbrorg199105teaching-smart-people-how-to-learn"><a href="https://hbr.org/1991/05/teaching-smart-people-how-to-learn">Teaching Smart People How to Learn</a></h2>
+<p>It doesn&rsquo;t have a lot of <em>do&rsquo;s</em>, but it has many examples of <em>don&rsquo;ts</em>. It&rsquo;s pretty long though.</p>
+<h2 id="single-decisive-reasoning-sdrhttpscodaiorahulvohrasingle-decisive-reasoning-sdr-at-superhuman"><a href="https://coda.io/@rahulvohra/single-decisive-reasoning-sdr-at-superhuman">Single Decisive Reasoning (SDR)</a></h2>
+<blockquote>
+<p>Why are blended reasons so dangerous? Because weak reasons rarely build on each other – but when they&rsquo;re numerous they appear compelling.</p>
+</blockquote>
+<p>I have the feeling of having read this before. Basically, when going for something have at least one strong reason. Many small reasons don&rsquo;t add up to a strong one. Compare with Derek Sivers' <a href="https://sive.rs/n">Hell yeah or no</a>.</p>
+<h2 id="why-is-it-almost-impossible-to-meet-deadlineshttpstowardsdatasciencecomdata-engineering-failure-why-is-it-almost-impossible-to-meet-deadlines-fc1b5b5aa90"><a href="https://towardsdatascience.com/data-engineering-failure-why-is-it-almost-impossible-to-meet-deadlines-fc1b5b5aa90">Why is it almost impossible to meet deadlines?</a></h2>
+<p>A great article by Christophe Blefari. Mentions many of the issues that plague data engineering teams, and offers some useful solutions. As usual, your workplace might be totally different, but I&rsquo;m pretty sure you can apply something from here.</p>
+<h2 id="accelerated-expertise-book-summary-from-commoncoghttpscommoncogcomblogaccelerated-expertise"><a href="https://commoncog.com/blog/accelerated-expertise/">Accelerated Expertise (book summary from Commoncog)</a></h2>
+<p>A pity it&rsquo;s very hard to apply for real-world (personal) learning, since the focus is on companies/broad areas. The ideas here are very useful anyway.</p>
+<h2 id="where-work-is-a-religion-work-burnout-is-its-crisis-of-faithhttpsnymagcomnewsfeatures24757"><a href="https://nymag.com/news/features/24757/">Where Work Is a Religion, Work Burnout Is Its Crisis of Faith</a></h2>
+<p>The definitions of burnout given here are so close to things I have felt myself it&rsquo;s scary: I only <em>suspected</em> I may have been burnout. There are longer ways to put it, but in one line, quoted, would be:</p>
+<blockquote>
+<p>There&rsquo;s a gulf between what they expected from their jobs and what they got.</p>
+</blockquote>
+<p>Also interesting is a study about quietness/multitasking and IQ (emphasis mine):</p>
+<blockquote>
+<p>[…] one group was asked to take an IQ test while distracted by e-mails and ringing telephones. The uninterrupted group did better by an average of ten points, which wasn&rsquo;t much of a surprise. What was a surprise is that <strong>the e-mailers also did worse, by an average of six points, than a group in a similar study that had been tested while stoned</strong> […]</p>
+</blockquote>
+<h2 id="how-i-write-code-pen--paperhttpsnoteflakescomarticles2021-09-02-how-i-write-code-pen-paper"><a href="https://noteflakes.com/articles/2021-09-02-how-i-write-code-pen-paper">How I Write Code: Pen &amp; Paper</a></h2>
+<p>I only use pen and paper for design, sometimes the design might get close to an implementation &ldquo;in drawing&rdquo; though.</p>
+<div style="text-align: center; border-top: 1px solid #333311; padding-top: 0.7em; margin-top: 0.7em;">
+<a href="http://eepurl.com/geFw7P" class="link f4 grow no-underline br-pill ba ph3 pv2 dib black sans-serif">Subscribe to these posts as a newsletter</a>
 </div>
-<p>This line uses <a href="https://spark.apache.org/docs/3.0.1/api/sql/index.html#translate"><em>translate</em></a> to replace exactly one byte sequence (that of the character <a href="https://www.fileformat.info/info/unicode/char/ffff/index.htm">EF BF BF</a>) for the byte sequence of the UTF-8 replacement character <a href="https://www.fileformat.info/info/unicode/char/fffd/index.htm">EF BF BD</a>.</p>
-<p><strong>This is not foolproof</strong>: you still can find yourself with UTF-8 codepoints that are invalid for Redshift but valid for Spark. But now you know how to replace them in Spark to avoid the issue before it reaches Redshift.</p><hr/>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<div style="text-align: center; margin-left: -0.5rem;">
+<style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>
+</div><hr/>
         <ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
-   </li>
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/databricks" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Databricks</a>
-   </li>
   
    <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/apache-spark" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Apache Spark</a>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/aws" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">AWS</a>
+     <a href="https://mostlymaths.net/tags/kafka" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Kafka</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/management" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Management</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/cassandra" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Cassandra</a>
    </li>
   
    <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/sql" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">SQL</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/database-internals" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Database Internals</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/readingsoftheweek" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ReadingsOfTheWeek</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/readings" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Readings</a>
    </li>
   
 </ul>
@@ -237,15 +279,15 @@
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/01/databricks-log4j-configuration.html/">Configuring log4j properties in Databricks (and EMR)</a>
+           <a href="https://mostlymaths.net/2021/01/202104-readings.html/">2020#04 Readings</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/09/202121-readings.html/">2021#21 Readings</a>
+           <a href="https://mostlymaths.net/2020/12/202063-readings.html/">2020#63 Readings</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2021/01/lakehouse.html/">Lakehouse: It&#39;s like Delta Lake, but not really</a>
+           <a href="https://mostlymaths.net/2021/08/202119-readings.html/">2020#19 Readings</a>
        </li>
 	     
     </ul>

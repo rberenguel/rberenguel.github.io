@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Internals on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/database-internals/</link>
+    <description>Recent content in Database Internals on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Sep 2021 12:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/database-internals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021#21 Readings</title>
+      <link>https://mostlymaths.net/2021/09/202121-readings.html/</link>
+      <pubDate>Sat, 11 Sep 2021 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/09/202121-readings.html/</guid>
+      <description>&lt;p&gt;This past week we were on holidays 🎉.&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;We spent a few days in &lt;a href=&#34;https://en.wikipedia.org/wiki/Cadaqu%C3%A9s&#34;&gt;Cadaqués&lt;/a&gt;, a small coastal town in the north of Catalonia. We ate extremely well.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
