@@ -6,7 +6,43 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>https://mostlymaths.net/tags/maps/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mostlymaths.net/tags/teaching/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
@@ -22,15 +58,6 @@
       <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -157,15 +184,6 @@
       <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sat, 21 Aug 2021 16:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -391,15 +409,6 @@
       <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maps</title>
-      <link>https://mostlymaths.net/tags/maps/</link>
-      <pubDate>Sun, 20 Dec 2020 13:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maps/</guid>
       <description></description>
     </item>
     
@@ -1057,15 +1066,6 @@
       <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/improve-yourself/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://mostlymaths.net/tags/teaching/</link>
-      <pubDate>Sun, 11 Dec 2011 21:29:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/teaching/</guid>
       <description></description>
     </item>
     
