@@ -3,6 +3,111 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2021/10/202123-readings.html/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/awk/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/golang/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/haskell/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/management/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/memory/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/python/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2021-10-24T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2021/10/concept-maps.html/</loc>
     <lastmod>2021-10-16T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -10,42 +115,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/maps/</loc>
-    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
-    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2021-10-16T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -94,13 +164,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/golang/</loc>
-    <lastmod>2021-09-26T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/kafka/</loc>
     <lastmod>2021-09-26T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -109,27 +172,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/maths/</loc>
-    <lastmod>2021-09-26T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/python/</loc>
-    <lastmod>2021-09-26T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2021-09-26T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
     <lastmod>2021-09-26T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -159,20 +201,6 @@
   <url>
     <loc>https://mostlymaths.net/tags/database-internals/</loc>
     <lastmod>2021-09-11T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2021-09-11T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2021-09-03T08:23:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -437,13 +465,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/haskell/</loc>
-    <lastmod>2021-03-14T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/03/202108-readings.html/</loc>
     <lastmod>2021-03-07T16:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -613,13 +634,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2020/11/202062-readings.html/</loc>
-    <lastmod>2020-11-22T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/awk/</loc>
     <lastmod>2020-11-22T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1999,13 +2013,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2012/03/aprende-recordarlo-todo-el-metodo-del.html/</loc>
-    <lastmod>2012-03-27T16:47:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/memory/</loc>
     <lastmod>2012-03-27T16:47:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

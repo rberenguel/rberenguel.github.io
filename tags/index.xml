@@ -6,13 +6,103 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Oct 2021 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 09:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWK</title>
+      <link>https://mostlymaths.net/tags/awk/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/awk/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://mostlymaths.net/tags/memory/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -22,15 +112,6 @@
       <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -80,15 +161,6 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Kafka</title>
       <link>https://mostlymaths.net/tags/kafka/</link>
       <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
@@ -103,33 +175,6 @@
       <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/maths/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -157,24 +202,6 @@
       <pubDate>Sat, 11 Sep 2021 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/database-internals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sat, 11 Sep 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Fri, 03 Sep 2021 08:23:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -350,15 +377,6 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Sun, 14 Mar 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>d3js</title>
       <link>https://mostlymaths.net/tags/d3js/</link>
       <pubDate>Sun, 28 Feb 2021 18:30:33 +0200</pubDate>
@@ -409,15 +427,6 @@
       <pubDate>Sat, 26 Dec 2020 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWK</title>
-      <link>https://mostlymaths.net/tags/awk/</link>
-      <pubDate>Sun, 22 Nov 2020 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/awk/</guid>
       <description></description>
     </item>
     
@@ -1048,15 +1057,6 @@
       <pubDate>Mon, 04 Jun 2012 21:15:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/iceland/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Memory</title>
-      <link>https://mostlymaths.net/tags/memory/</link>
-      <pubDate>Tue, 27 Mar 2012 16:47:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/memory/</guid>
       <description></description>
     </item>
     
