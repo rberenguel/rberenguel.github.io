@@ -17,29 +17,29 @@
     </item>
     
     <item>
-      <title>Maps</title>
-      <link>https://mostlymaths.net/tags/maps/</link>
+      <title>DevOps</title>
+      <link>https://mostlymaths.net/tags/devops/</link>
       <pubDate>Sun, 21 Nov 2021 11:30:33 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/tags/maps/</guid>
+      <guid>https://mostlymaths.net/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://mostlymaths.net/tags/docker/</link>
+      <pubDate>Sun, 21 Nov 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
       <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 21 Nov 2021 11:30:33 +0200</pubDate>
+      <pubDate>Mon, 15 Nov 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://mostlymaths.net/tags/teaching/</link>
-      <pubDate>Sun, 21 Nov 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/teaching/</guid>
       <description></description>
     </item>
     
@@ -121,6 +121,24 @@
       <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>https://mostlymaths.net/tags/maps/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mostlymaths.net/tags/teaching/</link>
+      <pubDate>Sat, 16 Oct 2021 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/teaching/</guid>
       <description></description>
     </item>
     
@@ -904,15 +922,6 @@
       <pubDate>Sun, 19 Nov 2017 17:42:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/ipod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://mostlymaths.net/tags/docker/</link>
-      <pubDate>Sun, 20 Aug 2017 19:30:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/docker/</guid>
       <description></description>
     </item>
     

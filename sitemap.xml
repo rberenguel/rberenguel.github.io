@@ -10,14 +10,21 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2021/11/docker-m1.html/</loc>
+    <loc>https://mostlymaths.net/tags/devops/</loc>
     <lastmod>2021-11-21T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/maps/</loc>
+    <loc>https://mostlymaths.net/tags/docker/</loc>
+    <lastmod>2021-11-21T11:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2021/11/docker-m1.html/</loc>
     <lastmod>2021-11-21T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -38,13 +45,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
-    <lastmod>2021-11-21T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2021-11-21T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -52,14 +52,14 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/teaching/</loc>
-    <lastmod>2021-11-21T11:30:33+02:00</lastmod>
+    <loc>https://mostlymaths.net/2021/11/202124-readings.html/</loc>
+    <lastmod>2021-11-15T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/2021/11/202124-readings.html/</loc>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
     <lastmod>2021-11-15T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -137,6 +137,20 @@
   
   <url>
     <loc>https://mostlymaths.net/2021/10/concept-maps.html/</loc>
+    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maps/</loc>
+    <lastmod>2021-10-16T11:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/teaching/</loc>
     <lastmod>2021-10-16T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1698,13 +1712,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2017/08/change-parameters-of-docker-container-docker-run.html/</loc>
-    <lastmod>2017-08-20T19:30:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/docker/</loc>
     <lastmod>2017-08-20T19:30:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
