@@ -6,7 +6,106 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Nov 2021 21:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big data</title>
+      <link>https://mostlymaths.net/tags/big-data/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data engineering</title>
+      <link>https://mostlymaths.net/tags/data-engineering/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://mostlymaths.net/tags/kubernetes/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PyBCN</title>
+      <link>https://mostlymaths.net/tags/pybcn/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/pybcn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strategy</title>
+      <link>https://mostlymaths.net/tags/strategy/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/strategy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
@@ -35,47 +134,11 @@
     </item>
     
     <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Mon, 15 Nov 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Mon, 15 Nov 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Mon, 15 Nov 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>AWK</title>
       <link>https://mostlymaths.net/tags/awk/</link>
       <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/awk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -89,29 +152,11 @@
     </item>
     
     <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Memory</title>
       <link>https://mostlymaths.net/tags/memory/</link>
       <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/memory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 24 Oct 2021 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
     </item>
     
@@ -278,15 +323,6 @@
     </item>
     
     <item>
-      <title>Kubernetes</title>
-      <link>https://mostlymaths.net/tags/kubernetes/</link>
-      <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Databases</title>
       <link>https://mostlymaths.net/tags/databases/</link>
       <pubDate>Sat, 03 Jul 2021 11:30:33 +0200</pubDate>
@@ -337,15 +373,6 @@
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data engineering</title>
-      <link>https://mostlymaths.net/tags/data-engineering/</link>
-      <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-engineering/</guid>
       <description></description>
     </item>
     
@@ -481,15 +508,6 @@
       <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Strategy</title>
-      <link>https://mostlymaths.net/tags/strategy/</link>
-      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/strategy/</guid>
       <description></description>
     </item>
     
@@ -661,15 +679,6 @@
       <pubDate>Sat, 28 Sep 2019 21:06:45 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/cooking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Big data</title>
-      <link>https://mostlymaths.net/tags/big-data/</link>
-      <pubDate>Sat, 14 Sep 2019 17:54:45 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/big-data/</guid>
       <description></description>
     </item>
     
