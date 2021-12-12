@@ -6,7 +6,17 @@
     <description>Recent content in Data on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 15:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data pipelines with Alloy, Take 2</title>
+      <link>https://mostlymaths.net/2021/12/data-pipelines-alloy-6.html/</link>
+      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/12/data-pipelines-alloy-6.html/</guid>
+      <description>&lt;p&gt;In which I write some easy Alloy code for a data model, with change over time.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
     <item>
       <title>Docker replacements (particularly in Mac M1)</title>
       <link>https://mostlymaths.net/2021/11/docker-m1.html/</link>

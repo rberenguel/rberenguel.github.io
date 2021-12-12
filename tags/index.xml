@@ -6,7 +6,43 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Nov 2021 21:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 15:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airflow</title>
+      <link>https://mostlymaths.net/tags/airflow/</link>
+      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/airflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alloy</title>
+      <link>https://mostlymaths.net/tags/alloy/</link>
+      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/alloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal methods</title>
+      <link>https://mostlymaths.net/tags/formal-methods/</link>
+      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Big data</title>
       <link>https://mostlymaths.net/tags/big-data/</link>
@@ -103,15 +139,6 @@
       <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/strategy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 21 Nov 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -305,15 +332,6 @@
     </item>
     
     <item>
-      <title>Airflow</title>
-      <link>https://mostlymaths.net/tags/airflow/</link>
-      <pubDate>Sun, 01 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/airflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>https://mostlymaths.net/tags/javascript/</link>
       <pubDate>Sun, 18 Jul 2021 11:30:33 +0200</pubDate>
@@ -350,15 +368,6 @@
     </item>
     
     <item>
-      <title>Alloy</title>
-      <link>https://mostlymaths.net/tags/alloy/</link>
-      <pubDate>Sat, 19 Jun 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/alloy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>LaTeX</title>
       <link>https://mostlymaths.net/tags/latex/</link>
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
@@ -391,15 +400,6 @@
       <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/databricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Formal methods</title>
-      <link>https://mostlymaths.net/tags/formal-methods/</link>
-      <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
       <description></description>
     </item>
     

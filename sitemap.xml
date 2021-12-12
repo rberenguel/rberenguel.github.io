@@ -3,6 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/airflow/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/alloy/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2021/12/data-pipelines-alloy-6.html/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2021/11/202125-readings.html/</loc>
     <lastmod>2021-11-28T21:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -39,20 +95,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2021-11-28T21:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2021-11-28T21:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
     <lastmod>2021-11-28T21:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -96,20 +138,6 @@
   <url>
     <loc>https://mostlymaths.net/tags/strategy/</loc>
     <lastmod>2021-11-28T21:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2021-11-28T21:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2021-11-21T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -346,13 +374,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/airflow/</loc>
-    <lastmod>2021-08-01T17:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/07/202117-readings.html/</loc>
     <lastmod>2021-07-18T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -402,13 +423,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/alloy/</loc>
-    <lastmod>2021-06-19T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/06/centering.html/</loc>
     <lastmod>2021-06-15T08:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -452,13 +466,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/databricks/</loc>
-    <lastmod>2021-05-24T12:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
     <lastmod>2021-05-24T12:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
