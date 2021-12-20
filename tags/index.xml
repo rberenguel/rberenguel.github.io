@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Dec 2021 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Alloy</title>
+      <link>https://mostlymaths.net/tags/alloy/</link>
+      <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/alloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Business</title>
       <link>https://mostlymaths.net/tags/business/</link>
       <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
@@ -31,6 +40,15 @@
       <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal methods</title>
+      <link>https://mostlymaths.net/tags/formal-methods/</link>
+      <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
       <description></description>
     </item>
     
@@ -121,24 +139,6 @@
       <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/airflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alloy</title>
-      <link>https://mostlymaths.net/tags/alloy/</link>
-      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/alloy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Formal methods</title>
-      <link>https://mostlymaths.net/tags/formal-methods/</link>
-      <pubDate>Sun, 12 Dec 2021 15:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/formal-methods/</guid>
       <description></description>
     </item>
     

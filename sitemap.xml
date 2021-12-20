@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://mostlymaths.net/tags/alloy/</loc>
+    <lastmod>2021-12-20T10:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/tags/business/</loc>
     <lastmod>2021-12-20T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -25,6 +32,13 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2021-12-20T10:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
     <lastmod>2021-12-20T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,21 +136,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/alloy/</loc>
-    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/12/data-pipelines-alloy-6.html/</loc>
-    <lastmod>2021-12-12T15:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/formal-methods/</loc>
     <lastmod>2021-12-12T15:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
