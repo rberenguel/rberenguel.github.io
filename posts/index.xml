@@ -6,7 +6,17 @@
     <description>Recent content in Posts on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Dec 2021 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021#27 Readings</title>
+      <link>https://mostlymaths.net/2021/12/202127-readings.html/</link>
+      <pubDate>Sat, 25 Dec 2021 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2021/12/202127-readings.html/</guid>
+      <description>&lt;p&gt;Christmas edition!
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>2021#26 Readings</title>
       <link>https://mostlymaths.net/2021/12/202126-readings.html/</link>
@@ -14,8 +24,7 @@
       
       <guid>https://mostlymaths.net/2021/12/202126-readings.html/</guid>
       <description>&lt;p&gt;End of year cleanup, so a lot of goodies this time
-&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;As part of my end of year rituals, I clean up/groom my reading list, emails, open tabs, books, courses… The most relevant change so far is that my reading list is gone from &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things 3&lt;/a&gt; to &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;. One big advantage of Obsidian is that I can better track (and plot) its size, which is something I always like to have monitored. This means that at some point I&amp;rsquo;ll need to tweak the code that helps me write these posts relatively quickly (&lt;a href=&#34;https://github.com/rberenguel/hweekly&#34;&gt;hweekly&lt;/a&gt; and a &lt;a href=&#34;https://taskfile.dev/#/&#34;&gt;taskfile&lt;/a&gt; inside the private repository)&lt;/p&gt;</description>
+&lt;br/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
