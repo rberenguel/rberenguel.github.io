@@ -6,22 +6,76 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jan 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative</title>
+      <link>https://mostlymaths.net/tags/generative/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/generative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wardley maps</title>
+      <link>https://mostlymaths.net/tags/wardley-maps/</link>
+      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
       <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -58,42 +112,6 @@
       <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -341,15 +359,6 @@
     </item>
     
     <item>
-      <title>Generative</title>
-      <link>https://mostlymaths.net/tags/generative/</link>
-      <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/generative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Maths</title>
       <link>https://mostlymaths.net/tags/maths/</link>
       <pubDate>Sun, 26 Sep 2021 11:30:33 +0200</pubDate>
@@ -580,15 +589,6 @@
       <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wardley maps</title>
-      <link>https://mostlymaths.net/tags/wardley-maps/</link>
-      <pubDate>Wed, 07 Oct 2020 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
       <description></description>
     </item>
     

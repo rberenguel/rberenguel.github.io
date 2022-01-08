@@ -3,6 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2022/01/202202-readings.html/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/generative/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/management/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/scala/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/wardley-maps/</loc>
+    <lastmod>2022-01-08T17:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2022/01/202201-readings.html/</loc>
     <lastmod>2022-01-02T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,13 +88,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/apache-spark/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
     <lastmod>2022-01-02T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -46,55 +116,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/machine-learning/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/scala/</loc>
-    <lastmod>2022-01-02T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2022-01-02T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -354,13 +375,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/css/</loc>
-    <lastmod>2021-09-26T11:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/generative/</loc>
     <lastmod>2021-09-26T11:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -872,13 +886,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2020/10/summary-good-strategy-bad-strategy.html/</loc>
-    <lastmod>2020-10-07T20:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/wardley-maps/</loc>
     <lastmod>2020-10-07T20:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
