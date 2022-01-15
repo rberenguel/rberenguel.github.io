@@ -6,13 +6,94 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 17:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 12:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Spark</title>
+      <link>https://mostlymaths.net/tags/apache-spark/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3</title>
+      <link>https://mostlymaths.net/tags/d3/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/d3/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data science</title>
+      <link>https://mostlymaths.net/tags/data-science/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://mostlymaths.net/tags/kafka/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PKM</title>
+      <link>https://mostlymaths.net/tags/pkm/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/pkm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://mostlymaths.net/tags/testing/</link>
+      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/testing/</guid>
       <description></description>
     </item>
     
@@ -35,24 +116,6 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Scala</title>
       <link>https://mostlymaths.net/tags/scala/</link>
       <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
@@ -67,15 +130,6 @@
       <pubDate>Sat, 08 Jan 2022 17:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/wardley-maps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-spark/</guid>
       <description></description>
     </item>
     
@@ -152,15 +206,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 25 Dec 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Alloy</title>
       <link>https://mostlymaths.net/tags/alloy/</link>
       <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
@@ -193,15 +238,6 @@
       <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kafka</title>
-      <link>https://mostlymaths.net/tags/kafka/</link>
-      <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/kafka/</guid>
       <description></description>
     </item>
     
@@ -472,15 +508,6 @@
       <pubDate>Tue, 15 Jun 2021 08:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data science</title>
-      <link>https://mostlymaths.net/tags/data-science/</link>
-      <pubDate>Mon, 24 May 2021 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-science/</guid>
       <description></description>
     </item>
     
