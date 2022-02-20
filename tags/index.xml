@@ -6,7 +6,25 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Feb 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 13:40:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian</title>
+      <link>https://mostlymaths.net/tags/obsidian/</link>
+      <pubDate>Sun, 20 Feb 2022 13:40:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 20 Feb 2022 13:40:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
@@ -233,15 +251,6 @@
     </item>
     
     <item>
-      <title>Obsidian</title>
-      <link>https://mostlymaths.net/tags/obsidian/</link>
-      <pubDate>Mon, 27 Dec 2021 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/obsidian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Apple</title>
       <link>https://mostlymaths.net/tags/apple/</link>
       <pubDate>Sat, 25 Dec 2021 17:30:33 +0200</pubDate>
@@ -355,15 +364,6 @@
       <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
