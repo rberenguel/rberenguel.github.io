@@ -47,7 +47,7 @@
 <meta itemprop="name" content="LSP for Python and Scala">
 <meta itemprop="description" content="If you have have known me for any length of time you&rsquo;ll know I write mostly Python and Scala lately (Rust is getting into the mix slowly). And you should know, I am a heavy emacs user. I have been using emacs for close to 15 years, for the past 3 my emacs of choice has been spacemacs. I used to have a very long, customised and complex .emacs and with spacemacs I get a mostly-batteries-included package."><meta itemprop="datePublished" content="2019-05-21T23:41:00+02:00" />
 <meta itemprop="dateModified" content="2019-05-21T23:41:00+02:00" />
-<meta itemprop="wordCount" content="777">
+<meta itemprop="wordCount" content="776">
 <meta itemprop="keywords" content="emacs,Python,Scala,Rust,spacemacs," />
 
     
@@ -143,7 +143,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 777 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 776 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -159,7 +159,7 @@
 pyenv activate 3.7.1/envs/tools
 pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</span> bpython mypy flake8
 </code></pre></div><p>After this, some configuration is needed in <code>emacs</code>. Here you can find parts of my configuration, commented. These sit in my <code>dotspacemacs/user-config</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; First come the configurations for Scala language server </span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; First come the configurations for Scala language server</span>
 <span style="color:#75715e">;; thingies. sbt is the Scala build system.</span>
 
 (use-package scala-mode
@@ -178,13 +178,13 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 :init (setq lsp-prefer-flymake <span style="color:#66d9ef">nil</span>)
 :ensure <span style="color:#66d9ef">t</span>)
 
-<span style="color:#75715e">;; This makes imenu-lsp-minor-mode available. This minor mode </span>
-<span style="color:#75715e">;; will show a table of contents of methods, classes, variables. </span>
+<span style="color:#75715e">;; This makes imenu-lsp-minor-mode available. This minor mode</span>
+<span style="color:#75715e">;; will show a table of contents of methods, classes, variables.</span>
 <span style="color:#75715e">;; You can configure it to be on the left by using `configure`</span>
 
 (add-hook <span style="color:#e6db74">&#39;lsp-after-open-hook</span> <span style="color:#e6db74">&#39;lsp-enable-imenu</span>)
 
-<span style="color:#75715e">;; lsp-ui enables the fancy showing of documentation, error </span>
+<span style="color:#75715e">;; lsp-ui enables the fancy showing of documentation, error</span>
 <span style="color:#75715e">;; messages and type hints</span>
 (use-package lsp-ui
 :ensure <span style="color:#66d9ef">t</span>
@@ -201,7 +201,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 (push <span style="color:#e6db74">&#39;company-lsp</span> company-backends))
 
 <span style="color:#75715e">;; I use pyenv to handle my virtual environments, so when I enable</span>
-<span style="color:#75715e">;; pyenv in a Python buffer, it will trigger lsp. Otherwise, it </span>
+<span style="color:#75715e">;; pyenv in a Python buffer, it will trigger lsp. Otherwise, it</span>
 <span style="color:#75715e">;; will use the old systems (I think based on jedi)</span>
 
 (add-hook <span style="color:#e6db74">&#39;pyenv-mode-hook</span> <span style="color:#e6db74">&#39;lsp</span>)
@@ -218,14 +218,14 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
 <span style="color:#75715e">;; Activate that after lsp has started</span>
 (add-hook <span style="color:#e6db74">&#39;lsp-after-initialize-hook</span> <span style="color:#e6db74">&#39;lsp-set-cfg</span>)
 
-<span style="color:#75715e">;; I like proper fonts for documentation, in this case I use the </span>
+<span style="color:#75715e">;; I like proper fonts for documentation, in this case I use the</span>
 <span style="color:#75715e">;; Inter font. High legibility, small size</span>
 
 (add-hook <span style="color:#e6db74">&#39;lsp-ui-doc-frame-hook</span>
 (lambda (frame _w)
-(set-face-attribute <span style="color:#e6db74">&#39;default</span> frame 
+(set-face-attribute <span style="color:#e6db74">&#39;default</span> frame
 
- :font <span style="color:#e6db74">&#34;Inter&#34;</span> 
+ :font <span style="color:#e6db74">&#34;Inter&#34;</span>
 
  :height <span style="color:#ae81ff">140</span>)))
 
@@ -260,7 +260,7 @@ pip install <span style="color:#e6db74">&#34;python-language-server[all]&#34;</s
         </figcaption>
 </figure>
 
-<p>If you&rsquo;ve gotten this far, I share my most interesting weekly readings in [tag here](<a href="https://www.mostlymaths.net/search/label/ReadingsOfTheWeek,">https://www.mostlymaths.net/search/label/ReadingsOfTheWeek,</a> Readings). You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P">here</a>.</p>
+<p>If you&rsquo;ve gotten this far, I share my most interesting weekly readings in <a href="https://www.mostlymaths.net/search/label/Readings">tag here</a>. You can also get these as a weekly newsletter by subscribing <a href="http://eepurl.com/geFw7P">here</a>.</p>
 <hr/>
         <ul class="pa0">
   
