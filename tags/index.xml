@@ -6,7 +6,88 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Mar 2022 12:00:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://mostlymaths.net/tags/haskell/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://mostlymaths.net/tags/kafka/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
@@ -17,56 +98,11 @@
     </item>
     
     <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>dbt</title>
       <link>https://mostlymaths.net/tags/dbt/</link>
       <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/dbt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -94,15 +130,6 @@
       <pubDate>Sat, 19 Mar 2022 22:40:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sat, 19 Mar 2022 22:40:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -175,15 +202,6 @@
       <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kafka</title>
-      <link>https://mostlymaths.net/tags/kafka/</link>
-      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/kafka/</guid>
       <description></description>
     </item>
     
@@ -305,15 +323,6 @@
     </item>
     
     <item>
-      <title>Haskell</title>
-      <link>https://mostlymaths.net/tags/haskell/</link>
-      <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Maps</title>
       <link>https://mostlymaths.net/tags/maps/</link>
       <pubDate>Mon, 20 Dec 2021 10:30:33 +0200</pubDate>
@@ -364,15 +373,6 @@
       <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Sun, 28 Nov 2021 21:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
