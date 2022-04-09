@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache Druid on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/apache-druid/</link>
+    <description>Recent content in Apache Druid on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2022 18:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/apache-druid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Druid: analytical queries powered by magic</title>
+      <link>https://mostlymaths.net/2022/04/druid.html/</link>
+      <pubDate>Sat, 09 Apr 2022 18:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2022/04/druid.html/</guid>
+      <description>&lt;p&gt;It has been a while since my previous data paper. This time I tackle a less known one.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

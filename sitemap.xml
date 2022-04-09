@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/tags/apache-druid/</loc>
+    <lastmod>2022-04-09T18:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2022/04/druid.html/</loc>
     <lastmod>2022-04-09T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
