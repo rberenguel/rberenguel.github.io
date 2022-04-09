@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>mostlymaths.net  | Using Gephi with Google Analytics to visualize keywords and landing pages</title>
+    <title>mostlymaths.net  | Apache Druid: analytical queries powered by magic</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.86.0" />
     
@@ -37,25 +37,25 @@
 
     
 
-    <meta property="og:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages" />
-<meta property="og:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs." />
+    <meta property="og:title" content="Apache Druid: analytical queries powered by magic" />
+<meta property="og:description" content="It has been a while since my previous data paper. This time I tackle a less known one." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mostlymaths.net/2011/08/using-gephi-to-visualize-keywords-and.html/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2011-08-18T18:50:00+02:00" />
-<meta property="article:modified_time" content="2011-08-18T18:50:00+02:00" />
+<meta property="og:url" content="https://mostlymaths.net/2022/04/druid.html/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-09T18:30:33+02:00" />
+<meta property="article:modified_time" content="2022-04-09T18:30:33+02:00" />
 
-<meta itemprop="name" content="Using Gephi with Google Analytics to visualize keywords and landing pages">
-<meta itemprop="description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."><meta itemprop="datePublished" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="dateModified" content="2011-08-18T18:50:00+02:00" />
-<meta itemprop="wordCount" content="1087">
-<meta itemprop="keywords" content="Blog,Data,Visualization," />
+<meta itemprop="name" content="Apache Druid: analytical queries powered by magic">
+<meta itemprop="description" content="It has been a while since my previous data paper. This time I tackle a less known one."><meta itemprop="datePublished" content="2022-04-09T18:30:33+02:00" />
+<meta itemprop="dateModified" content="2022-04-09T18:30:33+02:00" />
+<meta itemprop="wordCount" content="1085">
+<meta itemprop="keywords" content="Data,Data Papers," />
 
     
+    
+        
     
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image:src" content="/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png"/>
+<meta name="twitter:image:src" content="https://mostlymaths.net/images/dresser/wide10.jpg"/>
 <meta name="twitter:card" content="summary"/>
 
 
@@ -64,9 +64,8 @@ But this post is only mildly related to these books, since it started way before
 
 
 
-<meta name="twitter:title" content="Using Gephi with Google Analytics to visualize keywords and landing pages"/>
-<meta name="twitter:description" content="As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools. Recently I&rsquo;ve read two interesting books (Statistical Analysis with R and Visualize This: The FlowingData Guide to Design, Visualization, and Statistics and I&rsquo;m on my way to another two to refresh my statistics knowledge.
-But this post is only mildly related to these books, since it started way before: the day I read about Gephi. Gephi is an open source graph visualization tool, to work with huge (or at least big) datasets and graphs."/>
+<meta name="twitter:title" content="Apache Druid: analytical queries powered by magic"/>
+<meta name="twitter:description" content="It has been a while since my previous data paper. This time I tackle a less known one."/>
 
 <meta name="author" content="Ruben Berenguel">
     
@@ -84,7 +83,9 @@ But this post is only mildly related to these books, since it started way before
 
   
   
-<header class="cover bg-top" style="max-height: 250px;background-image: url('/2011/08/using-gephi-to-visualize-keywords-and.html//Keywords-LandingPages.png');">
+    
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('https://mostlymaths.net///images/dresser/wide10.jpg');">
     <div class="pb1-m pb1-l bg-black-60">
       <nav class="pv1 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -138,200 +139,75 @@ But this post is only mildly related to these books, since it started way before
     <article class="flex-l flex-wrap justify-between mw8 center ph3">
   
     <header class="mt4 w-100">
-        <h1 class="fw1 mb1 f1">Using Gephi with Google Analytics to visualize keywords and landing pages</h1>
+        <h1 class="fw1 mb1 f1">Apache Druid: analytical queries powered by magic</h1>
         
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">The Druid design paper</span>
+    </section>
+    
         
-        <time class="f6 mt4 dib tracked" datetime="2011-08-18T18:50:00&#43;02:00">August 18, 2011</time>
+        <time class="f6 mt4 dib tracked" datetime="2022-04-09T18:30:33&#43;02:00">April 9, 2022</time>
       
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1087 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1085 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
 
     
-    <section class="w-100 mb3">
-      <span class="fw1  i" style="font-size: 0.4rem;">Some links are affiliate links</span>
-    </section>
     
-    
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>As of late, I&rsquo;ve been playing a lot with data analysis and visualization tools.
-Recently I&rsquo;ve read two interesting books (<a href="http://www.amazon.com/gp/product/1849512086/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1849512086">Statistical Analysis with
-R</a>
-and <a href="http://www.amazon.com/gp/product/0470944889/ref=as_li_ss_tl?ie=UTF8&amp;tag=rbersblog-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0470944889">Visualize This: The FlowingData Guide to Design, Visualization, and
-Statistics</a>
-and I&rsquo;m on my way to another two to refresh my statistics knowledge.</p>
-<p>But this post is only mildly related to these books, since it started way
-before: the day I read about <a href="http://gephi.org/">Gephi</a>. Gephi is an open source
-graph visualization tool, to work with huge (or at least big) datasets and
-graphs. I&rsquo;ve seen it used to graph the friendship network from Facebook, or to
-graph tweet-retweets from Twitter (these two can be found in the Learn section
-from the Gephi website). In this post I&rsquo;ll guide you step by step to do a
-keyword-landing page directed graph, using data from your Google Analytics
-account.</p>
-<p>A directed graph is a graph with arrows. You have a set of sources (in this case
-keywords) and targets (in this case landing pages), and aggregate sources by
-name. Plot this, and you have a keyword-landing page graph like this one (data
-for the last month in mostlymaths.net restricted to the first 500 keywords).</p>
-<figure class="fig-wide"><img src="Keywords-LandingPages.png"
-         alt="Keywords (arrow) Landing pages"/><figcaption>
-            <p>Keywords (arrow) Landing pages</p>
-        </figcaption>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>It has been a while since my previous data paper. This time I tackle a less known one.</p>
+<figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide10.jpg"/>
 </figure>
 
-<h2 id="what-interesting-things-you-can-read-from-such-a-graph">What interesting things you can read from such a graph</h2>
-<ul>
-<li>
-<p>Clustering: In this particular instance, I can find the &ldquo;clusters&rdquo; of my
-blog. You can see 3 big aggregations of keywords and landing pages
-(left-middle,up-center and right-middle). Each one of these marks pages and
-groups of pages with several landing keywords. The groupings mark like the
-&ldquo;big themes&rdquo; in my blog, at least from search engine traffic (these are
-memory techniques, 9 best programming books I&rsquo;ve read and seed germination
-respectively). Oddly enough, I&rsquo;ve had one visit landing in seed germination
-from the keyword &ldquo;gnus mail&rdquo;, thus the big seed germination cluster includes
-emacs.</p>
-</li>
-<li>
-<p>Big keywords: In gephi you can scale nodes depending on other table
-variables. For example, I can scale the landing page dots depending on the
-number of keywords, or the number of visits. In particular, I can show which
-keywords lead to more of my pages, by using the outDegree (number of arrows
-escaping) of a node.</p>
-</li>
-<li>
-<p>Big pages: Alternatively, I can scale nodes with the inDegree (number of
-arrows entering) to learn which pages have the most different keywords. I can
-also label the arrows with the number of visits (and scale them with this
-metric).</p>
-</li>
-<li>
-<p>Huge pages: with a little more work, I could scale with total visits to see
-which are my biggest pages together with the landing keywords.</p>
-</li>
-</ul>
-<h2 id="step-by-step-guide">Step by step guide</h2>
-<p>I&rsquo;ll assume that you can manage to download and install gephi on your own, and
-have some knowledge of Google Analytics. Of course, the first you need is to
-select the keyword and landing page fields in your Google Analytics page:</p>
-<figure class="fig-wide"><img src="GA-KeywordsLandingPages.png"/>
+<p>I had actually read Druid&rsquo;s documentation around a year and a half ago, and the paper around a year ago, but never got the time to write down what I found. All in all, <strong>Druid seems very well-designed for its use case: analytical queries on big datasets</strong>. But its architectural design seems to be designed for the <em>not faint at heart</em>. I have tried to summarise the <a href="http://static.druid.io/docs/druid.pdf">Druid paper</a> and I have combined it with what is currently available in the documentation for Druid. Have fun.</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<p><a href="https://druid.apache.org/docs/latest/design/index.html">Apache Druid</a> is a data store designed for real time exploratory analytics on large datasets. It is based on a columnar data storage, advanced indexing structures and an architecture with a shared-nothing approach that lets scale every piece horizontally.</p>
+<p>The type of explorations where Druid excels are drill-downs and aggregates over dimension and metric columns.</p>
+<p>The architecture of a Druid system is split in several different types of processes. The nomenclature has been updated and grown between the Druid paper and current Druid documentation, I will point the differences as we see each piece.</p>
+<figure class="fig-tall right"><img src="https://mostlymaths.net/images/dresser/tall2.jpg"/>
 </figure>
 
-<p>Then select Show Rows and select 500:</p>
-<figure class="fig-not-so-wide"><img src="GA-Rows.png"/>
+<p>In the paper, <em>real-time processes</em> are used to ingest and query event streams. These processes index events, which are then immediately available for querying. They process short time ranges and periodically offload immutable batches to other processes. Events are processed are kept in-memory, in indexes that are updated incrementally. Regularly these indexes are flushed to disk in a columnar format. Regularly each of these processes will fetch all the persisted indexes they have locally, merge them and build a whole immutable block of data known as a <em><a href="https://druid.apache.org/docs/latest/design/segments.html">segment</a></em>. These segments are then persisted to colder storage (HDFS, S3, some form of block storage).</p>
+<p>The time blocks are handled fluidly by adding (configurable) watermarks to wait for straggler events to close previous segments. In this way, a real-time process is serving queries in real-time for locally persisted and in-memory indexed events for a while.</p>
+<p>These real time event processors are usually fetching data from a continuous data source, like Apache Kafka.</p>
+<p>In the current architecture for Druid, these would be <em><a href="https://druid.apache.org/docs/latest/design/middlemanager.html">middle manager processes</a></em> which assign tasks to <em><a href="https://druid.apache.org/docs/latest/design/peons.html">peon</a></em> processes running in separate JVMs, to maintain proper resource isolation. Current peon/middle manager processes can roll up (pre-aggregate or summarize) data at ingestion time to avoid storing unnecessary data, by setting a lower-level granularity. <strong>Note that this is enabled by default</strong>, and is based on dimension values and timestamp values of the events received.</p>
+<p><a href="https://druid.apache.org/docs/latest/design/historical.html">Historical</a> processes load and serve the immutable blocks that real-time processes have persisted. Most of the workload of querying Druid is done by these processes. These are purely shared-nothing, and thus can be infinitely scaled horizontally, or as much as your cold storage can feed them when they request data. When a historical process has a local copy of a segment from cold storage it notifies Zookeeper about which segments are available, to let queries about that segment be routed efficiently. Note that historical processes always see consistent data, because they deal with the immutable blocks from cold storage, nothing fresh or that can be updated. These are still called Historical in the current architecture.</p>
+<p><a href="https://druid.apache.org/docs/latest/design/broker.html">Broker</a> processes (usually in its own nodes) act as query routers to historical and real-time processes based on data available in Zookeeper. Even having lost Zookeeper queries work: brokers keep its most current state cached locally, so they can route queries if they have seen the segment before. Brokers keep <a href="https://druid.apache.org/docs/latest/querying/caching.html">queries cached</a> (a simple LRU cache, <em>least recently used</em>), too. In current systems this is split into a broker and an optional <a href="https://druid.apache.org/docs/latest/design/router.html">router</a> process type that load-balances between different types of processes and nodes.</p>
+<figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square3.jpg"/>
 </figure>
 
-<p>And get a nice CSV file with the export tab on top:</p>
-<figure class="fig-wide"><img src="GA-Export.png"/>
+<p>Coordinator processes manage the distribution of load across historical processes, telling when to load or drop new segments. Druid internally uses MVCC (<em>multi-version concurrency control</em>, the same system AWS Redshift uses). Coordinator processes use Zookeeper for leadership election and maintain a <em>state of the cluster view</em> that they constantly update and persist to a MySQL (or similarly transactional and external) database. In the current naming these would be still <a href="https://druid.apache.org/docs/latest/design/coordinator.html">coordinator</a> processes, but there is additionally <a href="https://druid.apache.org/docs/latest/design/overlord.html">overlord</a> processes, which we can all agree is a cooler name: they are the ones controlling the availability of middle managers and peon processes.</p>
+<p>Load balancing of queries uses a form of CBO (<em>cost-based optimisation</em>) taking into account which real-time processes contain this information, which historical processes contain available segments, and which are undergoing queries at the moment. Coordinator processes may force segment replication across several historicals if a segment is very hot with queries.</p>
+<p>Druid uses a custom columnar storage format. Data tables in Druid are called <em>data sources</em>, and are formed with timestamped events partitioned by segments. Each segment holds between 5 and 10 million rows. Segments are the smallest block Druid cares about as a whole. Timestamps are fundamental to prune queries and find the correct segments, but the granularity at which segments are partitioned will depend on the nature of the data, from seconds to weeks or months. All other column types are handled with its own data type, and compressed using the most appropriate encoding (dictionary, delta, algorithmically compressed…).</p>
+<p>Druid handles string columns specially, by constructing lookup indices for the terms found in them. These are bitmap indices, which are small and also easy to compress. This speeds up queries on string columns by determining which rows are needed from a segment.</p>
+<figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square7.jpg"/>
 </figure>
 
-<p>Now I don&rsquo;t know if this is because I select CSV and not CSV for Excel, but you
-have to clean the file: there are a lot of table identifiers to remove before
-the real data table. You also need to remove a line at the end of the file. You
-can do all this editing with any plain text editor. I used
-<a href="http://www.mostlymaths.net/search/label/emacs">emacs</a>.</p>
-<figure class="fig-wide"><img src="GA-Clean.png"/>
-</figure>
-
-<p>Remove all this, below Table you should have the useful data,</p>
-<figure class="fig-wide"><img src="GA-Clean2.png"/>
-</figure>
-
-<p>Remove the last line with dashes. Now the file is almost ready to be imported…
-You need to rename the Visits column to something else, for some odd reason
-Google Analytics copies the same column twice and Gephi needs unique column
-names. Ready to import. In Gephi, go to the Data Table window from the Window
-menu, and click Import Spreadsheet:</p>
-<figure class="fig-wide"><img src="Gephi-ImportSpreadhsheet.png"/>
-</figure>
-
-<p>And now you should select edges table and comma-separated:</p>
-<p><figure class="fig-wide"><img src="Gephi-Import.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-SourcesError.png"/>
-</figure>
-</p>
-<p>Oops. More tweaking of the CSV file is needed: Change the first two columns to
-Source and Target (and don&rsquo;t forget to mark comma as I did, too) and re-import
-the file:</p>
-<figure class="fig-wide"><img src="GA-ImportOK.png"/>
-</figure>
-
-<p>After clicking next, Gephi will ask you for the types of the columns. Since I&rsquo;m
-only interested in visits, pages/visit and average time on site, these are the
-only columns I want to be floats. You need them to be float to scale the nodes
-according to these parameters:</p>
-<figure class="fig-not-so-wide"><img src="Gephi-ImportParameters.png"/>
-</figure>
-
-<p>Next, we&rsquo;ll see a blob of points with no labels. Choose the Force Atlas
-algorithm in the Layout window, run for a while and then click stop:</p>
-<p><figure class="fig-wide"><img src="Gephi-Blob.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-ForceAtlas.png"/>
-</figure>
-</p>
-<p>The result from the Force Atlas algorithm to distribute points will look nicer,
-spreading aggregates of arrows all over the place. Now we need to get the
-labels. To do so, you have to click on a somewhat hidden button in the
-bottom-right part of the Graph window, and select the correct names for the
-tags. In this picture I&rsquo;ve also marked the label and edge scaling according to
-parameters:</p>
-<figure class="fig-wide"><img src="Gephi-Labels.png"/>
-</figure>
-
-<p>Once you have labels, you need to play with the layout to make them more
-visible. Run the algorithm Adjust Labels for a while, then Force Atlas and
-repeat until you are happy with the results:</p>
-<figure class="fig-wide"><img src="Gephi-LabelAdjust.png"/>
-</figure>
-
-<p>You can also set labels for the edges, if you are interested in seeing visits,
-for example. But I found it messy and unchecked the option. Finally, to scale
-the nodes, use the Ranking window:</p>
-<figure class="fig-wide"><img src="Gephi-Ranking.png"/>
-</figure>
-
-<p>The arrows mark the different ways to adjust: you can change colour, size, text
-size or text colour. Feel free to play with all these settings!</p>
-<p>You can get a nice PNG file of you graph by pressing the camera-like icon in the
-Graph window (clicking the down-arrow will list the properties), or you can
-export a PDF or SVG with some more work from the Preview window. Both result in
-nice images, but a SVG or PDF can be tweaked extensively using Illustrator or
-Inkscape. But it also needs more work from the Gephi side, so I won&rsquo;t enter the
-details in this tutorial. Well, just a little! Be sure to check &ldquo;show&rdquo; before
-exporting, or you&rsquo;ll see a blank page:</p>
-<figure class="fig-wide"><img src="Gephi-ExportSVG.png"/>
-</figure>
-
-<p>And with just these steps you can create quite nice (and useful) graphs like
-this one:</p>
-<figure class="fig-wide"><img src="Gephi-FullMap.png"/>
-</figure>
-
-<p>And here you can find a closer zoom:</p>
-<figure class="fig-wide"><img src="Gephi-ZoomIn.png"/>
-</figure>
-
-<p>I hope you enjoyed this tutorial, if you did it would be awesome if you share
-it. I&rsquo;ll try to do a few more Gephi tutorials as I find more interesting (for
-me) uses of Gephi. I have also a few post/tutorial ideas about visualizing
-Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
-<hr/>
+<p>Finally, Druid&rsquo;s query API is a custom query language encoded as JSON over POST requests. All the brokers, historical and real-time processes understand this API, which is known as <em>native queries</em>. Currently there is also <a href="https://druid.apache.org/docs/latest/querying/sql.html">Druid SQL</a>, which uses <a href="https://calcite.apache.org/">Apache Calcite</a> in the brokers to transform SQL into native druid queries. The responses are likewise JSON responses of blocks of aggregations of metrics per timestamp and dimension. Importantly, there were no join queries in the Druid paper: it is designed only for pure OLAP type of queries. There are some forms of <a href="https://druid.apache.org/docs/latest/querying/joins.html">join operations in current Druid</a>, but they are not &ldquo;full&rdquo; joins like what we&rsquo;d expect from a relational system.</p>
+<hr>
+<p>All in all, Druid&rsquo;s design looks sound. I have recently learned about the peformance and capabilities of <a href="https://github.com/ClickHouse/ClickHouse">ClickHouse</a>, which are essentially similar, but without an architectural whitepaper (or one I could find). Not knowing what the design ideas were makes me nervous.</p>
+<hr>
+<div class="note ">
+<span class='scaps smallText' style="display: inline-block;">
+  All images in this post are from:
+</span> 
+<span class='note-body smallText' style="display: inline-block;">
+<p><a href="https://archive.org/details/Studiesdesign00Dres/page/n173/mode/2up">Christopher Dresser&rsquo;s <em>Studies in Design</em></a></p>
+</span>
+</div><hr/>
         <ul class="pa0">
-  
-   <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/blog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Blog</a>
-   </li>
   
    <li class="list" style="display:inline;">
      <a href="https://mostlymaths.net/tags/data" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data</a>
    </li>
   
    <li class="list" style="display:inline;">
-     <a href="https://mostlymaths.net/tags/visualization" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Visualization</a>
+     <a href="https://mostlymaths.net/tags/data-papers" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Data Papers</a>
    </li>
   
 </ul>
@@ -350,23 +226,23 @@ Facebook Insights data for pages and using Google Fusion Tables. Stay tuned!</p>
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/good-books-ive-read-in-2011-perfect.html/">Good Books I have Read in 2011: Perfect Gifts for Geeks!</a>
+           <a href="https://mostlymaths.net/2021/01/lakehouse.html/">Lakehouse: It&#39;s like Delta Lake, but not really</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2011/12/working-on-go-with-ipad-bluetooth.html/">Working on the go with an iPad, a Bluetooth keyboard and a 6sync account</a>
+           <a href="https://mostlymaths.net/2021/01/hive.html/">Down memory lane: the Hive paper</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2022/04/druid.html/">Apache Druid: analytical queries powered by magic</a>
+           <a href="https://mostlymaths.net/2020/11/rdd.html/">The RDD paper: introducing the Spark general purpose framework</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2022/04/202210-readings.html/">2022#10 Readings 🇺🇦🌻</a>
+           <a href="https://mostlymaths.net/2020/10/delta-lake.html/">Databricks&#39; Delta Lake: high on ACID</a>
        </li>
 	     
 	     <li  class="mb2">
-           <a href="https://mostlymaths.net/2022/03/202209-readings.html/">2022#09 Readings 🇺🇦🌻</a>
+           <a href="https://mostlymaths.net/2020/10/snowflake.html/">Does Snowflake have a technical moat worth 60 billion?</a>
        </li>
 	     
     </ul>
