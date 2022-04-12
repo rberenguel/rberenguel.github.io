@@ -49,7 +49,7 @@
 <meta itemprop="description" content="A middle-of-the-week one because it&rsquo;s Easter and I may not write this during days off.
 "><meta itemprop="datePublished" content="2022-04-12T06:15:33+02:00" />
 <meta itemprop="dateModified" content="2022-04-12T06:15:33+02:00" />
-<meta itemprop="wordCount" content="605">
+<meta itemprop="wordCount" content="607">
 <meta itemprop="keywords" content="Ray,Apache Spark,DuckDB,Writing,Data,Apache Druid,Documentation,ReadingsOfTheWeek,Readings," />
 
     
@@ -150,7 +150,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 605 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 607 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -190,6 +190,9 @@
 <h2 id="comparison-of-open-source-olap-systems-druid-pinot-clickhousehttpsleventovmediumcomcomparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7"><a href="https://leventov.medium.com/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7">Comparison of open source OLAP systems: Druid, Pinot, Clickhouse</a></h2>
 <p>I have been interested in Druid for a while 😉, and recently (because of Tinybird) have checked ClickHouse. I wasn&rsquo;t very impressed with the architectural decisions (and information!) available for ClickHouse, so my assessment seems to coincide with this article: if you need to support multiple nodes of one of these… go for either of the Apache projects.</p>
 <h2 id="-duckdb--the-sqlite-for-analytics-httpswwwyoutubecomwatchappdesktopindex1listplse8odhjzxjagqlf1nxubqwamkrhxi-izvpfuzlnqindo"><a href="https://www.youtube.com/watch?app=desktop&amp;index=1&amp;list=PLSE8ODhjZXjagqlf1NxuBQwaMkrHXi-iz&amp;v=PFUZlNQIndo">🍿 DuckDB – The SQLite for Analytics 👁️</a></h2>
+<span class="glance">
+  <a  href="http://rberenguel.github.io//glances/data/misc/data-microservices-flight.html">👀 glance</a>
+</span>
 <p>I have used DuckDB locally on ocasions, when needing to have a look at a Parquet file where I didn&rsquo;t need anything particularly pythonic, like just running a group and count, which are easier to write in SQL than Pandas. And it works well, really well. By the way, another thing I do somewhat regularly for some reason is checking header metadata of Parquet files. The most convenient tool for doing this is using Arrow&rsquo;s <a href="https://arrow.apache.org/docs/python/generated/pyarrow.parquet.read_metadata.html">read_metadata</a>.</p>
 <div style="text-align: center; border-top: 1px solid #333311; padding-top: 0.7em; margin-top: 0.7em;">
 <a href="http://eepurl.com/geFw7P" class="link f4 grow no-underline br-pill ba ph3 pv2 dib black sans-serif">Subscribe to these posts as a newsletter</a>
