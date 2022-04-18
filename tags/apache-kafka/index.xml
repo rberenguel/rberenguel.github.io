@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache Kafka on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/apache-kafka/</link>
+    <description>Recent content in Apache Kafka on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Apr 2022 13:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/apache-kafka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022#12 Readings 🇺🇦🌻</title>
+      <link>https://mostlymaths.net/2022/04/202212-readings.html/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2022/04/202212-readings.html/</guid>
+      <description>&lt;p&gt;I took some days off for Easter, and I definitely needed them.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

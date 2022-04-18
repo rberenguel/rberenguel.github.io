@@ -6,22 +6,85 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Apr 2022 06:15:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 13:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Apache Druid</title>
-      <link>https://mostlymaths.net/tags/apache-druid/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
+      <title>Agile</title>
+      <link>https://mostlymaths.net/tags/agile/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/tags/apache-druid/</guid>
+      <guid>https://mostlymaths.net/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Kafka</title>
+      <link>https://mostlymaths.net/tags/apache-kafka/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-kafka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apache Spark</title>
       <link>https://mostlymaths.net/tags/apache-spark/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://mostlymaths.net/tags/writing/</link>
+      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Druid</title>
+      <link>https://mostlymaths.net/tags/apache-druid/</link>
+      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-druid/</guid>
       <description></description>
     </item>
     
@@ -62,33 +125,6 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>https://mostlymaths.net/tags/writing/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data Papers</title>
       <link>https://mostlymaths.net/tags/data-papers/</link>
       <pubDate>Sat, 09 Apr 2022 18:30:33 +0200</pubDate>
@@ -125,29 +161,11 @@
     </item>
     
     <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Productivity</title>
       <link>https://mostlymaths.net/tags/productivity/</link>
       <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
     </item>
     
@@ -796,15 +814,6 @@
       <pubDate>Sat, 14 Mar 2020 22:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/forth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Agile</title>
-      <link>https://mostlymaths.net/tags/agile/</link>
-      <pubDate>Tue, 28 Jan 2020 03:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/agile/</guid>
       <description></description>
     </item>
     
