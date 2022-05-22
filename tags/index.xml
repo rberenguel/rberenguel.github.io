@@ -6,31 +6,85 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 May 2022 10:20:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Apache Kafka</title>
-      <link>https://mostlymaths.net/tags/apache-kafka/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/apache-kafka/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 22 May 2022 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Julia</title>
+      <link>https://mostlymaths.net/tags/julia/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/julia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Management</title>
       <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>https://mostlymaths.net/tags/product/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Kafka</title>
+      <link>https://mostlymaths.net/tags/apache-kafka/</link>
+      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-kafka/</guid>
       <description></description>
     </item>
     
@@ -53,24 +107,6 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Writing</title>
       <link>https://mostlymaths.net/tags/writing/</link>
       <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
@@ -85,15 +121,6 @@
       <pubDate>Sat, 07 May 2022 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/apache-spark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Sat, 07 May 2022 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -175,15 +202,6 @@
       <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/kafka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sun, 03 Apr 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -562,15 +580,6 @@
       <pubDate>Thu, 19 Aug 2021 18:02:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/vs-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Product</title>
-      <link>https://mostlymaths.net/tags/product/</link>
-      <pubDate>Sun, 08 Aug 2021 17:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/product/</guid>
       <description></description>
     </item>
     
