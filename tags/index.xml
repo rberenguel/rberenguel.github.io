@@ -6,13 +6,40 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 May 2022 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 06:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data</title>
       <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
+      <pubDate>Mon, 23 May 2022 06:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Papers</title>
+      <link>https://mostlymaths.net/tags/data-papers/</link>
+      <pubDate>Mon, 23 May 2022 06:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-papers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Mon, 23 May 2022 06:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ray</title>
+      <link>https://mostlymaths.net/tags/ray/</link>
+      <pubDate>Mon, 23 May 2022 06:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/ray/</guid>
       <description></description>
     </item>
     
@@ -134,15 +161,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Mon, 18 Apr 2022 13:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Apache Druid</title>
       <link>https://mostlymaths.net/tags/apache-druid/</link>
       <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
@@ -166,24 +184,6 @@
       <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/duckdb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ray</title>
-      <link>https://mostlymaths.net/tags/ray/</link>
-      <pubDate>Tue, 12 Apr 2022 06:15:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/ray/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Papers</title>
-      <link>https://mostlymaths.net/tags/data-papers/</link>
-      <pubDate>Sat, 09 Apr 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-papers/</guid>
       <description></description>
     </item>
     
