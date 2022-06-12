@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presto on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/presto/</link>
+    <description>Recent content in Presto on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jun 2022 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/presto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Presto paper</title>
+      <link>https://mostlymaths.net/2022/06/presto.html/</link>
+      <pubDate>Sun, 12 Jun 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2022/06/presto.html/</guid>
+      <description>&lt;p&gt;This is the next installment on my quest to read and help understand &lt;a href=&#34;https://mostlymaths.net/tags/data-papers&#34;&gt;interesting papers&lt;/a&gt; in the data space.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

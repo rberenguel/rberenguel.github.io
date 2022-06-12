@@ -6,7 +6,34 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jun 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 11:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 12 Jun 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Papers</title>
+      <link>https://mostlymaths.net/tags/data-papers/</link>
+      <pubDate>Sun, 12 Jun 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-papers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presto</title>
+      <link>https://mostlymaths.net/tags/presto/</link>
+      <pubDate>Sun, 12 Jun 2022 11:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/presto/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Kafka</title>
       <link>https://mostlymaths.net/tags/apache-kafka/</link>
@@ -22,15 +49,6 @@
       <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -85,15 +103,6 @@
       <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Papers</title>
-      <link>https://mostlymaths.net/tags/data-papers/</link>
-      <pubDate>Mon, 23 May 2022 06:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-papers/</guid>
       <description></description>
     </item>
     
