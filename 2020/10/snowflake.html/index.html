@@ -161,7 +161,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>I didn&rsquo;t know much about Snowflake, so I decided to have a look at its SIGMOD (<em>ACM Special Interest Group on Management of Data</em>) <a href="http://pages.cs.wisc.edu/~yxy/cs839-s20/papers/snowflake.pdf">paper</a> and investigate a bit more what special capabilities they offer, and how they compare to others.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide10.jpg"/>
 </figure>
-
 <p><a href="https://www.snowflake.com">Snowflake</a> (<a href="https://www.nyse.com/quote/XNYS:SNOW">New York Stock Exchange: SNOW</a>) has recently gone public, on an IPO (<em>Initial Public Offering</em>) that has valued the company at around 70 billion. It caught me by surprise. I knew Snowflake was well considered, but this valuation looked crazy. Hence, if you are curious about why Snowflake may (or may not) be worth this much, what its technological moat is and this kind of questions, read on.</p>
 <p>This writing is divided in the following sections, loosely following the SIGMOD paper sections with the additions of IPO information and my final commentary.</p>
 <ul>
@@ -184,7 +183,6 @@
 <p>Having fully elastic compute means that the system can <strong>easily adapt to varying workloads</strong>. You don&rsquo;t need to have idle instances while your team is not analysing data, and when Black Friday arrives you can have as much compute as you need (or can pay). This is very efficient, even from the point of view of Snowflake, where they recommend you fully shutdown your nodes when finished.</p>
 <figure class="fig-tall right"><img src="https://mostlymaths.net/images/dresser/tall2.jpg"/>
 </figure>
-
 <p>Most importantly, once you have infinite compute scalability, you can offer a pay as you go model, where storage is a fixed cost and compute expense depends on your use.</p>
 <p>Note that to make <em>cloud ready</em> a reality, Snowflake had to exclusively focus on being a SaaS (<em>Software as a Service</em>) offering and discarding the lucrative on-premise market. This has implications: for some industries (banking would be the most obvious, medical may be another) having your private cloud in the basement is a strong requirement.</p>
 <p>Offering a full SaaS also means that engineering teams no longer need to manually tweak and adapt settings (what was <code>executorMemoryOverhead</code> again?), since this is now deferred to the Snowflake engineers.</p>
@@ -200,7 +198,6 @@
 <p>One interesting point is that the block files have enough <strong>metadata in their headers to allow random access to the file</strong>: this leverages the underlying cloud storage random access to avoid reading more data than needed. Fewer data to read means less access to slow storage and less network transfer. Win-win-win.</p>
 <figure class="fig-tall left"><img src="https://mostlymaths.net/images/dresser/tall1.jpg"/>
 </figure>
-
 <p>It is fully <a href="https://en.wikipedia.org/wiki/ACID">ACID</a> (Atomicity, Consistency, Isolation and Durability) compliant, using <a href="https://en.wikipedia.org/wiki/Snapshot_isolation">snapshot isolation</a>: <strong>transactions see a consistent database</strong> due to the underlying immutability of the files. This is akin to what Delta Lake offers on Databricks (although Delta can have some ACID issues if my memory serves). Since the storage layer contains immutable files, failed (partial or full) computations can be re-run easily.</p>
 <p>The engine is also vectorised, which is unsurprising given that it is columnar-based. Why would you write anything columnar from scratch if you don&rsquo;t intend to use it as well as possible?</p>
 <p>One interesting fact from the paper is that the engine is not based on the <a href="https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf">Volcano iterator model</a> (what essentially most database systems use, and in particular Apache Spark uses if you ignore the code generation parts) but is based on a <strong>push-based model</strong>. There are not many details on how this works, not even a reference. <a href="https://arxiv.org/pdf/1610.09166.pdf">This paper</a> seems to compare Volcano and push engines (as well as provide additional references) and I intend to give it a look at some point. I love knowing how the database sausage is made.</p>
@@ -230,7 +227,6 @@
 <p>This is the name Snowflake gives computing nodes (as in a cluster) in the system. There is no direct access to these: users (clients) don&rsquo;t interact with the machines or even the cluster, they can only issue queries. There is a <strong>1-1 mapping from user queries to a virtual warehouse</strong>. When a user queries its database a virtual warehouse (VW) will be created for the query.</p>
 <figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square2.jpg"/>
 </figure>
-
 <p>You can only choose the size of VWs abstractly, in T-shirt sizes. This is an advantage, since it means improvements on the underlying hardware in the cloud offerings are transparent to Snowflake users. The instances in the cluster of a VW are called working nodes. Since creation and destruction of VWs has no effect on the data stored (i.e. the database), users are <em>heavily</em> encouraged to adjust the size per query and spin down any resources when there is nothing going on.</p>
 <p><strong>Local disk is used heavily fors caching</strong> (simple LRU, storing full columns when needed), whereas intermediate computations are spilled directly into object storage to allow some optimised re-running of failed queries. Snowflake only uses instances with SSD storage, since this cache is most of the time to be a hot cache.</p>
 <div class="sb sb-2">
@@ -253,7 +249,6 @@
 </div>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide11.jpg"/>
 </figure>
-
 <h3 id="ipo-details">IPO details</h3>
 <p>This is a small summary of the <a href="https://www.sec.gov/Archives/edgar/data/1640147/000162828020013518/snowflakes-1a2.htm">IPO prospect</a>. Note that the estimate for the addressable market is a whooping 80 billion ($) market.</p>
 <p>Snowflake has 3k customers, and is running more than 500 million queries per day. Of these 3k customers, 50 spend more than 1 million (per year). They have some pretty large customers according to the prospect, like <em>Capital One</em> (a bank) and <em>Sainsbury&rsquo;s</em> (funnily, not mentioned by name in the prospect but I dare you to find another big retail chain in Europe selling clothes, food and financial services).</p>
@@ -285,7 +280,6 @@
 <p>The new compute only nodes in Redshift are <em>expensive</em>. As in really <em>costly</em>. The whole point of Snowflake is running small when you do easy things/small data. Compute only Redshift does not offer that: for small-to-medium volumes of data they directly force you to use Spectrum or Athena (the smallest compute-only cluster is 5k$/month for 160 TB of accessible S3 data). This is pretty high, but is not helped by the pricing models of Spectrum or Athena, which charge per <em>data scanned</em>. If your queries are badly written, you are toast. This is because there is no capping to this cost, in Snowflake you cap it (per hour) by the size of your virtual warehouse. This looks like a win for Snowflake.</p>
 <figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square1.jpg"/>
 </figure>
-
 <p>I&rsquo;m not very familiar with any new offerings, but traditionally BigQuery suffers a similar flaw to Redshift Spectrum: it charges per computation, basically auto-spinning machines. If your query is badly written, you are going to (literally) pay for your mistake. This is mostly uncapped (I think there are new options now that may help with this), whereas in Snowflake it is.</p>
 <p>Against these three possible competitors, Snowflake seems to have a clear edge. Worth 60 billion? I wouldn&rsquo;t count on that for a long-term investment. Of course, I&rsquo;m not an investor: <a href="https://en.wikipedia.org/wiki/Berkshire_Hathaway">Berkshire-Hathaway</a> (<a href="https://en.wikipedia.org/wiki/Warren_Buffett">Warren Buffet</a>&rsquo;s investment company) has invested 700 million, and they are famous for being long investors.</p>
 <p>One kicker for me is that they have been called <em>the new Oracle</em>. Where is <a href="https://en.wikipedia.org/wiki/Oracle_Corporation">Oracle</a> now? They are still a large business, they are pretty stable. In general, database systems are sticky: once you choose a vendor you keep it for pretty long. That is good, but traditionally all database system architectures have a relatively short timespan to profit.</p>

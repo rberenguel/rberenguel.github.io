@@ -161,7 +161,6 @@ any other nerd would do: roll my own map as I wanted it.</p>
 <p>The end result looks like this (downscaled to 20%)</p>
 <figure class="fig-wide"><a href="MapWithSymbols_20.jpg"><img src="MapWithSymbols_20.jpg"/></a>
 </figure>
-
 <p>The real map is 1.4 × 1.2 metres</p>
 <h2 id="getting-the-data">Getting the data</h2>
 <p>My first idea was to follow the steps of <a href="http://www.dominik-schwarz.net/potpourri/worldmap/">Dominik
@@ -178,7 +177,6 @@ being able to walk there?</p>
             <p>Castellet, just beside Pantà de Foix</p>
         </figcaption>
 </figure>
-
 <p>Hence, I turned to our trusty government, and in particular to the <a href="http://www.icc.cat/eng/Home-ICC/Inici/Inici">Catalan
 Cartographic and Geologic
 Institute</a> (from now on the ICC,
@@ -283,7 +281,6 @@ join</li>
             <p>A join</p>
         </figcaption>
 </figure>
-
 <p>With this at least I’d know, since the type was now human-readable. I still
 didn’t know how to add icons, but I could edit the name and add a letter to
 denote what it is (or I could even add some text.) The labelling function is
@@ -319,13 +316,11 @@ view:</p>
             <p>The general view</p>
         </figcaption>
 </figure>
-
 <figure class="fig-wide"><img src="Shot-WGlyphs.jpg"
          alt="A zoom"/><figcaption>
             <p>A zoom</p>
         </figcaption>
 </figure>
-
 <p>In the zoom you can see the glyphs for a fountain (<em>Font d’Horta</em> and <em>Font de Mas Carlús</em>), a church (<em>Sant Pere</em>) an aqueduct (<em>de les Aigües de Vilanova i la Geltrú</em>) and a bridge (<em>de la font d’Horta</em>.) This was nice but non-optimal. I wanted symbols! So, how do you get symbols if you have a toponymy layer with lines, not feature points?</p>
 <h2 id="symbols">Symbols</h2>
 <p>First, duplicate the layers holding the labels. It can be done without
@@ -362,13 +357,11 @@ question</a>.</p>
             <p>This is how <em>Style</em> should look like with rule-based</p>
         </figcaption>
 </figure>
-
 <figure class="fig-wide"><img src="Markers.jpg"
          alt="And this is what a specific rule looks like"/><figcaption>
             <p>And this is what a specific rule looks like</p>
         </figcaption>
 </figure>
-
 <p> After adding markers you’ll need to tweak them. I did one part in SVG (adding
 stroke to the shapes and changing colours directy in the file so I didn’t need
 to bother in QGIS) and some others relating to placement (middle point and then
@@ -381,7 +374,6 @@ end result? Here you can see the same area as above with icons.</p>
             <p>A zoom in with markers in place</p>
         </figcaption>
 </figure>
-
 <p>Nice, don’t you think?</p>
 <h2 id="so-how-do-you-print-it">So, how do you print it?</h2>
 <p>This is actually very very easy. To print you need a <code>New print composer</code> from
@@ -402,7 +394,6 @@ disable as many layers as you can really manage.</p>
             <p>The map composer reminds me of Scribus</p>
         </figcaption>
 </figure>
-
 <p>Since I wanted a portable version of the map to have on my iPad Air, I decided to split it using ImageMagick in 9 tiles I could easily zoom in any app. IM has the nice “crop” feature that can generate tiles, like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">convert -crop 4x3 MEGAMAP.jpg megamap/tiles%03d.jpg  
 

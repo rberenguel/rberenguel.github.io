@@ -157,7 +157,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This is a project recap on writing some non-super-trivial Haskell for the first time.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide2.jpg"/>
 </figure>
-
 <p>After reading <a href="https://mostlymaths.net/2020/08/review-success-haskell.html/">Finding Success (and Failure) in Haskell</a>, I decided I needed a non-trivial project to write on my own. I have heard from smart people that Haskell is pretty quick to write once you get your groove, and I was curious to see if I could at least glimpse that.</p>
 <p>The project I chose is a rewriting of a CLI tool I wrote in Python close to two years ago, which we jokingly call at work <em>el tiquetizador</em>, the ticketiser. It takes (from <code>stdin</code>) a flat YAML list of ticket details (<em>summary</em>, <em>user story</em>, <em>acceptance criteria</em> and optionally <em>point</em> estimate or <em>description</em>) and calls the Jira API to create them.</p>
 <p>It can create epics and any ticket following an epic is added to it. If you use Jira cloud, you can imagine how much time this has saved me during these years.</p>
@@ -184,7 +183,6 @@
 <p>It was then an easy choice, and I want to explain the process I followed.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide3.jpg"/>
 </figure>
-
 <p>My development process is pretty straightforward in cases like this. First, I consider the questions this program <em>has</em>:</p>
 <ul>
 <li>How can I test what I write?</li>
@@ -214,7 +212,6 @@
 <h3 id="days-1-and-2-first-steps-and-poc">Days 1 and 2: First steps and PoC</h3>
 <figure class="fig-right"><img src="https://mostlymaths.net/images/dresser/square1.jpg"/>
 </figure>
-
 <p>My first Haskell weekend was spent writing this tracer. I started by using the <a href="https://github.com/snoyberg/yaml"><code>yaml</code> library</a> by <a href="https://mobile.twitter.com/snoyberg">Michael Snoyman</a>. In particular, I copied from the <code>config</code> example <a href="https://github.com/snoyberg/yaml/blob/master/yaml/examples/Config.hs">here</a>. This example is interesting because it serves almost as a test harness about how to go from <em>inlined string</em> to object.</p>
 <p>Thus, the first half of the day was spent writing data types for the YAML objects, and tweaking how they looked.</p>
 <p>Once I had this down, the other half went for CLI parsing. I went for command-line option parsing, and chose <a href="https://hackage.haskell.org/package/optparse-applicative">optparse-applicative</a>. This was trickier to write and understand, but I got a CLI argument parser. For now I didn&rsquo;t have any flags, only a filename.</p>
@@ -242,7 +239,6 @@
 </ul>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide1.jpg"/>
 </figure>
-
 <h3 id="day-3-it-works">Day 3: It works!</h3>
 <p>I started by plugging the pieces: read YAML, process it and send it to the Jira API. This was pretty straightforward:</p>
 <ul>
@@ -293,7 +289,6 @@
 </ul>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide4.jpg"/>
 </figure>
-
 <h3 id="day-4-refactor-cleanup">Day 4: Refactor, cleanup</h3>
 <p>This was mostly cleanup day. It involved:</p>
 <ul>
@@ -332,7 +327,6 @@
 </ul>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide5.jpg"/>
 </figure>
-
 <h3 id="day-5-wrap-it-up-and-push-to-github">Day 5: Wrap it up and push to Github</h3>
 <p>This was finish-up. Add a <code>README.md</code>, an example of ticket file and configuration. Send to <a href="https://github.com/rberenguel/hticketiser">Github</a> and wrap up the post.</p>
 <p>I added additional configuration to select the board (since I create epics/stories in two boards) and the required changes, which imply modifications in the serialisers as detailed above. It was pretty painless thanks to the compiler telling me &ldquo;nope, nope, nope&rdquo;.</p>

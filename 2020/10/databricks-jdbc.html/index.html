@@ -158,7 +158,6 @@
 <br/>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 </figure>
-
 <p>This will be a short one. I want to move some SQL from <a href="https://aws.amazon.com/redshift/">AWS Redshift</a> to <a href="https://databricks.com">Databricks</a> for performance and cost reasons. Currently, all the SQL is running in a pretty dense <a href="https://airflow.apache.org">Airflow</a> DAG (Directed Acyclic Graph), and my cunning plan was:</p>
 <ul>
 <li>Swap the current uses of <code>PostgresOperator</code> by <code>JdbcOperator</code>, by connecting to a Databricks cluster via JDBC</li>
@@ -212,7 +211,6 @@ AuthMech=3;UID=token;PWD=your_api_token_or_password
 </ol>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide3.jpg"/>
 </figure>
-
 <br/>
 <p>The issue is with the <code>AutoCommit</code> feature in databases. Databricks (and in general I think Hive and some others) <strong>don&rsquo;t</strong> support autocommit. But of course <strong>Airflow doesn&rsquo;t care</strong>:</p>
 <ul>

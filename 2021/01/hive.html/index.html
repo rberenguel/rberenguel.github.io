@@ -161,7 +161,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p><a href="https://hive.apache.org">Hive</a> is arguably old. It is also undoubtedly useful, even now: 10 years after it was introduced.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide10.jpg"/>
 </figure>
-
 <p>A decade ago things were very different. Petabyte scale was only the subject of few large companies, and you were restricted to store them in Hadoop and analyse them with MapReduce jobs, <a href="https://en.wikipedia.org/wiki/Apache_Pig">Apache Pig</a> scripts and a couple more solutions (like HBase). <code>Hive</code> revolutionised data access by allowing SQL-ish access to big data, sometimes even interactively. Here I&rsquo;ll present a summary of its initial paper:</p>
 <blockquote>
 <p><a href="https://www.semanticscholar.org/paper/Hive-a-petabyte-scale-data-warehouse-using-Hadoop-Thusoo-Sarma/4c7bfa933c11c7a802c2fa9c1dc475dba36a2bd5">Hive - a petabyte scale data warehouse using Hadoop</a>.</p>
@@ -200,7 +199,6 @@
 <h4 id="metastore">Metastore</h4>
 <figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square5.jpg"/>
 </figure>
-
 <p>An internal metastore handles the catalog of metadata for tables stored in <code>Hive</code>. This metadata is written when creating tables, and is reused every time queries are executed or prepared.</p>
 <p>Such a metastore can&rsquo;t reside in HDFS: it needs random access and sequential scanning to work properly. Thus, it will be either stored in the local filesystem of the driver, or use a traditional relational database. Ideally, you&rsquo;d add replication as well: this is the most important <em>durable</em> part.</p>
 <h4 id="the-driver">The driver</h4>
@@ -222,7 +220,6 @@
 </ul>
 <figure class="fig-tall left"><img src="https://mostlymaths.net/images/dresser/tall1.jpg"/>
 </figure>
-
 <p>As expected, it all starts with a <code>parser</code> converting a query string to a parse tree.</p>
 <p>The parse tree is picked by a <code>semantic analyser</code>. The SA converts the tree into an internal query representation, with entities resolved. That is, columns are confirmed to exist in tables, all typing checks, any automated casting is added. Also, <code>*</code> expressions are expanded.</p>
 <p>A <code>logical plan generator</code> takes the internal query and creates a logical plan, which is just a tree of logical operations.</p>

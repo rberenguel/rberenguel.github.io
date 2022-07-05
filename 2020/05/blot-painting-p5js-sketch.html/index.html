@@ -167,7 +167,6 @@ source of a lot of enjoyment.</p>
             <p>Blot</p>
         </figcaption>
 </figure>
-
 <p>See, I have been always interested in generative &ldquo;stuff&rdquo; (see
 <a href="https://mostlymaths.net/2008/12/quick-postscript-programming-tutorial.html/">some</a>
 <a href="https://mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html/">examples</a>
@@ -179,7 +178,6 @@ last month, and thus found a way to have coding fun without needing a computer.<
             <p>Painting</p>
         </figcaption>
 </figure>
-
 <p>One particular area I have always been fascinated with is <strong>generation of
 real-looking paint and watercolour</strong>. I don&rsquo;t know when I started collecting
 references (well, I still remember reading <a href="https://en.m.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham&rsquo;s line
@@ -191,7 +189,6 @@ one</a>:</p>
             <p>Watercolour</p>
         </figcaption>
 </figure>
-
 <p>This was based on a <a href="https://tylerxhobbs.com/essays/2017/a-generative-approach-to-simulating-watercolor-paints">blog post I had read in
 2017</a>, although I found ot recently <a href="https://www.gamedev.net/tutorials/programming/general-and-gameplay-programming/creating-realtime-watercolour-simulation-for-the-mobile-game-tint-on-apple-arcade-r5372/">the way it&rsquo;s done in
 Tint</a>,
@@ -216,21 +213,18 @@ I knew what I wanted to implement next. Diving on.</p>
             <p><a href="https://en.wikipedia.org/wiki/Metaballs#/media/File:Metaball_contact_sheet.png">From Wikipedia</a></p>
         </figcaption>
 </figure>
-
 <p>They were first described by James Blinn while at JPL <a href="https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/blinn-blobby.pdf">on this paper</a>, as a way to describe electron density maps… and other artistically interesting structures.</p>
 <figure class="fig-not-so-wide"><img src="metaballBlinn.png"
          alt="From the paper above."/><figcaption>
             <p>From the paper above.</p>
         </figcaption>
 </figure>
-
 <p>After skimming through the paper and reading a <a href="http://blobs.webflow.io/">couple</a> <a href="http://www6.uniovi.es/hypgraph/modeling/metaballs/metaballs%5C_mward.html">references</a> it was clear that I just needed to simulate some field (for instance, an electrical field) around many particles, and sample it for each pixel. Set a threshold, and there is your metaball. To be fair, that&rsquo;s exactly the <a href="https://en.wikipedia.org/wiki/Metaballs#Definition">definition given in Wikipedia</a>.</p>
 <h2 id="implementation-details">Implementation details</h2>
 <p>So, I just set out to write that field estimation. I settled for a field given by $1/r^2$, which is relatively easy to calculate and to reason about: it&rsquo;s either charge or gravitational, depending on what you want to think it is.</p>
 <p>Next there was <em>a lot</em> of tuning of the parameters. I eventually settled my threshold around 0.5 field strength, and I got this</p>
 <figure class="fig-not-so-wide"><img src="inkBlot.png"/>
 </figure>
-
 <p>Yeah! An ink blot! But… <strong>It&rsquo;s pretty jaggy</strong>. Obviously, since it&rsquo;s a hard cutoff at 0.5: this gives no room for antialiasing or anything that can make it smoother.</p>
 <h2 id="smoothing-hell">Smoothing hell</h2>
 <p>I went down the rabbit hole of how to smooth the image above without resorting to <em>do everything with 4x resolution and downsample</em>.</p>
@@ -278,13 +272,11 @@ I knew what I wanted to implement next. Diving on.</p>
          alt="Ink over potential"/><figcaption>
             <p>Ink over potential</p>
         </figcaption>
-</figure>
- <figure class="fig-side"><img src="field2.png"
+</figure> <figure class="fig-side"><img src="field2.png"
          alt="Ink on low alpha over potential"/><figcaption>
             <p>Ink on low alpha over potential</p>
         </figcaption>
 </figure>
-
 </div>
 <p>This is how the potential looks like, by the way. I added a way to see the potential (press <code>F</code> to generate the force potential and <code>T</code> to toggle its display):</p>
 <p>You will see it is a circle around the blot: This is to reduce computations as much as possible. Since the blot is mostly circular due to the gaussian, this way we need to compute the potential in less pixels.</p>
@@ -294,7 +286,6 @@ I knew what I wanted to implement next. Diving on.</p>
             <p>Blot/Painting</p>
         </figcaption>
 </figure>
-
 <p>After I added enough tweaks and speed ups, I ended up with two closely related sketches. I merged them in one &ldquo;project&rdquo;. I call it <code>Blot/Painting</code>.</p>
 <p>In <a href="https://mostlymaths.net/sketches/blot-painting/blot.html">blot</a> you can just drop black/randomly coloured ink blots, as well as see the potential and the vectors.</p>
 <p>In <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">painting</a> you can drop ink blots with the colours of an underlying image, thus &ldquo;painting&rdquo; it.</p>
@@ -308,7 +299,6 @@ I knew what I wanted to implement next. Diving on.</p>
             <p>GUI for Blot</p>
         </figcaption>
 </figure>
-
 <p>There were a lot of tweakable options, and my ad-hoc pieces of Javascript and CSS (written for <a href="https://rberenguel.github.io/sketches/life/index.html">Conway&rsquo;s Game of Life</a> and <a href="https://mostlymaths.net/sketches/crazy/index.html">Going Crazy</a>) were not up to the task.</p>
 <p>So, I set aside some time to clean up some ideas and spin off a <a href="https://github.com/rberenguel/sketches/blob/master/libraries/gui.js">library</a> (ES6 module) I could reuse in all my sketches. It lets you</p>
 <ul>
@@ -348,7 +338,6 @@ I knew what I wanted to implement next. Diving on.</p>
             <p>Girl with a pearl earring, using an iPad, Apple Pencil and <a href="https://mostlymaths.net/sketches/blot-painting/painting.html">painting</a></p>
         </figcaption>
 </figure>
-
 <hr>
 <style>.bmc-button img{width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 5px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#79D6B5 !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 5px 7px 10px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/rberenguel"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a><hr/>
         <ul class="pa0">

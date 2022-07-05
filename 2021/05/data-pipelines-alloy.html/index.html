@@ -164,7 +164,6 @@
             <p>Photo by <a href='https://unsplash.com/@jjying'>JJ Ying</a> on <a href='https://unsplash.com/s/photos/pipeline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
-
 <p><a href="http://alloytools.org">Alloy</a> is a programming language and analysis tool for software modeling. I learnt of it 3 years ago, when I was starting with <a href="https://github.com/tlaplus">TLA+</a> (a language focused on how systems evolve over time). Alloy has a particularly clean syntax (see for instance <a href="https://www.hillelwayne.com/post/knights-knaves/">this blog post</a>) which I liked way more than TLA+, but I couldn&rsquo;t find any interesting use cases.</p>
 <p>A few days ago I was watching <a href="https://www.youtube.com/watch?v=XaCNBpCSQVk&amp;app=desktop">this pair programming</a> between <a href="https://twitter.com/HeyChelseaTroy">Chelsea Troy</a> and <a href="https://twitter.com/hillelogram">Hillel Wayne</a>, where they apply structural (formal) verification to <a href="https://chelseatroy.com/2020/10/15/clean-structural-verification-with-alloy/">a problem she had</a>. A lightbulb moment later I realised I could use Alloy for far more than I thought (which was close to nothing at the moment).</p>
 <blockquote>
@@ -204,7 +203,6 @@
             <p>Calvin &amp; Hobbes, by Bill Waterson</p>
         </figcaption>
 </figure>
-
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
@@ -222,7 +220,6 @@
 </code></pre><p>This is the first Alloy snippet. With <code>sig</code> you declare <em>something</em>, which in this case is empty. You can press <em>execute</em> (or <em>show</em>) to explore the universe satysfing these definitions, and while in the visualizer window, you can press <em>next</em> to keep exploring the universe (by default it will have 4 of each maximum). This universe will start with no pipeline and have up to 4 pipelines:</p>
 <figure class="fig-not-so-wide"><img src="pipeline1.png"/>
 </figure>
-
 <p>Since we are not concerned with having multiple pipelines, we can actually do</p>
 <pre><code class="language-alloy" data-lang="alloy">one sig Pipeline {}
 </code></pre><p>Now the universe contains one and exactly <em>one</em> <code>Pipeline</code>. Other <em>quantifiers</em> would be <code>some</code> (at least one), <code>lone</code> (at most one).</p>
@@ -257,7 +254,6 @@ one sig Load {}
 </code></pre><p>It is not <em>very</em> interesting now, but it has some structure.</p>
 <figure class="fig-not-so-wide"><img src="pipeline2.png"/>
 </figure>
-
 <p>We could stop here and say: <em>implement this</em>. And this is basically what happens when you defined it as a set of user stories, you go straight to implement the <em>trees</em> while you are missing the <em>forest</em>.</p>
 <p>Let&rsquo;s enrich the model a bit and see where this leads us. Let&rsquo;s go in order, and write the first things that are pretty obvious:</p>
 <ol>
@@ -293,10 +289,8 @@ one sig Load {
 </code></pre><p>A first pass looks like this, and one execution of the model gives this diagram:</p>
 <figure class="fig-full"><img src="pipeline3.png"/>
 </figure>
-
 <figure class="fig-wide"><img src="facepalm.jpg"/>
 </figure>
-
 <p>Of course when writing the above you may have thought <em><strong>the inputs and outputs need to match, you moron</strong></em>. And indeed, it&rsquo;s obvious seeing the diagram above as well… but we actually missed testing for it, and it failed in a real run. DUH!</p>
 <p>We can restrict our world to have this <em>predicate</em>: this predicate would be a test we need to add to our real implementation. The test is for input-output consistency.</p>
 <pre><code class="language-alloy" data-lang="alloy">/* [no changes from previous] */
@@ -319,18 +313,15 @@ run {
 </code></pre><p>A <em>predicate</em> is some property you establish, and in the <em>run</em> statement you request your universe to contain only pipelines satisfying these. When you pressed <em>execute</em> without an explicit run statement Alloy was actually running a <em>default</em> one.</p>
 <figure class="fig-full"><img src="pipeline4.png"/>
 </figure>
-
 <p>Okay, this looks better, except that <strong>Dump</strong> is reading and writing from the same location!</p>
 <pre><code class="language-alloy" data-lang="alloy">pred ConsistentDump[p: Pipeline]{
   p.dump.input != p.dump.output
 }
 </code></pre><figure class="fig-full"><img src="pipeline5.png"/>
 </figure>
-
 <p>This looks better. You can tweak the settings in the theme to make it look better, since the file format can be an attribute instead of an arc (click Theme and press on the relevant relations, then uncheck <em>show as arcs</em> and check instead <em>show as attribute</em>, then in the type <code>FileFormat</code> select <em>Hide unconnected nodes</em>).</p>
 <figure class="fig-full"><img src="pipeline6.png"/>
 </figure>
-
 <p>With this model we have avoided the facepalm of forgetting to <em>test</em> that the input and output formats match, and that the locations match. In other words, in your tests you should check this. In our case, this pipeline lives in Airflow and has a test suite that confirms that the Jinja variables used for all these match.</p>
 <h3 id="is-our-job-finished">Is our job finished?</h3>
 <blockquote>
@@ -370,7 +361,6 @@ fact InterestingSchemasOnly {
 </code></pre><p><em>Facts</em> are properties that are true regardless of any other consideration or needing any tweaks. In this case, I want to force the universe to have no empty tables, or tables with just one column, and this is just because it makes the model richer to explore.</p>
 <figure class="fig-full"><img src="pipeline7.png"/>
 </figure>
-
 <p>And it&rsquo;s obvious you want schemas to be the same.</p>
 <pre><code class="language-alloy" data-lang="alloy">pred ConsistentSchemas[p: Pipeline]{
   p.dump.outputSchema.def = p.load.schema.def
@@ -378,7 +368,6 @@ fact InterestingSchemasOnly {
 </code></pre><p>With this predicate, a model instance looks like this:</p>
 <figure class="fig-full"><img src="pipeline8.png"/>
 </figure>
-
 <p>You can keep enriching the model until you are confident it covers your problem well enough. Right now I think there is only one area I&rsquo;d like to explore… but it&rsquo;s the matter of the info box below.</p>
 <div class="note update">
 <span class='scaps ' style="display: inline-block;">

@@ -156,7 +156,6 @@
             <p>Photo by  <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nathan Dumlao</a>  on  <a href="https://unsplash.com/s/photos/hourglass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
         </figcaption>
 </figure>
-
 <p>Coincidence or alignment of some stars, at the same time I was writing a simple version of this for my fun (and no profit), <a href="https://pycoders.com">PyCoders Weekly</a> was landing on my inbox (and <a href="https://pythonbytes.fm">Python Bytes</a> was idling on my podcast player…), where, later, I would find about <a href="https://pypi.org/project/codetiming/">codetiming</a>, which is exactly this. But, since I had written the code already and a blog post was the natural destination of it, here it is anyway. I hope you don’t mind. I wrote all the code on my iPad, in <a href="http://omz-software.com/pythonista/">Pythonista</a>. Since it was only exploratory code I barely intend to even run, there are no tests or types. But out in the wild, stay safe, use <code>mypy</code> and <code>pytest</code>.</p>
 <h2 id="intro-to-context-managers">Intro to context managers</h2>
 <p>This will be short and in bullets, since the material can be found anywhere else.</p>
@@ -227,7 +226,6 @@ print(SecondManager<span style="color:#f92672">.</span>_durations[<span style="c
             <p>Dancing GIL</p>
         </figcaption>
 </figure>
-
 <p>It doesn’t look so bad in the end. Using a class variable is always a bit <em>meh</em>, but in this case is the only viable way of offering a &ldquo;global&rdquo; state you can pass around. And technically this state does not affect the timer itself (is only modified afterwards), so it&rsquo;s <em>almost</em> fine. Since in Python we have our friend <a href="https://wiki.python.org/moin/GlobalInterpreterLock">GIL</a>,  if we were to time two decorated methods which we also happened to mark async… in the end only one would record its own timing (it would follow an &ldquo;optimistic concurrence&rdquo; approach where we check nothing, so basically, yeah, nope).</p>
 <p>There is still something about the API that bugs me. To get the timing we access the internal dictionary of timings. Of course we could add a class method that accesses it to avoid going internal, but anyway… wouldn’t this look <em>so</em> much better if we could just write <code>TimingManager['nap']</code>?</p>
 <h2 id="unholy-metaclass-tweaking">Unholy metaclass tweaking</h2>

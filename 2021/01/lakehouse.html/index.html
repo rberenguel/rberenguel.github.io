@@ -161,7 +161,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>Lakehouse is the brand name for the underlying architecture of Databricks' Delta Lake: A data lake that is as performant as a data warehouse.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 </figure>
-
 <p>This summary is based on reading <a href="http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf"><em>Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics</em></a>, a very recent paper by the Databricks gang (Armbrust, Ghodsi, Xin, Zaharia).</p>
 <div class="sb sb-2">
   <hr class="section-break-2" />
@@ -175,7 +174,6 @@
 <p>As you can see, these range from <em>I could do that</em> to <em>state-of-the-art performance</em>. The key lens to see these goals is <em>existing industry trends</em>.</p>
 <figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square3.jpg"/>
 </figure>
-
 <p>First generation data warehouses were used to dump data from operational databases to support decisions and BI (Business Intelligence). Data would be written with <em>schema on write</em>, to speed up BI processes. These were usually some forms of (distributed or just large) RDBMS (relational database management system).</p>
 <div class="note ">
 <span class='scaps ' style="display: inline-block;">
@@ -192,7 +190,6 @@
 <p>An obvious solution would be <em>what if we could use the lake as if it was a data warehouse</em>?</p>
 <figure class="fig-tall left"><img src="https://mostlymaths.net/images/dresser/tall2.jpg"/>
 </figure>
-
 <p>Some trends are already converging to similar solutions. Data warehouses were adding support for <em>external tables</em>, to be able to access data stored in a data lake in <a href="https://parquet.apache.org">Parquet</a> or <a href="https://orc.apache.org">ORC</a>. Also, a surge of investment in SQL engines against data lakes, like <a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">SparkSQL</a>, <a href="https://prestodb.io">Presto</a> (now known as <a href="https://trino.io">Trino</a>), <a href="https://mostlymaths.net/2021/01/hive.html/">Apache Hive</a> and <a href="https://aws.amazon.com/athena/">AWS Athena</a>. One issue with them: these engines lack full ACID guarantees (<em>Atomicity-Consistency-Isolation-Durability</em>).</p>
 <p>A lakehouse combines these ideas. Using low cost and directly accessible cloud storage, while offering DBMS features. Features like ACID, versioning, indexing, caching and <em>query optimisation</em>. Of course, sounds good.</p>
 <p>Databricks' <a href="https://delta.io">Delta Lake</a> (which is open source, although Databricks has some internal extensions) is one possible lakehouse implementation. It uses S3 (or some other cloud storage) as a cheap storage layer, Parquet as the open storage format and a transactional metadata layer. If you are curious, I summarised the Delta Lake paper <a href="https://mostlymaths.net/2020/10/delta-lake.html/">here</a>. Some similar projects, <a href="https://iceberg.apache.org">Apache Iceberg</a> and <a href="https://hudi.apache.org">Apache Hudi</a> can also be considered lakehouse implementations, the ideas behind them are similar to Delta Lake.</p>

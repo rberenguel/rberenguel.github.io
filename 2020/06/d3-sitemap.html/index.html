@@ -156,7 +156,6 @@
             <p>Screenshot of the sitemap</p>
         </figcaption>
 </figure>
-
 <p>I&rsquo;ll keep this post short. You may have seen my project, <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> mentioned around here. Its goal is to convert your <a href="https://bear.app">Bear</a> notes into a graph you can explore (with links across notes and links from tags to notes).</p>
 <p>Its core processes the markdown documents from the Bear SQLite database, parsing it with a custom markdown parser I wrote. Then, it uses <a href="https://www.graphviz.org/doc/info/attrs.html">Graphviz</a> as the graph engine: it&rsquo;s convenient, but not the prettiest. Also it has some drawbacks in output formats, and the interactivity could be better. As a result, I&rsquo;ve had a card to improve bear-note-graph to optionally use a <a href="https://d3js.org">D3</a> force directed layout for some time.</p>
 <figure class="fig-wide"><img src="bear_graph.png"
@@ -164,7 +163,6 @@
             <p><a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a></p>
         </figcaption>
 </figure>
-
 <p>A few weeks ago I started work on this feature, by rewriting a D3 force layout I had written for a half personal, half work project (unpublished): <strong>using YAML descriptions to create system diagrams for your (data) architecture</strong>. Those diagrams have 30-50 nodes, and as such are pretty fast to render on the browser, live, with draggable nodes. My note database though, has around 1000 notes, with <em>many</em> links. This made waiting for the force layout to converge painful. It took a significant time to render, and dragging nodes was super slow.</p>
 <p>I found a fix (as always with D3) in a sketch by <a href="https://en.m.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>: <a href="https://bl.ocks.org/mbostock/01ab2e85e8727d6529d20391c0fd9a16">using a web worker</a>. With this, I could calculate the force layout on the background.</p>
 <p>Now, the remaining problem is that when I publish some code (especially code others are going to use), I want it to be as clear and understandable as possible, and I don&rsquo;t feel like cleaning up this force layout code at the moment. It also requires a significant refactor in bear-note-graph, which I don&rsquo;t feel like doing now either. On the other hand, I was itching to use it for something… So I whipped a quick <a href="https://gohugo.io">Hugo</a> post parser in Python (unpublished, it&rsquo;s just a bunch of regexes after all) that creates a JSON document that describes the graph.</p>
@@ -173,7 +171,6 @@
             <p>Filtered and zoomed with search term <code>spark</code></p>
         </figcaption>
 </figure>
-
 <p>And just like this, I now have a <a href="https://mostlymaths.net/sitemap/">sitemap on this site</a>. It is still in beta: I cleaned up several tags that were repeated, or useless but there is still work to do in that regard. Also some links may not work, if it happens please reach to me on <a href="https://mobile.twitter.com/berenguel">Twitter</a>.</p>
 <p>It has a neat autocompleting search (although it has a bug I need to fix) that reduces the amount of nodes to nodes matching the search term. Clicking on any node will take you to that tag or post. It doesn&rsquo;t have draggable nodes because I haven&rsquo;t figured out how to share the update ticker code between the worker and the graph… oh well. The code is available for you to see, but don&rsquo;t expect it to be pretty. If you want something neat, wait until I publish the final version in bear-note-graph.</p><hr/>
         <ul class="pa0">

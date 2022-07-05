@@ -161,7 +161,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>A new entry on the <a href="https://mostlymaths.net/tags/data-papers">data papers</a> series. Ray is a distributed framework for <em>next generation AI applications</em>. What does this mean? A scam? Blockchain on AI? Nah, it&rsquo;s actually pretty cool, it has <em>actors</em>.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide3.jpg"/>
 </figure>
-
 <p><a href="https://www.ray.io/">Ray</a> was created as an answer to a problem that didn&rsquo;t seem that well-known: <em>properly parallelizing reinforcement learning</em>. Most work in the past years has either been applied to parallelizing or improving classical machine learning algorithms or in adding more and more &ldquo;stuff&rdquo; (layers, memory, layers with memory, layers with memory and forgetting, layers with memory and selective forgetting…) to deep learning systems. But there was a decently sized opportunity in the reinforcement learning area, because a lot of problems are better tackled with <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement learning</a> approaches. In this article I have a look at the paper <a href="https://arxiv.org/abs/1712.05889">Ray: A Distributed Framework for Emerging AI Applications</a>.</p>
 <div class="sb sb-2">
   <hr class="section-break-2" />
@@ -186,7 +185,6 @@
 <h3 id="what-is-the-magic-sauce">What is the magic sauce?</h3>
 <figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square3.jpg"/>
 </figure>
-
 <p>The trick, and the thing I like from Ray is that it offers all this by providing a unified interface between task-parallel and actor-based computations. This is a fancy way of saying that it offers cancellable tasks that return futures as promises of a computation as well as an stateful <a href="https://en.wikipedia.org/wiki/Actor_model">actor model</a>. I won&rsquo;t introduce the actor model here (I have talked about it before somewhere), but this should remind you a lot of <a href="https://en.wikipedia.org/wiki/Akka_(toolkit)">Akka</a>. But Akka does not offer a nice interface for tasks, it essentially defers to Scala futures (or whatever other future-like you build on).</p>
 <p>Tasks are an easy way of distributing simulations and process large inputs, as well as recover from failure. The actor system allows a very easy way of handling stateful, distributed computations. These stateful computations are fundamental for training.</p>
 <p>Ray&rsquo;s computation graph has:</p>
@@ -206,7 +204,6 @@
 </ul>
 <figure class="fig-tall left"><img src="https://mostlymaths.net/images/dresser/tall1.jpg"/>
 </figure>
-
 <p>These key changes are what can allow Ray to (supposedly) support millions of tasks per second with millisecond latencies. Important for data people, Ray supports lineage-based fault tolerance for both tasks and actors.</p>
 <p>Seeing this mention of lineage-based fault tolerance I can hear your neurons screaming: <em>can this replace RDDs or the whole of Apache Spark?</em> The answer is <strong>no</strong>. Although the building blocks could in theory allow for it, Ray has no higher level functionality (query planning, straggler recomputation, dataframe API…). It would be a really good project to build on top of it, though.</p>
 <p>Ray has a dynamic task graph computation model, i.e. a Ray application is a graph of dependent tasks that evolve during the execution, with nodes and edges as described before. If this sounds a bit too mumbo-jumbo, think of a spreadsheet with many linked dependent cells, like when you are trying to fill your taxes. This is what a Ray application looks like for Ray, modifying a cell changes a lot of other cells. Within this model, Ray offers a task-based API and an actor based API, and which to choose basically depends on how you will handle the internal state of your process.</p>
@@ -218,7 +215,6 @@
 <p>The metadata store is called <em>Global Control Store</em> (GCS) and maintains the full control state. It is <em>essentially</em> a key-value store offering a pubsub (publisher-subscriber) API, and it is sharded across nodes for fault-tolerance. All object metadata is stored in the GCS, to remove some unnecessary load from the scheduler.</p>
 <figure class="fig30 right"><img src="https://mostlymaths.net/images/dresser/square5.jpg"/>
 </figure>
-
 <p>The scheduler is bottom-up and distributed. What does this mean? Ray hosts two schedulers: one per node and a global one. Tasks created in a node go first to the scheduler in that node, which checks if it&rsquo;s possible to allocate locally. If it&rsquo;s not, it is passed to the global scheduler. Hence the bottom-up, and also the distributed part. The global scheduler uses an <em>estimated waiting time</em> metric to choose which node should take it, aside from taking into account any hardware requirements the task or actor may have. Note that the global scheduler is not a contention point: it can be replicated freely.</p>
 <p>Inputs and outputs of tasks (all stateless computations) are stored in an object store using shared memory in each node, allowing for zero-copy (via <a href="https://arrow.apache.org/">Apache Arrow</a>). Since inputs and outputs are immutable, this is ideal: lowest possible latency. When inputs are non-local, they are replicated to the local object store to avoid or minimise hot objects. This object store does not offer distributed objects (like dataframes in Spark) for simplicity. Everything needs to fit in one node (or you need to write your own code to handle that).</p>
 <p>The system layer, which is most of what I have described here in the architecture section is implemented in C++, whereas the APIs for the application layer are written in Python. The GCS uses <a href="https://redis.io/">Redis</a>.</p>

@@ -161,7 +161,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This is the next instalment on my quest to read and help understand <a href="https://mostlymaths.net/tags/data-papers">interesting papers</a> in the data space.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide7.jpg"/>
 </figure>
-
 <p>The RDD paper (<a href="https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Computing</a>) is foundational: it established <em>Spark</em> as the winner of the big data framework wars of the early 2010s.</p>
 <p>What may be surprising is that the ideas in the paper are completely straightforward to understand, even for non-developers. As part of this writing I will also mention a related paper, <a href="https://dl.acm.org/doi/10.1145/1755913.1755940">Delay Scheduling</a>. Although you can have RDDs without delay scheduling, it is a very large part of what makes Spark fast.</p>
 <ul>
@@ -176,7 +175,6 @@
 <h3 id="manufacturing-data">Manufacturing data</h3>
 <figure class="fig-tall right"><img src="https://mostlymaths.net/images/dresser/tall3.jpg"/>
 </figure>
-
 <p>Let’s start with an unrelated situation.</p>
 <p>You are the owner of a small and thriving cleaning products factory. Your bestseller is <code>ElephantClean</code>, ideal for cleaning large cages. Production is increasing, and your manufacturing pipeline is at full tilt.</p>
 <p>Getting your product in the hands of consumers involves many steps. It all starts with the raw chemicals, which are bought in bulk in numbered parcels. The chemicals are processed in batches, depending on the size of the vats needed to mix them. When the final mixture is ready, a machine fills the plastic bottles. They are then arranged in boxes ready for shipment to direct clients and distributors.</p>
@@ -197,7 +195,6 @@
 <p>The output partitioning can be customised optionally customised, a useful ability when you know the output is best distributed in a certain way.</p>
 <figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square2.jpg"/>
 </figure>
-
 <p>The final fundamental piece of a RDD is a set of <em>preferred locations</em> for the partitions. This allows the RDD to execute <code>compute</code> as close as possible to where the data is. When the RDD is defined as a read, “compute” is essentially a read, and if you are specifically using HDFS, there will be a partition per HDFS block.</p>
 <p>Since RDDs depend on previous RDDs, if computing a partition fails, it can be retried by repeating all the operations up to that point <em>only for the partition</em>.</p>
 <div class="note ">
@@ -217,7 +214,6 @@
 <p>The solution is delay scheduling. It probably sounds more interesting than what it is. Imagine that you go to a big retail store to make a large purchase, a store where one of your friends works. You want to talk to him and maybe help him earn a commission, but you also want to make it home early.  He’s busy. How to solve the problem? Easy. You wait for a while to see if he can process your order, and after a while, you go for another assistant. That’s delay scheduling.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide13.jpg"/>
 </figure>
-
 <h3 id="the-magic-of-spark-winning-the-framework-wars">The magic of Spark: winning the framework wars</h3>
 <p>Obviously, this is just part of the story. RDDs are fundamental for Spark, but the power of the framework lies in its ergonomics (its ease of use and capabilities). It was the first framework where you could run diverse computational workloads. Users only have to write a high-level program in the <em>driver</em>, and the driver connects to a cluster of workers. These workers are long-lived, which means they can keep data in RAM. The code in the driver is the one that keeps track of lineage and RDD operations.</p>
 <p>The first implementation of Spark (the one in the paper) was written on top of the Mesos cluster manager. Workers and driver are separate Mesos applications, and Mesos handled resource sharing and assignment. Nowadays Spark runs also on YARN and Kubernetes, as well as having a “standalone” mode.</p>
@@ -225,7 +221,6 @@
 <p>The other advantage is the in-memory capabilities. The RDD abstraction simplifies keeping data in memory, and keeping data in memory makes it easier to re-use. As a user, you had more or less complete control over this (even offering several methods, like deserialised Java objets, serialised Java objects or custom serialisers, like <a href="https://github.com/EsotericSoftware/kryo">Kryo</a>), being able to cache in memory, or persist to disk with an easy command, any RDD, at any time. Coupled with the interactivity you get via laziness and a shell made Spark the first general purpose system where you could process terabytes of data at interactive speeds. You could just type and get an answer, almost instantly.</p>
 <figure class="fig30 left"><img src="https://mostlymaths.net/images/dresser/square5.jpg"/>
 </figure>
-
 <p>The Spark scheduler (based on the <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2007/03/eurosys07.pdf">Dryad</a> scheduler according to the paper) factors what is in memory/disk in each node, and using the lineage RDDs define builds a DAG of <em>stages</em>. Stages are blocks of operations that can run without needing to move data around (an operation known as a <em>shuffle</em>), or in other words, operations that can be pipelined. For instance, if you are mapping and filtering, these two operations run together in one go, without moving data around. As an additional optimisation, in operations with wide dependencies intermediate records are physically materialised on nodes requiring these partitions.</p>
 <p>This fixation on keeping data in place made easy some workloads that were cumbersome before. For instance, iterative machine learning and graph algorithms run with heavy data re-use. One example would be the PageRank indexing algorithm, which is at its core a repeated matrix computation. When the Spark/RDDs paper was written, the only way you could re-use data was to write to a distributed filesystem, with the large cost of writing to disk.</p>
 <p>The fact that lineage keeps track of the process and allows recomputation means that Spark didn’t need to <em>checkpoint</em>. In a distributed computation a checkpoint is a specific point in the process where all data is stored, and establishes a point where you can pick up if something fails. This does not mean that Spark does not checkpoint: If the lineage is very long Spark will checkpoint.</p>

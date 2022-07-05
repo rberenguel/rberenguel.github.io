@@ -164,7 +164,6 @@
             <p>Photo by <a href='https://unsplash.com/@jjying'>JJ Ying</a> on <a href='https://unsplash.com/s/photos/pipeline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
-
 <p><a href="http://alloytools.org">Alloy</a> is a programming language and analysis tool for software modeling. I learnt of it 3 years ago, when I was starting with <a href="https://github.com/tlaplus">TLA+</a> (a language focused on how systems evolve over time). Alloy has a particularly clean syntax (see for instance <a href="https://www.hillelwayne.com/post/knights-knaves/">this blog post</a>) which I liked way more than TLA+, but I couldn&rsquo;t find any interesting use cases. Half a year ago I wrote <a href="https://mostlymaths.net/2021/05/data-pipelines-alloy.html/">another blog post about modelling with it</a>, particularly using it to find &ldquo;gotchas&rdquo; before writing the code. I also promised to explore either Electrum or Alloy 6: extensions that enable changes over time. Here it is.</p>
 <div class="note ">
 <span class='scaps ' style="display: inline-block;">
@@ -305,17 +304,14 @@ fun stutter_happens : set Event {
 <h4 id="first-tick">First tick</h4>
 <figure class="fig-not-so-wide"><img src="1.png"/>
 </figure>
-
 <p>When we start everything is empty, and the first predicate that can trigger is <code>Process</code>, which creates <code>File2</code> in <code>Storage</code>.</p>
 <h4 id="second-tick">Second tick</h4>
 <figure class="fig-not-so-wide"><img src="2.png"/>
 </figure>
-
 <p>Storage contains a <code>File</code> with 3 <code>Datum</code>, and now we can <code>Load</code> that file into <code>Database</code>.</p>
 <h4 id="third-tick">Third tick</h4>
 <figure class="fig-wide"><img src="3.png"/>
 </figure>
-
 <p>The data has been loaded in the database, we still have the data in <code>Storage</code> (obviously) and the system starts <code>Stutter</code>ing forever.</p>
 <h4 id="other-possible-traces">Other possible traces</h4>
 <p>There are many more traces the visualiser can generate given this model, for example:</p>

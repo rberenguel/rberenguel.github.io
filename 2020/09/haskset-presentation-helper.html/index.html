@@ -159,7 +159,6 @@
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>After my happy experience with Haskell rewriting <em><a href="https://mostlymaths.net/2020/08/the-ticketiser-2-now-in-haskell.html/">the ticketiser</a></em> from Python to Haskell, I moved next on my list of rewrites.</p>
 <figure class="fig-full"><img src="https://mostlymaths.net/images/dresser/wide5.jpg"/>
 </figure>
-
 <p>A year or so ago I wrote a script in AWK that transformed a Markdown presentation formatted for <a href="https://www.deckset.com">Deckset</a> into a Markdown presentation that <a href="https://pandoc.org">Pandoc</a> can convert into a <a href="http://revealjs.com">reveal.js</a> presentation, <a href="https://github.com/rberenguel/awkrdeck">awkrdeck</a>.</p>
 <p>I wrote the script to be able to share my presentations with animated <code>GIF</code>s (which don&rsquo;t show in the <code>PDF</code> export from <code>Deckset</code>). As such, it is very tied to how I format my presentations, and only offers features I use. With it I was able to export the initial versions of my <a href="https://github.com/rberenguel/pyspark-arrow-pandas">PySpark talk</a>.</p>
 <p>The AWK code was not ready to handle variable footers and several features I had to use for my presentation at <a href="https://databricks.com/speaker/ruben-berenguel">Spark+AI summit 2020</a>. After writing a Markdown parser for <a href="https://github.com/rberenguel/bear-note-graph">bear-note-graph</a> (using custom parser combinators), it was a no-brainer to rewrite this AWK mess into an extendable system.</p>
@@ -193,13 +192,11 @@
 </ul>
 <figure class="fig-wide"><img src="split.jpg"/>
 </figure>
-
 <ul>
 <li><strong>Half-images</strong>: You can choose an image to have at the left or right, with text on the other. Makes slides more fluid, preventing too-much-text syndrome.</li>
 </ul>
 <figure class="fig-wide"><img src="half.jpg"/>
 </figure>
-
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
@@ -284,7 +281,6 @@
 <p>Also, for a <em>very typed</em>, supposedly <em>painful</em> programming language, there is a surprisingly small amount of type annotations. Only the function headers. That doesn&rsquo;t sound so bad, doesn&rsquo;t it? Usually I don&rsquo;t even type those, but just write the body of the function and the Haskell language server infers some options for them, you can choose any and they are automatically added:</p>
 <figure class="fig-full"><img src="FooParser.gif"/>
 </figure>
-
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
@@ -295,14 +291,12 @@
             <p>Deckset original</p>
         </figcaption>
 </figure>
-
 <br/>
 <figure class="fig-full"><img src="haskset.jpg"
          alt="Haskset&#43;Pandoc&#43;reveal.js"/><figcaption>
             <p><code>Haskset</code>+<code>Pandoc</code>+<code>reveal.js</code></p>
         </figcaption>
 </figure>
-
 <br/>
 <p>You can view the full <code>reveal.js</code> presentation for this talk in <a href="https://github.com/rberenguel/commoditisation-languages">this repository</a> (last link in the README). You can compare with the exported PDF.</p>
 <p>Obviously I still need to tweak the CSS settings, and many other things (I have a pretty long todo listed in the <a href="https://github.com/rberenguel/haskset">README</a>), but it already works 💪.</p>

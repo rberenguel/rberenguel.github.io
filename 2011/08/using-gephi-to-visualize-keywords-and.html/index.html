@@ -180,7 +180,6 @@ for the last month in mostlymaths.net restricted to the first 500 keywords).</p>
             <p>Keywords (arrow) Landing pages</p>
         </figcaption>
 </figure>
-
 <h2 id="what-interesting-things-you-can-read-from-such-a-graph">What interesting things you can read from such a graph</h2>
 <ul>
 <li>
@@ -218,15 +217,12 @@ have some knowledge of Google Analytics. Of course, the first you need is to
 select the keyword and landing page fields in your Google Analytics page:</p>
 <figure class="fig-wide"><img src="GA-KeywordsLandingPages.png"/>
 </figure>
-
 <p>Then select Show Rows and select 500:</p>
 <figure class="fig-not-so-wide"><img src="GA-Rows.png"/>
 </figure>
-
 <p>And get a nice CSV file with the export tab on top:</p>
 <figure class="fig-wide"><img src="GA-Export.png"/>
 </figure>
-
 <p>Now I don&rsquo;t know if this is because I select CSV and not CSV for Excel, but you
 have to clean the file: there are a lot of table identifiers to remove before
 the real data table. You also need to remove a line at the end of the file. You
@@ -234,11 +230,9 @@ can do all this editing with any plain text editor. I used
 <a href="http://www.mostlymaths.net/search/label/emacs">emacs</a>.</p>
 <figure class="fig-wide"><img src="GA-Clean.png"/>
 </figure>
-
 <p>Remove all this, below Table you should have the useful data,</p>
 <figure class="fig-wide"><img src="GA-Clean2.png"/>
 </figure>
-
 <p>Remove the last line with dashes. Now the file is almost ready to be imported…
 You need to rename the Visits column to something else, for some odd reason
 Google Analytics copies the same column twice and Gephi needs unique column
@@ -246,33 +240,26 @@ names. Ready to import. In Gephi, go to the Data Table window from the Window
 menu, and click Import Spreadsheet:</p>
 <figure class="fig-wide"><img src="Gephi-ImportSpreadhsheet.png"/>
 </figure>
-
 <p>And now you should select edges table and comma-separated:</p>
 <p><figure class="fig-wide"><img src="Gephi-Import.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-SourcesError.png"/>
-</figure>
-</p>
+</figure> <figure class="fig-wide"><img src="Gephi-SourcesError.png"/>
+</figure></p>
 <p>Oops. More tweaking of the CSV file is needed: Change the first two columns to
 Source and Target (and don&rsquo;t forget to mark comma as I did, too) and re-import
 the file:</p>
 <figure class="fig-wide"><img src="GA-ImportOK.png"/>
 </figure>
-
 <p>After clicking next, Gephi will ask you for the types of the columns. Since I&rsquo;m
 only interested in visits, pages/visit and average time on site, these are the
 only columns I want to be floats. You need them to be float to scale the nodes
 according to these parameters:</p>
 <figure class="fig-not-so-wide"><img src="Gephi-ImportParameters.png"/>
 </figure>
-
 <p>Next, we&rsquo;ll see a blob of points with no labels. Choose the Force Atlas
 algorithm in the Layout window, run for a while and then click stop:</p>
 <p><figure class="fig-wide"><img src="Gephi-Blob.png"/>
-</figure>
- <figure class="fig-wide"><img src="Gephi-ForceAtlas.png"/>
-</figure>
-</p>
+</figure> <figure class="fig-wide"><img src="Gephi-ForceAtlas.png"/>
+</figure></p>
 <p>The result from the Force Atlas algorithm to distribute points will look nicer,
 spreading aggregates of arrows all over the place. Now we need to get the
 labels. To do so, you have to click on a somewhat hidden button in the
@@ -281,19 +268,16 @@ tags. In this picture I&rsquo;ve also marked the label and edge scaling accordin
 parameters:</p>
 <figure class="fig-wide"><img src="Gephi-Labels.png"/>
 </figure>
-
 <p>Once you have labels, you need to play with the layout to make them more
 visible. Run the algorithm Adjust Labels for a while, then Force Atlas and
 repeat until you are happy with the results:</p>
 <figure class="fig-wide"><img src="Gephi-LabelAdjust.png"/>
 </figure>
-
 <p>You can also set labels for the edges, if you are interested in seeing visits,
 for example. But I found it messy and unchecked the option. Finally, to scale
 the nodes, use the Ranking window:</p>
 <figure class="fig-wide"><img src="Gephi-Ranking.png"/>
 </figure>
-
 <p>The arrows mark the different ways to adjust: you can change colour, size, text
 size or text colour. Feel free to play with all these settings!</p>
 <p>You can get a nice PNG file of you graph by pressing the camera-like icon in the
@@ -305,16 +289,13 @@ details in this tutorial. Well, just a little! Be sure to check &ldquo;show&rdqu
 exporting, or you&rsquo;ll see a blank page:</p>
 <figure class="fig-wide"><img src="Gephi-ExportSVG.png"/>
 </figure>
-
 <p>And with just these steps you can create quite nice (and useful) graphs like
 this one:</p>
 <figure class="fig-wide"><img src="Gephi-FullMap.png"/>
 </figure>
-
 <p>And here you can find a closer zoom:</p>
 <figure class="fig-wide"><img src="Gephi-ZoomIn.png"/>
 </figure>
-
 <p>I hope you enjoyed this tutorial, if you did it would be awesome if you share
 it. I&rsquo;ll try to do a few more Gephi tutorials as I find more interesting (for
 me) uses of Gephi. I have also a few post/tutorial ideas about visualizing

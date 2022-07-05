@@ -164,7 +164,6 @@
             <p>The Death of Louis XVI, artist and date unknown (<a href="https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/revolution-francaise-l-execution-de-louis-xvi-le-21-janvier-1793">original source</a>, <a href="https://publicdomainreview.org/collection/execution-by-guillotine-of-louis-xvi">Public Domain Review article</a>)</p>
         </figcaption>
 </figure>
-
 <div class="sb sb-2">
   <hr class="section-break-2" />
 </div>
@@ -174,7 +173,6 @@
 <p>Once I decided to implement it, I had to figure out how. My first hazy plan was that <em>it shouldn&rsquo;t be that hard to create a Mac app that does this</em>. After half an afternoon checking Swift stuff:</p>
 <figure class="fig30 fig-center"><img src="nope.gif"/>
 </figure>
-
 <p>While googling &ldquo;circle-shaped windows&rdquo;, though, I found out <a href="https://www.electronjs.org">Electron</a> could do that. I <em>really</em> dislike Electron and its bloated and slow binaries, but… I can write HTML, Javascript and CSS. And the resulting app would be cross-platform. I reconsidered. Then quickly found out that it was doable: I got a circular window, and then quickly a circular camera. You just need to set a transparent background. The proof-of-concept was easy.</p>
 <p>Next, I had to implement the cut-off and framing. The hard part of this was basically making sure everything was aligned:</p>
 <ul>
@@ -185,7 +183,6 @@
 <p>After I got it more or less working I found a strange problem. If the transformation that I had to apply to the floating, circular window had <em>any</em> pixel values that were not integers, the background wouldn&rsquo;t be transparent (so I&rsquo;d get a black square with a circular camera in it). The fix was just rounding those floating numbers. Weird bug.</p>
 <figure class="fig-so-so-wide"><img src="https://github.com/rberenguel/Guillotine/raw/main/readme_resources/Guillotine.gif"/>
 </figure>
-
 <p>Once this was working nicely, I wanted to add controls for how rounded the corners of the circle should be, from full square to full circle. And here I found another (similar) weird bug: 50% rounded (circle) had transparent background as expected. Anything other than 50% (but larger than 0%) didn&rsquo;t, and had again a black square with a circular-ish camera inside. I couldn&rsquo;t find any way to fix it except… setting the background to 0.01 opacity. This works, go figure. The almost-invisible square is invisible as far as I can see, unless you drive your screen contrast to <em>nuts</em> levels.</p>
 <p>There wasn&rsquo;t much more aside from making it look good by adding a help window, keyboard controls and information to the README.</p>
 <figure class="fig-wide"><img src="https://github.com/rberenguel/Guillotine/raw/main/readme_resources/screenshot.png"
@@ -193,7 +190,6 @@
             <p>This is what it looks</p>
         </figcaption>
 </figure>
-
 <p>There is a small problem with <a href="https://github.com/rberenguel/Guillotine">Guillotine</a>, though. All presentations I do, online or otherwise are typeset and presented using <a href="https://www.deckset.com">Deckset</a>. When you are in present mode, you can either be in full screen or in window mode. Full screen is ideal for real presentations, where you share the screen in a projector. Window is ideal when you just want to share a window to a Meet/Zoom presentation. And my Guillotine wouldn&rsquo;t work in either:</p>
 <ul>
 <li>In full-screen mode, a floating window does not show, since any window is below a full-screen window.</li>
