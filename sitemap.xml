@@ -3,6 +3,90 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2022/08/202219-readings.html/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/aws/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/management/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readings/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/recipes/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/writing/</loc>
+    <lastmod>2022-08-14T09:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2022/08/202218-readings.html/</loc>
     <lastmod>2022-08-06T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -38,27 +122,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/management/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/python/</loc>
     <lastmod>2022-08-06T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -66,35 +129,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/readings/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2022-08-06T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2022/07/202217-readings.html/</loc>
-    <lastmod>2022-07-09T00:01:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
     <lastmod>2022-07-09T00:01:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -129,13 +164,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/aws/</loc>
-    <lastmod>2022-06-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/github/</loc>
     <lastmod>2022-06-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -144,13 +172,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/golang/</loc>
-    <lastmod>2022-06-11T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
     <lastmod>2022-06-11T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -207,13 +228,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/music/</loc>
-    <lastmod>2022-05-15T10:20:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/writing/</loc>
     <lastmod>2022-05-15T10:20:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2139,13 +2153,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2015/06/cold-brew-yerba-mate.html/</loc>
-    <lastmod>2015-06-19T17:00:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/recipes/</loc>
     <lastmod>2015-06-19T17:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -6,7 +6,79 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 18:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Aug 2022 09:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>https://mostlymaths.net/tags/aws/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recipes</title>
+      <link>https://mostlymaths.net/tags/recipes/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/recipes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://mostlymaths.net/tags/writing/</link>
+      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/writing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache Kafka</title>
       <link>https://mostlymaths.net/tags/apache-kafka/</link>
@@ -44,47 +116,11 @@
     </item>
     
     <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://mostlymaths.net/tags/python/</link>
       <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sat, 09 Jul 2022 00:01:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
@@ -107,15 +143,6 @@
     </item>
     
     <item>
-      <title>AWS</title>
-      <link>https://mostlymaths.net/tags/aws/</link>
-      <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>github</title>
       <link>https://mostlymaths.net/tags/github/</link>
       <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
@@ -130,15 +157,6 @@
       <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Sat, 11 Jun 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
       <description></description>
     </item>
     
@@ -184,15 +202,6 @@
       <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>https://mostlymaths.net/tags/writing/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/writing/</guid>
       <description></description>
     </item>
     
@@ -1138,15 +1147,6 @@
       <pubDate>Fri, 19 Jun 2015 17:00:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/coffee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recipes</title>
-      <link>https://mostlymaths.net/tags/recipes/</link>
-      <pubDate>Fri, 19 Jun 2015 17:00:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/recipes/</guid>
       <description></description>
     </item>
     
