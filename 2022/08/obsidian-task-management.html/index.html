@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Project and task management with Obsidian and Dataview</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.86.0" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+    <link href="https://mostlymaths.net/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/all.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/byrne-caps/stylesheet.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/reforma/reforma.css">
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Project and task management with Obsidian and Dataview" />
+<meta property="og:description" content="This post is about how I manage my tasks and projects using Obsidian with the Dataview plugin." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2022/08/obsidian-task-management.html/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-22T19:30:33+02:00" />
+<meta property="article:modified_time" content="2022-08-22T19:30:33+02:00" />
+
+<meta itemprop="name" content="Project and task management with Obsidian and Dataview">
+<meta itemprop="description" content="This post is about how I manage my tasks and projects using Obsidian with the Dataview plugin."><meta itemprop="datePublished" content="2022-08-22T19:30:33+02:00" />
+<meta itemprop="dateModified" content="2022-08-22T19:30:33+02:00" />
+<meta itemprop="wordCount" content="2303">
+<meta itemprop="keywords" content="Productivity,GTD,Obsidian," />
+
+    
+    
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="/2022/08/obsidian-task-management.html//always-sunny.webp"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="Project and task management with Obsidian and Dataview"/>
+<meta name="twitter:description" content="This post is about how I manage my tasks and projects using Obsidian with the Dataview plugin."/>
+
+<meta name="author" content="Ruben Berenguel">
+    
+      
+         
+         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+      
+    
+  </head>
+
+  <body class="ma0 reforma bg-near-white">
+
+    
+
+
+  
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2022/08/obsidian-task-management.html//always-sunny.webp');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/sitemap/" title=" page">
+                  <i class='fas fa-map'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/pages/about/" title="about page">
+                  about
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <header class="mt4 w-100">
+        <h1 class="fw1 mb1 f1">Project and task management with Obsidian and Dataview</h1>
+        
+    <section class="w-60 mt3">
+        <span class="fw2 f3 i ">It actually works very well</span>
+    </section>
+    
+        
+        <time class="f6 mt4 dib tracked" datetime="2022-08-22T19:30:33&#43;02:00">August 22, 2022</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 11 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 2303 words</span>
+      
+      <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
+    </header>
+
+    
+    <section class="w-100 mb3">
+      <span class="fw1  i" style="font-size: 0.4rem;">Some links are affiliate links</span>
+    </section>
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify dropcap"><p>This post is about how I manage my tasks and projects using Obsidian with the <a href="https://blacksmithgu.github.io/obsidian-dataview/">Dataview</a> plugin.</p>
+<p>This is going to sound like <em>a lot</em>. A complex setup that seems overkill. It&rsquo;s not <em>completely</em> the case. It has evolved naturally from what my setup used to be with <a href="https://culturedcode.com/things/">Things</a>, and by adding features I wanted <code>Things</code> to have. At the end I will explain how it all evolved to show the historical perspective.</p>
+<p>Overall, it is roughly based on a very loose interpretation of GTD (Getting Things Done). If you don&rsquo;t know what GTD is, <a href="https://hamberg.no/gtd">here&rsquo;s a quick reference</a>. Otherwise, <a href="https://www.amazon.com/-/es/David-Allen/dp/0349408947?_encoding=UTF8&amp;qid=1661192626&amp;sr=8-1&amp;linkCode=ll1&amp;tag=rbersblog-20&amp;linkId=ab0f422d0fce8e5c2db86834b5dcc5da&amp;language=es_US&amp;ref_=as_li_ss_tl">get the book</a>. It&rsquo;s a bit outdated but still worth reading.</p>
+<figure class="fig-full"><img src="always-sunny.webp"/>
+</figure>
+<h3 id="projects">Projects</h3>
+<div class="note more-info">
+<span class='scaps ' style="display: inline-block;">
+  Shortcuts to simplify project processing
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<ul>
+<li><code>alt+t</code>: enter template by name
+<ul>
+<li><code>project</code> template shown below</li>
+<li><code>reviewed</code> template expands to <code>reviewed: YYYYMMDD</code> for &ldquo;now&rdquo;. It has a shortcut as <code>alt+.</code></li>
+</ul>
+</li>
+<li><code>cmd+d</code>: insert current date and time as <code>[[YYYYMMDD]]@HH:mm</code></li>
+<li><code>cmd+[</code>: go to previous page</li>
+<li><code>cmd+]</code>: go to next page</li>
+</ul>
+</span>
+</div>
+<p>Projects are the main container for tasks. Except for periodical tasks (like, watering plants or recharging headphones) all my tasks are part of <em>exactly</em> one project. For periodical tasks, I use logic in templates crafted for each day of the week, as detailed in <a href="https://mostlymaths.net/2022/02/random-quote-and-templates.html/">this post</a>.</p>
+<p>Creating projects is very cheap on my setup: create a new note and insert the &ldquo;project&rdquo; template, which looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+status:
+type: project
+prio:
+org:
+reviewed:
+---
+
+---
+
+<span style="color:#66d9ef">-</span> [ ]
+
+---
+
+<span style="color:#66d9ef">-</span> !
+</code></pre></div><p>Here&rsquo;s an annotated version for clarity:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+status: should be open or closed
+type: project
+prio: an integer
+org: anything (pybcn, work, empty)
+reviewed: a date in my preferred format, YYYYMMDD
+---
+
+Space for support material. Usually I make this a list
+of links to Notion pages, URLs, other notes.
+
+---
+
+<span style="color:#66d9ef">- [ ]</span> This would be a task. More later
+
+---
+
+<span style="color:#66d9ef">-</span> !
+<span style="color:#66d9ef">-</span> [[20220814]]@18:48 Space to enter a log of events related to the project
+</code></pre></div><p>I keep the format fast and loose, except for the task section which I keep always as in here. Sometimes reference material is part of the log, and sometimes the support material is so long it spins out a separate page.</p>
+<h4 id="project-review">Project review</h4>
+<p>One of the fundamental practices of GTD is regularly reviewing your projects. <a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a> has facilities for reviewing projects on schedules, but <code>Things</code> had nothing: either I reviewed everything or nothing. I created <a href="https://mostlymaths.net/2018/12/things3-weekly-review-mode-shortcuts.html/">some crazy automation</a> to get something close to reviews.</p>
+<p>But, using Dataview I can build my own review schedule.  I have several project views, main ones being <em>Personal</em> (anything except work) and <em>Work</em> (only work, duh). The Dataview query for reviewing projects in <em>Personal</em> looks like this:</p>
+<script type="application/javascript" src="https://gist.github.com/rberenguel/b128fc0621e41ee58f4a704b747cd19d.js"></script>
+
+<p>I know, WTF? But this is how it looks for 2 projects. These two are reviewed.</p>
+<figure class="fig-full"><img src="projects-view.png"/>
+</figure>
+<p>Clicking on the file name takes me there. I can then go back to the review list with the go-back command, <code>cmd+[</code>.</p>
+<p>The header of the project view needs some explaining:</p>
+<ul>
+<li><code>File</code>: quite obvious. This is the same as the project name.</li>
+<li><code>status</code>: This is the view for open, only. I have a separate view for closed, and one for <em>fuck, why did I put something else there?</em></li>
+<li>◼️: How many incomplete tasks there are in this file.</li>
+<li>🎫: If there are tasks with due or start dates in the file (that&rsquo;s the <code>t.annotated</code> lambda in the query). More on this in the <code>Tasks</code> section.</li>
+<li>🏷: Shorthand for priority to save on column width.</li>
+<li><code>org</code>: Most of my personal ones have this empty, but PyBCN would be here too.</li>
+<li>📅: If this project has been reviewed or is due for review. More details below. This is used in sorting: <code>false</code> will be first.</li>
+</ul>
+<p>To show these green check/red cross (for 📅 and 🎫) in that HTML block in the query, I have a custom CSS snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">true</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">21</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">true</span>:<span style="color:#a6e22e">before</span> {
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;✅&#34;</span>;
+}
+.<span style="color:#a6e22e">false</span> {
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">21</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+}
+.<span style="color:#a6e22e">false</span>:<span style="color:#a6e22e">before</span> {
+  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;❌&#34;</span>;
+}
+</code></pre></div><p>The most important part of this query in a way is the <em>reviewed</em> block. How does it work?</p>
+<ul>
+<li>Projects have a <code>reviewed</code> field with a date in the header;</li>
+<li>Optionally, they have a <code>period</code> field with a duration (default is otherwise <code>7d</code>);</li>
+<li>The query checks whether <code>reviewed &gt; today - period</code>.</li>
+</ul>
+<p>By customising <code>period</code> in each project file header, I can have projects I only review once every 2 weeks, or once every month. In general, projects I am actively working on I want the default, but some things I want to just be reminded every 2 or 4 weeks. Visiting each unreviewed project, I have mapped <code>alt+.</code> to expand to the template <code>reviewed</code> mentioned in the beginning, so review has a very low overhead aside from having to check each project needing review. Which should be few!</p>
+<div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  What is done during a project review?
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>This is what I do:</p>
+<ul>
+<li>Think if I still want to do the project, overall.</li>
+<li>Has anything changed about this project in the past period? If so, log it/document it in the project note.</li>
+<li>Are there any tasks to do that are missing? Add them. Anything done and not tracked? Add it.</li>
+<li>Mark as reviewed with date today.</li>
+</ul>
+</span>
+</div>
+<h4 id="newmodified-note-review">New/modified note review</h4>
+<p>I hijack the <code>reviewed</code> field to use it to review any notes I have created recently. This would include projects, of course. The Dataview query is the following:</p>
+<pre><code>TABLE
+FROM &quot;/&quot;
+  WHERE file.mtime &gt; (date(now) - dur(14 days))
+  AND !regexmatch(&quot;\d+&quot;, file.name)
+  AND file.name != this.file.name
+  AND file.folder != &quot;templates&quot;
+  AND file.name != &quot;Inbox&quot;
+  AND file.name != &quot;Pending reading&quot;
+  AND file.name != &quot;Pending watching&quot;
+  AND !reviewed
+SORT file.ctime asc
+</code></pre><p>It excludes certain files that I don&rsquo;t want to see appearing here or don&rsquo;t need the header. I have recently switched from <code>file.ctime</code> (creation time) to <code>file.mtime</code> (modified time), to include notes I have touched, not only notes I have created recently. I&rsquo;m not sure what I prefer yet. If I keep <code>mtime</code> I may need to add more exclusion rules.</p>
+<h3 id="tasks">Tasks</h3>
+<div class="note more-info">
+<span class='scaps ' style="display: inline-block;">
+  Shortcuts to simplify task processing
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<ul>
+<li><code>alt+t</code>: enter template by name
+<ul>
+<li><code>start</code>: expands to <code>[▶️:: ],</code>;</li>
+<li><code>due</code>: expands to <code>[⏏️:: ],</code> ;</li>
+<li><code>prio</code>: expands to <code>[🏷:: ],</code>;</li>
+<li><code>checked</code>: expands to <code>[🧷::YYYY-MM-DD],</code> with <code>alt+/</code> as a shortcut.</li>
+</ul>
+</li>
+<li><code>cmd+d</code>: insert current date and time as <code>[[YYYYMMDD]]@HH:mm</code></li>
+<li><code>@today</code>: The <a href="https://github.com/argenos/nldates-obsidian">Natural Language Dates</a> plugin lets me type <em>at sign next Tuesday</em> to get the format I need for the due and start dates.</li>
+</ul>
+</span>
+</div>
+<p>Tasks are where the rubber meets the road, the shit hits the fan, etc. Tasks that I plan to do are tagged (and untagged and tagged tasks appear in the project review query shown before), and a fully tagged task would look like this:</p>
+<pre><code>- [ ] Conquer the world [⏏️:: YYYY-MM-DD], [▶️:: YYYY-MM-DD], [🏷:: 42],  [🧷::YYYY-MM-DD],
+</code></pre><p>Each of these tags means:</p>
+<ul>
+<li>⏏️: <code>due</code> date. I want this task done on this day.</li>
+<li>▶️: <code>start</code> date. I plan on starting this task on this day. I don&rsquo;t use this tag much, and may remove it. It is still on all my queries though. One of due or start is needed for a task to show on a specific day.</li>
+<li>🏷: priority for the task, an integer.</li>
+<li>🧷: reviewed. It means I&rsquo;m still happy with this task as being due on this date, or having this priority. More on this below.</li>
+</ul>
+<p>In general, I only fill due date when I create a task, if I know I&rsquo;ll be doing it on that day or around that week. Otherwise, I&rsquo;ll choose the date when I review the project the task is in.</p>
+<h4 id="task-review">Task review</h4>
+<p>Reviewing tasks is more akin to <em>reviewing the week ahead</em>. This is something I do on Sundays, as part of my Sunday recurring template, sometimes on Monday morning. For one, I want to know what random crap out of my projects I have coming up, but I also want to be sure I&rsquo;ve had a look and I don&rsquo;t have 25 things to do on Monday and 3 the rest of the week. For that, I have a special note called <code>Upcoming 7 days</code>. It has two queries:</p>
+<ul>
+<li>One for tasks that are due in the next 7 days and where the reviewed date is in the past, or tasks that are overdue and were reviewed in the past. This lets me be sure I&rsquo;m <em>still</em> convinced I want to do this and lets me adjust dates accordingly.</li>
+<li>One for tasks that have been reviewed, are due in the next 7 days, grouped by day and project. This gives me an overview of the 7 days ahead.</li>
+</ul>
+<p>The first query, wrapped in an <a href="https://github.com/valentine195/obsidian-admonition">Admonition</a> block to make it look better:</p>
+<pre><code class="language-raw" data-lang="raw">```ad-warning
+title: To review
+```dataview
+TASK
+FROM &quot;/&quot;
+  WHERE (
+    (▶️ &lt; (date(today) + dur(7 days)) AND ▶️)
+    OR
+    (⏏️ &lt; (date(today) + dur(7 days)) AND date(⏏️))
+    AND !completed
+    AND (🧷 &lt;= (date(today) - dur(7 days)) OR !🧷)
+  )
+GROUP BY &quot;&lt;code style='font-size: 80%'&gt;&quot; + default(▶️, &quot;&quot;) + dateformat(default(⏏️, date(&quot;2001-01-01&quot;)), &quot;dd LLL ccc&quot;)+ &quot;&lt;/code&gt; &quot; + &quot;&lt;em&gt;&quot; + file.name + &quot;&lt;/em&gt;&quot;
+</code></pre><div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  Admonition and embedded Dataview blocks
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>3or some reason Admonition blocks with embedded Dataview blocks need to be closed only <em>once</em>. If you try to copy paste on your Obsidian, play with the closing triple-tick until it looks correct. It can be made to work.</p>
+</span>
+</div>
+<p>This is how this block looks:</p>
+<figure class="fig-full"><img src="task-review.png"/>
+</figure>
+<p>Clicking on the task takes me to the file with the task, so I can mark it as reviewed, for example. Then I can go back with <code>cmd+[</code></p>
+<p>The second block, is defined by</p>
+<pre><code>```ad-info
+title: upcoming
+```dataview
+TASK
+FROM &quot;/&quot;
+  WHERE 🧷 AND (🧷 &gt;= (date(today) - dur(7 days))) AND
+  (
+    ((▶️ &lt; (date(today) + dur(7 days)) AND ▶️)
+	OR
+	(⏏️ &lt; (date(today) + dur(7 days)) AND date(⏏️)))
+    AND !completed
+  )
+GROUP BY &quot;&lt;code style='font-size: 80%'&gt;&quot; + default(▶️, &quot;&quot;) + dateformat(default(⏏️, &quot;&quot;), &quot;dd LLL ccc&quot;)+ &quot;&lt;/code&gt; &quot; + &quot;&lt;em&gt;&quot; + file.name + &quot;&lt;/em&gt;&quot;
+</code></pre><p>And it looks like this:</p>
+<figure class="fig-full"><img src="task-review-2.png"/>
+</figure>
+<h3 id="the-daily-view">The daily view</h3>
+<p>This is the main driver of my work and process. I have a <em>very</em> complex daily template that fills up certain things, including a Dataview query of tasks due today (where today depends on the filename, to play well with the Journal and Calendar plugins). I have 4 Dataview blocks:</p>
+<ul>
+<li><code>urgent</code>: priority at least 42;</li>
+<li><code>top 3</code>: except for 42s, top 3 ordered by priority;</li>
+<li><code>all due</code>: all tasks with priority less than 42;</li>
+<li><code>done today</code>: tasks marked as done today.</li>
+</ul>
+<p>You can find more details about the templating method and plugins I use in this post: <a href="https://mostlymaths.net/2022/02/random-quote-and-templates.html/">Templates for quotes and recurrent tasks in Obsidian</a>. For more information, <a href="https://gist.github.com/rberenguel/a831d83074cd7aa1ae82defe6feb072d">here&rsquo;s a gist with these blocks before automated interpolation</a>. This needs the Templater plugin with Javascript (auto)expansion enabled.</p>
+<p>The (interpolated for exactly today Sunday, so has all projects except <code>work</code>) Dataview blocks, wrapped in Admonitions, look as follows:</p>
+<pre><code>```ad-danger
+title: urgent
+icon: fire
+```dataview
+TASK from &quot;/&quot; WHERE
+    type = &quot;project&quot; AND
+    ((▶️ &lt; date(2022-08-14)
+AND ▶️ AND !completed)
+    OR (▶️ = date(2022-08-14) AND ▶️ AND !completed)
+    OR (⏏️ = date(2022-08-14) AND ⏏️ AND !completed)
+    OR (⏏️ &lt; date(2022-08-14) AND ⏏️ AND !completed))
+    AND 🏷 &gt;= 42
+	SORT completed asc, 🏷 DESC
+	GROUP by file.name
+```ad-warning
+title: top 3
+icon: arrow-up
+```dataview
+TASK from &quot;/&quot; WHERE
+    🏷 &lt; 42 AND
+    type = &quot;project&quot; AND org != &quot;work&quot; AND
+    ((▶️ &lt; date(2022-08-14)
+AND ▶️ AND !completed)
+    OR (▶️ = date(2022-08-14) AND ▶️ AND !completed)
+    OR (⏏️ = date(2022-08-14) AND ⏏️ AND !completed)
+    OR (⏏️ &lt; date(2022-08-14) AND ⏏️ AND !completed))
+	SORT completed asc, 🏷 DESC LIMIT 3
+```ad-info
+title: tasks
+icon: list
+```dataview
+TASK from &quot;/&quot; WHERE
+    type = &quot;project&quot;
+    AND (org != &quot;work&quot;) AND
+    🏷 &lt; 42 AND
+    ((▶️ &lt; date(2022-08-14)
+AND ▶️ AND !completed)
+    OR (▶️ = date(2022-08-14) AND ▶️ AND !completed)
+    OR (⏏️ = date(2022-08-14) AND ⏏️ AND !completed)
+    OR (⏏️ &lt; date(2022-08-14) AND ⏏️ AND !completed))
+    SORT completed asc, 🏷 DESC, prio desc, org desc
+    GROUP by file.name
+```ad-success
+title: done
+icon: checkmark
+```dataview
+TASK from &quot;/&quot; WHERE
+    type = &quot;project&quot; AND
+    ✔️ = date(2022-08-14)
+</code></pre><p>They would look like this, when empty of tasks (with tasks, they&rsquo;d look similar to those above):</p>
+<figure class="fig-full"><img src="daily-blocs.png"/>
+</figure>
+<p>The queries are crazy, I know. They involved a lot of trial and error to play well with Dataview, and in my template are mixed with Javascript to interpolate the current date, too. Also, having <code>start</code> and <code>due</code> f-ks up a lot the queries, when I remove start I can simplify them a great deal.</p>
+<div class="note greenish">
+<span class='scaps ' style="display: inline-block;">
+  Default checks
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>I have setup Dataview to add a check ✔️ when I complete a task from a Dataview query. This is what gets parsed for the <em>done</em> query block.</p>
+</span>
+</div>
+<div class="note ">
+<span class='scaps ' style="display: inline-block;">
+  Off-hours
+</span> 
+<span class='note-body ' style="display: inline-block;">
+<p>I&rsquo;m exploring having &ldquo;off hours&rdquo; where after certain time
+I only see non-work tasks. The Dataview condition to add looks like this:</p>
+<blockquote>
+<p><code>((dateformat(date(now), &quot;HH&quot;) &lt; &quot;17&quot; AND org = &quot;work&quot;) OR (org != &quot;work&quot;))</code></p>
+</blockquote>
+</span>
+</div>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<h3 id="how-this-process-has-evolved">How this process has evolved</h3>
+<p>I started by just having tasks on days.</p>
+<p>First, recurrent tasks that I had to do repeatedly (see <a href="https://mostlymaths.net/2022/02/random-quote-and-templates.html/">this post</a>), then, project tasks that I would manually copy from one day to the next.</p>
+<p>Eventually, I realised I needed projects… And started copying tasks from projects to the day I wanted to do them.</p>
+<p>Then, using Dataviews for tasks from projects. I kept adding to the query to make it better, until I had the 4 blocks above.</p>
+<p>I stumbled upon somebody checking recently created files, and I wanted that too.</p>
+<p>From there, I realised I could review projects more effectively by listing projects that needed review instead of checking each project, which was slow and very repetitive.</p>
+<p>The most recent addition is removing work-related tasks after work hours.</p>
+<p>Some ideas I&rsquo;m exploring, are to automated &ldquo;holiday checks&rdquo; so my templates don&rsquo;t expand for <em>work</em> on days I&rsquo;m not working because I&rsquo;m off.</p><hr/>
+        <ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/productivity" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Productivity</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/gtd" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">GTD</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/obsidian" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Obsidian</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-30-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/02/random-quote-and-templates.html/">Templates for quotes and recurrent tasks in Obsidian</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2018/12/things3-weekly-review-mode-shortcuts.html/">Things3 Weekly Review mode shortcut(s)</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/08/202219-readings.html/">2022#19 Readings 🇺🇦🌻</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/06/202216-readings.html/">2022#16 Readings 🇺🇦🌻</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/05/202215-readings.html/">2022#15 Readings 🇺🇦🌻</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div></aside>
+    
+    </article>
+    
+    
+    
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+    
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2022 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://mostlymaths.net/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
