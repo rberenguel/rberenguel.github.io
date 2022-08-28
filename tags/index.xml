@@ -6,7 +6,79 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Aug 2022 19:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Aug 2022 20:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery</title>
+      <link>https://mostlymaths.net/tags/bigquery/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/bigquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creativity</title>
+      <link>https://mostlymaths.net/tags/creativity/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/creativity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data science</title>
+      <link>https://mostlymaths.net/tags/data-science/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://mostlymaths.net/tags/gcp/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>GTD</title>
       <link>https://mostlymaths.net/tags/gtd/</link>
@@ -53,33 +125,6 @@
     </item>
     
     <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recipes</title>
       <link>https://mostlymaths.net/tags/recipes/</link>
       <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
@@ -116,29 +161,11 @@
     </item>
     
     <item>
-      <title>GCP</title>
-      <link>https://mostlymaths.net/tags/gcp/</link>
-      <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/gcp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Leadership</title>
       <link>https://mostlymaths.net/tags/leadership/</link>
       <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/leadership/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Sat, 06 Aug 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
       <description></description>
     </item>
     
@@ -346,15 +373,6 @@
       <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/d3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data science</title>
-      <link>https://mostlymaths.net/tags/data-science/</link>
-      <pubDate>Sat, 15 Jan 2022 12:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data-science/</guid>
       <description></description>
     </item>
     
