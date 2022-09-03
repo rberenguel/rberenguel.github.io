@@ -6,7 +6,115 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Aug 2022 20:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Sep 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>https://mostlymaths.net/tags/aws/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Career development</title>
+      <link>https://mostlymaths.net/tags/career-development/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/career-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Languages</title>
+      <link>https://mostlymaths.net/tags/languages/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>https://mostlymaths.net/tags/machine-learning/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://mostlymaths.net/tags/management/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
+      <link>https://mostlymaths.net/tags/maths/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/maths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://mostlymaths.net/tags/productivity/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redshift</title>
+      <link>https://mostlymaths.net/tags/redshift/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/redshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://mostlymaths.net/tags/writing/</link>
+      <pubDate>Sat, 03 Sep 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/writing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>BigQuery</title>
       <link>https://mostlymaths.net/tags/bigquery/</link>
@@ -44,38 +152,11 @@
     </item>
     
     <item>
-      <title>Management</title>
-      <link>https://mostlymaths.net/tags/management/</link>
-      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python</title>
       <link>https://mostlymaths.net/tags/python/</link>
       <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sun, 28 Aug 2022 20:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -98,47 +179,11 @@
     </item>
     
     <item>
-      <title>Productivity</title>
-      <link>https://mostlymaths.net/tags/productivity/</link>
-      <pubDate>Mon, 22 Aug 2022 19:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://mostlymaths.net/tags/aws/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recipes</title>
       <link>https://mostlymaths.net/tags/recipes/</link>
       <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/recipes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>https://mostlymaths.net/tags/writing/</link>
-      <pubDate>Sun, 14 Aug 2022 09:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/writing/</guid>
       <description></description>
     </item>
     
@@ -229,15 +274,6 @@
       <pubDate>Sun, 22 May 2022 11:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/product/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maths</title>
-      <link>https://mostlymaths.net/tags/maths/</link>
-      <pubDate>Sun, 15 May 2022 10:20:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/maths/</guid>
       <description></description>
     </item>
     
@@ -427,15 +463,6 @@
       <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/formal-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine learning</title>
-      <link>https://mostlymaths.net/tags/machine-learning/</link>
-      <pubDate>Sun, 02 Jan 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -1039,15 +1066,6 @@
       <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
       
       <guid>https://mostlymaths.net/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Languages</title>
-      <link>https://mostlymaths.net/tags/languages/</link>
-      <pubDate>Sun, 20 Jan 2019 16:32:00 +0100</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/languages/</guid>
       <description></description>
     </item>
     
