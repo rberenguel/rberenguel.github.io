@@ -144,7 +144,7 @@ It is something like an execution tree, with function calls squared, and differe
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-75-l justify "><p>As I said in a previous post, I am looking for some way to detect copied code. I have now a working prototype of a &ldquo;code juicer&rdquo;. From a C file it creates a set of PostScript files (well, almost, as they need postprocessing) which are later processed and selected to print. As an example, here is the output applied to a Runge-Kutta-Fehlberg 4-5.</p>
 <p><a href="http://2.bp.blogspot.com/_f3d3llNlZKQ/Swl0M2KDqaI/AAAAAAAABd8/ukpbTLUD5dA/s1600/RK.jpg"><img src="http://2.bp.blogspot.com/_f3d3llNlZKQ/Swl0M2KDqaI/AAAAAAAABd8/ukpbTLUD5dA/s400/RK.jpg" alt=""></a></p>
 <p>It is something like an execution tree, with function calls squared, and different slopes for if, for, while clauses. It is still somewhat buggy and fails to recognize a few closings. I intend to &ldquo;juice&rdquo; all the assignments, and extract the interesting functions (around 5, with about 50 lines of code each, 35 assignments, probably). Then I can print all these pages and just look at them to see matches. Yesterday I already did for 3 examples&hellip; they didn&rsquo;t cheat, they are clearly different.My idea is that the structure of calls is more significant than looking at some diff. A student can change variable names, add or change comments, and then diff is dead. But this structure tree is more like a fingerprint: it maps the structure of the algorithm. It can change from student to student (indeed does), but detects minor changes that diff misses. Let&rsquo;s see if I find cheaters!The code is a <a href="http://en.wikipedia.org/wiki/Flex_lexical_analyser">flex</a> .lex file, looking something like:</p>
 <blockquote>
@@ -173,7 +173,7 @@ It is something like an execution tree, with function calls squared, and differe
             
         </div>
     </section>
-<aside class="w-30-l">
+<aside class="w-25-l">
 
 
 

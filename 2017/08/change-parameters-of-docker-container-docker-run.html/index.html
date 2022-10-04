@@ -141,7 +141,7 @@ At work, we have several instances running a suite of Docker containers, with so
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p>I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.</p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-75-l justify "><p>I&rsquo;m not sure how useful this Docker &ldquo;trick&rdquo; is, since it happens in a very niche situation.</p>
 <p>At work, we have several instances running a suite of Docker containers, with some non-trivial amount of environment variables, port configurations, volumes and links among them. This is set up really easily using <code>ansible</code>: writing link/port/volume mappings in ansible (using the <code>docker</code>, <code>container</code> or <code>docker-container</code> modules, depending how long ago we set it up). The syntax is similar to <code>docker-compose</code>, but scripted for ansible.</p>
 <p>The problem arises when you are logged in on one of the machines and you want to change (or add) one parameter to one of the currently running containers. Re-running the <code>ansible</code> script in full is not always an option (for reasons I don&rsquo;t want to get into), so up until now we had to painfully rewrite the <code>docker run</code> command from the <code>ansible</code> set up, by hand. Which is terribly error prone. And a pain. And in general very much a process you don&rsquo;t want to follow, ever. We were very close to writing a short python script to convert the <code>yaml</code> specifications from python into <code>docker run</code> commands when we found out a relatively less painful way of doing it.</p>
 <p><strong>We jokingly call it the Indy swap</strong></p>
@@ -181,7 +181,7 @@ At work, we have several instances running a suite of Docker containers, with so
             
         </div>
     </section>
-<aside class="w-30-l">
+<aside class="w-25-l">
 
 
 

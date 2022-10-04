@@ -138,7 +138,7 @@
 
     
     
-    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s1600/Generation0010190.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s400/Generation0010190.jpg" alt=""></a></p>
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-75-l justify "><p><a href="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s1600/Generation0010190.jpg"><img src="http://3.bp.blogspot.com/_f3d3llNlZKQ/S7YQWVbZ3sI/AAAAAAAACEE/jdI5JUq-iLo/s400/Generation0010190.jpg" alt=""></a></p>
 <h2 id="stochastic-hill-climbing-sisyphus-pushes-an-image">Stochastic hill climbing: Sisyphus pushes an image</h2>
 <p>Last year, Slashdot published this interesting piece of work: <a href="http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/">Genetic evolution of the Mona Lisa</a>. The idea is to approximate an image by a certain number of semitransparent polygons, randomly chosen. I liked very much the idea, and as every year I try to come up with some <a href="http://www.mostlymaths.net/2009/12/evolutionary-approximation-of-christmas.html">Christmas postcard</a> related to maths or programming I gave it a try. So I wrote a LISP version&hellip; way too slow. After optimizing a little my code I got a 3x boost&hellip; but it was around 3 times slower than the C version I wrote afterwards&hellip; Which is still damn slow. But works :) I&rsquo;ll show here how the algorithm works, and I&rsquo;ll (officially, it is already available) post the code in a week or so.</p>
 <p>I work just with triangles (it was much easier to write), but the algorithm is quite slow, moreover I need more than 50 triangles to get significative similarities. I have observed some interesting properties of the approximation algorithm. The most significative one, is the asymptotic convergence. Here you can see in red the error of the approximated image (in an arbitrary scale) vs. generation count. As you can see, it is somewhat asymptotic to a stable line. I have made some tweaks trying to at least lower this asymptote, but I didn&rsquo;t get to it. The green bumping graph is related to a tweak of the algorithm I&rsquo;ll explain below.</p>
@@ -206,7 +206,7 @@ ParseList(ScrambleList(Relateds(Programming,Linux)),12)</p>
             
         </div>
     </section>
-<aside class="w-30-l">
+<aside class="w-25-l">
 
 
 
