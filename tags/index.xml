@@ -6,22 +6,148 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Oct 2022 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Oct 2022 16:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Apache Kafka</title>
-      <link>https://mostlymaths.net/tags/apache-kafka/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
+      <title>Anki</title>
+      <link>https://mostlymaths.net/tags/anki/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
       
-      <guid>https://mostlymaths.net/tags/apache-kafka/</guid>
+      <guid>https://mostlymaths.net/tags/anki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS Athena</title>
+      <link>https://mostlymaths.net/tags/aws-athena/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/aws-athena/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Contracts</title>
+      <link>https://mostlymaths.net/tags/data-contracts/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-contracts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Mesh</title>
       <link>https://mostlymaths.net/tags/data-mesh/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/data-mesh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data visualization</title>
+      <link>https://mostlymaths.net/tags/data-visualization/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://mostlymaths.net/tags/golang/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mostlymaths.net/tags/python/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://mostlymaths.net/tags/scala/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming</title>
+      <link>https://mostlymaths.net/tags/streaming/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team Topologies</title>
+      <link>https://mostlymaths.net/tags/team-topologies/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/team-topologies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TLA&#43;</title>
+      <link>https://mostlymaths.net/tags/tla&#43;/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/tla&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://mostlymaths.net/tags/writing/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zig</title>
+      <link>https://mostlymaths.net/tags/zig/</link>
+      <pubDate>Tue, 11 Oct 2022 16:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/zig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Kafka</title>
+      <link>https://mostlymaths.net/tags/apache-kafka/</link>
+      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/apache-kafka/</guid>
       <description></description>
     </item>
     
@@ -44,56 +170,11 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://mostlymaths.net/tags/golang/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mostlymaths.net/tags/python/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Unison</title>
       <link>https://mostlymaths.net/tags/unison/</link>
       <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/unison/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>https://mostlymaths.net/tags/writing/</link>
-      <pubDate>Tue, 04 Oct 2022 10:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/writing/</guid>
       <description></description>
     </item>
     
@@ -382,15 +463,6 @@
       <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/dbt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://mostlymaths.net/tags/scala/</link>
-      <pubDate>Sun, 27 Mar 2022 12:00:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -1021,15 +1093,6 @@
       <pubDate>Mon, 17 Jun 2019 17:24:00 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/bizarre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TLA&#43;</title>
-      <link>https://mostlymaths.net/tags/tla&#43;/</link>
-      <pubDate>Sun, 26 May 2019 11:48:00 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/tla&#43;/</guid>
       <description></description>
     </item>
     
