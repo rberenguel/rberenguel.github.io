@@ -6,13 +6,49 @@
     <description>Recent content in Tags on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Dec 2022 18:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Mar 2023 19:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Career</title>
+      <link>https://mostlymaths.net/tags/career/</link>
+      <pubDate>Sun, 19 Mar 2023 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://mostlymaths.net/tags/data/</link>
+      <pubDate>Sun, 19 Mar 2023 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/data/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Learning</title>
       <link>https://mostlymaths.net/tags/learning/</link>
-      <pubDate>Sat, 10 Dec 2022 18:30:33 +0200</pubDate>
+      <pubDate>Sun, 19 Mar 2023 19:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readings</title>
+      <link>https://mostlymaths.net/tags/readings/</link>
+      <pubDate>Sun, 19 Mar 2023 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadingsOfTheWeek</title>
+      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
+      <pubDate>Sun, 19 Mar 2023 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
       <description></description>
     </item>
     
@@ -26,38 +62,11 @@
     </item>
     
     <item>
-      <title>Readings</title>
-      <link>https://mostlymaths.net/tags/readings/</link>
-      <pubDate>Sat, 10 Dec 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReadingsOfTheWeek</title>
-      <link>https://mostlymaths.net/tags/readingsoftheweek/</link>
-      <pubDate>Sat, 10 Dec 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/readingsoftheweek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SRE</title>
       <link>https://mostlymaths.net/tags/sre/</link>
       <pubDate>Sat, 10 Dec 2022 18:30:33 +0200</pubDate>
       
       <guid>https://mostlymaths.net/tags/sre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://mostlymaths.net/tags/data/</link>
-      <pubDate>Sun, 13 Nov 2022 18:30:33 +0200</pubDate>
-      
-      <guid>https://mostlymaths.net/tags/data/</guid>
       <description></description>
     </item>
     
