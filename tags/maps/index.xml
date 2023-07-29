@@ -6,7 +6,17 @@
     <description>Recent content in Maps on mostlymaths.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 10:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 19:30:33 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concept Maps helper</title>
+      <link>https://mostlymaths.net/2023/07/concept-maps-helper.html/</link>
+      <pubDate>Sat, 29 Jul 2023 19:30:33 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2023/07/concept-maps-helper.html/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://mostlymaths.net/2021/10/concept-maps.html/&#34;&gt;Concept maps&lt;/a&gt;, but writing them in Graphviz is annoying. So I wrote a helper.&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
     <item>
       <title>2021#26 Readings</title>
       <link>https://mostlymaths.net/2021/12/202126-readings.html/</link>

@@ -3,6 +3,69 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2023/07/concept-maps-helper.html/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/data/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/graphviz/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/javascript/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/maps/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/posts/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/productivity/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/tags/</loc>
+    <lastmod>2023-07-29T19:30:33+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/2023/03/202301-readings.html/</loc>
     <lastmod>2023-03-19T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -17,28 +80,7 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/data/</loc>
-    <lastmod>2023-03-19T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/tags/learning/</loc>
-    <lastmod>2023-03-19T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/</loc>
-    <lastmod>2023-03-19T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/posts/</loc>
     <lastmod>2023-03-19T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -53,13 +95,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/readingsoftheweek/</loc>
-    <lastmod>2023-03-19T19:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/</loc>
     <lastmod>2023-03-19T19:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -81,13 +116,6 @@
   
   <url>
     <loc>https://mostlymaths.net/2022/12/202226-readings.html/</loc>
-    <lastmod>2022-12-10T18:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/productivity/</loc>
     <lastmod>2022-12-10T18:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -752,13 +780,6 @@
   </url>
   
   <url>
-    <loc>https://mostlymaths.net/tags/javascript/</loc>
-    <lastmod>2021-12-27T09:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/2021/12/scriptable-obsidian-widget.html/</loc>
     <lastmod>2021-12-27T09:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -802,13 +823,6 @@
   
   <url>
     <loc>https://mostlymaths.net/tags/cooking/</loc>
-    <lastmod>2021-12-20T10:30:33+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mostlymaths.net/tags/maps/</loc>
     <lastmod>2021-12-20T10:30:33+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
