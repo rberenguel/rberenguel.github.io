@@ -64,7 +64,7 @@
 <meta itemprop="description" content="I&rsquo;m a big fan of Concept maps, but writing them in Graphviz is annoying. So I wrote a helper.
 "><meta itemprop="datePublished" content="2023-07-29T19:30:33+02:00" />
 <meta itemprop="dateModified" content="2023-07-29T19:30:33+02:00" />
-<meta itemprop="wordCount" content="777">
+<meta itemprop="wordCount" content="981">
 <meta itemprop="keywords" content="Data,Productivity,Maps,Graphviz,Javascript," />
 
     
@@ -164,8 +164,8 @@
       
       
       &nbsp;&nbsp;&nbsp;
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 4 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 777 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 5 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 981 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -181,13 +181,13 @@
 </figure>
 <p>There&rsquo;s not a lot to it. You can find it <a href="https://mostlymaths.net/cmaps-helper/">here</a>.</p>
 <p>It is formed by two <code>contenteditable</code> <code>div</code>s, you should paste your <em>simplified graphviz representation</em> of the map on the right, and you will get (hopefully) valid graphviz on the left and on your clipboard. And you may wonder, what is simplified, and how much better than graphviz is it?</p>
-<p>Example, the Kafka concept map below:</p>
+<p>As an example of the differences, let&rsquo;s look at the following Concept Map for Apache Kafka, one of the first I wrote.</p>
 <figure class="fig-full"><a href="kafka-cmap.png" target="_blank" rel="noreferrer noopener"><img src="kafka-cmap.png"
          alt="Click to open the image in a new tab/window" id="kafka-cmap"/></a><figcaption>
             <p>Click to open the image in a new tab/window</p>
         </figcaption>
 </figure>
-<p>Removing all the headers, is equivalent to this Graphviz dot representation:</p>
+<p>The core of the graph, after removing the style definition headers is</p>
 <pre><code class="language-dot" data-lang="dot">  Topics
   Topics -&gt; Internal [label=&quot;can be&quot;]
   Topics -&gt; User [label=&quot;can be&quot;]
@@ -225,7 +225,7 @@
   sp [label=&quot;   Same partition   &quot;]
   sp -&gt; Ordered [label=&quot; is completely&quot; arrowhead=normal]
 </code></pre><p>It is not <em>complex</em> but having to write so many times <code>label</code> and so many open-and-close brackets makes for a very poor writing experience.</p>
-<p>An equivalent, simplified map is:</p>
+<p>An equivalent, <em>simplified concept map</em> is:</p>
 <pre><code>  Topics
   CG            Consumer    groups
   Consumers
@@ -263,7 +263,7 @@
   Offset      -&gt; Ordered      requires
   SP          Same partition
   SP          -&gt; Ordered      is completely; arrowhead=normal
-</code></pre><p>Basically, removes all the unnecessary repetition when writing a concept map like I do.</p>
+</code></pre><p>Basically, removes all the unnecessary repetition when writing a concept map in the format I do.</p>
 <h1 id="base-syntax">Base syntax</h1>
 <pre><code>nodename    label; props
 </code></pre><pre><code>node1  -&gt;  node2  edge label; props
@@ -272,17 +272,20 @@
 //
 }
 foo=bar
-</code></pre><p>Braces on their own with any number of spaces leading or trailing are kept as they are, same for comment lines. Property assignments are kept, too. I think I force this to <em>not</em> have spaces between = and the rest, but this could be changed.</p>
+</code></pre><p>Several types of lines are left as they are to be handled by Graphviz. In particular, lone braces, properties and comments. Lone braces are useful for <code>rank=same</code> blocks, for alignment. I think I set the code to require no spaces around the = sign, but that could be fixed. In all cases, there can be any number of leading or trailing spaces.</p>
 <h1 id="additional-useful-syntax">Additional useful syntax</h1>
+<pre><code># Foo
+</code></pre><p>The first line (with any hash removed) will be used as a title label for the whole diagram, as in <code>label=&quot;\n\nFoo\n&quot;</code>. I Have found this layout of newlines to be the best so far. You can avoid having such a label by setting an empty first line and <code>label=&quot;&quot;</code> as the first content line. I remove hashes to let me write these as if it was Markdown.</p>
 <pre><code>subgraph cluster_foo {
   property=value
-</code></pre><p>This is an automation to make <code>compound</code> subgraphs work better. This will automatically generate an invisible node <code>foo</code> inside of subgraph <code>cluster_foo</code>. By default the cluster will have dotted and rounded contour, but since style declarations are overriden in cascade, you can change them by adding properties to modify styling.</p>
-<p>Caveat: to use <code>node -&gt; foo</code> or <code>foo -&gt; node</code> as a compound (i.e. pointing to the cluster and not a node) you need to declare the subgraph <em>before</em> using it.</p>
+</code></pre><p>This is an automation to make <code>compound</code> subgraphs work better. A compound graph is one where edges can end at a cluster boundary, instead of ending in a node inside the cluster. This is useful if you have a complex entity that does something <em>as a whole</em>. Creating such subgraph will automatically generate an invisible node <code>foo</code> inside of subgraph <code>cluster_foo</code>, to have a target for the edge. By default the cluster will have dotted and rounded contour. You can change this by adding any styling properties inside the subgraph.</p>
+<p>Caveat: to use <code>node -&gt; foo</code> or <code>foo -&gt; node</code> as a compound (i.e. pointing to the cluster and not a node) you need to declare the subgraph <em>before</em> using it. This would not work if you have loops of clusters pointing to each other, though. To handle this case you need to manually solve the loop by adding something like <code>node -&gt; foo whatever label;lhead=cluster_foo</code>.</p>
 <h2 id="why">Why?</h2>
 <p>I love writing concept maps in graphviz, but having to type so many braces annoyed me.</p>
 <h2 id="how">How?</h2>
 <p>A single-pass parser, like most of the stupid tools I write. Since it has no state, subgraphs need to be declared before using them as compound nodes, because I don&rsquo;t know what the clusters are named otherwise.</p>
 <p>All is JavaScript, inlined in a single HTML page.</p>
+<p>It embeds my standard Graphviz header, although using <code>Roboto</code> instead of <code>Monoid</code> as the main font to make sure it works well anywhere.</p>
 <h2 id="is-it-safe-to-use">Is it safe to use?</h2>
 <p>It is a self-contained page, the only external resource is a link to the CSS here to use Monoid as the font. And only because I was lazy, <a href="https://github.com/rberenguel/glancer">glancer</a> has the font <code>base64</code> encoded in the page it generates themselves.</p><hr/>
         <ul class="pa0">
