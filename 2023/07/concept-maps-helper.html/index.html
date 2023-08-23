@@ -64,7 +64,7 @@
 <meta itemprop="description" content="I am a big fan of Concept maps, but writing them in Graphviz is annoying. So I wrote a helper.
 "><meta itemprop="datePublished" content="2023-07-29T19:30:33+02:00" />
 <meta itemprop="dateModified" content="2023-07-29T19:30:33+02:00" />
-<meta itemprop="wordCount" content="1184">
+<meta itemprop="wordCount" content="1222">
 <meta itemprop="keywords" content="Data,Productivity,Maps,Graphviz,Javascript," />
 
     
@@ -165,7 +165,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 6 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1184 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1222 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -179,7 +179,7 @@
             <p>Photo by <a href='https://unsplash.com/@timowielink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Timo Wielink</a> on <a href='https://unsplash.com/s/photos/map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>
         </figcaption>
 </figure>
-<p>There&rsquo;s not a lot to it. You can find it <a href="https://mostlymaths.net/cmaps-helper/">here</a>.</p>
+<p>The post below serves as a kind of manual, reminding me of how it works in case of need. If you want to use it, you can find it <a href="https://mostlymaths.net/cmaps-helper/">here</a>.</p>
 <p>It is formed by two <code>contenteditable</code> <code>div</code>s, you should paste your <em>simplified graphviz representation</em> of the map on the right, and you will get (hopefully) valid graphviz on the left and on your clipboard. And you may wonder, what is simplified, and how much better than graphviz is it?</p>
 <p>As an example of the differences, let&rsquo;s look at the following Concept Map for Apache Kafka, one of the first I wrote.</p>
 <figure class="fig-full"><a href="kafka-cmap.png" target="_blank" rel="noreferrer noopener"><img src="kafka-cmap.png"
@@ -264,7 +264,7 @@
   SP          Same partition
   SP          -&gt; Ordered      is completely; arrowhead=normal
 </code></pre><p>Basically, removes all the unnecessary repetition when writing a concept map in the format I do.</p>
-<h1 id="base-syntax">Base syntax</h1>
+<h1 id="syntax">Syntax</h1>
 <pre><code>nodename    label; props
 </code></pre><pre><code>node1  -&gt;  node2  edge label; props
 </code></pre><p>Anything after the name of the node or an arrow assignment is split by <code>;</code>, to the left we have the label (which can be empty) and to the right we have the properties, which are added after the label. Any number of spaces can appear anywhere, the label itself won&rsquo;t have any leading or trailing spaces. Properties will have leading spaces kept.</p>
@@ -273,28 +273,25 @@
 }
 foo=bar
 </code></pre><p>Several types of lines are left as they are to be handled by Graphviz. In particular, lone braces, properties and comments. Lone braces are useful for <code>rank=same</code> blocks, for alignment. I think I set the code to require no spaces around the = sign, but that could be fixed. In all cases, there can be any number of leading or trailing spaces.</p>
-<h1 id="additional-useful-syntax">Additional useful syntax</h1>
 <pre><code># Foo
 </code></pre><p>The first line (with any hash removed) will be used as a title label for the whole diagram, as in <code>label=&quot;\n\nFoo\n&quot;</code>. I Have found this layout of newlines to be the best so far. You can avoid having such a label by setting an empty first line and <code>label=&quot;&quot;</code> as the first content line. I remove hashes to let me write these as if it was Markdown.</p>
+<pre><code>$foo = something_or_other
+</code></pre><p>This defines a replacement that will be used <em>before</em> line parsing. So anything below that refers to having a hex color value somewheree can be handled for red by defining <code>$RED = #99222277</code> and using <code>$RED</code> where you would need a hex color definition.</p>
 <pre><code>subgraph cluster_foo { #12345678
+  property=value
+  
+cluster foo { #12345678
   property=value
 </code></pre><p>This is an automation to make <code>compound</code> subgraphs work better. A compound graph is one where edges can end at a cluster boundary, instead of ending in a node inside the cluster. This is useful if you have a complex entity that does something <em>as a whole</em>. Creating such subgraph will automatically generate an invisible node <code>foo</code> inside of subgraph <code>cluster_foo</code>, to have a target for the edge. By default the cluster will have dotted and rounded contour. You can change this by adding any styling properties inside the subgraph.</p>
 <p>Optionally, passing a RGBA hex string like above (anywhere in the line) will add <code>fillcolor=&quot;#12345678&quot;</code> to the subgraph properties.</p>
+<p>You can avoid writing subgraph if you want and just say <code>cluster</code>.</p>
 <p>Caveat: to use <code>node -&gt; foo</code> or <code>foo -&gt; node</code> as a compound (i.e. pointing to the cluster and not a node) you need to declare the subgraph <em>before</em> using it. This would not work if you have loops of clusters pointing to each other, though. To handle this case you need to manually solve the loop by adding something like <code>node -&gt; foo whatever label;lhead=cluster_foo</code>.</p>
-<pre><code>
-subgraph cluster_foo {
+<pre><code>subgraph cluster_foo {
   a =;fillcolor=red
   b
   a -&gt; b !
 }
 </code></pre><p>Quite regularly I find myself adding properties to nodes where the name does not change. To avoid having to retype the name (and to prevent empty label from being invalid) if the node label is <code>=</code>, the conversion will keep the node identifier as label. The rare case where I may need to use <code>=</code> as a label can be fixed by adding the property <code>label=&quot;=&quot;</code>.</p>
-<p>I&rsquo;m considering adding a helper for the relatively common case of <code>fillcolor=</code> for nodes, but there are several edge cases to cover and it could become cumbersome:</p>
-<ul>
-<li>prop=a fillcolor=colorname prop=b</li>
-<li>prop=a,fillcolor=colorname,prop=b</li>
-<li>prop=a,fillcolor=#12345678,prop=b</li>
-</ul>
-<p>and any combinations of placing it in different orders.</p>
 <p>Another usual situation is wanting a different layout inside the subgraph. For that I usually add edges between internal nodes, that I set to <code>label=&quot;&quot;, style=&quot;invis&quot;</code>. By creating an edge with the label <code>!</code> this is automated. I have not decided if I want to automate the setting I usually add in these cases, which is overall edge styling in the subgraph as <code>edge[margin=0,minlen=1]</code>.</p>
 <h2 id="why">Why?</h2>
 <p>I love writing concept maps in graphviz, but having to type so many braces annoyed me.</p>
