@@ -64,7 +64,7 @@
 <meta itemprop="description" content="A lot of my projects involve a great deal of I wonder what the result might look like. This one was not unexpected
 "><meta itemprop="datePublished" content="2024-07-03T10:30:00+02:00" />
 <meta itemprop="dateModified" content="2024-07-03T10:30:00+02:00" />
-<meta itemprop="wordCount" content="485">
+<meta itemprop="wordCount" content="513">
 <meta itemprop="keywords" content="Python,German," />
 
     
@@ -165,7 +165,7 @@
       
       &nbsp;&nbsp;&nbsp;
       <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 3 minutes read</span>
-      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 485 words</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 513 words</span>
       
       <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
     </header>
@@ -174,17 +174,22 @@
     
     <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-75-l justify dropcap"><p>A lot of my projects involve a great deal of <em>I wonder what the result might look like</em>. This one was not unexpected</p>
 <br/>
-<p>A few days ago I quickly hacked a <a href="https://github.com/rberenguel/m5cardputer-de-en-translator">pocket translator</a> using a <a href="https://shop.m5stack.com/products/m5stack-cardputer-kit-w-m5stamps3">M5Cardputer</a> and the <a href="https://www.wikdict.com/page/download">WikDict SQLite dictionaries</a>:</p>
-<figure class="fig-not-so-wide"><a href="https://github.com/rberenguel/m5cardputer-de-en-translator" target="_blank" rel="noreferrer noopener"><img src="query-answer1.jpg"
-         alt="Click to open the repository for the pocket translator" id="cardputer"/></a><figcaption>
-            <p>Click to open the repository for the pocket translator</p>
+<figure class="fig-wide"><img src="img.png"
+         alt="SDXL seed: 2325280438a professional grade shot of a cinematic movie in the style of Hitchcock, German imagery, lederhosen, audiobook, headphones, audio, books, Python, large realistic snake, boredom, thriller"/><figcaption>
+            <p>SDXL seed: 2325280438a professional grade shot of a cinematic movie in the style of Hitchcock, German imagery, lederhosen, audiobook, headphones, audio, books, Python, large realistic snake, boredom, thriller</p>
         </figcaption>
 </figure>
+<p>A few days ago I quickly hacked a <a href="https://github.com/rberenguel/m5cardputer-de-en-translator">pocket translator</a> using a <a href="https://shop.m5stack.com/products/m5stack-cardputer-kit-w-m5stamps3">M5Cardputer</a> and the <a href="https://www.wikdict.com/page/download">WikDict SQLite dictionaries</a>.</p>
 <p>Thinking about what else I could do with these databases, I had a stupid thought:</p>
 <blockquote>
 <p>Let&rsquo;s make an audiobook of German to English words.</p>
 </blockquote>
 <p>I hadn&rsquo;t done any TTS in… ages, luckily with the help of <a href="https://gemini.google.com/app">Gemini</a> I could find a decent modern library I could run locally… After failing with <code>espeak-ng</code>, which does not work well on Mac and <code>Mozilla TTS</code>, which has few models and is unmaintained. I ended up using <a href="https://github.com/coqui-ai/TTS">Coqui TTS</a>, and two TTS models (one for English and one for German) that work reasonably well.</p>
+<figure class="fig-wide"><a href="https://github.com/rberenguel/m5cardputer-de-en-translator" target="_blank" rel="noreferrer noopener"><img src="query-answer1.jpg"
+         alt="Click to open the repository for the pocket translator" id="cardputer"/></a><figcaption>
+            <p>Click to open the repository for the pocket translator</p>
+        </figcaption>
+</figure>
 <h2 id="input-data-preparation">Input data preparation</h2>
 <p>The first thing was preparing a list of the most important German words, out of the wikdict databases.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sqlite3 de-en.sqlite3
