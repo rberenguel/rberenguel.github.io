@@ -341,11 +341,36 @@ article p {
     transition: all ease-in-out 0.1s
 }
 
+
+.fig20 {
+    width: 20%;
+}
+
+.fig20>img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.fig50 {
+    width: 50%;
+}
+
 .fig30 {
     width: 30%;
 }
 
 .fig30>img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.fig50 {
+    width: 50%;
+}
+
+.fig50>img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;

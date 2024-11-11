@@ -3,29 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mostlymaths.net/2024/11/idea-to-finished-project.html/</loc>
+    <lastmod>2024-11-11T07:00:00+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2024-10-28T20:00:00+02:00</lastmod>
+    <lastmod>2024-11-11T07:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2024-10-28T20:00:00+02:00</lastmod>
+    <lastmod>2024-11-11T07:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/programming/</loc>
-    <lastmod>2024-10-28T20:00:00+02:00</lastmod>
+    <lastmod>2024-11-11T07:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2024-10-28T20:00:00+02:00</lastmod>
+    <lastmod>2024-11-11T07:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
