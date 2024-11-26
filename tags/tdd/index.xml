@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TDD on mostlymaths.net</title>
+    <link>https://mostlymaths.net/tags/tdd/</link>
+    <description>Recent content in TDD on mostlymaths.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Nov 2024 18:00:00 +0200</lastBuildDate><atom:link href="https://mostlymaths.net/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Driven Writing (or Test Driven Documentation)</title>
+      <link>https://mostlymaths.net/2024/11/test-driven-writing.html/</link>
+      <pubDate>Tue, 26 Nov 2024 18:00:00 +0200</pubDate>
+      
+      <guid>https://mostlymaths.net/2024/11/test-driven-writing.html/</guid>
+      <description>&lt;!-- 
+Test: This post should explain how we could do something similar to test-driven development for writing. It should have some examples and give enough ideas to readers to let them start with this process. The key idea the post should end up with is that there are ways to systematize writing. It should briefly introduce TDD to a non-technical audience, even if the post itself is aimed at technical audiences.
+ --&gt;
+&lt;p&gt;During the writing (and rewriting) of my last two posts I had this idea: what if we could leverage LLMs for a closed-loop rewriting cycle?&lt;/p&gt;
+&lt;br/&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

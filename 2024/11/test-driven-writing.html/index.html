@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mostlymaths.net  | Test Driven Writing (or Test Driven Documentation)</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.86.0" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+    
+    <link rel="preload" href="webfonts/reforma/Reforma1969/Reforma1969-Gris.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="preload" href="webfonts/reforma/Reforma1969/Reforma1969-BlancaItalica.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="preload" href="webfonts/reforma/Reforma1969/Reforma1969-Negra.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="preload" href="webfonts/reforma/Reforma1969/Reforma1969-Blanca.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="preload" href="webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    
+    
+    <link href="https://mostlymaths.net/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/byrne-caps/stylesheet.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/monoid.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/nymphette.css">
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/webfonts/reforma/reforma.css">
+    
+
+    
+    
+    <link rel="stylesheet" href="https://mostlymaths.net/css/all.min.854b4170d20fc6d7b6d5b8397ce94907561dc83cd449bdf0ef523ab393181898.css">
+        
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Test Driven Writing (or Test Driven Documentation)" />
+<meta property="og:description" content="
+During the writing (and rewriting) of my last two posts I had this idea: what if we could leverage LLMs for a closed-loop rewriting cycle?
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mostlymaths.net/2024/11/test-driven-writing.html/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-26T18:00:00+02:00" />
+<meta property="article:modified_time" content="2024-11-26T18:00:00+02:00" />
+
+<meta itemprop="name" content="Test Driven Writing (or Test Driven Documentation)">
+<meta itemprop="description" content="
+During the writing (and rewriting) of my last two posts I had this idea: what if we could leverage LLMs for a closed-loop rewriting cycle?
+"><meta itemprop="datePublished" content="2024-11-26T18:00:00+02:00" />
+<meta itemprop="dateModified" content="2024-11-26T18:00:00+02:00" />
+<meta itemprop="wordCount" content="1542">
+<meta itemprop="keywords" content="Programming,Writing,Testing,TDD,TDW," />
+
+    
+    
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="/2024/11/test-driven-writing.html/duck-monkeys.jpg"/>
+<meta name="twitter:card" content="summary"/>
+
+
+<meta name="twitter:domain" content="mostlymaths.net"/>
+<meta name="twitter:creator" content="@berenguel"/>
+
+
+
+<meta name="twitter:title" content="Test Driven Writing (or Test Driven Documentation)"/>
+<meta name="twitter:description" content="
+During the writing (and rewriting) of my last two posts I had this idea: what if we could leverage LLMs for a closed-loop rewriting cycle?
+"/>
+
+<meta name="author" content="Ruben Berenguel">
+    
+      
+         
+         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+      
+    
+  </head>
+
+  <body class="ma0 reforma bg-near-white">
+
+    
+
+
+  
+  
+<header class="cover bg-top" style="max-height: 250px;background-image: url('/2024/11/test-driven-writing.html//duck-monkeys.jpg');">
+    <div class="pb1-m pb1-l bg-black-60">
+      <nav class="pv1 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://mostlymaths.net/" class="f3 fw2 hover-white no-underline white-90 dib">
+      mostlymaths.net
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/search/" title=" page">
+                  <i class='fas fa-search'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/sitemap/" title=" page">
+                  <i class='fas fa-map'> </i>
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="https://mostlymaths.net/pages/about/" title="about page">
+                  about
+            </a>
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        
+          
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  
+    <header class="mt4 w-100">
+        <h1 class="fw1 mb1 f1">Test Driven Writing (or Test Driven Documentation)</h1>
+        
+        
+        <time class="f6 mt4 dib tracked" datetime="2024-11-26T18:00:00&#43;02:00">November 26, 2024</time>
+      
+      
+      &nbsp;&nbsp;&nbsp;
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> 8 minutes read</span>
+      <span class="fw1 mv1 dib tracked i" style="font-size: 0.8rem;"> | 1542 words</span>
+      
+      <span class="f6 mv1 dib tracked" style="font-size: 0.8rem;"> by <a href="https://mostlymaths.net">Ruben Berenguel</a></span> 
+    </header>
+
+    
+    
+    <section class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray pr4-l w-75-l justify dropcap"><!-- 
+Test: This post should explain how we could do something similar to test-driven development for writing. It should have some examples and give enough ideas to readers to let them start with this process. The key idea the post should end up with is that there are ways to systematize writing. It should briefly introduce TDD to a non-technical audience, even if the post itself is aimed at technical audiences.
+ -->
+<p>During the writing (and rewriting) of my last two posts I had this idea: what if we could leverage LLMs for a closed-loop rewriting cycle?</p>
+<br/>
+<p>Or more precisely: What if we could use LLMs as the evaluator of a test-driven cycle, <em>for writing</em>?</p>
+<div class="sb sb-2">
+  <hr class="section-break-2" />
+</div>
+<p><a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-driven development</a> (TDD) is a development technique where you first write a test and then write the code that fulfills that test. To come with a non-code life example,
+writing the test is like measuring the space you have for a cabinet: fixing a set of requirements. Then, going to IKEA. If you find a cabinet that fills the space perfectly, you are done and the test passes. In TDD, you keep refining the tests. Following with the example, you actually want a beige cabinet: finding one that fits is not enough.</p>
+<figure class="fig-left"><img src="./duck-monkeys.jpg"/>
+</figure>
+<p>If we extend the concept to writing, we could think of the test(s) as <em>at least</em> knowing what we will write about and what points we want to cover. Then, we need to write something that talks about <em>that</em> while covering those points. And refine.</p>
+<p>If this doesn&rsquo;t sound like a new idea, it is because it <em>really</em> is not. In technical writing, it is a relatively common recommendation to always
+state your target user(s), writing goal, and potentially a list of points to cover at the beginning of a document, and then to compare your writing to that.
+Even in essay writing, starting with an outline is traditional. What I thought is about pushing it further.</p>
+<p>It looks like I&rsquo;m not the first one to think about <em>Test driven writing</em>. When I had the thoughts above, I went searching and found several articles where people
+mentioned something similar:</p>
+<ul>
+<li><a href="https://mherman.org/presentations/test-driven-writing/#1">Test-Driven Writing</a> (training slides by M. Herman)</li>
+<li><a href="https://medium.com/@xavier.pigeon/test-driven-writing-tdd-appliqu%C3%A9-%C3%A0-l%C3%A9criture-ef587f6d56eb">Test-Driven Writing : TDD appliqué à l’écriture</a> (by X. Pigeon, in French)</li>
+<li><a href="https://zettelkasten.de/posts/publish-iteratively/">Publish Iteratively</a> (by C. Tietze)</li>
+</ul>
+<hr>
+<h2 id="how-can-we-test-drive-writing">How can we test-drive writing?</h2>
+<!-- 
+Test: This section should cover the "how" of the TDW (test-driven writing) process. It should cover all steps from document idea to publishing.
+      This section should also cover how we can automate part of this process.
+ -->
+<h3 id="the-basics">The basics</h3>
+<p>The following is the process I would follow if I had infinite time.</p>
+<ol>
+<li>Write a first draft, enough that I have an outline and an idea of where I want to go.</li>
+<li>At the beginning of the document, write a document-level test, like:</li>
+</ol>
+<blockquote>
+<p>This post should explain how we could do something similar to test-driven development for writing. It should have some examples and give enough ideas to readers to let them start with this process. The key idea the post should end up with is that there are ways to systematize writing.</p>
+</blockquote>
+<ol start="3">
+<li>For each section, add a section-level test, like:</li>
+</ol>
+<blockquote>
+<p>This section should cover the &ldquo;how&rdquo; of the TDW (test-driven writing) process. It should cover all steps from document idea to publishing.</p>
+</blockquote>
+<ol start="4">
+<li>Rewrite each section until it passes the test. If needed, rewrite or refine the test to make sure new material is added, like:</li>
+</ol>
+<blockquote>
+<p>(…) This section should also cover how we can automate part of this process.</p>
+</blockquote>
+<ol start="5">
+<li>To speed the process up, use an LLM like Gemini to evaluate your tests against each section, and against the full document.</li>
+<li>Remember that <em>you</em> are the writer, and the tone, structure, and fact checking rely on you.</li>
+</ol>
+<h3 id="how-can-we-write-good-tests">How can we write &ldquo;good&rdquo; tests?</h3>
+<p>To be fair, this is hard. I&rsquo;m still not sure what is easier: writing tests for LLMs or for humans. Here are some rules of thumb I have found so far that apply to both cases:</p>
+<ul>
+<li><strong>Tests for sections should start loose, and add more details later</strong>. For example, for a document on eggs and a section on frying, you would go from a test saying &ldquo;This section should cover how to fry an egg&rdquo; to one with &ldquo;This section should cover how to best crack an egg, how to estimate the temperature of a pan, and how much oil to use&rdquo;.</li>
+<li><strong>Tests for the whole document can be left more open</strong>. Aim to have &ldquo;something the document needs to say&rdquo; covered on it. In the example above, you could have something similar to &ldquo;This document should cover the basic methods of cooking an egg, including at the very least frying, poaching, and boiling&rdquo;.</li>
+<li><strong>Try to think in reverse</strong>. If your cat started deleting text from a section, you want the test to let you know something has been removed. Note: the cat might be you in a future rewriting of your document.</li>
+</ul>
+<h2 id="trying-the-process-for-a-readme-with-full-llm-help">Trying the process for a README, with full LLM help</h2>
+<!-- 
+Test: This section should cover how we could use TDW for technical documentation of code, and have specific examples from trying it out with Goita.
+ -->
+<p>In my <a href="https://mostlymaths.net/2024/11/idea-to-finished-project.html/">previous post</a> I covered how I created a Chrome extension to annotate screenshots, <a href="https://github.com/rberenguel/goita">Goita</a>. I have rapidly added a lot of features, and keeping the README up to date has been a struggle. Could I leverage TDW to keep it <em>more or less</em> consistent?</p>
+<p>This particular scenario is relatively simple:</p>
+<ul>
+<li>Documentation is just a README and a single JavaScript file constructing a dynamic help popup.</li>
+<li>The codebase is small, at less than 50k tokens.</li>
+<li>A few years ago I wrote a tool to convert full repositories to Markdown documents (<a href="https://github.com/rberenguel/motllo">motllo</a>).</li>
+</ul>
+<p>My first thought was about using Motllo to merge all files in the repository, feed that to Gemini together with the README and iterate.</p>
+<p>On second thought, there are <em>a lot</em> of files there that are irrelevant. It is easier to list those that <em>are</em> useful for documenting:</p>
+<ul>
+<li>Main code and interaction files.</li>
+<li>Styling files.</li>
+<li>Test files.</li>
+</ul>
+<p>I quickly assembled a very small golang tool I called Gotllo (Motllo + Go, for now it is available in <a href="https://gist.github.com/rberenguel/0c7b4b46b881b11f4f0542c23a0ba618">this gist</a>) that could create a single Markdown file with path and specific file exclusion. For the Goita repository, it would be invoked like this:</p>
+<pre><code>gotllo -exclude=white.js,mocha.js,chai.js,show.js,testImage.js,tdw README.md src/*.js tests/*.js memes/*.js src/style.css tests/index.html
+</code></pre><p>Then I added a main prompt for the README. I&rsquo;m still not sure if this is the best possible prompt, for now <em>it is a prompt</em>.</p>
+<blockquote>
+<p>This is a <code>test driven writing</code> README. Each section has some tests that this document needs to pass. You are the test evaluator.</p>
+</blockquote>
+<blockquote>
+<p>Each comment with &ldquo;Test:&rdquo; before a section defines an individual test for that section.</p>
+</blockquote>
+<blockquote>
+<p>For each section with a &ldquo;Test:&rdquo; comment, determine if the content of that section satisfies the test, given the provided code.</p>
+</blockquote>
+<blockquote>
+<p>The provided code starts when this README ends, after a HTML comment line with the content &ldquo;README ends here&rdquo;. Anything after that
+is code, and should not be treated as part of this readme, just as additional code context to understand this.</p>
+</blockquote>
+<blockquote>
+<p>You should cross-reference this README file with the provided code snippets after it to ensure consistency and accuracy.</p>
+</blockquote>
+<blockquote>
+<p>When identifying discrepancies, provide specific examples from the code and this document to justify your findings, and make sure they are real.</p>
+</blockquote>
+<blockquote>
+<p>The test definitions are the minimum to pass, going into detail or adding more information is also a passing grade.</p>
+</blockquote>
+<blockquote>
+<p>Important: Do not make bogus suggestions that are already present in the README.</p>
+</blockquote>
+<blockquote>
+<p>Important: Do not be pedantic, and assume common sense from the reader and the writer. Minor deviations from the wording are fine,
+as is providing more details. You should aim for not reducing details unless extremely necessary.</p>
+</blockquote>
+<blockquote>
+<p>Important: You should provide no suggestions about sections that have no test comment after their header.</p>
+</blockquote>
+<blockquote>
+<p>Provide a summary report in markdown a format that looks like the following. Lines in C-style comment are directives for you.</p>
+</blockquote>
+<br/>
+<pre><code>// For the failing tests, write in the following format. If there are any failures:
+// In header:
+# Failures
+
+// As a subheader:
+## header of the failing test section.
+// The following, as a list
+- Reason: REASON // Failure reason
+- Fix by: CHANGES // List of specific changes needed
+
+// For passing tests:
+- suggestions, if any. Otherwise it has to be omitted.
+</code></pre><p>Then, I added tests to most section, like the following test for the section about functionality, where I detail how to trigger each
+tool and what it does.</p>
+<blockquote>
+<p>Test: This section should mention all functionality provided by the individual elements and what is available in shortcuts.js
+Note that ctrl + wheel is explicitly stated here for resizing images, as well as ctrl + . and , and /, and pasting via
+Cmd/Ctrl + v&ndash;&gt;</p>
+</blockquote>
+<p>As you can see, This is not ideal. Gemini kept having issues with the <code>ctrl + wheel</code> (and <code>ctrl +</code> whatever) shortcuts,
+regardless of what text was available in the README. On the flip side, if I removed <em>any</em> tool from the document the test as &ldquo;run&rdquo;
+by Gemini would caught the missing functionality (for example, by removing the shortcut for &ldquo;ellipse&rdquo;).</p>
+<p>I think this is not there <em>yet</em> but given the current evolution of LLMs, we might get there in a couple of days or weeks.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The concept of <em>Test Driven Writing</em> looks useful, particularly in scenarios where more than one person may edit the text, or when many revisions might happen. In those scenarios it can easily prevent content from being lost.</p>
+<p>For relatively small contexts (like a document or a few documents) LLMs already can provide a great experience, by reviewing document or section-level tests and suggesting improvements and highlighting where we humans might have missed the mark.</p>
+<p>For larger contexts (like the README example above), it looks like there is some more work, but we are almost there when checking the document against the code will be automated. Imagine a day when the documentation matches almost exactly the code!</p>
+<figure class="fig-wide"><img src="https://mostlymaths.net/images/dresser/wide7.jpg"/>
+</figure><hr/>
+        <ul class="pa0">
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/writing" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Writing</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/testing" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Testing</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/tdd" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">TDD</a>
+   </li>
+  
+   <li class="list" style="display:inline;">
+     <a href="https://mostlymaths.net/tags/tdw" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">TDW</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+            
+            
+        </div>
+    </section>
+<aside class="w-25-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links rounded-6">
+    <p class="fw1 f4 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2024/11/idea-to-finished-project.html/">In Practice: Turning an Idea into a Finished Project (A Case Study)</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2024/10/gemini-someday-today-projects.html/">Turning &#39;Someday&#39; Ideas into &#39;Today&#39; Projects with Gemini</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/10/202224-readings.html/">2022#24 Readings 🇺🇦🌻</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/10/202223-readings.html/">2022#23 Readings 🇺🇦🌻</a>
+       </li>
+	     
+	     <li  class="mb2">
+           <a href="https://mostlymaths.net/2022/09/202221-readings.html/">2022#21 Readings 🇺🇦🌻</a>
+       </li>
+	     
+    </ul>
+  </div>
+  <div style="min-height: 3em;">
+  </div></aside>
+    
+    </article>
+    
+    
+    
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99eeca521698412394b263e9f6d28662"}'></script>
+    
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mostlymaths.net/" >
+    &copy; 2024 mostlymaths.net
+  </a>
+    <div>
+
+
+<a href="https://www.facebook.com/mostlymaths/" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.twitter.com/berenguel" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/mostlymaths/" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+<a href="https://linkedin.com/in/rberenguel" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rberenguel" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://mostlymaths.net/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
