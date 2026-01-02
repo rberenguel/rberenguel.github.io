@@ -3,42 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mostlymaths.net/2025/08/arguably-3x.html/</loc>
-    <lastmod>2025-08-11T18:00:00+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mostlymaths.net/</loc>
-    <lastmod>2025-08-11T18:00:00+02:00</lastmod>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/posts/</loc>
-    <lastmod>2025-08-11T18:00:00+02:00</lastmod>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/programming/</loc>
-    <lastmod>2025-08-11T18:00:00+02:00</lastmod>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2026/01/2025-projects.html/</loc>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/</loc>
-    <lastmod>2025-08-11T18:00:00+02:00</lastmod>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mostlymaths.net/tags/writing/</loc>
+    <lastmod>2026-01-02T15:00:00+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mostlymaths.net/2025/08/arguably-3x.html/</loc>
     <lastmod>2025-08-11T18:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
